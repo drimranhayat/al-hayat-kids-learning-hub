@@ -16,7 +16,7 @@ Goal: launch a polished, trustworthy website that helps parents book a trial cla
 
 Goal: turn the single-page site into a stronger SEO and conversion platform.
 
-- Separate pages for Quran Learning, Arabic, Islamic Studies, Early Years, Online Classes, and Weekend Programs
+- Separate pages for Quran Learning, Arabic, Islamic Studies, Online Classes, and Admissions
 - About page with verified teacher profiles
 - Blog with parent education content
 - Gallery with real approved photos or illustrations
@@ -45,6 +45,18 @@ Goal: support recurring revenue and parent retention.
 5. Create program-specific SEO pages.
 6. Add lead magnets and a blog.
 7. Upgrade to a booking and payment system when inquiries become consistent.
+
+## Phase 2 Progress
+
+Completed:
+
+- Quran Learning SEO page
+- Arabic for Kids SEO page
+- Islamic Studies SEO page
+- Online Classes SEO page
+- Admissions SEO page
+- Homepage navigation and footer links updated for program pages
+- Deeper page content added for parent concerns, learning stages, class rhythm, trial flow, and expanded FAQs
 
 ## Avoid During Launch
 
