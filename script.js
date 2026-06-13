@@ -3,7 +3,7 @@ const navLinks = document.querySelector("[data-nav-links]");
 const leadForm = document.querySelector("[data-lead-form]");
 const formStatus = document.querySelector("[data-form-status]");
 
-const whatsAppNumber = "923001234567";
+const whatsAppNumber = "923354910481";
 
 if (menuButton && navLinks) {
   menuButton.addEventListener("click", () => {
