@@ -1,421 +1,1358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Al-Hayat Kids Learning Hub | Quran, Arabic & Islamic Learning for Children</title>
-    <meta name="description" content="A warm, parent-trusted learning hub for children to build Quran, Arabic, Islamic studies, and early learning confidence through structured, child-friendly programs.">
-    <meta name="theme-color" content="#0f766e">
-    <meta property="og:title" content="Al-Hayat Kids Learning Hub">
-    <meta property="og:description" content="Child-friendly Quran, Arabic, Islamic studies, and early learning programs for Muslim families.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/hero-learning-hub.png">
-    <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Al-Hayat Kids Learning Hub",
-        "description": "Quran, Arabic, Islamic studies, and early learning programs for children.",
-        "areaServed": ["Pakistan", "International Muslim families"],
-        "url": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
-        "sameAs": []
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Al-Hayat Kids Learning Hub | Quran, Arabic & Islamic Learning for Children</title>
+
+  <meta name="description" content="Al-Hayat Kids Learning Hub offers Quran learning, Arabic for kids, Islamic studies, manners, duas, Seerah stories, and early Islamic learning for children with caring teacher guidance." />
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --deep-green: #0f766e;
+      --green: #14b8a6;
+      --light-green: #ccfbf1;
+      --gold: #f4b400;
+      --cream: #fff8e7;
+      --soft-blue: #e0f2fe;
+      --soft-pink: #ffe4e6;
+      --soft-purple: #ede9fe;
+      --white: #ffffff;
+      --text: #243b53;
+      --muted: #627d98;
+      --border: #d9e2ec;
+      --shadow: 0 18px 45px rgba(16, 42, 67, 0.12);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #ccfbf1 0, transparent 30%),
+        radial-gradient(circle at top right, #ffe4e6 0, transparent 28%),
+        #fbfdff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .top-bar {
+      background: var(--navy);
+      color: white;
+      font-size: 14px;
+      padding: 9px 0;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(217, 226, 236, 0.7);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.25);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12px;
+      margin-top: -4px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--deep-green);
+    }
+
+    .nav-cta {
+      background: var(--deep-green);
+      color: white;
+      padding: 11px 18px;
+      border-radius: 999px;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.25);
+    }
+
+    .hero {
+      padding: 86px 0 70px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.06fr 0.94fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--deep-green);
+      font-weight: 800;
+      padding: 9px 15px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(16, 42, 67, 0.07);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.04;
+      letter-spacing: -2.2px;
+      color: var(--navy);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--deep-green);
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 900;
+      transition: 0.25s ease;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--deep-green);
+      color: white;
+      box-shadow: 0 14px 30px rgba(15, 118, 110, 0.26);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #0d9488;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      border-color: var(--green);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .trust-pill {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      padding: 9px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .hero-card {
+      position: relative;
+      background: white;
+      border-radius: 34px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(217, 226, 236, 0.8);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -18px;
+      z-index: -1;
+      border-radius: 42px;
+      background:
+        linear-gradient(135deg, rgba(20, 184, 166, 0.25), rgba(244, 180, 0, 0.22), rgba(224, 242, 254, 0.8));
+      transform: rotate(-3deg);
+    }
+
+    .learning-window {
+      background:
+        linear-gradient(160deg, #ecfeff, #ffffff 42%, #fff8e7);
+      border-radius: 28px;
+      padding: 26px;
+      border: 1px solid var(--border);
+    }
+
+    .child-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .avatar-stack {
+      display: flex;
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--soft-blue);
+      margin-left: -8px;
+      border: 3px solid white;
+      font-size: 19px;
+    }
+
+    .avatar:first-child {
+      margin-left: 0;
+    }
+
+    .class-box {
+      background: white;
+      border-radius: 22px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    .class-box h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .progress {
+      height: 11px;
+      background: #e6fffb;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 12px 0;
+    }
+
+    .progress span {
+      display: block;
+      width: 72%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--deep-green), var(--green));
+      border-radius: 999px;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      border-radius: 20px;
+      padding: 16px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .mini-card:nth-child(1) { background: var(--light-green); }
+    .mini-card:nth-child(2) { background: var(--soft-blue); }
+    .mini-card:nth-child(3) { background: var(--soft-pink); }
+    .mini-card:nth-child(4) { background: var(--soft-purple); }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 42px;
+    }
+
+    .eyebrow {
+      color: var(--deep-green);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 12px 30px rgba(16, 42, 67, 0.07);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      margin-bottom: 18px;
+      background: var(--light-green);
+    }
+
+    .feature h3 {
+      color: var(--navy);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    .programs {
+      background: linear-gradient(180deg, rgba(204, 251, 241, 0.35), rgba(255, 255, 255, 0));
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .program-card {
+      position: relative;
+      background: white;
+      border-radius: 26px;
+      padding: 26px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 15px 35px rgba(16, 42, 67, 0.08);
+      transition: 0.25s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .program-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -42px;
+      top: -42px;
+      border-radius: 50%;
+      background: rgba(20, 184, 166, 0.14);
+    }
+
+    .program-tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--cream);
+      color: #9a6700;
+      font-weight: 900;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .program-card h3 {
+      color: var(--navy);
+      font-size: 22px;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .program-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .check-list li {
+      margin-bottom: 9px;
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--deep-green);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .text-link {
+      color: var(--deep-green);
+      font-weight: 900;
+    }
+
+    .journey-wrap {
+      background: var(--navy);
+      border-radius: 34px;
+      padding: 48px;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .journey-wrap .section-head h2,
+    .journey-wrap .section-head p,
+    .journey-wrap .eyebrow {
+      color: white;
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .step p {
+      color: #d9e2ec;
+    }
+
+    .trust-section {
+      background: #ffffff;
+    }
+
+    .trust-panel {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .trust-note {
+      background: linear-gradient(135deg, var(--light-green), var(--soft-blue));
+      border-radius: 30px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .trust-note h2 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .trust-note p {
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .trust-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .trust-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 12px 30px rgba(16, 42, 67, 0.06);
+    }
+
+    .trust-card h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .trust-card p {
+      color: var(--muted);
+    }
+
+    .trial {
+      background:
+        linear-gradient(135deg, rgba(15, 118, 110, 0.94), rgba(16, 42, 67, 0.96)),
+        var(--navy);
+      color: white;
+      border-radius: 36px;
+      padding: 52px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 38px;
+      align-items: start;
+      box-shadow: var(--shadow);
+    }
+
+    .trial h2 {
+      font-size: 42px;
+      line-height: 1.12;
+      margin-bottom: 14px;
+    }
+
+    .trial p {
+      color: #d9e2ec;
+      margin-bottom: 20px;
+    }
+
+    .trial-points {
+      list-style: none;
+    }
+
+    .trial-points li {
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .form-box {
+      background: white;
+      border-radius: 28px;
+      padding: 26px;
+      color: var(--text);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 13px 14px;
+      font: inherit;
+      color: var(--text);
+      background: #fbfdff;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.12);
+    }
+
+    textarea {
+      min-height: 95px;
+      resize: vertical;
+    }
+
+    .form-box .btn {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .resource-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 12px 30px rgba(16, 42, 67, 0.07);
+    }
+
+    .resource-type {
+      display: inline-block;
+      background: var(--soft-blue);
+      color: var(--navy);
+      padding: 6px 11px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .resource-card h3 {
+      color: var(--navy);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      max-width: 860px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 22px rgba(16, 42, 67, 0.05);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .final-cta {
+      text-align: center;
+      background: linear-gradient(135deg, var(--cream), var(--light-green));
+      border-radius: 34px;
+      padding: 52px 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .final-cta h2 {
+      color: var(--navy);
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .final-cta p {
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 24px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 54px 0 28px;
+      margin-top: 70px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr repeat(3, 1fr);
+      gap: 34px;
+      margin-bottom: 34px;
+    }
+
+    footer h3,
+    footer h4 {
+      margin-bottom: 14px;
+    }
+
+    footer p,
+    footer a {
+      color: #bcccdc;
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding-top: 22px;
+      color: #bcccdc;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        display: none;
       }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" data-header>
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#home" aria-label="Al-Hayat Kids Learning Hub home">
-          <span class="brand-mark">AH</span>
-          <span>
-            <strong>Al-Hayat</strong>
-            <small>Kids Learning Hub</small>
-          </span>
-        </a>
+      .hero-grid,
+      .trust-panel,
+      .trial {
+        grid-template-columns: 1fr;
+      }
 
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      .features,
+      .program-grid,
+      .journey-grid,
+      .resources-grid,
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-        <div class="nav-links" data-nav-links>
-          <a href="#programs">Programs</a>
-          <a href="#journey">Learning Path</a>
-          <a href="#trust">Parent Trust</a>
-          <a href="#pricing">Admissions</a>
-          <a href="#resources">Resources</a>
-          <a href="#faq">FAQs</a>
-        </div>
+    @media (max-width: 640px) {
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
+      }
 
+      .hero {
+        padding-top: 54px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero-card,
+      .journey-wrap,
+      .trial {
+        padding: 24px;
+        border-radius: 26px;
+      }
+
+      .features,
+      .program-grid,
+      .journey-grid,
+      .trust-cards,
+      .resources-grid,
+      .footer-grid,
+      .form-grid,
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .final-cta h2,
+      .trial h2,
+      .trust-note h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <span>🌙 Quran, Arabic, Islamic Studies & Early Learning for Children</span>
+      <span>📩 drimranhayatmalik@gmail.com</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="brand">
+        <span class="brand-mark">AH</span>
+        <span>
+          Al-Hayat Kids
+          <small>Learning Hub</small>
+        </span>
+      </a>
+
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#journey">Learning Path</a>
+        <a href="#trust">Parent Trust</a>
+        <a href="#trial">Admissions</a>
+        <a href="#resources">Resources</a>
+        <a href="#faqs">FAQs</a>
         <a class="nav-cta" href="#trial">Book Trial</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Pakistan-first. International-ready.</p>
-          <h1 id="hero-title">Al-Hayat Kids Learning Hub</h1>
-          <p class="hero-copy">
-            A warm, structured learning home where children build Quran confidence,
-            Islamic character, Arabic foundations, and early academic habits with
-            caring teacher guidance.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#trial">Book a Free Trial</a>
-            <a class="button button-ghost" href="#programs">Explore Programs</a>
-          </div>
-        </div>
+  <main>
 
-        <div class="hero-trust" aria-label="Trust highlights">
-          <div>
-            <strong>Age-aware</strong>
-            <span>Learning paths for kids</span>
-          </div>
-          <div>
-            <strong>Parent-led</strong>
-            <span>Clear progress updates</span>
-          </div>
-          <div>
-            <strong>Values-first</strong>
-            <span>Respectful Islamic learning</span>
-          </div>
-        </div>
-      </section>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
 
-      <section class="section trust-strip" aria-label="Website trust bar">
-        <div class="strip-item">Free level check</div>
-        <div class="strip-item">One-to-one and group options</div>
-        <div class="strip-item">Quran, Arabic, and Islamic studies</div>
-        <div class="strip-item">Parent communication built in</div>
-      </section>
+        <div>
+          <div class="badge">✨ Pakistan-first. International-ready.</div>
 
-      <section class="section intro" aria-labelledby="intro-title">
-        <div class="section-copy">
-          <p class="eyebrow">Built for parents, loved by children</p>
-          <h2 id="intro-title">A premium learning experience without losing warmth.</h2>
+          <h1>
+            A joyful Islamic learning home for <span>confident children.</span>
+          </h1>
+
           <p>
-            The website is designed around what parents need before they trust a
-            learning provider: clear programs, honest teacher information, child
-            safety language, simple enrollment steps, and visible progress support.
-            For children, the experience feels joyful, colorful, and motivating.
+            Al-Hayat Kids Learning Hub helps children build Quran confidence, Arabic foundations,
+            Islamic manners, duas, Seerah understanding, and early learning habits through warm,
+            structured, teacher-guided classes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#trial" class="btn btn-primary">Book a Free Trial →</a>
+            <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+          </div>
+
+          <div class="trust-row">
+            <span class="trust-pill">👧 Age-aware learning</span>
+            <span class="trust-pill">📈 Parent updates</span>
+            <span class="trust-pill">🕌 Values-first approach</span>
+            <span class="trust-pill">✅ Free level check</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="learning-window">
+            <div class="child-card-head">
+              <div>
+                <strong style="color: var(--navy); font-size: 20px;">Today’s Learning Plan</strong>
+                <p style="color: var(--muted); font-size: 14px;">Short, structured & child-friendly</p>
+              </div>
+
+              <div class="avatar-stack">
+                <div class="avatar">📖</div>
+                <div class="avatar">🌙</div>
+                <div class="avatar">⭐</div>
+              </div>
+            </div>
+
+            <div class="class-box">
+              <h3>Quran Reading Confidence</h3>
+              <p>Beginner recitation, gentle correction, repetition, and praise-based learning.</p>
+              <div class="progress"><span></span></div>
+              <small style="color: var(--muted); font-weight: 700;">Weekly progress: improving steadily</small>
+            </div>
+
+            <div class="mini-grid">
+              <div class="mini-card">🕌 Daily Duas</div>
+              <div class="mini-card">🔤 Arabic Letters</div>
+              <div class="mini-card">💛 Good Manners</div>
+              <div class="mini-card">📚 Seerah Stories</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Why Parents Choose Us</div>
+          <h2>A premium learning experience without losing warmth.</h2>
+          <p>
+            Parents need clarity, safety, teacher guidance, and visible progress.
+            Children need kindness, color, repetition, and motivation.
           </p>
         </div>
-        <div class="value-grid" aria-label="Key values">
-          <article>
-            <span class="mini-icon">01</span>
-            <h3>Structured outcomes</h3>
-            <p>Each program explains age group, goals, class format, and progress tracking.</p>
-          </article>
-          <article>
-            <span class="mini-icon">02</span>
-            <h3>Conversion ready</h3>
-            <p>Parents are guided toward trial booking, inquiry, and WhatsApp contact.</p>
-          </article>
-          <article>
-            <span class="mini-icon">03</span>
-            <h3>SEO foundation</h3>
-            <p>Program sections target Quran classes, Arabic learning, and Islamic studies searches.</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section muted" id="programs" aria-labelledby="programs-title">
-        <div class="section-heading">
-          <p class="eyebrow">Learning programs</p>
-          <h2 id="programs-title">Start with the right path for your child.</h2>
-          <p>Phase 1 focuses on high-intent programs parents already search for.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="icon">🎯</div>
+            <h3>Structured Outcomes</h3>
+            <p>Each program focuses on clear learning goals, suitable age groups, and steady progress.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🤲</div>
+            <h3>Values-first Learning</h3>
+            <p>Children learn Quran, duas, adab, manners, and Islamic identity in a gentle way.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Parent Communication</h3>
+            <p>Parents receive simple updates about attendance, lesson focus, practice, and next steps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Learning Programs</div>
+          <h2>Start with the right path for your child.</h2>
+          <p>
+            Choose a focused program or request a personal learning path after the free level check.
+          </p>
         </div>
 
         <div class="program-grid">
-          <article class="program-card">
-            <div class="program-top">
-              <span>Quran</span>
-              <small>Ages 5+</small>
-            </div>
+
+          <div class="program-card">
+            <span class="program-tag">Quran · Ages 5+</span>
             <h3>Quran Learning for Kids</h3>
             <p>Nazra Quran, beginner recitation, tajweed support, and confidence-building practice.</p>
-            <ul>
-              <li>Level-based Quran reading</li>
-              <li>Gentle correction and repetition</li>
+            <ul class="check-list">
+              <li>Level-based reading</li>
+              <li>Gentle correction</li>
               <li>Parent progress notes</li>
             </ul>
-            <a href="#trial">Request level check</a>
-          </article>
+            <a href="#trial" class="text-link">Request level check →</a>
+          </div>
 
-          <article class="program-card featured">
-            <div class="program-top">
-              <span>Arabic</span>
-              <small>Ages 6+</small>
-            </div>
+          <div class="program-card">
+            <span class="program-tag">Arabic · Ages 6+</span>
             <h3>Arabic for Children</h3>
-            <p>Foundational Arabic letters, vocabulary, pronunciation, and child-friendly practice.</p>
-            <ul>
+            <p>Arabic letters, vocabulary, pronunciation, recognition, and child-friendly practice.</p>
+            <ul class="check-list">
               <li>Letter recognition</li>
               <li>Vocabulary games</li>
               <li>Reading confidence</li>
             </ul>
-            <a href="#trial">Ask about Arabic</a>
-          </article>
+            <a href="#trial" class="text-link">Ask about Arabic →</a>
+          </div>
 
-          <article class="program-card">
-            <div class="program-top">
-              <span>Islamic Studies</span>
-              <small>Ages 5-12</small>
-            </div>
+          <div class="program-card">
+            <span class="program-tag">Islamic Studies · 5–12</span>
             <h3>Islamic Studies & Manners</h3>
             <p>Duas, daily Sunnah, Seerah stories, adab, and character building for daily life.</p>
-            <ul>
+            <ul class="check-list">
               <li>Age-appropriate topics</li>
               <li>Practical daily habits</li>
               <li>Story-led learning</li>
             </ul>
-            <a href="#trial">Plan a pathway</a>
-          </article>
+            <a href="#trial" class="text-link">Plan a pathway →</a>
+          </div>
 
-          <article class="program-card">
-            <div class="program-top">
-              <span>Early Years</span>
-              <small>Ages 3-6</small>
-            </div>
+          <div class="program-card">
+            <span class="program-tag">Early Years · 3–6</span>
             <h3>Early Years Islamic Learning</h3>
-            <p>Short, joyful sessions that introduce duas, manners, stories, and basic learning routines.</p>
-            <ul>
-              <li>Short attention-friendly lessons</li>
+            <p>Short, joyful sessions introducing duas, manners, stories, and basic routines.</p>
+            <ul class="check-list">
+              <li>Short sessions</li>
               <li>Activity-based learning</li>
-              <li>Parent-supported practice</li>
+              <li>Parent support</li>
             </ul>
-            <a href="#trial">Start gently</a>
-          </article>
-        </div>
-      </section>
+            <a href="#trial" class="text-link">Start gently →</a>
+          </div>
 
-      <section class="section" id="journey" aria-labelledby="journey-title">
-        <div class="section-heading">
-          <p class="eyebrow">Child learning journey</p>
-          <h2 id="journey-title">A simple journey parents can understand quickly.</h2>
         </div>
+      </div>
+    </section>
 
-        <div class="journey">
-          <article>
-            <span>1</span>
-            <h3>Free level check</h3>
-            <p>Understand the child's age, current reading level, attention span, and parent goals.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Personal learning path</h3>
-            <p>Match the child to Quran, Arabic, Islamic studies, or early years learning.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Teacher-led classes</h3>
-            <p>Use short, structured sessions with repetition, praise, and measurable outcomes.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Parent progress updates</h3>
-            <p>Share attendance, lesson focus, practice notes, and next steps with parents.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split muted" id="trust" aria-labelledby="trust-title">
-        <div class="section-copy">
-          <p class="eyebrow">Parent trust framework</p>
-          <h2 id="trust-title">Clear policies before big promises.</h2>
+    <section class="section" id="journey">
+      <div class="container journey-wrap">
+        <div class="section-head">
+          <div class="eyebrow">Child Learning Journey</div>
+          <h2>A simple journey parents can understand quickly.</h2>
           <p>
-            This draft avoids invented testimonials, certifications, and achievements.
-            Trust should be earned through transparent teacher profiles, child safety
-            rules, parent communication, visible lesson structure, and honest outcomes.
-          </p>
-          <a class="text-link" href="#trial">Ask about teacher matching</a>
-        </div>
-        <div class="trust-list">
-          <article>
-            <h3>Child safety statement</h3>
-            <p>Children learn in a supervised, respectful environment with parent communication and clear class expectations.</p>
-          </article>
-          <article>
-            <h3>Teacher quality statement</h3>
-            <p>Teacher profiles should include verified experience, teaching style, age suitability, and subject strengths.</p>
-          </article>
-          <article>
-            <h3>Progress tracking statement</h3>
-            <p>Parents receive simple updates showing attendance, lesson focus, practice goals, and progress milestones.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="pricing" aria-labelledby="pricing-title">
-        <div class="section-heading">
-          <p class="eyebrow">Admissions</p>
-          <h2 id="pricing-title">A low-pressure path from inquiry to enrollment.</h2>
-          <p>Exact pricing should be confirmed by the business owner before publishing.</p>
-        </div>
-
-        <div class="admissions-grid">
-          <article>
-            <h3>1. Parent inquiry</h3>
-            <p>Parents share age, learning goals, program interest, and preferred schedule.</p>
-          </article>
-          <article>
-            <h3>2. Trial class</h3>
-            <p>The child joins a short introductory class or assessment to choose the best path.</p>
-          </article>
-          <article>
-            <h3>3. Enrollment plan</h3>
-            <p>Parents receive class options, schedule, teacher match, and monthly package details.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section lead-section" id="trial" aria-labelledby="trial-title">
-        <div class="lead-copy">
-          <p class="eyebrow">Free trial class</p>
-          <h2 id="trial-title">Help your child start with confidence.</h2>
-          <p>
-            Share a few details and the message will open in WhatsApp, ready to send.
-            Replace the WhatsApp number in the project settings before publishing.
+            From first inquiry to regular progress updates, every step should feel clear and reassuring.
           </p>
         </div>
 
-        <form class="lead-form" data-lead-form>
-          <label>
-            Parent name
-            <input name="parentName" type="text" autocomplete="name" required>
-          </label>
-          <label>
-            Child age
-            <input name="childAge" type="number" min="3" max="16" required>
-          </label>
-          <label>
-            Program interest
-            <select name="program" required>
-              <option value="">Choose a program</option>
-              <option>Quran Learning</option>
-              <option>Arabic for Kids</option>
-              <option>Islamic Studies</option>
-              <option>Early Years Learning</option>
-              <option>One-to-One Tutoring</option>
-              <option>Weekend Program</option>
-            </select>
-          </label>
-          <label>
-            Preferred class type
-            <select name="classType" required>
-              <option value="">Choose class type</option>
-              <option>Online one-to-one</option>
-              <option>Online group class</option>
-              <option>In-person class</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-          <label class="full">
-            Learning goal
-            <textarea name="goal" rows="4" placeholder="Example: My child is a beginner and needs Quran reading confidence." required></textarea>
-          </label>
-          <button class="button button-primary full" type="submit">Prepare WhatsApp Inquiry</button>
-          <p class="form-status" data-form-status role="status"></p>
-        </form>
-      </section>
+        <div class="journey-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Free Level Check</h3>
+            <p>We understand the child’s age, current level, attention span, and parent goals.</p>
+          </div>
 
-      <section class="section muted" id="resources" aria-labelledby="resources-title">
-        <div class="section-heading">
-          <p class="eyebrow">SEO and content engine</p>
-          <h2 id="resources-title">Helpful resources that can attract parents from search.</h2>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Personal Path</h3>
+            <p>The child is matched with Quran, Arabic, Islamic Studies, or Early Years learning.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Teacher-led Class</h3>
+            <p>Short lessons use repetition, praise, correction, examples, and practice tasks.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Parent Updates</h3>
+            <p>Parents receive attendance, lesson focus, practice notes, and next milestones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section" id="trust">
+      <div class="container trust-panel">
+
+        <div class="trust-note">
+          <h2>Trust should be earned before big promises.</h2>
+          <p>
+            This homepage avoids fake testimonials, false achievements, or unverified claims.
+            It builds trust through transparent policies, teacher information, safety language,
+            and clear parent communication.
+          </p>
+          <a href="#trial" class="btn btn-primary">Ask About Teacher Matching</a>
         </div>
 
-        <div class="resource-grid">
-          <article>
-            <span>Guide</span>
-            <h3>How to choose Quran classes for kids</h3>
+        <div class="trust-cards">
+          <div class="trust-card">
+            <h3>🛡️ Child Safety</h3>
+            <p>Respectful learning environment, parent communication, and clear class expectations.</p>
+          </div>
+
+          <div class="trust-card">
+            <h3>👩‍🏫 Teacher Quality</h3>
+            <p>Teacher profiles should show verified experience, style, and age suitability.</p>
+          </div>
+
+          <div class="trust-card">
+            <h3>📈 Progress Tracking</h3>
+            <p>Parents should see lesson focus, attendance, practice goals, and milestones.</p>
+          </div>
+
+          <div class="trust-card">
+            <h3>💬 Parent Support</h3>
+            <p>Simple communication helps parents stay involved without feeling confused.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="trial">
+      <div class="container">
+        <div class="trial">
+
+          <div>
+            <div class="eyebrow" style="color: #ccfbf1;">Free Trial Class</div>
+            <h2>Help your child start with confidence.</h2>
+            <p>
+              Share a few details and prepare a WhatsApp inquiry message.
+              We will guide you about the most suitable learning path for your child.
+            </p>
+
+            <ul class="trial-points">
+              <li>✓ Low-pressure parent inquiry</li>
+              <li>✓ Child level check</li>
+              <li>✓ Suitable program recommendation</li>
+              <li>✓ Class options and schedule guidance</li>
+            </ul>
+          </div>
+
+          <div class="form-box">
+            <form id="trialForm">
+              <div class="form-grid">
+
+                <div class="field">
+                  <label for="parentName">Parent Name</label>
+                  <input id="parentName" type="text" placeholder="Your name" required />
+                </div>
+
+                <div class="field">
+                  <label for="childAge">Child Age</label>
+                  <input id="childAge" type="text" placeholder="e.g. 7 years" required />
+                </div>
+
+                <div class="field">
+                  <label for="program">Program Interest</label>
+                  <select id="program" required>
+                    <option value="">Choose a program</option>
+                    <option>Quran Learning</option>
+                    <option>Arabic for Kids</option>
+                    <option>Islamic Studies</option>
+                    <option>Early Years Learning</option>
+                    <option>One-to-One Tutoring</option>
+                    <option>Weekend Program</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="classType">Preferred Class Type</label>
+                  <select id="classType" required>
+                    <option value="">Choose class type</option>
+                    <option>Online one-to-one</option>
+                    <option>Online group class</option>
+                    <option>In-person class</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="goal">Learning Goal</label>
+                  <textarea id="goal" placeholder="Tell us what you want your child to improve..."></textarea>
+                </div>
+
+              </div>
+
+              <button class="btn btn-primary" type="submit">Prepare WhatsApp Inquiry →</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Resources</div>
+          <h2>Helpful resources that can attract parents from search.</h2>
+          <p>
+            These resources can become future blog posts, downloads, lead magnets, or WhatsApp follow-up material.
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <span class="resource-type">Guide</span>
+            <h3>How to Choose Quran Classes for Kids</h3>
             <p>Build trust with parents searching for beginner-friendly Quran learning.</p>
-          </article>
-          <article>
-            <span>Checklist</span>
-            <h3>Daily duas practice chart</h3>
-            <p>A downloadable lead magnet for WhatsApp and email follow-up.</p>
-          </article>
-          <article>
-            <span>Article</span>
-            <h3>Arabic letters for young learners</h3>
+          </div>
+
+          <div class="resource-card">
+            <span class="resource-type">Checklist</span>
+            <h3>Daily Duas Practice Chart</h3>
+            <p>A simple downloadable resource for parents and children.</p>
+          </div>
+
+          <div class="resource-card">
+            <span class="resource-type">Article</span>
+            <h3>Arabic Letters for Young Learners</h3>
             <p>Support Arabic learning keywords and parent education.</p>
-          </article>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section faq" id="faq" aria-labelledby="faq-title">
-        <div class="section-heading">
-          <p class="eyebrow">FAQs</p>
-          <h2 id="faq-title">Questions parents usually ask first.</h2>
+    <section class="section" id="faqs">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">FAQs</div>
+          <h2>Questions parents usually ask first.</h2>
         </div>
 
-        <div class="faq-list">
+        <div class="faq">
           <details>
             <summary>Is this suitable for complete beginners?</summary>
             <p>Yes. The first step is a level check so the child can start from an appropriate point.</p>
           </details>
+
           <details>
             <summary>Do you offer online classes?</summary>
-            <p>The site is prepared for online one-to-one and group class inquiries. Confirm exact availability before launch.</p>
+            <p>The website is prepared for online one-to-one and group class inquiries.</p>
           </details>
+
           <details>
             <summary>How do parents track progress?</summary>
             <p>Progress updates should include attendance, lesson focus, practice notes, and next milestones.</p>
           </details>
+
           <details>
             <summary>Are teacher profiles verified?</summary>
             <p>Teacher details should be added only after verification. Do not publish unconfirmed credentials.</p>
           </details>
         </div>
-      </section>
-
-      <section class="final-cta" aria-labelledby="final-title">
-        <div>
-          <p class="eyebrow">Ready for the next step?</p>
-          <h2 id="final-title">Build a learning path your child can grow with.</h2>
-        </div>
-        <a class="button button-primary" href="#trial">Book a Free Trial</a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <a class="brand footer-brand" href="#home">
-          <span class="brand-mark">AH</span>
-          <span>
-            <strong>Al-Hayat</strong>
-            <small>Kids Learning Hub</small>
-          </span>
-        </a>
-        <p>Quran, Arabic, Islamic studies, and early learning for children.</p>
       </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="final-cta">
+          <h2>Build a learning path your child can grow with.</h2>
+          <p>
+            Start with a free trial inquiry and choose the most suitable Quran, Arabic, Islamic Studies,
+            or Early Years learning path for your child.
+          </p>
+          <a href="#trial" class="btn btn-primary">Book a Free Trial →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+
       <div>
-        <h2>Programs</h2>
+        <h3>Al-Hayat Kids Learning Hub</h3>
+        <p>Quran, Arabic, Islamic studies, manners, duas, Seerah, and early learning for children.</p>
+      </div>
+
+      <div>
+        <h4>Programs</h4>
         <a href="#programs">Quran Learning</a>
         <a href="#programs">Arabic for Kids</a>
         <a href="#programs">Islamic Studies</a>
+        <a href="#programs">Early Years</a>
       </div>
-      <div>
-        <h2>Parents</h2>
-        <a href="#trust">Safety & Trust</a>
-        <a href="#pricing">Admissions</a>
-        <a href="#faq">FAQs</a>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <a href="#trial">Book Trial</a>
-        <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
-      </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div>
+        <h4>Parents</h4>
+        <a href="#trust">Safety & Trust</a>
+        <a href="#journey">Learning Path</a>
+        <a href="#trial">Admissions</a>
+        <a href="#faqs">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:drimranhayatmalik@gmail.com">drimranhayatmalik@gmail.com</a>
+        <a href="#trial">Book Trial</a>
+      </div>
+
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("trialForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const parentName = document.getElementById("parentName").value.trim();
+      const childAge = document.getElementById("childAge").value.trim();
+      const program = document.getElementById("program").value;
+      const classType = document.getElementById("classType").value;
+      const goal = document.getElementById("goal").value.trim();
+
+      const message =
+        `Assalamu Alaikum. I want to book a free trial class for my child.%0A%0A` +
+        `Parent Name: ${encodeURIComponent(parentName)}%0A` +
+        `Child Age: ${encodeURIComponent(childAge)}%0A` +
+        `Program Interest: ${encodeURIComponent(program)}%0A` +
+        `Preferred Class Type: ${encodeURIComponent(classType)}%0A` +
+        `Learning Goal: ${encodeURIComponent(goal || "Not specified")}`;
+
+      /*
+        IMPORTANT:
+        Replace 923000000000 with the real WhatsApp number.
+        Use country code without + sign.
+        Example Pakistan format: 923001234567
+      */
+
+      const whatsappNumber = "923354910481";
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+    });
+  </script>
+
+</body>
 </html>
