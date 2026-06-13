@@ -24,4 +24,12 @@
     <loc>https://drimranhayat.github.io/al-hayat-kids-learning-hub/admissions.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://drimranhayat.github.io/al-hayat-kids-learning-hub/about.html</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://drimranhayat.github.io/al-hayat-kids-learning-hub/contact.html</loc>
+    <priority>0.75</priority>
+  </url>
 </urlset>

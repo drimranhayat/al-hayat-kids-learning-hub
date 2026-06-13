@@ -25,6 +25,8 @@ This is the Phase 1 static website for Al-Hayat Kids Learning Hub. It is built f
 - `islamic-studies.html` - SEO page for Islamic studies for kids
 - `online-classes.html` - SEO page for online Quran and Islamic classes
 - `admissions.html` - admissions and free trial page
+- `about.html` - trust page explaining mission, values, teaching approach, and verification standards
+- `contact.html` - contact and inquiry guidance page
 - `sitemap.xml` - sitemap for search engines
 - `robots.txt` - crawler instructions with sitemap location
 

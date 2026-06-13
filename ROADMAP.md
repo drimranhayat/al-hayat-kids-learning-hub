@@ -57,6 +57,7 @@ Completed:
 - Admissions SEO page
 - Homepage navigation and footer links updated for program pages
 - Deeper page content added for parent concerns, learning stages, class rhythm, trial flow, and expanded FAQs
+- About Us and Contact trust pages added
 
 ## Avoid During Launch
 
