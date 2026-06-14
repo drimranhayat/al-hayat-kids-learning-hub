@@ -1,1 +1,2976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Fun Learning Activities for Kids | Islamic, English, Math, Science & Creative Activities | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="A premium kids activity hub with Islamic activities, English games, math challenges, science exploration, Arabic practice, coloring, creativity, quizzes, rewards, sounds, and parent guidance." />
+  <meta name="keywords" content="kids activities, Islamic activities for children, English activities for kids, math games for kids, science activities, Arabic activities, creative activities, Al-Hayat Kids Learning Hub" />
+  <meta name="author" content="Al-Hayat Kids Learning Hub" />
+
+  <meta property="og:title" content="Fun Learning Activities for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="Explore joyful child-friendly activities with rewards, sounds, progress tracking, and parent guidance." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --ink: #14213d;
+      --text: #334155;
+      --muted: #64748b;
+      --soft: #f8fafc;
+      --white: #ffffff;
+      --navy: #0f2747;
+      --blue: #2563eb;
+      --sky: #38bdf8;
+      --green: #16a34a;
+      --emerald: #10b981;
+      --orange: #f97316;
+      --amber: #f59e0b;
+      --rose: #fb7185;
+      --pink: #ec4899;
+      --purple: #8b5cf6;
+      --violet: #7c3aed;
+      --teal: #14b8a6;
+      --cyan: #06b6d4;
+      --red: #ef4444;
+      --border: #e2e8f0;
+      --shadow: 0 18px 45px rgba(15, 39, 71, 0.12);
+      --soft-shadow: 0 12px 28px rgba(15, 39, 71, 0.08);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 34rem),
+        radial-gradient(circle at top right, rgba(251, 113, 133, 0.16), transparent 31rem),
+        radial-gradient(circle at 50% 38%, rgba(253, 224, 71, 0.15), transparent 32rem),
+        linear-gradient(180deg, #f8fbff 0%, #fff7ed 42%, #f8fafc 100%);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(37, 99, 235, 0.08) 0 3px, transparent 4px),
+        radial-gradient(circle at 88% 22%, rgba(249, 115, 22, 0.1) 0 3px, transparent 4px),
+        radial-gradient(circle at 78% 74%, rgba(20, 184, 166, 0.1) 0 4px, transparent 5px),
+        radial-gradient(circle at 20% 82%, rgba(139, 92, 246, 0.08) 0 4px, transparent 5px);
+      z-index: -1;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 12px;
+      background: var(--navy);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #0f2747, #1d4ed8);
+      color: white;
+      font-size: 0.92rem;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .topbar span {
+      opacity: 0.95;
+    }
+
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-links a,
+    .topbar-links button {
+      background: rgba(255, 255, 255, 0.13);
+      color: white;
+      border: 0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .topbar-links a:hover,
+    .topbar-links button:hover {
+      background: rgba(255, 255, 255, 0.24);
+      transform: translateY(-1px);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 950;
+      color: var(--ink);
+    }
+
+    .brand-mark {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+      color: white;
+      font-size: 1.55rem;
+      box-shadow: var(--soft-shadow);
+      animation: brandPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes brandPulse {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      35% { transform: rotate(-3deg) scale(1.04); }
+      70% { transform: rotate(3deg) scale(1.02); }
+    }
+
+    .brand small {
+      display: block;
+      font-weight: 750;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: -3px;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--ink);
+      color: white;
+      border-radius: 14px;
+      padding: 10px 13px;
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--ink);
+      font-weight: 850;
+      font-size: 0.92rem;
+      padding: 10px 12px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-links a::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(20, 184, 166, 0.12));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+      z-index: -1;
+    }
+
+    .nav-links a:hover::before,
+    .nav-links a.active::before {
+      transform: scaleX(1);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--orange), var(--pink)) !important;
+      color: white !important;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px) scale(1.02) !important;
+    }
+
+    .sound-pill {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 120;
+      border: 0;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      border-radius: 999px;
+      padding: 12px 15px;
+      font-weight: 950;
+      box-shadow: 0 18px 45px rgba(76, 29, 149, 0.25);
+      transition: 0.25s ease;
+    }
+
+    .sound-pill:hover {
+      transform: translateY(-3px) scale(1.03);
+      filter: saturate(1.18);
+    }
+
+    .hero {
+      position: relative;
+      padding: 66px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--orange);
+      border: 1px solid #fed7aa;
+      font-weight: 950;
+      padding: 9px 14px;
+      border-radius: 999px;
+      box-shadow: var(--soft-shadow);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      color: var(--ink);
+      font-size: clamp(2.25rem, 5vw, 4.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb, #14b8a6, #f97316, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.12rem;
+      color: #475569;
+      max-width: 700px;
+      margin-bottom: 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-weight: 950;
+      transition: 0.25s ease;
+      box-shadow: var(--soft-shadow);
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 48px;
+    }
+
+    .btn::after,
+    .mini-btn::after,
+    .chip::after,
+    .quiz-options button::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.38), transparent);
+      transform: translateX(-120%);
+      transition: 0.5s ease;
+      z-index: -1;
+    }
+
+    .btn:hover::after,
+    .mini-btn:hover::after,
+    .chip:hover::after,
+    .quiz-options button:hover::after {
+      transform: translateX(120%);
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+    }
+
+    .btn-secondary {
+      color: var(--ink);
+      background: white;
+      border: 1px solid var(--border);
+    }
+
+    .btn-green {
+      color: white;
+      background: linear-gradient(135deg, var(--green), var(--emerald));
+    }
+
+    .btn-orange {
+      color: white;
+      background: linear-gradient(135deg, var(--orange), var(--amber));
+    }
+
+    .btn-purple {
+      color: white;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      filter: saturate(1.16);
+      box-shadow: 0 18px 40px rgba(15, 39, 71, 0.16);
+    }
+
+    .btn:active,
+    .mini-btn:active,
+    .chip:active {
+      transform: translateY(1px) scale(0.98);
+    }
+
+    .hero-pills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-pills span {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 850;
+      box-shadow: var(--soft-shadow);
+      transition: 0.25s ease;
+    }
+
+    .hero-pills span:hover {
+      transform: translateY(-2px) rotate(-1deg);
+      background: #ffffff;
+      border-color: #bfdbfe;
+    }
+
+    .activity-planet {
+      position: relative;
+      min-height: 450px;
+      border-radius: 38px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.9), transparent 11rem),
+        radial-gradient(circle at 85% 18%, rgba(254, 215, 170, 0.75), transparent 10rem),
+        linear-gradient(135deg, #dbeafe, #ccfbf1 45%, #fce7f3);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.82);
+      padding: 28px;
+    }
+
+    .activity-card-hero {
+      position: absolute;
+      background: white;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--soft-shadow);
+      border-radius: 24px;
+      padding: 17px;
+      transition: 0.3s ease;
+    }
+
+    .activity-card-hero:hover {
+      transform: translateY(-7px) rotate(0deg) !important;
+      box-shadow: var(--shadow);
+    }
+
+    .activity-card-hero strong {
+      color: var(--ink);
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 5px;
+    }
+
+    .activity-card-hero span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .hero-main-card {
+      width: 70%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-2deg);
+      text-align: center;
+      padding: 34px 24px;
+    }
+
+    .hero-main-card .icon {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 15px;
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 3.1rem;
+      background: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+      color: white;
+      animation: bounceIcon 2.8s ease-in-out infinite;
+    }
+
+    @keyframes bounceIcon {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(3deg); }
+    }
+
+    .hero-mini-one {
+      left: 24px;
+      top: 28px;
+      width: 190px;
+      transform: rotate(-6deg);
+    }
+
+    .hero-mini-two {
+      right: 24px;
+      top: 48px;
+      width: 190px;
+      transform: rotate(5deg);
+    }
+
+    .hero-mini-three {
+      left: 42px;
+      bottom: 34px;
+      width: 212px;
+      transform: rotate(4deg);
+    }
+
+    .hero-mini-four {
+      right: 42px;
+      bottom: 30px;
+      width: 206px;
+      transform: rotate(-5deg);
+    }
+
+    .floating-shape {
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: white;
+      box-shadow: var(--soft-shadow);
+      font-size: 1.5rem;
+      animation: float 4.5s ease-in-out infinite;
+      user-select: none;
+    }
+
+    .shape-a { top: 176px; left: 22px; }
+    .shape-b { right: 18px; top: 208px; animation-delay: 1s; }
+    .shape-c { left: 50%; bottom: 18px; animation-delay: 1.6s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+    }
+
+    section {
+      padding: 44px 0;
+    }
+
+    .section-heading {
+      max-width: 790px;
+      margin-bottom: 24px;
+    }
+
+    .section-kicker {
+      color: var(--orange);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: var(--ink);
+      font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .stat-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--soft-shadow);
+      transition: 0.25s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .stat-card::before {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      right: -55px;
+      top: -55px;
+      border-radius: 50%;
+      background: rgba(249, 115, 22, 0.11);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: #fed7aa;
+    }
+
+    .stat-card strong {
+      display: block;
+      color: var(--ink);
+      font-size: 2rem;
+      line-height: 1;
+      position: relative;
+    }
+
+    .stat-card span {
+      color: var(--muted);
+      font-weight: 850;
+      position: relative;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 26px;
+    }
+
+    .activity-tools {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .search-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .search-box input {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 13px 16px;
+      background: white;
+      outline: none;
+      transition: 0.22s ease;
+    }
+
+    .search-box input:focus {
+      border-color: #fb923c;
+      box-shadow: 0 0 0 4px rgba(251, 146, 60, 0.18);
+    }
+
+    .age-tabs,
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 18px 0 0;
+    }
+
+    .chip {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--ink);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: 0.22s ease;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .chip:hover {
+      transform: translateY(-2px);
+      border-color: #fed7aa;
+      color: var(--orange);
+    }
+
+    .chip.active {
+      background: linear-gradient(135deg, var(--orange), var(--pink));
+      color: white;
+      border-color: transparent;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .daily-card {
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.72), transparent 11rem),
+        linear-gradient(135deg, #f97316, #ec4899);
+      color: white;
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .daily-card::before {
+      content: "✨";
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      font-size: 3rem;
+      opacity: 0.25;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .daily-card h3 {
+      font-size: 1.55rem;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .daily-card p {
+      opacity: 0.94;
+      margin-bottom: 14px;
+    }
+
+    .daily-card .btn {
+      background: white;
+      color: var(--ink);
+    }
+
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--soft-shadow);
+      position: relative;
+      overflow: hidden;
+      transition: 0.25s ease;
+    }
+
+    .path-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .path-card::before {
+      content: "";
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      right: -42px;
+      top: -42px;
+      border-radius: 50%;
+      background: rgba(249, 115, 22, 0.1);
+    }
+
+    .path-card .badge {
+      display: inline-flex;
+      background: #fff7ed;
+      color: var(--orange);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-weight: 950;
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .path-card h3,
+    .activity-card h3,
+    .challenge-card h3,
+    .parent-card h3 {
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .path-card p,
+    .activity-card p {
+      position: relative;
+    }
+
+    .path-card ul,
+    .parent-card ul,
+    .routine-box ul {
+      padding-left: 20px;
+      margin-top: 10px;
+      color: var(--text);
+      position: relative;
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .activity-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--soft-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 100%;
+      transition: 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .activity-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.04), rgba(249, 115, 22, 0.06), rgba(236, 72, 153, 0.04));
+      opacity: 0;
+      transition: 0.25s ease;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-5px) rotate(-0.4deg);
+      box-shadow: var(--shadow);
+      border-color: #fed7aa;
+    }
+
+    .activity-card:hover::before {
+      opacity: 1;
+    }
+
+    .activity-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      position: relative;
+    }
+
+    .activity-icon {
+      width: 62px;
+      height: 62px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 1.85rem;
+      color: white;
+      background: linear-gradient(135deg, var(--orange), var(--pink));
+      flex: 0 0 auto;
+      transition: 0.25s ease;
+    }
+
+    .activity-card:hover .activity-icon {
+      transform: rotate(8deg) scale(1.07);
+      filter: saturate(1.2);
+    }
+
+    .activity-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      position: relative;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      background: #f1f5f9;
+      color: #475569;
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 0.76rem;
+      font-weight: 900;
+    }
+
+    .level-easy {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .level-medium {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .level-advanced {
+      background: #ede9fe;
+      color: #5b21b6;
+    }
+
+    .activity-card p {
+      color: var(--muted);
+      flex-grow: 1;
+    }
+
+    .activity-actions {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: auto;
+      position: relative;
+    }
+
+    .mini-btn {
+      border: 0;
+      cursor: pointer;
+      background: #fff7ed;
+      color: var(--orange);
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-weight: 950;
+      transition: 0.2s ease;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .mini-btn:hover {
+      background: linear-gradient(135deg, var(--orange), var(--pink));
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .mini-btn.done {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .challenge-card {
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      color: white;
+      box-shadow: var(--soft-shadow);
+      min-height: 190px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .challenge-card::before {
+      content: "";
+      position: absolute;
+      right: -45px;
+      top: -45px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+    }
+
+    .challenge-card:nth-child(1) {
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+    }
+
+    .challenge-card:nth-child(2) {
+      background: linear-gradient(135deg, #16a34a, #14b8a6);
+    }
+
+    .challenge-card:nth-child(3) {
+      background: linear-gradient(135deg, #f97316, #f59e0b);
+    }
+
+    .challenge-card:nth-child(4) {
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    }
+
+    .challenge-card h3 {
+      color: white;
+    }
+
+    .challenge-card p {
+      opacity: 0.94;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .tracker-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .tracker-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      text-align: center;
+      box-shadow: var(--soft-shadow);
+      transition: 0.25s ease;
+    }
+
+    .tracker-box:hover {
+      transform: translateY(-3px);
+      border-color: #fed7aa;
+    }
+
+    .tracker-box strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.75rem;
+    }
+
+    .tracker-box span {
+      color: var(--muted);
+      font-weight: 850;
+      font-size: 0.9rem;
+    }
+
+    .quiz-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .quiz-question {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      text-align: left;
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 12px 14px;
+      cursor: pointer;
+      font-weight: 850;
+      transition: 0.22s ease;
+    }
+
+    .quiz-options button:hover {
+      background: #fff7ed;
+      border-color: #fed7aa;
+      transform: translateY(-2px);
+    }
+
+    .quiz-options button.correct {
+      background: #dcfce7;
+      border-color: #86efac;
+      color: #166534;
+    }
+
+    .quiz-options button.wrong {
+      background: #ffe4e6;
+      border-color: #fda4af;
+      color: #9f1239;
+    }
+
+    .creative-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .creative-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--soft-shadow);
+      transition: 0.25s ease;
+    }
+
+    .creative-card:hover {
+      transform: translateY(-4px) rotate(-0.5deg);
+      border-color: #fed7aa;
+    }
+
+    .creative-card strong {
+      color: var(--ink);
+      display: block;
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+
+    .creative-card span {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .parent-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .parent-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--soft-shadow);
+      transition: 0.25s ease;
+    }
+
+    .parent-card:hover {
+      transform: translateY(-4px);
+      border-color: #bfdbfe;
+    }
+
+    .routine-box {
+      margin-top: 18px;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.68), transparent 12rem),
+        linear-gradient(135deg, #0f2747, #2563eb);
+      color: white;
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .routine-box h3,
+    .routine-box p {
+      color: white;
+    }
+
+    .routine-box li {
+      margin-bottom: 6px;
+    }
+
+    .cta-band {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,0.28), transparent 16rem),
+        linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+      color: white;
+      border-radius: 34px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cta-band::before {
+      content: "🎉";
+      position: absolute;
+      right: 26px;
+      top: 14px;
+      font-size: 3.5rem;
+      opacity: 0.22;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .cta-band h2,
+    .cta-band p {
+      color: white;
+      position: relative;
+    }
+
+    .cta-band .btn {
+      background: white;
+      color: var(--ink);
+    }
+
+    footer {
+      background: #0f2747;
+      color: white;
+      padding: 44px 0 22px;
+      margin-top: 36px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    footer h3,
+    footer h4 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer li {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    footer a {
+      transition: 0.22s ease;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding-top: 18px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.64);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 200;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-card {
+      width: min(100%, 860px);
+      max-height: 86vh;
+      overflow: auto;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+      padding: 26px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: sticky;
+      top: 0;
+      float: right;
+      border: 0;
+      background: var(--ink);
+      color: white;
+      border-radius: 999px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 950;
+      z-index: 2;
+    }
+
+    .activity-content h2 {
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .activity-content .meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .activity-content p {
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+    }
+
+    .activity-content .activity-box {
+      background: #fff7ed;
+      border-left: 5px solid var(--orange);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--ink);
+      margin-top: 16px;
+    }
+
+    .activity-content ul,
+    .activity-content ol {
+      padding-left: 22px;
+      margin: 10px 0 16px;
+    }
+
+    .activity-content li {
+      margin-bottom: 8px;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 86px;
+      transform: translateX(-50%) translateY(30px);
+      background: #0f2747;
+      color: white;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 950;
+      box-shadow: var(--shadow);
+      z-index: 220;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s ease;
+      text-align: center;
+      max-width: min(92vw, 640px);
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .confetti-piece {
+      position: fixed;
+      top: -20px;
+      width: 10px;
+      height: 14px;
+      border-radius: 3px;
+      z-index: 210;
+      pointer-events: none;
+      animation: fallConfetti 1.7s ease-in forwards;
+    }
+
+    @keyframes fallConfetti {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(105vh) rotate(720deg); opacity: 0; }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .activity-tools,
+      .quiz-box,
+      .cta-band {
+        grid-template-columns: 1fr;
+      }
+
+      .path-grid,
+      .activity-grid,
+      .parent-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid,
+      .challenge-grid,
+      .tracker-grid,
+      .creative-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .activity-planet {
+        min-height: 370px;
+      }
+
+      .hero-mini-one,
+      .hero-mini-two,
+      .hero-mini-three,
+      .hero-mini-four {
+        display: none;
+      }
+
+      .hero-main-card {
+        width: 82%;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .nav {
+        align-items: center;
+      }
+
+      .nav-links {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 78px;
+        background: white;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        border-radius: 22px;
+        padding: 14px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        border-radius: 14px;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero {
+        padding-top: 38px;
+      }
+
+      .path-grid,
+      .activity-grid,
+      .parent-grid,
+      .stats-grid,
+      .challenge-grid,
+      .tracker-grid,
+      .creative-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-box {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-planet {
+        min-height: 305px;
+        border-radius: 26px;
+      }
+
+      .hero-main-card {
+        width: 92%;
+        padding: 28px 18px;
+      }
+
+      .hero-main-card .icon {
+        width: 74px;
+        height: 74px;
+        font-size: 2.25rem;
+      }
+
+      .cta-band {
+        padding: 24px;
+        border-radius: 26px;
+      }
+
+      .sound-pill {
+        right: 12px;
+        bottom: 12px;
+        padding: 10px 12px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Fun Learning Activities for Kids",
+    "description": "A child-friendly activities hub with Islamic activities, English games, math challenges, science exploration, Arabic practice, creative activities, rewards, sounds, and parent guidance.",
+    "educationalLevel": "Early Years and Primary",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Al-Hayat Kids Learning Hub"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <button class="sound-pill" type="button" id="soundToggle" aria-label="Turn activity sounds on or off">🔊 Sounds On</button>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🎨 Fun activities • Learning games • Islamic values • Parent-guided practice</span>
+      <div class="topbar-links">
+        <a href="#activity-shelf">Activities</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#quiz">Mini Quiz</a>
+        <button type="button" onclick="playSound('sparkle')">✨ Test Sound</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub Home">
+        <span class="brand-mark">🎨</span>
+        <span>
+          Al-Hayat Kids Learning Hub
+          <small>Play • Learn • Create</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰ Menu</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="#age-paths">Age Levels</a>
+        <a class="active" href="#activity-shelf">Activities</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#tracker">Progress</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#parents">Parents</a>
+        <a class="nav-cta" href="#online-help">Activity Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">🌟 Complete Activity Hub • Ages 3–12</span>
+          <h1>Play, create, think, and <span class="gradient-text">learn with joy.</span></h1>
+          <p>
+            A premium activity hub for children with Islamic values, English practice,
+            math games, science exploration, Arabic activities, creativity tasks,
+            reward sounds, progress tracking, and parent-guided learning routines.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#activity-shelf" onclick="playSound('pop')">Start Activities →</a>
+            <a class="btn btn-secondary" href="#age-paths" onclick="playSound('tap')">Choose Age Level</a>
+            <button class="btn btn-green" type="button" onclick="speakText('Welcome to Al-Hayat Activity Hub. Choose an activity, follow the steps, complete the challenge, and earn stars for your learning journey.')">🔊 Listen Intro</button>
+            <button class="btn btn-purple" type="button" onclick="surpriseReward()">🎁 Surprise</button>
+          </div>
+
+          <div class="hero-pills" aria-label="Activity features">
+            <span>🕌 Islamic</span>
+            <span>🔤 English</span>
+            <span>➕ Math</span>
+            <span>🔬 Science</span>
+            <span>🎨 Creative</span>
+            <span>⭐ Rewards</span>
+          </div>
+        </div>
+
+        <div class="activity-planet" aria-label="Activities illustration">
+          <div class="activity-card-hero hero-mini-one">
+            <strong>Islamic Values</strong>
+            <span>Dua, manners, kindness, gratitude</span>
+          </div>
+
+          <div class="activity-card-hero hero-mini-two">
+            <strong>Learning Games</strong>
+            <span>Words, numbers, logic, memory</span>
+          </div>
+
+          <div class="activity-card-hero hero-main-card">
+            <div class="icon">🚀</div>
+            <strong>Activity Adventure</strong>
+            <span>Open an activity, complete steps, answer, create, and earn stars.</span>
+          </div>
+
+          <div class="activity-card-hero hero-mini-three">
+            <strong>Hands-on Fun</strong>
+            <span>Draw, sort, match, build, explore</span>
+          </div>
+
+          <div class="activity-card-hero hero-mini-four">
+            <strong>Safe & Guided</strong>
+            <span>Short tasks with parent support</span>
+          </div>
+
+          <div class="floating-shape shape-a">⭐</div>
+          <div class="floating-shape shape-b">🎈</div>
+          <div class="floating-shape shape-c">✨</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <strong>50+</strong>
+            <span>Activity ideas</span>
+          </div>
+          <div class="stat-card">
+            <strong>5</strong>
+            <span>Age pathways</span>
+          </div>
+          <div class="stat-card">
+            <strong>6</strong>
+            <span>Learning categories</span>
+          </div>
+          <div class="stat-card">
+            <strong>0</strong>
+            <span>Login required</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="age-paths">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 1</div>
+          <h2>Choose the right activity level</h2>
+          <p>
+            Activities should match the child’s age, attention span, language level,
+            and confidence. Start simple, then move toward creative thinking and independent work.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <article class="path-card">
+            <span class="badge">Ages 3–4</span>
+            <h3>Touch, Talk & Match</h3>
+            <p>Best for toddlers and preschoolers who learn through pictures, movement, sound, and repetition.</p>
+            <ul>
+              <li>Point and name</li>
+              <li>Match colors and shapes</li>
+              <li>Repeat short words</li>
+              <li>Use safe hands-on objects</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <span class="badge">Ages 5–6</span>
+            <h3>Words, Numbers & Manners</h3>
+            <p>Best for early learners building basic vocabulary, counting, tracing, sharing, and classroom habits.</p>
+            <ul>
+              <li>Sort and count</li>
+              <li>Say simple sentences</li>
+              <li>Trace letters</li>
+              <li>Practice good manners</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <span class="badge">Ages 7–8</span>
+            <h3>Read, Solve & Create</h3>
+            <p>Best for children who can follow instructions, solve puzzles, and complete short creative tasks.</p>
+            <ul>
+              <li>Answer activity questions</li>
+              <li>Build vocabulary</li>
+              <li>Do mini experiments</li>
+              <li>Draw and explain ideas</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <span class="badge">Ages 9–10</span>
+            <h3>Think, Discuss & Apply</h3>
+            <p>Best for children ready to explain reasons, connect values to life, and solve multi-step challenges.</p>
+            <ul>
+              <li>Explain choices</li>
+              <li>Solve logic problems</li>
+              <li>Write short reflections</li>
+              <li>Work with independence</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <span class="badge">Ages 11–12</span>
+            <h3>Projects & Reflection</h3>
+            <p>Best for older kids who can plan, create, present, compare, and reflect on their learning.</p>
+            <ul>
+              <li>Create mini projects</li>
+              <li>Present ideas</li>
+              <li>Compare solutions</li>
+              <li>Reflect on values</li>
+            </ul>
+          </article>
+
+          <article class="path-card">
+            <span class="badge">Parent Tip</span>
+            <h3>Keep Activities Short</h3>
+            <p>One joyful activity done well is better than many rushed activities. Praise effort and curiosity.</p>
+            <ul>
+              <li>10–20 minutes daily</li>
+              <li>Use safe materials</li>
+              <li>Ask open questions</li>
+              <li>Celebrate completion</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity-finder">
+      <div class="container activity-tools">
+        <div class="panel">
+          <div class="section-kicker">Step 2</div>
+          <h2>Find an activity</h2>
+          <p>
+            Search by subject, skill, value, material, or category. You can also filter activities by age and type.
+          </p>
+
+          <div class="search-box">
+            <input id="activitySearch" type="search" placeholder="Search: dua, colors, counting, kindness, experiment, Arabic..." aria-label="Search activities" />
+            <button class="btn btn-primary" type="button" onclick="filterActivities(); playSound('tap');">Search</button>
+          </div>
+
+          <div class="age-tabs" aria-label="Age filters">
+            <button class="chip active" type="button" data-age="all">All Ages</button>
+            <button class="chip" type="button" data-age="3-4">Ages 3–4</button>
+            <button class="chip" type="button" data-age="5-6">Ages 5–6</button>
+            <button class="chip" type="button" data-age="7-8">Ages 7–8</button>
+            <button class="chip" type="button" data-age="9-10">Ages 9–10</button>
+            <button class="chip" type="button" data-age="11-12">Ages 11–12</button>
+          </div>
+
+          <div class="filter-tabs" aria-label="Activity category filters">
+            <button class="chip active" type="button" data-type="all">All</button>
+            <button class="chip" type="button" data-type="islamic">Islamic</button>
+            <button class="chip" type="button" data-type="english">English</button>
+            <button class="chip" type="button" data-type="math">Math</button>
+            <button class="chip" type="button" data-type="science">Science</button>
+            <button class="chip" type="button" data-type="arabic">Arabic</button>
+            <button class="chip" type="button" data-type="creative">Creative</button>
+          </div>
+        </div>
+
+        <aside class="daily-card">
+          <h3>🌞 Today’s Activity Mission</h3>
+          <p>
+            Complete one activity. Say what you learned. Show your work to a parent. Earn stars and celebrate.
+          </p>
+          <button class="btn" type="button" onclick="openActivity('kindness-jar')">Open Today’s Activity</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="activity-shelf">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 3</div>
+          <h2>Activity Shelf</h2>
+          <p>
+            Each activity includes a purpose, materials, steps, parent questions,
+            and a completion reward. Children learn best when activity becomes meaningful play.
+          </p>
+        </div>
+
+        <div class="activity-grid" id="activityGrid">
+          <article class="activity-card" data-id="kindness-jar" data-age="5-6 7-8 9-10" data-type="islamic creative" data-search="kindness jar good deeds islamic values gratitude manners family">
+            <div class="activity-top">
+              <div>
+                <h3>Kindness Jar</h3>
+                <div class="activity-tags">
+                  <span class="tag level-easy">Easy</span>
+                  <span class="tag">Islamic Values</span>
+                  <span class="tag">Family</span>
+                </div>
+              </div>
+              <div class="activity-icon">🫙</div>
+            </div>
+            <p>Children collect kindness notes and learn how small good deeds grow into beautiful habits.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('kindness-jar')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('kindness-jar')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('kindness-jar')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="dua-match" data-age="5-6 7-8 9-10" data-type="islamic" data-search="dua match islamic daily routine before eating sleeping waking">
+            <div class="activity-top">
+              <div>
+                <h3>Dua Match Cards</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Dua</span>
+                  <span class="tag">Memory</span>
+                </div>
+              </div>
+              <div class="activity-icon">🤲</div>
+            </div>
+            <p>A matching game where children connect daily actions with short remembrance prompts.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('dua-match')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('dua-match')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('dua-match')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="letter-treasure" data-age="3-4 5-6 7-8" data-type="english" data-search="english letters alphabet treasure hunt vocabulary phonics sounds">
+            <div class="activity-top">
+              <div>
+                <h3>Letter Treasure Hunt</h3>
+                <div class="activity-tags">
+                  <span class="tag level-easy">Easy</span>
+                  <span class="tag">English</span>
+                  <span class="tag">Phonics</span>
+                </div>
+              </div>
+              <div class="activity-icon">🔤</div>
+            </div>
+            <p>Children hunt for objects beginning with a chosen letter and practice saying clear words.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('letter-treasure')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('letter-treasure')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('letter-treasure')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="story-cube" data-age="7-8 9-10 11-12" data-type="english creative" data-search="story cube english speaking writing creativity character place problem">
+            <div class="activity-top">
+              <div>
+                <h3>Story Cube Challenge</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Speaking</span>
+                  <span class="tag">Writing</span>
+                </div>
+              </div>
+              <div class="activity-icon">🎲</div>
+            </div>
+            <p>A creative speaking game where children build a short story using character, place, and problem.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('story-cube')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('story-cube')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('story-cube')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="counting-shop" data-age="3-4 5-6 7-8" data-type="math" data-search="math counting shop money addition subtraction objects numbers">
+            <div class="activity-top">
+              <div>
+                <h3>Counting Shop</h3>
+                <div class="activity-tags">
+                  <span class="tag level-easy">Easy</span>
+                  <span class="tag">Math</span>
+                  <span class="tag">Counting</span>
+                </div>
+              </div>
+              <div class="activity-icon">🛒</div>
+            </div>
+            <p>Children use pretend shopping to count objects, compare quantities, and practice simple addition.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('counting-shop')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('counting-shop')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('counting-shop')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="shape-mosque" data-age="5-6 7-8 9-10" data-type="math creative islamic" data-search="shape mosque math geometry square triangle circle islamic art">
+            <div class="activity-top">
+              <div>
+                <h3>Shape Mosque Art</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Geometry</span>
+                  <span class="tag">Creative</span>
+                </div>
+              </div>
+              <div class="activity-icon">🕌</div>
+            </div>
+            <p>Children use circles, rectangles, triangles, and arches to create a mosque picture.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('shape-mosque')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('shape-mosque')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('shape-mosque')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="floating-sinking" data-age="5-6 7-8 9-10" data-type="science" data-search="science float sink water experiment prediction observation objects">
+            <div class="activity-top">
+              <div>
+                <h3>Float or Sink?</h3>
+                <div class="activity-tags">
+                  <span class="tag level-easy">Easy</span>
+                  <span class="tag">Science</span>
+                  <span class="tag">Experiment</span>
+                </div>
+              </div>
+              <div class="activity-icon">💧</div>
+            </div>
+            <p>A safe water experiment where children predict, test, observe, and explain floating and sinking.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('floating-sinking')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('floating-sinking')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('floating-sinking')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="plant-watch" data-age="7-8 9-10 11-12" data-type="science islamic" data-search="science plant seed growth observation gratitude nature Allah">
+            <div class="activity-top">
+              <div>
+                <h3>Plant Growth Watch</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Nature</span>
+                  <span class="tag">Observation</span>
+                </div>
+              </div>
+              <div class="activity-icon">🌱</div>
+            </div>
+            <p>Children observe seed growth, record changes, and reflect on care, patience, and nature.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('plant-watch')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('plant-watch')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('plant-watch')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="arabic-letter-art" data-age="3-4 5-6 7-8" data-type="arabic creative" data-search="arabic letters alif baa taa art tracing sound recognition">
+            <div class="activity-top">
+              <div>
+                <h3>Arabic Letter Art</h3>
+                <div class="activity-tags">
+                  <span class="tag level-easy">Easy</span>
+                  <span class="tag">Arabic</span>
+                  <span class="tag">Letter Art</span>
+                </div>
+              </div>
+              <div class="activity-icon">ا</div>
+            </div>
+            <p>Children trace and decorate Arabic letters while practicing the letter name and sound.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('arabic-letter-art')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('arabic-letter-art')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('arabic-letter-art')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="color-arabic" data-age="5-6 7-8 9-10" data-type="arabic" data-search="arabic colors vocabulary red blue green yellow speaking">
+            <div class="activity-top">
+              <div>
+                <h3>Arabic Color Hunt</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Arabic</span>
+                  <span class="tag">Colors</span>
+                </div>
+              </div>
+              <div class="activity-icon">🌈</div>
+            </div>
+            <p>Children find objects by color and practice simple Arabic color vocabulary.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('color-arabic')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('color-arabic')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('color-arabic')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="gratitude-poster" data-age="7-8 9-10 11-12" data-type="creative islamic english" data-search="gratitude poster thankful islamic values writing drawing blessings">
+            <div class="activity-top">
+              <div>
+                <h3>Gratitude Poster</h3>
+                <div class="activity-tags">
+                  <span class="tag level-medium">Medium</span>
+                  <span class="tag">Values</span>
+                  <span class="tag">Writing</span>
+                </div>
+              </div>
+              <div class="activity-icon">🖼️</div>
+            </div>
+            <p>Children draw and write about blessings they are thankful for at home, school, and in nature.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('gratitude-poster')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('gratitude-poster')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('gratitude-poster')">Complete</button>
+            </div>
+          </article>
+
+          <article class="activity-card" data-id="memory-master" data-age="9-10 11-12" data-type="english math creative" data-search="memory master logic words numbers pattern concentration">
+            <div class="activity-top">
+              <div>
+                <h3>Memory Master</h3>
+                <div class="activity-tags">
+                  <span class="tag level-advanced">Advanced</span>
+                  <span class="tag">Memory</span>
+                  <span class="tag">Logic</span>
+                </div>
+              </div>
+              <div class="activity-icon">🧠</div>
+            </div>
+            <p>A focus-building challenge where children remember patterns, words, numbers, and sequences.</p>
+            <div class="activity-actions">
+              <button class="mini-btn" type="button" onclick="openActivity('memory-master')">Open</button>
+              <button class="mini-btn" type="button" onclick="speakActivity('memory-master')">Listen</button>
+              <button class="mini-btn" type="button" onclick="markActivityDone('memory-master')">Complete</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 4</div>
+          <h2>Daily learning challenges</h2>
+          <p>
+            Short challenges help children build confidence, speaking habits, creativity, focus,
+            and discipline without making learning feel heavy.
+          </p>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <h3>🎙️ Say It</h3>
+            <p>Explain your activity in three sentences: what you did, what you used, and what you learned.</p>
+            <button class="mini-btn" type="button" onclick="completeChallenge('say-it')">Complete</button>
+          </article>
+
+          <article class="challenge-card">
+            <h3>👀 Observe It</h3>
+            <p>Look carefully. Name one color, one shape, one action, and one new idea from your activity.</p>
+            <button class="mini-btn" type="button" onclick="completeChallenge('observe-it')">Complete</button>
+          </article>
+
+          <article class="challenge-card">
+            <h3>✍️ Write It</h3>
+            <p>Write one word, one sentence, or one reflection about what you completed today.</p>
+            <button class="mini-btn" type="button" onclick="completeChallenge('write-it')">Complete</button>
+          </article>
+
+          <article class="challenge-card">
+            <h3>⭐ Share It</h3>
+            <p>Show your work to a parent or teacher and explain your best part with confidence.</p>
+            <button class="mini-btn" type="button" onclick="completeChallenge('share-it')">Complete</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracker">
+      <div class="container">
+        <div class="panel">
+          <div class="section-heading">
+            <div class="section-kicker">Progress Tracker</div>
+            <h2>Stars, activities, challenges, quizzes, and creative wins</h2>
+            <p>
+              Progress is saved only on this browser/device using local storage. No login, child name,
+              email, or server data collection is required.
+            </p>
+          </div>
+
+          <div class="tracker-grid">
+            <div class="tracker-box">
+              <strong id="starsCount">0</strong>
+              <span>Stars Earned</span>
+            </div>
+            <div class="tracker-box">
+              <strong id="activitiesCount">0</strong>
+              <span>Activities Done</span>
+            </div>
+            <div class="tracker-box">
+              <strong id="challengeCount">0</strong>
+              <span>Challenges Done</span>
+            </div>
+            <div class="tracker-box">
+              <strong id="quizCount">0</strong>
+              <span>Quiz Wins</span>
+            </div>
+            <div class="tracker-box">
+              <strong id="creativeCount">0</strong>
+              <span>Creative Wins</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn-secondary" type="button" onclick="resetProgress()">Reset local progress</button>
+            <button class="btn btn-orange" type="button" onclick="celebrateProgress()">Celebrate Progress</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Activity Check</div>
+          <h2>Mini activity quiz</h2>
+          <p>Use this quick quiz to check whether the child understands learning through activity.</p>
+        </div>
+
+        <div class="quiz-box">
+          <div class="quiz-question">
+            <h3>Question 1</h3>
+            <p>What should you do before starting a hands-on activity?</p>
+            <div class="quiz-options">
+              <button type="button" onclick="checkAnswer(this, false)">Start quickly without reading</button>
+              <button type="button" onclick="checkAnswer(this, true)">Understand the steps and use safe materials</button>
+              <button type="button" onclick="checkAnswer(this, false)">Hide your work</button>
+              <button type="button" onclick="checkAnswer(this, false)">Skip the question part</button>
+            </div>
+          </div>
+
+          <div class="quiz-question">
+            <h3>Question 2</h3>
+            <p>What is the best way to finish an activity?</p>
+            <div class="quiz-options">
+              <button type="button" onclick="checkAnswer(this, false)">Leave everything messy</button>
+              <button type="button" onclick="checkAnswer(this, false)">Forget what you learned</button>
+              <button type="button" onclick="checkAnswer(this, true)">Explain what you made and what you learned</button>
+              <button type="button" onclick="checkAnswer(this, false)">Only collect stars</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creative-corner">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Creative Corner</div>
+          <h2>Quick creative prompts</h2>
+          <p>Use these tiny tasks when the child has only 5–10 minutes but still needs meaningful learning.</p>
+        </div>
+
+        <div class="creative-grid">
+          <div class="creative-card">
+            <strong>Draw It</strong>
+            <span>Draw today’s best idea.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Say It</strong>
+            <span>Say three new words aloud.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Count It</strong>
+            <span>Count ten objects near you.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Sort It</strong>
+            <span>Sort items by color or size.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Thank It</strong>
+            <span>Name three blessings.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Build It</strong>
+            <span>Make a shape with blocks.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Match It</strong>
+            <span>Match word to picture.</span>
+          </div>
+          <div class="creative-card">
+            <strong>Share It</strong>
+            <span>Explain your work kindly.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parents">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Parent & Teacher Zone</div>
+          <h2>How to use this activity hub</h2>
+          <p>
+            Activities should remain joyful, safe, and purposeful. Parents and teachers can use this
+            section to support learning without pressure.
+          </p>
+        </div>
+
+        <div class="parent-grid">
+          <article class="parent-card">
+            <h3>Before the Activity</h3>
+            <p>Prepare the child emotionally and practically.</p>
+            <ul>
+              <li>Choose one suitable activity</li>
+              <li>Check safe materials</li>
+              <li>Explain the goal simply</li>
+              <li>Set a short time limit</li>
+            </ul>
+          </article>
+
+          <article class="parent-card">
+            <h3>During the Activity</h3>
+            <p>Guide without taking over the child’s work.</p>
+            <ul>
+              <li>Ask open questions</li>
+              <li>Let the child try first</li>
+              <li>Praise effort and patience</li>
+              <li>Use calm correction</li>
+            </ul>
+          </article>
+
+          <article class="parent-card">
+            <h3>After the Activity</h3>
+            <p>Help the child reflect and express learning.</p>
+            <ul>
+              <li>Ask: What did you learn?</li>
+              <li>Ask: What was difficult?</li>
+              <li>Ask: What value did we practice?</li>
+              <li>Display or celebrate the work</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="routine-box">
+          <h3>🌙 20-Minute Daily Activity Routine</h3>
+          <p>Use this simple routine at home after school, before homework, or during weekend learning time.</p>
+          <ul>
+            <li><strong>2 minutes:</strong> Choose one activity and prepare materials.</li>
+            <li><strong>4 minutes:</strong> Read or listen to the instructions.</li>
+            <li><strong>8 minutes:</strong> Complete the main activity steps.</li>
+            <li><strong>3 minutes:</strong> Child explains what they made or solved.</li>
+            <li><strong>3 minutes:</strong> Parent praises effort and asks one reflection question.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="online-help">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Need guided activity-based learning?</h2>
+            <p>
+              If your child needs help with English speaking, phonics, math basics,
+              science observation, Arabic letters, Islamic values, or confidence-building,
+              online classes can support this activity hub.
+            </p>
+          </div>
+          <div>
+            <a class="btn" href="../online-classes.html" onclick="playSound('sparkle')">Book Online Classes →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>🎨 Al-Hayat Kids Learning Hub</h3>
+        <p>
+          A joyful Islamic and academic learning platform where children learn, read,
+          play, explore, and grow with safe educational content.
+        </p>
+      </div>
+
+      <div>
+        <h4>Subjects</h4>
+        <ul>
+          <li><a href="../subjects/english.html">English</a></li>
+          <li><a href="../subjects/math.html">Math</a></li>
+          <li><a href="../subjects/science.html">Science</a></li>
+          <li><a href="../subjects/arabic-for-kids.html">Arabic for Kids</a></li>
+          <li><a href="../subjects/islamic-studies.html">Islamic Studies</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Activity Sections</h4>
+        <ul>
+          <li><a href="#activity-shelf">Activity Shelf</a></li>
+          <li><a href="#challenges">Daily Challenges</a></li>
+          <li><a href="#tracker">Progress Tracker</a></li>
+          <li><a href="#quiz">Mini Quiz</a></li>
+          <li><a href="#creative-corner">Creative Corner</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Parent & Trust</h4>
+        <ul>
+          <li><a href="#parents">Parent Guide</a></li>
+          <li><a href="../reading-library/index.html">Reading Library</a></li>
+          <li><a href="../online-classes.html">Online Classes</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="modal" id="activityModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" type="button" onclick="closeActivity()">Close ✕</button>
+      <div class="activity-content" id="activityContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const activities = {
+      "kindness-jar": {
+        title: "Kindness Jar",
+        age: "Ages 5–10",
+        level: "Easy",
+        category: "Islamic Values + Creativity",
+        purpose: "To help children notice and practice small good deeds at home and school.",
+        materials: ["Small jar or box", "Small paper slips", "Pencil or colors", "Stickers if available"],
+        steps: [
+          "Decorate the jar or box with stars, hearts, flowers, or your own design.",
+          "Write one kind action on each paper slip, such as help, share, smile, thank, or forgive.",
+          "Pick one slip every day and complete that good deed.",
+          "After completing it, put the slip back in the jar and earn a star.",
+          "At the end of the week, discuss which kindness action felt best."
+        ],
+        questions: ["Which kind action was easiest?", "Which action helped someone?", "How did you feel after doing it?"],
+        reflection: "Small good deeds can become strong habits when we repeat them with sincerity."
+      },
+
+      "dua-match": {
+        title: "Dua Match Cards",
+        age: "Ages 5–10",
+        level: "Medium",
+        category: "Islamic Routine",
+        purpose: "To help children connect daily moments with remembrance and good manners.",
+        materials: ["Paper cards", "Pencil", "Colors", "A parent or teacher to guide pronunciation"],
+        steps: [
+          "Make two sets of cards. One set has daily actions, such as eating, sleeping, waking, and studying.",
+          "The second set has short remembrance prompts or parent-guided dua reminders.",
+          "Place all cards face down.",
+          "Turn two cards at a time and try to match the action with the correct reminder.",
+          "Say the daily action aloud and discuss why remembering Allah matters in daily life."
+        ],
+        questions: ["Which daily action do you remember most easily?", "Why should we begin good actions with remembrance?", "How can reminders improve manners?"],
+        reflection: "Daily routines become more meaningful when children connect them with gratitude and good manners."
+      },
+
+      "letter-treasure": {
+        title: "Letter Treasure Hunt",
+        age: "Ages 3–8",
+        level: "Easy",
+        category: "English + Phonics",
+        purpose: "To build letter recognition, vocabulary, pronunciation, and observation skills.",
+        materials: ["One chosen letter", "Objects at home", "Paper and pencil"],
+        steps: [
+          "Choose one letter, such as B.",
+          "Look around the room for objects that begin with the sound of that letter.",
+          "Say each word clearly: book, bag, ball, bottle.",
+          "Draw or write the objects you found.",
+          "Say one sentence using your favorite word."
+        ],
+        questions: ["Which object did you find first?", "Can you say the sound clearly?", "Can you make a sentence with the word?"],
+        reflection: "Children learn letters better when they connect sounds with real objects."
+      },
+
+      "story-cube": {
+        title: "Story Cube Challenge",
+        age: "Ages 7–12",
+        level: "Medium",
+        category: "English Speaking + Writing",
+        purpose: "To develop imagination, sequencing, confidence, and storytelling skills.",
+        materials: ["Three paper cubes or folded slips", "Pencil", "Timer if available"],
+        steps: [
+          "Write characters on one cube or paper set, such as boy, bird, teacher, farmer.",
+          "Write places on the second set, such as garden, school, forest, market.",
+          "Write problems on the third set, such as lost key, rainy day, broken toy, hungry animal.",
+          "Pick one from each set.",
+          "Create a short story with a beginning, middle, and ending.",
+          "Tell the story aloud, then write 3–5 lines."
+        ],
+        questions: ["Who was the main character?", "What was the problem?", "How was the problem solved?"],
+        reflection: "Good stories become clear when children organize character, place, problem, and solution."
+      },
+
+      "counting-shop": {
+        title: "Counting Shop",
+        age: "Ages 3–8",
+        level: "Easy",
+        category: "Math",
+        purpose: "To practice counting, comparison, simple addition, and real-life number sense.",
+        materials: ["Small toys or safe household items", "Paper price tags", "Pretend coins or counters"],
+        steps: [
+          "Set up a small pretend shop with 5–10 items.",
+          "Add simple price tags, such as 1, 2, 3, or 5.",
+          "Ask the child to buy two items and count the total.",
+          "Compare which item costs more and which costs less.",
+          "Let the child become the shopkeeper and explain the prices."
+        ],
+        questions: ["How many items did you buy?", "Which item costs more?", "What is the total of two prices?"],
+        reflection: "Math becomes easier when children use numbers in real-life play."
+      },
+
+      "shape-mosque": {
+        title: "Shape Mosque Art",
+        age: "Ages 5–10",
+        level: "Medium",
+        category: "Geometry + Islamic Art",
+        purpose: "To combine shape recognition, creativity, and appreciation of Islamic visual patterns.",
+        materials: ["Paper", "Pencil", "Colors", "Cut-out shapes if available"],
+        steps: [
+          "Draw or cut out rectangles, squares, triangles, circles, and arches.",
+          "Use the shapes to design a simple mosque picture.",
+          "Name each shape used in the picture.",
+          "Count how many shapes you used.",
+          "Color the design neatly and explain it to a parent."
+        ],
+        questions: ["Which shapes did you use?", "How many circles are in your design?", "Which part is your favorite?"],
+        reflection: "Art can help children see mathematics in beautiful buildings and patterns."
+      },
+
+      "floating-sinking": {
+        title: "Float or Sink?",
+        age: "Ages 5–10",
+        level: "Easy",
+        category: "Science Experiment",
+        purpose: "To develop prediction, observation, comparison, and early scientific thinking.",
+        materials: ["Bowl of water", "Spoon", "Leaf", "Small stone", "Bottle cap", "Pencil", "Towel"],
+        steps: [
+          "Collect safe small objects.",
+          "Before placing each object in water, predict: float or sink?",
+          "Test each object one by one.",
+          "Sort objects into two groups: floating and sinking.",
+          "Discuss what you observed."
+        ],
+        questions: ["Which object floated?", "Which object sank?", "Was your prediction correct?"],
+        reflection: "Science begins when children predict, test, observe, and explain."
+      },
+
+      "plant-watch": {
+        title: "Plant Growth Watch",
+        age: "Ages 7–12",
+        level: "Medium",
+        category: "Science + Patience",
+        purpose: "To build observation habits, patience, responsibility, and appreciation of nature.",
+        materials: ["Seed or bean", "Small pot or cup", "Soil or cotton", "Water", "Notebook"],
+        steps: [
+          "Plant a seed in soil or place a bean on wet cotton.",
+          "Keep it near light and give a small amount of water.",
+          "Observe it daily for one week or more.",
+          "Draw or write what changes you see.",
+          "Discuss how patience and care help growth."
+        ],
+        questions: ["What changed first?", "What does a plant need?", "How is learning like plant growth?"],
+        reflection: "Growth takes time, care, patience, and regular attention."
+      },
+
+      "arabic-letter-art": {
+        title: "Arabic Letter Art",
+        age: "Ages 3–8",
+        level: "Easy",
+        category: "Arabic + Creativity",
+        purpose: "To introduce Arabic letter recognition through tracing, decoration, and sound practice.",
+        materials: ["Paper", "Pencil", "Colors", "Arabic letter sample"],
+        steps: [
+          "Choose one Arabic letter, such as Alif.",
+          "Trace the letter slowly three times.",
+          "Say the letter name clearly.",
+          "Decorate the letter with dots, lines, flowers, or patterns.",
+          "Show your letter art and repeat the sound."
+        ],
+        questions: ["What is the letter name?", "Can you trace it again?", "Which color did you use?"],
+        reflection: "Arabic letters become friendly when children learn them through art and sound."
+      },
+
+      "color-arabic": {
+        title: "Arabic Color Hunt",
+        age: "Ages 5–10",
+        level: "Medium",
+        category: "Arabic Vocabulary",
+        purpose: "To practice color recognition and simple Arabic vocabulary through movement.",
+        materials: ["Colored objects", "Color cards", "Parent pronunciation support"],
+        steps: [
+          "Choose 3–5 colors to practice.",
+          "Find one object for each color around the room.",
+          "Say the color name with parent support.",
+          "Place objects in groups by color.",
+          "Make a simple sentence: This is red. This is blue."
+        ],
+        questions: ["Which color did you find most?", "Can you say the color again?", "What object has that color?"],
+        reflection: "Children remember vocabulary better when they move, find, touch, and say."
+      },
+
+      "gratitude-poster": {
+        title: "Gratitude Poster",
+        age: "Ages 7–12",
+        level: "Medium",
+        category: "Islamic Values + Writing",
+        purpose: "To help children notice blessings and express thankfulness through drawing and writing.",
+        materials: ["Paper", "Colors", "Pencil", "Optional stickers"],
+        steps: [
+          "Write the title: Things I Am Thankful For.",
+          "Draw three sections: family, learning, and nature.",
+          "Add pictures or words for blessings in each section.",
+          "Write one sentence: I am thankful for...",
+          "Present the poster to a parent or sibling."
+        ],
+        questions: ["Which blessing did you draw first?", "Why are you thankful for it?", "How can thankful children behave better?"],
+        reflection: "Gratitude helps children see daily blessings and develop a positive heart."
+      },
+
+      "memory-master": {
+        title: "Memory Master",
+        age: "Ages 9–12",
+        level: "Advanced",
+        category: "Memory + Logic",
+        purpose: "To improve focus, attention, sequencing, and mental confidence.",
+        materials: ["Paper", "Pencil", "Timer", "Word or number list"],
+        steps: [
+          "Write five words or numbers in a sequence.",
+          "Look at the list for 20 seconds.",
+          "Cover the list.",
+          "Write the sequence from memory.",
+          "Increase the challenge by adding more items."
+        ],
+        questions: ["How many items did you remember?", "Which strategy helped you?", "Can you improve on the second try?"],
+        reflection: "Memory improves with focus, repetition, and smart strategies."
+      }
+    };
+
+    const progressKey = "alhayatActivitiesProgress";
+    let activeAge = "all";
+    let activeType = "all";
+    let soundsEnabled = localStorage.getItem("alhayatActivitySounds") !== "off";
+    let audioContext;
+
+    function getProgress() {
+      const saved = localStorage.getItem(progressKey);
+      if (!saved) {
+        return {
+          stars: 0,
+          activities: [],
+          challenges: [],
+          quizzes: 0,
+          creative: 0
+        };
+      }
+
+      try {
+        return JSON.parse(saved);
+      } catch {
+        return {
+          stars: 0,
+          activities: [],
+          challenges: [],
+          quizzes: 0,
+          creative: 0
+        };
+      }
+    }
+
+    function saveProgress(progress) {
+      localStorage.setItem(progressKey, JSON.stringify(progress));
+      updateTracker();
+    }
+
+    function updateTracker() {
+      const progress = getProgress();
+
+      document.getElementById("starsCount").textContent = progress.stars || 0;
+      document.getElementById("activitiesCount").textContent = progress.activities.length || 0;
+      document.getElementById("challengeCount").textContent = progress.challenges.length || 0;
+      document.getElementById("quizCount").textContent = progress.quizzes || 0;
+      document.getElementById("creativeCount").textContent = progress.creative || 0;
+
+      document.querySelectorAll(".activity-card").forEach(card => {
+        const activityId = card.dataset.id;
+        const button = card.querySelector(".activity-actions button:nth-child(3)");
+        if (progress.activities.includes(activityId)) {
+          button.textContent = "✅ Done";
+          button.classList.add("done");
+        } else {
+          button.textContent = "Complete";
+          button.classList.remove("done");
+        }
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2600);
+    }
+
+    function getAudioContext() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      return audioContext;
+    }
+
+    function tone(frequency, duration, type, gainValue, delay = 0) {
+      if (!soundsEnabled) return;
+
+      try {
+        const ctx = getAudioContext();
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        oscillator.type = type || "sine";
+        oscillator.frequency.setValueAtTime(frequency, ctx.currentTime + delay);
+
+        gain.gain.setValueAtTime(0.0001, ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(gainValue || 0.06, ctx.currentTime + delay + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + duration);
+
+        oscillator.connect(gain);
+        gain.connect(ctx.destination);
+
+        oscillator.start(ctx.currentTime + delay);
+        oscillator.stop(ctx.currentTime + delay + duration + 0.02);
+      } catch (error) {
+        // Sound is optional. Some browsers block it until first user interaction.
+      }
+    }
+
+    function playSound(kind) {
+      if (!soundsEnabled) return;
+
+      if (kind === "tap") {
+        tone(520, 0.08, "triangle", 0.04);
+      } else if (kind === "pop") {
+        tone(660, 0.08, "sine", 0.05);
+        tone(880, 0.09, "sine", 0.04, 0.08);
+      } else if (kind === "sparkle") {
+        tone(720, 0.07, "sine", 0.045);
+        tone(940, 0.08, "sine", 0.04, 0.08);
+        tone(1180, 0.1, "sine", 0.035, 0.16);
+      } else if (kind === "success") {
+        tone(523, 0.1, "triangle", 0.055);
+        tone(659, 0.1, "triangle", 0.055, 0.09);
+        tone(784, 0.15, "triangle", 0.06, 0.18);
+      } else if (kind === "wrong") {
+        tone(220, 0.14, "sawtooth", 0.035);
+        tone(180, 0.14, "sawtooth", 0.03, 0.12);
+      } else {
+        tone(600, 0.08, "sine", 0.04);
+      }
+    }
+
+    function updateSoundToggle() {
+      const button = document.getElementById("soundToggle");
+      button.textContent = soundsEnabled ? "🔊 Sounds On" : "🔇 Sounds Off";
+    }
+
+    function makeConfetti(count = 32) {
+      const colors = ["#2563eb", "#14b8a6", "#f97316", "#ec4899", "#8b5cf6", "#f59e0b", "#22c55e"];
+
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.animationDelay = Math.random() * 0.35 + "s";
+        piece.style.transform = `rotate(${Math.random() * 180}deg)`;
+        document.body.appendChild(piece);
+
+        setTimeout(() => {
+          piece.remove();
+        }, 2100);
+      }
+    }
+
+    function openActivity(id) {
+      const activity = activities[id];
+      if (!activity) return;
+
+      playSound("pop");
+
+      const materialList = activity.materials.map(item => `<li>${item}</li>`).join("");
+      const stepList = activity.steps.map(item => `<li>${item}</li>`).join("");
+      const questionList = activity.questions.map(item => `<li>${item}</li>`).join("");
+
+      document.getElementById("activityContent").innerHTML = `
+        <h2 id="modalTitle">${activity.title}</h2>
+        <div class="meta">
+          <span class="tag">${activity.age}</span>
+          <span class="tag">${activity.level}</span>
+          <span class="tag">${activity.category}</span>
+        </div>
+
+        <div class="activity-box">
+          <strong>Purpose:</strong> ${activity.purpose}
+        </div>
+
+        <h3>Materials</h3>
+        <ul>${materialList}</ul>
+
+        <h3>Steps</h3>
+        <ol>${stepList}</ol>
+
+        <h3>Parent / Teacher Questions</h3>
+        <ul>${questionList}</ul>
+
+        <div class="activity-box">
+          <strong>Reflection:</strong> ${activity.reflection}
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;">
+          <button class="btn btn-primary" type="button" onclick="speakActivity('${id}')">🔊 Listen</button>
+          <button class="btn btn-green" type="button" onclick="markActivityDone('${id}')">⭐ Mark Complete</button>
+          <button class="btn btn-secondary" type="button" onclick="stopSpeaking()">Stop Sound</button>
+        </div>
+      `;
+
+      document.getElementById("activityModal").classList.add("open");
+    }
+
+    function closeActivity() {
+      document.getElementById("activityModal").classList.remove("open");
+      stopSpeaking();
+    }
+
+    function speakText(text) {
+      playSound("tap");
+
+      if (!("speechSynthesis" in window)) {
+        showToast("Audio reading is not supported in this browser.");
+        return;
+      }
+
+      stopSpeaking();
+
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = "en-US";
+      speech.rate = 0.88;
+      speech.pitch = 1.06;
+      window.speechSynthesis.speak(speech);
+    }
+
+    function speakActivity(id) {
+      const activity = activities[id];
+      if (!activity) return;
+
+      const fullText = `${activity.title}. Purpose: ${activity.purpose}. Materials: ${activity.materials.join(", ")}. Steps: ${activity.steps.join(" ")} Reflection: ${activity.reflection}`;
+      speakText(fullText);
+    }
+
+    function stopSpeaking() {
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function markActivityDone(id) {
+      const progress = getProgress();
+
+      if (!progress.activities.includes(id)) {
+        progress.activities.push(id);
+        progress.stars += 4;
+
+        if (activities[id] && activities[id].category.toLowerCase().includes("creative")) {
+          progress.creative += 1;
+        }
+
+        playSound("success");
+        makeConfetti(26);
+        showToast("Great job! Activity complete. You earned 4 stars! ⭐");
+      } else {
+        playSound("tap");
+        showToast("This activity is already complete. Try another one! 🌟");
+      }
+
+      saveProgress(progress);
+      updateTracker();
+    }
+
+    function completeChallenge(challenge) {
+      const progress = getProgress();
+
+      if (!progress.challenges.includes(challenge)) {
+        progress.challenges.push(challenge);
+        progress.stars += 2;
+        playSound("success");
+        makeConfetti(18);
+        showToast("Challenge complete! You earned 2 stars! 🎉");
+      } else {
+        playSound("tap");
+        showToast("Challenge already completed. Well done! ✅");
+      }
+
+      saveProgress(progress);
+    }
+
+    function checkAnswer(button, isCorrect) {
+      const group = button.parentElement;
+      const buttons = group.querySelectorAll("button");
+
+      buttons.forEach(btn => {
+        btn.disabled = true;
+      });
+
+      if (isCorrect) {
+        button.classList.add("correct");
+
+        const progress = getProgress();
+        progress.quizzes += 1;
+        progress.stars += 2;
+        saveProgress(progress);
+
+        playSound("success");
+        makeConfetti(18);
+        showToast("Correct answer! You earned 2 stars! ⭐");
+      } else {
+        button.classList.add("wrong");
+        playSound("wrong");
+        showToast("Good try! Read carefully and try the next question.");
+      }
+    }
+
+    function resetProgress() {
+      const confirmReset = confirm("Reset activity progress saved on this browser?");
+      if (!confirmReset) return;
+
+      localStorage.removeItem(progressKey);
+      updateTracker();
+      playSound("tap");
+      showToast("Progress reset on this device.");
+    }
+
+    function celebrateProgress() {
+      const progress = getProgress();
+      if ((progress.stars || 0) === 0) {
+        playSound("tap");
+        showToast("Complete an activity first, then celebrate your progress! 🌟");
+        return;
+      }
+
+      playSound("success");
+      makeConfetti(45);
+      showToast(`Amazing! You have earned ${progress.stars} stars. Keep learning! 🚀`);
+    }
+
+    function surpriseReward() {
+      const rewards = [
+        "You are a super learner! 🌟",
+        "Your creativity is growing! 🎨",
+        "Kindness and learning look beautiful together! 💚",
+        "Small steps become big success! 🚀",
+        "Today is a great day to learn something new! ✨"
+      ];
+      const reward = rewards[Math.floor(Math.random() * rewards.length)];
+      playSound("sparkle");
+      makeConfetti(24);
+      showToast(reward);
+    }
+
+    function filterActivities() {
+      const searchValue = document.getElementById("activitySearch").value.toLowerCase().trim();
+      const cards = document.querySelectorAll(".activity-card");
+
+      cards.forEach(card => {
+        const ageMatch = activeAge === "all" || card.dataset.age.includes(activeAge);
+        const typeMatch = activeType === "all" || card.dataset.type.includes(activeType);
+        const searchText = `${card.textContent} ${card.dataset.search}`.toLowerCase();
+        const searchMatch = !searchValue || searchText.includes(searchValue);
+
+        card.classList.toggle("hidden", !(ageMatch && typeMatch && searchMatch));
+      });
+    }
+
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("show");
+      playSound("tap");
+    });
+
+    document.getElementById("soundToggle").addEventListener("click", () => {
+      soundsEnabled = !soundsEnabled;
+      localStorage.setItem("alhayatActivitySounds", soundsEnabled ? "on" : "off");
+      updateSoundToggle();
+      if (soundsEnabled) {
+        playSound("sparkle");
+        showToast("Sounds are on. Click buttons to hear activity sounds! 🔊");
+      } else {
+        showToast("Sounds are off. You can turn them on anytime. 🔇");
+      }
+    });
+
+    document.querySelectorAll("[data-age]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-age]").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        activeAge = button.dataset.age;
+        filterActivities();
+        playSound("tap");
+      });
+    });
+
+    document.querySelectorAll("[data-type]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-type]").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        activeType = button.dataset.type;
+        filterActivities();
+        playSound("tap");
+      });
+    });
+
+    document.querySelectorAll("a, button, .activity-card, .path-card, .creative-card, .stat-card").forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        if (window.matchMedia("(hover: hover)").matches) {
+          playSound("tap");
+        }
+      }, { passive: true });
+    });
+
+    document.getElementById("activitySearch").addEventListener("input", filterActivities);
+
+    document.getElementById("activityModal").addEventListener("click", event => {
+      if (event.target.id === "activityModal") {
+        closeActivity();
+      }
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        closeActivity();
+      }
+    });
+
+    updateSoundToggle();
+    updateTracker();
+  </script>
+</body>
+</html>
