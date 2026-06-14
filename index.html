@@ -1,426 +1,2368 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Al-Hayat Kids Learning Hub | Quran, Arabic & Islamic Learning for Children</title>
-    <meta name="description" content="A warm, parent-trusted learning hub for children to build Quran, Arabic, Islamic studies, and early learning confidence through structured, child-friendly programs.">
-    <meta name="theme-color" content="#0f766e">
-    <meta property="og:title" content="Al-Hayat Kids Learning Hub">
-    <meta property="og:description" content="Child-friendly Quran, Arabic, Islamic studies, and early learning programs for Muslim families.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/hero-learning-hub.png">
-    <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/">
-    <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Al-Hayat Kids Learning Hub",
-        "description": "Quran, Arabic, Islamic studies, and early learning programs for children.",
-        "areaServed": ["Pakistan", "International Muslim families"],
-        "url": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
-        "sameAs": []
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Al-Hayat Kids Learning Hub | Learn • Explore • Grow</title>
+  <meta name="description" content="Al-Hayat Kids Learning Hub is a joyful global learning platform for children with Islamic Studies, Arabic, English, Math, Science, stories, quizzes, worksheets, videos, and online classes with Dr. Imran Hayat." />
+  <meta name="keywords" content="Al-Hayat Kids Learning Hub, kids learning website, Islamic learning for kids, Arabic for kids, English for kids, kids worksheets, kids quizzes, online classes with Dr Imran Hayat" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b7a34" />
+  <meta name="google-site-verification" content="Rx_9_FzqQaFZV240R-BGO37LMANtmEbQdejzFh3ZuYc" />
+
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/" />
+
+  <meta property="og:title" content="Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/" />
+
+  <style>
+    :root {
+      --green: #0b8f3a;
+      --green-2: #0a6f32;
+      --green-3: #064f27;
+      --light-green: #e7f8ed;
+      --blue: #1d6eea;
+      --blue-2: #0b4cba;
+      --light-blue: #e7f2ff;
+      --purple: #7c3aed;
+      --purple-2: #5b21b6;
+      --light-purple: #f1eaff;
+      --orange: #ff8a00;
+      --orange-2: #d97706;
+      --light-orange: #fff3df;
+      --pink: #ef5da8;
+      --light-pink: #fff0f7;
+      --cyan: #05b6c7;
+      --light-cyan: #e9fbfd;
+      --yellow: #ffc928;
+      --light-yellow: #fff8df;
+      --red: #ef4444;
+      --ink: #13233a;
+      --text: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --bg: #f7fbff;
+      --white: #ffffff;
+      --shadow: 0 16px 42px rgba(15, 23, 42, 0.12);
+      --shadow-soft: 0 10px 26px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+      --radius-lg: 30px;
+      --max: 1210px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(100% - 34px, var(--max));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -100px;
+      z-index: 9999;
+      background: var(--ink);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    /* ==============================
+       TOP HEADER
+       ============================== */
+
+    .top-header {
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      backdrop-filter: blur(16px);
+    }
+
+    .top-row {
+      min-height: 88px;
+      display: grid;
+      grid-template-columns: 295px 1fr 320px;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 50% 15%, #ffdd4a 0 8px, transparent 9px),
+        linear-gradient(135deg, #eafaf0 0%, #e8f1ff 100%);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      flex: 0 0 auto;
+    }
+
+    .brand-icon .book-shape {
+      width: 42px;
+      height: 35px;
+      border-radius: 5px 5px 12px 12px;
+      background: linear-gradient(90deg, #0b8f3a 0 48%, #1d6eea 52% 100%);
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .brand-icon .book-shape::before,
+    .brand-icon .book-shape::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 9px;
+      height: 24px;
+      border-radius: 999px;
+      background: #ff8a00;
+      transform-origin: bottom;
+    }
+
+    .brand-icon .book-shape::before {
+      left: 8px;
+      transform: rotate(-30deg);
+    }
+
+    .brand-icon .book-shape::after {
+      right: 8px;
+      background: #7c3aed;
+      transform: rotate(30deg);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.88rem;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .brand-text .kids {
+      color: #ff6b00;
+    }
+
+    .brand-text .hub {
+      color: var(--purple);
+    }
+
+    .brand-text span {
+      display: block;
+      color: #65758b;
+      font-size: 0.94rem;
+      font-weight: 650;
+      margin-top: 3px;
+    }
+
+    .global-search {
+      display: grid;
+      grid-template-columns: 1fr 54px;
+      align-items: center;
+      max-width: 520px;
+      width: 100%;
+      justify-self: center;
+      background: white;
+      border: 1px solid #cfd8e3;
+      border-radius: 12px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+    }
+
+    .global-search input {
+      border: 0;
+      outline: 0;
+      height: 52px;
+      padding: 0 18px;
+      color: var(--ink);
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .global-search button {
+      height: 52px;
+      border: 0;
+      background: linear-gradient(135deg, var(--green), var(--green-2));
+      color: white;
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+
+    .quick-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .quick-action {
+      min-width: 64px;
+      display: grid;
+      justify-items: center;
+      gap: 4px;
+      font-weight: 760;
+      color: var(--ink);
+      font-size: 0.84rem;
+    }
+
+    .quick-action .qa-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 1.32rem;
+      background: #f1f5f9;
+    }
+
+    .quick-action:nth-child(1) .qa-icon { background: #e7f2ff; color: var(--blue); }
+    .quick-action:nth-child(2) .qa-icon { background: #fff4d2; color: #f59e0b; }
+    .quick-action:nth-child(3) .qa-icon { background: #eef2ff; color: #4f46e5; }
+
+    .mobile-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: 0;
+      border-radius: 15px;
+      background: var(--light-green);
+      color: var(--green-2);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ==============================
+       NAVIGATION BAR
+       ============================== */
+
+    .main-nav-wrap {
+      background: linear-gradient(90deg, #08722f, #0a8a3a, #08722f);
+      box-shadow: 0 8px 22px rgba(3, 84, 35, 0.20);
+      position: sticky;
+      top: 88px;
+      z-index: 250;
+    }
+
+    .main-nav {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .home-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 0;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.65rem;
+      background: rgba(255, 255, 255, 0.08);
+      flex: 0 0 auto;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      flex: 1;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 50px;
+      padding: 0 13px;
+      color: white;
+      font-size: 0.92rem;
+      font-weight: 820;
+      white-space: nowrap;
+      transition: 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .nav-arrow {
+      font-size: 0.72rem;
+      opacity: 0.9;
+    }
+
+    .sub-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 218px;
+      list-style: none;
+      background: white;
+      border: 1px solid #dbe5ef;
+      border-radius: 0 0 18px 18px;
+      box-shadow: var(--shadow);
+      padding: 10px;
+      display: none;
+      z-index: 400;
+    }
+
+    .nav-item:hover .sub-menu,
+    .nav-item:focus-within .sub-menu {
+      display: grid;
+    }
+
+    .sub-menu a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 750;
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .sub-menu a:hover,
+    .sub-menu a:focus {
+      background: var(--light-green);
+      color: var(--green-2);
+    }
+
+    .nav-class-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--yellow);
+      color: #1f2937;
+      font-weight: 950;
+      min-height: 40px;
+      padding: 0 18px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(250, 204, 21, 0.25);
+      white-space: nowrap;
+    }
+
+    /* ==============================
+       HERO
+       ============================== */
+
+    .hero {
+      position: relative;
+      min-height: 418px;
+      background:
+        radial-gradient(circle at 10% 80%, rgba(255, 201, 40, 0.35) 0 4rem, transparent 4.1rem),
+        radial-gradient(circle at 30% 8%, rgba(255, 255, 255, 0.85) 0 4.5rem, transparent 4.6rem),
+        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.78) 0 3.6rem, transparent 3.7rem),
+        linear-gradient(110deg, #c8f0ff 0%, #e5f7ff 45%, #d9f0ff 100%);
+      overflow: hidden;
+      border-bottom: 1px solid rgba(186, 230, 253, 0.8);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: -6%;
+      right: -6%;
+      height: 95px;
+      bottom: -35px;
+      background:
+        radial-gradient(circle at 5% 50%, #fff 0 48px, transparent 49px),
+        radial-gradient(circle at 19% 65%, #fff 0 62px, transparent 63px),
+        radial-gradient(circle at 39% 45%, #fff 0 54px, transparent 55px),
+        radial-gradient(circle at 60% 58%, #fff 0 62px, transparent 63px),
+        radial-gradient(circle at 78% 46%, #fff 0 55px, transparent 56px),
+        radial-gradient(circle at 95% 55%, #fff 0 65px, transparent 66px);
+      opacity: 0.98;
+    }
+
+    .hero-grid {
+      min-height: 418px;
+      display: grid;
+      grid-template-columns: 0.94fr 1.06fr;
+      gap: 22px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-copy {
+      padding: 38px 0 70px 72px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-copy .welcome {
+      display: block;
+      color: #0f172a;
+      font-size: clamp(1.35rem, 2.1vw, 2.1rem);
+      font-weight: 850;
+      letter-spacing: -0.04em;
+      margin-bottom: 2px;
+    }
+
+    .hero-title {
+      color: var(--green);
+      font-size: clamp(3.8rem, 7vw, 6.5rem);
+      font-weight: 1000;
+      letter-spacing: -0.075em;
+      line-height: 0.86;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      display: block;
+      font-size: 0.62em;
+      letter-spacing: -0.055em;
+      background: linear-gradient(90deg, #ff6b00, #0b67d8, #8b35d6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-top: 8px;
+    }
+
+    .hero-lead {
+      max-width: 485px;
+      color: #17324d;
+      font-weight: 650;
+      font-size: 1.08rem;
+      margin-bottom: 22px;
+    }
+
+    .learning-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 0 0 22px;
+    }
+
+    .learning-tags span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #24364e;
+      font-weight: 700;
+      font-size: 0.94rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      border-radius: 10px;
+      border: 0;
+      padding: 0 22px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: 0.2s ease;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-2px);
+      filter: saturate(1.08);
+    }
+
+    .btn-green {
+      background: linear-gradient(135deg, var(--green), var(--green-2));
+      color: white;
+    }
+
+    .btn-blue {
+      background: linear-gradient(135deg, #1d6eea, #0b4cba);
+      color: white;
+    }
+
+    .btn-purple {
+      background: linear-gradient(135deg, var(--purple), var(--purple-2));
+      color: white;
+    }
+
+    .btn-orange {
+      background: linear-gradient(135deg, var(--orange), var(--orange-2));
+      color: white;
+    }
+
+    .btn-yellow {
+      background: linear-gradient(135deg, #ffd95c, #f59e0b);
+      color: #1f2937;
+    }
+
+    .hero-dots {
+      display: flex;
+      gap: 8px;
+      position: absolute;
+      left: 50%;
+      bottom: 38px;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+    .hero-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.32);
+    }
+
+    .hero-dots span:first-child {
+      width: 22px;
+      border-radius: 999px;
+      background: var(--green);
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 380px;
+      display: grid;
+      place-items: end center;
+      padding-top: 20px;
+      padding-bottom: 48px;
+    }
+
+    .sky-object {
+      position: absolute;
+      font-size: 2.3rem;
+      filter: drop-shadow(0 8px 8px rgba(15, 23, 42, 0.12));
+      animation: float 5.8s ease-in-out infinite;
+    }
+
+    .star-1 { left: 5%; top: 15%; color: #ffc928; }
+    .star-2 { left: 39%; top: 10%; font-size: 1.8rem; color: #ffc928; animation-delay: 0.5s; }
+    .star-3 { right: 2%; top: 42%; color: #ffc928; animation-delay: 1s; }
+    .planet { left: 51%; top: 5%; font-size: 4.8rem; animation-delay: 0.8s; }
+    .globe { left: 18%; top: 37%; font-size: 5.6rem; animation-delay: 1.2s; }
+    .bulb { right: 9%; top: 12%; font-size: 4.7rem; animation-delay: 1.7s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(3deg); }
+    }
+
+    .kids-scene {
+      width: min(620px, 100%);
+      min-height: 270px;
+      position: relative;
+      display: grid;
+      place-items: end center;
+    }
+
+    .desk {
+      position: absolute;
+      bottom: 0;
+      width: 520px;
+      height: 40px;
+      border-radius: 40px;
+      background: linear-gradient(90deg, rgba(255, 201, 40, 0.3), rgba(255, 138, 0, 0.25));
+      filter: blur(1px);
+      opacity: 0.7;
+    }
+
+    .book-stack {
+      position: absolute;
+      left: 42px;
+      bottom: 34px;
+      width: 210px;
+      height: 116px;
+    }
+
+    .stack-book {
+      position: absolute;
+      left: 0;
+      height: 31px;
+      border-radius: 9px;
+      color: white;
+      font-weight: 1000;
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.18);
+    }
+
+    .stack-book:nth-child(1) { bottom: 0; width: 210px; background: #ef5da8; }
+    .stack-book:nth-child(2) { bottom: 29px; width: 185px; left: 12px; background: #1d6eea; }
+    .stack-book:nth-child(3) { bottom: 58px; width: 160px; left: 25px; background: #0b8f3a; }
+
+    .children {
+      position: absolute;
+      bottom: 44px;
+      right: 118px;
+      width: 320px;
+      height: 230px;
+    }
+
+    .child {
+      position: absolute;
+      bottom: 0;
+      width: 150px;
+      height: 215px;
+    }
+
+    .child.boy { left: 0; }
+    .child.girl { right: 0; }
+
+    .head {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: #ffd3a5;
+      border: 5px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.16);
+      display: grid;
+      place-items: center;
+      font-size: 2.2rem;
+    }
+
+    .girl .head {
+      background: #ffc98d;
+      box-shadow: 0 0 0 18px #fbbf24, 0 10px 18px rgba(15, 23, 42, 0.16);
+    }
+
+    .boy .head::after,
+    .girl .head::after {
+      content: "😊";
+    }
+
+    .body {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 80px;
+      width: 112px;
+      height: 130px;
+      border-radius: 38px 38px 22px 22px;
+      background: #1fb55b;
+      box-shadow: 0 14px 20px rgba(15, 23, 42, 0.16);
+    }
+
+    .girl .body {
+      background: #ff7a00;
+    }
+
+    .open-book {
+      position: absolute;
+      left: 38px;
+      bottom: 28px;
+      width: 90px;
+      height: 62px;
+      border-radius: 10px;
+      background: white;
+      transform: rotate(-4deg);
+      box-shadow: 0 12px 18px rgba(15, 23, 42, 0.15);
+    }
+
+    .girl .open-book {
+      left: 22px;
+      width: 108px;
+      transform: rotate(4deg);
+    }
+
+    .open-book::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: #cbd5e1;
+    }
+
+    .pencils {
+      position: absolute;
+      right: 8px;
+      bottom: 10px;
+      width: 88px;
+      height: 170px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .cup {
+      position: absolute;
+      bottom: 0;
+      width: 88px;
+      height: 90px;
+      border-radius: 16px 16px 28px 28px;
+      background: #2563eb;
+      box-shadow: 0 16px 22px rgba(15, 23, 42, 0.16);
+    }
+
+    .pencil {
+      position: relative;
+      z-index: 1;
+      width: 11px;
+      height: 145px;
+      border-radius: 999px 999px 4px 4px;
+      background: #ef4444;
+      transform-origin: bottom;
+    }
+
+    .pencil:nth-child(1) { transform: rotate(-16deg); background: #ef4444; }
+    .pencil:nth-child(2) { transform: rotate(-5deg); background: #f59e0b; height: 160px; }
+    .pencil:nth-child(3) { transform: rotate(8deg); background: #22c55e; height: 150px; }
+    .pencil:nth-child(4) { transform: rotate(18deg); background: #8b5cf6; height: 158px; }
+
+    .abc-blocks {
+      position: absolute;
+      right: 100px;
+      bottom: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 48px);
+      gap: 8px;
+    }
+
+    .abc-blocks span {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 1000;
+      box-shadow: 0 10px 16px rgba(15, 23, 42, 0.14);
+    }
+
+    .abc-blocks span:nth-child(1) { background: #f59e0b; }
+    .abc-blocks span:nth-child(2) { background: #22c55e; }
+    .abc-blocks span:nth-child(3) { background: #3b82f6; }
+
+    /* ==============================
+       CATEGORY STRIP
+       ============================== */
+
+    .category-shell {
+      position: relative;
+      z-index: 7;
+      margin-top: -26px;
+    }
+
+    .category-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 14px;
+    }
+
+    .cat-item {
+      min-height: 112px;
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      gap: 8px;
+      color: var(--ink);
+      font-weight: 900;
+      text-align: center;
+      border-radius: 16px;
+      transition: 0.2s ease;
+    }
+
+    .cat-item:hover,
+    .cat-item:focus {
+      transform: translateY(-4px);
+      background: #f8fafc;
+    }
+
+    .cat-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0 14px 22px rgba(15, 23, 42, 0.14);
+      border: 4px solid rgba(255, 255, 255, 0.75);
+    }
+
+    .ci-green { background: linear-gradient(135deg, #84cc16, #16a34a); }
+    .ci-blue { background: linear-gradient(135deg, #60a5fa, #4f46e5); }
+    .ci-purple { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
+    .ci-emerald { background: linear-gradient(135deg, #34d399, #059669); }
+    .ci-orange { background: linear-gradient(135deg, #fb923c, #f97316); }
+    .ci-cyan { background: linear-gradient(135deg, #2dd4bf, #0891b2); }
+    .ci-pink { background: linear-gradient(135deg, #fb7185, #ec4899); }
+    .ci-violet { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+
+    /* ==============================
+       CONTENT SECTIONS
+       ============================== */
+
+    .section {
+      padding: 28px 0;
+    }
+
+    .section-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 15px;
+    }
+
+    .section-title-row h2 {
+      color: var(--ink);
+      font-size: 1.42rem;
+      letter-spacing: -0.03em;
+    }
+
+    .view-all {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 33px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid #cbd5e1;
+      color: var(--ink);
+      font-size: 0.83rem;
+      font-weight: 900;
+    }
+
+    .daily-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .daily-card {
+      min-height: 300px;
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .daily-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      font-weight: 950;
+    }
+
+    .word-card { background: linear-gradient(135deg, #fbf7ff, #f0e8ff); }
+    .question-card { background: linear-gradient(135deg, #fffbf0, #fff4df); }
+    .dua-card { background: linear-gradient(135deg, #f1faea, #edf8df); }
+    .fact-card { background: linear-gradient(135deg, #eff8ff, #e2f2ff); }
+
+    .daily-inner {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 12px;
+      padding: 18px;
+      min-height: 224px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .word-title {
+      font-size: 1.8rem;
+      color: var(--purple-2);
+      font-weight: 1000;
+      margin-bottom: 12px;
+      line-height: 1.1;
+    }
+
+    .daily-inner p {
+      font-size: 0.94rem;
+      color: #25364d;
+      margin: 8px 0;
+    }
+
+    .daily-inner b {
+      color: var(--ink);
+    }
+
+    .small-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 18px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 950;
+      color: white;
+      box-shadow: var(--shadow-soft);
+      margin-top: 12px;
+    }
+
+    .option-list {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 16px;
+    }
+
+    .option-list button {
+      border: 1px solid #d6e1ee;
+      background: white;
+      border-radius: 8px;
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      color: var(--ink);
+      font-weight: 700;
+      cursor: pointer;
+      text-align: left;
+      transition: 0.2s ease;
+    }
+
+    .option-list button:hover {
+      background: #eaf7e9;
+    }
+
+    .option-list .letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #eef2f7;
+      color: var(--ink);
+      font-size: 0.78rem;
+      flex: 0 0 auto;
+    }
+
+    .quiz-feedback {
+      min-height: 22px;
+      font-weight: 950;
+      font-size: 0.9rem;
+    }
+
+    .dua-arabic {
+      font-size: 1.42rem;
+      color: var(--ink);
+      line-height: 1.7;
+      text-align: right;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      margin-bottom: 8px;
+    }
+
+    .translit {
+      font-style: italic;
+      color: #334155;
+      line-height: 1.45;
+    }
+
+    .fact-card .elephant {
+      position: absolute;
+      right: 6px;
+      bottom: 8px;
+      font-size: 8rem;
+      opacity: 0.78;
+      filter: drop-shadow(0 10px 8px rgba(15, 23, 42, 0.12));
+      z-index: 1;
+    }
+
+    .fact-text {
+      font-size: 1.24rem !important;
+      max-width: 180px;
+      margin-top: 36px !important;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      min-height: 190px;
+      border-radius: 14px;
+      padding: 18px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .feature-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+      z-index: 1;
+    }
+
+    .feature-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .feature-card h3 {
+      font-size: 1.12rem;
+      font-weight: 1000;
+      margin-bottom: 4px;
+    }
+
+    .feature-card p {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.86rem;
+      margin-bottom: 12px;
+    }
+
+    .story-feature {
+      background:
+        linear-gradient(135deg, rgba(12, 42, 84, 0.2), rgba(7, 89, 133, 0.35)),
+        radial-gradient(circle at 24% 38%, #ffcf7a 0 16px, transparent 17px),
+        linear-gradient(135deg, #104e75, #0f766e);
+    }
+
+    .story-feature::before {
+      content: "🧒";
+      position: absolute;
+      left: 20px;
+      bottom: 12px;
+      font-size: 5.9rem;
+      z-index: 1;
+      filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.2));
+    }
+
+    .quiz-feature {
+      background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.28), transparent 40%), linear-gradient(135deg, #a855f7, #8b5cf6);
+      text-align: center;
+      justify-content: center;
+    }
+
+    .quiz-feature::before {
+      content: "🏆";
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 4.2rem;
+      z-index: 1;
+    }
+
+    .worksheet-feature {
+      background: linear-gradient(135deg, #d9fffb, #beeef2);
+      color: var(--ink);
+    }
+
+    .worksheet-feature::after {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.75));
+    }
+
+    .worksheet-feature .feature-content {
+      color: var(--ink);
+      max-width: 170px;
+    }
+
+    .worksheet-feature p {
+      color: #334155;
+    }
+
+    .worksheet-feature::before {
+      content: "📝";
+      position: absolute;
+      right: 22px;
+      top: 40px;
+      font-size: 6.5rem;
+      transform: rotate(-12deg);
+      z-index: 1;
+      opacity: 0.95;
+    }
+
+    .video-feature {
+      background: linear-gradient(135deg, #dff0ff, #bde4ff);
+      color: var(--ink);
+    }
+
+    .video-feature::after {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.72));
+    }
+
+    .video-screen {
+      position: absolute;
+      top: 18px;
+      left: 22px;
+      right: 22px;
+      height: 88px;
+      border-radius: 10px;
+      background:
+        radial-gradient(circle at 25% 55%, #0f766e 0 20px, transparent 21px),
+        radial-gradient(circle at 75% 55%, #f97316 0 20px, transparent 21px),
+        linear-gradient(135deg, #12324d, #0f766e);
+      box-shadow: 0 14px 20px rgba(15, 23, 42, 0.16);
+      z-index: 1;
+    }
+
+    .video-screen::after {
+      content: "▶";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--blue-2);
+      font-size: 1.1rem;
+      padding-left: 3px;
+    }
+
+    .video-feature .feature-content {
+      color: var(--ink);
+    }
+
+    .video-feature p {
+      color: #334155;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+    }
+
+    .resource-card {
+      min-height: 160px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #f8fafc, white);
+      border: 1px solid #dbe5ef;
+      box-shadow: var(--shadow-soft);
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s ease;
+    }
+
+    .resource-card:hover,
+    .resource-card:focus {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .resource-card h3 {
+      color: #075985;
+      font-size: 0.98rem;
+      margin-bottom: 8px;
+      font-weight: 950;
+    }
+
+    .resource-card p {
+      max-width: 130px;
+      color: #334155;
+      font-size: 0.83rem;
+      line-height: 1.45;
+    }
+
+    .resource-emoji {
+      position: absolute;
+      right: 18px;
+      bottom: 20px;
+      font-size: 4.6rem;
+      filter: drop-shadow(0 8px 6px rgba(15, 23, 42, 0.15));
+    }
+
+    .cart-dot {
+      position: absolute;
+      right: 12px;
+      bottom: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #10b981;
+      color: white;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 15px rgba(16, 185, 129, 0.25);
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.18fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .bottom-card {
+      border-radius: 14px;
+      min-height: 178px;
+      padding: 22px;
+      border: 1px solid #dbe5ef;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      align-items: center;
+    }
+
+    .parents-card {
+      background: linear-gradient(135deg, #e4f6ff, #d9f0ff);
+      grid-template-columns: 160px 1fr;
+      gap: 18px;
+    }
+
+    .parent-illustration {
+      width: 150px;
+      height: 140px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #bbf7d0, #e0f2fe);
+      display: grid;
+      place-items: center;
+      font-size: 4.2rem;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .class-card {
+      background: linear-gradient(135deg, #fff9e8, #fff4d6);
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+    }
+
+    .teacher-mini {
+      width: 142px;
+      height: 140px;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 50% 30%, #ffd3a5 0 36px, transparent 37px),
+        linear-gradient(180deg, transparent 0 68px, #1f2937 69px 118px, #0b8f3a 119px);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+      position: relative;
+    }
+
+    .teacher-mini::before {
+      content: "👨‍🏫";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 4.3rem;
+    }
+
+    .newsletter-card {
+      background: linear-gradient(135deg, #f4efff, #fff7ff);
+      grid-template-columns: 145px 1fr;
+      gap: 20px;
+    }
+
+    .newsletter-illustration {
+      width: 132px;
+      height: 132px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 5.2rem;
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .bottom-card h3 {
+      color: var(--blue-2);
+      font-size: 1.2rem;
+      font-weight: 950;
+      margin-bottom: 8px;
+    }
+
+    .class-card h3 {
+      color: #92400e;
+    }
+
+    .newsletter-card h3 {
+      color: var(--purple-2);
+    }
+
+    .bottom-card p,
+    .bottom-card li {
+      color: #334155;
+      font-size: 0.9rem;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 3px;
+      margin-bottom: 8px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 1000;
+      margin-right: 8px;
+    }
+
+    .newsletter-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 9px;
+      margin-top: 10px;
+    }
+
+    .newsletter-form input {
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      padding: 0 14px;
+      outline: 0;
+      font-size: 0.9rem;
+    }
+
+    .newsletter-message {
+      min-height: 20px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--green-2);
+    }
+
+    .trust-strip {
+      background: white;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      margin-top: 18px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+    }
+
+    .trust-item {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: #f0fdf4;
+      color: var(--green-2);
+      font-size: 1.6rem;
+      border: 1px solid #bbf7d0;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--green-3);
+      font-size: 0.94rem;
+      line-height: 1.25;
+    }
+
+    .trust-item span {
+      color: #475569;
+      font-size: 0.86rem;
+      line-height: 1.25;
+    }
+
+    /* ==============================
+       FOOTER
+       ============================== */
+
+    .site-footer {
+      background: white;
+      padding: 26px 0 14px;
+      color: #334155;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.7fr repeat(4, 1fr) 1.2fr;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .footer-brand .brand {
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      max-width: 245px;
+    }
+
+    .footer-col h3 {
+      color: var(--green-3);
+      font-size: 0.96rem;
+      margin-bottom: 9px;
+      font-weight: 950;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: grid;
+      gap: 4px;
+    }
+
+    .footer-col a {
+      font-size: 0.88rem;
+      color: #334155;
+      font-weight: 650;
+    }
+
+    .footer-col a:hover,
+    .footer-col a:focus {
+      color: var(--green-2);
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .socials a {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      font-weight: 1000;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .socials a:nth-child(1) { background: #1877f2; }
+    .socials a:nth-child(2) { background: #ff0000; }
+    .socials a:nth-child(3) { background: #c13584; }
+    .socials a:nth-child(4) { background: #bd081c; }
+
+    .footer-bottom {
+      border-top: 1px solid #e2e8f0;
+      margin-top: 22px;
+      padding-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      font-size: 0.84rem;
+      color: #64748b;
+    }
+
+    .back-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 1000;
+      box-shadow: var(--shadow);
+      z-index: 200;
+    }
+
+    /* ==============================
+       RESPONSIVE
+       ============================== */
+
+    @media (max-width: 1130px) {
+      .top-row {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
       }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" data-header>
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#home" aria-label="Al-Hayat Kids Learning Hub home">
-          <span class="brand-mark">AH</span>
-          <span>
+      .global-search,
+      .quick-actions {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: inline-grid;
+        place-items: center;
+        justify-self: end;
+      }
+
+      .main-nav-wrap {
+        top: 88px;
+      }
+
+      .main-nav {
+        display: none;
+        min-height: auto;
+        padding: 14px 0;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .main-nav.is-open {
+        display: flex;
+      }
+
+      .home-btn {
+        width: 100%;
+        height: 44px;
+        border-radius: 12px;
+        justify-content: flex-start;
+        padding-left: 14px;
+      }
+
+      .nav-list {
+        display: grid;
+        width: 100%;
+        gap: 3px;
+      }
+
+      .nav-link {
+        width: 100%;
+        min-height: 42px;
+        border-radius: 10px;
+      }
+
+      .sub-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        border-radius: 12px;
+        margin: 0 0 6px 15px;
+      }
+
+      .nav-item:hover .sub-menu,
+      .nav-item:focus-within .sub-menu {
+        display: grid;
+      }
+
+      .nav-class-btn {
+        width: 100%;
+        min-height: 44px;
+      }
+
+      .hero-copy {
+        padding-left: 0;
+      }
+
+      .category-card {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .daily-grid,
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .resources-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 780px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .top-row {
+        min-height: 78px;
+      }
+
+      .brand-icon {
+        width: 52px;
+        height: 52px;
+      }
+
+      .brand-icon .book-shape {
+        width: 34px;
+        height: 30px;
+      }
+
+      .brand-text strong {
+        font-size: 1.35rem;
+      }
+
+      .brand-text span {
+        font-size: 0.78rem;
+      }
+
+      .main-nav-wrap {
+        top: 78px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-copy {
+        padding: 32px 0 12px;
+        text-align: left;
+      }
+
+      .hero-lead {
+        max-width: 100%;
+      }
+
+      .hero-art {
+        min-height: 285px;
+        padding: 0 0 56px;
+        transform: scale(0.88);
+        transform-origin: center bottom;
+      }
+
+      .hero-dots {
+        bottom: 24px;
+      }
+
+      .category-shell {
+        margin-top: -12px;
+      }
+
+      .category-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px;
+      }
+
+      .cat-item {
+        min-height: 102px;
+      }
+
+      .daily-grid,
+      .feature-grid,
+      .resources-grid,
+      .trust-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .parents-card,
+      .class-card,
+      .newsletter-card {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 3.2rem;
+      }
+
+      .learning-tags {
+        gap: 10px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-cta {
+        width: 100%;
+      }
+
+      .category-card {
+        grid-template-columns: 1fr;
+      }
+
+      .daily-card {
+        min-height: auto;
+      }
+
+      .kids-scene {
+        transform: scale(0.78);
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Al-Hayat Kids Learning Hub",
+    "url": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
+    "description": "A joyful Islamic and academic learning platform for children with Islamic Studies, Arabic, English, Math, Science, stories, quizzes, worksheets, videos, and online classes.",
+    "founder": {
+      "@type": "Person",
+      "name": "Dr. Imran Hayat"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="top-header" id="top">
+    <div class="container top-row">
+      <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-icon" aria-hidden="true"><span class="book-shape"></span></span>
+        <span class="brand-text">
+          <strong>Al-Hayat</strong>
+          <strong><span class="kids">Kids</span> <span class="hub">Learning Hub</span></strong>
+          <span>Learn • Explore • Grow</span>
+        </span>
+      </a>
+
+      <form class="global-search" role="search" aria-label="Search learning topics" onsubmit="return false;">
+        <input id="siteSearch" type="search" placeholder="Search anything..." aria-label="Search anything" />
+        <button id="siteSearchBtn" type="submit" aria-label="Search">🔍</button>
+      </form>
+
+      <div class="quick-actions" aria-label="Quick actions">
+        <a class="quick-action" href="daily-learning/index.html">
+          <span class="qa-icon">🧾</span>
+          <span>Daily Quiz</span>
+        </a>
+        <a class="quick-action" href="activities/rewards.html">
+          <span class="qa-icon">🏆</span>
+          <span>Rewards</span>
+        </a>
+        <a class="quick-action" href="login.html">
+          <span class="qa-icon">👤</span>
+          <span>Login</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <div class="main-nav-wrap">
+    <div class="container main-nav" id="mainNav" aria-label="Primary navigation">
+      <a class="home-btn" href="index.html" aria-label="Home">🏠</a>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="subjects/index.html">Subjects <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="subjects/english.html">English</a></li>
+            <li><a href="subjects/math.html">Math</a></li>
+            <li><a href="subjects/science.html">Science</a></li>
+            <li><a href="subjects/arabic-for-kids.html">Arabic</a></li>
+            <li><a href="subjects/islamic-studies.html">Islamic Studies</a></li>
+            <li><a href="subjects/general-knowledge.html">General Knowledge</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="reading-library/index.html">Reading Library <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="reading-library/moral-stories.html">Moral Stories</a></li>
+            <li><a href="reading-library/islamic-stories.html">Islamic Stories</a></li>
+            <li><a href="reading-library/prophet-stories.html">Prophet Stories</a></li>
+            <li><a href="reading-library/animal-stories.html">Animal Stories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="activities/index.html">Activities <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="activities/quizzes.html">Quizzes</a></li>
+            <li><a href="activities/puzzles.html">Puzzles</a></li>
+            <li><a href="activities/brain-games.html">Brain Games</a></li>
+            <li><a href="activities/memory-challenges.html">Memory Challenges</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="worksheets/index.html">Worksheets <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="worksheets/kindergarten.html">Kindergarten</a></li>
+            <li><a href="worksheets/grade-1.html">Grade 1</a></li>
+            <li><a href="worksheets/grade-2.html">Grade 2</a></li>
+            <li><a href="worksheets/grade-3.html">Grade 3</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="islamic-corner/index.html">Islamic Corner <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="islamic-corner/daily-duas.html">Daily Duas</a></li>
+            <li><a href="islamic-corner/good-manners.html">Good Manners</a></li>
+            <li><a href="islamic-corner/seerah.html">Seerah</a></li>
+            <li><a href="islamic-corner/prophets.html">Prophets</a></li>
+            <li><a href="islamic-corner/asma-ul-husna.html">Asma-ul-Husna</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link" href="videos/index.html">Videos</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="parents-corner/index.html">Parent Resources <span class="nav-arrow">⌄</span></a>
+          <ul class="sub-menu">
+            <li><a href="parents-corner/reading-habits.html">Reading Habits</a></li>
+            <li><a href="parents-corner/screen-time.html">Screen Time</a></li>
+            <li><a href="parents-corner/islamic-manners.html">Islamic Manners</a></li>
+            <li><a href="parents-corner/study-routines.html">Study Routines</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link" href="recommended-resources.html">Learning Store</a></li>
+      </ul>
+
+      <a class="nav-class-btn" href="online-classes.html">Online Classes</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="welcome">Welcome to</span>
+          <h1 class="hero-title" id="hero-title">Al-Hayat <span>Kids Learning Hub</span></h1>
+          <p class="hero-lead">A complete learning platform for young minds to learn, explore and grow every day.</p>
+
+          <div class="learning-tags" aria-label="Learning themes">
+            <span>📗 Learn</span>
+            <span>📖 Read</span>
+            <span>🎮 Play</span>
+            <span>🚀 Explore</span>
+            <span>🌱 Grow</span>
+          </div>
+
+          <a class="btn btn-green hero-cta" href="#subjects">Start Learning Now →</a>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <span class="sky-object star-1">⭐</span>
+          <span class="sky-object star-2">⭐</span>
+          <span class="sky-object star-3">⭐</span>
+          <span class="sky-object planet">🪐</span>
+          <span class="sky-object globe">🌍</span>
+          <span class="sky-object bulb">💡</span>
+
+          <div class="kids-scene">
+            <div class="book-stack">
+              <div class="stack-book">MATH</div>
+              <div class="stack-book">ENGLISH</div>
+              <div class="stack-book">SCIENCE</div>
+            </div>
+
+            <div class="children">
+              <div class="child boy">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="open-book"></div>
+              </div>
+              <div class="child girl">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="open-book"></div>
+              </div>
+            </div>
+
+            <div class="pencils">
+              <div class="pencil"></div>
+              <div class="pencil"></div>
+              <div class="pencil"></div>
+              <div class="pencil"></div>
+              <div class="cup"></div>
+            </div>
+
+            <div class="abc-blocks">
+              <span>A</span>
+              <span>B</span>
+              <span>C</span>
+            </div>
+
+            <div class="desk"></div>
+          </div>
+        </div>
+
+        <div class="hero-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-shell" id="subjects" aria-labelledby="subjects-title">
+      <h2 id="subjects-title" class="skip-link">Subjects</h2>
+      <div class="container">
+        <div class="category-card">
+          <a class="cat-item" href="subjects/english.html">
+            <span class="cat-icon ci-green">📗</span>
+            <span>English</span>
+          </a>
+          <a class="cat-item" href="subjects/math.html">
+            <span class="cat-icon ci-blue">1+2</span>
+            <span>Math</span>
+          </a>
+          <a class="cat-item" href="subjects/science.html">
+            <span class="cat-icon ci-purple">⚗️</span>
+            <span>Science</span>
+          </a>
+          <a class="cat-item" href="subjects/islamic-studies.html">
+            <span class="cat-icon ci-emerald">🕌</span>
+            <span>Islamic Studies</span>
+          </a>
+          <a class="cat-item" href="subjects/arabic-for-kids.html">
+            <span class="cat-icon ci-orange">ب</span>
+            <span>Arabic</span>
+          </a>
+          <a class="cat-item" href="subjects/general-knowledge.html">
+            <span class="cat-icon ci-cyan">🌐</span>
+            <span>General Knowledge</span>
+          </a>
+          <a class="cat-item" href="subjects/art-crafts.html">
+            <span class="cat-icon ci-pink">🎨</span>
+            <span>Art & Crafts</span>
+          </a>
+          <a class="cat-item" href="activities/brain-games.html">
+            <span class="cat-icon ci-violet">🧩</span>
+            <span>Brain Games</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="daily-title">
+      <div class="container">
+        <div class="daily-grid">
+          <article class="daily-card word-card">
+            <h3 id="daily-title" style="color:#6d28d9;">Word of the Day</h3>
+            <div class="daily-inner">
+              <div class="word-title">Generous 🔊</div>
+              <p><b>Meaning:</b> Kind and willing to share.</p>
+              <p><b>Arabic:</b> كريم</p>
+              <p><b>Urdu:</b> سخی</p>
+              <p><b>Example:</b> Ali is generous to his friends.</p>
+              <a class="small-button btn-purple" href="daily-learning/word-of-the-day.html">View More Words</a>
+            </div>
+          </article>
+
+          <article class="daily-card question-card">
+            <h3 style="color:#a45205;">Question of the Day</h3>
+            <div class="daily-inner">
+              <p><b>Which planet is called the Red Planet?</b></p>
+              <div class="option-list" id="quizOptions">
+                <button type="button" data-answer="wrong"><span class="letter">A</span> Earth</button>
+                <button type="button" data-answer="correct"><span class="letter">B</span> Mars</button>
+                <button type="button" data-answer="wrong"><span class="letter">C</span> Venus</button>
+                <button type="button" data-answer="wrong"><span class="letter">D</span> Jupiter</button>
+              </div>
+              <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+              <a class="small-button btn-orange" href="activities/quizzes.html">Check More Quizzes</a>
+            </div>
+          </article>
+
+          <article class="daily-card dua-card">
+            <h3 style="color:#166534;">Dua of the Day</h3>
+            <div class="daily-inner">
+              <div class="dua-arabic">بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ<br>لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ</div>
+              <p class="translit">Bismillah, tawakkaltu ‘alallah la hawla wa la quwwata illa billah.</p>
+              <p><b>Meaning:</b> In the name of Allah, I put my trust in Allah; there is no might and no power except with Allah.</p>
+              <a class="small-button btn-green" href="islamic-corner/daily-duas.html">View More Duas</a>
+            </div>
+          </article>
+
+          <article class="daily-card fact-card">
+            <h3 style="color:#0752b8;">Fact of the Day</h3>
+            <div class="daily-inner">
+              <p class="fact-text">Elephants are the largest land animals on Earth.</p>
+              <a class="small-button btn-blue" href="subjects/general-knowledge.html" style="position:absolute;left:18px;bottom:18px;z-index:3;">More Facts</a>
+            </div>
+            <div class="elephant" aria-hidden="true">🐘</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Featured activities">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-card story-feature">
+            <div class="feature-content" style="margin-left:118px;">
+              <h3>Today’s Story</h3>
+              <p><b>The Honest Boy</b><br>A short story about honesty and kindness.</p>
+              <a class="small-button btn-blue" href="reading-library/the-honest-boy.html">Read Story →</a>
+            </div>
+          </article>
+
+          <article class="feature-card quiz-feature">
+            <div class="feature-content" style="margin-top:74px;">
+              <h3>Take Today’s Quiz</h3>
+              <p>Test your knowledge with fun questions.</p>
+              <a class="small-button btn-yellow" href="activities/quizzes.html">Start Quiz</a>
+            </div>
+          </article>
+
+          <article class="feature-card worksheet-feature">
+            <div class="feature-content">
+              <h3>Free Worksheets</h3>
+              <p>Download printable worksheets for all grades.</p>
+              <a class="small-button btn-green" href="worksheets/index.html">Download Now</a>
+            </div>
+          </article>
+
+          <article class="feature-card video-feature">
+            <div class="video-screen" aria-hidden="true"></div>
+            <div class="feature-content" style="padding-top:90px;">
+              <h3>Watch & Learn</h3>
+              <p>Educational videos for curious minds.</p>
+              <a class="small-button btn-blue" href="videos/index.html">Watch Videos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-title-row">
+          <h2 id="resources-title">Recommended for You</h2>
+          <a class="view-all" href="recommended-resources.html">View All</a>
+        </div>
+
+        <div class="resources-grid">
+          <a class="resource-card" href="recommended-resources/best-books-for-kids.html">
+            <h3>Best Books for Kids</h3>
+            <p>Handpicked books to build knowledge & values.</p>
+            <span class="resource-emoji">📚</span>
+            <span class="cart-dot">🛒</span>
+          </a>
+
+          <a class="resource-card" href="recommended-resources/educational-toys.html">
+            <h3>Educational Toys</h3>
+            <p>Fun learning toys that inspire and educate.</p>
+            <span class="resource-emoji">🤖</span>
+            <span class="cart-dot">🛒</span>
+          </a>
+
+          <a class="resource-card" href="recommended-resources/school-supplies.html">
+            <h3>School Supplies</h3>
+            <p>Quality supplies for better learning every day.</p>
+            <span class="resource-emoji">🎨</span>
+            <span class="cart-dot">🛒</span>
+          </a>
+
+          <a class="resource-card" href="recommended-resources/learning-apps.html">
+            <h3>Learning Apps</h3>
+            <p>Top educational apps for kids.</p>
+            <span class="resource-emoji">📱</span>
+            <span class="cart-dot">🛒</span>
+          </a>
+
+          <a class="resource-card" href="recommended-resources/stem-science-kits.html">
+            <h3>STEM & Science Kits</h3>
+            <p>Spark curiosity with science kits.</p>
+            <span class="resource-emoji">🔬</span>
+            <span class="cart-dot">🛒</span>
+          </a>
+        </div>
+
+        <div class="bottom-grid">
+          <article class="bottom-card parents-card">
+            <div class="parent-illustration" aria-hidden="true">👨‍👩‍👧</div>
+            <div>
+              <h3>Parents’ Corner</h3>
+              <p>Tips, articles and resources to support your child’s learning and development.</p>
+              <a class="small-button btn-blue" href="parents-corner/index.html">Explore Articles</a>
+            </div>
+          </article>
+
+          <article class="bottom-card class-card">
+            <div class="teacher-mini" aria-hidden="true"></div>
+            <div>
+              <h3>Book Online Classes with Dr. Imran Hayat</h3>
+              <ul class="check-list">
+                <li>Islamic Studies</li>
+                <li>Arabic for Kids</li>
+                <li>English Language</li>
+                <li>Personalized Classes</li>
+              </ul>
+              <a class="small-button btn-green" href="online-classes.html">View Classes</a>
+            </div>
+          </article>
+
+          <article class="bottom-card newsletter-card">
+            <div class="newsletter-illustration" aria-hidden="true">✉️</div>
+            <div>
+              <h3>Join Our Newsletter</h3>
+              <p>Get free worksheets, learning tips and special updates every week.</p>
+              <form class="newsletter-form" id="newsletterForm" action="#" method="post">
+                <input type="email" id="parentEmail" name="parent-email" placeholder="Enter your email address" aria-label="Parent email address" required />
+                <button class="btn btn-purple" type="submit" style="min-height:40px;">Subscribe</button>
+                <div class="newsletter-message" id="newsletterMessage" aria-live="polite"></div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trust features">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">🛡️</span>
+          <span><strong>Safe & Child Friendly</strong><span>100% safe learning environment</span></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🏫</span>
+          <span><strong>Quality Content</strong><span>Curated by educators and experts</span></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💡</span>
+          <span><strong>Regular Updates</strong><span>New content added every week</span></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💻</span>
+          <span><strong>Learn Anywhere</strong><span>Access on any device anytime</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
+          <span class="brand-icon" aria-hidden="true"><span class="book-shape"></span></span>
+          <span class="brand-text">
             <strong>Al-Hayat</strong>
-            <small>Kids Learning Hub</small>
+            <strong><span class="kids">Kids</span> <span class="hub">Learning Hub</span></strong>
+            <span>Learn • Explore • Grow</span>
           </span>
         </a>
-
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="nav-links" data-nav-links>
-          <a href="quran-learning.html">Quran</a>
-          <a href="arabic-for-kids.html">Arabic</a>
-          <a href="islamic-studies.html">Islamic</a>
-          <a href="online-classes.html">Online</a>
-          <a href="admissions.html">Admissions</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-
-        <a class="nav-cta" href="#trial">Book Trial</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Pakistan-first. International-ready.</p>
-          <h1 id="hero-title">Al-Hayat Kids Learning Hub</h1>
-          <p class="hero-copy">
-            A warm, structured learning home where children build Quran confidence,
-            Islamic character, Arabic foundations, and early academic habits with
-            caring teacher guidance.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#trial">Book a Free Trial</a>
-            <a class="button button-ghost" href="#programs">Explore Programs</a>
-          </div>
-        </div>
-
-        <div class="hero-trust" aria-label="Trust highlights">
-          <div>
-            <strong>Age-aware</strong>
-            <span>Learning paths for kids</span>
-          </div>
-          <div>
-            <strong>Parent-led</strong>
-            <span>Clear progress updates</span>
-          </div>
-          <div>
-            <strong>Values-first</strong>
-            <span>Respectful Islamic learning</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section trust-strip" aria-label="Website trust bar">
-        <div class="strip-item">Free level check</div>
-        <div class="strip-item">One-to-one and group options</div>
-        <div class="strip-item">Quran, Arabic, and Islamic studies</div>
-        <div class="strip-item">Parent communication built in</div>
-      </section>
-
-      <section class="section intro" aria-labelledby="intro-title">
-        <div class="section-copy">
-          <p class="eyebrow">Built for parents, loved by children</p>
-          <h2 id="intro-title">A premium learning experience without losing warmth.</h2>
-          <p>
-            The website is designed around what parents need before they trust a
-            learning provider: clear programs, honest teacher information, child
-            safety language, simple enrollment steps, and visible progress support.
-            For children, the experience feels joyful, colorful, and motivating.
-          </p>
-        </div>
-        <div class="value-grid" aria-label="Key values">
-          <article>
-            <span class="mini-icon">01</span>
-            <h3>Structured outcomes</h3>
-            <p>Each program explains age group, goals, class format, and progress tracking.</p>
-          </article>
-          <article>
-            <span class="mini-icon">02</span>
-            <h3>Conversion ready</h3>
-            <p>Parents are guided toward trial booking, inquiry, and WhatsApp contact.</p>
-          </article>
-          <article>
-            <span class="mini-icon">03</span>
-            <h3>SEO foundation</h3>
-            <p>Program sections target Quran classes, Arabic learning, and Islamic studies searches.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section muted" id="programs" aria-labelledby="programs-title">
-        <div class="section-heading">
-          <p class="eyebrow">Learning programs</p>
-          <h2 id="programs-title">Start with the right path for your child.</h2>
-          <p>Phase 1 focuses on high-intent programs parents already search for.</p>
-        </div>
-
-        <div class="program-grid">
-          <article class="program-card">
-            <div class="program-top">
-              <span>Quran</span>
-              <small>Ages 5+</small>
-            </div>
-            <h3>Quran Learning for Kids</h3>
-            <p>Nazra Quran, beginner recitation, tajweed support, and confidence-building practice.</p>
-            <ul>
-              <li>Level-based Quran reading</li>
-              <li>Gentle correction and repetition</li>
-              <li>Parent progress notes</li>
-            </ul>
-            <a href="quran-learning.html">View Quran program</a>
-          </article>
-
-          <article class="program-card featured">
-            <div class="program-top">
-              <span>Arabic</span>
-              <small>Ages 6+</small>
-            </div>
-            <h3>Arabic for Children</h3>
-            <p>Foundational Arabic letters, vocabulary, pronunciation, and child-friendly practice.</p>
-            <ul>
-              <li>Letter recognition</li>
-              <li>Vocabulary games</li>
-              <li>Reading confidence</li>
-            </ul>
-            <a href="arabic-for-kids.html">View Arabic program</a>
-          </article>
-
-          <article class="program-card">
-            <div class="program-top">
-              <span>Islamic Studies</span>
-              <small>Ages 5-12</small>
-            </div>
-            <h3>Islamic Studies & Manners</h3>
-            <p>Duas, daily Sunnah, Seerah stories, adab, and character building for daily life.</p>
-            <ul>
-              <li>Age-appropriate topics</li>
-              <li>Practical daily habits</li>
-              <li>Story-led learning</li>
-            </ul>
-            <a href="islamic-studies.html">View Islamic studies</a>
-          </article>
-
-          <article class="program-card">
-            <div class="program-top">
-              <span>Early Years</span>
-              <small>Ages 3-6</small>
-            </div>
-            <h3>Early Years Islamic Learning</h3>
-            <p>Short, joyful sessions that introduce duas, manners, stories, and basic learning routines.</p>
-            <ul>
-              <li>Short attention-friendly lessons</li>
-              <li>Activity-based learning</li>
-              <li>Parent-supported practice</li>
-            </ul>
-            <a href="admissions.html">Start gently</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="journey" aria-labelledby="journey-title">
-        <div class="section-heading">
-          <p class="eyebrow">Child learning journey</p>
-          <h2 id="journey-title">A simple journey parents can understand quickly.</h2>
-        </div>
-
-        <div class="journey">
-          <article>
-            <span>1</span>
-            <h3>Free level check</h3>
-            <p>Understand the child's age, current reading level, attention span, and parent goals.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Personal learning path</h3>
-            <p>Match the child to Quran, Arabic, Islamic studies, or early years learning.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Teacher-led classes</h3>
-            <p>Use short, structured sessions with repetition, praise, and measurable outcomes.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Parent progress updates</h3>
-            <p>Share attendance, lesson focus, practice notes, and next steps with parents.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split muted" id="trust" aria-labelledby="trust-title">
-        <div class="section-copy">
-          <p class="eyebrow">Parent trust framework</p>
-          <h2 id="trust-title">Clear policies before big promises.</h2>
-          <p>
-            This draft avoids invented testimonials, certifications, and achievements.
-            Trust should be earned through transparent teacher profiles, child safety
-            rules, parent communication, visible lesson structure, and honest outcomes.
-          </p>
-          <a class="text-link" href="#trial">Ask about teacher matching</a>
-        </div>
-        <div class="trust-list">
-          <article>
-            <h3>Child safety statement</h3>
-            <p>Children learn in a supervised, respectful environment with parent communication and clear class expectations.</p>
-          </article>
-          <article>
-            <h3>Teacher quality statement</h3>
-            <p>Teacher profiles should include verified experience, teaching style, age suitability, and subject strengths.</p>
-          </article>
-          <article>
-            <h3>Progress tracking statement</h3>
-            <p>Parents receive simple updates showing attendance, lesson focus, practice goals, and progress milestones.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="pricing" aria-labelledby="pricing-title">
-        <div class="section-heading">
-          <p class="eyebrow">Admissions</p>
-          <h2 id="pricing-title">A low-pressure path from inquiry to enrollment.</h2>
-          <p>Exact pricing should be confirmed by the business owner before publishing.</p>
-        </div>
-
-        <div class="admissions-grid">
-          <article>
-            <h3>1. Parent inquiry</h3>
-            <p>Parents share age, learning goals, program interest, and preferred schedule.</p>
-          </article>
-          <article>
-            <h3>2. Trial class</h3>
-            <p>The child joins a short introductory class or assessment to choose the best path.</p>
-          </article>
-          <article>
-            <h3>3. Enrollment plan</h3>
-            <p>Parents receive class options, schedule, teacher match, and monthly package details.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section lead-section" id="trial" aria-labelledby="trial-title">
-        <div class="lead-copy">
-          <p class="eyebrow">Free trial class</p>
-          <h2 id="trial-title">Help your child start with confidence.</h2>
-          <p>
-            Share a few details and the message will open in WhatsApp, ready to send.
-            Replace the WhatsApp number in the project settings before publishing.
-          </p>
-        </div>
-
-        <form class="lead-form" data-lead-form>
-          <label>
-            Parent name
-            <input name="parentName" type="text" autocomplete="name" required>
-          </label>
-          <label>
-            Child age
-            <input name="childAge" type="number" min="3" max="16" required>
-          </label>
-          <label>
-            Program interest
-            <select name="program" required>
-              <option value="">Choose a program</option>
-              <option>Quran Learning</option>
-              <option>Arabic for Kids</option>
-              <option>Islamic Studies</option>
-              <option>Early Years Learning</option>
-              <option>One-to-One Tutoring</option>
-              <option>Weekend Program</option>
-            </select>
-          </label>
-          <label>
-            Preferred class type
-            <select name="classType" required>
-              <option value="">Choose class type</option>
-              <option>Online one-to-one</option>
-              <option>Online group class</option>
-              <option>In-person class</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-          <label class="full">
-            Learning goal
-            <textarea name="goal" rows="4" placeholder="Example: My child is a beginner and needs Quran reading confidence." required></textarea>
-          </label>
-          <button class="button button-primary full" type="submit">Prepare WhatsApp Inquiry</button>
-          <p class="form-status" data-form-status role="status"></p>
-        </form>
-      </section>
-
-      <section class="section muted" id="resources" aria-labelledby="resources-title">
-        <div class="section-heading">
-          <p class="eyebrow">SEO and content engine</p>
-          <h2 id="resources-title">Helpful resources that can attract parents from search.</h2>
-        </div>
-
-        <div class="resource-grid">
-          <article>
-            <span>Guide</span>
-            <h3>How to choose Quran classes for kids</h3>
-            <p>Build trust with parents searching for beginner-friendly Quran learning.</p>
-          </article>
-          <article>
-            <span>Checklist</span>
-            <h3>Daily duas practice chart</h3>
-            <p>A downloadable lead magnet for WhatsApp and email follow-up.</p>
-          </article>
-          <article>
-            <span>Article</span>
-            <h3>Arabic letters for young learners</h3>
-            <p>Support Arabic learning keywords and parent education.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section faq" id="faq" aria-labelledby="faq-title">
-        <div class="section-heading">
-          <p class="eyebrow">FAQs</p>
-          <h2 id="faq-title">Questions parents usually ask first.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>Is this suitable for complete beginners?</summary>
-            <p>Yes. The first step is a level check so the child can start from an appropriate point.</p>
-          </details>
-          <details>
-            <summary>Do you offer online classes?</summary>
-            <p>The site is prepared for online one-to-one and group class inquiries. Confirm exact availability before launch.</p>
-          </details>
-          <details>
-            <summary>How do parents track progress?</summary>
-            <p>Progress updates should include attendance, lesson focus, practice notes, and next milestones.</p>
-          </details>
-          <details>
-            <summary>Are teacher profiles verified?</summary>
-            <p>Teacher details should be added only after verification. Do not publish unconfirmed credentials.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="final-cta" aria-labelledby="final-title">
-        <div>
-          <p class="eyebrow">Ready for the next step?</p>
-          <h2 id="final-title">Build a learning path your child can grow with.</h2>
-        </div>
-        <a class="button button-primary" href="#trial">Book a Free Trial</a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <a class="brand footer-brand" href="#home">
-          <span class="brand-mark">AH</span>
-          <span>
-            <strong>Al-Hayat</strong>
-            <small>Kids Learning Hub</small>
-          </span>
-        </a>
-        <p>Quran, Arabic, Islamic studies, and early learning for children.</p>
+        <p>A complete learning hub for kids with quality content, activities and resources.</p>
       </div>
-      <div>
-        <h2>Programs</h2>
-        <a href="quran-learning.html">Quran Learning</a>
-        <a href="arabic-for-kids.html">Arabic for Kids</a>
-        <a href="islamic-studies.html">Islamic Studies</a>
-        <a href="online-classes.html">Online Classes</a>
-      </div>
-      <div>
-        <h2>Parents</h2>
-        <a href="about.html">About Us</a>
-        <a href="#trust">Safety & Trust</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="contact.html">Contact</a>
-        <a href="#faq">FAQs</a>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <a href="#trial">Book Trial</a>
-        <a href="mailto:hello@example.com">hello@example.com</a>
-      </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="subjects/english.html">English</a></li>
+          <li><a href="subjects/math.html">Math</a></li>
+          <li><a href="subjects/science.html">Science</a></li>
+          <li><a href="subjects/arabic-for-kids.html">Arabic</a></li>
+          <li><a href="subjects/islamic-studies.html">Islamic Studies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="worksheets/index.html">Worksheets</a></li>
+          <li><a href="activities/quizzes.html">Quizzes</a></li>
+          <li><a href="videos/index.html">Videos</a></li>
+          <li><a href="reading-library/index.html">Stories</a></li>
+          <li><a href="activities/index.html">Activities</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="help.html">Help Center</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Al-Hayat Kids Learning Hub. All Rights Reserved.</p>
+      <p>Designed for joyful, safe and meaningful learning.</p>
+    </div>
+  </footer>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <script>
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    mobileToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+      mobileToggle.setAttribute("aria-expanded", String(isOpen));
+      mobileToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("is-open");
+        mobileToggle.setAttribute("aria-expanded", "false");
+        mobileToggle.textContent = "☰";
+      });
+    });
+
+    const quizButtons = document.querySelectorAll("#quizOptions button");
+    const quizFeedback = document.getElementById("quizFeedback");
+
+    quizButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        quizButtons.forEach((btn) => {
+          btn.style.background = "white";
+          btn.style.borderColor = "#d6e1ee";
+        });
+
+        if (button.dataset.answer === "correct") {
+          button.style.background = "#dcfce7";
+          button.style.borderColor = "#86efac";
+          quizFeedback.textContent = "Correct! Mars is called the Red Planet. ⭐";
+          quizFeedback.style.color = "#166534";
+        } else {
+          button.style.background = "#fee2e2";
+          button.style.borderColor = "#fca5a5";
+          quizFeedback.textContent = "Good try! The correct answer is Mars.";
+          quizFeedback.style.color = "#b91c1c";
+        }
+      });
+    });
+
+    const routes = [
+      { key: "english", url: "subjects/english.html" },
+      { key: "math", url: "subjects/math.html" },
+      { key: "science", url: "subjects/science.html" },
+      { key: "arabic", url: "subjects/arabic-for-kids.html" },
+      { key: "letters", url: "subjects/arabic-for-kids.html" },
+      { key: "islam", url: "subjects/islamic-studies.html" },
+      { key: "dua", url: "islamic-corner/daily-duas.html" },
+      { key: "duas", url: "islamic-corner/daily-duas.html" },
+      { key: "story", url: "reading-library/index.html" },
+      { key: "stories", url: "reading-library/index.html" },
+      { key: "quiz", url: "activities/quizzes.html" },
+      { key: "worksheets", url: "worksheets/index.html" },
+      { key: "worksheet", url: "worksheets/index.html" },
+      { key: "videos", url: "videos/index.html" },
+      { key: "parents", url: "parents-corner/index.html" },
+      { key: "classes", url: "online-classes.html" },
+      { key: "online", url: "online-classes.html" },
+      { key: "books", url: "recommended-resources.html" }
+    ];
+
+    const siteSearch = document.getElementById("siteSearch");
+    const siteSearchBtn = document.getElementById("siteSearchBtn");
+
+    function performSearch() {
+      const value = siteSearch.value.trim().toLowerCase();
+      const match = routes.find((route) => value.includes(route.key));
+      window.location.href = match ? match.url : "subjects/index.html";
+    }
+
+    siteSearchBtn.addEventListener("click", performSearch);
+
+    siteSearch.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        performSearch();
+      }
+    });
+
+    const newsletterForm = document.getElementById("newsletterForm");
+    const newsletterMessage = document.getElementById("newsletterMessage");
+
+    newsletterForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      newsletterMessage.textContent = "Thank you! Newsletter setup will be connected soon.";
+      newsletterForm.reset();
+    });
+  </script>
+</body>
 </html>
