@@ -1,1 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Islamic Studies for Kids | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="Islamic Studies for Kids at Al-Hayat Kids Learning Hub. Learn daily duas, good manners, Prophet stories, Seerah, Hadith, Five Pillars, Ramadan, Hajj, and Asma-ul-Husna in a child-friendly way." />
+  <meta name="keywords" content="Islamic studies for kids, duas for kids, Prophet stories for children, Islamic manners for kids, Seerah for kids, Five Pillars for kids, Hadith for kids" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/islamic-studies.html" />
+
+  <style>
+    :root {
+      --green: #138a3d;
+      --green-dark: #075c2a;
+      --green-soft: #e8f8ee;
+      --yellow: #f6c445;
+      --orange: #ff8a1f;
+      --blue: #2563eb;
+      --purple: #7c3aed;
+      --cream: #fffaf0;
+      --light: #f8fbff;
+      --white: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(19, 138, 61, 0.12), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.20), transparent 24rem),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .top-header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .top-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      color: var(--green-dark);
+    }
+
+    .brand-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--green), #22c55e);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.6rem;
+      box-shadow: 0 12px 24px rgba(19, 138, 61, 0.20);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: -2px;
+      font-size: 0.78rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover {
+      background: var(--green-soft);
+      color: var(--green-dark);
+    }
+
+    .nav .cta {
+      background: var(--yellow);
+      color: #111827;
+      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
+    }
+
+    .hero {
+      padding: 64px 0 44px;
+      overflow: hidden;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+      background:
+        radial-gradient(circle at 85% 18%, rgba(246, 196, 69, 0.35), transparent 14rem),
+        linear-gradient(135deg, #e8f8ee, #e0f2fe);
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--green-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 5.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      color: var(--green-dark);
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: #334155;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 19px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 0;
+      cursor: pointer;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--green), #22c55e);
+      color: white;
+      box-shadow: 0 14px 28px rgba(19, 138, 61, 0.22);
+    }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: #111827;
+      box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--green-dark);
+      border: 1px solid var(--border);
+    }
+
+    .hero-visual {
+      min-height: 360px;
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
+        linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.35));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "🕌";
+      position: absolute;
+      font-size: 9rem;
+      opacity: 0.12;
+      left: 24px;
+      top: 20px;
+    }
+
+    .hero-visual::after {
+      content: "⭐";
+      position: absolute;
+      font-size: 5rem;
+      right: 42px;
+      top: 36px;
+      opacity: 0.55;
+    }
+
+    .child-card {
+      width: min(92%, 390px);
+      background: white;
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .child-card .emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .child-card h2 {
+      color: var(--green-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .child-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      margin-bottom: 6px;
+    }
+
+    .section h2 {
+      color: #0f172a;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+      max-width: 760px;
+      margin-top: 8px;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .topic-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+      transition: 0.22s ease;
+      min-height: 215px;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .topic-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.9rem;
+      margin-bottom: 16px;
+      background: var(--green-soft);
+    }
+
+    .topic-card:nth-child(2) .topic-icon { background: #fef3c7; }
+    .topic-card:nth-child(3) .topic-icon { background: #ede9fe; }
+    .topic-card:nth-child(4) .topic-icon { background: #dbeafe; }
+    .topic-card:nth-child(5) .topic-icon { background: #ffedd5; }
+    .topic-card:nth-child(6) .topic-icon { background: #ccfbf1; }
+    .topic-card:nth-child(7) .topic-icon { background: #fce7f3; }
+    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
+
+    .topic-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 1.18rem;
+    }
+
+    .topic-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-bottom: 14px;
+    }
+
+    .topic-card a {
+      color: var(--green-dark);
+      font-weight: 950;
+    }
+
+    .daily-box {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
+        linear-gradient(135deg, #f0fdf4, #eff6ff);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .daily-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .daily-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+    }
+
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      font-family: "Traditional Arabic", "Amiri", serif;
+      font-size: 2rem;
+      line-height: 1.7;
+      color: #0f172a;
+      margin: 12px 0;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .quiz-options button:hover {
+      background: var(--green-soft);
+    }
+
+    .result {
+      margin-top: 12px;
+      min-height: 24px;
+      font-weight: 900;
+    }
+
+    .pathway {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+    }
+
+    .path-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: var(--green);
+      color: white;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+    }
+
+    .path-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .path-card p {
+      color: var(--muted);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #064e3b);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 46px);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #86efac;
+    }
+
+    .footer {
+      margin-top: 40px;
+      background: #0f172a;
+      color: white;
+      padding: 42px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      padding-bottom: 26px;
+    }
+
+    .footer h3 {
+      margin-bottom: 12px;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pathway,
+      .daily-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .topics-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-visual {
+        min-height: 280px;
+      }
+
+      .section-head {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container top-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-icon">🕌</span>
+        <span>
+          Al-Hayat Kids Learning Hub
+          <small>Learn • Explore • Grow</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="arabic-for-kids.html">Arabic</a>
+        <a href="english.html">English</a>
+        <a href="../reading-library/index.html">Stories</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a class="cta" href="../online-classes.html">Online Classes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <div class="kicker">🕌 Islamic Learning for Kids</div>
+          <h1>Islamic Studies <span>for Kids</span></h1>
+          <p>
+            A joyful and child-friendly Islamic learning space where children learn daily duas,
+            good manners, Prophet stories, Seerah, Hadith, Five Pillars, Ramadan, Hajj, and
+            Asma-ul-Husna in simple language.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#topics">Start Learning</a>
+            <a class="btn btn-yellow" href="../islamic-corner/daily-duas.html">Learn Daily Duas</a>
+            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="child-card">
+            <div class="emoji">🤲</div>
+            <h2>Learn Islam with love, manners, and meaning</h2>
+            <p>Short lessons, stories, quizzes, and daily practice for young hearts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="topics">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Explore Topics</div>
+            <h2>What children can learn here</h2>
+            <p class="section-lead">
+              Each section will grow into a complete learning area with simple lessons,
+              stories, activities, quizzes, and printable resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="topics-grid">
+          <article class="topic-card">
+            <div class="topic-icon">🤲</div>
+            <h3>Daily Duas</h3>
+            <p>Simple daily duas with Arabic, transliteration, meaning, and practice prompts.</p>
+            <a href="../islamic-corner/daily-duas.html">Open Duas →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🌱</div>
+            <h3>Good Manners</h3>
+            <p>Kindness, honesty, respect, cleanliness, gratitude, patience, and helping others.</p>
+            <a href="../islamic-corner/good-manners.html">Learn Manners →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">📖</div>
+            <h3>Prophet Stories</h3>
+            <p>Child-friendly stories of the Prophets with lessons, values, and reflection questions.</p>
+            <a href="../islamic-corner/prophet-stories.html">Read Stories →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">☀️</div>
+            <h3>Seerah for Kids</h3>
+            <p>Beautiful lessons from the life of Prophet Muhammad ﷺ in simple language.</p>
+            <a href="../reading-library/index.html">Start Seerah →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">💬</div>
+            <h3>Hadith for Kids</h3>
+            <p>Short hadith lessons about mercy, honesty, worship, manners, and character.</p>
+            <a href="../islamic-corner/index.html">Read Hadith →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🕋</div>
+            <h3>Five Pillars</h3>
+            <p>Shahadah, Salah, Zakah, Sawm, and Hajj explained in a child-friendly way.</p>
+            <a href="../islamic-corner/index.html">Learn Pillars →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🌙</div>
+            <h3>Ramadan for Kids</h3>
+            <p>Fasting, duas, kindness, charity, Qur’an, and Ramadan activities for children.</p>
+            <a href="../islamic-corner/index.html">Explore Ramadan →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">✨</div>
+            <h3>Asma-ul-Husna</h3>
+            <p>Learn the beautiful names of Allah with simple meanings and daily reflection.</p>
+            <a href="../islamic-corner/index.html">Learn Names →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container daily-box">
+        <div class="section-label">Today’s Islamic Learning</div>
+        <h2>Small daily practice, beautiful lifelong habits</h2>
+        <p class="section-lead">
+          Children learn best through small repeated activities. Start with one dua,
+          one value, and one simple question every day.
+        </p>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>🤲 Dua of the Day</h3>
+            <div class="arabic">بِسْمِكَ اللّٰهُمَّ أَمُوتُ وَأَحْيَا</div>
+            <p><strong>Transliteration:</strong> Bismika Allahumma amutu wa ahya.</p>
+            <p><strong>Meaning:</strong> O Allah, in Your name I die and I live.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🌱 Value of the Day</h3>
+            <p><strong>Honesty</strong></p>
+            <p>
+              A Muslim child should speak the truth, keep promises, and avoid cheating.
+              Honesty makes people trust us.
+            </p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🧠 Quick Quiz</h3>
+            <p>Which pillar of Islam is performed by fasting in Ramadan?</p>
+            <div class="quiz-options">
+              <button type="button" data-answer="wrong">Zakah</button>
+              <button type="button" data-answer="correct">Sawm</button>
+              <button type="button" data-answer="wrong">Hajj</button>
+            </div>
+            <div class="result" id="result" aria-live="polite"></div>
+          </article>
+
+          <article class="daily-card">
+            <h3>📌 Parent Tip</h3>
+            <p>
+              Choose one dua for the week. Read it together before sleeping,
+              explain the meaning, and praise the child for every effort.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Pathway</div>
+            <h2>A simple path for children</h2>
+            <p class="section-lead">
+              Keep Islamic learning gentle, practical, and connected with daily life.
+            </p>
+          </div>
+        </div>
+
+        <div class="pathway">
+          <article class="path-card">
+            <strong>1</strong>
+            <h3>Learn</h3>
+            <p>Start with a short dua, story, hadith, or manners lesson.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>2</strong>
+            <h3>Practice</h3>
+            <p>Repeat the lesson through speaking, writing, quizzes, or family discussion.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>3</strong>
+            <h3>Live</h3>
+            <p>Apply the value at home, at school, with friends, and in daily routines.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="section-label" style="color:#86efac;">Personal Guidance</div>
+          <h2>Book Online Islamic Studies Classes with Dr. Imran Hayat</h2>
+          <p>
+            If your child needs structured support, regular practice, and personal guidance,
+            you can book online classes along with these free learning resources.
+          </p>
+
+          <ul class="cta-list">
+            <li>Islamic Studies for kids</li>
+            <li>Qur’an basics and daily duas</li>
+            <li>Good manners and character-building</li>
+            <li>English and Arabic support</li>
+          </ul>
+        </div>
+
+        <div>
+          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <br /><br />
+          <a class="btn btn-white" href="../contact.html">Contact for Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌟 Al-Hayat Kids Learning Hub</h3>
+        <p>
+          A joyful Islamic and academic learning platform where children learn,
+          read, play, explore, and grow.
+        </p>
+      </div>
+
+      <div>
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="islamic-studies.html">Islamic Studies</a></li>
+          <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="math.html">Math</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="../reading-library/index.html">Reading Library</a></li>
+          <li><a href="../worksheets/index.html">Worksheets</a></li>
+          <li><a href="../activities/quizzes.html">Quizzes</a></li>
+          <li><a href="../videos/index.html">Videos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Parent & Trust</h3>
+        <ul>
+          <li><a href="../parent-resources/index.html">Parent Resources</a></li>
+          <li><a href="../online-classes.html">Online Classes</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const result = document.getElementById("result");
+
+    document.querySelectorAll(".quiz-options button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.answer === "correct") {
+          result.textContent = "Correct! Fasting in Ramadan is called Sawm. ⭐";
+          result.style.color = "#138a3d";
+        } else {
+          result.textContent = "Good try! The correct answer is Sawm.";
+          result.style.color = "#b45309";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
