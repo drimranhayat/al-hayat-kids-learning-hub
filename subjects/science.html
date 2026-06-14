@@ -4,34 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Science for Kids | Space, Animals, Plants & Experiments | Al-Hayat Kids Learning Hub</title>
+  <title>Science for Kids Ages 3–7 | Lesson Library, Experiments & Quiz Games | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="Science for Kids at Al-Hayat Kids Learning Hub. Explore space, animals, plants, the human body, weather, water cycle, simple experiments, daily science facts, quizzes, and safe parent-guided activities." />
-  <meta name="keywords" content="science for kids, science explorer, space for kids, animals for kids, plants for kids, water cycle for kids, simple science experiments, science quiz for children" />
+  <meta name="description" content="Complete age-based Science for Kids lesson library for children ages 3–7. Learn senses, body, animals, plants, water, air, weather, magnets, light, sound, space, materials, forces, environment, experiments, quizzes, observation missions, whiteboard, audio, and progress tracking." />
+  <meta name="keywords" content="science for kids ages 3 4 5 6 7, preschool science, kindergarten science, science experiments for kids, animals for kids, plants for kids, weather for kids, magnets for kids, light and sound for kids, space for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/science.html" />
-
-  <meta property="og:title" content="Science for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful child-friendly Science learning page with space, animals, plants, weather, water cycle, experiments, quizzes, and discovery activities." />
-  <meta property="og:type" content="website" />
 
   <style>
     :root {
-      --green: #138a3d;
-      --green-dark: #075c2a;
-      --green-soft: #e8f8ee;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-dark: #075985;
       --sky-soft: #e0f2fe;
+      --green: #16a34a;
+      --green-dark: #166534;
+      --green-soft: #dcfce7;
       --orange: #f97316;
       --orange-soft: #ffedd5;
-      --yellow: #f6c445;
-      --yellow-soft: #fef3c7;
+      --gold: #f6c445;
+      --gold-soft: #fef3c7;
       --purple: #7c3aed;
       --purple-soft: #ede9fe;
       --pink: #ec4899;
@@ -39,60 +33,45 @@
       --teal: #14b8a6;
       --teal-dark: #0f766e;
       --teal-soft: #ccfbf1;
+      --red-soft: #fee2e2;
+      --lime: #65a30d;
+      --lime-soft: #ecfccb;
       --white: #ffffff;
-      --light: #f8fbff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
       --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
       --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
-      --radius: 24px;
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 28rem),
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.20), transparent 24rem),
-        linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(22, 163, 74, 0.14), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        radial-gradient(circle at 90% 70%, rgba(56, 189, 248, 0.14), transparent 22rem),
+        linear-gradient(180deg, #ffffff 0%, #f8fff8 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
 
-    button,
-    input {
-      font: inherit;
-    }
-
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin-inline: auto;
-    }
+    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
 
     .top-header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255,255,255,0.92);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
 
     .top-inner {
@@ -115,25 +94,24 @@
       width: 52px;
       height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--teal), var(--sky));
+      background: linear-gradient(135deg, var(--green), var(--sky));
+      color: white;
       display: grid;
       place-items: center;
-      color: white;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(20, 184, 166, 0.22);
+      box-shadow: 0 12px 24px rgba(22, 163, 74, 0.20);
     }
 
     .brand small {
       display: block;
       color: var(--muted);
       font-weight: 700;
-      margin-top: -2px;
       font-size: 0.78rem;
+      margin-top: -2px;
     }
 
     .nav {
       display: flex;
-      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -144,39 +122,96 @@
       border-radius: 999px;
       font-weight: 800;
       font-size: 0.94rem;
-      color: var(--text);
       transition: 0.2s ease;
     }
 
-    .nav a:hover,
-    .nav a:focus {
-      background: var(--teal-soft);
-      color: var(--teal-dark);
+    .nav a:hover, .nav a:focus {
+      background: linear-gradient(135deg, var(--green-soft), var(--gold-soft));
+      color: var(--green-dark);
+      box-shadow: 0 10px 20px rgba(22, 163, 74, 0.10);
     }
 
     .nav .cta {
-      background: var(--yellow);
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
     }
 
-    .hero {
-      padding: 64px 0 44px;
+    .audio-bar {
+      position: sticky;
+      top: 76px;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.94);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
     }
+
+    .audio-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .sound-control-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .fun-sound-toggle, .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fun-sound-toggle {
+      background: linear-gradient(135deg, rgba(246,196,69,0.95), rgba(22,163,74,0.92));
+      color: #0f172a;
+      box-shadow: 0 10px 22px rgba(246, 196, 69, 0.18);
+    }
+
+    .fun-sound-toggle.off, .stop-sound {
+      background: rgba(255,255,255,0.10);
+      color: white;
+    }
+
+    .fun-sound-toggle:hover,
+    .fun-sound-toggle:focus,
+    .stop-sound:hover,
+    .stop-sound:focus {
+      transform: translateY(-2px) scale(1.03);
+      filter: brightness(1.06);
+    }
+
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.35), transparent 14rem),
-        radial-gradient(circle at 20% 80%, rgba(20, 184, 166, 0.22), transparent 16rem),
-        linear-gradient(135deg, #ecfeff, #f0fdf4);
+        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.28), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.28), transparent 16rem),
+        linear-gradient(135deg, #f0fdf4, #fefce8);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255,255,255,0.78);
       overflow: hidden;
     }
 
@@ -185,7 +220,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--teal-dark);
+      color: var(--green-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -194,65 +229,135 @@
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 5.1rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
-      color: var(--teal-dark);
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
+      color: var(--green-dark);
       margin-bottom: 18px;
     }
 
-    h1 span {
-      color: var(--blue-dark);
-    }
+    h1 span { color: var(--orange); }
 
     .hero p {
-      max-width: 650px;
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      max-width: 700px;
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
       color: #334155;
       margin-bottom: 22px;
     }
 
-    .buttons {
+    .buttons, .sound-actions, .toolbar, .age-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
+      align-items: center;
     }
 
-    .btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
+    .quiz-options button, .choice-options button, .lesson-chip {
+      position: relative;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 19px;
+      min-height: 44px;
+      padding: 10px 15px;
       border-radius: 999px;
       font-weight: 900;
       border: 0;
       cursor: pointer;
       transition: 0.2s ease;
       text-align: center;
+      will-change: transform, background, box-shadow;
     }
 
-    .btn:hover,
-    .btn:focus {
+    .btn { min-height: 48px; padding: 12px 19px; }
+
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
       transform: translateY(-2px);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--teal), var(--sky));
-      color: white;
-      box-shadow: 0 14px 28px rgba(20, 184, 166, 0.22);
+    .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
+    .tool-btn::after, .age-tab::after, .quiz-options button::after,
+    .choice-options button::after, .lesson-chip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 34%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
     }
 
-    .btn-yellow {
-      background: var(--yellow);
+    .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
+    .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
+      opacity: 1;
+    }
+
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
+      background: linear-gradient(135deg, var(--green), var(--sky));
+      color: white;
+      box-shadow: 0 14px 28px rgba(22, 163, 74, 0.20);
+    }
+
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
+      background: linear-gradient(135deg, #16a34a, #0ea5e9);
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
+    }
+
+    .btn-gold {
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
 
-    .btn-white {
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #facc15, #fb923c);
+      color: #111827;
+      box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
+    }
+
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
-      color: var(--teal-dark);
+      color: var(--green-dark);
       border: 1px solid var(--border);
+    }
+
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
+      background: linear-gradient(135deg, #ffffff, #f0fdf4);
+      color: var(--green-dark);
+      border-color: #86efac;
+      box-shadow: 0 14px 26px rgba(22, 163, 74, 0.13);
+    }
+
+    .listen-btn {
+      background: var(--green-soft);
+      color: var(--green-dark);
+      border: 1px solid #bbf7d0;
+    }
+
+    .listen-btn:hover {
+      background: linear-gradient(135deg, #dcfce7, #e0f2fe);
+      color: #166534;
+      border-color: #86efac;
+      box-shadow: 0 14px 26px rgba(22, 163, 74, 0.14);
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
+    .repeat-btn:hover {
+      background: linear-gradient(135deg, #fef3c7, #ffffff);
+      color: #92400e;
+      border-color: #facc15;
+      box-shadow: 0 14px 26px rgba(246, 196, 69, 0.14);
     }
 
     .hero-visual {
@@ -267,80 +372,47 @@
       overflow: hidden;
     }
 
-    .planet {
+    .hero-visual::before {
+      content: "🔬 🌱";
       position: absolute;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
+      font-size: 4.5rem;
       font-weight: 950;
-      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
-    }
-
-    .sun {
-      width: 90px;
-      height: 90px;
-      background: var(--yellow);
-      left: 32px;
-      top: 34px;
-      color: #92400e;
-    }
-
-    .earth {
-      width: 74px;
-      height: 74px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
-      right: 48px;
-      top: 84px;
-      color: white;
-    }
-
-    .moon {
-      width: 46px;
-      height: 46px;
-      background: #e5e7eb;
-      right: 128px;
-      top: 34px;
-      color: #475569;
+      color: rgba(22, 163, 74, 0.12);
+      left: 24px;
+      top: 24px;
+      letter-spacing: -0.08em;
     }
 
     .hero-visual::after {
-      content: "";
+      content: "🧪";
       position: absolute;
-      width: 330px;
-      height: 330px;
-      border: 3px dashed rgba(14, 116, 144, 0.15);
-      border-radius: 50%;
-      transform: rotate(-14deg);
+      font-size: 7rem;
+      right: 34px;
+      bottom: 18px;
+      opacity: 0.16;
     }
 
-    .child-card {
-      width: min(92%, 430px);
+    .hero-box {
+      width: min(92%, 450px);
       background: white;
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
-    .child-card .emoji {
-      font-size: 4rem;
-      margin-bottom: 8px;
-    }
+    .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
 
-    .child-card h2 {
-      color: var(--teal-dark);
+    .hero-box h2 {
+      color: var(--green-dark);
       font-size: 1.65rem;
       line-height: 1.15;
       margin-bottom: 10px;
     }
 
-    .child-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
+    .hero-box p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -354,7 +426,6 @@
       border-radius: 18px;
       padding: 12px;
       font-weight: 900;
-      color: var(--text);
       border: 1px solid var(--border);
     }
 
@@ -365,20 +436,42 @@
       font-weight: 700;
     }
 
-    .section {
-      padding: 52px 0;
+    .age-choice { padding: 22px 0 12px; }
+
+    .age-choice-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: clamp(18px, 4vw, 28px);
+      box-shadow: var(--shadow-soft);
     }
 
-    .section-head {
-      margin-bottom: 26px;
+    .age-choice-title {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
     }
+
+    .age-choice-title h2 {
+      color: #0f172a;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .age-choice-title p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 700px;
+    }
+
+    .section { padding: 44px 0; }
 
     .section-label {
-      color: var(--teal-dark);
+      color: var(--green-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -388,7 +481,7 @@
 
     .section h2 {
       color: #0f172a;
-      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
@@ -396,234 +489,282 @@
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 850px;
       margin-top: 8px;
     }
 
-    .method-grid {
+    .level-shell {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(22,163,74,0.14), transparent 18rem),
+        radial-gradient(circle at 92% 18%, rgba(246,196,69,0.18), transparent 16rem),
+        linear-gradient(135deg, #f0fdf4, #fff7ed);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .level-hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      background: white;
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 28px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 20px;
+    }
+
+    .level-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--green-soft), var(--gold-soft));
+      border: 1px solid rgba(22, 163, 74, 0.14);
+    }
+
+    .level-hero h2 {
+      color: var(--green-dark);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .level-hero p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 850px;
+    }
+
+    .level-progress {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .level-dot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 950;
+      color: #475569;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .level-dot.active {
+      background: linear-gradient(135deg, var(--green), var(--sky));
+      color: white;
+      border-color: transparent;
+    }
+
+    .level-dot span {
+      display: block;
+      font-size: 0.76rem;
+      opacity: 0.78;
+      margin-top: 2px;
+    }
+
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
+    .daily-grid, .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .method-card {
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
     }
 
-    .method-card .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: var(--teal-soft);
-      font-size: 1.7rem;
-      margin-bottom: 14px;
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
     }
 
-    .method-card:nth-child(2) .icon { background: var(--yellow-soft); }
-    .method-card:nth-child(3) .icon { background: var(--blue-soft); }
-    .method-card:nth-child(4) .icon { background: var(--purple-soft); }
-
-    .method-card h3 {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
       color: #0f172a;
       margin-bottom: 7px;
     }
 
-    .method-card p {
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
 
-    .topics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .topic-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow-soft);
-      transition: 0.22s ease;
-      min-height: 215px;
-    }
-
-    .topic-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-    }
-
-    .topic-icon {
-      width: 58px;
-      height: 58px;
+    .icon-pill {
+      width: 54px;
+      height: 54px;
       border-radius: 18px;
       display: grid;
       place-items: center;
-      font-size: 1.9rem;
-      margin-bottom: 16px;
-      background: var(--teal-soft);
-    }
-
-    .topic-card:nth-child(2) .topic-icon { background: var(--blue-soft); }
-    .topic-card:nth-child(3) .topic-icon { background: var(--green-soft); }
-    .topic-card:nth-child(4) .topic-icon { background: var(--yellow-soft); }
-    .topic-card:nth-child(5) .topic-icon { background: var(--orange-soft); }
-    .topic-card:nth-child(6) .topic-icon { background: var(--pink-soft); }
-    .topic-card:nth-child(7) .topic-icon { background: var(--purple-soft); }
-    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
-
-    .topic-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-      font-size: 1.18rem;
-    }
-
-    .topic-card p {
-      color: var(--muted);
-      font-size: 0.96rem;
+      background: var(--green-soft);
+      font-size: 1.65rem;
       margin-bottom: 14px;
     }
 
-    .topic-card a {
-      color: var(--teal-dark);
+    .badge, .today-badge, .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .level-badge {
+      background: var(--green-soft);
+      color: var(--green-dark);
+      border-color: #bbf7d0;
+    }
+
+    .science-display {
+      font-size: clamp(2.7rem, 8vw, 5.2rem);
+      line-height: 1.05;
       font-weight: 950;
+      color: var(--green-dark);
+      margin: 12px 0;
+      text-align: center;
+      letter-spacing: -0.04em;
     }
 
-    .science-lab {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
-        linear-gradient(135deg, #ecfeff, #f0fdf4);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 22px;
-      align-items: stretch;
-      margin-top: 22px;
-    }
-
-    .lab-card {
-      background: white;
-      border-radius: 28px;
-      padding: 24px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .water-cycle {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .cycle-step {
+    .visual-demo {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.4;
+      text-align: center;
+      padding: 14px;
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 16px;
-      transition: 0.2s ease;
-      cursor: pointer;
-    }
-
-    .cycle-step:hover,
-    .cycle-step.is-active {
-      background: var(--sky-soft);
-      transform: translateY(-3px);
-      border-color: #7dd3fc;
-    }
-
-    .cycle-step strong {
-      display: block;
-      color: #0f172a;
-      margin-bottom: 4px;
-    }
-
-    .cycle-detail {
-      margin-top: 16px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 16px;
-      color: #334155;
-      font-weight: 750;
-    }
-
-    .experiment {
+      min-height: 92px;
       display: grid;
-      gap: 12px;
-      margin-top: 16px;
+      place-items: center;
+      margin-top: 12px;
+      word-break: break-word;
     }
 
-    .experiment-item {
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box, .parent-note {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 14px;
+      color: #334155;
+      font-weight: 750;
     }
 
-    .experiment-item strong {
-      color: var(--teal-dark);
+    .mission-box {
+      background: linear-gradient(135deg, #ffffff, #f0fdf4);
+      border-color: #bbf7d0;
     }
 
-    .daily-box {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #ecfeff, #eff6ff);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
+    .story-text {
+      font-weight: 700;
+      line-height: 1.8;
     }
 
-    .daily-grid {
+    .visual-card {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 22px;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
     }
 
-    .daily-card {
-      background: white;
+    .visual-clue {
+      background: linear-gradient(135deg, #dcfce7, #fef3c7);
+      border: 1px solid #bbf7d0;
       border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
     }
 
-    .daily-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    .big-science {
-      font-size: clamp(2.2rem, 4vw, 3.6rem);
+    .visual-clue .emoji {
+      font-size: 4.2rem;
       line-height: 1;
-      font-weight: 950;
-      color: var(--teal-dark);
-      margin: 14px 0;
-      letter-spacing: -0.04em;
+      margin-bottom: 6px;
     }
 
-    .quiz-options {
+    .visual-clue strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 0.95rem;
+    }
+
+    .support-grid { display: grid; gap: 12px; }
+
+    .quiz-options, .choice-options {
       display: grid;
       gap: 10px;
       margin-top: 14px;
     }
 
-    .quiz-options button {
+    .quiz-options button, .choice-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
       border-radius: 14px;
@@ -631,11 +772,19 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .quiz-options button:hover {
-      background: var(--teal-soft);
+    .quiz-options button:hover, .choice-options button:hover {
+      background: linear-gradient(135deg, #f0fdf4, #fef3c7);
+      color: var(--green-dark);
+      border-color: #86efac;
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 12px 22px rgba(22, 163, 74, 0.10);
     }
+
+    .quiz-options button.correct, .choice-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong, .choice-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
     .result {
       margin-top: 12px;
@@ -643,41 +792,103 @@
       font-weight: 900;
     }
 
-    .discovery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .discovery-card {
-      background: white;
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow-soft);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
-    .discovery-emoji {
-      font-size: 3rem;
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
       margin-bottom: 12px;
     }
 
-    .discovery-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .whiteboard-head strong {
+      color: var(--green-dark);
+      font-size: 1rem;
     }
 
-    .discovery-card p {
-      color: var(--muted);
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .parent-box {
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #86efac;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
+
+    .progress-section, .parent-box {
       background: white;
       border: 1px solid var(--border);
       border-radius: 34px;
       box-shadow: var(--shadow);
       padding: clamp(24px, 4vw, 36px);
+    }
+
+    .progress-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .progress-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      text-align: center;
+      font-weight: 950;
+    }
+
+    .progress-card strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .progress-card span {
+      color: var(--muted);
+      font-weight: 750;
+      font-size: 0.88rem;
+    }
+
+    .parent-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
@@ -706,43 +917,59 @@
       font-weight: 950;
     }
 
-    .pathway {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .path-card {
+    details.curriculum-details {
       background: white;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+      border-radius: 24px;
       box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      margin-top: 16px;
     }
 
-    .path-card strong {
-      display: inline-grid;
-      place-items: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 15px;
-      background: var(--teal);
-      color: white;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
+    details.curriculum-details summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      font-weight: 950;
+      color: var(--green-dark);
+      background: linear-gradient(135deg, #ffffff, #f0fdf4);
     }
 
-    .path-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .details-body {
+      padding: 22px;
+      border-top: 1px solid var(--border);
     }
 
-    .path-card p {
-      color: var(--muted);
+    .compact-worlds {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
     }
 
-    .cta {
-      background: linear-gradient(135deg, #0f172a, #0f766e);
+    .compact-world {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .compact-world span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    .sound-hover-pop { animation: soundHoverPop 0.34s ease; }
+
+    @keyframes soundHoverPop {
+      0% { transform: translateY(0) scale(1); }
+      45% { transform: translateY(-3px) scale(1.04); }
+      100% { transform: translateY(-2px) scale(1.02); }
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--green-dark), #0f172a);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -753,11 +980,9 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 {
-      color: white;
-    }
+    .cta-section h2 { color: white; }
 
-    .cta p {
+    .cta-section p {
       color: rgba(255,255,255,0.78);
       margin-top: 10px;
       font-size: 1.05rem;
@@ -777,7 +1002,7 @@
 
     .cta-list li::before {
       content: "✓ ";
-      color: #99f6e4;
+      color: #86efac;
     }
 
     .footer {
@@ -795,12 +1020,9 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 {
-      margin-bottom: 12px;
-    }
+    .footer h3 { margin-bottom: 12px; }
 
-    .footer p,
-    .footer a {
+    .footer p, .footer a {
       color: rgba(255,255,255,0.72);
       font-weight: 650;
     }
@@ -818,33 +1040,31 @@
     }
 
     @media (max-width: 980px) {
-      .hero-card,
-      .lab-grid,
-      .parent-box,
-      .cta {
+      .hero-card, .parent-box, .cta-section, .visual-card, .level-hero {
         grid-template-columns: 1fr;
       }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .discovery-grid {
+      .daily-grid, .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-4, .compact-worlds {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .daily-grid {
-        grid-template-columns: 1fr;
+      .level-progress, .progress-cards {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
-      .container {
-        width: min(100% - 24px, var(--max));
-      }
+      .container { width: min(100% - 24px, var(--max)); }
 
       .top-inner {
         flex-direction: column;
@@ -852,42 +1072,31 @@
         padding: 14px 0;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
+      .nav { justify-content: flex-start; }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .discovery-grid,
-      .footer-grid,
-      .water-cycle {
+      .grid-4, .compact-worlds, .footer-grid, .progress-cards {
         grid-template-columns: 1fr;
       }
 
-      .buttons {
+      .buttons, .sound-actions, .toolbar, .age-tabs {
         display: grid;
       }
 
-      .btn {
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
         width: 100%;
       }
 
-      .hero {
-        padding-top: 28px;
-      }
+      .hero { padding-top: 28px; }
+      .hero-visual { min-height: 300px; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .level-progress { grid-template-columns: 1fr; }
+    }
 
-      .hero-visual {
-        min-height: 300px;
-      }
-
-      .section-head {
-        display: block;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
+    @media (prefers-reduced-motion: reduce) {
+      .sound-hover-pop { animation: none; }
+      .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+      .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -897,10 +1106,7 @@
     <div class="container top-inner">
       <a class="brand" href="../index.html">
         <span class="brand-icon">🔬</span>
-        <span>
-          Al-Hayat Kids Learning Hub
-          <small>Learn • Explore • Grow</small>
-        </span>
+        <span>Al-Hayat Kids Learning Hub<small>Observe • Explore • Experiment • Think</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -909,395 +1115,234 @@
         <a href="arabic-for-kids.html">Arabic</a>
         <a href="english.html">English</a>
         <a href="math.html">Math</a>
-        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="general-knowledge.html">GK</a>
+        <a href="../reading-library/index.html">Stories</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
     </div>
   </header>
 
+  <div class="audio-bar" aria-label="Audio learning controls">
+    <div class="container audio-inner">
+      <p>🔊 Science audio is short and focused: fact, observation, experiment, question, mission, or answer only.</p>
+      <div class="sound-control-group">
+        <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
+        <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">🔬 Science Explorer for Kids</div>
-          <h1>Science <span>for Kids</span></h1>
+          <div class="kicker">🔬 Complete Science Lesson Library • Ages 3–7</div>
+          <h1>Observe. Ask. <span>Discover.</span></h1>
           <p>
-            A joyful science learning space where children explore space, animals, plants,
-            weather, the human body, water cycle, and simple experiments through observation,
-            questions, pictures, quizzes, and safe parent-guided activities.
+            A complete age-based Science foundation. The child first chooses age, then selects a lesson from that
+            level’s science library. Every lesson has a simple fact, visual model, mini story,
+            experiment-style activity, quiz, observation mission, whiteboard drawing, and short focused audio.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#explore">Start Exploring</a>
-            <a class="btn btn-yellow" href="#science-lab">Try Science Lab</a>
-            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+            <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
+            <a class="btn btn-gold" href="#lesson-library">Open Science Library</a>
+            <a class="btn btn-white" href="#whiteboard">Science Whiteboard</a>
+          </div>
+
+          <div class="sound-actions" style="margin-top: 14px;">
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one science lesson. See the model. Listen to the fact. Try the safe observation. Answer the quiz. Draw on the whiteboard." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. Observe. Ask. Try. Answer. Draw. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="planet sun">☀️</div>
-          <div class="planet earth">🌍</div>
-          <div class="planet moon">🌙</div>
-
-          <div class="child-card">
-            <div class="emoji">🚀</div>
-            <h2>Ask, observe, test, and explain</h2>
-            <p>Science becomes exciting when children notice the world and learn to ask “why?” and “how?”</p>
-
+          <div class="hero-box">
+            <div class="emoji">🧪</div>
+            <h2>Science Level 1 to Level 5</h2>
+            <p>Age 3 begins with senses, body, animals, and water. Age 7 reaches forces, materials, energy, space, environment, and careful experiments.</p>
             <div class="hero-stats">
-              <div class="hero-stat">Observe <span>Carefully</span></div>
-              <div class="hero-stat">Ask <span>Questions</span></div>
-              <div class="hero-stat">Explore <span>Safely</span></div>
+              <div class="hero-stat">55 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Experiments <span>Safe & Simple</span></div>
+              <div class="hero-stat">Observation <span>Missions</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="method-title">
-      <div class="container">
-        <div class="section-head">
+    <section class="age-choice" id="choose-age">
+      <div class="container age-choice-card">
+        <div class="age-choice-title">
           <div>
-            <div class="section-label">Learning Method</div>
-            <h2 id="method-title">A science routine children can follow</h2>
-            <p class="section-lead">
-              Good science learning starts with curiosity. Children should observe, ask questions,
-              make simple predictions, test safely, and explain what they noticed.
-            </p>
+            <div class="section-label">Step 1</div>
+            <h2>Choose the child’s age</h2>
+            <p>After choosing an age, the science library below will show only that age level’s lessons.</p>
           </div>
+          <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
+        </div>
+        <div class="age-tabs" id="ageTabs"></div>
+      </div>
+    </section>
+
+    <section class="section" id="active-level">
+      <div class="container level-shell">
+        <div class="level-hero" id="levelHero"></div>
+        <div class="level-progress" id="levelProgress"></div>
+
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">Science Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused lesson. Each lesson has fact, model, activity, quiz, mission, and drawing/writing practice.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
         </div>
 
-        <div class="method-grid">
-          <article class="method-card">
-            <div class="icon">👀</div>
-            <h3>Observe</h3>
-            <p>Look closely at objects, animals, plants, weather, light, sound, and movement.</p>
+        <div class="daily-grid" style="margin-top:20px;">
+          <article class="lesson-card" id="lessonCard"></article>
+          <article class="activity-card" id="activityCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;" id="whiteboard">
+          <article class="practice-card">
+            <h3>✍️ Science Whiteboard</h3>
+            <div class="whiteboard-wrap" aria-label="Science drawing whiteboard">
+              <div class="whiteboard-head">
+                <strong id="boardTitle">Draw or write today’s science idea</strong>
+                <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
+              </div>
+
+              <canvas id="scienceWhiteboard" class="whiteboard-canvas" aria-label="Write or draw science using mouse, touch, or stylus"></canvas>
+
+              <p class="board-tip">
+                Tip: Trace the faint guide first, then draw the object, experiment, animal, plant, planet, or science idea.
+              </p>
+            </div>
+
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Guide</button>
+              <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Guide</button>
+              <button class="learned-btn" id="saveBoardBtn" type="button">✅ Save Drawing</button>
+            </div>
           </article>
 
-          <article class="method-card">
-            <div class="icon">❓</div>
-            <h3>Ask</h3>
-            <p>Ask simple questions such as: What is happening? Why? How can we know?</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">🧪</div>
-            <h3>Test</h3>
-            <p>Try safe activities with adult help, using everyday materials and careful steps.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">💬</div>
-            <h3>Explain</h3>
-            <p>Use simple words, drawings, and examples to explain what was discovered.</p>
+          <article class="practice-card">
+            <h3>🏆 Science Goal</h3>
+            <div class="mission-box" id="writingGoal">Draw or write today’s science idea three times.</div>
+            <ul class="tips">
+              <li>Observe before answering.</li>
+              <li>Use safe home objects only.</li>
+              <li>Ask: What do I see? What changed? Why?</li>
+              <li>Celebrate curiosity, careful thinking, and safe practice.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="explore" aria-labelledby="topics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Explore Science</div>
-            <h2 id="topics-title">What children can discover here</h2>
-            <p class="section-lead">
-              This page can grow into a complete science zone with lessons, quizzes, experiments,
-              printable sheets, videos, and curiosity-based activities.
-            </p>
-          </div>
-        </div>
-
-        <div class="topics-grid">
-          <article class="topic-card">
-            <div class="topic-icon">🪐</div>
-            <h3>Space & Planets</h3>
-            <p>Sun, Moon, Earth, planets, day and night, stars, and simple space facts.</p>
-            <a href="#practice">Explore Space →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🐾</div>
-            <h3>Animals</h3>
-            <p>Habitats, animal groups, life cycles, food, movement, and care for living things.</p>
-            <a href="#practice">Learn Animals →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🌱</div>
-            <h3>Plants</h3>
-            <p>Seeds, roots, stems, leaves, flowers, sunlight, water, and plant growth.</p>
-            <a href="#practice">Learn Plants →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">💧</div>
-            <h3>Water Cycle</h3>
-            <p>Evaporation, condensation, precipitation, and collection in child-friendly steps.</p>
-            <a href="#science-lab">Open Water Cycle →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🌦️</div>
-            <h3>Weather</h3>
-            <p>Sunny, cloudy, rainy, windy, temperature, seasons, and weather observation.</p>
-            <a href="../worksheets/index.html">Weather Worksheets →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🫀</div>
-            <h3>Human Body</h3>
-            <p>Senses, bones, muscles, heart, lungs, healthy food, sleep, and exercise.</p>
-            <a href="../reading-library/index.html">Read Body Facts →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🧲</div>
-            <h3>Forces & Magnets</h3>
-            <p>Push, pull, motion, floating, sinking, magnets, and simple classroom experiments.</p>
-            <a href="#science-lab">Try Experiments →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🧠</div>
-            <h3>Daily Science</h3>
-            <p>A small observation or question every day helps children think like explorers.</p>
-            <a href="../daily-learning/index.html">Daily Learning →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="science-lab" aria-labelledby="lab-title">
-      <div class="container science-lab">
-        <div class="section-label">Science Lab</div>
-        <h2 id="lab-title">Water cycle explorer</h2>
+    <section class="section" id="progress">
+      <div class="container progress-section">
+        <div class="section-label">Progress Tracker</div>
+        <h2>Stars, learned concepts, experiment wins, missions, and science drawings</h2>
         <p class="section-lead">
-          Click each step to learn how water moves through nature. Keep explanations short,
-          visual, and connected to rain, clouds, rivers, and the Sun.
+          Progress is saved only on this browser/device using local storage. No login, no child name,
+          no email, and no server collection.
         </p>
 
-        <div class="lab-grid">
-          <article class="lab-card">
-            <h3>💧 Water Cycle Steps</h3>
-            <div class="water-cycle" aria-label="Water cycle steps">
-              <button class="cycle-step is-active" type="button" data-detail="The Sun warms water in seas, rivers, lakes, and puddles. Some water changes into water vapour and rises into the air.">
-                <strong>☀️ Evaporation</strong>
-                Water rises
-              </button>
+        <div class="progress-cards" id="progressCards">
+          <div class="progress-card"><strong id="starsCount">0</strong><span>Stars Earned</span></div>
+          <div class="progress-card"><strong id="lessonsCount">0</strong><span>Lessons Learned</span></div>
+          <div class="progress-card"><strong id="quizCount">0</strong><span>Quiz Wins</span></div>
+          <div class="progress-card"><strong id="missionCount">0</strong><span>Missions Done</span></div>
+        </div>
 
-              <button class="cycle-step" type="button" data-detail="High in the sky, water vapour cools and forms tiny droplets. These droplets gather together and make clouds.">
-                <strong>☁️ Condensation</strong>
-                Clouds form
-              </button>
-
-              <button class="cycle-step" type="button" data-detail="When cloud droplets become heavy, water falls back to Earth as rain, snow, sleet, or hail.">
-                <strong>🌧️ Precipitation</strong>
-                Water falls
-              </button>
-
-              <button class="cycle-step" type="button" data-detail="Water collects in rivers, lakes, oceans, soil, and underground. Then the cycle can begin again.">
-                <strong>🌊 Collection</strong>
-                Water gathers
-              </button>
-            </div>
-
-            <div class="cycle-detail" id="cycleDetail" aria-live="polite">
-              The Sun warms water in seas, rivers, lakes, and puddles. Some water changes into water vapour and rises into the air.
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <h3>🧪 Safe Home Experiment: Sink or Float</h3>
-            <p>
-              This simple activity helps children observe, predict, test, and explain.
-              Adult supervision is recommended.
-            </p>
-
-            <div class="experiment">
-              <div class="experiment-item">
-                <strong>Materials:</strong> bowl of water, spoon, small plastic cap, coin, leaf, pencil.
-              </div>
-              <div class="experiment-item">
-                <strong>Question:</strong> Which objects will sink? Which will float?
-              </div>
-              <div class="experiment-item">
-                <strong>Task:</strong> Predict first. Test gently. Then discuss what happened.
-              </div>
-              <div class="experiment-item">
-                <strong>Safety:</strong> Keep water shallow, avoid sharp objects, and clean the area after the activity.
-              </div>
-            </div>
-          </article>
+        <div class="sound-actions" style="margin-top: 16px;">
+          <button class="repeat-btn" type="button" id="resetProgressBtn">Reset local progress</button>
         </div>
       </div>
     </section>
 
-    <section class="section" id="practice" aria-labelledby="practice-title">
-      <div class="container daily-box">
-        <div class="section-label">Today’s Science Practice</div>
-        <h2 id="practice-title">One fact, one question, one observation</h2>
-        <p class="section-lead">
-          Short daily science activities help children become careful observers and confident thinkers.
-        </p>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>🌍 Fact of the Day</h3>
-            <div class="big-science">Earth spins</div>
-            <p>
-              Earth rotates. This rotation helps create day and night.
-            </p>
-          </article>
-
-          <article class="daily-card">
-            <h3>🌱 Observation Task</h3>
-            <p>
-              Look at a plant near your home. Can you find its stem, leaves, and roots?
-              Draw the plant and label its parts.
-            </p>
-          </article>
-
-          <article class="daily-card">
-            <h3>🐾 Animal Thinking</h3>
-            <p>
-              Choose one animal. Ask: Where does it live? What does it eat? How does it move?
-              What helps it survive?
-            </p>
-          </article>
-
-          <article class="daily-card">
-            <h3>🧠 Quick Quiz</h3>
-            <p>What do plants usually need to grow?</p>
-            <div class="quiz-options">
-              <button type="button" data-answer="wrong">Only toys</button>
-              <button type="button" data-answer="correct">Water, sunlight, air, and soil/nutrients</button>
-              <button type="button" data-answer="wrong">Only darkness</button>
-            </div>
-            <div class="result" id="result" aria-live="polite"></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="discovery-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Discovery Cards</div>
-            <h2 id="discovery-title">Three ways to explore today</h2>
-            <p class="section-lead">
-              These small activities are easy for parents and teachers to use at home or in class.
-            </p>
-          </div>
-        </div>
-
-        <div class="discovery-grid">
-          <article class="discovery-card">
-            <div class="discovery-emoji">🔎</div>
-            <h3>Look closely</h3>
-            <p>Choose a leaf, stone, toy, or cup. Describe its color, shape, size, texture, and use.</p>
-          </article>
-
-          <article class="discovery-card">
-            <div class="discovery-emoji">📒</div>
-            <h3>Keep a science notebook</h3>
-            <p>Draw what you observe and write one sentence: “I noticed that…”</p>
-          </article>
-
-          <article class="discovery-card">
-            <div class="discovery-emoji">💬</div>
-            <h3>Explain kindly</h3>
-            <p>Tell a parent or teacher what you discovered and what question you want to ask next.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="path-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2 id="path-title">A strong science foundation in four steps</h2>
-            <p class="section-lead">
-              Children learn science best when they are guided to notice, wonder, test, and explain.
-            </p>
-          </div>
-        </div>
-
-        <div class="pathway">
-          <article class="path-card">
-            <strong>1</strong>
-            <h3>Notice</h3>
-            <p>Look carefully at living things, objects, weather, and changes.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>2</strong>
-            <h3>Wonder</h3>
-            <p>Ask questions and make simple predictions.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>3</strong>
-            <h3>Try</h3>
-            <p>Do safe activities with adult support and careful steps.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>4</strong>
-            <h3>Explain</h3>
-            <p>Draw, speak, write, or show what was learned.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="parents-title">
+    <section class="section" id="parent-guide">
       <div class="container parent-box">
         <div>
-          <div class="section-label">For Parents & Teachers</div>
-          <h2 id="parents-title">How to help children love science</h2>
+          <div class="section-label">Parent & Teacher Zone</div>
+          <h2>Science curriculum method and map</h2>
           <p class="section-lead">
-            Science should feel like safe discovery, not memorization only. Let children ask
-            questions, touch safe materials, draw observations, and explain in their own words.
+            The child area stays focused on selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
           </p>
+
+          <details class="curriculum-details">
+            <summary>Open: How young children should learn Science</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                Ages 3–7 should learn science through observation, safe experiments, real objects,
+                pictures, questions, drawing, sorting, comparing, measuring, and explaining in simple words.
+              </p>
+              <div class="grid-4" style="margin-top:16px;">
+                <div class="mini-card"><div class="icon-pill">👀</div><h3>Observe</h3><p>Look carefully at body, animals, plants, water, weather, light, and objects.</p></div>
+                <div class="mini-card"><div class="icon-pill">❓</div><h3>Ask</h3><p>Use simple questions: What is it? What changed? What do you notice?</p></div>
+                <div class="mini-card"><div class="icon-pill">🧪</div><h3>Try Safely</h3><p>Use safe home materials with adult guidance only.</p></div>
+                <div class="mini-card"><div class="icon-pill">✍️</div><h3>Draw & Explain</h3><p>Children remember better when they draw, label, and explain.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="curriculum-details">
+            <summary>Open: Science learning worlds curriculum map</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                The curriculum gradually covers senses, body, health, animals, plants, water, air, weather,
+                materials, floating and sinking, magnets, light, sound, forces, space, energy, environment,
+                and safe scientific thinking.
+              </p>
+              <div class="compact-worlds" id="compactWorlds"></div>
+            </div>
+          </details>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Use real examples from home: water, light, plants, food, weather, shadows, and sounds.</li>
-            <li>Ask “What do you notice?” before giving the answer.</li>
-            <li>Let children predict first, then test safely with adult supervision.</li>
-            <li>Encourage drawing and labeling because children often understand before they can write long answers.</li>
-            <li>Connect science with care for Allah’s creation: kindness to animals, plants, water, and the environment.</li>
+            <li>Use one age level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is short: fact, observation, experiment, or answer only.</li>
+            <li>Children should observe real objects before memorizing scientific words.</li>
+            <li>Mix safe home items: water, cups, spoons, paper, leaves, toys, magnets, torchlight, fruits, and stones.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container cta">
+      <div class="container cta-section">
         <div>
-          <div class="section-label" style="color:#99f6e4;">Personal Guidance</div>
-          <h2>Book Online Science Support with Dr. Imran Hayat</h2>
+          <div class="section-label" style="color:#86efac;">Personal Guidance</div>
+          <h2>Book Online Science Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured support in science basics, reading science passages,
-            understanding concepts, observation skills, or confidence-building, you can book online
-            classes along with these free learning resources.
+            If your child needs structured support in observation, early science vocabulary,
+            experiments, environment awareness, animal and plant knowledge, space, materials, or problem solving,
+            you can book online classes alongside these free resources.
           </p>
 
           <ul class="cta-list">
-            <li>Science concepts explained simply</li>
-            <li>Reading and vocabulary support</li>
-            <li>Quiz and worksheet practice</li>
-            <li>Confidence-building through guided learning</li>
+            <li>Age 3–7 science foundation plan</li>
+            <li>Focused lesson library by age level</li>
+            <li>Visual models, safe activities, stories, quizzes, and whiteboard practice</li>
+            <li>Gentle guided learning for curious young scientists</li>
           </ul>
         </div>
 
         <div>
-          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <a class="btn btn-gold" href="../online-classes.html">Book Online Classes</a>
           <br /><br />
           <a class="btn btn-white" href="../contact.html">Contact for Details</a>
         </div>
@@ -1309,10 +1354,7 @@
     <div class="container footer-grid">
       <div>
         <h3>🌟 Al-Hayat Kids Learning Hub</h3>
-        <p>
-          A joyful Islamic and academic learning platform where children learn,
-          read, play, explore, and grow.
-        </p>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
       <div>
@@ -1322,6 +1364,7 @@
           <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
           <li><a href="english.html">English</a></li>
           <li><a href="math.html">Math</a></li>
+          <li><a href="general-knowledge.html">General Knowledge</a></li>
         </ul>
       </div>
 
@@ -1345,37 +1388,570 @@
         </ul>
       </div>
     </div>
-
-    <div class="container copyright">
-      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
-    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
   <script>
-    const result = document.getElementById("result");
+    const compactWorlds = [
+      ["👀", "Senses"], ["🧍", "Body"], ["🩺", "Health"], ["🐾", "Animals"],
+      ["🌱", "Plants"], ["💧", "Water"], ["🌬️", "Air"], ["🌦️", "Weather"],
+      ["🪨", "Materials"], ["🛟", "Float/Sink"], ["🧲", "Magnets"], ["💡", "Light"],
+      ["🔊", "Sound"], ["🏃", "Forces"], ["🪐", "Space"], ["🌳", "Environment"]
+    ];
 
-    document.querySelectorAll(".quiz-options button").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.dataset.answer === "correct") {
-          result.textContent = "Correct! Most plants need water, sunlight, air, and nutrients to grow. ⭐";
-          result.style.color = "#0f766e";
-        } else {
-          result.textContent = "Good try! Plants usually need water, sunlight, air, and soil/nutrients.";
-          result.style.color = "#b45309";
-        }
+    function lesson(id, icon, title, fact, keyWord, visual, question, options, answer, experiment, gamePrompt, gameOptions, gameAnswer, drawing, story) {
+      return { id, icon, title, fact, keyWord, visual, question, options, answer, experiment, gamePrompt, gameOptions, gameAnswer, drawing, story };
+    }
+
+    const ageLevels = [
+      {
+        id: "age-3",
+        level: "Level 1",
+        label: "Age 3",
+        icon: "🌱",
+        title: "Age 3: My Body, Senses & Simple Nature",
+        subtitle: "Five senses, body parts, clean habits, water, animals, plants, day and night, hot and cold, and simple observation.",
+        mastery: "By the end of this level, the child can name basic body parts, senses, animals, plants, water, and simple changes around them.",
+        lessons: [
+          lesson("five-senses", "👀", "Five Senses", "We use our senses to learn. Eyes see, ears hear, nose smells, tongue tastes, and skin feels.", "Senses", "👀 👂 👃 👅 ✋", "Which body part helps us see?", ["Eyes", "Feet", "Hair"], "Eyes", "Point to your eyes, ears, nose, tongue, and hands.", "Choose a sense", ["Hearing", "Chair", "Pencil"], "Hearing", "Draw eyes and ears.", "The child looked at a flower, smelled it, and listened to birds."),
+          lesson("body-parts", "🧍", "Body Parts", "The body has parts such as head, hands, feet, eyes, ears, nose, mouth, arms, and legs.", "Body", "head • hands • feet", "Which body part helps us walk?", ["Feet", "Eyes", "Nose"], "Feet", "Name five body parts.", "Choose body part", ["Hand", "Apple", "Book"], "Hand", "Draw a simple body.", "Hamza used his feet to walk and his hands to clap."),
+          lesson("clean-body", "🧼", "Clean Body", "Keeping clean helps us stay healthy. We wash hands, brush teeth, bathe, and wear clean clothes.", "Clean", "🧼 🪥 🚿", "What helps clean our hands?", ["Soap", "Sand", "Paint"], "Soap", "Practice washing hands properly.", "Choose clean habit", ["Brush teeth", "Dirty hands", "Throw soap"], "Brush teeth", "Draw soap and toothbrush.", "Before eating, Sara washed her hands with soap and water."),
+          lesson("water", "💧", "Water", "People, animals, and plants need water. We drink clean water.", "Water", "💧 🥤 🌱", "What do plants need to grow?", ["Water", "Shoes", "Pillow"], "Water", "Drink clean water and water a plant with an adult.", "Choose water user", ["Plant", "Stone only", "Table"], "Plant", "Draw a glass of water.", "A little plant grew because it received water and sunlight."),
+          lesson("animals", "🐾", "Animals", "Animals are living things. Some animals live at home, some on farms, and some in forests.", "Animals", "🐈 🐄 🦁 🐦", "Which one is an animal?", ["Cat", "Cup", "Chair"], "Cat", "Name three animals.", "Choose animal", ["Bird", "Door", "Pencil"], "Bird", "Draw your favorite animal.", "The bird flew in the sky and the cat sat near the door."),
+          lesson("plants", "🌱", "Plants", "Plants are living things. Many plants have roots, stems, leaves, and flowers.", "Plant", "🌱 🌿 🌸", "Which one is a plant?", ["Flower", "Shoe", "Spoon"], "Flower", "Look at one plant and name leaf or flower.", "Choose plant part", ["Leaf", "Ball", "Cup"], "Leaf", "Draw a plant.", "The child saw green leaves on a small plant."),
+          lesson("day-night", "☀️", "Day and Night", "Day is bright because of the sun. Night is dark and we can see the moon and stars.", "Day/Night", "☀️ 🌙 ⭐", "What shines in the day?", ["Sun", "Chair", "Shoe"], "Sun", "Tell one thing you do in the day and one at night.", "Choose night object", ["Moon", "Apple", "Book"], "Moon", "Draw day and night.", "In the day, the child played. At night, the child slept."),
+          lesson("hot-cold", "🌡️", "Hot and Cold", "Hot and cold tell us how something feels. Adults help children stay safe around very hot things.", "Hot/Cold", "☀️ hot  ❄️ cold", "Which one is cold?", ["Ice", "Fire", "Hot tea"], "Ice", "Touch safe warm/cool objects with an adult.", "Choose cold item", ["Ice", "Sun", "Stove"], "Ice", "Draw sun and snow.", "The ice felt cold. The sun made the day warm."),
+          lesson("sink-float-start", "🛟", "Sink and Float", "Some things float on water. Some things sink in water.", "Float", "leaf floats • stone sinks", "What may float on water?", ["Leaf", "Stone always", "Brick"], "Leaf", "With an adult, test a leaf and a small stone in water.", "Choose floating item", ["Leaf", "Coin", "Rock"], "Leaf", "Draw water and leaf.", "A leaf floated on water, but a small stone sank."),
+          lesson("observe", "🔎", "Observe Carefully", "Observe means look, listen, feel, smell, or notice carefully.", "Observe", "look • listen • notice", "What does observe mean?", ["Notice carefully", "Run fast", "Sleep only"], "Notice carefully", "Observe one object and say two things about it.", "Choose observation", ["The leaf is green", "I do not look", "Throw it"], "The leaf is green", "Draw one object you observed.", "The child observed a leaf and said, “It is green and soft.”")
+        ]
+      },
+      {
+        id: "age-4",
+        level: "Level 2",
+        label: "Age 4",
+        icon: "🌿",
+        title: "Age 4: Animals, Plants, Weather & Materials",
+        subtitle: "Animal homes, baby animals, plant needs, weather, seasons, rocks, paper, wood, plastic, and simple sorting.",
+        mastery: "By the end of this level, the child can group animals, identify weather, name simple materials, and understand plant needs.",
+        lessons: [
+          lesson("animal-homes", "🏡", "Animal Homes", "Animals live in different homes. Birds live in nests, bees in hives, fish in water, and rabbits in burrows.", "Homes", "🐦 nest • 🐝 hive • 🐟 water", "Where do birds often live?", ["Nest", "Cup", "Shoe"], "Nest", "Match one animal with its home.", "Choose animal home", ["Fish live in water", "Birds live in cups", "Cats live on clouds"], "Fish live in water", "Draw a nest.", "A bird built a nest for its babies."),
+          lesson("baby-animals", "🐣", "Baby Animals", "Many animals have special baby names. A baby cat is a kitten, a baby dog is a puppy, and a baby cow is a calf.", "Baby Animals", "kitten • puppy • calf", "What is a baby cat called?", ["Kitten", "Puppy", "Calf"], "Kitten", "Name one baby animal.", "Choose baby dog", ["Puppy", "Kitten", "Foal"], "Puppy", "Draw a baby animal.", "The kitten stayed close to its mother."),
+          lesson("plant-needs", "🌱", "What Plants Need", "Many plants need water, sunlight, air, and soil to grow well.", "Plant Needs", "💧 ☀️ 🌬️ soil", "Which helps a plant grow?", ["Sunlight", "Plastic toy", "Pillow"], "Sunlight", "Water a plant with an adult.", "Choose plant need", ["Water", "Shoe", "Table"], "Water", "Draw sun, water, and plant.", "The plant grew because it had water and sunlight."),
+          lesson("weather", "🌦️", "Weather", "Weather can be sunny, rainy, cloudy, windy, hot, or cold.", "Weather", "☀️ 🌧️ ☁️ 💨", "What do we use in rain?", ["Umbrella", "Sunglasses only", "Plate"], "Umbrella", "Look outside and name the weather.", "Choose rainy item", ["Umbrella", "Book", "Toy"], "Umbrella", "Draw today's weather.", "It was rainy, so the child carried an umbrella."),
+          lesson("seasons", "🍂", "Seasons", "Seasons are parts of the year such as summer, winter, spring, and autumn.", "Seasons", "☀️ ❄️ 🌸 🍂", "Which season is usually cold?", ["Winter", "Summer", "Spring"], "Winter", "Talk about clothes for hot and cold weather.", "Choose cold season", ["Winter", "Summer", "Rain"], "Winter", "Draw summer and winter.", "In winter, the child wore warm clothes."),
+          lesson("materials", "🧱", "Materials", "Objects are made from materials such as wood, plastic, metal, glass, paper, and cloth.", "Materials", "wood • plastic • metal", "What can a chair be made of?", ["Wood", "Water only", "Cloud"], "Wood", "Find objects made of wood, paper, and plastic.", "Choose material", ["Paper", "Running", "Sleeping"], "Paper", "Draw three objects and label materials.", "The table was made of wood and the bottle was made of plastic."),
+          lesson("soft-hard", "🧸", "Soft and Hard", "Some things are soft, such as cotton and teddy bears. Some things are hard, such as stones and metal.", "Soft/Hard", "🧸 soft • 🪨 hard", "Which one is hard?", ["Stone", "Cotton", "Pillow"], "Stone", "Compare one soft object and one hard object.", "Choose soft item", ["Pillow", "Rock", "Metal spoon"], "Pillow", "Draw soft and hard objects.", "The teddy felt soft, but the stone felt hard."),
+          lesson("heavy-light", "⚖️", "Heavy and Light", "Heavy things are harder to lift. Light things are easier to lift.", "Weight", "brick heavy • leaf light", "Which is usually heavier?", ["Brick", "Leaf", "Feather"], "Brick", "Compare two safe objects: heavy or light.", "Choose light item", ["Feather", "Brick", "Big stone"], "Feather", "Draw heavy and light objects.", "The leaf was light and moved in the wind."),
+          lesson("living-nonliving", "🌿", "Living and Non-Living", "Living things grow and need food or water. Non-living things do not grow.", "Living", "plant grows • chair does not grow", "Which is living?", ["Plant", "Chair", "Cup"], "Plant", "Sort three living and non-living things.", "Choose living thing", ["Bird", "Pencil", "Table"], "Bird", "Draw one living and one non-living thing.", "A plant grew taller, but the chair stayed the same."),
+          lesson("sort-science", "🧺", "Sort and Group", "Scientists sort things by color, size, shape, material, or living/non-living.", "Sort", "red things / blue things", "Why do we sort things?", ["To group similar things", "To lose them", "To break them"], "To group similar things", "Sort toys by color or size.", "Choose sorting rule", ["Same color together", "Throw everything", "Hide everything"], "Same color together", "Draw two groups.", "The child sorted blocks into red and blue groups.")
+        ]
+      },
+      {
+        id: "age-5",
+        level: "Level 3",
+        label: "Age 5",
+        icon: "🌳",
+        title: "Age 5: Water, Air, Light, Sound & Simple Experiments",
+        subtitle: "Water uses, air, wind, light, shadows, sound, magnets, floating/sinking, body health, food, and environment care.",
+        mastery: "By the end of this level, the child can explain simple ideas about water, air, light, sound, magnets, health, and environment care.",
+        lessons: [
+          lesson("uses-water", "💧", "Uses of Water", "Water is used for drinking, washing, cooking, growing plants, and cleaning.", "Water Uses", "drink • wash • grow", "Which is a use of water?", ["Drinking", "Breaking toys", "Making shoes fly"], "Drinking", "Name three uses of water.", "Choose water use", ["Washing hands", "Dirtying hands", "Throwing food"], "Washing hands", "Draw three uses of water.", "The family used water to drink, wash, and grow plants."),
+          lesson("air", "🌬️", "Air", "Air is around us. We cannot see air, but we can feel it when wind blows.", "Air", "balloon • wind • breath", "Can we usually see air?", ["No", "Yes always", "Only at night"], "No", "Blow air into a balloon with adult help.", "Choose air clue", ["Moving wind", "Stone", "Chair"], "Moving wind", "Draw a balloon.", "The child felt air when the fan moved it."),
+          lesson("wind", "💨", "Wind", "Wind is moving air. Wind can move leaves, kites, flags, and paper.", "Wind", "💨 leaf moves", "What is wind?", ["Moving air", "Frozen water", "Hot food"], "Moving air", "Watch leaves or paper move in air.", "Choose wind effect", ["Flag moves", "Stone grows", "Book drinks"], "Flag moves", "Draw a kite in wind.", "The kite moved because the wind pushed it."),
+          lesson("light", "💡", "Light", "Light helps us see. The sun, lamp, torch, and candle give light.", "Light", "☀️ 💡 🔦", "What helps us see?", ["Light", "Darkness", "Silence"], "Light", "Use a torch safely with an adult.", "Choose light source", ["Sun", "Table", "Water"], "Sun", "Draw the sun and lamp.", "The room became bright when the lamp was turned on."),
+          lesson("shadow", "🌑", "Shadows", "A shadow is made when something blocks light.", "Shadow", "light + object = shadow", "What makes a shadow?", ["Blocking light", "Drinking water", "Singing"], "Blocking light", "Make a hand shadow with a torch and adult help.", "Choose shadow maker", ["Object blocks light", "Air eats light", "Water sings"], "Object blocks light", "Draw a shadow.", "The child's hand blocked the torchlight and made a shadow."),
+          lesson("sound", "🔊", "Sound", "Sound is something we hear. Sounds can be loud, soft, high, or low.", "Sound", "clap • bell • whisper", "Which body part hears sound?", ["Ears", "Eyes", "Feet"], "Ears", "Make soft and loud claps.", "Choose sound", ["Bell rings", "Stone sleeps", "Cup grows"], "Bell rings", "Draw an ear and bell.", "The bell made a loud sound and the whisper was soft."),
+          lesson("magnets", "🧲", "Magnets", "Magnets pull some metal objects. They do not pull everything.", "Magnet", "🧲 pulls paperclip", "What can a magnet pull?", ["Some metals", "Water", "Wood always"], "Some metals", "Test a magnet on safe objects with an adult.", "Choose magnetic item", ["Paperclip", "Leaf", "Plastic cup"], "Paperclip", "Draw a magnet.", "The magnet pulled a paperclip but not a leaf."),
+          lesson("float-sink", "🛟", "Float and Sink", "Objects that stay on top of water float. Objects that go down sink.", "Float/Sink", "leaf floats • coin sinks", "What does float mean?", ["Stay on top of water", "Go to sleep", "Become hot"], "Stay on top of water", "Test safe objects in a bowl of water with an adult.", "Choose floating object", ["Leaf", "Coin", "Stone"], "Leaf", "Draw floating and sinking.", "The leaf floated, but the coin sank."),
+          lesson("healthy-food", "🥦", "Food and Health", "Healthy food helps the body grow and gives energy.", "Healthy Food", "🍎 🥦 🥛 🥚", "Which food is usually healthy?", ["Fruit", "Too much candy", "Plastic"], "Fruit", "Name two healthy foods.", "Choose healthy food", ["Vegetables", "Stone", "Toy"], "Vegetables", "Draw a healthy plate.", "The child ate fruit and felt ready to play."),
+          lesson("clean-earth", "🌳", "Care for Earth", "We care for Earth by saving water, keeping places clean, planting trees, and not littering.", "Earth Care", "🌳 💧 🗑️ ♻️", "Where should rubbish go?", ["Dustbin", "Road", "Garden floor"], "Dustbin", "Put one wrapper in the dustbin.", "Choose earth care", ["Save water", "Waste water", "Throw litter"], "Save water", "Draw a clean park.", "The children kept the park clean and watered the plants.")
+        ]
+      },
+      {
+        id: "age-6",
+        level: "Level 4",
+        label: "Age 6",
+        icon: "🌴",
+        title: "Age 6: Life Cycles, Habitats, Matter, Forces & Earth",
+        subtitle: "Life cycles, habitats, food chains, states of matter, melting, evaporation, push/pull, simple machines, rocks, soil, and moon.",
+        mastery: "By the end of this level, the child can describe life cycles, habitats, food chains, matter, simple forces, rocks, soil, and Earth patterns.",
+        lessons: [
+          lesson("life-cycle", "🦋", "Life Cycle", "A life cycle shows how a living thing grows and changes.", "Life Cycle", "egg → caterpillar → butterfly", "What does a life cycle show?", ["Growth and change", "Only color", "Only sound"], "Growth and change", "Draw a butterfly life cycle.", "Choose life cycle stage", ["Egg", "Spoon", "Chair"], "Egg", "Draw egg to butterfly.", "A caterpillar changed into a butterfly."),
+          lesson("habitats", "🏞️", "Habitats", "A habitat is a place where a plant or animal lives and gets what it needs.", "Habitat", "fish in water • camel in desert", "Where does a fish live?", ["Water", "Tree top only", "Desert sand"], "Water", "Match one animal with its habitat.", "Choose habitat", ["Forest for deer", "Ocean for camel", "Sky for fish"], "Forest for deer", "Draw one habitat.", "The fish lived in water because it needed water to survive."),
+          lesson("food-chain", "🍃", "Food Chain", "A food chain shows how living things get energy from food.", "Food Chain", "grass → rabbit → fox", "What does a food chain show?", ["Who eats what", "Road map", "Alphabet"], "Who eats what", "Make a simple food chain with pictures.", "Choose food chain", ["plant → goat", "chair → pencil", "stone → book"], "plant → goat", "Draw plant, rabbit, fox.", "The rabbit ate grass, and the fox hunted for food."),
+          lesson("states-matter", "🧊", "States of Matter", "Matter can be solid, liquid, or gas.", "Matter", "ice solid • water liquid • steam gas", "Which is a liquid?", ["Water", "Ice only", "Stone"], "Water", "Name one solid, one liquid, and one gas.", "Choose solid", ["Rock", "Juice", "Air"], "Rock", "Draw solid, liquid, gas.", "Ice is solid, water is liquid, and steam is gas."),
+          lesson("melting", "🧊", "Melting", "Melting happens when a solid becomes a liquid because of heat.", "Melting", "ice → water", "What happens when ice melts?", ["It becomes water", "It becomes stone", "It becomes paper"], "It becomes water", "Watch ice melt safely in a bowl.", "Choose melting example", ["Ice to water", "Book to chair", "Stone to song"], "Ice to water", "Draw ice turning to water.", "The ice cube melted and became water."),
+          lesson("evaporation", "☀️", "Evaporation", "Evaporation happens when liquid water changes into water vapor.", "Evaporation", "water → vapor", "What can heat do to water slowly?", ["Help it evaporate", "Turn it into wood", "Make it sing"], "Help it evaporate", "Observe a small wet spot drying with adult guidance.", "Choose evaporation", ["Water dries", "Stone grows", "Paper drinks"], "Water dries", "Draw water vapor.", "A wet patch became dry after some time."),
+          lesson("push-pull", "🏃", "Push and Pull", "A push moves something away. A pull brings something closer.", "Force", "push door • pull rope", "What brings something closer?", ["Pull", "Push", "Sleep"], "Pull", "Push and pull a toy gently.", "Choose pull action", ["Pull rope", "Push wall", "Sit quietly"], "Pull rope", "Draw push and pull arrows.", "The child pushed the box and pulled the wagon."),
+          lesson("simple-machines", "⚙️", "Simple Machines", "Simple machines help us do work. Examples include wheel, lever, ramp, and pulley.", "Machine", "wheel • ramp • lever", "Which is a simple machine?", ["Wheel", "Apple", "Cloud"], "Wheel", "Find a wheel or ramp around you.", "Choose machine", ["Ramp", "Banana", "Cup"], "Ramp", "Draw a ramp.", "A ramp helped the child move a toy car upward."),
+          lesson("rocks-soil", "🪨", "Rocks and Soil", "Rocks are hard natural materials. Soil helps many plants grow.", "Rocks/Soil", "rock • sand • soil", "What helps many plants grow?", ["Soil", "Plastic", "Glass only"], "Soil", "Look at soil and rocks with adult guidance.", "Choose natural material", ["Rock", "Toy car", "Spoon"], "Rock", "Draw rocks and soil.", "The plant grew in soil near small rocks."),
+          lesson("moon", "🌙", "The Moon", "The moon is seen in the night sky. It does not make its own light like the sun.", "Moon", "🌙 night sky", "When do we often see the moon?", ["At night", "Inside a cup", "Only under water"], "At night", "Observe the moon with an adult if visible.", "Choose sky object", ["Moon", "Chair", "Bottle"], "Moon", "Draw moon and stars.", "The child looked at the moon and stars in the night sky."),
+          lesson("earth-sun", "🌍", "Earth and Sun", "Earth is our planet. The sun gives Earth light and heat.", "Earth/Sun", "🌍 ☀️", "What gives Earth light and heat?", ["Sun", "Moon", "Stone"], "Sun", "Draw Earth and Sun.", "Choose Earth fact", ["Earth is our planet", "Earth is a toy", "Sun is a chair"], "Earth is our planet", "Draw Earth and Sun.", "The sun gave light and warmth to Earth.")
+        ]
+      },
+      {
+        id: "age-7",
+        level: "Level 5",
+        label: "Age 7",
+        icon: "🌟",
+        title: "Age 7: Experiments, Energy, Space, Environment & Scientific Thinking",
+        subtitle: "Fair tests, variables, energy, electricity safety, light reflection, sound vibration, weather cycle, solar system, recycling, pollution, and animal adaptations.",
+        mastery: "By the end of this level, the child can explain simple experiments, fair testing, energy, electricity safety, space, environment, and adaptations.",
+        lessons: [
+          lesson("scientist", "🔬", "What Scientists Do", "Scientists observe, ask questions, test ideas, record results, and explain what they find.", "Scientist", "observe • test • record", "What does a scientist do?", ["Observes and tests", "Guesses only", "Sleeps only"], "Observes and tests", "Observe one object and record two facts.", "Choose scientist action", ["Record results", "Hide results", "Break tools"], "Record results", "Draw a scientist notebook.", "The child observed a leaf and wrote two things about it."),
+          lesson("fair-test", "⚖️", "Fair Test", "A fair test changes one thing at a time so the result is clearer.", "Fair Test", "change one thing", "How many things should we change at one time in a fair test?", ["One", "Everything", "Nothing ever"], "One", "Compare two paper planes by changing only one thing.", "Choose fair test", ["Change one thing", "Change all things", "Do not observe"], "Change one thing", "Draw two test objects.", "The child tested two ramps and changed only the height."),
+          lesson("energy", "⚡", "Energy", "Energy helps things move, light up, make sound, grow, or work.", "Energy", "food • sun • battery", "What gives people energy?", ["Food", "Stone", "Empty plate"], "Food", "Name three energy sources.", "Choose energy source", ["Sun", "Chair", "Sock"], "Sun", "Draw food, sun, and battery.", "The child ate breakfast and had energy to play."),
+          lesson("electricity-safety", "🔌", "Electricity Safety", "Electricity is useful but can be dangerous. Children should not touch sockets, plugs, or wires without adults.", "Safety", "🔌 ⚠️ adult help", "Who should handle plugs safely?", ["Adult", "Small child alone", "Toy"], "Adult", "Point to a socket from far away and say: I do not touch.", "Choose safe action", ["Ask an adult", "Touch wires", "Put fingers in socket"], "Ask an adult", "Draw a safety sign.", "The child saw a socket and stayed away safely."),
+          lesson("reflection", "🪞", "Reflection", "Reflection happens when light bounces off a surface, like a mirror.", "Reflection", "light → mirror → eyes", "What reflects light well?", ["Mirror", "Pillow", "Dark cloth"], "Mirror", "Look at a mirror safely and notice reflection.", "Choose reflector", ["Mirror", "Cotton", "Soil"], "Mirror", "Draw a mirror and light arrow.", "The mirror reflected the child's face."),
+          lesson("vibration", "🔊", "Sound Vibration", "Many sounds are made when something vibrates, or moves back and forth quickly.", "Vibration", "rubber band vibrates", "What can make sound?", ["Vibration", "Silence only", "Darkness"], "Vibration", "Pluck a rubber band with adult help and observe.", "Choose vibration", ["String moves", "Stone sleeps", "Cup disappears"], "String moves", "Draw sound waves.", "The rubber band moved quickly and made a sound."),
+          lesson("water-cycle", "🌧️", "Water Cycle", "The water cycle moves water through evaporation, clouds, rain, and collection.", "Water Cycle", "evaporation → cloud → rain", "What falls from clouds?", ["Rain", "Rocks", "Books"], "Rain", "Draw the water cycle arrows.", "Choose cycle stage", ["Evaporation", "Running", "Sleeping"], "Evaporation", "Draw water cycle.", "Water evaporated, formed clouds, and came back as rain."),
+          lesson("solar-system", "🪐", "Solar System", "The solar system has the Sun and objects that move around it, including planets.", "Solar System", "☀️ 🪐 🌍", "What is at the center of our solar system?", ["Sun", "Moon", "Cloud"], "Sun", "Draw the Sun and planets.", "Choose planet", ["Earth", "Table", "Shoe"], "Earth", "Draw solar system.", "The planets moved around the Sun."),
+          lesson("adaptations", "🦆", "Animal Adaptations", "Adaptations are body parts or behaviours that help animals survive.", "Adaptation", "duck feet • camel hump", "Why does a duck have webbed feet?", ["To help swim", "To write", "To climb books"], "To help swim", "Match one animal feature with its use.", "Choose adaptation", ["Camel hump helps store fat", "Fish wings fly", "Bird fins swim"], "Camel hump helps store fat", "Draw one animal adaptation.", "A duck used webbed feet to swim in water."),
+          lesson("pollution", "🏭", "Pollution", "Pollution makes air, water, or land dirty and harmful.", "Pollution", "smoke • litter • dirty water", "What does pollution do?", ["Makes places dirty or harmful", "Cleans water", "Grows flowers only"], "Makes places dirty or harmful", "Find one way to reduce pollution.", "Choose anti-pollution action", ["Use dustbin", "Throw litter", "Waste water"], "Use dustbin", "Draw clean and dirty Earth.", "The children picked up litter and kept the playground clean."),
+          lesson("recycling", "♻️", "Recycling", "Recycling means using materials again to reduce waste.", "Recycle", "paper → new paper", "Why do we recycle?", ["Reduce waste", "Make more rubbish", "Waste electricity"], "Reduce waste", "Sort paper or plastic if recycling is available.", "Choose recyclable item", ["Paper", "Fresh food", "Dirty water"], "Paper", "Draw recycling sign.", "The child put paper in the recycling box."),
+          lesson("prediction", "🔮", "Predict and Check", "A prediction is a careful guess about what might happen. Scientists check predictions by observing.", "Predict", "guess → test → observe", "What is a prediction?", ["Careful guess", "Final proof always", "Drawing only"], "Careful guess", "Predict whether an object will float, then test safely.", "Choose science step", ["Test prediction", "Ignore result", "Hide object"], "Test prediction", "Write: I predict...", "The child predicted the leaf would float, then checked in water.")
+        ]
+      }
+    ];
+
+    const state = {
+      activeAgeIndex: 0,
+      activeLessonIndex: 0,
+      funSound: true,
+      progress: loadProgress()
+    };
+
+    const ageTabs = document.getElementById("ageTabs");
+    const levelHero = document.getElementById("levelHero");
+    const levelProgress = document.getElementById("levelProgress");
+    const lessonLibrary = document.getElementById("lessonLibrary");
+    const lessonCard = document.getElementById("lessonCard");
+    const activityCard = document.getElementById("activityCard");
+    const storyCard = document.getElementById("storyCard");
+    const quizCard = document.getElementById("quizCard");
+    const missionCard = document.getElementById("missionCard");
+    const masteryCard = document.getElementById("masteryCard");
+    const compactWorldsEl = document.getElementById("compactWorlds");
+    const boardTitle = document.getElementById("boardTitle");
+    const writingGoal = document.getElementById("writingGoal");
+
+    function loadProgress() {
+      try {
+        return JSON.parse(localStorage.getItem("alhayat-science-progress")) || {
+          stars: 0,
+          lessons: [],
+          quizzes: [],
+          missions: [],
+          writings: []
+        };
+      } catch (e) {
+        return { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
+      }
+    }
+
+    function saveProgress() {
+      localStorage.setItem("alhayat-science-progress", JSON.stringify(state.progress));
+      updateProgressCards();
+    }
+
+    function addUniqueProgress(type, id, stars) {
+      if (!state.progress[type].includes(id)) {
+        state.progress[type].push(id);
+        state.progress.stars += stars;
+        saveProgress();
+        playSuccessSound();
+      }
+    }
+
+    function updateProgressCards() {
+      document.getElementById("starsCount").textContent = state.progress.stars;
+      document.getElementById("lessonsCount").textContent = state.progress.lessons.length;
+      document.getElementById("quizCount").textContent = state.progress.quizzes.length;
+      document.getElementById("missionCount").textContent = state.progress.missions.length;
+    }
+
+    function speak(text, lang = "en-US") {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = 0.82;
+      utterance.pitch = 1.02;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function playSuccessSound() {
+      if (!state.funSound) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioContext();
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+        oscillator.type = "sine";
+        oscillator.frequency.setValueAtTime(640, ctx.currentTime);
+        oscillator.frequency.setValueAtTime(880, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.28);
+        oscillator.connect(gain);
+        gain.connect(ctx.destination);
+        oscillator.start();
+        oscillator.stop(ctx.currentTime + 0.3);
+      } catch (e) {}
+    }
+
+    function currentLevel() {
+      return ageLevels[state.activeAgeIndex];
+    }
+
+    function currentLesson() {
+      return currentLevel().lessons[state.activeLessonIndex];
+    }
+
+    function renderAgeTabs() {
+      ageTabs.innerHTML = ageLevels.map((level, index) => `
+        <button class="age-tab ${index === state.activeAgeIndex ? "active" : ""}" type="button" data-age-index="${index}">
+          ${level.icon} ${level.label}
+        </button>
+      `).join("");
+
+      ageTabs.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeAgeIndex = Number(btn.dataset.ageIndex);
+          state.activeLessonIndex = 0;
+          renderAll();
+          speak(`${currentLevel().label}. ${currentLevel().title}. Choose one science lesson.`);
+        });
       });
+    }
+
+    function renderLevelHero() {
+      const level = currentLevel();
+      levelHero.innerHTML = `
+        <div class="level-icon">${level.icon}</div>
+        <div>
+          <div class="level-badge">${level.level} • ${level.label}</div>
+          <h2>${level.title}</h2>
+          <p>${level.subtitle}</p>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" id="listenLevelBtn">🔊 Listen Level</button>
+            <button class="repeat-btn" type="button" id="repeatLevelBtn">🔁 Repeat Goal</button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("listenLevelBtn").addEventListener("click", () => speak(`${level.title}. ${level.subtitle}`));
+      document.getElementById("repeatLevelBtn").addEventListener("click", () => speak(level.mastery));
+    }
+
+    function renderLevelProgress() {
+      levelProgress.innerHTML = ageLevels.map((level, index) => `
+        <div class="level-dot ${index === state.activeAgeIndex ? "active" : ""}">
+          ${level.icon} ${level.label}
+          <span>${level.level}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderLessonLibrary() {
+      const level = currentLevel();
+      document.getElementById("libraryTitle").textContent = `${level.label} Science Library`;
+      document.getElementById("libraryLead").textContent = level.mastery;
+
+      lessonLibrary.innerHTML = level.lessons.map((item, index) => `
+        <button class="lesson-chip ${index === state.activeLessonIndex ? "active" : ""}" type="button" data-lesson-index="${index}">
+          <small>${index + 1}</small> ${item.icon} ${item.title}
+        </button>
+      `).join("");
+
+      lessonLibrary.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeLessonIndex = Number(btn.dataset.lessonIndex);
+          renderAll(false);
+          speak(`${currentLesson().title}. ${currentLesson().fact}`);
+        });
+      });
+    }
+
+    function renderLessonCards() {
+      const item = currentLesson();
+      const lessonId = `${currentLevel().id}-${item.id}`;
+
+      lessonCard.innerHTML = `
+        <div class="badge">Today’s Science Idea</div>
+        <h3>${item.icon} ${item.title}</h3>
+        <p>${item.fact}</p>
+        <div class="science-display">${item.keyWord}</div>
+        <div class="visual-card">
+          <div class="visual-clue">
+            <div>
+              <div class="emoji">${item.icon}</div>
+              <strong>${item.title}</strong>
+            </div>
+          </div>
+          <div class="support-grid">
+            <div class="note-box"><strong>Science Fact:</strong> ${item.fact}</div>
+            <div class="visual-demo">${item.visual}</div>
+          </div>
+        </div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenLessonBtn">🔊 Listen Fact</button>
+          <button class="repeat-btn" type="button" id="repeatLessonBtn">🔁 Repeat Word</button>
+          <button class="learned-btn" type="button" id="learnedLessonBtn">✅ I Learned This</button>
+        </div>
+      `;
+
+      activityCard.innerHTML = `
+        <div class="badge">Safe Activity</div>
+        <h3>🧪 Try or Think</h3>
+        <p>${item.experiment}</p>
+        <div class="choice-options" id="gameOptions">
+          ${item.gameOptions.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="gameResult"></div>
+      `;
+
+      storyCard.innerHTML = `
+        <div class="badge">Mini Science Story</div>
+        <h3>📖 Learn through story</h3>
+        <div class="story-text">${item.story}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenStoryBtn">🔊 Listen Story</button>
+          <button class="repeat-btn" type="button" id="repeatQuestionBtn">🔁 Repeat Question</button>
+        </div>
+      `;
+
+      quizCard.innerHTML = `
+        <div class="badge">Quick Quiz</div>
+        <h3>❓ ${item.question}</h3>
+        <div class="quiz-options" id="quizOptions">
+          ${item.options.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="quizResult"></div>
+      `;
+
+      missionCard.innerHTML = `
+        <div class="badge">Observation Mission</div>
+        <h3>🎯 Mission for today</h3>
+        <div class="mission-box">${item.experiment}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenMissionBtn">🔊 Listen Mission</button>
+          <button class="learned-btn" type="button" id="missionDoneBtn">✅ Mission Done</button>
+        </div>
+      `;
+
+      masteryCard.innerHTML = `
+        <div class="badge">Mastery Check</div>
+        <h3>🏆 Can the child explain it?</h3>
+        <p class="section-lead" style="margin-top:0;">A lesson is stronger when the child can observe, name, answer, try safely, and draw the idea.</p>
+        <ul class="tips">
+          <li>Child can name: <strong>${item.keyWord}</strong>.</li>
+          <li>Child can answer: <strong>${item.question}</strong></li>
+          <li>Child can try or discuss: <strong>${item.experiment}</strong></li>
+          <li>Child can draw/write: <strong>${item.drawing}</strong></li>
+        </ul>
+      `;
+
+      boardTitle.textContent = `Trace or draw: ${item.keyWord}`;
+      writingGoal.textContent = item.drawing;
+
+      document.getElementById("listenLessonBtn").addEventListener("click", () => speak(`${item.title}. ${item.fact}`));
+      document.getElementById("repeatLessonBtn").addEventListener("click", () => speak(`${item.keyWord}. ${item.keyWord}. ${item.keyWord}.`));
+      document.getElementById("learnedLessonBtn").addEventListener("click", () => {
+        addUniqueProgress("lessons", lessonId, 2);
+        speak(`Excellent. You learned ${item.title}.`);
+      });
+
+      document.getElementById("listenStoryBtn").addEventListener("click", () => speak(item.story));
+      document.getElementById("repeatQuestionBtn").addEventListener("click", () => speak(item.question));
+      document.getElementById("listenMissionBtn").addEventListener("click", () => speak(item.experiment));
+      document.getElementById("missionDoneBtn").addEventListener("click", () => {
+        addUniqueProgress("missions", lessonId, 3);
+        speak("Wonderful science mission completed. You earned stars.");
+      });
+
+      document.querySelectorAll("#quizOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.answer, "quizResult", "quizzes", lessonId));
+      });
+
+      document.querySelectorAll("#gameOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.gameAnswer, "gameResult", "quizzes", `${lessonId}-game`));
+      });
+
+      drawGuide();
+    }
+
+    function checkAnswer(button, correctAnswer, resultId, progressType, progressId) {
+      const siblings = button.parentElement.querySelectorAll("button");
+      siblings.forEach(btn => {
+        btn.classList.remove("correct", "wrong");
+        btn.disabled = true;
+      });
+
+      const result = document.getElementById(resultId);
+      if (button.textContent.trim() === correctAnswer) {
+        button.classList.add("correct");
+        result.textContent = "✅ Correct! Wonderful scientific thinking.";
+        result.style.color = "#166534";
+        addUniqueProgress(progressType, progressId, 2);
+        speak("Correct. Wonderful scientific thinking.");
+      } else {
+        button.classList.add("wrong");
+        result.textContent = `❌ Good try. Correct answer: ${correctAnswer}`;
+        result.style.color = "#991b1b";
+        speak(`Good try. The correct answer is ${correctAnswer}.`);
+      }
+    }
+
+    function renderCompactWorlds() {
+      compactWorldsEl.innerHTML = compactWorlds.map(world => `
+        <div class="compact-world"><span>${world[0]}</span>${world[1]}</div>
+      `).join("");
+    }
+
+    function renderAll(reset = true) {
+      renderAgeTabs();
+      renderLevelHero();
+      renderLevelProgress();
+      renderLessonLibrary();
+      renderLessonCards();
+      updateProgressCards();
+      if (reset) drawGuide();
+    }
+
+    document.addEventListener("click", event => {
+      const speakButton = event.target.closest("[data-static-speak]");
+      if (speakButton) speak(speakButton.dataset.staticSpeak, speakButton.dataset.lang || "en-US");
     });
 
-    const cycleSteps = document.querySelectorAll(".cycle-step");
-    const cycleDetail = document.getElementById("cycleDetail");
-
-    cycleSteps.forEach((step) => {
-      step.addEventListener("click", () => {
-        cycleSteps.forEach((item) => item.classList.remove("is-active"));
-        step.classList.add("is-active");
-        cycleDetail.textContent = step.dataset.detail;
-      });
+    document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
+      speak("Choose the child age. Then choose one Science lesson from the library.");
     });
+
+    document.querySelector(".stop-sound").addEventListener("click", () => {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    });
+
+    document.getElementById("funSoundToggle").addEventListener("click", event => {
+      state.funSound = !state.funSound;
+      event.currentTarget.classList.toggle("off", !state.funSound);
+      event.currentTarget.textContent = state.funSound ? "🔔 Fun Sounds: On" : "🔕 Fun Sounds: Off";
+      event.currentTarget.setAttribute("aria-pressed", String(state.funSound));
+    });
+
+    document.getElementById("resetProgressBtn").addEventListener("click", () => {
+      state.progress = { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
+      saveProgress();
+      speak("Progress reset on this device.");
+    });
+
+    const canvas = document.getElementById("scienceWhiteboard");
+    const ctx = canvas.getContext("2d");
+    let drawing = false;
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = rect.width * ratio;
+      canvas.height = rect.height * ratio;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      drawGuide();
+    }
+
+    function drawGuide() {
+      if (!ctx) return;
+      const rect = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, rect.width, rect.height);
+
+      const item = currentLesson();
+      ctx.save();
+      ctx.globalAlpha = 0.16;
+      ctx.fillStyle = "#166534";
+      ctx.font = "900 50px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      const guide = item.keyWord.length > 18 ? item.keyWord.slice(0, 18) + "..." : item.keyWord;
+      ctx.fillText(guide, rect.width / 2, rect.height / 2 - 20);
+      ctx.font = "700 30px Arial";
+      ctx.fillText(item.icon, rect.width / 2, rect.height / 2 + 45);
+      ctx.restore();
+
+      ctx.strokeStyle = "#dcfce7";
+      ctx.lineWidth = 1;
+      for (let y = 42; y < rect.height; y += 42) {
+        ctx.beginPath();
+        ctx.moveTo(24, y);
+        ctx.lineTo(rect.width - 24, y);
+        ctx.stroke();
+      }
+    }
+
+    function getPointerPosition(event) {
+      const rect = canvas.getBoundingClientRect();
+      const source = event.touches ? event.touches[0] : event;
+      return {
+        x: source.clientX - rect.left,
+        y: source.clientY - rect.top
+      };
+    }
+
+    function startDrawing(event) {
+      event.preventDefault();
+      drawing = true;
+      const pos = getPointerPosition(event);
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+
+    function draw(event) {
+      if (!drawing) return;
+      event.preventDefault();
+      const pos = getPointerPosition(event);
+      ctx.lineTo(pos.x, pos.y);
+      ctx.strokeStyle = "#166534";
+      ctx.lineWidth = 5;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.stroke();
+    }
+
+    function stopDrawing() {
+      drawing = false;
+    }
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mouseleave", stopDrawing);
+    canvas.addEventListener("touchstart", startDrawing, { passive: false });
+    canvas.addEventListener("touchmove", draw, { passive: false });
+    canvas.addEventListener("touchend", stopDrawing);
+
+    document.getElementById("clearBoardBtn").addEventListener("click", drawGuide);
+
+    document.getElementById("listenBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`Draw or write ${item.keyWord}. ${item.drawing}`);
+    });
+
+    document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`${item.keyWord}. Observe it. Say it. Draw it.`);
+    });
+
+    document.getElementById("saveBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      const id = `${currentLevel().id}-${item.id}-drawing`;
+      addUniqueProgress("writings", id, 1);
+      speak("Science drawing saved on this device. Good effort.");
+    });
+
+    window.addEventListener("resize", resizeCanvas);
+
+    renderCompactWorlds();
+    renderAll();
+    resizeCanvas();
   </script>
 </body>
 </html>
