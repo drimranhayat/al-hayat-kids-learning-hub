@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Islamic Studies for Kids | Al-Hayat Kids Learning Hub</title>
+  <title>Islamic Studies for Kids | Year 1–5 Learning Path, Duas, Manners & Stories | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="Islamic Studies for Kids at Al-Hayat Kids Learning Hub. Learn daily duas, good manners, Prophet stories, Seerah, Hadith, Five Pillars, Ramadan, Hajj, and Asma-ul-Husna in a child-friendly way." />
-  <meta name="keywords" content="Islamic studies for kids, duas for kids, Prophet stories for children, Islamic manners for kids, Seerah for kids, Five Pillars for kids, Hadith for kids" />
+  <meta name="description" content="Premium Islamic Studies for Kids page with Year 1 to Year 5 learning pathway, daily duas, Islamic manners, five pillars, Seerah stories, missions, quizzes, audio practice, and safe local progress tracking." />
+  <meta name="keywords" content="Islamic Studies for kids, Year 1 Islamic Studies, Year 2 Islamic Studies, Year 3 Islamic Studies, Year 4 Islamic Studies, Year 5 Islamic Studies, duas for kids, Islamic manners, Prophet stories for kids, five pillars for children, Muslim kids learning" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/islamic-studies.html" />
 
   <style>
@@ -18,57 +17,63 @@
       --green: #138a3d;
       --green-dark: #075c2a;
       --green-soft: #e8f8ee;
-      --yellow: #f6c445;
-      --orange: #ff8a1f;
       --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --sky: #38bdf8;
+      --sky-soft: #e0f2fe;
+      --orange: #f97316;
+      --orange-soft: #ffedd5;
+      --yellow: #f6c445;
+      --yellow-soft: #fef3c7;
       --purple: #7c3aed;
-      --cream: #fffaf0;
-      --light: #f8fbff;
+      --purple-soft: #ede9fe;
+      --pink: #ec4899;
+      --pink-soft: #fce7f3;
+      --teal: #14b8a6;
+      --teal-soft: #ccfbf1;
+      --red-soft: #fee2e2;
+      --lime-soft: #ecfccb;
       --white: #ffffff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
       --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
-      --radius: 24px;
+      --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(19, 138, 61, 0.12), transparent 28rem),
+        radial-gradient(circle at top left, rgba(19, 138, 61, 0.14), transparent 28rem),
         radial-gradient(circle at top right, rgba(246, 196, 69, 0.20), transparent 24rem),
+        radial-gradient(circle at 90% 62%, rgba(56, 189, 248, 0.12), transparent 22rem),
         linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    .arabic {
+      font-family: "Noto Naskh Arabic", "Amiri", "Scheherazade New", "Segoe UI", serif;
+      direction: rtl;
     }
 
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin-inline: auto;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, textarea { font: inherit; }
+
+    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
 
     .top-header {
-      background: white;
+      background: rgba(255,255,255,0.92);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
+      backdrop-filter: blur(16px);
       box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
 
@@ -92,10 +97,10 @@
       width: 52px;
       height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--green), #22c55e);
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      color: white;
       display: grid;
       place-items: center;
-      color: white;
       font-size: 1.6rem;
       box-shadow: 0 12px 24px rgba(19, 138, 61, 0.20);
     }
@@ -104,13 +109,12 @@
       display: block;
       color: var(--muted);
       font-weight: 700;
-      margin-top: -2px;
       font-size: 0.78rem;
+      margin-top: -2px;
     }
 
     .nav {
       display: flex;
-      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -121,11 +125,10 @@
       border-radius: 999px;
       font-weight: 800;
       font-size: 0.94rem;
-      color: var(--text);
       transition: 0.2s ease;
     }
 
-    .nav a:hover {
+    .nav a:hover, .nav a:focus {
       background: var(--green-soft);
       color: var(--green-dark);
     }
@@ -136,10 +139,42 @@
       box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
     }
 
-    .hero {
-      padding: 64px 0 44px;
-      overflow: hidden;
+    .audio-bar {
+      position: sticky;
+      top: 76px;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.94);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
     }
+
+    .audio-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.10);
+      color: white;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .hero { padding: 64px 0 44px; }
 
     .hero-card {
       display: grid;
@@ -147,12 +182,14 @@
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 85% 18%, rgba(246, 196, 69, 0.35), transparent 14rem),
-        linear-gradient(135deg, #e8f8ee, #e0f2fe);
+        radial-gradient(circle at 88% 18%, rgba(20, 184, 166, 0.24), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.25), transparent 16rem),
+        linear-gradient(135deg, #ecfdf5, #eff6ff);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255,255,255,0.78);
+      overflow: hidden;
     }
 
     .kicker {
@@ -169,16 +206,14 @@
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 5.1rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
       color: var(--green-dark);
       margin-bottom: 18px;
     }
 
-    h1 span {
-      color: var(--orange);
-    }
+    h1 span { color: var(--orange); }
 
     .hero p {
       max-width: 650px;
@@ -187,18 +222,19 @@
       margin-bottom: 22px;
     }
 
-    .buttons {
+    .buttons, .sound-actions, .toolbar, .year-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
+      align-items: center;
     }
 
-    .btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .year-tab {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 19px;
+      min-height: 44px;
+      padding: 10px 15px;
       border-radius: 999px;
       font-weight: 900;
       border: 0;
@@ -207,14 +243,16 @@
       text-align: center;
     }
 
-    .btn:hover {
+    .btn { min-height: 48px; padding: 12px 19px; }
+
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover, .tool-btn:hover, .year-tab:hover {
       transform: translateY(-2px);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--green), #22c55e);
+    .btn-primary, .learned-btn, .tool-btn, .year-tab.active {
+      background: linear-gradient(135deg, var(--green), var(--teal));
       color: white;
-      box-shadow: 0 14px 28px rgba(19, 138, 61, 0.22);
+      box-shadow: 0 14px 28px rgba(19, 138, 61, 0.20);
     }
 
     .btn-yellow {
@@ -223,14 +261,26 @@
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
 
-    .btn-white {
+    .btn-white, .year-tab {
       background: white;
       color: var(--green-dark);
       border: 1px solid var(--border);
     }
 
+    .listen-btn {
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      border: 1px solid #bfdbfe;
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
     .hero-visual {
-      min-height: 360px;
+      min-height: 410px;
       border-radius: 32px;
       background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
@@ -242,55 +292,68 @@
     }
 
     .hero-visual::before {
-      content: "🕌";
+      content: "﷽";
       position: absolute;
-      font-size: 9rem;
-      opacity: 0.12;
-      left: 24px;
-      top: 20px;
+      font-size: 4.8rem;
+      color: rgba(19, 138, 61, 0.10);
+      left: 26px;
+      top: 26px;
     }
 
     .hero-visual::after {
-      content: "⭐";
+      content: "🕌";
       position: absolute;
-      font-size: 5rem;
-      right: 42px;
-      top: 36px;
-      opacity: 0.55;
+      font-size: 6rem;
+      right: 36px;
+      bottom: 24px;
+      opacity: 0.16;
     }
 
-    .child-card {
-      width: min(92%, 390px);
+    .hero-box {
+      width: min(92%, 440px);
       background: white;
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
-    .child-card .emoji {
-      font-size: 4rem;
-      margin-bottom: 8px;
-    }
+    .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
 
-    .child-card h2 {
+    .hero-box h2 {
       color: var(--green-dark);
       font-size: 1.65rem;
       line-height: 1.15;
       margin-bottom: 10px;
     }
 
-    .child-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
+    .hero-box p { color: var(--muted); font-size: 0.98rem; }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
     }
 
-    .section {
-      padding: 52px 0;
+    .hero-stat {
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 12px;
+      font-weight: 900;
+      border: 1px solid var(--border);
     }
+
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .section { padding: 52px 0; }
 
     .section-head {
       margin-bottom: 26px;
@@ -301,7 +364,7 @@
     }
 
     .section-label {
-      color: var(--green);
+      color: var(--green-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -311,7 +374,7 @@
 
     .section h2 {
       color: #0f172a;
-      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
@@ -319,99 +382,177 @@
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 820px;
       margin-top: 8px;
     }
 
-    .topics-grid {
+    .grid-4, .topic-grid, .steps-grid, .pillars-grid, .manners-grid, .values-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      gap: 16px;
     }
 
-    .topic-card {
+    .card, .topic-card, .step-card, .pillar-card, .manner-card, .value-card, .year-mini-card {
       background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: 24px;
       padding: 22px;
-      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
       transition: 0.22s ease;
-      min-height: 215px;
     }
 
-    .topic-card:hover {
+    .topic-card:hover, .pillar-card:hover, .manner-card:hover, .value-card:hover, .year-mini-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow);
     }
 
-    .topic-icon {
-      width: 58px;
-      height: 58px;
+    .icon-wrap {
+      width: 56px;
+      height: 56px;
       border-radius: 18px;
       display: grid;
       place-items: center;
-      font-size: 1.9rem;
-      margin-bottom: 16px;
+      font-size: 1.7rem;
+      margin-bottom: 14px;
       background: var(--green-soft);
     }
 
-    .topic-card:nth-child(2) .topic-icon { background: #fef3c7; }
-    .topic-card:nth-child(3) .topic-icon { background: #ede9fe; }
-    .topic-card:nth-child(4) .topic-icon { background: #dbeafe; }
-    .topic-card:nth-child(5) .topic-icon { background: #ffedd5; }
-    .topic-card:nth-child(6) .topic-icon { background: #ccfbf1; }
-    .topic-card:nth-child(7) .topic-icon { background: #fce7f3; }
-    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
+    .grid-4 .card:nth-child(2) .icon-wrap, .topic-grid .topic-card:nth-child(2) .icon-wrap { background: var(--yellow-soft); }
+    .grid-4 .card:nth-child(3) .icon-wrap, .topic-grid .topic-card:nth-child(3) .icon-wrap { background: var(--blue-soft); }
+    .grid-4 .card:nth-child(4) .icon-wrap, .topic-grid .topic-card:nth-child(4) .icon-wrap { background: var(--purple-soft); }
+    .topic-grid .topic-card:nth-child(5) .icon-wrap { background: var(--orange-soft); }
+    .topic-grid .topic-card:nth-child(6) .icon-wrap { background: var(--pink-soft); }
+    .topic-grid .topic-card:nth-child(7) .icon-wrap { background: var(--teal-soft); }
+    .topic-grid .topic-card:nth-child(8) .icon-wrap { background: var(--red-soft); }
 
-    .topic-card h3 {
+    .card h3, .topic-card h3, .step-card h3, .pillar-card h3, .manner-card h3, .value-card h3, .year-mini-card h3 {
       color: #0f172a;
-      margin-bottom: 8px;
-      font-size: 1.18rem;
+      margin-bottom: 7px;
     }
 
-    .topic-card p {
+    .card p, .topic-card p, .step-card p, .pillar-card p, .manner-card p, .value-card p, .year-mini-card p {
       color: var(--muted);
-      font-size: 0.96rem;
-      margin-bottom: 14px;
+      font-size: 0.95rem;
     }
 
     .topic-card a {
+      display: inline-flex;
+      margin-top: 12px;
       color: var(--green-dark);
       font-weight: 950;
     }
 
-    .daily-box {
+    .shell, .daily-shell, .story-shell, .year-shell {
       background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #f0fdf4, #eff6ff);
+        radial-gradient(circle at 10% 20%, rgba(19,138,61,0.14), transparent 18rem),
+        linear-gradient(135deg, #ecfdf5, #eff6ff);
       border-radius: 34px;
       padding: clamp(22px, 4vw, 36px);
       border: 1px solid rgba(226, 232, 240, 0.9);
       box-shadow: var(--shadow);
     }
 
-    .daily-grid {
+    .daily-grid, .story-grid, .practice-grid, .year-content-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 18px;
       margin-top: 22px;
     }
 
-    .daily-card {
+    .daily-card, .story-card, .practice-card, .year-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
     }
 
-    .arabic {
-      direction: rtl;
-      text-align: right;
-      font-family: "Traditional Arabic", "Amiri", serif;
-      font-size: 2rem;
-      line-height: 1.7;
+    .daily-card h3, .story-card h3, .practice-card h3, .year-card h3 {
       color: #0f172a;
-      margin: 12px 0;
+      margin-bottom: 8px;
+    }
+
+    .today-badge, .year-badge, .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .level-badge {
+      background: var(--green-soft);
+      color: var(--green-dark);
+      border-color: #bbf7d0;
+    }
+
+    .big-arabic {
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.45;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin: 14px 0;
+    }
+
+    .visual-card {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+
+    .visual-clue {
+      background: linear-gradient(135deg, #dcfce7, #fef3c7);
+      border: 1px solid #bbf7d0;
+      border-radius: 24px;
+      min-height: 132px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .visual-clue .emoji {
+      font-size: 4.2rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .visual-clue strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 0.95rem;
+    }
+
+    .support-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .mission-box {
+      background: linear-gradient(135deg, #f8fafc, #ecfdf5);
+    }
+
+    .sentence-box { font-size: 1.02rem; }
+
+    .story-text {
+      font-weight: 700;
+      line-height: 1.8;
     }
 
     .quiz-options {
@@ -428,11 +569,12 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .quiz-options button:hover {
-      background: var(--green-soft);
-    }
+    .quiz-options button:hover { background: var(--green-soft); }
+    .quiz-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
     .result {
       margin-top: 12px;
@@ -440,21 +582,7 @@
       font-weight: 900;
     }
 
-    .pathway {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .path-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
-    }
-
-    .path-card strong {
+    .manner-card strong, .pillar-card strong, .value-card strong, .year-mini-card strong {
       display: inline-grid;
       place-items: center;
       width: 44px;
@@ -466,17 +594,171 @@
       font-size: 1.2rem;
     }
 
-    .path-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .year-layout {
+      margin-top: 22px;
+      display: grid;
+      gap: 18px;
     }
 
-    .path-card p {
+    .year-panel {
+      background: white;
+      border-radius: 28px;
+      padding: clamp(20px, 4vw, 30px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .year-panel-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .year-icon {
+      width: 82px;
+      height: 82px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--green-soft), var(--yellow-soft));
+      font-size: 2.6rem;
+      border: 1px solid rgba(19, 138, 61, 0.14);
+    }
+
+    .year-panel h3 {
+      font-size: clamp(1.5rem, 3vw, 2.15rem);
+      color: var(--green-dark);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 6px;
+    }
+
+    .year-panel p {
       color: var(--muted);
+      font-weight: 700;
+    }
+
+    .material-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .material-list li {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .material-list li::before {
+      content: "🌱 ";
+    }
+
+    .activity-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .activity-card {
+      background: linear-gradient(135deg, #ffffff, #f8fafc);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .activity-card span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    .activity-card strong {
+      color: #0f172a;
+    }
+
+    .activity-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .writing-area {
+      width: 100%;
+      min-height: 130px;
+      border: 2px dashed #86efac;
+      background: #f0fdf4;
+      border-radius: 20px;
+      padding: 14px;
+      resize: vertical;
+      margin-top: 12px;
+      color: #0f172a;
+      outline: none;
+    }
+
+    .writing-area:focus {
+      border-color: var(--green);
+      background: white;
+    }
+
+    .progress-section, .parent-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 36px);
+    }
+
+    .parent-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .tips {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .tips li {
+      background: #f8fafc;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .step-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: var(--green);
+      color: white;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
     }
 
     .cta {
-      background: linear-gradient(135deg, #0f172a, #064e3b);
+      background: linear-gradient(135deg, var(--green-dark), #14532d);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -487,9 +769,7 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 {
-      color: white;
-    }
+    .cta h2 { color: white; }
 
     .cta p {
       color: rgba(255,255,255,0.78);
@@ -511,7 +791,7 @@
 
     .cta-list li::before {
       content: "✓ ";
-      color: #86efac;
+      color: #bbf7d0;
     }
 
     .footer {
@@ -529,12 +809,9 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 {
-      margin-bottom: 12px;
-    }
+    .footer h3 { margin-bottom: 12px; }
 
-    .footer p,
-    .footer a {
+    .footer p, .footer a {
       color: rgba(255,255,255,0.72);
       font-weight: 650;
     }
@@ -552,60 +829,58 @@
     }
 
     @media (max-width: 980px) {
-      .hero-card,
-      .cta {
+      .hero-card, .parent-box, .cta, .visual-card, .year-panel-head {
         grid-template-columns: 1fr;
       }
 
-      .topics-grid {
+      .grid-4, .topic-grid, .steps-grid, .pillars-grid, .manners-grid, .values-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .pathway,
-      .daily-grid {
+      .daily-grid, .story-grid, .practice-grid, .year-content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-strip {
         grid-template-columns: 1fr;
       }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .audio-bar {
+        top: 0;
+      }
     }
 
     @media (max-width: 640px) {
+      .container { width: min(100% - 24px, var(--max)); }
+
       .top-inner {
         flex-direction: column;
         align-items: flex-start;
         padding: 14px 0;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
+      .nav { justify-content: flex-start; }
 
-      .topics-grid,
-      .footer-grid {
+      .grid-4, .topic-grid, .steps-grid, .pillars-grid, .manners-grid, .values-grid, .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .buttons {
+      .buttons, .sound-actions, .toolbar, .year-tabs {
         display: grid;
       }
 
-      .btn {
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .year-tab {
         width: 100%;
       }
 
-      .hero {
-        padding-top: 28px;
-      }
-
-      .hero-visual {
-        min-height: 280px;
-      }
-
-      .section-head {
-        display: block;
-      }
+      .hero { padding-top: 28px; }
+      .hero-visual { min-height: 300px; }
+      .section-head { display: block; }
+      .hero-stats { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -615,203 +890,444 @@
     <div class="container top-inner">
       <a class="brand" href="../index.html">
         <span class="brand-icon">🕌</span>
-        <span>
-          Al-Hayat Kids Learning Hub
-          <small>Learn • Explore • Grow</small>
-        </span>
+        <span>Al-Hayat Kids Learning Hub<small>Faith • Manners • Learning • Growth</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="arabic-for-kids.html">Arabic</a>
         <a href="english.html">English</a>
+        <a href="math.html">Math</a>
+        <a href="science.html">Science</a>
         <a href="../reading-library/index.html">Stories</a>
-        <a href="../worksheets/index.html">Worksheets</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
     </div>
   </header>
 
+  <div class="audio-bar" aria-label="Audio learning controls">
+    <div class="container audio-inner">
+      <p>🔊 Islamic learning audio + local progress tracking are active. Listen, Repeat, Learn, and earn stars.</p>
+      <button class="stop-sound" type="button">⏹ Stop Sound</button>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">🕌 Islamic Learning for Kids</div>
-          <h1>Islamic Studies <span>for Kids</span></h1>
+          <div class="kicker">🕌 Islamic Studies for Kids</div>
+          <h1>Islamic Studies <span>Year 1–5</span></h1>
           <p>
-            A joyful and child-friendly Islamic learning space where children learn daily duas,
-            good manners, Prophet stories, Seerah, Hadith, Five Pillars, Ramadan, Hajj, and
-            Asma-ul-Husna in simple language.
+            A premium, colorful, and child-friendly Islamic learning page where children learn daily duas,
+            good manners, Islamic values, the Five Pillars, Seerah-inspired stories, age-wise Year 1–5
+            learning material, quizzes, missions, reflection, audio practice, and progress tracking.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#topics">Start Learning</a>
-            <a class="btn btn-yellow" href="../islamic-corner/daily-duas.html">Learn Daily Duas</a>
-            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+            <a class="btn btn-primary" href="#year-path">Start Year Path</a>
+            <a class="btn btn-yellow" href="#daily-dua">Daily Dua</a>
+            <a class="btn btn-white" href="#progress">View Progress</a>
+          </div>
+
+          <div class="sound-actions" style="margin-top: 14px;">
+            <button class="listen-btn" type="button" data-static-speak="Welcome to Islamic Studies for Kids. Let us learn duas, good manners, Islamic values, stories, and daily habits from Year One to Year Five." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Welcome to Islamic Studies for Kids. Let us learn duas, good manners, Islamic values, stories, and daily habits from Year One to Year Five." data-lang="en-US">🔁 Repeat</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="child-card">
-            <div class="emoji">🤲</div>
-            <h2>Learn Islam with love, manners, and meaning</h2>
-            <p>Short lessons, stories, quizzes, and daily practice for young hearts.</p>
+          <div class="hero-box">
+            <div class="emoji">🌙</div>
+            <h2>Faith, manners, stories, and daily habits</h2>
+            <p>Children learn Islam best through love, repetition, beautiful manners, age-wise progress, and real-life practice.</p>
+            <div class="hero-stats">
+              <div class="hero-stat">Year 1–5 <span>Pathway</span></div>
+              <div class="hero-stat">Daily <span>Duas</span></div>
+              <div class="hero-stat">Stars <span>& Streaks</span></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="topics">
+    <section class="section" aria-labelledby="method-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <div class="section-label">Explore Topics</div>
-            <h2>What children can learn here</h2>
+            <div class="section-label">Learning Method</div>
+            <h2 id="method-title">A loving Islamic learning routine</h2>
             <p class="section-lead">
-              Each section will grow into a complete learning area with simple lessons,
-              stories, activities, quizzes, and printable resources.
+              The best Islamic learning for children is short, gentle, meaningful, repeated, and connected to real life.
+              This page uses age-wise material, visual cards, stories, missions, and progress rewards.
             </p>
           </div>
         </div>
 
-        <div class="topics-grid">
-          <article class="topic-card">
-            <div class="topic-icon">🤲</div>
-            <h3>Daily Duas</h3>
-            <p>Simple daily duas with Arabic, transliteration, meaning, and practice prompts.</p>
-            <a href="../islamic-corner/daily-duas.html">Open Duas →</a>
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon-wrap">👂</div>
+            <h3>Listen</h3>
+            <p>Children first hear the dua, value, story, or short Islamic lesson.</p>
           </article>
 
-          <article class="topic-card">
-            <div class="topic-icon">🌱</div>
-            <h3>Good Manners</h3>
-            <p>Kindness, honesty, respect, cleanliness, gratitude, patience, and helping others.</p>
-            <a href="../islamic-corner/good-manners.html">Learn Manners →</a>
+          <article class="card">
+            <div class="icon-wrap">🔁</div>
+            <h3>Repeat</h3>
+            <p>They repeat slowly to improve memory and confidence.</p>
           </article>
 
-          <article class="topic-card">
-            <div class="topic-icon">📖</div>
-            <h3>Prophet Stories</h3>
-            <p>Child-friendly stories of the Prophets with lessons, values, and reflection questions.</p>
-            <a href="../islamic-corner/prophet-stories.html">Read Stories →</a>
+          <article class="card">
+            <div class="icon-wrap">💚</div>
+            <h3>Practice</h3>
+            <p>They connect learning with daily habits, manners, and kindness.</p>
           </article>
 
-          <article class="topic-card">
-            <div class="topic-icon">☀️</div>
-            <h3>Seerah for Kids</h3>
-            <p>Beautiful lessons from the life of Prophet Muhammad ﷺ in simple language.</p>
-            <a href="../reading-library/index.html">Start Seerah →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">💬</div>
-            <h3>Hadith for Kids</h3>
-            <p>Short hadith lessons about mercy, honesty, worship, manners, and character.</p>
-            <a href="../islamic-corner/index.html">Read Hadith →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🕋</div>
-            <h3>Five Pillars</h3>
-            <p>Shahadah, Salah, Zakah, Sawm, and Hajj explained in a child-friendly way.</p>
-            <a href="../islamic-corner/index.html">Learn Pillars →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🌙</div>
-            <h3>Ramadan for Kids</h3>
-            <p>Fasting, duas, kindness, charity, Qur’an, and Ramadan activities for children.</p>
-            <a href="../islamic-corner/index.html">Explore Ramadan →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">✨</div>
-            <h3>Asma-ul-Husna</h3>
-            <p>Learn the beautiful names of Allah with simple meanings and daily reflection.</p>
-            <a href="../islamic-corner/index.html">Learn Names →</a>
+          <article class="card">
+            <div class="icon-wrap">⭐</div>
+            <h3>Track</h3>
+            <p>Stars, streaks, learned items, and badges motivate regular learning.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container daily-box">
-        <div class="section-label">Today’s Islamic Learning</div>
-        <h2>Small daily practice, beautiful lifelong habits</h2>
+    <section class="section" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Explore Islamic Studies</div>
+            <h2 id="topics-title">What children can learn here</h2>
+            <p class="section-lead">
+              This Islamic zone supports age-wise learning, daily duas, manners, values, pillars,
+              Seerah-inspired stories, reflection, quizzes, listening, repetition, and local progress tracking.
+            </p>
+          </div>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <div class="icon-wrap">🧭</div>
+            <h3>Year 1–5 Pathway</h3>
+            <p>Age-wise learning material from basic duas to stronger Islamic character.</p>
+            <a href="#year-path">Open Pathway →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">🤲</div>
+            <h3>Daily Duas</h3>
+            <p>Learn short daily duas and phrases with meaning and practical use.</p>
+            <a href="#daily-dua">Open Daily Dua →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">🌟</div>
+            <h3>Islamic Values</h3>
+            <p>Truthfulness, kindness, gratitude, patience, respect, and responsibility.</p>
+            <a href="#values">Learn Values →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">🕋</div>
+            <h3>Five Pillars</h3>
+            <p>A child-friendly overview of the main pillars of Islam.</p>
+            <a href="#pillars">Open Pillars →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">📖</div>
+            <h3>Stories</h3>
+            <p>Short values-based stories inspired by Islamic manners and daily life.</p>
+            <a href="#story">Read Story →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">🧠</div>
+            <h3>Mini Quiz</h3>
+            <p>Check today’s learning with a simple question.</p>
+            <a href="#daily-dua">Try Quiz →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">✍️</div>
+            <h3>Reflection</h3>
+            <p>Write or say one small action for today.</p>
+            <a href="#reflection">Reflect →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="icon-wrap">🏆</div>
+            <h3>Progress</h3>
+            <p>Track stars, streaks, learned duas, values, stories, and missions.</p>
+            <a href="#progress">View Progress →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="year-path" aria-labelledby="year-title">
+      <div class="container year-shell">
+        <div class="section-label">Age-wise Islamic Learning</div>
+        <h2 id="year-title">Year 1–5 Islamic learning pathway</h2>
         <p class="section-lead">
-          Children learn best through small repeated activities. Start with one dua,
-          one value, and one simple question every day.
+          Choose a year level to see child-friendly learning goals, core topics, daily practice,
+          recommended activities, and parent guidance.
+        </p>
+
+        <div class="year-tabs" id="yearTabs" style="margin-top: 20px;"></div>
+
+        <div class="year-layout">
+          <div class="year-panel" id="yearPanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="daily-dua" aria-labelledby="daily-title">
+      <div class="container daily-shell">
+        <div class="section-label">Today’s Islamic Practice</div>
+        <h2 id="daily-title">Daily dua or value with meaning, audio, and quiz</h2>
+        <p class="section-lead">
+          The daily item is loaded from <strong>assets/learning-data.js</strong> when available,
+          with safe fallback content included on this page.
         </p>
 
         <div class="daily-grid">
           <article class="daily-card">
-            <h3>🤲 Dua of the Day</h3>
-            <div class="arabic">بِسْمِكَ اللّٰهُمَّ أَمُوتُ وَأَحْيَا</div>
-            <p><strong>Transliteration:</strong> Bismika Allahumma amutu wa ahya.</p>
-            <p><strong>Meaning:</strong> O Allah, in Your name I die and I live.</p>
-          </article>
+            <h3>🤲 Daily Dua / Value</h3>
+            <div class="today-badge">📅 Today’s Islamic habit</div>
 
-          <article class="daily-card">
-            <h3>🌱 Value of the Day</h3>
-            <p><strong>Honesty</strong></p>
-            <p>
-              A Muslim child should speak the truth, keep promises, and avoid cheating.
-              Honesty makes people trust us.
-            </p>
-          </article>
+            <div class="visual-card">
+              <div class="visual-clue">
+                <div>
+                  <div class="emoji" id="dailyEmoji">🍽️</div>
+                  <strong id="dailyVisualTitle">Daily Practice</strong>
+                </div>
+              </div>
 
-          <article class="daily-card">
-            <h3>🧠 Quick Quiz</h3>
-            <p>Which pillar of Islam is performed by fasting in Ramadan?</p>
-            <div class="quiz-options">
-              <button type="button" data-answer="wrong">Zakah</button>
-              <button type="button" data-answer="correct">Sawm</button>
-              <button type="button" data-answer="wrong">Hajj</button>
+              <div class="support-grid">
+                <div class="note-box"><strong>Title:</strong> <span id="dailyTitleText">Before eating</span></div>
+                <div class="big-arabic arabic" id="dailyArabic">بِسْمِ اللّٰهِ</div>
+                <div class="note-box"><strong>Transliteration:</strong> <span id="dailyTranslit">Bismillah</span></div>
+                <div class="note-box"><strong>Meaning:</strong> <span id="dailyMeaning">In the name of Allah.</span></div>
+                <div class="task-box"><strong>Mini task:</strong> <span id="dailyTask">Say Bismillah before eating today.</span></div>
+              </div>
             </div>
-            <div class="result" id="result" aria-live="polite"></div>
+
+            <div class="sound-actions" style="margin-top: 14px;">
+              <button class="listen-btn" id="listenDailyBtn" type="button">🔊 Listen</button>
+              <button class="repeat-btn" id="repeatDailyBtn" type="button">🔁 Repeat</button>
+              <button class="learned-btn" id="learnedDailyBtn" type="button">✅ I learned this</button>
+            </div>
           </article>
 
           <article class="daily-card">
-            <h3>📌 Parent Tip</h3>
-            <p>
-              Choose one dua for the week. Read it together before sleeping,
-              explain the meaning, and praise the child for every effort.
-            </p>
+            <h3>🧠 Mini Quiz</h3>
+            <p id="dailyQuizQuestion">When do we say Bismillah?</p>
+            <div class="quiz-options" id="dailyQuizOptions"></div>
+            <div class="result" id="dailyQuizResult" aria-live="polite"></div>
+
+            <div class="sound-actions">
+              <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
+              <button class="repeat-btn" id="repeatQuizAnswerBtn" type="button">🔁 Repeat Answer</button>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="values" aria-labelledby="values-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2>A simple path for children</h2>
+            <div class="section-label">Islamic Values Garden</div>
+            <h2 id="values-title">Core values children should grow with</h2>
             <p class="section-lead">
-              Keep Islamic learning gentle, practical, and connected with daily life.
+              Each value includes a simple meaning, real-life example, audio, and practice button.
             </p>
           </div>
         </div>
 
-        <div class="pathway">
-          <article class="path-card">
+        <div class="values-grid" id="valuesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="manners" aria-labelledby="manners-title">
+      <div class="container shell">
+        <div class="section-label">Good Manners Garden</div>
+        <h2 id="manners-title">Beautiful Islamic manners for children</h2>
+        <p class="section-lead">
+          Each manner is simple, practical, and connected to daily life. Children can listen, repeat,
+          and mark each manner as practiced.
+        </p>
+
+        <div class="manners-grid" id="mannersGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="pillars" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Five Pillars</div>
+            <h2 id="pillars-title">The main pillars of Islam</h2>
+            <p class="section-lead">
+              A simple child-friendly overview. Detailed lessons can be added later as separate pages.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars-grid" id="pillarsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="container story-shell">
+        <div class="section-label">Story Time</div>
+        <h2 id="story-title">Short stories with Islamic values</h2>
+        <p class="section-lead">
+          Simple stories help children connect Islamic values to real behavior.
+        </p>
+
+        <div class="story-grid">
+          <article class="story-card">
+            <h3 id="storyName">📖 The Honest Child</h3>
+            <div class="story-text" id="storyText">
+              A child found a pencil in the classroom. It was new and beautiful. The child wanted to keep it, but then remembered that a Muslim should be honest. The child gave it to the teacher and said, “I found this pencil.” The teacher smiled and said, “Honesty makes the heart beautiful.”
+            </div>
+
+            <div class="sound-actions" style="margin-top: 14px;">
+              <button class="listen-btn" id="listenStoryBtn" type="button">🔊 Listen Story</button>
+              <button class="repeat-btn" id="repeatStoryLessonBtn" type="button">🔁 Repeat Lesson</button>
+              <button class="learned-btn" id="completeStoryBtn" type="button">✅ Completed</button>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <h3>✅ Story Questions</h3>
+            <div id="storyQuestions"></div>
+            <div class="reflection-box" style="margin-top:12px;">
+              <strong>Value:</strong> <span id="storyValue">Honesty means telling the truth and returning what belongs to others.</span>
+            </div>
+
+            <div class="sound-actions" style="margin-top: 14px;">
+              <button class="listen-btn" id="listenStoryQuestionsBtn" type="button">🔊 Listen Questions</button>
+              <button class="tool-btn" id="nextStoryBtn" type="button">➡️ Next Story</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reflection" aria-labelledby="reflection-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Reflection Practice</div>
+            <h2 id="reflection-title">Write or say one good action</h2>
+            <p class="section-lead">
+              Children can type a short reflection here. This box is local only and does not send or collect data.
+            </p>
+          </div>
+        </div>
+
+        <div class="practice-grid">
+          <article class="practice-card">
+            <h3>✍️ Today’s Reflection</h3>
+            <p id="reflectionPrompt">Today I can practice kindness by...</p>
+            <textarea class="writing-area" id="reflectionBox" placeholder="Example: I can help my mother. I can share with my brother. I can speak politely."></textarea>
+            <div class="sound-actions">
+              <button class="listen-btn" id="listenReflectionBtn" type="button">🔊 Listen Prompt</button>
+              <button class="learned-btn" id="saveReflectionBtn" type="button">✅ Save Practice</button>
+            </div>
+          </article>
+
+          <article class="practice-card">
+            <h3>🌟 Daily Action Plan</h3>
+            <div class="sentence-box" id="dailyActionPlan">Say Bismillah before eating and say Alhamdulillah after eating.</div>
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenActionPlanBtn" type="button">🔊 Listen Action</button>
+              <button class="repeat-btn" id="repeatActionPlanBtn" type="button">🔁 Repeat Action</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progress" aria-labelledby="progress-title">
+      <div class="container progress-section">
+        <div class="section-label">Progress Tracker</div>
+        <h2 id="progress-title">Stars, streaks, learned duas, values, stories, and badges</h2>
+        <p class="section-lead">
+          Progress is saved only on this browser/device using local storage. No login, no child name,
+          no email, and no server collection.
+        </p>
+
+        <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="islamicDaily"></div>
+
+        <div class="sound-actions" style="margin-top: 16px;">
+          <button class="repeat-btn" type="button" data-progress-reset="true">Reset local progress</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Pathway</div>
+            <h2 id="steps-title">A gentle Islamic learning routine</h2>
+            <p class="section-lead">
+              Use this simple routine for 5–10 minutes daily.
+            </p>
+          </div>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
             <strong>1</strong>
-            <h3>Learn</h3>
-            <p>Start with a short dua, story, hadith, or manners lesson.</p>
+            <h3>Hear</h3>
+            <p>Listen to the dua, value, lesson, or story.</p>
           </article>
 
-          <article class="path-card">
+          <article class="step-card">
             <strong>2</strong>
-            <h3>Practice</h3>
-            <p>Repeat the lesson through speaking, writing, quizzes, or family discussion.</p>
+            <h3>Repeat</h3>
+            <p>Repeat slowly and respectfully.</p>
           </article>
 
-          <article class="path-card">
+          <article class="step-card">
             <strong>3</strong>
-            <h3>Live</h3>
-            <p>Apply the value at home, at school, with friends, and in daily routines.</p>
+            <h3>Practice</h3>
+            <p>Do one small action in real life.</p>
           </article>
+
+          <article class="step-card">
+            <strong>4</strong>
+            <h3>Track</h3>
+            <p>Mark learned, earn stars, and build a daily streak.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parents" aria-labelledby="parents-title">
+      <div class="container parent-box">
+        <div>
+          <div class="section-label">For Parents & Teachers</div>
+          <h2 id="parents-title">How to make Islamic learning beautiful</h2>
+          <p class="section-lead">
+            Islamic learning for children should be full of love, patience, encouragement, age-appropriate language, and practical daily habits.
+          </p>
+        </div>
+
+        <div>
+          <ul class="tips">
+            <li>Keep lessons short and warm; avoid pressure.</li>
+            <li>Model the value yourself: children learn deeply from example.</li>
+            <li>Use daily routines: eating, greeting, thanking, sharing, speaking politely.</li>
+            <li>For Qur’an/tajweed and exact duas, later we should add real recorded MP3 audio.</li>
+            <li>Use “I learned this” only after genuine practice.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -819,18 +1335,18 @@
     <section class="section">
       <div class="container cta">
         <div>
-          <div class="section-label" style="color:#86efac;">Personal Guidance</div>
+          <div class="section-label" style="color:#bbf7d0;">Personal Guidance</div>
           <h2>Book Online Islamic Studies Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured support, regular practice, and personal guidance,
-            you can book online classes along with these free learning resources.
+            If your child needs structured support in duas, Islamic manners, Seerah, basic beliefs,
+            Arabic vocabulary, or confidence-building, you can book online classes alongside these free resources.
           </p>
 
           <ul class="cta-list">
-            <li>Islamic Studies for kids</li>
-            <li>Qur’an basics and daily duas</li>
-            <li>Good manners and character-building</li>
-            <li>English and Arabic support</li>
+            <li>Year 1–5 age-wise learning support</li>
+            <li>Daily duas and meanings</li>
+            <li>Good manners and Islamic values</li>
+            <li>Seerah-inspired child-friendly lessons</li>
           </ul>
         </div>
 
@@ -847,19 +1363,17 @@
     <div class="container footer-grid">
       <div>
         <h3>🌟 Al-Hayat Kids Learning Hub</h3>
-        <p>
-          A joyful Islamic and academic learning platform where children learn,
-          read, play, explore, and grow.
-        </p>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
       <div>
         <h3>Subjects</h3>
         <ul>
-          <li><a href="islamic-studies.html">Islamic Studies</a></li>
           <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
           <li><a href="english.html">English</a></li>
           <li><a href="math.html">Math</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="general-knowledge.html">General Knowledge</a></li>
         </ul>
       </div>
 
@@ -883,25 +1397,781 @@
         </ul>
       </div>
     </div>
-
-    <div class="container copyright">
-      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
-    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
-  <script>
-    const result = document.getElementById("result");
+  <script src="../assets/learning-data.js"></script>
+  <script src="../assets/progress-tracker.js"></script>
 
-    document.querySelectorAll(".quiz-options button").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.dataset.answer === "correct") {
-          result.textContent = "Correct! Fasting in Ramadan is called Sawm. ⭐";
-          result.style.color = "#138a3d";
-        } else {
-          result.textContent = "Good try! The correct answer is Sawm.";
-          result.style.color = "#b45309";
+  <script>
+    const yearLevels = [
+      {
+        id: "year-1",
+        label: "Year 1",
+        age: "Ages 4–5",
+        icon: "🌱",
+        title: "Year 1: Loving Allah and good daily habits",
+        intro: "A gentle starter level for children who are beginning Islamic learning through short phrases, love, routine, manners, and repetition.",
+        goals: [
+          "Know that Allah is the Creator and Giver of blessings.",
+          "Learn Bismillah and Alhamdulillah in daily routines.",
+          "Practice greetings, sharing, cleanliness, and kindness.",
+          "Hear short stories about honesty, helping, and respect."
+        ],
+        topics: [
+          "Allah made me and everything around me.",
+          "Bismillah before eating and starting good actions.",
+          "Alhamdulillah after food and blessings.",
+          "Assalamu Alaikum as a greeting of peace.",
+          "Basic manners: please, thank you, sorry, sharing, and gentle speech."
+        ],
+        activities: [
+          { icon: "🍽️", title: "Meal Routine", text: "Say Bismillah before eating and Alhamdulillah after eating." },
+          { icon: "🤝", title: "Peace Greeting", text: "Greet one family member politely." },
+          { icon: "🧼", title: "Clean Hands", text: "Wash hands before food and say why cleanliness matters." }
+        ],
+        mission: "Today I will say Bismillah before eating and thank Allah after eating.",
+        quiz: {
+          question: "What should we say before eating?",
+          options: ["Bismillah", "Good night only", "I am angry"],
+          answer: "Bismillah"
         }
+      },
+      {
+        id: "year-2",
+        label: "Year 2",
+        age: "Ages 5–6",
+        icon: "🌿",
+        title: "Year 2: Duas, manners, and love for the Prophet ﷺ",
+        intro: "Children begin connecting Islamic phrases with daily actions and learn beautiful manners from the life and character of the Prophet ﷺ.",
+        goals: [
+          "Review short daily duas and their meanings.",
+          "Understand truthfulness, kindness, and respect in simple examples.",
+          "Learn that the Prophet ﷺ showed mercy, honesty, and patience.",
+          "Begin recognizing basic Islamic words and symbols."
+        ],
+        topics: [
+          "Greeting with peace and replying politely.",
+          "Truthfulness in school, home, and play.",
+          "Kindness to parents, siblings, friends, animals, and neighbors.",
+          "Simple Seerah moments: honesty, mercy, and trust.",
+          "Short duas for eating, sleeping, waking, and thanking Allah."
+        ],
+        activities: [
+          { icon: "🌟", title: "Truth Star", text: "Tell the truth in one small situation today." },
+          { icon: "💚", title: "Kindness Mission", text: "Help someone without being asked." },
+          { icon: "🌙", title: "Bedtime Dua Habit", text: "Review a short bedtime phrase with a parent." }
+        ],
+        mission: "Today I will do one kind action quietly and sincerely.",
+        quiz: {
+          question: "Which action shows kindness?",
+          options: ["Helping someone", "Laughing at someone", "Taking someone’s pencil"],
+          answer: "Helping someone"
+        }
+      },
+      {
+        id: "year-3",
+        label: "Year 3",
+        age: "Ages 6–7",
+        icon: "🌳",
+        title: "Year 3: Five Pillars and daily Islamic responsibility",
+        intro: "Children learn the Five Pillars in a child-friendly way and begin understanding worship, gratitude, self-control, and responsibility.",
+        goals: [
+          "Name the Five Pillars of Islam in simple words.",
+          "Understand that Salah connects a Muslim with Allah.",
+          "Learn that fasting teaches patience and self-control.",
+          "Understand sharing and helping through Zakah/Sadaqah at a basic level."
+        ],
+        topics: [
+          "The Five Pillars: Shahadah, Salah, Zakah, Sawm, and Hajj.",
+          "Prayer manners: cleanliness, respect, calmness, and focus.",
+          "Ramadan habits: patience, gratitude, Qur’an, and helping others.",
+          "Giving and sharing: caring for people in need.",
+          "Daily accountability: choosing good words and good actions."
+        ],
+        activities: [
+          { icon: "🕋", title: "Pillar Match", text: "Match each pillar with its meaning." },
+          { icon: "🕌", title: "Prayer Manners", text: "Practice standing calmly and respectfully." },
+          { icon: "🎁", title: "Sharing Box", text: "Choose one item or coin to give with permission." }
+        ],
+        mission: "Today I will practice one prayer manner: cleanliness, calmness, or respect.",
+        quiz: {
+          question: "Which one is a pillar of Islam?",
+          options: ["Salah", "Untidiness", "Mocking others"],
+          answer: "Salah"
+        }
+      },
+      {
+        id: "year-4",
+        label: "Year 4",
+        age: "Ages 7–8",
+        icon: "🌴",
+        title: "Year 4: Seerah lessons and strong Islamic character",
+        intro: "Children explore deeper character lessons through Seerah-inspired stories, responsibility, forgiveness, patience, and service.",
+        goals: [
+          "Learn Seerah values: honesty, mercy, patience, forgiveness, and courage.",
+          "Understand that Islamic manners should appear in speech and actions.",
+          "Practice reflection: What did I do well today? What can I improve?",
+          "Build stronger respect for parents, teachers, elders, and classmates."
+        ],
+        topics: [
+          "The Prophet ﷺ as a model of mercy, honesty, patience, and beautiful character.",
+          "Forgiveness and controlling anger.",
+          "Respectful speech and avoiding hurtful words.",
+          "Serving family and community in small ways.",
+          "Reflection and self-improvement."
+        ],
+        activities: [
+          { icon: "🕊️", title: "Forgiveness Choice", text: "Think of one small mistake to forgive." },
+          { icon: "🗣️", title: "Speech Check", text: "Use only kind words for one hour." },
+          { icon: "🤲", title: "Service Mission", text: "Help at home without complaint." }
+        ],
+        mission: "Today I will control my words and choose one gentle sentence.",
+        quiz: {
+          question: "What should a Muslim do when angry?",
+          options: ["Try to calm down", "Shout more", "Hurt someone"],
+          answer: "Try to calm down"
+        }
+      },
+      {
+        id: "year-5",
+        label: "Year 5",
+        age: "Ages 8–9",
+        icon: "🌟",
+        title: "Year 5: Faith, identity, leadership, and responsibility",
+        intro: "Children begin connecting Islamic belief with identity, responsibility, leadership, service, and confident moral choices.",
+        goals: [
+          "Understand Tawheed in simple child-friendly language.",
+          "Connect belief with daily choices and good character.",
+          "Learn that responsibility means doing the right thing even when no one is watching.",
+          "Build leadership through honesty, service, empathy, and discipline."
+        ],
+        topics: [
+          "Tawheed: Allah alone is the Creator, Sustainer, and the One we worship.",
+          "Islamic identity: being truthful, respectful, helpful, and confident.",
+          "Responsibility at home, school, online, and with friends.",
+          "Leadership through service and good example.",
+          "Planning a personal Islamic habit for the week."
+        ],
+        activities: [
+          { icon: "☝️", title: "Tawheed Reminder", text: "Name three blessings from Allah." },
+          { icon: "🧭", title: "Right Choice", text: "Choose honesty even when it is difficult." },
+          { icon: "🏆", title: "Leader Mission", text: "Set a good example for a younger child." }
+        ],
+        mission: "Today I will make one good choice even if nobody is watching.",
+        quiz: {
+          question: "What does responsibility mean?",
+          options: ["Doing the right thing", "Blaming others", "Breaking promises"],
+          answer: "Doing the right thing"
+        }
+      }
+    ];
+
+    const fallbackDailyItems = [
+      {
+        id: "isl-local-001",
+        title: "Before eating",
+        arabic: "بِسْمِ اللّٰهِ",
+        transliteration: "Bismillah",
+        meaning: "In the name of Allah.",
+        value: "Remember Allah before starting good things.",
+        emoji: "🍽️",
+        miniTask: "Say Bismillah before eating today.",
+        audioLang: "ar-SA",
+        quiz: {
+          question: "When do we say Bismillah?",
+          options: ["before eating", "after sleeping only", "when angry"],
+          answer: "before eating"
+        }
+      },
+      {
+        id: "isl-local-002",
+        title: "After eating",
+        arabic: "الْحَمْدُ لِلّٰهِ",
+        transliteration: "Alhamdulillah",
+        meaning: "All praise is for Allah.",
+        value: "Be thankful for food and blessings.",
+        emoji: "🙏",
+        miniTask: "Say Alhamdulillah after eating.",
+        audioLang: "ar-SA",
+        quiz: {
+          question: "What does Alhamdulillah teach us?",
+          options: ["gratitude", "carelessness", "anger"],
+          answer: "gratitude"
+        }
+      },
+      {
+        id: "isl-local-003",
+        title: "Greeting",
+        arabic: "السَّلَامُ عَلَيْكُمْ",
+        transliteration: "Assalamu Alaikum",
+        meaning: "Peace be upon you.",
+        value: "Greet others with peace and kindness.",
+        emoji: "🤝",
+        miniTask: "Greet someone politely today.",
+        audioLang: "ar-SA",
+        quiz: {
+          question: "What does Assalamu Alaikum mean?",
+          options: ["Peace be upon you", "Goodbye forever", "I am hungry"],
+          answer: "Peace be upon you"
+        }
+      },
+      {
+        id: "isl-local-004",
+        title: "Value of the Day",
+        arabic: "",
+        transliteration: "Sidq",
+        meaning: "Truthfulness.",
+        value: "A truthful person is trusted by others.",
+        emoji: "🌟",
+        miniTask: "Tell the truth even if it feels difficult.",
+        audioLang: "en-US",
+        quiz: {
+          question: "What does truthfulness mean?",
+          options: ["telling the truth", "hiding the truth", "taking others' things"],
+          answer: "telling the truth"
+        }
+      },
+      {
+        id: "isl-local-005",
+        title: "Good Manners",
+        arabic: "",
+        transliteration: "Kindness",
+        meaning: "Being gentle and helpful.",
+        value: "Islam teaches kindness to family, friends, animals, and all creation.",
+        emoji: "💚",
+        miniTask: "Do one kind action today.",
+        audioLang: "en-US",
+        quiz: {
+          question: "Which action is kind?",
+          options: ["helping someone", "mocking someone", "pushing someone"],
+          answer: "helping someone"
+        }
+      }
+    ];
+
+    const values = [
+      { id: "value-tawheed", icon: "☝️", title: "Tawheed", text: "Allah alone is the Creator and the One we worship.", example: "Thank Allah for blessings and ask Him for help.", speak: "Tawheed. Allah alone is the Creator and the One we worship. Thank Allah for blessings and ask Him for help." },
+      { id: "value-rahmah", icon: "💚", title: "Mercy", text: "Show gentleness to people, animals, and all creation.", example: "Speak kindly and help someone who is sad.", speak: "Mercy. Show gentleness to people, animals, and all creation. Speak kindly and help someone who is sad." },
+      { id: "value-sidq", icon: "🌟", title: "Truthfulness", text: "Say what is true and keep your heart clean.", example: "Return something that is not yours.", speak: "Truthfulness. Say what is true and keep your heart clean. Return something that is not yours." },
+      { id: "value-shukr", icon: "🙏", title: "Gratitude", text: "Recognize blessings and say Alhamdulillah.", example: "Thank Allah, parents, and teachers.", speak: "Gratitude. Recognize blessings and say Alhamdulillah. Thank Allah, parents, and teachers." },
+      { id: "value-sabr", icon: "⏳", title: "Patience", text: "Stay calm and keep doing good even when it is hard.", example: "Wait for your turn without shouting.", speak: "Patience. Stay calm and keep doing good even when it is hard. Wait for your turn without shouting." },
+      { id: "value-amanah", icon: "🧭", title: "Responsibility", text: "Take care of what Allah and people have trusted you with.", example: "Complete homework and keep promises.", speak: "Responsibility. Take care of what Allah and people have trusted you with. Complete homework and keep promises." },
+      { id: "value-adab", icon: "🤝", title: "Respect", text: "Use polite words and honor parents, teachers, and elders.", example: "Speak gently and listen carefully.", speak: "Respect. Use polite words and honor parents, teachers, and elders. Speak gently and listen carefully." },
+      { id: "value-ihsan", icon: "🏆", title: "Excellence", text: "Try to do good work beautifully and sincerely.", example: "Clean your space and do your task well.", speak: "Excellence. Try to do good work beautifully and sincerely. Clean your space and do your task well." }
+    ];
+
+    const manners = [
+      { id: "manner-truth", icon: "🌟", title: "Truthfulness", text: "Tell the truth and be trustworthy.", speak: "Truthfulness. Tell the truth and be trustworthy." },
+      { id: "manner-kind", icon: "💚", title: "Kindness", text: "Speak gently and help others.", speak: "Kindness. Speak gently and help others." },
+      { id: "manner-respect", icon: "🤝", title: "Respect", text: "Respect parents, teachers, elders, and friends.", speak: "Respect. Respect parents, teachers, elders, and friends." },
+      { id: "manner-gratitude", icon: "🙏", title: "Gratitude", text: "Say Alhamdulillah and be thankful.", speak: "Gratitude. Say Alhamdulillah and be thankful." },
+      { id: "manner-clean", icon: "🧼", title: "Cleanliness", text: "Keep your body, clothes, and place clean.", speak: "Cleanliness. Keep your body, clothes, and place clean." },
+      { id: "manner-sharing", icon: "🎁", title: "Sharing", text: "Share good things with love.", speak: "Sharing. Share good things with love." },
+      { id: "manner-patience", icon: "⏳", title: "Patience", text: "Wait calmly and do not rush into anger.", speak: "Patience. Wait calmly and do not rush into anger." },
+      { id: "manner-forgive", icon: "🕊️", title: "Forgiveness", text: "Forgive others and keep your heart soft.", speak: "Forgiveness. Forgive others and keep your heart soft." }
+    ];
+
+    const pillars = [
+      { id: "pillar-shahadah", icon: "☝️", title: "Shahadah", text: "Believing in the oneness of Allah and the message of His Prophet ﷺ." },
+      { id: "pillar-salah", icon: "🕌", title: "Salah", text: "Praying to Allah with love, discipline, and remembrance." },
+      { id: "pillar-zakah", icon: "🤲", title: "Zakah", text: "Giving to help those in need when it becomes due." },
+      { id: "pillar-sawm", icon: "🌙", title: "Sawm", text: "Fasting in Ramadan with patience and self-control." },
+      { id: "pillar-hajj", icon: "🕋", title: "Hajj", text: "The pilgrimage to Makkah for those who are able." }
+    ];
+
+    const stories = [
+      {
+        id: "story-honesty",
+        title: "The Honest Child",
+        text: "A child found a pencil in the classroom. It was new and beautiful. The child wanted to keep it, but then remembered that a Muslim should be honest. The child gave it to the teacher and said, “I found this pencil.” The teacher smiled and said, “Honesty makes the heart beautiful.”",
+        lesson: "Honesty means telling the truth and returning what belongs to others.",
+        questions: ["What did the child find?", "Why did the child give it to the teacher?", "What value does the story teach?"]
+      },
+      {
+        id: "story-kindness",
+        title: "The Kind Cup of Water",
+        text: "A young child saw a thirsty bird near the garden. The child filled a small bowl with water and placed it safely nearby. The bird drank and flew away. The child smiled and remembered that kindness to Allah’s creation is a beautiful act.",
+        lesson: "Kindness includes caring for people, animals, and the world around us.",
+        questions: ["What did the child see?", "How did the child help?", "What does the story teach?"]
+      },
+      {
+        id: "story-patience",
+        title: "The Patient Turn",
+        text: "At playtime, a child wanted to use the swing first. Another child was already waiting. Instead of pushing ahead, the child waited calmly. When the turn came, the child felt happy because patience made the heart peaceful.",
+        lesson: "Patience means staying calm and choosing good behavior while waiting.",
+        questions: ["What did the child want?", "How did the child show patience?", "Why is patience good?"]
+      }
+    ];
+
+    let currentDaily = fallbackDailyItems[0];
+    let activeYear = yearLevels[0];
+    let activeStoryIndex = 0;
+
+    function getTracker() {
+      return window.AlHayatProgressTracker || null;
+    }
+
+    function getLearningData() {
+      return window.AlHayatLearningData || null;
+    }
+
+    function speak(text, lang = "en-US", repeat = false) {
+      const data = getLearningData();
+
+      if (data && typeof data.speakText === "function") {
+        data.speakText(text, lang, repeat);
+        return;
+      }
+
+      if (!("speechSynthesis" in window)) {
+        alert("Sorry, your browser does not support audio reading.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = lang;
+      u.rate = repeat ? 0.76 : 0.82;
+      u.pitch = 1.06;
+      u.volume = 1;
+
+      if (repeat) {
+        u.onend = () => {
+          const u2 = new SpeechSynthesisUtterance(text);
+          u2.lang = lang;
+          u2.rate = 0.76;
+          u2.pitch = 1.06;
+          window.speechSynthesis.speak(u2);
+        };
+      }
+
+      window.speechSynthesis.speak(u);
+    }
+
+    function stopSound() {
+      const data = getLearningData();
+
+      if (data && typeof data.stopSpeech === "function") {
+        data.stopSpeech();
+        return;
+      }
+
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function renderYearTabs() {
+      const tabs = document.getElementById("yearTabs");
+      tabs.innerHTML = "";
+
+      yearLevels.forEach((level) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `year-tab ${level.id === activeYear.id ? "active" : ""}`;
+        button.textContent = `${level.icon} ${level.label}`;
+        button.addEventListener("click", () => {
+          activeYear = level;
+          renderYearTabs();
+          renderYearPanel();
+        });
+        tabs.appendChild(button);
       });
+    }
+
+    function renderYearPanel() {
+      const panel = document.getElementById("yearPanel");
+      panel.innerHTML = `
+        <div class="year-panel-head">
+          <div class="year-icon">${activeYear.icon}</div>
+          <div>
+            <div class="level-badge">${activeYear.label} • ${activeYear.age}</div>
+            <h3>${activeYear.title}</h3>
+            <p>${activeYear.intro}</p>
+          </div>
+        </div>
+
+        <div class="year-content-grid">
+          <article class="year-card">
+            <h3>🎯 Learning Goals</h3>
+            <ul class="material-list">
+              ${activeYear.goals.map(goal => `<li>${goal}</li>`).join("")}
+            </ul>
+          </article>
+
+          <article class="year-card">
+            <h3>📚 Core Material</h3>
+            <ul class="material-list">
+              ${activeYear.topics.map(topic => `<li>${topic}</li>`).join("")}
+            </ul>
+          </article>
+        </div>
+
+        <div class="activity-strip">
+          ${activeYear.activities.map(activity => `
+            <div class="activity-card">
+              <span>${activity.icon}</span>
+              <strong>${activity.title}</strong>
+              <p>${activity.text}</p>
+            </div>
+          `).join("")}
+        </div>
+
+        <div class="mission-box" style="margin-top:16px;">
+          <strong>🌟 Year Mission:</strong> ${activeYear.mission}
+        </div>
+
+        <div class="sound-actions" style="margin-top:16px;">
+          <button class="listen-btn" type="button" id="listenYearBtn">🔊 Listen Year Plan</button>
+          <button class="repeat-btn" type="button" id="repeatYearMissionBtn">🔁 Repeat Mission</button>
+          <button class="learned-btn" type="button" id="completeYearBtn">✅ Complete Year Practice</button>
+        </div>
+      `;
+
+      document.getElementById("listenYearBtn").addEventListener("click", () => {
+        const text = `${activeYear.label}. ${activeYear.title}. ${activeYear.intro}. Learning goals. ${activeYear.goals.join(". ")}. Year mission. ${activeYear.mission}`;
+        speak(text, "en-US", false);
+        getTracker()?.markListened?.("islamicDaily", activeYear.id, { type: "year-plan" });
+      });
+
+      document.getElementById("repeatYearMissionBtn").addEventListener("click", () => {
+        speak(activeYear.mission, "en-US", true);
+        getTracker()?.markRepeated?.("islamicDaily", `${activeYear.id}-mission`, { type: "year-mission" });
+      });
+
+      document.getElementById("completeYearBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("islamicDaily", activeYear.id, { type: "year-plan" });
+        e.currentTarget.textContent = "✅ Year practice completed!";
+        e.currentTarget.disabled = true;
+      });
+    }
+
+    function getDailyItem() {
+      const data = getLearningData();
+      const fromBank = data?.getDailyItem?.("islamicDaily", new Date());
+
+      if (fromBank) {
+        return {
+          ...fromBank,
+          quiz: fallbackDailyItems[new Date().getDate() % fallbackDailyItems.length].quiz
+        };
+      }
+
+      return fallbackDailyItems[(new Date().getDate() - 1) % fallbackDailyItems.length];
+    }
+
+    function buildDailyAudio(item) {
+      if (item.arabic) {
+        return `${item.title}. ${item.arabic}. ${item.transliteration}. Meaning: ${item.meaning}. ${item.value || ""}. Mini task. ${item.miniTask}`;
+      }
+
+      return `${item.title}. ${item.transliteration}. Meaning: ${item.meaning}. ${item.value || ""}. Mini task. ${item.miniTask}`;
+    }
+
+    function renderDaily() {
+      currentDaily = getDailyItem();
+
+      document.getElementById("dailyEmoji").textContent = currentDaily.emoji || "🌟";
+      document.getElementById("dailyVisualTitle").textContent = currentDaily.title || "Daily Practice";
+      document.getElementById("dailyTitleText").textContent = currentDaily.title || "Daily Practice";
+      document.getElementById("dailyArabic").textContent = currentDaily.arabic || currentDaily.transliteration || currentDaily.meaning;
+      document.getElementById("dailyTranslit").textContent = currentDaily.transliteration || "";
+      document.getElementById("dailyMeaning").textContent = currentDaily.meaning || "";
+      document.getElementById("dailyTask").textContent = currentDaily.miniTask || "Practice this value today.";
+      document.getElementById("reflectionPrompt").textContent = `Today I can practice: ${currentDaily.miniTask || "one good action"}`;
+      document.getElementById("dailyActionPlan").textContent = currentDaily.miniTask || "Do one good action today.";
+
+      renderQuiz();
+    }
+
+    function renderQuiz() {
+      const quiz = currentDaily.quiz || fallbackDailyItems[0].quiz;
+      const questionEl = document.getElementById("dailyQuizQuestion");
+      const optionsEl = document.getElementById("dailyQuizOptions");
+      const resultEl = document.getElementById("dailyQuizResult");
+
+      questionEl.textContent = quiz.question;
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+
+      quiz.options.forEach((option) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = option;
+
+        btn.addEventListener("click", () => {
+          const isCorrect = option === quiz.answer;
+
+          optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
+          btn.classList.add(isCorrect ? "correct" : "wrong");
+
+          getTracker()?.markQuiz?.("islamicDaily", currentDaily.id || currentDaily.title, isCorrect, {
+            question: quiz.question,
+            selected: option,
+            answer: quiz.answer
+          });
+
+          if (isCorrect) {
+            resultEl.textContent = "Correct! Excellent. ⭐";
+            resultEl.style.color = "#166534";
+            speak(`Correct. ${quiz.answer} is the answer.`, "en-US", false);
+          } else {
+            resultEl.textContent = `Good try! Correct answer: ${quiz.answer}`;
+            resultEl.style.color = "#b45309";
+            speak(`Good try. The correct answer is ${quiz.answer}.`, "en-US", false);
+          }
+        });
+
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function renderValues() {
+      const grid = document.getElementById("valuesGrid");
+      grid.innerHTML = "";
+
+      values.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "value-card";
+        card.innerHTML = `
+          <strong>${item.icon}</strong>
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+          <div class="note-box" style="margin-top:12px;"><strong>Example:</strong> ${item.example}</div>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" data-value-action="listen" data-id="${item.id}">🔊 Listen</button>
+            <button class="repeat-btn" type="button" data-value-action="repeat" data-id="${item.id}">🔁 Repeat</button>
+            <button class="learned-btn" type="button" data-value-action="learned" data-id="${item.id}">✅ Practiced</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll("[data-value-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = values.find(v => v.id === button.dataset.id);
+          if (!item) return;
+
+          if (button.dataset.valueAction === "listen") {
+            speak(item.speak, "en-US", false);
+            getTracker()?.markListened?.("islamicDaily", item.id, { type: "value" });
+          }
+
+          if (button.dataset.valueAction === "repeat") {
+            speak(item.speak, "en-US", true);
+            getTracker()?.markRepeated?.("islamicDaily", item.id, { type: "value" });
+          }
+
+          if (button.dataset.valueAction === "learned") {
+            getTracker()?.markLearned?.("islamicDaily", item.id, { type: "value" });
+            button.textContent = "✅ Practiced!";
+            button.disabled = true;
+          }
+        });
+      });
+    }
+
+    function renderManners() {
+      const grid = document.getElementById("mannersGrid");
+      grid.innerHTML = "";
+
+      manners.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "manner-card";
+        card.innerHTML = `
+          <strong>${item.icon}</strong>
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" data-manner-action="listen" data-id="${item.id}">🔊 Listen</button>
+            <button class="repeat-btn" type="button" data-manner-action="repeat" data-id="${item.id}">🔁 Repeat</button>
+            <button class="learned-btn" type="button" data-manner-action="learned" data-id="${item.id}">✅ Practiced</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll("[data-manner-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = manners.find(m => m.id === button.dataset.id);
+          if (!item) return;
+
+          if (button.dataset.mannerAction === "listen") {
+            speak(item.speak, "en-US", false);
+            getTracker()?.markListened?.("islamicDaily", item.id, { type: "manner" });
+          }
+
+          if (button.dataset.mannerAction === "repeat") {
+            speak(item.speak, "en-US", true);
+            getTracker()?.markRepeated?.("islamicDaily", item.id, { type: "manner" });
+          }
+
+          if (button.dataset.mannerAction === "learned") {
+            getTracker()?.markLearned?.("islamicDaily", item.id, { type: "manner" });
+            button.textContent = "✅ Practiced!";
+            button.disabled = true;
+          }
+        });
+      });
+    }
+
+    function renderPillars() {
+      const grid = document.getElementById("pillarsGrid");
+      grid.innerHTML = "";
+
+      pillars.forEach((item, index) => {
+        const card = document.createElement("article");
+        card.className = "pillar-card";
+        card.innerHTML = `
+          <strong>${item.icon}</strong>
+          <h3>${index + 1}. ${item.title}</h3>
+          <p>${item.text}</p>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" data-pillar-action="listen" data-id="${item.id}">🔊 Listen</button>
+            <button class="repeat-btn" type="button" data-pillar-action="repeat" data-id="${item.id}">🔁 Repeat</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll("[data-pillar-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = pillars.find(p => p.id === button.dataset.id);
+          if (!item) return;
+
+          const text = `${item.title}. ${item.text}`;
+
+          if (button.dataset.pillarAction === "listen") {
+            speak(text, "en-US", false);
+            getTracker()?.markListened?.("islamicDaily", item.id, { type: "pillar" });
+          }
+
+          if (button.dataset.pillarAction === "repeat") {
+            speak(text, "en-US", true);
+            getTracker()?.markRepeated?.("islamicDaily", item.id, { type: "pillar" });
+          }
+        });
+      });
+    }
+
+    function renderStory() {
+      const story = stories[activeStoryIndex];
+
+      document.getElementById("storyName").textContent = `📖 ${story.title}`;
+      document.getElementById("storyText").textContent = story.text;
+      document.getElementById("storyValue").textContent = story.lesson;
+
+      const q = document.getElementById("storyQuestions");
+      q.innerHTML = story.questions.map((question, index) => `<p><strong>${index + 1}.</strong> ${question}</p>`).join("");
+    }
+
+    function setupStaticButtons() {
+      document.querySelectorAll("[data-static-speak]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const text = btn.dataset.staticSpeak || "";
+          const lang = btn.dataset.lang || "en-US";
+          const repeat = btn.classList.contains("repeat-btn");
+          speak(text, lang, repeat);
+        });
+      });
+    }
+
+    function setupMainButtons() {
+      document.getElementById("listenDailyBtn").addEventListener("click", () => {
+        speak(buildDailyAudio(currentDaily), currentDaily.audioLang || "en-US", false);
+        getTracker()?.markListened?.("islamicDaily", currentDaily.id || currentDaily.title, { type: "daily" });
+      });
+
+      document.getElementById("repeatDailyBtn").addEventListener("click", () => {
+        const text = currentDaily.arabic || currentDaily.transliteration || currentDaily.meaning;
+        speak(text, currentDaily.audioLang || "en-US", true);
+        getTracker()?.markRepeated?.("islamicDaily", currentDaily.id || currentDaily.title, { type: "daily" });
+      });
+
+      document.getElementById("learnedDailyBtn").addEventListener("click", (e) => {
+        getTracker()?.markLearned?.("islamicDaily", currentDaily.id || currentDaily.title, { type: "daily" });
+        e.currentTarget.textContent = "✅ Learned today!";
+        e.currentTarget.disabled = true;
+      });
+
+      document.getElementById("listenQuizBtn").addEventListener("click", () => {
+        const quiz = currentDaily.quiz || fallbackDailyItems[0].quiz;
+        speak(`Quiz question. ${quiz.question}. Options are: ${quiz.options.join(", ")}.`, "en-US", false);
+      });
+
+      document.getElementById("repeatQuizAnswerBtn").addEventListener("click", () => {
+        const quiz = currentDaily.quiz || fallbackDailyItems[0].quiz;
+        speak(`The answer is ${quiz.answer}.`, "en-US", true);
+      });
+
+      document.getElementById("listenStoryBtn").addEventListener("click", () => {
+        const story = stories[activeStoryIndex];
+        speak(`${story.title}. ${story.text}. Lesson. ${story.lesson}`, "en-US", false);
+        getTracker()?.markListened?.("islamicDaily", story.id, { type: "story" });
+      });
+
+      document.getElementById("repeatStoryLessonBtn").addEventListener("click", () => {
+        const story = stories[activeStoryIndex];
+        speak(story.lesson, "en-US", true);
+        getTracker()?.markRepeated?.("islamicDaily", story.id, { type: "story" });
+      });
+
+      document.getElementById("completeStoryBtn").addEventListener("click", (e) => {
+        const story = stories[activeStoryIndex];
+        getTracker()?.markCompleted?.("islamicDaily", story.id, { type: "story" });
+        e.currentTarget.textContent = "✅ Completed!";
+      });
+
+      document.getElementById("listenStoryQuestionsBtn").addEventListener("click", () => {
+        const story = stories[activeStoryIndex];
+        speak(`Story questions. ${story.questions.join(". ")}`, "en-US", false);
+      });
+
+      document.getElementById("nextStoryBtn").addEventListener("click", () => {
+        activeStoryIndex = (activeStoryIndex + 1) % stories.length;
+        renderStory();
+        speak(`Next story. ${stories[activeStoryIndex].title}`, "en-US", false);
+      });
+
+      document.getElementById("listenReflectionBtn").addEventListener("click", () => {
+        speak(document.getElementById("reflectionPrompt").textContent, "en-US", false);
+      });
+
+      document.getElementById("saveReflectionBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("islamicDaily", `${currentDaily.id || currentDaily.title}-reflection`, {
+          reflectionWritten: document.getElementById("reflectionBox").value.trim().length > 0
+        });
+        e.currentTarget.textContent = "✅ Reflection saved!";
+      });
+
+      document.getElementById("listenActionPlanBtn").addEventListener("click", () => {
+        speak(document.getElementById("dailyActionPlan").textContent, "en-US", false);
+      });
+
+      document.getElementById("repeatActionPlanBtn").addEventListener("click", () => {
+        speak(document.getElementById("dailyActionPlan").textContent, "en-US", true);
+      });
+
+      document.querySelectorAll(".stop-sound").forEach(btn => btn.addEventListener("click", stopSound));
+      window.addEventListener("beforeunload", stopSound);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderYearTabs();
+      renderYearPanel();
+      renderDaily();
+      renderValues();
+      renderManners();
+      renderPillars();
+      renderStory();
+      setupStaticButtons();
+      setupMainButtons();
+
+      setTimeout(() => {
+        getTracker()?.renderAllProgressWidgets?.();
+      }, 100);
     });
   </script>
 </body>
