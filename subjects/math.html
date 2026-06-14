@@ -4,94 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Math for Kids | Numbers, Addition, Shapes & Fun Practice | Al-Hayat Kids Learning Hub</title>
+  <title>Math for Kids Ages 3–7 | Complete Lesson Library & Games | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="Math for Kids at Al-Hayat Kids Learning Hub. Child-friendly math lessons with numbers, counting, addition, subtraction, shapes, patterns, word problems, daily quiz, practice board, and online classes." />
-  <meta name="keywords" content="math for kids, mathematics for children, addition for kids, subtraction for kids, shapes for kids, counting practice, number sense, math worksheets for kids" />
+  <meta name="description" content="Complete age-based Math for Kids lesson library for children ages 3–7. Numbers, counting, shapes, patterns, comparison, addition, subtraction, place value, time, money, measurement, fractions, multiplication, division, graphs, games, quizzes, missions, whiteboard, audio, and progress tracking." />
+  <meta name="keywords" content="Math for kids ages 3 4 5 6 7, early years math, preschool math, kindergarten math, counting games, math games for kids, shapes for kids, addition for kids, subtraction for kids, place value for kids, fractions for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/math.html" />
-
-  <meta property="og:title" content="Math for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful child-friendly Math learning page with numbers, counting, addition, subtraction, shapes, patterns, quizzes, and practice activities." />
-  <meta property="og:type" content="website" />
 
   <style>
     :root {
-      --green: #138a3d;
-      --green-dark: #075c2a;
-      --green-soft: #e8f8ee;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
       --sky-soft: #e0f2fe;
+      --green: #16a34a;
+      --green-dark: #166534;
+      --green-soft: #dcfce7;
       --orange: #f97316;
-      --orange-dark: #c2410c;
       --orange-soft: #ffedd5;
-      --yellow: #f6c445;
-      --yellow-soft: #fef3c7;
+      --gold: #f6c445;
+      --gold-soft: #fef3c7;
       --purple: #7c3aed;
       --purple-soft: #ede9fe;
       --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
       --teal-soft: #ccfbf1;
+      --red-soft: #fee2e2;
+      --lime-soft: #ecfccb;
       --white: #ffffff;
-      --light: #f8fbff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
       --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
       --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
-      --radius: 24px;
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(249, 115, 22, 0.16), transparent 28rem),
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 28rem),
         radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        radial-gradient(circle at 90% 70%, rgba(236, 72, 153, 0.12), transparent 22rem),
         linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, textarea { font: inherit; }
 
-    button,
-    input {
-      font: inherit;
-    }
-
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin-inline: auto;
-    }
+    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
 
     .top-header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255,255,255,0.92);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
 
     .top-inner {
@@ -107,32 +85,31 @@
       align-items: center;
       gap: 12px;
       font-weight: 900;
-      color: var(--green-dark);
+      color: var(--blue-dark);
     }
 
     .brand-icon {
       width: 52px;
       height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      color: white;
       display: grid;
       place-items: center;
-      color: white;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.22);
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.20);
     }
 
     .brand small {
       display: block;
       color: var(--muted);
       font-weight: 700;
-      margin-top: -2px;
       font-size: 0.78rem;
+      margin-top: -2px;
     }
 
     .nav {
       display: flex;
-      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -143,39 +120,96 @@
       border-radius: 999px;
       font-weight: 800;
       font-size: 0.94rem;
-      color: var(--text);
       transition: 0.2s ease;
     }
 
-    .nav a:hover,
-    .nav a:focus {
-      background: var(--orange-soft);
-      color: var(--orange-dark);
+    .nav a:hover, .nav a:focus {
+      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
+      color: var(--blue-dark);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.10);
     }
 
     .nav .cta {
-      background: var(--yellow);
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
     }
 
-    .hero {
-      padding: 64px 0 44px;
+    .audio-bar {
+      position: sticky;
+      top: 76px;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.94);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
     }
+
+    .audio-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .sound-control-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .fun-sound-toggle, .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fun-sound-toggle {
+      background: linear-gradient(135deg, rgba(246,196,69,0.95), rgba(56,189,248,0.92));
+      color: #0f172a;
+      box-shadow: 0 10px 22px rgba(246, 196, 69, 0.18);
+    }
+
+    .fun-sound-toggle.off, .stop-sound {
+      background: rgba(255,255,255,0.10);
+      color: white;
+    }
+
+    .fun-sound-toggle:hover,
+    .fun-sound-toggle:focus,
+    .stop-sound:hover,
+    .stop-sound:focus {
+      transform: translateY(-2px) scale(1.03);
+      filter: brightness(1.06);
+    }
+
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(246, 196, 69, 0.35), transparent 14rem),
-        radial-gradient(circle at 20% 80%, rgba(249, 115, 22, 0.18), transparent 16rem),
-        linear-gradient(135deg, #fff7ed, #eff6ff);
+        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.28), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.28), transparent 16rem),
+        linear-gradient(135deg, #eff6ff, #fefce8);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255,255,255,0.78);
       overflow: hidden;
     }
 
@@ -184,7 +218,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--orange-dark);
+      color: var(--blue-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -193,65 +227,135 @@
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 5.1rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
-      color: var(--orange-dark);
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
+      color: var(--blue-dark);
       margin-bottom: 18px;
     }
 
-    h1 span {
-      color: var(--blue-dark);
-    }
+    h1 span { color: var(--orange); }
 
     .hero p {
-      max-width: 650px;
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      max-width: 700px;
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
       color: #334155;
       margin-bottom: 22px;
     }
 
-    .buttons {
+    .buttons, .sound-actions, .toolbar, .age-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
+      align-items: center;
     }
 
-    .btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
+    .quiz-options button, .choice-options button, .lesson-chip {
+      position: relative;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 19px;
+      min-height: 44px;
+      padding: 10px 15px;
       border-radius: 999px;
       font-weight: 900;
       border: 0;
       cursor: pointer;
       transition: 0.2s ease;
       text-align: center;
+      will-change: transform, background, box-shadow;
     }
 
-    .btn:hover,
-    .btn:focus {
+    .btn { min-height: 48px; padding: 12px 19px; }
+
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
       transform: translateY(-2px);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--orange), var(--yellow));
-      color: #111827;
-      box-shadow: 0 14px 28px rgba(249, 115, 22, 0.22);
+    .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
+    .tool-btn::after, .age-tab::after, .quiz-options button::after,
+    .choice-options button::after, .lesson-chip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 34%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
     }
 
-    .btn-blue {
+    .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
+    .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
+      opacity: 1;
+    }
+
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
       background: linear-gradient(135deg, var(--blue), var(--sky));
       color: white;
       box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
     }
 
-    .btn-white {
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
+      background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111827;
+      box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #facc15, #fb923c);
+      color: #111827;
+      box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
+    }
+
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
-      color: var(--orange-dark);
+      color: var(--blue-dark);
       border: 1px solid var(--border);
+    }
+
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
+      background: linear-gradient(135deg, #ffffff, #eff6ff);
+      color: var(--blue-dark);
+      border-color: #93c5fd;
+      box-shadow: 0 14px 26px rgba(37, 99, 235, 0.13);
+    }
+
+    .listen-btn {
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      border: 1px solid #bfdbfe;
+    }
+
+    .listen-btn:hover {
+      background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+      color: #1d4ed8;
+      border-color: #60a5fa;
+      box-shadow: 0 14px 26px rgba(37, 99, 235, 0.14);
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
+    .repeat-btn:hover {
+      background: linear-gradient(135deg, #fef3c7, #ffffff);
+      color: #92400e;
+      border-color: #facc15;
+      box-shadow: 0 14px 26px rgba(246, 196, 69, 0.14);
     }
 
     .hero-visual {
@@ -267,53 +371,46 @@
     }
 
     .hero-visual::before {
-      content: "1+2";
+      content: "1 2 3";
       position: absolute;
-      font-size: 7rem;
+      font-size: 5rem;
       font-weight: 950;
-      color: rgba(249, 115, 22, 0.12);
-      left: 28px;
-      top: 18px;
+      color: rgba(37, 99, 235, 0.10);
+      left: 24px;
+      top: 24px;
+      letter-spacing: -0.08em;
     }
 
     .hero-visual::after {
-      content: "△";
+      content: "🧩";
       position: absolute;
-      font-size: 11rem;
-      font-weight: 950;
-      color: rgba(37, 99, 235, 0.12);
-      right: 38px;
-      bottom: -34px;
+      font-size: 7rem;
+      right: 34px;
+      bottom: 18px;
+      opacity: 0.16;
     }
 
-    .child-card {
-      width: min(92%, 430px);
+    .hero-box {
+      width: min(92%, 450px);
       background: white;
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
-    .child-card .emoji {
-      font-size: 4rem;
-      margin-bottom: 8px;
-    }
+    .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
 
-    .child-card h2 {
-      color: var(--orange-dark);
+    .hero-box h2 {
+      color: var(--blue-dark);
       font-size: 1.65rem;
       line-height: 1.15;
       margin-bottom: 10px;
     }
 
-    .child-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
+    .hero-box p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -327,7 +424,6 @@
       border-radius: 18px;
       padding: 12px;
       font-weight: 900;
-      color: var(--text);
       border: 1px solid var(--border);
     }
 
@@ -338,9 +434,41 @@
       font-weight: 700;
     }
 
-    .section {
-      padding: 52px 0;
+    .age-choice {
+      padding: 22px 0 12px;
     }
+
+    .age-choice-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: clamp(18px, 4vw, 28px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .age-choice-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .age-choice-title h2 {
+      color: #0f172a;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .age-choice-title p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 700px;
+    }
+
+    .section { padding: 44px 0; }
 
     .section-head {
       margin-bottom: 26px;
@@ -351,7 +479,7 @@
     }
 
     .section-label {
-      color: var(--orange-dark);
+      color: var(--blue-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -361,7 +489,7 @@
 
     .section h2 {
       color: #0f172a;
-      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
@@ -369,261 +497,294 @@
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 850px;
       margin-top: 8px;
     }
 
-    .method-grid {
+    .level-shell {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(37,99,235,0.14), transparent 18rem),
+        radial-gradient(circle at 92% 18%, rgba(246,196,69,0.18), transparent 16rem),
+        linear-gradient(135deg, #eff6ff, #fff7ed);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .level-hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      background: white;
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 28px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 20px;
+    }
+
+    .level-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
+      border: 1px solid rgba(37, 99, 235, 0.14);
+    }
+
+    .level-hero h2 {
+      color: var(--blue-dark);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .level-hero p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 850px;
+    }
+
+    .level-progress {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .level-dot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 950;
+      color: #475569;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .level-dot.active {
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      color: white;
+      border-color: transparent;
+    }
+
+    .level-dot span {
+      display: block;
+      font-size: 0.76rem;
+      opacity: 0.78;
+      margin-top: 2px;
+    }
+
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
+    .grid-2, .daily-grid, .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .method-card {
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
     }
 
-    .method-card .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: var(--orange-soft);
-      font-size: 1.7rem;
-      margin-bottom: 14px;
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
     }
 
-    .method-card:nth-child(2) .icon { background: var(--blue-soft); }
-    .method-card:nth-child(3) .icon { background: var(--green-soft); }
-    .method-card:nth-child(4) .icon { background: var(--purple-soft); }
-
-    .method-card h3 {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
       color: #0f172a;
       margin-bottom: 7px;
     }
 
-    .method-card p {
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
 
-    .number-lab {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #fff7ed, #eff6ff);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 22px;
-      align-items: stretch;
-      margin-top: 22px;
-    }
-
-    .lab-card {
-      background: white;
-      border-radius: 28px;
-      padding: 24px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .number-display {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin: 16px 0;
-    }
-
-    .counter-dot {
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--yellow-soft);
-      border: 2px solid #fde68a;
-      font-weight: 950;
-      color: var(--orange-dark);
-      font-size: 1.4rem;
-      user-select: none;
-    }
-
-    .number-controls {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 14px;
-    }
-
-    .small-btn {
-      border: 1px solid var(--border);
-      background: #f8fafc;
-      color: #0f172a;
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-weight: 900;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .small-btn:hover {
-      background: var(--orange-soft);
-    }
-
-    .number-line {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      gap: 6px;
-      margin-top: 18px;
-      align-items: end;
-    }
-
-    .line-item {
-      text-align: center;
-      font-weight: 900;
-      color: var(--muted);
-      position: relative;
-      padding-top: 30px;
-    }
-
-    .line-item::before {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2px;
-      height: 14px;
-      background: #cbd5e1;
-    }
-
-    .line-item.is-active {
-      color: var(--orange-dark);
-      font-size: 1.25rem;
-    }
-
-    .line-item.is-active::after {
-      content: "⭐";
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.3rem;
-    }
-
-    .topics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .topic-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow-soft);
-      transition: 0.22s ease;
-      min-height: 215px;
-    }
-
-    .topic-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-    }
-
-    .topic-icon {
-      width: 58px;
-      height: 58px;
+    .icon-pill {
+      width: 54px;
+      height: 54px;
       border-radius: 18px;
       display: grid;
       place-items: center;
-      font-size: 1.9rem;
-      margin-bottom: 16px;
-      background: var(--orange-soft);
-    }
-
-    .topic-card:nth-child(2) .topic-icon { background: var(--yellow-soft); }
-    .topic-card:nth-child(3) .topic-icon { background: var(--blue-soft); }
-    .topic-card:nth-child(4) .topic-icon { background: var(--green-soft); }
-    .topic-card:nth-child(5) .topic-icon { background: var(--purple-soft); }
-    .topic-card:nth-child(6) .topic-icon { background: var(--pink-soft); }
-    .topic-card:nth-child(7) .topic-icon { background: var(--teal-soft); }
-    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
-
-    .topic-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-      font-size: 1.18rem;
-    }
-
-    .topic-card p {
-      color: var(--muted);
-      font-size: 0.96rem;
+      background: var(--blue-soft);
+      font-size: 1.65rem;
       margin-bottom: 14px;
     }
 
-    .topic-card a {
-      color: var(--orange-dark);
+    .badge, .today-badge, .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .level-badge {
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      border-color: #bfdbfe;
+    }
+
+    .math-display {
+      font-size: clamp(3rem, 9vw, 6rem);
+      line-height: 1.05;
       font-weight: 950;
-    }
-
-    .daily-box {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #fff7ed, #ecfdf5);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .daily-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .daily-card {
-      background: white;
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .daily-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    .big-math {
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      line-height: 1;
-      font-weight: 950;
-      color: var(--orange-dark);
-      margin: 14px 0;
+      color: var(--blue-dark);
+      margin: 12px 0;
+      text-align: center;
       letter-spacing: -0.04em;
     }
 
-    .quiz-options {
+    .visual-demo {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.4;
+      text-align: center;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      min-height: 92px;
+      display: grid;
+      place-items: center;
+      margin-top: 12px;
+      word-break: break-word;
+    }
+
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box, .parent-note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .mission-box {
+      background: linear-gradient(135deg, #ffffff, #eff6ff);
+      border-color: #bfdbfe;
+    }
+
+    .parent-note {
+      background: var(--gold-soft);
+      border-color: #fde68a;
+      color: #92400e;
+    }
+
+    .story-text {
+      font-weight: 700;
+      line-height: 1.8;
+    }
+
+    .visual-card {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+
+    .visual-clue {
+      background: linear-gradient(135deg, #dbeafe, #fef3c7);
+      border: 1px solid #bfdbfe;
+      border-radius: 24px;
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .visual-clue .emoji {
+      font-size: 4.2rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .visual-clue strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 0.95rem;
+    }
+
+    .support-grid { display: grid; gap: 12px; }
+
+    .quiz-options, .choice-options {
       display: grid;
       gap: 10px;
       margin-top: 14px;
     }
 
-    .quiz-options button {
+    .quiz-options button, .choice-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
       border-radius: 14px;
@@ -631,11 +792,19 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .quiz-options button:hover {
-      background: var(--orange-soft);
+    .quiz-options button:hover, .choice-options button:hover {
+      background: linear-gradient(135deg, #eff6ff, #fef3c7);
+      color: var(--blue-dark);
+      border-color: #93c5fd;
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 12px 22px rgba(37, 99, 235, 0.10);
     }
+
+    .quiz-options button.correct, .choice-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong, .choice-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
     .result {
       margin-top: 12px;
@@ -643,62 +812,106 @@
       font-weight: 900;
     }
 
-    .shape-play {
+    .activity-options {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: 22px;
+      gap: 10px;
+      margin-top: 12px;
     }
 
-    .shape-card {
-      background: white;
+    .activity-options button {
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      text-align: center;
-      box-shadow: var(--shadow-soft);
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 12px;
+      text-align: left;
+      font-weight: 850;
+      cursor: pointer;
     }
 
-    .shape {
-      width: 86px;
-      height: 86px;
-      margin: 0 auto 14px;
-      display: grid;
-      place-items: center;
+    .activity-options button:hover {
+      background: var(--blue-soft);
+      border-color: #93c5fd;
     }
 
-    .circle {
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--orange), var(--yellow));
+    .activity-options button.correct {
+      background: var(--green-soft);
+      color: #166534;
+      border-color: #86efac;
     }
 
-    .square {
-      border-radius: 18px;
-      background: linear-gradient(135deg, var(--blue), var(--sky));
+    .activity-options button.wrong {
+      background: var(--red-soft);
+      color: #991b1b;
+      border-color: #fecaca;
     }
 
-    .triangle {
-      width: 0;
-      height: 0;
-      border-left: 48px solid transparent;
-      border-right: 48px solid transparent;
-      border-bottom: 86px solid var(--green);
-      background: transparent;
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
-    .rectangle {
-      width: 110px;
-      height: 70px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, var(--purple), #a78bfa);
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
     }
 
-    .parent-box {
+    .whiteboard-head strong {
+      color: var(--blue-dark);
+      font-size: 1rem;
+    }
+
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #93c5fd;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
+
+    .progress-section, .parent-box {
       background: white;
       border: 1px solid var(--border);
       border-radius: 34px;
       box-shadow: var(--shadow);
       padding: clamp(24px, 4vw, 36px);
+    }
+
+    .parent-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
@@ -727,43 +940,61 @@
       font-weight: 950;
     }
 
-    .pathway {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .path-card {
+    details.curriculum-details {
       background: white;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+      border-radius: 24px;
       box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      margin-top: 16px;
     }
 
-    .path-card strong {
-      display: inline-grid;
-      place-items: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 15px;
-      background: var(--orange);
-      color: white;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
+    details.curriculum-details summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      font-weight: 950;
+      color: var(--blue-dark);
+      background: linear-gradient(135deg, #ffffff, #eff6ff);
     }
 
-    .path-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .details-body {
+      padding: 22px;
+      border-top: 1px solid var(--border);
     }
 
-    .path-card p {
-      color: var(--muted);
+    .compact-worlds {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .compact-world {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .compact-world span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    .sound-hover-pop {
+      animation: soundHoverPop 0.34s ease;
+    }
+
+    @keyframes soundHoverPop {
+      0% { transform: translateY(0) scale(1); }
+      45% { transform: translateY(-3px) scale(1.04); }
+      100% { transform: translateY(-2px) scale(1.02); }
     }
 
     .cta {
-      background: linear-gradient(135deg, #0f172a, #7c2d12);
+      background: linear-gradient(135deg, var(--blue-dark), #0f172a);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -774,9 +1005,7 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 {
-      color: white;
-    }
+    .cta h2 { color: white; }
 
     .cta p {
       color: rgba(255,255,255,0.78);
@@ -798,7 +1027,7 @@
 
     .cta-list li::before {
       content: "✓ ";
-      color: #fed7aa;
+      color: #93c5fd;
     }
 
     .footer {
@@ -816,12 +1045,9 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 {
-      margin-bottom: 12px;
-    }
+    .footer h3 { margin-bottom: 12px; }
 
-    .footer p,
-    .footer a {
+    .footer p, .footer a {
       color: rgba(255,255,255,0.72);
       font-weight: 650;
     }
@@ -839,33 +1065,31 @@
     }
 
     @media (max-width: 980px) {
-      .hero-card,
-      .lab-grid,
-      .parent-box,
-      .cta {
+      .hero-card, .parent-box, .cta, .visual-card, .level-hero {
         grid-template-columns: 1fr;
       }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .shape-play {
+      .grid-2, .daily-grid, .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3, .grid-4, .compact-worlds {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .daily-grid {
-        grid-template-columns: 1fr;
+      .level-progress {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
-      .container {
-        width: min(100% - 24px, var(--max));
-      }
+      .container { width: min(100% - 24px, var(--max)); }
 
       .top-inner {
         flex-direction: column;
@@ -873,45 +1097,32 @@
         padding: 14px 0;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
+      .nav { justify-content: flex-start; }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .shape-play,
-      .footer-grid {
+      .grid-3, .grid-4, .compact-worlds, .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .buttons {
+      .buttons, .sound-actions, .toolbar, .age-tabs {
         display: grid;
       }
 
-      .btn {
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
         width: 100%;
       }
 
-      .hero {
-        padding-top: 28px;
-      }
+      .hero { padding-top: 28px; }
+      .hero-visual { min-height: 300px; }
+      .section-head { display: block; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .level-progress { grid-template-columns: 1fr; }
+    }
 
-      .hero-visual {
-        min-height: 300px;
-      }
-
-      .section-head {
-        display: block;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .number-display {
-        grid-template-columns: repeat(5, 1fr);
-      }
+    @media (prefers-reduced-motion: reduce) {
+      .sound-hover-pop { animation: none; }
+      .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+      .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -920,11 +1131,8 @@
   <header class="top-header">
     <div class="container top-inner">
       <a class="brand" href="../index.html">
-        <span class="brand-icon">➕</span>
-        <span>
-          Al-Hayat Kids Learning Hub
-          <small>Learn • Explore • Grow</small>
-        </span>
+        <span class="brand-icon">🔢</span>
+        <span>Al-Hayat Kids Learning Hub<small>Numbers • Shapes • Thinking • Games</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -932,337 +1140,203 @@
         <a href="islamic-studies.html">Islamic</a>
         <a href="arabic-for-kids.html">Arabic</a>
         <a href="english.html">English</a>
+        <a href="science.html">Science</a>
         <a href="../reading-library/index.html">Stories</a>
-        <a href="../worksheets/index.html">Worksheets</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
     </div>
   </header>
 
+  <div class="audio-bar" aria-label="Audio learning controls">
+    <div class="container audio-inner">
+      <p>🔊 Math audio is short and focused: concept, problem, question, mission, or answer only.</p>
+      <div class="sound-control-group">
+        <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
+        <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">➕ Math Learning for Kids</div>
-          <h1>Math <span>for Kids</span></h1>
+          <div class="kicker">🔢 Complete Math Lesson Library • Ages 3–7</div>
+          <h1>Choose Age. <span>Play Math.</span></h1>
           <p>
-            A joyful beginner-friendly math learning space where children build number sense,
-            counting, addition, subtraction, shapes, patterns, and problem-solving through short,
-            visual, hands-on activities.
+            A complete age-based Math foundation. The child first chooses age, then selects a lesson from that
+            level’s math library. Every lesson has a visual model, mini story, game, quiz, mission,
+            whiteboard practice, and short focused audio.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#number-lab">Start Counting</a>
-            <a class="btn btn-blue" href="#practice">Practice Today</a>
-            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+            <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
+            <a class="btn btn-gold" href="#lesson-library">Open Lesson Library</a>
+            <a class="btn btn-white" href="#whiteboard">Math Whiteboard</a>
+          </div>
+
+          <div class="sound-actions" style="margin-top: 14px;">
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one math lesson. See the visual model. Play the game. Solve the quiz. Practice writing and earn stars." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. See. Count. Play. Solve. Write. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="child-card">
+          <div class="hero-box">
             <div class="emoji">🧮</div>
-            <h2>See it, count it, build it, solve it</h2>
-            <p>Math becomes easier when children use pictures, objects, number lines, shapes, and joyful practice.</p>
-
+            <h2>Math Level 1 to Level 5</h2>
+            <p>Age 3 begins with counting and shapes. Age 7 reaches place value, fractions, multiplication, division, data, and problem solving.</p>
             <div class="hero-stats">
-              <div class="hero-stat">10 <span>Number Sense</span></div>
-              <div class="hero-stat">4 <span>Practice Steps</span></div>
-              <div class="hero-stat">Fun <span>Quizzes</span></div>
+              <div class="hero-stat">61 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Games <span>Every Lesson</span></div>
+              <div class="hero-stat">Writing <span>Board</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="method-title">
-      <div class="container">
-        <div class="section-head">
+    <section class="age-choice" id="choose-age">
+      <div class="container age-choice-card">
+        <div class="age-choice-title">
           <div>
-            <div class="section-label">Learning Method</div>
-            <h2 id="method-title">A math routine children understand</h2>
-            <p class="section-lead">
-              Strong early math starts with meaning, not memorization only. This page follows a
-              child-friendly routine: use objects, see pictures, talk about numbers, and then solve.
-            </p>
+            <div class="section-label">Step 1</div>
+            <h2>Choose the child’s age</h2>
+            <p>After choosing an age, the lesson library below will show only that age level’s math lessons.</p>
           </div>
+          <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
+        </div>
+        <div class="age-tabs" id="ageTabs"></div>
+      </div>
+    </section>
+
+    <section class="section" id="active-level">
+      <div class="container level-shell">
+        <div class="level-hero" id="levelHero"></div>
+        <div class="level-progress" id="levelProgress"></div>
+
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">Math Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused lesson. Each lesson has model, story, game, quiz, mission, and writing practice.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
         </div>
 
-        <div class="method-grid">
-          <article class="method-card">
-            <div class="icon">🧸</div>
-            <h3>Concrete</h3>
-            <p>Children first count real or imagined objects like blocks, stars, pencils, and toys.</p>
+        <div class="daily-grid" style="margin-top:20px;">
+          <article class="lesson-card" id="lessonCard"></article>
+          <article class="activity-card" id="activityCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;" id="whiteboard">
+          <article class="practice-card">
+            <h3>✍️ Math Whiteboard</h3>
+            <div class="whiteboard-wrap" aria-label="Math whiteboard">
+              <div class="whiteboard-head">
+                <strong id="boardTitle">Trace today’s math guide</strong>
+                <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
+              </div>
+
+              <canvas id="mathWhiteboard" class="whiteboard-canvas" aria-label="Write math using mouse, touch, or stylus"></canvas>
+
+              <p class="board-tip">
+                Tip: Trace the faint guide first, then write it again yourself using mouse, finger, or stylus.
+              </p>
+            </div>
+
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Guide</button>
+              <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Guide</button>
+              <button class="learned-btn" id="saveBoardBtn" type="button">✅ Save Writing</button>
+            </div>
           </article>
 
-          <article class="method-card">
-            <div class="icon">🖼️</div>
-            <h3>Picture</h3>
-            <p>They use dots, number lines, shapes, and drawings to see the math idea clearly.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">🔢</div>
-            <h3>Symbol</h3>
-            <p>After understanding, they connect the idea to numbers and signs like +, −, =.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">💬</div>
-            <h3>Explain</h3>
-            <p>They say how they solved it, which builds confidence and real understanding.</p>
+          <article class="practice-card">
+            <h3>🏆 Writing Goal</h3>
+            <div class="mission-box" id="writingGoal">Write the selected number, shape, or equation three times.</div>
+            <ul class="tips">
+              <li>Say the math idea while writing.</li>
+              <li>Use fingers, toys, blocks, or fruits before symbols.</li>
+              <li>Do not force speed; build understanding first.</li>
+              <li>Celebrate effort and clear thinking.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="number-lab" aria-labelledby="lab-title">
-      <div class="container number-lab">
-        <div class="section-label">Number Sense Lab</div>
-        <h2 id="lab-title">Count, see, and understand numbers</h2>
+    <section class="section" id="progress">
+      <div class="container progress-section">
+        <div class="section-label">Progress Tracker</div>
+        <h2>Stars, streaks, learned concepts, games, quizzes, missions, and writing</h2>
         <p class="section-lead">
-          Click the buttons to change the number. Children can count the dots, see the number line,
-          and connect quantity with a written number.
+          Progress is saved only on this browser/device using local storage. No login, no child name,
+          no email, and no server collection.
         </p>
 
-        <div class="lab-grid">
-          <article class="lab-card">
-            <h3>Counting Dots</h3>
-            <p>Current number: <strong id="numberValue">5</strong></p>
-            <div class="number-display" id="numberDisplay" aria-label="Counting dots"></div>
+        <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="mathDaily"></div>
 
-            <div class="number-controls">
-              <button class="small-btn" type="button" id="minusBtn">− 1</button>
-              <button class="small-btn" type="button" id="plusBtn">+ 1</button>
-              <button class="small-btn" type="button" id="resetBtn">Reset</button>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <h3>Number Line</h3>
-            <p>Number lines help children understand order, before, after, addition, and subtraction.</p>
-            <div class="number-line" id="numberLine" aria-label="Number line from 0 to 10"></div>
-          </article>
+        <div class="sound-actions" style="margin-top: 16px;">
+          <button class="repeat-btn" type="button" data-progress-reset="true">Reset local progress</button>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="topics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Explore Math</div>
-            <h2 id="topics-title">What children can learn here</h2>
-            <p class="section-lead">
-              This page can grow into a complete math zone with lessons, printable sheets,
-              games, quizzes, and real-life problem-solving.
-            </p>
-          </div>
-        </div>
-
-        <div class="topics-grid">
-          <article class="topic-card">
-            <div class="topic-icon">🔢</div>
-            <h3>Numbers & Counting</h3>
-            <p>Recognize numbers, count objects, compare numbers, and understand order.</p>
-            <a href="#number-lab">Start Counting →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">➕</div>
-            <h3>Addition</h3>
-            <p>Use objects, dots, and number lines to understand “putting together.”</p>
-            <a href="#practice">Practice Addition →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">➖</div>
-            <h3>Subtraction</h3>
-            <p>Learn “taking away” and “finding the difference” through visual practice.</p>
-            <a href="#practice">Practice Subtraction →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🔷</div>
-            <h3>Shapes</h3>
-            <p>Circle, square, triangle, rectangle, sides, corners, and patterns.</p>
-            <a href="#shapes">Explore Shapes →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🧩</div>
-            <h3>Patterns</h3>
-            <p>Find, continue, and create patterns using colors, shapes, and numbers.</p>
-            <a href="../activities/index.html">Try Activities →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">⏰</div>
-            <h3>Time & Money</h3>
-            <p>Read clocks, understand daily routines, count coins, and solve simple tasks.</p>
-            <a href="../worksheets/index.html">Open Worksheets →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🧠</div>
-            <h3>Word Problems</h3>
-            <p>Use real-life stories to decide which operation to use and explain why.</p>
-            <a href="#practice">Solve Problems →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🌟</div>
-            <h3>Daily Math</h3>
-            <p>A small math activity every day builds accuracy, speed, and confidence.</p>
-            <a href="../daily-learning/index.html">Daily Learning →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="practice" aria-labelledby="practice-title">
-      <div class="container daily-box">
-        <div class="section-label">Today’s Math Practice</div>
-        <h2 id="practice-title">One small problem, one clear strategy</h2>
-        <p class="section-lead">
-          Children should learn how to think, not only how to answer. Today’s practice uses dots,
-          number facts, and a short quiz.
-        </p>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>➕ Addition of the Day</h3>
-            <div class="big-math">4 + 3 = 7</div>
-            <p><strong>Think:</strong> Start with 4, then count 3 more: 5, 6, 7.</p>
-          </article>
-
-          <article class="daily-card">
-            <h3>➖ Subtraction of the Day</h3>
-            <div class="big-math">9 − 2 = 7</div>
-            <p><strong>Think:</strong> Start with 9, take away 2, and count what remains.</p>
-          </article>
-
-          <article class="daily-card">
-            <h3>📘 Word Problem</h3>
-            <p>
-              Amina has 5 pencils. Her mother gives her 2 more pencils.
-              How many pencils does Amina have now?
-            </p>
-            <p><strong>Answer:</strong> 5 + 2 = 7 pencils.</p>
-          </article>
-
-          <article class="daily-card">
-            <h3>🧠 Quick Quiz</h3>
-            <p>What is 6 + 2?</p>
-            <div class="quiz-options">
-              <button type="button" data-answer="wrong">7</button>
-              <button type="button" data-answer="correct">8</button>
-              <button type="button" data-answer="wrong">9</button>
-            </div>
-            <div class="result" id="result" aria-live="polite"></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="shapes" aria-labelledby="shapes-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Shape Explorer</div>
-            <h2 id="shapes-title">Learn shapes through seeing and naming</h2>
-            <p class="section-lead">
-              Early geometry becomes easy when children notice shapes around them: plates,
-              books, doors, signs, tiles, and toys.
-            </p>
-          </div>
-        </div>
-
-        <div class="shape-play">
-          <article class="shape-card">
-            <div class="shape circle"></div>
-            <h3>Circle</h3>
-            <p>No corners, round shape.</p>
-          </article>
-
-          <article class="shape-card">
-            <div class="shape square"></div>
-            <h3>Square</h3>
-            <p>4 equal sides and 4 corners.</p>
-          </article>
-
-          <article class="shape-card">
-            <div class="shape triangle"></div>
-            <h3>Triangle</h3>
-            <p>3 sides and 3 corners.</p>
-          </article>
-
-          <article class="shape-card">
-            <div class="shape rectangle"></div>
-            <h3>Rectangle</h3>
-            <p>4 sides and 4 corners.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="path-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2 id="path-title">A strong math foundation in four steps</h2>
-            <p class="section-lead">
-              Children grow faster when math is clear, practical, and connected to real life.
-            </p>
-          </div>
-        </div>
-
-        <div class="pathway">
-          <article class="path-card">
-            <strong>1</strong>
-            <h3>Count</h3>
-            <p>Start with objects, fingers, dots, and number lines.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>2</strong>
-            <h3>Represent</h3>
-            <p>Draw pictures, groups, shapes, and simple models.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>3</strong>
-            <h3>Solve</h3>
-            <p>Use numbers, signs, equations, and strategies.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>4</strong>
-            <h3>Explain</h3>
-            <p>Say how the answer was found and why it makes sense.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="parents-title">
+    <section class="section" id="parent-guide">
       <div class="container parent-box">
         <div>
-          <div class="section-label">For Parents & Teachers</div>
-          <h2 id="parents-title">How to help children love math</h2>
+          <div class="section-label">Parent & Teacher Zone</div>
+          <h2>Math curriculum method and map</h2>
           <p class="section-lead">
-            Math anxiety often begins when children feel rushed or embarrassed. Keep math slow,
-            visual, encouraging, and connected to daily life.
+            The child area stays focused on selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
           </p>
+
+          <details class="curriculum-details">
+            <summary>Open: How young children should learn Math</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                Ages 3–7 should learn math through concrete objects, visual models, counting,
+                talking, drawing, games, real-life stories, and repeated practice.
+              </p>
+              <div class="grid-4" style="margin-top:16px;">
+                <div class="mini-card"><div class="icon-pill">👀</div><h3>See</h3><p>Use dots, ten-frames, number lines, shapes, and real objects.</p></div>
+                <div class="mini-card"><div class="icon-pill">✋</div><h3>Touch & Count</h3><p>Count real things before using symbols.</p></div>
+                <div class="mini-card"><div class="icon-pill">🧩</div><h3>Play & Solve</h3><p>Games and stories help children understand deeply.</p></div>
+                <div class="mini-card"><div class="icon-pill">✍️</div><h3>Draw & Write</h3><p>Whiteboard practice builds number and symbol fluency.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="curriculum-details">
+            <summary>Open: Math Learning Worlds curriculum map</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                The curriculum gradually covers counting, number sense, shapes, comparison,
+                patterns, addition, subtraction, place value, time, money, measurement, data,
+                fractions, multiplication, division, and problem solving.
+              </p>
+              <div class="compact-worlds" id="compactWorlds"></div>
+            </div>
+          </details>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Use real objects like spoons, pencils, blocks, fruits, and coins.</li>
-            <li>Ask children to explain their thinking instead of only giving an answer.</li>
-            <li>Use short practice sessions: 5 to 10 minutes can be very effective.</li>
-            <li>Praise effort, strategy, neat work, and improvement.</li>
-            <li>Connect math with daily routines: shopping, time, sharing, cooking, and games.</li>
+            <li>Use one level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is short: concept, model, story, quiz, or mission only.</li>
+            <li>Children should understand with objects before memorizing written rules.</li>
+            <li>Mix home items: spoons, buttons, blocks, books, fruits, coins, cups, and toys.</li>
           </ul>
         </div>
       </div>
@@ -1271,24 +1345,24 @@
     <section class="section">
       <div class="container cta">
         <div>
-          <div class="section-label" style="color:#fed7aa;">Personal Guidance</div>
-          <h2>Book Online Math Support with Dr. Imran Hayat</h2>
+          <div class="section-label" style="color:#93c5fd;">Personal Guidance</div>
+          <h2>Book Online Math Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured support in basic math, counting, addition,
-            subtraction, shapes, word problems, or confidence-building, you can book online
-            classes along with these free learning resources.
+            If your child needs structured support in counting, shapes, number sense, addition,
+            subtraction, place value, fractions, measurement, or problem solving, you can book online classes
+            alongside these free resources.
           </p>
 
           <ul class="cta-list">
-            <li>Numbers and counting support</li>
-            <li>Addition and subtraction practice</li>
-            <li>Word problems and reasoning</li>
-            <li>Confidence-building through gentle practice</li>
+            <li>Age 3–7 math foundation plan</li>
+            <li>Focused lesson library by age level</li>
+            <li>Visual models, games, stories, and whiteboard practice</li>
+            <li>Gentle guided learning for children</li>
           </ul>
         </div>
 
         <div>
-          <a class="btn btn-primary" href="../online-classes.html">Book Online Classes</a>
+          <a class="btn btn-gold" href="../online-classes.html">Book Online Classes</a>
           <br /><br />
           <a class="btn btn-white" href="../contact.html">Contact for Details</a>
         </div>
@@ -1300,10 +1374,7 @@
     <div class="container footer-grid">
       <div>
         <h3>🌟 Al-Hayat Kids Learning Hub</h3>
-        <p>
-          A joyful Islamic and academic learning platform where children learn,
-          read, play, explore, and grow.
-        </p>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
       <div>
@@ -1313,6 +1384,7 @@
           <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
           <li><a href="english.html">English</a></li>
           <li><a href="science.html">Science</a></li>
+          <li><a href="general-knowledge.html">General Knowledge</a></li>
         </ul>
       </div>
 
@@ -1336,72 +1408,818 @@
         </ul>
       </div>
     </div>
-
-    <div class="container copyright">
-      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
-    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
+  <script src="../assets/learning-data.js"></script>
+  <script src="../assets/progress-tracker.js"></script>
+
   <script>
-    const result = document.getElementById("result");
+    const compactWorlds = [
+      ["🔢", "Numbers"], ["🍎", "Counting"], ["🔺", "Shapes"], ["🔴", "Patterns"],
+      ["⚖️", "Compare"], ["➕", "Addition"], ["➖", "Subtraction"], ["🧩", "Problem Solving"],
+      ["🧱", "Place Value"], ["⏰", "Time"], ["🪙", "Money"], ["📏", "Measurement"],
+      ["🍕", "Fractions"], ["✖️", "Multiplication"], ["➗", "Division"], ["📊", "Data"]
+    ];
 
-    document.querySelectorAll(".quiz-options button").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.dataset.answer === "correct") {
-          result.textContent = "Correct! 6 + 2 = 8. ⭐";
-          result.style.color = "#c2410c";
-        } else {
-          result.textContent = "Good try! Count 6, then 2 more: 7, 8.";
-          result.style.color = "#b45309";
-        }
+    const ageLevels = [
+      {
+        id: "age-3",
+        level: "Level 1",
+        label: "Age 3",
+        icon: "🌱",
+        title: "Age 3: Touch, Count & Notice",
+        subtitle: "Counting 1–5, matching, sorting, big/small, same/different, circle, square.",
+        mastery: "By the end of this level, the child can count small groups, match objects, notice differences, and recognize basic shapes.",
+        lessons: [
+          countLesson("one", 1, "Count 1", "🍎"),
+          countLesson("two", 2, "Count 2", "⭐"),
+          countLesson("three", 3, "Count 3", "🧸"),
+          countLesson("four", 4, "Count 4", "🌼"),
+          countLesson("five", 5, "Count 5", "🔵"),
+          conceptLesson("big-small", "🐘", "Big and Small", "Big things are larger. Small things are smaller.", "Big / Small", "🐘 big  🐭 small", "Which one is big?", ["Elephant", "Mouse", "Button"], "Elephant", "Find one big object and one small object.", "Choose the big one", ["🐘 Elephant", "🐭 Mouse", "🐜 Ant"], "🐘 Elephant"),
+          conceptLesson("same-different", "🧩", "Same and Different", "Same means alike. Different means not alike.", "Same / Different", "🔵 🔵 / 🔵 🔺", "Which pair is the same?", ["🔵 🔵", "🔵 🔺", "⭐ 🟦"], "🔵 🔵", "Find two things that are the same.", "Choose same pair", ["🍎 🍎", "🍎 🍌", "⭐ 🔺"], "🍎 🍎"),
+          conceptLesson("circle", "⚪", "Circle", "A circle is round.", "Circle", "⚪ clock, plate, wheel", "Which shape is a circle?", ["⚪", "🟦", "🔺"], "⚪", "Find one round object.", "Choose the circle", ["⚪", "🟦", "🔺"], "⚪"),
+          conceptLesson("square", "🟦", "Square", "A square has four equal sides.", "Square", "🟦 tile, box, window", "Which shape is a square?", ["🟦", "⚪", "🔺"], "🟦", "Find one square object.", "Choose the square", ["🟦", "⚪", "⭐"], "🟦"),
+          conceptLesson("sort-color", "🎨", "Sort by Color", "Sorting means putting things into groups.", "Sort", "🔴 🔴 / 🔵 🔵", "Which things belong together?", ["Same color", "Random mess", "No group"], "Same color", "Sort two colors at home.", "Choose sorting", ["Put red with red", "Mix everything", "Throw objects"], "Put red with red")
+        ]
+      },
+      {
+        id: "age-4",
+        level: "Level 2",
+        label: "Age 4",
+        icon: "🌿",
+        title: "Age 4: Count 1–10, Compare, Shapes & Patterns",
+        subtitle: "Numbers 1–10, one-to-one counting, more/less/equal, triangle, rectangle, AB patterns, position words.",
+        mastery: "By the end of this level, the child can count up to 10, compare groups, name common shapes, and continue simple patterns.",
+        lessons: [
+          countLesson("six", 6, "Count 6", "🍌"),
+          countLesson("seven", 7, "Count 7", "🚗"),
+          countLesson("eight", 8, "Count 8", "📘"),
+          countLesson("nine", 9, "Count 9", "⭐"),
+          countLesson("ten", 10, "Count 10", "🍎"),
+          conceptLesson("one-to-one", "☝️", "One-to-One Counting", "Touch one object and say one number.", "Touch and count", "🍎 1, 🍎 2, 🍎 3", "How should we count objects?", ["Touch one by one", "Say fast only", "Skip objects"], "Touch one by one", "Count 5 spoons one by one.", "Choose good counting", ["Touch each object", "Skip objects", "Count twice"], "Touch each object"),
+          conceptLesson("more-less", "⚖️", "More and Less", "More means bigger group. Less means smaller group.", "More / Less", "🍎🍎🍎🍎 > 🍎🍎", "Which group has more?", ["4 apples", "2 apples", "same"], "4 apples", "Compare two groups of toys.", "Pick more", ["⭐⭐⭐⭐", "⭐⭐", "⭐"], "⭐⭐⭐⭐"),
+          conceptLesson("equal", "=", "Equal Groups", "Equal means the same amount.", "Equal", "🍎🍎 = 🍌🍌", "Which groups are equal?", ["2 and 2", "2 and 4", "1 and 3"], "2 and 2", "Make two equal groups.", "Choose equal", ["🍎🍎 and ⭐⭐", "🍎 and ⭐⭐⭐", "🍎🍎🍎 and ⭐"], "🍎🍎 and ⭐⭐"),
+          conceptLesson("triangle", "🔺", "Triangle", "A triangle has three sides.", "Triangle", "🔺 roof, slice, sign", "How many sides does a triangle have?", ["3", "4", "0"], "3", "Draw a triangle.", "Choose triangle", ["🔺", "⚪", "🟦"], "🔺"),
+          conceptLesson("rectangle", "▭", "Rectangle", "A rectangle has two long sides and two short sides.", "Rectangle", "▭ door, book, phone", "Which object can look like a rectangle?", ["Book", "Ball", "Wheel"], "Book", "Find one rectangle.", "Choose rectangle", ["▭", "⚪", "🔺"], "▭"),
+          conceptLesson("ab-pattern", "🔴", "AB Pattern", "A pattern repeats: red, blue, red, blue.", "Pattern", "🔴 🔵 🔴 🔵", "What comes next: red, blue, red, blue?", ["red", "green", "square"], "red", "Make a two-color pattern.", "Continue pattern", ["🔴", "🔺", "🟦"], "🔴"),
+          conceptLesson("position", "📍", "Position Words", "Position words tell where something is.", "Above / below / inside / outside", "🐻 inside box", "Where is a toy inside the box?", ["inside", "outside", "above"], "inside", "Put a toy inside a box.", "Choose position", ["inside", "yesterday", "blue"], "inside")
+        ]
+      },
+      {
+        id: "age-5",
+        level: "Level 3",
+        label: "Age 5",
+        icon: "🌳",
+        title: "Age 5: Numbers to 20, Patterns, Addition & Measurement",
+        subtitle: "Count to 20, compare numbers, subitize, add/take away with objects, measure, sort data.",
+        mastery: "By the end of this level, the child recognizes numbers to 20, starts simple operations, measures informally, and solves picture problems.",
+        lessons: [
+          conceptLesson("count-to-20", "🔢", "Count to 20", "Counting to 20 builds number order.", "1–20", "1 2 3 ... 20", "What number comes after 19?", ["20", "10", "5"], "20", "Count 20 small steps.", "Next number", ["20", "12", "8"], "20"),
+          conceptLesson("numbers-11-15", "1️⃣", "Numbers 11–15", "Teen numbers begin after 10.", "11–15", "11 12 13 14 15", "Which number is thirteen?", ["13", "3", "30"], "13", "Say 11 to 15.", "Pick 14", ["14", "4", "40"], "14"),
+          conceptLesson("numbers-16-20", "2️⃣", "Numbers 16–20", "Numbers continue after 15.", "16–20", "16 17 18 19 20", "Which number is twenty?", ["20", "12", "2"], "20", "Say 16 to 20.", "Pick 18", ["18", "8", "80"], "18"),
+          conceptLesson("before-after", "↔️", "Before and After", "Before comes earlier. After comes next.", "Before / After", "4, 5, 6", "What comes after 5?", ["6", "4", "2"], "6", "Practice before and after with numbers 1–10.", "Choose after 7", ["8", "6", "5"], "8"),
+          conceptLesson("compare-numbers", "⚖️", "Compare Numbers", "Greater number means more. Smaller number means less.", "Greater / smaller", "8 is more than 5", "Which is greater?", ["8", "5", "same"], "8", "Compare two numbers.", "Pick greater number", ["9", "4", "2"], "9"),
+          conceptLesson("subitize", "🎲", "See Without Counting", "Subitizing means seeing a small amount quickly.", "See 5", "⚫⚫⚫⚫⚫", "How many dots do you see?", ["5", "3", "8"], "5", "Look at dice dots and say the number.", "Quick count", ["5", "1", "9"], "5"),
+          operationLesson("add-objects", "➕", "Addition with Objects", "Addition means putting groups together.", "2 + 3 = 5", "🍎🍎 + 🍎🍎🍎", "What is 2 + 3?", ["5", "4", "6"], "5", "Use toys to make 2 + 3.", "Choose sum", ["5", "2", "7"], "5"),
+          operationLesson("take-away", "➖", "Take Away", "Subtraction means some objects go away.", "5 - 2 = 3", "🍎🍎🍎🍎🍎 → take 2 away", "What is 5 - 2?", ["3", "5", "7"], "3", "Start with 5 blocks and take away 2.", "Choose left", ["3", "2", "5"], "3"),
+          conceptLesson("shape-review", "🔷", "2D Shape Review", "2D shapes are flat shapes.", "Shapes", "circle, square, triangle, rectangle", "Which shape has three sides?", ["triangle", "circle", "square"], "triangle", "Draw four shapes.", "Choose flat shape", ["triangle", "cube", "ball"], "triangle"),
+          conceptLesson("measure-length", "📏", "Measure Length", "Length tells how long something is.", "Long / short", "pencil is shorter than table", "Which is usually longer?", ["table", "pencil", "eraser"], "table", "Compare two objects: longer or shorter.", "Pick longer", ["ruler", "paper clip", "button"], "ruler"),
+          conceptLesson("data-sort", "📊", "Sort and Count Data", "Data helps us count and compare groups.", "Picture graph", "🍎🍎🍌🍌🍌", "Which fruit has more?", ["banana", "apple", "same"], "banana", "Sort toys by type and count them.", "Choose data answer", ["Banana has more", "Apple has more", "No fruit"], "Banana has more"),
+          conceptLesson("money-start", "🪙", "Money Readiness", "Coins and notes are used to buy things.", "Money", "1 coin, 2 coins, 3 coins", "What do we count in money?", ["coins", "clouds", "stars only"], "coins", "Count toy coins or round objects.", "Choose money item", ["coin", "shoe", "flower"], "coin")
+        ]
+      },
+      {
+        id: "age-6",
+        level: "Level 4",
+        label: "Age 6",
+        icon: "🌴",
+        title: "Age 6: Number Bonds, Operations, Place Value, Time & Data",
+        subtitle: "Number bonds to 10, add/subtract within 10/20, teen numbers, tens and ones, skip counting, time, money, measurement, graphs.",
+        mastery: "By the end of this level, the child understands early operations, place value, time, money, measurement, and simple graphs.",
+        lessons: [
+          operationLesson("bonds-10", "🧩", "Number Bonds to 10", "Number bonds are pairs that make 10.", "6 + 4 = 10", "🟦🟦🟦🟦🟦🟦 + 🟨🟨🟨🟨", "Which pair makes 10?", ["6 and 4", "3 and 5", "8 and 3"], "6 and 4", "Find two numbers that make 10.", "Make 10", ["7 + 3", "4 + 4", "5 + 3"], "7 + 3"),
+          operationLesson("add-within-10", "➕", "Add Within 10", "Add small numbers using objects or fingers.", "4 + 3 = 7", "⭐⭐⭐⭐ + ⭐⭐⭐", "What is 4 + 3?", ["7", "6", "8"], "7", "Make 4 + 3 with toys.", "Choose answer", ["7", "3", "9"], "7"),
+          operationLesson("subtract-within-10", "➖", "Subtract Within 10", "Subtract by taking away.", "9 - 4 = 5", "9 stars take away 4", "What is 9 - 4?", ["5", "4", "9"], "5", "Use 9 objects and take away 4.", "Choose left", ["5", "9", "2"], "5"),
+          conceptLesson("teen-tens-ones", "🧱", "Teen Numbers as 10 and Ones", "Teen numbers have one ten and some ones.", "13 = 10 + 3", "🟦 ten + 🔵🔵🔵", "13 is 10 and how many ones?", ["3", "13", "10"], "3", "Build 14 as ten and four ones.", "Choose ones in 15", ["5", "10", "15"], "5"),
+          conceptLesson("place-value", "🧱", "Tens and Ones", "Place value shows tens and ones.", "24 = 2 tens + 4 ones", "🟦🟦 + 🔵🔵🔵🔵", "How many tens are in 24?", ["2", "4", "6"], "2", "Build a number with tens and ones.", "Pick tens in 31", ["3", "1", "31"], "3"),
+          conceptLesson("skip-2", "2️⃣", "Skip Count by 2", "Skip counting by 2 helps count pairs.", "2, 4, 6, 8, 10", "👟👟 👟👟 👟👟", "What comes after 6 when counting by 2?", ["8", "7", "10"], "8", "Count pairs of shoes by 2.", "Next number", ["8", "9", "5"], "8"),
+          conceptLesson("skip-5-10", "5️⃣", "Skip Count by 5 and 10", "Skip counting helps count faster.", "5, 10, 15, 20", "✋ ✋ ✋ ✋", "What comes after 15 by 5?", ["20", "16", "10"], "20", "Count fingers by 5 or 10.", "Next by 10", ["30", "25", "21"], "30"),
+          conceptLesson("time-oclock", "⏰", "Time: O'clock", "O'clock means the minute hand points to 12.", "3:00", "clock shows 3 o'clock", "What does 3:00 mean?", ["3 o'clock", "half past", "money"], "3 o'clock", "Find an o'clock time on a clock.", "Choose o'clock", ["6:00", "6:30", "6:15"], "6:00"),
+          conceptLesson("money-coins", "🪙", "Money: Counting Coins", "Coins can be counted to find total money.", "coins", "1 + 1 + 1 = 3", "How many coins are 1 + 1 + 1?", ["3", "2", "5"], "3", "Count three coins or round objects.", "Choose total coins", ["4", "2", "1"], "4"),
+          conceptLesson("measure-weight", "⚖️", "Weight: Heavy and Light", "Weight tells how heavy something is.", "heavy / light", "rock heavy, feather light", "Which is heavier?", ["rock", "feather", "paper"], "rock", "Compare two objects: heavy or light.", "Pick heavy", ["brick", "leaf", "feather"], "brick"),
+          conceptLesson("picture-graph", "📊", "Picture Graph", "A picture graph uses pictures to show data.", "graph", "🍎🍎🍌🍌🍌", "Which fruit has more pictures?", ["banana", "apple", "same"], "banana", "Make a picture graph of toys.", "Read graph", ["Banana", "Apple", "None"], "Banana"),
+          operationLesson("word-problems", "📘", "One-Step Word Problems", "A word problem tells a math story.", "3 + 2 = 5", "Ali has 3 cars. He gets 2 more.", "What is 3 + 2?", ["5", "3", "2"], "5", "Make your own addition story.", "Choose answer", ["5", "6", "4"], "5")
+        ]
+      },
+      {
+        id: "age-7",
+        level: "Level 5",
+        label: "Age 7",
+        icon: "🌟",
+        title: "Age 7: Place Value, Fractions, Multiplication, Division & Problem Solving",
+        subtitle: "Numbers to 100, two-digit operations, number line, equal groups, arrays, sharing, fractions, 3D shapes, time, money, data.",
+        mastery: "By the end of this level, the child can reason with two-digit numbers, early multiplication/division, fractions, measurement, data, and multi-step thinking.",
+        lessons: [
+          conceptLesson("place-100", "🧱", "Place Value to 100", "Two-digit numbers have tens and ones.", "67 = 6 tens + 7 ones", "six tens and seven ones", "How many tens are in 67?", ["6", "7", "67"], "6", "Build 42 with tens and ones.", "Pick tens in 58", ["5", "8", "58"], "5"),
+          operationLesson("add-2digit", "➕", "Add Two-Digit Numbers", "Add tens with tens and ones with ones.", "23 + 14 = 37", "20+10 and 3+4", "What is 23 + 14?", ["37", "27", "47"], "37", "Try 12 + 15.", "Choose sum", ["27", "17", "37"], "27"),
+          operationLesson("subtract-2digit", "➖", "Subtract Two-Digit Numbers", "Subtract tens and ones carefully.", "46 - 21 = 25", "40-20 and 6-1", "What is 46 - 21?", ["25", "35", "20"], "25", "Try 35 - 12.", "Choose difference", ["23", "22", "33"], "23"),
+          conceptLesson("number-line", "➡️", "Number Line Jumps", "A number line helps us jump forward or backward.", "jump +5", "10 → 15", "If you jump 5 from 10, where do you land?", ["15", "12", "5"], "15", "Draw a number line and jump.", "Choose landing", ["15", "10", "20"], "15"),
+          operationLesson("equal-groups", "✖️", "Multiplication as Equal Groups", "Multiplication counts equal groups.", "3 groups of 2 = 6", "🍎🍎  🍎🍎  🍎🍎", "How many in 3 groups of 2?", ["6", "5", "4"], "6", "Make equal groups with toys.", "Choose total", ["6", "2", "3"], "6"),
+          operationLesson("arrays", "▦", "Arrays", "An array shows rows and columns.", "2 rows of 3 = 6", "🔵🔵🔵 / 🔵🔵🔵", "How many in 2 rows of 3?", ["6", "5", "3"], "6", "Draw an array.", "Pick array total", ["6", "2", "9"], "6"),
+          operationLesson("division-sharing", "➗", "Division as Sharing", "Division means sharing equally.", "6 shared by 2 = 3 each", "6 cookies, 2 children", "How many each?", ["3", "2", "6"], "3", "Share 8 toys between 2 groups.", "Choose each", ["4", "2", "8"], "4"),
+          conceptLesson("half", "🍕", "Half", "A half is one of two equal parts.", "1/2", "pizza cut into 2 equal parts", "How many equal parts make halves?", ["2", "3", "4"], "2", "Fold paper into halves.", "Choose half", ["1 of 2 equal parts", "1 of 3 parts", "whole only"], "1 of 2 equal parts"),
+          conceptLesson("quarters", "🍕", "Quarters", "A quarter is one of four equal parts.", "1/4", "pizza cut into 4 equal parts", "How many equal parts make quarters?", ["4", "2", "3"], "4", "Fold paper into four parts.", "Choose quarter", ["1 of 4 equal parts", "1 of 2 parts", "whole"], "1 of 4 equal parts"),
+          conceptLesson("3d-shapes", "🧊", "3D Shapes", "3D shapes are solid shapes.", "cube, sphere, cylinder", "box, ball, can", "Which is a sphere?", ["ball", "box", "book"], "ball", "Find one 3D shape.", "Pick 3D object", ["ball", "triangle drawing", "flat circle"], "ball"),
+          conceptLesson("time-half-quarter", "⏰", "Half Past and Quarter", "Time can show half past and quarter past.", "3:30", "half past three", "What is 3:30?", ["half past three", "3 o'clock", "midnight"], "half past three", "Look for half past on a clock.", "Choose half past", ["4:30", "4:00", "4:15"], "4:30"),
+          operationLesson("money-add", "🪙", "Add Money", "Add coins to find total money.", "5 + 5 = 10", "two 5 coins make 10", "What is 5 + 5?", ["10", "5", "15"], "10", "Add toy coins.", "Choose total", ["10", "9", "6"], "10"),
+          conceptLesson("measure-cm-m", "📏", "Centimetres and Metres", "Small lengths use centimetres. Bigger lengths use metres.", "cm / m", "pencil in cm, room in m", "Which unit for a pencil?", ["centimetres", "metres", "hours"], "centimetres", "Measure a small object.", "Choose unit", ["cm", "kg", "minutes"], "cm"),
+          conceptLesson("bar-graph", "📊", "Bar Graph", "A bar graph compares amounts.", "bars", "tall bar means more", "What does a taller bar show?", ["more", "less always", "nothing"], "more", "Make a simple bar graph.", "Read graph", ["Taller bar means more", "Shorter bar means more", "Bars are shapes only"], "Taller bar means more"),
+          operationLesson("mixed-problems", "🧠", "Mixed Problem Solving", "Read, think, choose operation, and solve.", "8 - 3 + 2 = 7", "start 8, take 3, add 2", "What is 8 - 3 + 2?", ["7", "5", "9"], "7", "Solve one mixed story problem.", "Choose answer", ["7", "6", "8"], "7")
+        ]
+      }
+    ];
+
+    let activeAge = ageLevels[0];
+    let activeLessonIndex = 0;
+    let funSoundsEnabled = true;
+    let funAudioContext = null;
+    let lastHoverSoundTime = 0;
+    let boardContext = null;
+    let drawing = false;
+    window.mathWhiteboardUsed = false;
+
+    function countLesson(id, number, title, icon) {
+      const objects = Array.from({length: number}, () => icon).join(" ");
+      return makeLesson({
+        id, icon, title,
+        display: number,
+        concept: `Count ${number} object${number === 1 ? "" : "s"} slowly.`,
+        model: objects,
+        childTask: `Touch and count ${number} object${number === 1 ? "" : "s"}.`,
+        story: `A child saw ${number} ${icon} and counted slowly: ${number}.`,
+        quizQuestion: `How many objects are shown?`,
+        quizOptions: shuffleOptions([String(number), String(Math.max(1, number - 1)), String(number + 1)], String(number)),
+        quizAnswer: String(number),
+        mission: `Count ${number} thing${number === 1 ? "" : "s"} near you.`,
+        activityTitle: `Choose number ${number}`,
+        activityOptions: shuffleOptions([String(number), String(Math.max(1, number - 1)), String(number + 2)], String(number)),
+        activityAnswer: String(number),
+        guide: String(number)
       });
-    });
+    }
 
-    let currentNumber = 5;
-    const numberValue = document.getElementById("numberValue");
-    const numberDisplay = document.getElementById("numberDisplay");
-    const numberLine = document.getElementById("numberLine");
-    const minusBtn = document.getElementById("minusBtn");
-    const plusBtn = document.getElementById("plusBtn");
-    const resetBtn = document.getElementById("resetBtn");
+    function conceptLesson(id, icon, title, concept, display, model, quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer) {
+      return makeLesson({ id, icon, title, concept, display, model, childTask: mission, story: buildStory(title, concept), quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer, guide: display });
+    }
 
-    function renderNumber() {
-      numberValue.textContent = currentNumber;
+    function operationLesson(id, icon, title, concept, display, model, quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer) {
+      return makeLesson({ id, icon, title, concept, display, model, childTask: mission, story: buildStory(title, concept), quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer, guide: display });
+    }
 
-      numberDisplay.innerHTML = "";
-      for (let i = 1; i <= 10; i++) {
-        const dot = document.createElement("div");
-        dot.className = "counter-dot";
-        dot.textContent = i <= currentNumber ? i : "";
-        dot.style.opacity = i <= currentNumber ? "1" : "0.25";
-        numberDisplay.appendChild(dot);
+    function makeLesson(obj) {
+      return obj;
+    }
+
+    function buildStory(title, concept) {
+      return `A child practiced ${title}. The child used objects, looked carefully, and understood: ${concept}`;
+    }
+
+    function shuffleOptions(options, answer) {
+      const unique = Array.from(new Set(options));
+      while (unique.length < 3) unique.push("another answer");
+      return unique.sort(() => Math.random() - 0.5);
+    }
+
+    function getActiveLesson() {
+      return activeAge.lessons[activeLessonIndex] || activeAge.lessons[0];
+    }
+
+    function getTracker() {
+      return window.AlHayatProgressTracker || null;
+    }
+
+    function getLearningData() {
+      return window.AlHayatLearningData || null;
+    }
+
+    function speak(text, lang = "en-US", repeat = false) {
+      const data = getLearningData();
+
+      if (data && typeof data.speakText === "function") {
+        data.speakText(text, lang, repeat);
+        return;
       }
 
-      numberLine.innerHTML = "";
-      for (let i = 0; i <= 10; i++) {
-        const item = document.createElement("div");
-        item.className = "line-item" + (i === currentNumber ? " is-active" : "");
-        item.textContent = i;
-        numberLine.appendChild(item);
+      if (!("speechSynthesis" in window)) {
+        alert("Sorry, your browser does not support audio reading.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = lang;
+      u.rate = repeat ? 0.74 : 0.82;
+      u.pitch = 1.06;
+      u.volume = 1;
+
+      if (repeat) {
+        u.onend = () => {
+          const u2 = new SpeechSynthesisUtterance(text);
+          u2.lang = lang;
+          u2.rate = 0.74;
+          u2.pitch = 1.06;
+          window.speechSynthesis.speak(u2);
+        };
+      }
+
+      window.speechSynthesis.speak(u);
+    }
+
+    function stopSound() {
+      const data = getLearningData();
+
+      if (data && typeof data.stopSpeech === "function") {
+        data.stopSpeech();
+        return;
+      }
+
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
       }
     }
 
-    minusBtn.addEventListener("click", () => {
-      currentNumber = Math.max(0, currentNumber - 1);
-      renderNumber();
-    });
+    function initFunAudioContext() {
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return null;
 
-    plusBtn.addEventListener("click", () => {
-      currentNumber = Math.min(10, currentNumber + 1);
-      renderNumber();
-    });
+        if (!funAudioContext) {
+          funAudioContext = new AudioContextClass();
+        }
 
-    resetBtn.addEventListener("click", () => {
-      currentNumber = 5;
-      renderNumber();
-    });
+        if (funAudioContext.state === "suspended") {
+          funAudioContext.resume();
+        }
 
-    renderNumber();
+        return funAudioContext;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function playFunHoverSound(kind = "hover") {
+      if (!funSoundsEnabled) return;
+
+      const now = Date.now();
+      if (now - lastHoverSoundTime < 95) return;
+      lastHoverSoundTime = now;
+
+      const ctx = initFunAudioContext();
+      if (!ctx) return;
+
+      const baseFrequency = kind === "success" ? 720 : kind === "nav" ? 520 : kind === "soft" ? 610 : 660;
+      const endFrequency = kind === "success" ? 960 : kind === "nav" ? 700 : kind === "soft" ? 760 : 840;
+
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(baseFrequency, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(endFrequency, ctx.currentTime + 0.09);
+
+      gain.gain.setValueAtTime(0.0001, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.055, ctx.currentTime + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.14);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.15);
+    }
+
+    function setupFunHoverEffects() {
+      const toggle = document.getElementById("funSoundToggle");
+
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          funSoundsEnabled = !funSoundsEnabled;
+          toggle.classList.toggle("off", !funSoundsEnabled);
+          toggle.setAttribute("aria-pressed", funSoundsEnabled ? "true" : "false");
+          toggle.textContent = funSoundsEnabled ? "🔔 Fun Sounds: On" : "🔕 Fun Sounds: Off";
+
+          if (funSoundsEnabled) {
+            initFunAudioContext();
+            playFunHoverSound("success");
+          }
+        });
+      }
+
+      document.addEventListener("pointerdown", () => initFunAudioContext(), { once: true });
+
+      const selector = [".btn", ".listen-btn", ".repeat-btn", ".learned-btn", ".tool-btn", ".age-tab", ".lesson-chip", ".quiz-options button", ".choice-options button", ".activity-options button", ".nav a"].join(",");
+
+      document.addEventListener("mouseover", (event) => {
+        const target = event.target.closest(selector);
+        if (!target) return;
+
+        if (target.dataset.hoverSoundAttached === "true") return;
+        target.dataset.hoverSoundAttached = "true";
+
+        target.addEventListener("mouseenter", () => {
+          const kind = target.classList.contains("learned-btn") || target.classList.contains("tool-btn")
+            ? "success"
+            : target.closest(".nav")
+              ? "nav"
+              : target.classList.contains("repeat-btn")
+                ? "soft"
+                : "hover";
+
+          target.classList.remove("sound-hover-pop");
+          void target.offsetWidth;
+          target.classList.add("sound-hover-pop");
+
+          playFunHoverSound(kind);
+        });
+
+        target.addEventListener("focus", () => playFunHoverSound("soft"));
+      });
+    }
+
+    function renderCompactWorlds() {
+      const el = document.getElementById("compactWorlds");
+      el.innerHTML = compactWorlds.map(([icon, title]) => `
+        <div class="compact-world"><span>${icon}</span>${title}</div>
+      `).join("");
+    }
+
+    function renderAgeTabs() {
+      const tabs = document.getElementById("ageTabs");
+      tabs.innerHTML = "";
+
+      ageLevels.forEach((level) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `age-tab ${level.id === activeAge.id ? "active" : ""}`;
+        button.textContent = `${level.icon} ${level.label}`;
+        button.addEventListener("click", () => {
+          activeAge = level;
+          activeLessonIndex = 0;
+          renderAgeTabs();
+          renderActiveLevel();
+          getTracker()?.markCompleted?.("mathDaily", `${activeAge.id}-selected`, { type: "age-selected" });
+          document.getElementById("active-level").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        tabs.appendChild(button);
+      });
+    }
+
+    function renderProgressDots() {
+      const container = document.getElementById("levelProgress");
+      container.innerHTML = ageLevels.map((level) => `
+        <div class="level-dot ${level.id === activeAge.id ? "active" : ""}">
+          ${level.level}<span>${level.label}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderLessonLibrary() {
+      const container = document.getElementById("lessonLibrary");
+      document.getElementById("libraryTitle").textContent = `${activeAge.label} Math Lesson Library`;
+      document.getElementById("libraryLead").textContent = `${activeAge.lessons.length} focused math lessons for ${activeAge.label}. Choose one lesson at a time.`;
+
+      container.innerHTML = activeAge.lessons.map((lessonItem, index) => `
+        <button type="button" class="lesson-chip ${index === activeLessonIndex ? "active" : ""}" data-lesson-index="${index}">
+          <small>${index + 1}</small>${lessonItem.icon} ${lessonItem.title}
+        </button>
+      `).join("");
+
+      container.querySelectorAll(".lesson-chip").forEach(button => {
+        button.addEventListener("click", () => {
+          activeLessonIndex = Number(button.dataset.lessonIndex);
+          renderActiveLevel();
+          document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    }
+
+    function renderActiveLevel() {
+      const selectedLesson = getActiveLesson();
+
+      renderProgressDots();
+
+      document.getElementById("levelHero").innerHTML = `
+        <div class="level-icon">${activeAge.icon}</div>
+        <div>
+          <div class="level-badge">${activeAge.level} • ${activeAge.label}</div>
+          <h2>${activeAge.title}</h2>
+          <p>${activeAge.subtitle}</p>
+          <div class="parent-note" style="margin-top:12px;"><strong>Mastery target:</strong> ${activeAge.mastery}</div>
+        </div>
+      `;
+
+      renderLessonLibrary();
+
+      document.getElementById("lessonCard").innerHTML = `
+        <h3>${selectedLesson.icon} Lesson ${activeLessonIndex + 1}: ${selectedLesson.title}</h3>
+        <div class="today-badge">Visual math model + short audio</div>
+        <div class="visual-card">
+          <div class="visual-clue">
+            <div>
+              <div class="emoji">${selectedLesson.icon}</div>
+              <strong>${selectedLesson.title}</strong>
+            </div>
+          </div>
+          <div class="support-grid">
+            <div class="note-box"><strong>Concept:</strong> ${selectedLesson.concept}</div>
+            <div class="math-display">${selectedLesson.display}</div>
+            <div class="visual-demo">${selectedLesson.model}</div>
+            <div class="task-box"><strong>Practice:</strong> ${selectedLesson.childTask}</div>
+          </div>
+        </div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenLessonBtn" type="button">🔊 Listen Lesson</button>
+          <button class="repeat-btn" id="repeatMathBtn" type="button">🔁 Repeat Math</button>
+          <button class="learned-btn" id="learnedLessonBtn" type="button">✅ I learned this</button>
+        </div>
+      `;
+
+      document.getElementById("activityCard").innerHTML = `
+        <h3>🎮 Mini Activity Game</h3>
+        <div class="mission-box"><strong>${selectedLesson.activityTitle}:</strong> Choose the best answer.</div>
+        <div class="activity-options" id="activityOptions"></div>
+        <div class="result" id="activityResult" aria-live="polite"></div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenActivityBtn" type="button">🔊 Listen Activity</button>
+          <button class="learned-btn" id="completeActivityBtn" type="button">✅ Complete Activity</button>
+        </div>
+      `;
+
+      document.getElementById("storyCard").innerHTML = `
+        <h3>📖 Mini Math Story</h3>
+        <div class="story-text">${selectedLesson.story}</div>
+        <div class="reflection-box" style="margin-top:12px;"><strong>Math idea:</strong> ${selectedLesson.concept}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenStoryBtn" type="button">🔊 Listen Story</button>
+          <button class="repeat-btn" id="repeatStoryPointBtn" type="button">🔁 Repeat Point</button>
+          <button class="learned-btn" id="completeStoryBtn" type="button">✅ Story Done</button>
+        </div>
+      `;
+
+      document.getElementById("quizCard").innerHTML = `
+        <h3>🧠 Lesson Quiz</h3>
+        <p>${selectedLesson.quizQuestion}</p>
+        <div class="quiz-options" id="levelQuizOptions"></div>
+        <div class="result" id="levelQuizResult" aria-live="polite"></div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
+          <button class="repeat-btn" id="repeatAnswerBtn" type="button">🔁 Repeat Answer</button>
+        </div>
+      `;
+
+      document.getElementById("missionCard").innerHTML = `
+        <h3>✅ Daily Mission</h3>
+        <div class="mission-box">${selectedLesson.mission}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenMissionBtn" type="button">🔊 Listen Mission</button>
+          <button class="repeat-btn" id="repeatMissionBtn" type="button">🔁 Repeat Mission</button>
+          <button class="learned-btn" id="saveMissionBtn" type="button">✅ Mission Done</button>
+        </div>
+      `;
+
+      document.getElementById("masteryCard").innerHTML = `
+        <h3>🏆 Mastery Check</h3>
+        <p>Can the child explain the idea, use objects or a visual model, answer the quiz, and complete the mission?</p>
+        <ul class="tips">
+          <li>Math idea: ${selectedLesson.title}</li>
+          <li>Model: ${selectedLesson.display}</li>
+          <li>Action: ${selectedLesson.mission}</li>
+        </ul>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenMasteryBtn" type="button">🔊 Listen Mastery</button>
+          <button class="tool-btn" id="nextLessonBtn" type="button">➡️ Next Lesson</button>
+        </div>
+      `;
+
+      document.getElementById("boardTitle").textContent = `Trace: ${selectedLesson.guide}`;
+      document.getElementById("writingGoal").textContent = `Write or draw ${selectedLesson.guide} three times. Then explain it simply.`;
+
+      renderActivityOptions();
+      renderQuizOptions();
+      attachDynamicHandlers();
+      refreshBoardGuide();
+
+      setTimeout(() => {
+        getTracker()?.renderAllProgressWidgets?.();
+      }, 100);
+    }
+
+    function renderActivityOptions() {
+      const selectedLesson = getActiveLesson();
+      const optionsEl = document.getElementById("activityOptions");
+      const resultEl = document.getElementById("activityResult");
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+
+      selectedLesson.activityOptions.forEach(option => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = option;
+        btn.addEventListener("click", () => {
+          const isCorrect = option === selectedLesson.activityAnswer;
+          optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
+          btn.classList.add(isCorrect ? "correct" : "wrong");
+
+          getTracker()?.markQuiz?.("mathDaily", `${activeAge.id}-${selectedLesson.id}-activity`, isCorrect, {
+            question: selectedLesson.activityTitle,
+            selected: option,
+            answer: selectedLesson.activityAnswer
+          });
+
+          if (isCorrect) {
+            resultEl.textContent = "Great thinking! ⭐";
+            resultEl.style.color = "#166534";
+            speak("Great thinking.", "en-US", false);
+          } else {
+            resultEl.textContent = `Good try. Better answer: ${selectedLesson.activityAnswer}`;
+            resultEl.style.color = "#b45309";
+            speak(`Good try. Better answer is ${selectedLesson.activityAnswer}.`, "en-US", false);
+          }
+        });
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function renderQuizOptions() {
+      const selectedLesson = getActiveLesson();
+      const optionsEl = document.getElementById("levelQuizOptions");
+      const resultEl = document.getElementById("levelQuizResult");
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+
+      selectedLesson.quizOptions.forEach(option => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = option;
+        btn.addEventListener("click", () => {
+          const isCorrect = option === selectedLesson.quizAnswer;
+          optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
+          btn.classList.add(isCorrect ? "correct" : "wrong");
+
+          getTracker()?.markQuiz?.("mathDaily", `${activeAge.id}-${selectedLesson.id}-quiz`, isCorrect, {
+            question: selectedLesson.quizQuestion,
+            selected: option,
+            answer: selectedLesson.quizAnswer
+          });
+
+          if (isCorrect) {
+            resultEl.textContent = "Correct! Excellent math learning. ⭐";
+            resultEl.style.color = "#166534";
+            speak("Correct. Excellent math learning.", "en-US", false);
+          } else {
+            resultEl.textContent = `Good try! Correct answer: ${selectedLesson.quizAnswer}`;
+            resultEl.style.color = "#b45309";
+            speak(`Good try. The correct answer is ${selectedLesson.quizAnswer}.`, "en-US", false);
+          }
+        });
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function attachDynamicHandlers() {
+      const selectedLesson = getActiveLesson();
+      const lessonKey = `${activeAge.id}-${selectedLesson.id}`;
+
+      document.getElementById("listenLessonBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.title}. ${selectedLesson.concept}. Model: ${selectedLesson.display}.`, "en-US", false);
+        getTracker()?.markListened?.("mathDaily", `${lessonKey}-lesson`, { type: "lesson" });
+      });
+
+      document.getElementById("repeatMathBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.display}. ${selectedLesson.display}.`, "en-US", true);
+        getTracker()?.markRepeated?.("mathDaily", `${lessonKey}-math`, { type: "math" });
+      });
+
+      document.getElementById("learnedLessonBtn").addEventListener("click", (e) => {
+        getTracker()?.markLearned?.("mathDaily", `${lessonKey}-lesson`, { type: "lesson" });
+        e.currentTarget.textContent = "✅ Learned!";
+      });
+
+      document.getElementById("listenActivityBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.activityTitle}. Choose the best answer.`, "en-US", false);
+      });
+
+      document.getElementById("completeActivityBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("mathDaily", `${lessonKey}-activity`, { type: "activity" });
+        e.currentTarget.textContent = "✅ Activity completed!";
+      });
+
+      document.getElementById("listenStoryBtn").addEventListener("click", () => {
+        speak(selectedLesson.story, "en-US", false);
+        getTracker()?.markListened?.("mathDaily", `${lessonKey}-story`, { type: "story" });
+      });
+
+      document.getElementById("repeatStoryPointBtn").addEventListener("click", () => {
+        speak(selectedLesson.concept, "en-US", true);
+      });
+
+      document.getElementById("completeStoryBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("mathDaily", `${lessonKey}-story`, { type: "story" });
+        e.currentTarget.textContent = "✅ Story completed!";
+      });
+
+      document.getElementById("listenQuizBtn").addEventListener("click", () => {
+        speak(`Question. ${selectedLesson.quizQuestion}.`, "en-US", false);
+      });
+
+      document.getElementById("repeatAnswerBtn").addEventListener("click", () => {
+        speak(`Answer: ${selectedLesson.quizAnswer}.`, "en-US", true);
+      });
+
+      document.getElementById("listenMissionBtn").addEventListener("click", () => {
+        speak(selectedLesson.mission, "en-US", false);
+      });
+
+      document.getElementById("repeatMissionBtn").addEventListener("click", () => {
+        speak(selectedLesson.mission, "en-US", true);
+      });
+
+      document.getElementById("saveMissionBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("mathDaily", `${lessonKey}-mission`, { type: "mission" });
+        e.currentTarget.textContent = "✅ Mission saved!";
+      });
+
+      document.getElementById("listenMasteryBtn").addEventListener("click", () => {
+        speak(`Mastery check. Explain ${selectedLesson.title}. Model: ${selectedLesson.display}. Mission: ${selectedLesson.mission}.`, "en-US", false);
+      });
+
+      document.getElementById("nextLessonBtn").addEventListener("click", () => {
+        activeLessonIndex = (activeLessonIndex + 1) % activeAge.lessons.length;
+        renderActiveLevel();
+        document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      document.getElementById("listenBoardBtn").addEventListener("click", () => {
+        speak(`Trace ${selectedLesson.guide}.`, "en-US", false);
+      });
+
+      document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.guide}. ${selectedLesson.guide}.`, "en-US", true);
+      });
+
+      document.getElementById("saveBoardBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("mathDaily", `${lessonKey}-whiteboard`, {
+          type: "whiteboard",
+          whiteboardUsed: window.mathWhiteboardUsed === true
+        });
+        e.currentTarget.textContent = "✅ Writing saved!";
+      });
+    }
+
+    function setupWhiteboard() {
+      const canvas = document.getElementById("mathWhiteboard");
+      const clearButton = document.getElementById("clearBoardBtn");
+
+      if (!canvas || !clearButton) return;
+
+      boardContext = canvas.getContext("2d", { willReadFrequently: true });
+
+      function resizeBoard() {
+        const rect = canvas.getBoundingClientRect();
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = Math.max(320, Math.floor(rect.width * ratio));
+        canvas.height = Math.floor(280 * ratio);
+        boardContext.setTransform(ratio, 0, 0, ratio, 0, 0);
+        refreshBoardGuide();
+      }
+
+      function getPoint(event) {
+        const rect = canvas.getBoundingClientRect();
+        return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+      }
+
+      function startDrawing(event) {
+        event.preventDefault();
+        drawing = true;
+        window.mathWhiteboardUsed = true;
+        const point = getPoint(event);
+        boardContext.beginPath();
+        boardContext.moveTo(point.x, point.y);
+      }
+
+      function draw(event) {
+        if (!drawing) return;
+        event.preventDefault();
+        const point = getPoint(event);
+        boardContext.lineWidth = 7;
+        boardContext.lineCap = "round";
+        boardContext.lineJoin = "round";
+        boardContext.strokeStyle = "#0f172a";
+        boardContext.lineTo(point.x, point.y);
+        boardContext.stroke();
+      }
+
+      function stopDrawing() {
+        if (!drawing) return;
+        drawing = false;
+        boardContext.closePath();
+      }
+
+      canvas.addEventListener("pointerdown", startDrawing);
+      canvas.addEventListener("pointermove", draw);
+      canvas.addEventListener("pointerup", stopDrawing);
+      canvas.addEventListener("pointerleave", stopDrawing);
+      canvas.addEventListener("pointercancel", stopDrawing);
+
+      clearButton.addEventListener("click", () => {
+        refreshBoardGuide();
+        getTracker()?.showToast?.("🧽 Whiteboard cleared.");
+      });
+
+      window.addEventListener("resize", () => {
+        window.clearTimeout(setupWhiteboard.resizeTimer);
+        setupWhiteboard.resizeTimer = window.setTimeout(resizeBoard, 160);
+      });
+
+      resizeBoard();
+    }
+
+    function refreshBoardGuide() {
+      if (!boardContext) return;
+      const canvas = document.getElementById("mathWhiteboard");
+      if (!canvas) return;
+
+      const selectedLesson = getActiveLesson();
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = 280;
+
+      boardContext.clearRect(0, 0, width, height);
+      boardContext.fillStyle = "#ffffff";
+      boardContext.fillRect(0, 0, width, height);
+
+      boardContext.save();
+
+      boardContext.strokeStyle = "rgba(37, 99, 235, 0.16)";
+      boardContext.lineWidth = 2;
+      boardContext.setLineDash([10, 10]);
+
+      [70, 140, 210].forEach((y) => {
+        boardContext.beginPath();
+        boardContext.moveTo(18, y);
+        boardContext.lineTo(width - 18, y);
+        boardContext.stroke();
+      });
+
+      boardContext.setLineDash([]);
+
+      boardContext.font = selectedLesson.guide.length > 8 ? "72px Inter, Arial, sans-serif" : "132px Inter, Arial, sans-serif";
+      boardContext.textAlign = "center";
+      boardContext.textBaseline = "middle";
+      boardContext.fillStyle = "rgba(37, 99, 235, 0.13)";
+      boardContext.fillText(selectedLesson.guide, width / 2, height / 2 + 8);
+
+      boardContext.restore();
+
+      window.mathWhiteboardUsed = false;
+    }
+
+    function setupStaticButtons() {
+      document.querySelectorAll("[data-static-speak]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const text = btn.dataset.staticSpeak || "";
+          const lang = btn.dataset.lang || "en-US";
+          const repeat = btn.classList.contains("repeat-btn");
+          speak(text, lang, repeat);
+        });
+      });
+    }
+
+    function setupMainButtons() {
+      document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
+        speak("Choose the child age. Then choose one math lesson from that age level.", "en-US", false);
+      });
+
+      document.querySelectorAll(".stop-sound").forEach(btn => btn.addEventListener("click", stopSound));
+      window.addEventListener("beforeunload", stopSound);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCompactWorlds();
+      renderAgeTabs();
+      setupWhiteboard();
+      renderActiveLevel();
+      setupStaticButtons();
+      setupFunHoverEffects();
+      setupMainButtons();
+
+      setTimeout(() => {
+        getTracker()?.renderAllProgressWidgets?.();
+      }, 100);
+    });
   </script>
 </body>
 </html>
