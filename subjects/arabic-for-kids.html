@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Arabic for Kids | Letters, Sounds, Word of the Day & Progress | Al-Hayat Kids Learning Hub</title>
+  <title>Arabic for Kids Ages 3–7 | Complete Lesson Library | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="Arabic for Kids at Al-Hayat Kids Learning Hub. Learn Arabic letters, sounds, beginner words, listening, tracing, mini quizzes, and safe local progress tracking in a colorful and fun learning environment." />
-  <meta name="keywords" content="Arabic for kids, Arabic letters for kids, learn Arabic alphabet, Arabic sounds, Arabic words for kids, Arabic tracing, kids progress tracker" />
+  <meta name="description" content="Complete age-based Arabic for Kids lesson library for children ages 3–7. Learn Arabic letters, sounds, vocabulary, harakat, joining, reading, writing, mini games, quizzes, missions, whiteboard practice, improved short audio, and safe progress tracking." />
+  <meta name="keywords" content="Arabic for kids ages 3 4 5 6 7, Arabic letters for children, Arabic alphabet for kids, harakat for kids, Arabic reading for children, Arabic writing practice, Arabic games for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/arabic-for-kids.html" />
@@ -21,17 +21,19 @@
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-soft: #e0f2fe;
       --orange: #f97316;
       --orange-soft: #ffedd5;
-      --yellow: #f6c445;
-      --yellow-soft: #fef3c7;
+      --gold: #f6c445;
+      --gold-soft: #fef3c7;
       --purple: #7c3aed;
       --purple-soft: #ede9fe;
+      --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
       --teal-soft: #ccfbf1;
       --red-soft: #fee2e2;
+      --lime-soft: #ecfccb;
+      --white: #ffffff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
@@ -47,8 +49,9 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 28rem),
-        radial-gradient(circle at top right, rgba(246, 196, 69, 0.20), transparent 24rem),
+        radial-gradient(circle at top left, rgba(20, 184, 166, 0.14), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.24), transparent 24rem),
+        radial-gradient(circle at 88% 62%, rgba(124, 58, 237, 0.12), transparent 22rem),
         linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
       line-height: 1.6;
     }
@@ -56,6 +59,7 @@
     .arabic {
       font-family: "Noto Naskh Arabic", "Amiri", "Scheherazade New", "Segoe UI", serif;
       direction: rtl;
+      line-height: 1.75;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -90,19 +94,32 @@
     }
 
     .brand-icon {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--purple), var(--sky));
-      color: #fff;
+      background: linear-gradient(135deg, var(--teal), var(--green));
+      color: white;
       display: grid;
       place-items: center;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.20);
+      box-shadow: 0 12px 24px rgba(20, 184, 166, 0.20);
     }
 
-    .brand small { display: block; color: var(--muted); font-weight: 700; font-size: 0.78rem; margin-top: -2px; }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.78rem;
+      margin-top: -2px;
+    }
 
-    .nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     .nav a {
       padding: 10px 13px;
       border-radius: 999px;
@@ -110,8 +127,18 @@
       font-size: 0.94rem;
       transition: 0.2s ease;
     }
-    .nav a:hover, .nav a:focus { background: var(--blue-soft); color: var(--blue-dark); }
-    .nav .cta { background: var(--yellow); color: #111827; box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25); }
+
+    .nav a:hover, .nav a:focus {
+      background: linear-gradient(135deg, var(--teal-soft), var(--gold-soft));
+      color: var(--green-dark);
+      box-shadow: 0 10px 20px rgba(20, 184, 166, 0.10);
+    }
+
+    .nav .cta {
+      background: var(--gold);
+      color: #111827;
+      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
+    }
 
     .audio-bar {
       position: sticky;
@@ -132,29 +159,58 @@
       padding: 8px 0;
     }
 
-    .audio-inner p { color: rgba(255,255,255,0.86); font-weight: 750; font-size: 0.94rem; }
-
-    .stop-sound {
-      border: 1px solid rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.10);
-      color: white;
-      border-radius: 999px;
-      padding: 8px 13px;
-      font-weight: 900;
-      cursor: pointer;
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
     }
 
-    .hero { padding: 64px 0 44px; }
+    .sound-control-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .fun-sound-toggle, .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fun-sound-toggle {
+      background: linear-gradient(135deg, rgba(246,196,69,0.95), rgba(20,184,166,0.92));
+      color: #0f172a;
+      box-shadow: 0 10px 22px rgba(246, 196, 69, 0.18);
+    }
+
+    .fun-sound-toggle.off, .stop-sound {
+      background: rgba(255,255,255,0.10);
+      color: white;
+    }
+
+    .fun-sound-toggle:hover,
+    .fun-sound-toggle:focus,
+    .stop-sound:hover,
+    .stop-sound:focus {
+      transform: translateY(-2px) scale(1.03);
+      filter: brightness(1.06);
+    }
+
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(124, 58, 237, 0.20), transparent 14rem),
-        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.22), transparent 16rem),
-        linear-gradient(135deg, #f5f3ff, #ecfeff);
+        radial-gradient(circle at 88% 18%, rgba(20, 184, 166, 0.24), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.28), transparent 16rem),
+        linear-gradient(135deg, #ecfdf5, #f0fdfa);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
@@ -167,7 +223,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--purple);
+      color: var(--green-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -176,30 +232,33 @@
     }
 
     h1 {
-      font-size: clamp(2.4rem, 6vw, 5rem);
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
       line-height: 0.97;
       letter-spacing: -0.06em;
-      color: #312e81;
+      color: var(--green-dark);
       margin-bottom: 18px;
     }
 
     h1 span { color: var(--orange); }
 
     .hero p {
-      max-width: 650px;
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      max-width: 700px;
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
       color: #334155;
       margin-bottom: 22px;
     }
 
-    .buttons, .sound-actions, .toolbar {
+    .buttons, .sound-actions, .toolbar, .age-tabs {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
     }
 
-    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
+    .quiz-options button, .choice-options button, .lesson-chip {
+      position: relative;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -211,40 +270,97 @@
       cursor: pointer;
       transition: 0.2s ease;
       text-align: center;
+      will-change: transform, background, box-shadow;
     }
 
     .btn { min-height: 48px; padding: 12px 19px; }
-    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover, .tool-btn:hover { transform: translateY(-2px); }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--purple), var(--sky));
-      color: white;
-      box-shadow: 0 14px 28px rgba(124, 58, 237, 0.20);
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
+      transform: translateY(-2px);
     }
-    .btn-yellow {
-      background: var(--yellow);
+
+    .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
+    .tool-btn::after, .age-tab::after, .quiz-options button::after,
+    .choice-options button::after, .lesson-chip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 34%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
+    }
+
+    .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
+    .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
+      opacity: 1;
+    }
+
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
+      background: linear-gradient(135deg, var(--teal), var(--green));
+      color: white;
+      box-shadow: 0 14px 28px rgba(20, 184, 166, 0.20);
+    }
+
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
+      background: linear-gradient(135deg, #0ea5e9, #22c55e);
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
+    }
+
+    .btn-gold {
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
-    .btn-white {
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #facc15, #fb923c);
+      color: #111827;
+      box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
+    }
+
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
-      color: var(--purple);
+      color: var(--green-dark);
       border: 1px solid var(--border);
     }
+
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
+      background: linear-gradient(135deg, #ffffff, #ecfdf5);
+      color: var(--green-dark);
+      border-color: #86efac;
+      box-shadow: 0 14px 26px rgba(20, 184, 166, 0.13);
+    }
+
     .listen-btn {
       background: var(--blue-soft);
       color: var(--blue-dark);
       border: 1px solid #bfdbfe;
     }
+
+    .listen-btn:hover {
+      background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+      color: #1d4ed8;
+      border-color: #60a5fa;
+      box-shadow: 0 14px 26px rgba(37, 99, 235, 0.14);
+    }
+
     .repeat-btn {
       background: #f8fafc;
       color: #0f172a;
       border: 1px solid var(--border);
     }
-    .learned-btn, .tool-btn {
-      background: linear-gradient(135deg, var(--green), var(--teal));
-      color: white;
-      box-shadow: 0 12px 24px rgba(19, 138, 61, 0.18);
+
+    .repeat-btn:hover {
+      background: linear-gradient(135deg, #fef3c7, #ffffff);
+      color: #92400e;
+      border-color: #facc15;
+      box-shadow: 0 14px 26px rgba(246, 196, 69, 0.14);
     }
 
     .hero-visual {
@@ -262,24 +378,25 @@
     .hero-visual::before {
       content: "أ ب ت";
       position: absolute;
-      font-size: 5.6rem;
-      font-weight: 950;
-      color: rgba(124, 58, 237, 0.10);
+      font-size: 4.7rem;
+      color: rgba(19, 138, 61, 0.12);
       left: 26px;
       top: 26px;
+      font-weight: 900;
+      direction: rtl;
     }
 
     .hero-visual::after {
-      content: "🌙";
+      content: "✍️";
       position: absolute;
-      font-size: 6rem;
-      right: 36px;
-      bottom: 24px;
-      opacity: 0.18;
+      font-size: 7rem;
+      right: 34px;
+      bottom: 18px;
+      opacity: 0.16;
     }
 
     .hero-box {
-      width: min(92%, 430px);
+      width: min(92%, 450px);
       background: white;
       border-radius: 30px;
       padding: 26px;
@@ -290,7 +407,14 @@
     }
 
     .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
-    .hero-box h2 { color: #312e81; font-size: 1.65rem; line-height: 1.15; margin-bottom: 10px; }
+
+    .hero-box h2 {
+      color: var(--green-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
     .hero-box p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
@@ -307,155 +431,294 @@
       font-weight: 900;
       border: 1px solid var(--border);
     }
-    .hero-stat span { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
 
-    .section { padding: 52px 0; }
-    .section-head { margin-bottom: 26px; display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .age-choice {
+      padding: 22px 0 12px;
+    }
+
+    .age-choice-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: clamp(18px, 4vw, 28px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .age-choice-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .age-choice-title h2 {
+      color: #0f172a;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .age-choice-title p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 700px;
+    }
+
+    .section { padding: 44px 0; }
+
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
     .section-label {
-      color: var(--purple);
+      color: var(--green-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 0.78rem;
       margin-bottom: 6px;
     }
+
     .section h2 {
       color: #0f172a;
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
+
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 850px;
       margin-top: 8px;
     }
 
-    .grid-4, .topic-grid, .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .card, .topic-card, .step-card {
-      background: white;
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .topic-card:hover, .letter-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); transition: 0.22s ease; }
-
-    .icon-wrap {
-      width: 56px; height: 56px;
-      border-radius: 18px;
-      display: grid; place-items: center;
-      font-size: 1.7rem;
-      margin-bottom: 14px;
-      background: var(--blue-soft);
-    }
-
-    .grid-4 .card:nth-child(2) .icon-wrap, .topic-grid .topic-card:nth-child(2) .icon-wrap { background: var(--yellow-soft); }
-    .grid-4 .card:nth-child(3) .icon-wrap, .topic-grid .topic-card:nth-child(3) .icon-wrap { background: var(--green-soft); }
-    .grid-4 .card:nth-child(4) .icon-wrap, .topic-grid .topic-card:nth-child(4) .icon-wrap { background: var(--purple-soft); }
-    .topic-grid .topic-card:nth-child(5) .icon-wrap { background: var(--orange-soft); }
-    .topic-grid .topic-card:nth-child(6) .icon-wrap { background: var(--pink-soft); }
-    .topic-grid .topic-card:nth-child(7) .icon-wrap { background: var(--teal-soft); }
-    .topic-grid .topic-card:nth-child(8) .icon-wrap { background: var(--red-soft); }
-
-    .card h3, .topic-card h3, .step-card h3 { color: #0f172a; margin-bottom: 7px; }
-    .card p, .topic-card p, .step-card p { color: var(--muted); font-size: 0.95rem; }
-    .topic-card a { display: inline-flex; margin-top: 12px; color: var(--purple); font-weight: 950; }
-
-    .shell, .daily-shell, .reader-shell {
+    .level-shell {
       background:
-        radial-gradient(circle at 10% 20%, rgba(124,58,237,0.12), transparent 18rem),
-        linear-gradient(135deg, #faf5ff, #ecfeff);
+        radial-gradient(circle at 10% 20%, rgba(20,184,166,0.14), transparent 18rem),
+        radial-gradient(circle at 92% 18%, rgba(246,196,69,0.18), transparent 16rem),
+        linear-gradient(135deg, #ecfdf5, #eff6ff);
       border-radius: 34px;
       padding: clamp(22px, 4vw, 36px);
       border: 1px solid rgba(226, 232, 240, 0.9);
       box-shadow: var(--shadow);
     }
 
-    .letter-grid {
+    .level-hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      background: white;
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 28px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 20px;
+    }
+
+    .level-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--teal-soft), var(--gold-soft));
+      border: 1px solid rgba(20, 184, 166, 0.14);
+    }
+
+    .level-hero h2 {
+      color: var(--green-dark);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .level-hero p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 850px;
+    }
+
+    .level-progress {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .level-dot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 950;
+      color: #475569;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .level-dot.active {
+      background: linear-gradient(135deg, var(--teal), var(--green));
+      color: white;
+      border-color: transparent;
+    }
+
+    .level-dot span {
+      display: block;
+      font-size: 0.76rem;
+      opacity: 0.78;
+      margin-top: 2px;
+    }
+
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
+    .grid-2, .daily-grid, .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
-      margin-top: 22px;
     }
 
-    .letter-card {
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
-      padding: 18px;
+      padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
       transition: 0.22s ease;
     }
 
-    .letter-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--yellow-soft);
-      border: 1px solid #fde68a;
-      color: #92400e;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 950;
-      margin-bottom: 12px;
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
     }
 
-    .letter-main {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
+
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .icon-pill {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 12px;
+      place-items: center;
+      background: var(--teal-soft);
+      font-size: 1.65rem;
+      margin-bottom: 14px;
     }
 
-    .letter-char {
-      font-size: 3rem;
-      line-height: 1;
-      color: #312e81;
-      font-weight: 900;
-      margin-bottom: 4px;
-    }
-
-    .letter-name { color: #0f172a; font-weight: 900; }
-    .letter-roman { color: var(--muted); font-weight: 700; font-size: 0.93rem; }
-
-    .letter-icon {
-      width: 68px; height: 68px;
-      border-radius: 22px;
-      display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--purple-soft), var(--pink-soft));
-      font-size: 2rem;
-    }
-
-    .sound-chip {
+    .badge, .today-badge, .level-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: 1px solid #ddd6fe;
-      background: #f5f3ff;
-      color: #5b21b6;
+      background: var(--gold-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
       border-radius: 999px;
       padding: 8px 12px;
       font-weight: 900;
       margin-bottom: 10px;
     }
 
-    .letter-card p {
-      color: #334155;
-      font-weight: 750;
-      font-size: 0.95rem;
-      margin-bottom: 8px;
+    .level-badge {
+      background: var(--teal-soft);
+      color: var(--green-dark);
+      border-color: #99f6e4;
     }
 
-    .mini-box, .note-box, .sentence-box, .clue-box, .task-box {
+    .big-arabic {
+      font-size: clamp(3rem, 9vw, 6rem);
+      line-height: 1.25;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .word-arabic {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.35;
+      font-weight: 900;
+      color: var(--green-dark);
+      text-align: center;
+      margin: 12px 0;
+    }
+
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box, .parent-note {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
@@ -464,77 +727,62 @@
       font-weight: 750;
     }
 
-    .mini-box { font-size: 0.92rem; }
-    .daily-grid, .reader-grid, .trace-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 22px;
+    .mission-box {
+      background: linear-gradient(135deg, #ffffff, #ecfdf5);
+      border-color: #bbf7d0;
     }
 
-    .daily-card, .reader-card, .trace-card {
-      background: white;
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .daily-card h3, .reader-card h3, .trace-card h3 { color: #0f172a; margin-bottom: 8px; }
-
-    .today-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--yellow-soft);
+    .parent-note {
+      background: var(--gold-soft);
+      border-color: #fde68a;
       color: #92400e;
-      border: 1px solid #fde68a;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 900;
-      margin-bottom: 10px;
     }
 
-    .big-word {
-      font-size: clamp(2.6rem, 5vw, 4.2rem);
-      line-height: 1;
-      font-weight: 950;
-      color: #312e81;
-      margin: 14px 0;
+    .story-text {
+      font-weight: 700;
+      line-height: 1.8;
     }
 
-    .word-visual-card {
+    .visual-card {
       display: grid;
-      grid-template-columns: 132px 1fr;
+      grid-template-columns: 150px 1fr;
       gap: 16px;
       align-items: stretch;
       margin-top: 16px;
     }
 
     .visual-clue {
-      background: linear-gradient(135deg, #ede9fe, #fef3c7);
-      border: 1px solid #ddd6fe;
+      background: linear-gradient(135deg, #ccfbf1, #fef3c7);
+      border: 1px solid #99f6e4;
       border-radius: 24px;
-      min-height: 132px;
+      min-height: 150px;
       display: grid;
       place-items: center;
       text-align: center;
       padding: 12px;
     }
 
-    .visual-clue .emoji { font-size: 4.2rem; line-height: 1; margin-bottom: 6px; }
-    .visual-clue strong { display: block; color: #312e81; font-size: 0.95rem; }
+    .visual-clue .emoji {
+      font-size: 4.2rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
 
-    .word-support { display: grid; gap: 12px; }
-    .sentence-box { font-weight: 800; font-size: 1.02rem; }
+    .visual-clue strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 0.95rem;
+    }
 
-    .quiz-options {
+    .support-grid { display: grid; gap: 12px; }
+
+    .quiz-options, .choice-options {
       display: grid;
       gap: 10px;
       margin-top: 14px;
     }
 
-    .quiz-options button {
+    .quiz-options button, .choice-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
       border-radius: 14px;
@@ -545,51 +793,113 @@
       transition: 0.2s ease;
     }
 
-    .quiz-options button:hover { background: var(--blue-soft); }
-    .quiz-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
-    .quiz-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
-
-    .result { margin-top: 12px; min-height: 24px; font-weight: 900; }
-
-    .trace-letter {
-      font-size: 4rem;
-      line-height: 1;
-      color: #312e81;
-      margin-bottom: 10px;
+    .quiz-options button:hover, .choice-options button:hover {
+      background: linear-gradient(135deg, #ecfdf5, #eff6ff);
+      color: #075c2a;
+      border-color: #86efac;
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 12px 22px rgba(19, 138, 61, 0.10);
     }
 
-    .trace-strip {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin: 14px 0;
-    }
+    .quiz-options button.correct, .choice-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong, .choice-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
-    .trace-cell {
-      min-height: 72px;
-      border: 2px dashed #c4b5fd;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      color: rgba(91, 33, 182, 0.25);
-      font-size: 2rem;
-      background: #faf5ff;
-    }
-
-    .writing-area {
-      width: 100%;
-      min-height: 130px;
-      border: 2px dashed #c4b5fd;
-      background: #faf5ff;
-      border-radius: 20px;
-      padding: 14px;
-      resize: vertical;
+    .result {
       margin-top: 12px;
-      color: #0f172a;
-      outline: none;
+      min-height: 24px;
+      font-weight: 900;
     }
 
-    .writing-area:focus { border-color: var(--purple); background: white; }
+    .activity-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .activity-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 12px;
+      text-align: left;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .activity-options button:hover {
+      background: var(--teal-soft);
+      border-color: #5eead4;
+    }
+
+    .activity-options button.correct {
+      background: var(--green-soft);
+      color: #166534;
+      border-color: #86efac;
+    }
+
+    .activity-options button.wrong {
+      background: var(--red-soft);
+      color: #991b1b;
+      border-color: #fecaca;
+    }
+
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .whiteboard-head strong {
+      color: var(--green-dark);
+      font-size: 1rem;
+    }
+
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #5eead4;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
 
     .progress-section, .parent-box {
       background: white;
@@ -621,21 +931,68 @@
       color: #334155;
       font-weight: 750;
     }
-    .tips li::before { content: "✓ "; color: var(--green); font-weight: 950; }
 
-    .step-card strong {
-      display: inline-grid;
-      place-items: center;
-      width: 44px; height: 44px;
-      border-radius: 15px;
-      background: var(--purple);
-      color: white;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    details.curriculum-details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      margin-top: 16px;
+    }
+
+    details.curriculum-details summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      font-weight: 950;
+      color: var(--green-dark);
+      background: linear-gradient(135deg, #ffffff, #ecfdf5);
+    }
+
+    .details-body {
+      padding: 22px;
+      border-top: 1px solid var(--border);
+    }
+
+    .compact-worlds {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .compact-world {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .compact-world span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    .sound-hover-pop {
+      animation: soundHoverPop 0.34s ease;
+    }
+
+    @keyframes soundHoverPop {
+      0% { transform: translateY(0) scale(1); }
+      45% { transform: translateY(-3px) scale(1.04); }
+      100% { transform: translateY(-2px) scale(1.02); }
     }
 
     .cta {
-      background: linear-gradient(135deg, #312e81, #1e40af);
+      background: linear-gradient(135deg, var(--green-dark), #14532d);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -647,10 +1004,29 @@
     }
 
     .cta h2 { color: white; }
-    .cta p { color: rgba(255,255,255,0.78); margin-top: 10px; font-size: 1.05rem; }
-    .cta-list { display: grid; gap: 10px; margin-top: 18px; list-style: none; }
-    .cta-list li { color: rgba(255,255,255,0.9); font-weight: 800; }
-    .cta-list li::before { content: "✓ "; color: #93c5fd; }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #bbf7d0;
+    }
 
     .footer {
       margin-top: 40px;
@@ -668,98 +1044,83 @@
     }
 
     .footer h3 { margin-bottom: 12px; }
-    .footer p, .footer a { color: rgba(255,255,255,0.72); font-weight: 650; }
-    .footer ul { list-style: none; display: grid; gap: 8px; }
-    .copyright { padding-top: 18px; color: rgba(255,255,255,0.6); font-size: 0.92rem; }
 
-
-    .whiteboard-wrap {
-      margin-top: 16px;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 14px;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    .footer p, .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
     }
 
-    .whiteboard-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
     }
 
-    .whiteboard-head strong {
-      color: #312e81;
-      font-size: 1rem;
-    }
-
-    .clear-board-btn {
-      border: 0;
-      background: #fee2e2;
-      color: #991b1b;
-      border-radius: 999px;
-      padding: 9px 13px;
-      font-weight: 900;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .clear-board-btn:hover {
-      transform: translateY(-1px);
-      background: #fecaca;
-    }
-
-    .whiteboard-canvas {
-      width: 100%;
-      height: 280px;
-      display: block;
-      background: #ffffff;
-      border: 3px solid #c4b5fd;
-      border-radius: 22px;
-      touch-action: none;
-      cursor: crosshair;
-      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
-    }
-
-    .whiteboard-tools {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-      align-items: center;
-    }
-
-    .board-tip {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: #64748b;
-      font-weight: 750;
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
     }
 
     @media (max-width: 980px) {
-      .hero-card, .parent-box, .cta, .word-visual-card { grid-template-columns: 1fr; }
-      .grid-4, .topic-grid, .steps-grid, .letter-grid { grid-template-columns: repeat(2, 1fr); }
-      .daily-grid, .reader-grid, .trace-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-card, .parent-box, .cta, .visual-card, .level-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-2, .daily-grid, .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3, .grid-4, .compact-worlds {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .level-progress {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
       .container { width: min(100% - 24px, var(--max)); }
-      .top-inner { flex-direction: column; align-items: flex-start; padding: 14px 0; }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
       .nav { justify-content: flex-start; }
-      .grid-4, .topic-grid, .steps-grid, .letter-grid, .footer-grid { grid-template-columns: 1fr; }
-      .buttons, .sound-actions, .toolbar { display: grid; }
-      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn { width: 100%; }
+
+      .grid-3, .grid-4, .compact-worlds, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons, .sound-actions, .toolbar, .age-tabs {
+        display: grid;
+      }
+
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
+        width: 100%;
+      }
+
       .hero { padding-top: 28px; }
       .hero-visual { min-height: 300px; }
       .section-head { display: block; }
       .hero-stats { grid-template-columns: 1fr; }
-      .letter-main { grid-template-columns: 1fr; }
-      .trace-strip { grid-template-columns: repeat(3, 1fr); }
+      .level-progress { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sound-hover-pop { animation: none; }
+      .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+      .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -768,14 +1129,14 @@
   <header class="top-header">
     <div class="container top-inner">
       <a class="brand" href="../index.html">
-        <span class="brand-icon">🔤</span>
-        <span>Al-Hayat Kids Learning Hub<small>Learn • Read • Explore • Grow</small></span>
+        <span class="brand-icon">أ</span>
+        <span>Al-Hayat Kids Learning Hub<small>Arabic Letters • Reading • Writing • Games</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
         <a href="../index.html">Home</a>
-        <a href="english.html">English</a>
         <a href="islamic-studies.html">Islamic</a>
+        <a href="english.html">English</a>
         <a href="math.html">Math</a>
         <a href="science.html">Science</a>
         <a href="../reading-library/index.html">Stories</a>
@@ -786,8 +1147,11 @@
 
   <div class="audio-bar" aria-label="Audio learning controls">
     <div class="container audio-inner">
-      <p>🔊 Arabic audio learning + local progress tracking are active. Listen, Repeat, Learn, and earn stars.</p>
-      <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      <p>🔊 Arabic audio is short and focused: letter, sound, word, question, mission, or story only.</p>
+      <div class="sound-control-group">
+        <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
+        <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      </div>
     </div>
   </div>
 
@@ -795,300 +1159,129 @@
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">🔤 Arabic Learning for Kids</div>
-          <h1>Arabic <span>for Kids</span></h1>
+          <div class="kicker">أ ب ت • Complete Arabic Lesson Library • Ages 3–7</div>
+          <h1>Choose Age. <span>Choose Arabic Lesson.</span></h1>
           <p>
-            A colorful beginner-friendly Arabic learning page where children explore letters, sounds,
-            simple words, listening, tracing, mini quizzes, and daily progress in a joyful and safe way.
-            Children can hear Arabic, repeat it, see visual clues, and build confidence step by step.
+            A complete age-based Arabic foundation. The child first chooses age, then selects a lesson from that
+            level’s Arabic library. Every lesson has a letter, sound, word, mini story, game, quiz, mission,
+            writing board, and short focused audio.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#letters">Start Arabic Letters</a>
-            <a class="btn btn-yellow" href="#daily-word">Word of the Day</a>
-            <a class="btn btn-white" href="#progress">View Progress</a>
+            <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
+            <a class="btn btn-gold" href="#lesson-library">Open Lesson Library</a>
+            <a class="btn btn-white" href="#whiteboard">Writing Board</a>
           </div>
 
           <div class="sound-actions" style="margin-top: 14px;">
-            <button class="listen-btn" type="button" data-static-speak="مرحباً بكم في العربية للأطفال. هيا نتعلم الحروف والكلمات معاً." data-lang="ar-SA">🔊 Listen Intro</button>
-            <button class="repeat-btn" type="button" data-static-speak="مرحباً بكم في العربية للأطفال. هيا نتعلم الحروف والكلمات معاً." data-lang="ar-SA">🔁 Repeat</button>
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one Arabic lesson. Listen to the letter, sound, and word. Practice writing and earn stars." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. Listen. Say. Write. Play. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-box">
-            <div class="emoji">🌙</div>
-            <h2>Listen, repeat, trace, and learn</h2>
-            <p>Arabic becomes more enjoyable when children hear the sound, see the letter, say the word, and track small wins every day.</p>
+            <div class="emoji">أ</div>
+            <h2>Arabic Level 1 to Level 5</h2>
+            <p>Age 3 begins with letter sounds. Age 7 reaches reading, writing, vocabulary, and simple Arabic sentences.</p>
             <div class="hero-stats">
-              <div class="hero-stat">Letters <span>& Sounds</span></div>
-              <div class="hero-stat">Word <span>of the Day</span></div>
-              <div class="hero-stat">Stars <span>& Streaks</span></div>
+              <div class="hero-stat">59 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Writing <span>Board</span></div>
+              <div class="hero-stat">Short Audio <span>Focused</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="method-title">
-      <div class="container">
-        <div class="section-head">
+    <section class="age-choice" id="choose-age">
+      <div class="container age-choice-card">
+        <div class="age-choice-title">
           <div>
-            <div class="section-label">Learning Method</div>
-            <h2 id="method-title">The best way to start Arabic for children</h2>
-            <p class="section-lead">
-              Young learners do best when they hear the sound, see the letter, repeat it, connect it
-              to a simple word, and revisit it often through fun short activities.
-            </p>
+            <div class="section-label">Step 1</div>
+            <h2>Choose the child’s age</h2>
+            <p>After choosing an age, the lesson library below will show only that age level’s Arabic lessons.</p>
           </div>
+          <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
         </div>
-
-        <div class="grid-4">
-          <article class="card">
-            <div class="icon-wrap">👂</div>
-            <h3>Listen</h3>
-            <p>Children first hear the correct sound and a simple beginner word.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon-wrap">🔁</div>
-            <h3>Repeat</h3>
-            <p>They repeat aloud to build confidence and improve pronunciation.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon-wrap">✍️</div>
-            <h3>Trace</h3>
-            <p>Tracing the shape of the letter helps strengthen letter recognition.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon-wrap">⭐</div>
-            <h3>Track</h3>
-            <p>Stars, streaks, learned letters, and badges encourage daily practice.</p>
-          </article>
-        </div>
+        <div class="age-tabs" id="ageTabs"></div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="topics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Explore Arabic</div>
-            <h2 id="topics-title">What children can learn here</h2>
-            <p class="section-lead">
-              This Arabic zone supports alphabet recognition, sounds, beginner words,
-              listening, tracing, mini quizzes, and speaking practice.
-            </p>
-          </div>
+    <section class="section" id="active-level">
+      <div class="container level-shell">
+        <div class="level-hero" id="levelHero"></div>
+        <div class="level-progress" id="levelProgress"></div>
+
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">Arabic Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused lesson. Each lesson has Arabic sound, word, story, game, quiz, mission, and writing practice.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
         </div>
 
-        <div class="topic-grid">
-          <article class="topic-card">
-            <div class="icon-wrap">🔤</div>
-            <h3>Arabic Letters</h3>
-            <p>Learn the Arabic letters with name, sound hint, word example, icon, and audio.</p>
-            <a href="#letters">Open Letters →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">🎧</div>
-            <h3>Listening</h3>
-            <p>Use Listen and Repeat buttons to hear Arabic clearly again and again.</p>
-            <a href="#letters">Practice Listening →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">🌟</div>
-            <h3>Word of the Day</h3>
-            <p>Learn a beginner Arabic word with transliteration, meaning, and a simple task.</p>
-            <a href="#daily-word">Open Daily Word →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">✍️</div>
-            <h3>Tracing</h3>
-            <p>Trace a focus letter using visual practice boxes and handwriting prompts.</p>
-            <a href="#tracing">Start Tracing →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">🧠</div>
-            <h3>Mini Quiz</h3>
-            <p>Answer a small quiz to reinforce the daily word and key meaning.</p>
-            <a href="#daily-word">Try Quiz →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">🗣️</div>
-            <h3>Speaking</h3>
-            <p>Repeat simple Arabic words and short phrases to improve confidence.</p>
-            <a href="#speaking">Speaking Prompt →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">🏆</div>
-            <h3>Progress</h3>
-            <p>Track stars, streaks, learned letters, and completed mini tasks on this browser.</p>
-            <a href="#progress">View Progress →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon-wrap">👨‍👩‍👧</div>
-            <h3>Parent Help</h3>
-            <p>Use the page in short fun sessions and focus on sound, not pressure.</p>
-            <a href="#parents">Read Tips →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="letters" aria-labelledby="letters-title">
-      <div class="container shell">
-        <div class="section-label">Arabic Letters Corner</div>
-        <h2 id="letters-title">Arabic letters, sounds, and words</h2>
-        <p class="section-lead">
-          Every card includes the letter, its name, a beginner sound hint, one easy example word,
-          a fun icon, and buttons for listening, repeating, and marking it as learned.
-        </p>
-
-        <div class="toolbar">
-          <button class="tool-btn" type="button" id="playLettersIntroBtn">🔊 Listen Letters Intro</button>
-          <button class="tool-btn" type="button" id="playLetterReviewBtn">🔁 Review Common Letters</button>
+        <div class="daily-grid" style="margin-top:20px;">
+          <article class="lesson-card" id="lessonCard"></article>
+          <article class="activity-card" id="activityCard"></article>
         </div>
 
-        <div class="letter-grid" id="letterGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="daily-word" aria-labelledby="daily-title">
-      <div class="container daily-shell">
-        <div class="section-label">Today’s Arabic Practice</div>
-        <h2 id="daily-title">Word of the Day with audio, meaning, and quiz</h2>
-        <p class="section-lead">
-          Today’s Arabic word is shown with Arabic script, transliteration, English meaning,
-          a visual clue, and a mini quiz.
-        </p>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>🌟 Arabic Word of the Day</h3>
-            <div class="today-badge">📅 Daily beginner word</div>
-            <div class="big-word arabic" id="wordArabic">قَمَر</div>
-
-            <div class="word-visual-card">
-              <div class="visual-clue">
-                <div>
-                  <div class="emoji" id="wordEmoji">🌙</div>
-                  <strong id="visualTitle">Picture Clue</strong>
-                </div>
-              </div>
-
-              <div class="word-support">
-                <div class="note-box"><strong>Transliteration:</strong> <span id="wordTranslit">qamar</span></div>
-                <div class="note-box"><strong>Meaning:</strong> <span id="wordMeaning">moon</span></div>
-                <div class="sentence-box arabic" id="wordSentenceArabic">هٰذَا قَمَرٌ جَمِيلٌ</div>
-                <div class="note-box"><strong>English sentence:</strong> <span id="wordSentenceEnglish">This is a beautiful moon.</span></div>
-                <div class="task-box"><strong>Mini task:</strong> <span id="wordTask">Say the word three times and find the moon in the sky or a picture.</span></div>
-              </div>
-            </div>
-
-            <div class="sound-actions" style="margin-top: 14px;">
-              <button class="listen-btn" id="listenWordBtn" type="button">🔊 Listen</button>
-              <button class="repeat-btn" id="repeatWordBtn" type="button">🔁 Repeat</button>
-              <button class="learned-btn" id="learnedWordBtn" type="button">✅ I learned this</button>
-            </div>
-          </article>
-
-          <article class="daily-card">
-            <h3>🧠 Mini Quiz</h3>
-            <p id="dailyQuizQuestion">What does this Arabic word mean?</p>
-            <div class="quiz-options" id="dailyQuizOptions"></div>
-            <div class="result" id="dailyQuizResult" aria-live="polite"></div>
-
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
-              <button class="repeat-btn" id="repeatQuizAnswerBtn" type="button">🔁 Repeat Answer</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tracing" aria-labelledby="tracing-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Tracing Practice</div>
-            <h2 id="tracing-title">Trace today’s focus letter</h2>
-            <p class="section-lead">
-              Children can trace in the air, on paper, or using the visual practice boxes below.
-              This is an excellent early-writing activity for Arabic learners.
-            </p>
-          </div>
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
         </div>
 
-        <div class="trace-grid">
-          <article class="trace-card">
-            <h3>✍️ Focus Letter</h3>
-            <div class="trace-letter arabic" id="traceLetter">ق</div>
-            <div class="mini-box"><strong>Letter name:</strong> <span id="traceLetterName">Qāf</span></div>
-            <div class="trace-strip" id="traceStrip">
-              <div class="trace-cell arabic">ق</div>
-              <div class="trace-cell arabic">ق</div>
-              <div class="trace-cell arabic">ق</div>
-              <div class="trace-cell arabic">ق</div>
-              <div class="trace-cell arabic">ق</div>
-            </div>
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenTraceBtn" type="button">🔊 Listen Letter</button>
-              <button class="repeat-btn" id="repeatTraceBtn" type="button">🔁 Repeat Letter</button>
-            </div>
-          </article>
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
+        </div>
 
-          <article class="trace-card">
-            <h3>📝 Handwriting Prompt</h3>
-            <p id="tracePrompt">Write the letter on paper 5 times. Then say the word قَمَر (qamar).</p>
-            <textarea class="writing-area" id="traceNotes" placeholder="Parent note or child practice reflection: I traced the letter ق today."></textarea>
-
-            <div class="whiteboard-wrap" aria-label="Arabic handwriting whiteboard">
+        <div class="practice-grid" style="margin-top:18px;" id="whiteboard">
+          <article class="practice-card">
+            <h3>✍️ Arabic Writing Whiteboard</h3>
+            <div class="whiteboard-wrap" aria-label="Arabic writing whiteboard">
               <div class="whiteboard-head">
-                <strong>🖍️ Handwriting Whiteboard</strong>
+                <strong id="boardTitle">Trace today’s Arabic letter</strong>
                 <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
               </div>
 
-              <canvas id="handwritingBoard" class="whiteboard-canvas" aria-label="Write the Arabic letter using mouse, touch, or stylus"></canvas>
-
-              <div class="whiteboard-tools">
-                <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Letter Again</button>
-                <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Letter</button>
-              </div>
+              <canvas id="arabicWhiteboard" class="whiteboard-canvas" aria-label="Write Arabic using mouse, touch, or stylus"></canvas>
 
               <p class="board-tip">
-                Tip: Use mouse, finger, or touch pen. Trace the faint letter first, then try writing it yourself.
+                Tip: Trace the faint Arabic guide first, then write it again yourself using mouse, finger, or stylus.
               </p>
             </div>
 
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenPromptBtn" type="button">🔊 Listen Prompt</button>
-              <button class="learned-btn" id="saveTraceBtn" type="button">✅ Save Practice</button>
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Guide</button>
+              <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Guide</button>
+              <button class="learned-btn" id="saveBoardBtn" type="button">✅ Save Writing</button>
             </div>
+          </article>
+
+          <article class="practice-card">
+            <h3>🏆 Writing Goal</h3>
+            <div class="mission-box" id="writingGoal">Write the selected Arabic letter three times.</div>
+            <ul class="tips">
+              <li>Start with a large letter.</li>
+              <li>Say the sound while writing.</li>
+              <li>Do not force perfect writing in one day.</li>
+              <li>For exact pronunciation, add recorded Arabic MP3 later.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="progress" aria-labelledby="progress-title">
+    <section class="section" id="progress">
       <div class="container progress-section">
         <div class="section-label">Progress Tracker</div>
-        <h2 id="progress-title">Stars, streaks, learned letters, and badges</h2>
+        <h2>Stars, streaks, learned letters, words, writing, games, quizzes, and missions</h2>
         <p class="section-lead">
           Progress is saved only on this browser/device using local storage. No login, no child name,
           no email, and no server collection.
         </p>
 
-        <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="arabicWords"></div>
+        <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="arabicLetters"></div>
 
         <div class="sound-actions" style="margin-top: 16px;">
           <button class="repeat-btn" type="button" data-progress-reset="true">Reset local progress</button>
@@ -1096,95 +1289,51 @@
       </div>
     </section>
 
-    <section class="section" id="speaking" aria-labelledby="speaking-title">
-      <div class="container reader-shell">
-        <div class="section-label">Speaking Practice</div>
-        <h2 id="speaking-title">Say a simple Arabic phrase</h2>
-        <p class="section-lead">
-          Speaking becomes easier when children listen first, then repeat a short meaningful phrase.
-        </p>
-
-        <div class="reader-grid">
-          <article class="reader-card">
-            <h3>🗣️ Speaking Prompt</h3>
-            <div class="sentence-box arabic" style="font-size:1.4rem;">هٰذَا قَمَرٌ</div>
-            <div class="note-box" style="margin-top:10px;"><strong>Meaning:</strong> This is a moon.</div>
-            <div class="sound-actions" style="margin-top:14px;">
-              <button class="listen-btn" id="listenPhraseBtn" type="button">🔊 Listen Phrase</button>
-              <button class="repeat-btn" id="repeatPhraseBtn" type="button">🔁 Repeat Phrase</button>
-              <button class="learned-btn" id="completeSpeakingBtn" type="button">✅ Practiced</button>
-            </div>
-          </article>
-
-          <article class="reader-card">
-            <h3>🌈 Beginner Arabic Tips</h3>
-            <div class="mini-box">Start with listening. Keep the phrase short. Let the child repeat slowly. Praise effort more than perfection.</div>
-            <div class="sound-actions" style="margin-top:14px;">
-              <button class="listen-btn" id="listenTipsBtn" type="button">🔊 Listen Tips</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="steps-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2 id="steps-title">A strong Arabic starter routine</h2>
-            <p class="section-lead">
-              This simple routine helps parents and teachers use the page in a structured and stress-free way.
-            </p>
-          </div>
-        </div>
-
-        <div class="steps-grid">
-          <article class="step-card">
-            <strong>1</strong>
-            <h3>Hear</h3>
-            <p>Listen to the Arabic letter or word clearly.</p>
-          </article>
-
-          <article class="step-card">
-            <strong>2</strong>
-            <h3>Say</h3>
-            <p>Repeat the sound and the word slowly.</p>
-          </article>
-
-          <article class="step-card">
-            <strong>3</strong>
-            <h3>Trace</h3>
-            <p>Trace the letter shape and notice its form.</p>
-          </article>
-
-          <article class="step-card">
-            <strong>4</strong>
-            <h3>Track</h3>
-            <p>Mark learned, earn stars, and build a daily streak.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="parents" aria-labelledby="parents-title">
+    <section class="section" id="parent-guide">
       <div class="container parent-box">
         <div>
-          <div class="section-label">For Parents & Teachers</div>
-          <h2 id="parents-title">How to make Arabic enjoyable for children</h2>
+          <div class="section-label">Parent & Teacher Zone</div>
+          <h2>Arabic curriculum method and map</h2>
           <p class="section-lead">
-            Arabic learning should feel warm, encouraging, and playful. Focus on a few sounds at a time,
-            and revisit them often in short sessions.
+            The child area stays focused on selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
           </p>
+
+          <details class="curriculum-details">
+            <summary>Open: How young children should learn Arabic</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                Ages 3–7 should learn Arabic through seeing letters, hearing sounds, saying short words,
+                tracing, matching, playing, and repeating. Reading comes gradually after sound and shape recognition.
+              </p>
+              <div class="grid-4" style="margin-top:16px;">
+                <div class="mini-card"><div class="icon-pill">👀</div><h3>See</h3><p>Recognize letter shape with large Arabic script.</p></div>
+                <div class="mini-card"><div class="icon-pill">👂</div><h3>Hear & Say</h3><p>Hear only the letter, sound, word, or question.</p></div>
+                <div class="mini-card"><div class="icon-pill">✍️</div><h3>Trace & Write</h3><p>Use the whiteboard to write letters and words.</p></div>
+                <div class="mini-card"><div class="icon-pill">⭐</div><h3>Play & Master</h3><p>Games, quizzes, and missions build confidence.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="curriculum-details">
+            <summary>Open: Arabic Learning Worlds curriculum map</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                The full curriculum is built around letter recognition, sounds, vocabulary, harakat, joining,
+                reading, writing, and simple Arabic sentences.
+              </p>
+              <div class="compact-worlds" id="compactWorlds"></div>
+            </div>
+          </details>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Use very short sessions: 5–10 minutes is enough for many young learners.</li>
-            <li>Begin with listening and repeating before expecting accurate writing.</li>
-            <li>Use visuals and real objects where possible.</li>
-            <li>Let the child say the letter, then the word, then the phrase.</li>
-            <li>Use the “I learned this” buttons only after genuine practice.</li>
+            <li>Use one level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is short: letter, sound, word, story, quiz, or mission only.</li>
+            <li>Browser Arabic voice is helpful, but real Arabic MP3 is better for exact sound quality.</li>
+            <li>Young children learn Arabic best through playful repetition and tracing.</li>
           </ul>
         </div>
       </div>
@@ -1193,24 +1342,24 @@
     <section class="section">
       <div class="container cta">
         <div>
-          <div class="section-label" style="color:#93c5fd;">Personal Guidance</div>
+          <div class="section-label" style="color:#bbf7d0;">Personal Guidance</div>
           <h2>Book Online Arabic Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured help in Arabic letters, beginner reading,
-            pronunciation, Islamic vocabulary, or confidence-building, you can book online classes
-            alongside these free learning resources.
+            If your child needs structured support in Arabic letters, pronunciation, vocabulary,
+            reading readiness, writing, or beginner Arabic sentences, you can book online classes
+            alongside these free resources.
           </p>
 
           <ul class="cta-list">
-            <li>Arabic letters and beginner pronunciation</li>
-            <li>Islamic words and simple useful vocabulary</li>
-            <li>Listening, repetition, and reading readiness</li>
-            <li>Gentle child-friendly guided support</li>
+            <li>Age 3–7 Arabic foundation plan</li>
+            <li>Focused lesson library by age level</li>
+            <li>Letters, sounds, harakat, words, and reading</li>
+            <li>Gentle guided learning for children</li>
           </ul>
         </div>
 
         <div>
-          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <a class="btn btn-gold" href="../online-classes.html">Book Online Classes</a>
           <br /><br />
           <a class="btn btn-white" href="../contact.html">Contact for Details</a>
         </div>
@@ -1228,8 +1377,8 @@
       <div>
         <h3>Subjects</h3>
         <ul>
-          <li><a href="english.html">English</a></li>
           <li><a href="islamic-studies.html">Islamic Studies</a></li>
+          <li><a href="english.html">English</a></li>
           <li><a href="math.html">Math</a></li>
           <li><a href="science.html">Science</a></li>
           <li><a href="general-knowledge.html">General Knowledge</a></li>
@@ -1263,319 +1412,794 @@
   <script src="../assets/progress-tracker.js"></script>
 
   <script>
-    const arabicLetters = [
-      { id: "ar-a", letter: "ا", name: "Alif", roman: "alif", sound: "aa", word: "أَسَد", translit: "asad", meaning: "lion", icon: "🦁", speak: "ا. ألف. أَسَد." },
-      { id: "ar-b", letter: "ب", name: "Bāʾ", roman: "baa", sound: "b", word: "بَاب", translit: "baab", meaning: "door", icon: "🚪", speak: "ب. باء. بَاب." },
-      { id: "ar-t", letter: "ت", name: "Tāʾ", roman: "taa", sound: "t", word: "تُفَّاح", translit: "tuffaah", meaning: "apple", icon: "🍎", speak: "ت. تاء. تُفَّاح." },
-      { id: "ar-th", letter: "ث", name: "Thāʾ", roman: "thaa", sound: "th", word: "ثَوْب", translit: "thawb", meaning: "robe", icon: "👕", speak: "ث. ثاء. ثَوْب." },
-      { id: "ar-j", letter: "ج", name: "Jīm", roman: "jeem", sound: "j", word: "جَمَل", translit: "jamal", meaning: "camel", icon: "🐪", speak: "ج. جيم. جَمَل." },
-      { id: "ar-h", letter: "ح", name: "Ḥāʾ", roman: "haa", sound: "h", word: "حُوت", translit: "hoot", meaning: "whale", icon: "🐋", speak: "ح. حاء. حُوت." },
-      { id: "ar-kh", letter: "خ", name: "Khāʾ", roman: "khaa", sound: "kh", word: "خَيْمَة", translit: "khaymah", meaning: "tent", icon: "⛺", speak: "خ. خاء. خَيْمَة." },
-      { id: "ar-d", letter: "د", name: "Dāl", roman: "daal", sound: "d", word: "دُب", translit: "dubb", meaning: "bear", icon: "🐻", speak: "د. دال. دُب." },
-      { id: "ar-dh", letter: "ذ", name: "Dhāl", roman: "dhaal", sound: "dh", word: "ذُرَة", translit: "dhurah", meaning: "corn", icon: "🌽", speak: "ذ. ذال. ذُرَة." },
-      { id: "ar-r", letter: "ر", name: "Rāʾ", roman: "raa", sound: "r", word: "رُمَّان", translit: "rummaan", meaning: "pomegranate", icon: "🍎", speak: "ر. راء. رُمَّان." },
-      { id: "ar-z", letter: "ز", name: "Zāy", roman: "zaay", sound: "z", word: "زَهْرَة", translit: "zahrah", meaning: "flower", icon: "🌸", speak: "ز. زاي. زَهْرَة." },
-      { id: "ar-s", letter: "س", name: "Sīn", roman: "seen", sound: "s", word: "سَمَكَة", translit: "samakah", meaning: "fish", icon: "🐟", speak: "س. سين. سَمَكَة." },
-      { id: "ar-sh", letter: "ش", name: "Shīn", roman: "sheen", sound: "sh", word: "شَمْس", translit: "shams", meaning: "sun", icon: "☀️", speak: "ش. شين. شَمْس." },
-      { id: "ar-sad", letter: "ص", name: "Ṣād", roman: "saad", sound: "s", word: "صَقْر", translit: "saqr", meaning: "falcon", icon: "🦅", speak: "ص. صاد. صَقْر." },
-      { id: "ar-dad", letter: "ض", name: "Ḍād", roman: "daad", sound: "d", word: "ضِفْدَع", translit: "difda", meaning: "frog", icon: "🐸", speak: "ض. ضاد. ضِفْدَع." },
-      { id: "ar-ta", letter: "ط", name: "Ṭāʾ", roman: "taa", sound: "t", word: "طَائِر", translit: "taa'ir", meaning: "bird", icon: "🐦", speak: "ط. طاء. طَائِر." },
-      { id: "ar-za", letter: "ظ", name: "Ẓāʾ", roman: "zaa", sound: "z", word: "ظَرْف", translit: "zarf", meaning: "envelope", icon: "✉️", speak: "ظ. ظاء. ظَرْف." },
-      { id: "ar-ain", letter: "ع", name: "ʿAyn", roman: "ayn", sound: "a", word: "عَيْن", translit: "ayn", meaning: "eye", icon: "👁️", speak: "ع. عين. عَيْن." },
-      { id: "ar-gh", letter: "غ", name: "Ghayn", roman: "ghayn", sound: "gh", word: "غُرْفَة", translit: "ghurfah", meaning: "room", icon: "🛏️", speak: "غ. غين. غُرْفَة." },
-      { id: "ar-f", letter: "ف", name: "Fāʾ", roman: "faa", sound: "f", word: "فِيل", translit: "feel", meaning: "elephant", icon: "🐘", speak: "ف. فاء. فِيل." },
-      { id: "ar-q", letter: "ق", name: "Qāf", roman: "qaaf", sound: "q", word: "قَمَر", translit: "qamar", meaning: "moon", icon: "🌙", speak: "ق. قاف. قَمَر." },
-      { id: "ar-k", letter: "ك", name: "Kāf", roman: "kaaf", sound: "k", word: "كِتَاب", translit: "kitaab", meaning: "book", icon: "📘", speak: "ك. كاف. كِتَاب." },
-      { id: "ar-l", letter: "ل", name: "Lām", roman: "laam", sound: "l", word: "لَيْمُون", translit: "laymoon", meaning: "lemon", icon: "🍋", speak: "ل. لام. لَيْمُون." },
-      { id: "ar-m", letter: "م", name: "Mīm", roman: "meem", sound: "m", word: "مَوْز", translit: "mawz", meaning: "banana", icon: "🍌", speak: "م. ميم. مَوْز." },
-      { id: "ar-n", letter: "ن", name: "Nūn", roman: "noon", sound: "n", word: "نَجْم", translit: "najm", meaning: "star", icon: "⭐", speak: "ن. نون. نَجْم." },
-      { id: "ar-hh", letter: "ه", name: "Hāʾ", roman: "haa", sound: "h", word: "هِلَال", translit: "hilaal", meaning: "crescent", icon: "🌙", speak: "ه. هاء. هِلَال." },
-      { id: "ar-w", letter: "و", name: "Wāw", roman: "waaw", sound: "w", word: "وَرْد", translit: "ward", meaning: "rose", icon: "🌹", speak: "و. واو. وَرْد." },
-      { id: "ar-y", letter: "ي", name: "Yāʾ", roman: "yaa", sound: "y", word: "يَد", translit: "yad", meaning: "hand", icon: "✋", speak: "ي. ياء. يَد." }
+    const compactWorlds = [
+      ["أ", "Letters"], ["ص", "Sounds"], ["َ", "Harakat"], ["كـ", "Joining"],
+      ["كِتاب", "Words"], ["جملة", "Sentences"], ["✍️", "Writing"], ["🎮", "Games"]
     ];
 
-    const arabicWords = [
+    const letterNames = {
+      "ا": "Alif", "ب": "Ba", "ت": "Ta", "ث": "Tha", "ج": "Jeem", "ح": "Ha", "خ": "Kha",
+      "د": "Dal", "ذ": "Dhal", "ر": "Ra", "ز": "Zay", "س": "Seen", "ش": "Sheen", "ص": "Sad",
+      "ض": "Dad", "ط": "Ta heavy", "ظ": "Za heavy", "ع": "Ayn", "غ": "Ghayn", "ف": "Fa",
+      "ق": "Qaf", "ك": "Kaf", "ل": "Lam", "م": "Meem", "ن": "Noon", "ه": "Ha soft", "و": "Waw", "ي": "Ya"
+    };
+
+    const ageLevels = [
       {
-        id: "word-qamar",
-        arabic: "قَمَر",
-        transliteration: "qamar",
-        meaning: "moon",
-        emoji: "🌙",
-        arabicSentence: "هٰذَا قَمَرٌ جَمِيلٌ",
-        englishSentence: "This is a beautiful moon.",
-        task: "Say the word three times and find the moon in the sky or a picture.",
-        traceLetter: "ق",
-        traceLetterName: "Qāf",
-        quiz: {
-          question: "What does قَمَر mean?",
-          options: ["moon", "book", "fish"],
-          answer: "moon"
-        }
+        id: "age-3",
+        level: "Level 1",
+        label: "Age 3",
+        icon: "🌱",
+        title: "Age 3: Arabic Sound & Letter Awareness",
+        subtitle: "Big letters, simple sounds, first words, and playful tracing.",
+        mastery: "By the end of this level, the child recognizes first Arabic letters, repeats simple sounds, and traces large letters.",
+        lessons: [
+          letterLesson("alif", "ا", "Alif", "ا", "أَسَد", "asad", "lion", "🦁"),
+          letterLesson("ba", "ب", "Ba", "بَ", "بَاب", "bab", "door", "🚪"),
+          letterLesson("ta", "ت", "Ta", "تَ", "تُفَّاح", "tuffah", "apple", "🍎"),
+          letterLesson("tha", "ث", "Tha", "ثَ", "ثَعْلَب", "tha'lab", "fox", "🦊"),
+          letterLesson("jeem", "ج", "Jeem", "جَ", "جَمَل", "jamal", "camel", "🐪"),
+          letterLesson("ha", "ح", "Ha", "حَ", "حِصَان", "hisan", "horse", "🐴"),
+          letterLesson("kha", "خ", "Kha", "خَ", "خُبْز", "khubz", "bread", "🍞"),
+          wordLesson("salam-word", "سلام", "Salam", "سَلَام", "salam", "peace", "🤝", "Greeting word", "Say Salam kindly.")
+        ]
       },
       {
-        id: "word-kitaab",
-        arabic: "كِتَاب",
-        transliteration: "kitaab",
-        meaning: "book",
-        emoji: "📘",
-        arabicSentence: "هٰذَا كِتَابٌ",
-        englishSentence: "This is a book.",
-        task: "Point to a book and say كِتَاب.",
-        traceLetter: "ك",
-        traceLetterName: "Kāf",
-        quiz: {
-          question: "What does كِتَاب mean?",
-          options: ["book", "moon", "banana"],
-          answer: "book"
-        }
+        id: "age-4",
+        level: "Level 2",
+        label: "Age 4",
+        icon: "🌿",
+        title: "Age 4: More Letters, Words & Matching",
+        subtitle: "New Arabic letters, more words, sound matching, and early confidence.",
+        mastery: "By the end of this level, the child recognizes more letters and connects Arabic letters with simple words and pictures.",
+        lessons: [
+          letterLesson("dal", "د", "Dal", "دَ", "دُبّ", "dubb", "bear", "🐻"),
+          letterLesson("dhal", "ذ", "Dhal", "ذَ", "ذِئْب", "dhi'b", "wolf", "🐺"),
+          letterLesson("ra", "ر", "Ra", "رَ", "رُمَّان", "rumman", "pomegranate", "🍎"),
+          letterLesson("zay", "ز", "Zay", "زَ", "زَهْرَة", "zahrah", "flower", "🌸"),
+          letterLesson("seen", "س", "Seen", "سَ", "سَمَكَة", "samakah", "fish", "🐟"),
+          letterLesson("sheen", "ش", "Sheen", "شَ", "شَمْس", "shams", "sun", "☀️"),
+          letterLesson("sad", "ص", "Sad", "صَ", "صَقْر", "saqr", "falcon", "🦅"),
+          letterLesson("dad", "ض", "Dad", "ضَ", "ضِفْدَع", "difda", "frog", "🐸"),
+          wordLesson("bismillah-word", "بسم الله", "Bismillah", "بِسْمِ اللّٰهِ", "Bismillah", "In the name of Allah", "🍽️", "Routine word", "Say Bismillah before food."),
+          wordLesson("alhamdulillah-word", "الحمد لله", "Alhamdulillah", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "All praise is for Allah", "🙏", "Thankfulness word", "Say Alhamdulillah after a blessing.")
+        ]
       },
       {
-        id: "word-shams",
-        arabic: "شَمْس",
-        transliteration: "shams",
-        meaning: "sun",
-        emoji: "☀️",
-        arabicSentence: "الشَّمْسُ سَاطِعَةٌ",
-        englishSentence: "The sun is shining.",
-        task: "Look at a sun picture and say شَمْس.",
-        traceLetter: "ش",
-        traceLetterName: "Shīn",
-        quiz: {
-          question: "What does شَمْس mean?",
-          options: ["sun", "star", "door"],
-          answer: "sun"
-        }
+        id: "age-5",
+        level: "Level 3",
+        label: "Age 5",
+        icon: "🌳",
+        title: "Age 5: Complete Letters & Harakat Start",
+        subtitle: "Finish alphabet recognition and begin fatha, kasra, damma.",
+        mastery: "By the end of this level, the child recognizes all Arabic letters and begins reading simple letter + harakah sounds.",
+        lessons: [
+          letterLesson("ta-heavy", "ط", "Ta heavy", "طَ", "طَائِر", "ta'ir", "bird", "🐦"),
+          letterLesson("za-heavy", "ظ", "Za heavy", "ظَ", "ظَرْف", "zarf", "envelope", "✉️"),
+          letterLesson("ayn", "ع", "Ayn", "عَ", "عَيْن", "ayn", "eye", "👁️"),
+          letterLesson("ghayn", "غ", "Ghayn", "غَ", "غَزَال", "ghazal", "deer", "🦌"),
+          letterLesson("fa", "ف", "Fa", "فَ", "فِيل", "feel", "elephant", "🐘"),
+          letterLesson("qaf", "ق", "Qaf", "قَ", "قَمَر", "qamar", "moon", "🌙"),
+          letterLesson("kaf", "ك", "Kaf", "كَ", "كِتَاب", "kitab", "book", "📘"),
+          letterLesson("lam", "ل", "Lam", "لَ", "لَيْمُون", "laymun", "lemon", "🍋"),
+          harakahLesson("fatha", "َ", "Fatha", "بَ", "ba", "short a sound", "The small line above makes a short a sound.", "🔼"),
+          harakahLesson("kasra", "ِ", "Kasra", "بِ", "bi", "short i sound", "The small line below makes a short i sound.", "🔽"),
+          harakahLesson("damma", "ُ", "Damma", "بُ", "bu", "short u sound", "The small curl above makes a short u sound.", "↗️"),
+          wordLesson("kitab-word", "كتاب", "Kitab", "كِتَاب", "kitab", "book", "📘", "Reading word", "Find a book and say kitab.")
+        ]
       },
       {
-        id: "word-mawz",
-        arabic: "مَوْز",
-        transliteration: "mawz",
-        meaning: "banana",
-        emoji: "🍌",
-        arabicSentence: "أُحِبُّ الْمَوْزَ",
-        englishSentence: "I like bananas.",
-        task: "Say مَوْز and draw a banana.",
-        traceLetter: "م",
-        traceLetterName: "Mīm",
-        quiz: {
-          question: "What does مَوْز mean?",
-          options: ["banana", "flower", "book"],
-          answer: "banana"
-        }
+        id: "age-6",
+        level: "Level 4",
+        label: "Age 6",
+        icon: "🌴",
+        title: "Age 6: Joining, Reading & Writing",
+        subtitle: "Letter forms, joining, simple syllables, words, and writing practice.",
+        mastery: "By the end of this level, the child understands that Arabic letters can join and can read simple syllables and words.",
+        lessons: [
+          letterLesson("meem", "م", "Meem", "مَ", "مَاء", "ma'", "water", "💧"),
+          letterLesson("noon", "ن", "Noon", "نَ", "نَجْم", "najm", "star", "⭐"),
+          letterLesson("ha-soft", "ه", "Ha soft", "هَ", "هِلَال", "hilal", "crescent", "🌙"),
+          letterLesson("waw", "و", "Waw", "وَ", "وَرْدَة", "wardah", "rose", "🌹"),
+          letterLesson("ya", "ي", "Ya", "يَ", "يَد", "yad", "hand", "✋"),
+          joinLesson("ba-forms", "ب", "Ba forms", "بـ ـبـ ـب", "ba forms", "Ba can join at beginning, middle, and end.", "🔗"),
+          joinLesson("meem-forms", "م", "Meem forms", "مـ ـمـ ـم", "meem forms", "Meem can join at beginning, middle, and end.", "🔗"),
+          joinLesson("lam-forms", "ل", "Lam forms", "لـ ـلـ ـل", "lam forms", "Lam can join at beginning, middle, and end.", "🔗"),
+          syllableLesson("ba-bi-bu", "بَ بِ بُ", "Ba with Harakat", "بَ بِ بُ", "ba bi bu", "Read ba, bi, bu.", "🎵"),
+          syllableLesson("ma-mi-mu", "مَ مِ مُ", "Meem with Harakat", "مَ مِ مُ", "ma mi mu", "Read ma, mi, mu.", "🎵"),
+          wordLesson("bayt-word", "بيت", "Bayt", "بَيْت", "bayt", "house", "🏠", "Reading word", "Point to your home and say bayt."),
+          wordLesson("qalam-word", "قلم", "Qalam", "قَلَم", "qalam", "pen", "✏️", "Reading word", "Hold a pen and say qalam.")
+        ]
       },
       {
-        id: "word-najm",
-        arabic: "نَجْم",
-        transliteration: "najm",
-        meaning: "star",
-        emoji: "⭐",
-        arabicSentence: "هٰذَا نَجْمٌ",
-        englishSentence: "This is a star.",
-        task: "Count stars in a picture and say نَجْم.",
-        traceLetter: "ن",
-        traceLetterName: "Nūn",
-        quiz: {
-          question: "What does نَجْم mean?",
-          options: ["star", "fish", "tent"],
-          answer: "star"
-        }
+        id: "age-7",
+        level: "Level 5",
+        label: "Age 7",
+        icon: "🌟",
+        title: "Age 7: Reading, Vocabulary & Simple Sentences",
+        subtitle: "Arabic reading confidence, vocabulary themes, simple sentences, and revision.",
+        mastery: "By the end of this level, the child can recognize letters, read simple words, understand common vocabulary, and try simple Arabic sentences.",
+        lessons: [
+          wordLesson("allah-word", "الله", "Allah", "اللّٰه", "Allah", "Allah", "☝️", "Important word", "Say Allah with respect."),
+          wordLesson("salam-sentence", "السلام عليكم", "Salam Sentence", "السَّلَامُ عَلَيْكُمْ", "Assalamu Alaikum", "Peace be upon you", "🤝", "Greeting sentence", "Greet someone with Salam."),
+          wordLesson("ana-word", "أنا", "Ana", "أَنَا", "ana", "I", "🧒", "Sentence word", "Say ana means I."),
+          sentenceLesson("ana-muslim", "أنا مسلم", "Ana Muslim", "أَنَا مُسْلِم", "ana muslim", "I am Muslim.", "🌟"),
+          sentenceLesson("ana-uhibbu", "أنا أحب", "Ana Uhibbu", "أَنَا أُحِبُّ الْخَيْر", "ana uhibbul khayr", "I love goodness.", "💚"),
+          wordLesson("ummi-word", "أمي", "Ummi", "أُمِّي", "ummi", "my mother", "👩", "Family word", "Say ummi with love."),
+          wordLesson("abi-word", "أبي", "Abi", "أَبِي", "abi", "my father", "👨", "Family word", "Say abi with respect."),
+          wordLesson("madrasah-word", "مدرسة", "Madrasah", "مَدْرَسَة", "madrasah", "school", "🏫", "Place word", "Say madrasah means school."),
+          conceptLesson("sukun", "ْ", "Sukun", "بْ", "silent ending", "Sukun means the letter has no vowel sound.", "⏸️"),
+          conceptLesson("shadda", "ّ", "Shadda", "بّ", "double sound", "Shadda means the letter sound is stronger or doubled.", "💪"),
+          conceptLesson("madd", "ا و ي", "Madd Letters", "ا و ي", "long sounds", "Madd letters can stretch sounds.", "➰"),
+          conceptLesson("tanween", "ً ٍ ٌ", "Tanween", "بًا بٍ بٌ", "an in un", "Tanween adds a final n sound.", "🎵"),
+          sentenceLesson("hadha-kitab", "هذا كتاب", "Hadha Kitab", "هٰذَا كِتَاب", "hadha kitab", "This is a book.", "📘"),
+          sentenceLesson("hadha-bayt", "هذا بيت", "Hadha Bayt", "هٰذَا بَيْت", "hadha bayt", "This is a house.", "🏠"),
+          sentenceLesson("revision", "مراجعة", "Final Revision", "أ ب ت ث ج ح خ", "alphabet review", "Review letters, sounds, words, and writing.", "🏆")
+        ]
       }
     ];
 
-    let currentWord = arabicWords[0];
+    let activeAge = ageLevels[0];
+    let activeLessonIndex = 0;
+    let funSoundsEnabled = true;
+    let funAudioContext = null;
+    let lastHoverSoundTime = 0;
+    let boardContext = null;
+    let drawing = false;
+    window.arabicWhiteboardUsed = false;
+
+    function letterLesson(id, letter, title, sound, word, transliteration, meaning, icon) {
+      return makeLesson({
+        id, icon, title,
+        main: letter,
+        concept: `Meet letter ${title}. Look at its shape and say its sound.`,
+        sound,
+        word,
+        transliteration,
+        meaning,
+        childTask: `Trace ${letter} and say ${title}.`,
+        story: `Today the child met ${title}. The child looked at ${letter}, repeated ${sound}, and found the word ${word}.`,
+        quizQuestion: `Which letter is ${title}?`,
+        quizOptions: shuffleOptions([letter, "س", "م"], letter),
+        quizAnswer: letter,
+        mission: `Write ${letter} three times and say ${sound}.`,
+        activityTitle: "Match the Arabic letter",
+        activityOptions: shuffleOptions([letter, word, sound], letter),
+        activityAnswer: letter
+      });
+    }
+
+    function wordLesson(id, main, title, word, transliteration, meaning, icon, conceptTitle, mission) {
+      return makeLesson({
+        id, icon, title,
+        main,
+        concept: `${conceptTitle}: learn the word ${word}.`,
+        sound: word,
+        word,
+        transliteration,
+        meaning,
+        childTask: `Point, say, and trace: ${word}.`,
+        story: `A child saw ${icon} and learned the Arabic word ${word}. The child repeated it slowly and smiled.`,
+        quizQuestion: `What does ${word} mean?`,
+        quizOptions: shuffleOptions([meaning, "sky", "chair"], meaning),
+        quizAnswer: meaning,
+        mission,
+        activityTitle: "Choose the meaning",
+        activityOptions: shuffleOptions([meaning, "wrong answer", "not this"], meaning),
+        activityAnswer: meaning
+      });
+    }
+
+    function harakahLesson(id, mark, title, example, sound, meaning, concept, icon) {
+      return makeLesson({
+        id, icon, title,
+        main: mark,
+        concept,
+        sound: example,
+        word: example,
+        transliteration: sound,
+        meaning,
+        childTask: `Say ${example} and notice the mark.`,
+        story: `A child saw ${example}. The small mark helped the child say the sound correctly.`,
+        quizQuestion: `What sound does ${example} show?`,
+        quizOptions: shuffleOptions([sound, "moo", "see"], sound),
+        quizAnswer: sound,
+        mission: `Say ${example} five times slowly.`,
+        activityTitle: "Pick the sound",
+        activityOptions: shuffleOptions([sound, "la", "ko"], sound),
+        activityAnswer: sound
+      });
+    }
+
+    function joinLesson(id, letter, title, forms, transliteration, meaning, icon) {
+      return makeLesson({
+        id, icon, title,
+        main: forms,
+        concept: `${title}: Arabic letters can change shape when they join.`,
+        sound: forms,
+        word: forms,
+        transliteration,
+        meaning,
+        childTask: `Look at the forms and trace them.`,
+        story: `A child learned that ${letter} can look a little different when it joins other letters.`,
+        quizQuestion: `What does this lesson show?`,
+        quizOptions: shuffleOptions(["letter forms", "food", "animal"], "letter forms"),
+        quizAnswer: "letter forms",
+        mission: `Trace ${forms} carefully.`,
+        activityTitle: "Choose the joining idea",
+        activityOptions: shuffleOptions(["Letters can join", "Letters are food", "Letters disappear"], "Letters can join"),
+        activityAnswer: "Letters can join"
+      });
+    }
+
+    function syllableLesson(id, main, title, word, transliteration, meaning, icon) {
+      return makeLesson({
+        id, icon, title,
+        main,
+        concept: `${title}: read the sounds slowly.`,
+        sound: main,
+        word,
+        transliteration,
+        meaning,
+        childTask: `Read: ${main}.`,
+        story: `A child clapped and read ${main} like a small Arabic rhythm.`,
+        quizQuestion: `Which sounds are in this lesson?`,
+        quizOptions: shuffleOptions([transliteration, "cat dog", "one two"], transliteration),
+        quizAnswer: transliteration,
+        mission: `Read ${main} three times.`,
+        activityTitle: "Choose the reading",
+        activityOptions: shuffleOptions([transliteration, "wrong sound", "silent"], transliteration),
+        activityAnswer: transliteration
+      });
+    }
+
+    function sentenceLesson(id, main, title, word, transliteration, meaning, icon) {
+      return makeLesson({
+        id, icon, title,
+        main,
+        concept: `Read a simple Arabic sentence: ${word}.`,
+        sound: word,
+        word,
+        transliteration,
+        meaning,
+        childTask: `Read the sentence and say the meaning.`,
+        story: `A child read the sentence ${word}. The child learned that Arabic words can make a simple sentence.`,
+        quizQuestion: `What does ${word} mean?`,
+        quizOptions: shuffleOptions([meaning, "I see a car", "The moon is red"], meaning),
+        quizAnswer: meaning,
+        mission: `Read ${word} with an adult.`,
+        activityTitle: "Choose the sentence meaning",
+        activityOptions: shuffleOptions([meaning, "wrong sentence", "not this"], meaning),
+        activityAnswer: meaning
+      });
+    }
+
+    function conceptLesson(id, main, title, word, transliteration, meaning, icon) {
+      return makeLesson({
+        id, icon, title,
+        main,
+        concept: `${title}: ${meaning}`,
+        sound: word,
+        word,
+        transliteration,
+        meaning,
+        childTask: `Look at ${main} and say what it does.`,
+        story: `A child saw ${main} and learned a new Arabic reading sign. The sign helped the child read better.`,
+        quizQuestion: `What is ${title}?`,
+        quizOptions: shuffleOptions([meaning, "a fruit", "a toy"], meaning),
+        quizAnswer: meaning,
+        mission: `Find ${main} in an Arabic page with an adult.`,
+        activityTitle: "Choose the correct idea",
+        activityOptions: shuffleOptions([meaning, "not Arabic", "a color"], meaning),
+        activityAnswer: meaning
+      });
+    }
+
+    function makeLesson(obj) {
+      return obj;
+    }
+
+    function shuffleOptions(options, answer) {
+      const unique = Array.from(new Set(options));
+      while (unique.length < 3) unique.push("another answer");
+      return unique.sort(() => Math.random() - 0.5);
+    }
+
+    function getActiveLesson() {
+      return activeAge.lessons[activeLessonIndex] || activeAge.lessons[0];
+    }
 
     function getTracker() {
       return window.AlHayatProgressTracker || null;
     }
 
+    function getLearningData() {
+      return window.AlHayatLearningData || null;
+    }
+
     function speak(text, lang = "ar-SA", repeat = false) {
+      const data = getLearningData();
+
+      if (data && typeof data.speakText === "function") {
+        data.speakText(text, lang, repeat);
+        return;
+      }
+
       if (!("speechSynthesis" in window)) {
         alert("Sorry, your browser does not support audio reading.");
         return;
       }
 
-      const voices = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
-      const matchingVoice = voices.find(v => (v.lang || "").toLowerCase().startsWith(lang.toLowerCase().split("-")[0]));
-      const run = () => {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = lang;
-        if (matchingVoice) u.voice = matchingVoice;
-        u.rate = repeat ? 0.72 : 0.82;
-        u.pitch = 1.05;
-        u.volume = 1;
-        if (repeat) {
-          u.onend = () => {
-            const u2 = new SpeechSynthesisUtterance(text);
-            u2.lang = lang;
-            if (matchingVoice) u2.voice = matchingVoice;
-            u2.rate = 0.72;
-            u2.pitch = 1.05;
-            window.speechSynthesis.speak(u2);
-          };
-        }
-        window.speechSynthesis.speak(u);
-      };
+      window.speechSynthesis.cancel();
 
-      if (voices.length === 0 && "onvoiceschanged" in speechSynthesis) {
-        speechSynthesis.onvoiceschanged = run;
-        setTimeout(run, 250);
-      } else {
-        run();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = lang;
+      u.rate = repeat ? 0.70 : 0.78;
+      u.pitch = 1.04;
+      u.volume = 1;
+
+      if (repeat) {
+        u.onend = () => {
+          const u2 = new SpeechSynthesisUtterance(text);
+          u2.lang = lang;
+          u2.rate = 0.70;
+          u2.pitch = 1.04;
+          window.speechSynthesis.speak(u2);
+        };
       }
+
+      window.speechSynthesis.speak(u);
     }
 
     function stopSound() {
+      const data = getLearningData();
+
+      if (data && typeof data.stopSpeech === "function") {
+        data.stopSpeech();
+        return;
+      }
+
       if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
       }
     }
 
-    function renderLetters() {
-      const grid = document.getElementById("letterGrid");
-      grid.innerHTML = "";
-      arabicLetters.forEach((item) => {
-        const card = document.createElement("article");
-        card.className = "letter-card";
-        card.innerHTML = `
-          <div class="letter-badge">🔤 Letter Card</div>
-          <div class="letter-main">
-            <div>
-              <div class="letter-char arabic">${item.letter}</div>
-              <div class="letter-name">${item.name}</div>
-              <div class="letter-roman">${item.roman}</div>
-            </div>
-            <div class="letter-icon" aria-hidden="true">${item.icon}</div>
-          </div>
-          <div class="sound-chip">🔊 Sound hint: ${item.sound}</div>
-          <p><span class="arabic">${item.word}</span> — ${item.translit} — ${item.meaning}</p>
-          <div class="mini-box">Say the letter, then say the word slowly.</div>
-          <div class="sound-actions">
-            <button class="listen-btn" type="button" data-letter-action="listen" data-letter-id="${item.id}">🔊 Listen</button>
-            <button class="repeat-btn" type="button" data-letter-action="repeat" data-letter-id="${item.id}">🔁 Repeat</button>
-            <button class="learned-btn" type="button" data-letter-action="learned" data-letter-id="${item.id}">✅ Learned</button>
-          </div>
-        `;
-        grid.appendChild(card);
+    function initFunAudioContext() {
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return null;
+
+        if (!funAudioContext) {
+          funAudioContext = new AudioContextClass();
+        }
+
+        if (funAudioContext.state === "suspended") {
+          funAudioContext.resume();
+        }
+
+        return funAudioContext;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function playFunHoverSound(kind = "hover") {
+      if (!funSoundsEnabled) return;
+
+      const now = Date.now();
+      if (now - lastHoverSoundTime < 95) return;
+      lastHoverSoundTime = now;
+
+      const ctx = initFunAudioContext();
+      if (!ctx) return;
+
+      const baseFrequency = kind === "success" ? 720 : kind === "nav" ? 520 : kind === "soft" ? 610 : 660;
+      const endFrequency = kind === "success" ? 960 : kind === "nav" ? 700 : kind === "soft" ? 760 : 840;
+
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(baseFrequency, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(endFrequency, ctx.currentTime + 0.09);
+
+      gain.gain.setValueAtTime(0.0001, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.055, ctx.currentTime + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.14);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.15);
+    }
+
+    function setupFunHoverEffects() {
+      const toggle = document.getElementById("funSoundToggle");
+
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          funSoundsEnabled = !funSoundsEnabled;
+          toggle.classList.toggle("off", !funSoundsEnabled);
+          toggle.setAttribute("aria-pressed", funSoundsEnabled ? "true" : "false");
+          toggle.textContent = funSoundsEnabled ? "🔔 Fun Sounds: On" : "🔕 Fun Sounds: Off";
+
+          if (funSoundsEnabled) {
+            initFunAudioContext();
+            playFunHoverSound("success");
+          }
+        });
+      }
+
+      document.addEventListener("pointerdown", () => initFunAudioContext(), { once: true });
+
+      const selector = [".btn", ".listen-btn", ".repeat-btn", ".learned-btn", ".tool-btn", ".age-tab", ".lesson-chip", ".quiz-options button", ".choice-options button", ".activity-options button", ".nav a"].join(",");
+
+      document.addEventListener("mouseover", (event) => {
+        const target = event.target.closest(selector);
+        if (!target) return;
+
+        if (target.dataset.hoverSoundAttached === "true") return;
+        target.dataset.hoverSoundAttached = "true";
+
+        target.addEventListener("mouseenter", () => {
+          const kind = target.classList.contains("learned-btn") || target.classList.contains("tool-btn")
+            ? "success"
+            : target.closest(".nav")
+              ? "nav"
+              : target.classList.contains("repeat-btn")
+                ? "soft"
+                : "hover";
+
+          target.classList.remove("sound-hover-pop");
+          void target.offsetWidth;
+          target.classList.add("sound-hover-pop");
+
+          playFunHoverSound(kind);
+        });
+
+        target.addEventListener("focus", () => playFunHoverSound("soft"));
       });
+    }
 
-      grid.querySelectorAll("[data-letter-action]").forEach((button) => {
+    function renderCompactWorlds() {
+      const el = document.getElementById("compactWorlds");
+      el.innerHTML = compactWorlds.map(([icon, title]) => `
+        <div class="compact-world"><span>${icon}</span>${title}</div>
+      `).join("");
+    }
+
+    function renderAgeTabs() {
+      const tabs = document.getElementById("ageTabs");
+      tabs.innerHTML = "";
+
+      ageLevels.forEach((level) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `age-tab ${level.id === activeAge.id ? "active" : ""}`;
+        button.textContent = `${level.icon} ${level.label}`;
         button.addEventListener("click", () => {
-          const item = arabicLetters.find(i => i.id === button.dataset.letterId);
-          if (!item) return;
+          activeAge = level;
+          activeLessonIndex = 0;
+          renderAgeTabs();
+          renderActiveLevel();
+          getTracker()?.markCompleted?.("arabicLetters", `${activeAge.id}-selected`, { type: "age-selected" });
+          document.getElementById("active-level").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        tabs.appendChild(button);
+      });
+    }
 
-          if (button.dataset.letterAction === "listen") {
-            speak(item.speak, "ar-SA", false);
-            getTracker()?.markListened?.("arabicWords", item.id, { type: "letter", letter: item.letter });
-          }
-          if (button.dataset.letterAction === "repeat") {
-            speak(item.speak, "ar-SA", true);
-            getTracker()?.markRepeated?.("arabicWords", item.id, { type: "letter", letter: item.letter });
-          }
-          if (button.dataset.letterAction === "learned") {
-            getTracker()?.markLearned?.("arabicWords", item.id, { type: "letter", letter: item.letter });
-            button.textContent = "✅ Learned!";
-            button.disabled = true;
-          }
+    function renderProgressDots() {
+      const container = document.getElementById("levelProgress");
+      container.innerHTML = ageLevels.map((level) => `
+        <div class="level-dot ${level.id === activeAge.id ? "active" : ""}">
+          ${level.level}<span>${level.label}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderLessonLibrary() {
+      const container = document.getElementById("lessonLibrary");
+      document.getElementById("libraryTitle").textContent = `${activeAge.label} Arabic Lesson Library`;
+      document.getElementById("libraryLead").textContent = `${activeAge.lessons.length} focused Arabic lessons for ${activeAge.label}. Choose one lesson at a time.`;
+
+      container.innerHTML = activeAge.lessons.map((lessonItem, index) => `
+        <button type="button" class="lesson-chip ${index === activeLessonIndex ? "active" : ""}" data-lesson-index="${index}">
+          <small>${index + 1}</small>${lessonItem.icon} ${lessonItem.title}
+        </button>
+      `).join("");
+
+      container.querySelectorAll(".lesson-chip").forEach(button => {
+        button.addEventListener("click", () => {
+          activeLessonIndex = Number(button.dataset.lessonIndex);
+          renderActiveLevel();
+          document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
         });
       });
     }
 
-    function getDailyWord() {
-      const dayIndex = (new Date().getDate() - 1) % arabicWords.length;
-      return arabicWords[dayIndex];
+    function renderActiveLevel() {
+      const selectedLesson = getActiveLesson();
+
+      renderProgressDots();
+
+      document.getElementById("levelHero").innerHTML = `
+        <div class="level-icon">${activeAge.icon}</div>
+        <div>
+          <div class="level-badge">${activeAge.level} • ${activeAge.label}</div>
+          <h2>${activeAge.title}</h2>
+          <p>${activeAge.subtitle}</p>
+          <div class="parent-note" style="margin-top:12px;"><strong>Mastery target:</strong> ${activeAge.mastery}</div>
+        </div>
+      `;
+
+      renderLessonLibrary();
+
+      document.getElementById("lessonCard").innerHTML = `
+        <h3>${selectedLesson.icon} Lesson ${activeLessonIndex + 1}: ${selectedLesson.title}</h3>
+        <div class="today-badge">Short focused Arabic audio</div>
+        <div class="visual-card">
+          <div class="visual-clue">
+            <div>
+              <div class="emoji">${selectedLesson.icon}</div>
+              <strong>${selectedLesson.title}</strong>
+            </div>
+          </div>
+          <div class="support-grid">
+            <div class="note-box"><strong>Concept:</strong> ${selectedLesson.concept}</div>
+            <div class="big-arabic arabic">${selectedLesson.main}</div>
+            <div class="note-box"><strong>Sound / Read:</strong> <span class="arabic">${selectedLesson.sound}</span></div>
+            <div class="word-arabic arabic">${selectedLesson.word}</div>
+            <div class="note-box"><strong>Say:</strong> ${selectedLesson.transliteration}</div>
+            <div class="note-box"><strong>Meaning:</strong> ${selectedLesson.meaning}</div>
+            <div class="task-box"><strong>Practice:</strong> ${selectedLesson.childTask}</div>
+          </div>
+        </div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenLessonBtn" type="button">🔊 Listen Lesson</button>
+          <button class="repeat-btn" id="repeatArabicBtn" type="button">🔁 Repeat Arabic</button>
+          <button class="learned-btn" id="learnedLessonBtn" type="button">✅ I learned this</button>
+        </div>
+      `;
+
+      document.getElementById("activityCard").innerHTML = `
+        <h3>🎮 Mini Activity Game</h3>
+        <div class="mission-box"><strong>${selectedLesson.activityTitle}:</strong> Choose the best answer.</div>
+        <div class="activity-options" id="activityOptions"></div>
+        <div class="result" id="activityResult" aria-live="polite"></div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenActivityBtn" type="button">🔊 Listen Activity</button>
+          <button class="learned-btn" id="completeActivityBtn" type="button">✅ Complete Activity</button>
+        </div>
+      `;
+
+      document.getElementById("storyCard").innerHTML = `
+        <h3>📖 Mini Story</h3>
+        <div class="story-text">${selectedLesson.story}</div>
+        <div class="reflection-box" style="margin-top:12px;"><strong>Lesson:</strong> ${selectedLesson.concept}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenStoryBtn" type="button">🔊 Listen Story</button>
+          <button class="repeat-btn" id="repeatStoryPointBtn" type="button">🔁 Repeat Point</button>
+          <button class="learned-btn" id="completeStoryBtn" type="button">✅ Story Done</button>
+        </div>
+      `;
+
+      document.getElementById("quizCard").innerHTML = `
+        <h3>🧠 Lesson Quiz</h3>
+        <p>${selectedLesson.quizQuestion}</p>
+        <div class="quiz-options" id="levelQuizOptions"></div>
+        <div class="result" id="levelQuizResult" aria-live="polite"></div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
+          <button class="repeat-btn" id="repeatAnswerBtn" type="button">🔁 Repeat Answer</button>
+        </div>
+      `;
+
+      document.getElementById("missionCard").innerHTML = `
+        <h3>✅ Daily Mission</h3>
+        <div class="mission-box">${selectedLesson.mission}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenMissionBtn" type="button">🔊 Listen Mission</button>
+          <button class="repeat-btn" id="repeatMissionBtn" type="button">🔁 Repeat Mission</button>
+          <button class="learned-btn" id="saveMissionBtn" type="button">✅ Mission Done</button>
+        </div>
+      `;
+
+      document.getElementById("masteryCard").innerHTML = `
+        <h3>🏆 Mastery Check</h3>
+        <p>Can the child recognize the shape, say the sound, understand the word, write it, and complete the mission?</p>
+        <ul class="tips">
+          <li>Arabic: ${selectedLesson.main}</li>
+          <li>Sound / word: ${selectedLesson.word}</li>
+          <li>Meaning: ${selectedLesson.meaning}</li>
+        </ul>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenMasteryBtn" type="button">🔊 Listen Mastery</button>
+          <button class="tool-btn" id="nextLessonBtn" type="button">➡️ Next Lesson</button>
+        </div>
+      `;
+
+      document.getElementById("boardTitle").textContent = `Trace: ${selectedLesson.main}`;
+      document.getElementById("writingGoal").textContent = `Write ${selectedLesson.main} three times. Then say ${selectedLesson.transliteration}.`;
+
+      renderActivityOptions();
+      renderQuizOptions();
+      attachDynamicHandlers();
+      refreshBoardGuide();
+
+      setTimeout(() => {
+        getTracker()?.renderAllProgressWidgets?.();
+      }, 100);
     }
 
-    function renderDailyWord() {
-      currentWord = getDailyWord();
-      document.getElementById("wordArabic").textContent = currentWord.arabic;
-      document.getElementById("wordTranslit").textContent = currentWord.transliteration;
-      document.getElementById("wordMeaning").textContent = currentWord.meaning;
-      document.getElementById("wordEmoji").textContent = currentWord.emoji;
-      document.getElementById("visualTitle").textContent = currentWord.meaning;
-      document.getElementById("wordSentenceArabic").textContent = currentWord.arabicSentence;
-      document.getElementById("wordSentenceEnglish").textContent = currentWord.englishSentence;
-      document.getElementById("wordTask").textContent = currentWord.task;
-
-      document.getElementById("traceLetter").textContent = currentWord.traceLetter;
-      document.getElementById("traceLetterName").textContent = currentWord.traceLetterName;
-      document.getElementById("tracePrompt").textContent = `Write the letter ${currentWord.traceLetter} on paper 5 times. Then say the word ${currentWord.arabic} (${currentWord.transliteration}).`;
-
-      const traceStrip = document.getElementById("traceStrip");
-      traceStrip.innerHTML = "";
-      for (let i = 0; i < 5; i++) {
-        const cell = document.createElement("div");
-        cell.className = "trace-cell arabic";
-        cell.textContent = currentWord.traceLetter;
-        traceStrip.appendChild(cell);
-      }
-
-      renderQuiz();
-      refreshWhiteboardGuide();
-    }
-
-    function renderQuiz() {
-      const quiz = currentWord.quiz;
-      const questionEl = document.getElementById("dailyQuizQuestion");
-      const optionsEl = document.getElementById("dailyQuizOptions");
-      const resultEl = document.getElementById("dailyQuizResult");
-
-      questionEl.textContent = quiz.question;
+    function renderActivityOptions() {
+      const selectedLesson = getActiveLesson();
+      const optionsEl = document.getElementById("activityOptions");
+      const resultEl = document.getElementById("activityResult");
       optionsEl.innerHTML = "";
       resultEl.textContent = "";
 
-      quiz.options.forEach(option => {
+      selectedLesson.activityOptions.forEach(option => {
         const btn = document.createElement("button");
         btn.type = "button";
         btn.textContent = option;
         btn.addEventListener("click", () => {
-          const isCorrect = option === quiz.answer;
-
+          const isCorrect = option === selectedLesson.activityAnswer;
           optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
           btn.classList.add(isCorrect ? "correct" : "wrong");
 
-          getTracker()?.markQuiz?.("arabicWords", currentWord.id, isCorrect, {
-            question: quiz.question,
+          getTracker()?.markQuiz?.("arabicLetters", `${activeAge.id}-${selectedLesson.id}-activity`, isCorrect, {
+            question: selectedLesson.activityTitle,
             selected: option,
-            answer: quiz.answer
+            answer: selectedLesson.activityAnswer
           });
 
           if (isCorrect) {
-            resultEl.textContent = "Correct! Great job. ⭐";
+            resultEl.textContent = "Beautiful choice! ⭐";
             resultEl.style.color = "#166534";
-            speak(`${currentWord.arabic}. ${currentWord.meaning}.`, "ar-SA", false);
+            speak("Beautiful choice.", "en-US", false);
           } else {
-            resultEl.textContent = `Good try! Correct answer: ${quiz.answer}`;
+            resultEl.textContent = `Good try. Better choice: ${selectedLesson.activityAnswer}`;
             resultEl.style.color = "#b45309";
+            speak(`Good try. Better choice is ${selectedLesson.activityAnswer}.`, "en-US", false);
           }
         });
         optionsEl.appendChild(btn);
       });
     }
 
-    function setupStaticButtons() {
-      document.querySelectorAll("[data-static-speak]").forEach(btn => {
+    function renderQuizOptions() {
+      const selectedLesson = getActiveLesson();
+      const optionsEl = document.getElementById("levelQuizOptions");
+      const resultEl = document.getElementById("levelQuizResult");
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+
+      selectedLesson.quizOptions.forEach(option => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = option;
         btn.addEventListener("click", () => {
-          const text = btn.dataset.staticSpeak || "";
-          const lang = btn.dataset.lang || "ar-SA";
-          const repeat = btn.classList.contains("repeat-btn");
-          speak(text, lang, repeat);
+          const isCorrect = option === selectedLesson.quizAnswer;
+          optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
+          btn.classList.add(isCorrect ? "correct" : "wrong");
+
+          getTracker()?.markQuiz?.("arabicLetters", `${activeAge.id}-${selectedLesson.id}-quiz`, isCorrect, {
+            question: selectedLesson.quizQuestion,
+            selected: option,
+            answer: selectedLesson.quizAnswer
+          });
+
+          if (isCorrect) {
+            resultEl.textContent = "Correct! Beautiful Arabic learning. ⭐";
+            resultEl.style.color = "#166534";
+            speak("Correct. Beautiful Arabic learning.", "en-US", false);
+          } else {
+            resultEl.textContent = `Good try! Correct answer: ${selectedLesson.quizAnswer}`;
+            resultEl.style.color = "#b45309";
+            speak(`Good try. The correct answer is ${selectedLesson.quizAnswer}.`, "en-US", false);
+          }
         });
+        optionsEl.appendChild(btn);
       });
     }
 
+    function attachDynamicHandlers() {
+      const selectedLesson = getActiveLesson();
+      const lessonKey = `${activeAge.id}-${selectedLesson.id}`;
 
-    let boardContext = null;
-    let boardDrawing = false;
-    window.arabicWhiteboardUsed = false;
+      document.getElementById("listenLessonBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.main}. ${selectedLesson.sound}. ${selectedLesson.word}.`, "ar-SA", false);
+        getTracker()?.markListened?.("arabicLetters", `${lessonKey}-lesson`, { type: "lesson" });
+      });
+
+      document.getElementById("repeatArabicBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.word}. ${selectedLesson.word}.`, "ar-SA", true);
+        getTracker()?.markRepeated?.("arabicLetters", `${lessonKey}-arabic`, { type: "arabic" });
+      });
+
+      document.getElementById("learnedLessonBtn").addEventListener("click", (e) => {
+        getTracker()?.markLearned?.("arabicLetters", `${lessonKey}-lesson`, { type: "lesson" });
+        e.currentTarget.textContent = "✅ Learned!";
+      });
+
+      document.getElementById("listenActivityBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.activityTitle}. Choose the best answer.`, "en-US", false);
+      });
+
+      document.getElementById("completeActivityBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("arabicLetters", `${lessonKey}-activity`, { type: "activity" });
+        e.currentTarget.textContent = "✅ Activity completed!";
+      });
+
+      document.getElementById("listenStoryBtn").addEventListener("click", () => {
+        speak(selectedLesson.story, "en-US", false);
+        getTracker()?.markListened?.("arabicLetters", `${lessonKey}-story`, { type: "story" });
+      });
+
+      document.getElementById("repeatStoryPointBtn").addEventListener("click", () => {
+        speak(selectedLesson.concept, "en-US", true);
+      });
+
+      document.getElementById("completeStoryBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("arabicLetters", `${lessonKey}-story`, { type: "story" });
+        e.currentTarget.textContent = "✅ Story completed!";
+      });
+
+      document.getElementById("listenQuizBtn").addEventListener("click", () => {
+        speak(`Question. ${selectedLesson.quizQuestion}.`, "en-US", false);
+      });
+
+      document.getElementById("repeatAnswerBtn").addEventListener("click", () => {
+        speak(`Answer: ${selectedLesson.quizAnswer}.`, "en-US", true);
+      });
+
+      document.getElementById("listenMissionBtn").addEventListener("click", () => {
+        speak(selectedLesson.mission, "en-US", false);
+      });
+
+      document.getElementById("repeatMissionBtn").addEventListener("click", () => {
+        speak(selectedLesson.mission, "en-US", true);
+      });
+
+      document.getElementById("saveMissionBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("arabicLetters", `${lessonKey}-mission`, { type: "mission" });
+        e.currentTarget.textContent = "✅ Mission saved!";
+      });
+
+      document.getElementById("listenMasteryBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.main}. ${selectedLesson.word}. Meaning: ${selectedLesson.meaning}.`, "en-US", false);
+      });
+
+      document.getElementById("nextLessonBtn").addEventListener("click", () => {
+        activeLessonIndex = (activeLessonIndex + 1) % activeAge.lessons.length;
+        renderActiveLevel();
+        document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      document.getElementById("listenBoardBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.main}. ${selectedLesson.word}.`, "ar-SA", false);
+      });
+
+      document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.main}. ${selectedLesson.main}. ${selectedLesson.word}.`, "ar-SA", true);
+      });
+
+      document.getElementById("saveBoardBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("arabicLetters", `${lessonKey}-whiteboard`, {
+          type: "whiteboard",
+          whiteboardUsed: window.arabicWhiteboardUsed === true
+        });
+        e.currentTarget.textContent = "✅ Writing saved!";
+      });
+    }
 
     function setupWhiteboard() {
-      const canvas = document.getElementById("handwritingBoard");
+      const canvas = document.getElementById("arabicWhiteboard");
       const clearButton = document.getElementById("clearBoardBtn");
 
-      if (!canvas || !clearButton) {
-        return;
-      }
+      if (!canvas || !clearButton) return;
 
       boardContext = canvas.getContext("2d", { willReadFrequently: true });
 
@@ -1585,73 +2209,26 @@
         canvas.width = Math.max(320, Math.floor(rect.width * ratio));
         canvas.height = Math.floor(280 * ratio);
         boardContext.setTransform(ratio, 0, 0, ratio, 0, 0);
-        clearBoard(false);
-      }
-
-      function drawGuide() {
-        const rect = canvas.getBoundingClientRect();
-        const width = rect.width;
-        const height = 280;
-
-        boardContext.save();
-
-        boardContext.fillStyle = "#ffffff";
-        boardContext.fillRect(0, 0, width, height);
-
-        boardContext.strokeStyle = "rgba(124, 58, 237, 0.16)";
-        boardContext.lineWidth = 2;
-        boardContext.setLineDash([10, 10]);
-
-        [70, 140, 210].forEach((y) => {
-          boardContext.beginPath();
-          boardContext.moveTo(18, y);
-          boardContext.lineTo(width - 18, y);
-          boardContext.stroke();
-        });
-
-        boardContext.setLineDash([]);
-
-        boardContext.font = "150px 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', serif";
-        boardContext.textAlign = "center";
-        boardContext.textBaseline = "middle";
-        boardContext.fillStyle = "rgba(124, 58, 237, 0.13)";
-        boardContext.fillText(currentWord?.traceLetter || "ق", width / 2, height / 2 + 10);
-
-        boardContext.restore();
-      }
-
-      function clearBoard(showMessage = true) {
-        if (!boardContext) return;
-        drawGuide();
-        window.arabicWhiteboardUsed = false;
-
-        if (showMessage && getTracker()?.showToast) {
-          getTracker().showToast("🧽 Whiteboard cleared.");
-        }
+        refreshBoardGuide();
       }
 
       function getPoint(event) {
         const rect = canvas.getBoundingClientRect();
-        return {
-          x: event.clientX - rect.left,
-          y: event.clientY - rect.top
-        };
+        return { x: event.clientX - rect.left, y: event.clientY - rect.top };
       }
 
       function startDrawing(event) {
         event.preventDefault();
-        boardDrawing = true;
+        drawing = true;
         window.arabicWhiteboardUsed = true;
-
         const point = getPoint(event);
         boardContext.beginPath();
         boardContext.moveTo(point.x, point.y);
       }
 
       function draw(event) {
-        if (!boardDrawing) return;
+        if (!drawing) return;
         event.preventDefault();
-
         const point = getPoint(event);
         boardContext.lineWidth = 7;
         boardContext.lineCap = "round";
@@ -1662,8 +2239,8 @@
       }
 
       function stopDrawing() {
-        if (!boardDrawing) return;
-        boardDrawing = false;
+        if (!drawing) return;
+        drawing = false;
         boardContext.closePath();
       }
 
@@ -1673,29 +2250,25 @@
       canvas.addEventListener("pointerleave", stopDrawing);
       canvas.addEventListener("pointercancel", stopDrawing);
 
-      clearButton.addEventListener("click", () => clearBoard(true));
+      clearButton.addEventListener("click", () => {
+        refreshBoardGuide();
+        getTracker()?.showToast?.("🧽 Whiteboard cleared.");
+      });
 
       window.addEventListener("resize", () => {
         window.clearTimeout(setupWhiteboard.resizeTimer);
         setupWhiteboard.resizeTimer = window.setTimeout(resizeBoard, 160);
       });
 
-      document.getElementById("listenBoardBtn").addEventListener("click", () => {
-        speak(`${currentWord.traceLetter}. ${currentWord.traceLetterName}. ${currentWord.arabic}.`, "ar-SA", false);
-      });
-
-      document.getElementById("repeatBoardBtn").addEventListener("click", () => {
-        speak(`${currentWord.traceLetter}. ${currentWord.traceLetter}. ${currentWord.arabic}.`, "ar-SA", true);
-      });
-
       resizeBoard();
     }
 
-    function refreshWhiteboardGuide() {
+    function refreshBoardGuide() {
       if (!boardContext) return;
-      const canvas = document.getElementById("handwritingBoard");
+      const canvas = document.getElementById("arabicWhiteboard");
       if (!canvas) return;
 
+      const selectedLesson = getActiveLesson();
       const rect = canvas.getBoundingClientRect();
       const width = rect.width;
       const height = 280;
@@ -1706,7 +2279,7 @@
 
       boardContext.save();
 
-      boardContext.strokeStyle = "rgba(124, 58, 237, 0.16)";
+      boardContext.strokeStyle = "rgba(20, 184, 166, 0.16)";
       boardContext.lineWidth = 2;
       boardContext.setLineDash([10, 10]);
 
@@ -1722,88 +2295,29 @@
       boardContext.font = "150px 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', serif";
       boardContext.textAlign = "center";
       boardContext.textBaseline = "middle";
-      boardContext.fillStyle = "rgba(124, 58, 237, 0.13)";
-      boardContext.fillText(currentWord?.traceLetter || "ق", width / 2, height / 2 + 10);
+      boardContext.fillStyle = "rgba(20, 184, 166, 0.14)";
+      boardContext.direction = "rtl";
+      boardContext.fillText(selectedLesson.main, width / 2, height / 2 + 8);
 
       boardContext.restore();
 
       window.arabicWhiteboardUsed = false;
     }
 
-    function setupMainButtons() {
-      document.getElementById("playLettersIntroBtn").addEventListener("click", () => {
-        speak("هيا نتعلم الحروف العربية. استمع، ثم كرر.", "ar-SA", false);
-        getTracker()?.markListened?.("arabicWords", "letters-intro", { type: "intro" });
-      });
-
-      document.getElementById("playLetterReviewBtn").addEventListener("click", () => {
-        speak("ا ألف. ب باء. ت تاء. ج جيم. ش شين. ق قاف. ك كاف. م ميم. ن نون. ي ياء.", "ar-SA", false);
-        getTracker()?.markRepeated?.("arabicWords", "letters-review", { type: "review" });
-      });
-
-      document.getElementById("listenWordBtn").addEventListener("click", () => {
-        speak(`${currentWord.arabic}. ${currentWord.arabicSentence}`, "ar-SA", false);
-        getTracker()?.markListened?.("arabicWords", currentWord.id, { word: currentWord.arabic });
-      });
-
-      document.getElementById("repeatWordBtn").addEventListener("click", () => {
-        speak(`${currentWord.arabic}. ${currentWord.arabic}. ${currentWord.arabicSentence}`, "ar-SA", true);
-        getTracker()?.markRepeated?.("arabicWords", currentWord.id, { word: currentWord.arabic });
-      });
-
-      document.getElementById("learnedWordBtn").addEventListener("click", (e) => {
-        getTracker()?.markLearned?.("arabicWords", currentWord.id, { word: currentWord.arabic });
-        e.currentTarget.textContent = "✅ Learned today!";
-        e.currentTarget.disabled = true;
-      });
-
-      document.getElementById("listenQuizBtn").addEventListener("click", () => {
-        speak(`${currentWord.quiz.question}`, "en-US", false);
-        getTracker()?.markListened?.("arabicWords", `${currentWord.id}-quiz`, { type: "quiz" });
-      });
-
-      document.getElementById("repeatQuizAnswerBtn").addEventListener("click", () => {
-        speak(`${currentWord.arabic}. ${currentWord.meaning}.`, "ar-SA", true);
-        getTracker()?.markRepeated?.("arabicWords", `${currentWord.id}-quiz-answer`, { type: "quiz" });
-      });
-
-      document.getElementById("listenTraceBtn").addEventListener("click", () => {
-        speak(`${currentWord.traceLetter}. ${currentWord.traceLetterName}. ${currentWord.arabic}.`, "ar-SA", false);
-      });
-
-      document.getElementById("repeatTraceBtn").addEventListener("click", () => {
-        speak(`${currentWord.traceLetter}. ${currentWord.traceLetter}.`, "ar-SA", true);
-      });
-
-      document.getElementById("listenPromptBtn").addEventListener("click", () => {
-        speak(`اكتب الحرف ${currentWord.traceLetter}. ثم قل الكلمة ${currentWord.arabic}.`, "ar-SA", false);
-      });
-
-      document.getElementById("saveTraceBtn").addEventListener("click", (e) => {
-        getTracker()?.markCompleted?.("arabicWords", `${currentWord.id}-trace`, {
-          letter: currentWord.traceLetter,
-          notes: document.getElementById("traceNotes").value.trim().length > 0,
-          whiteboardUsed: window.arabicWhiteboardUsed === true
+    function setupStaticButtons() {
+      document.querySelectorAll("[data-static-speak]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const text = btn.dataset.staticSpeak || "";
+          const lang = btn.dataset.lang || "en-US";
+          const repeat = btn.classList.contains("repeat-btn");
+          speak(text, lang, repeat);
         });
-        e.currentTarget.textContent = "✅ Practice saved!";
       });
+    }
 
-      document.getElementById("listenPhraseBtn").addEventListener("click", () => {
-        speak("هٰذَا قَمَرٌ", "ar-SA", false);
-      });
-
-      document.getElementById("repeatPhraseBtn").addEventListener("click", () => {
-        speak("هٰذَا قَمَرٌ", "ar-SA", true);
-      });
-
-      document.getElementById("completeSpeakingBtn").addEventListener("click", (e) => {
-        getTracker()?.markCompleted?.("arabicWords", "arabic-speaking-basic", { type: "speaking" });
-        e.currentTarget.textContent = "✅ Practiced!";
-        e.currentTarget.disabled = true;
-      });
-
-      document.getElementById("listenTipsBtn").addEventListener("click", () => {
-        speak("استمع أولاً. كرر ببطء. أحسنت.", "ar-SA", false);
+    function setupMainButtons() {
+      document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
+        speak("Choose the child age. Then choose one Arabic lesson from that age level.", "en-US", false);
       });
 
       document.querySelectorAll(".stop-sound").forEach(btn => btn.addEventListener("click", stopSound));
@@ -1811,11 +2325,14 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      renderLetters();
-      renderDailyWord();
+      renderCompactWorlds();
+      renderAgeTabs();
       setupWhiteboard();
+      renderActiveLevel();
       setupStaticButtons();
+      setupFunHoverEffects();
       setupMainButtons();
+
       setTimeout(() => {
         getTracker()?.renderAllProgressWidgets?.();
       }, 100);
