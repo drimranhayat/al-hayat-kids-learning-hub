@@ -6,15 +6,15 @@
 
   <title>English for Kids | Reading, Vocabulary, Grammar & Speaking | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Child-friendly English learning with vocabulary, phonics, reading practice, grammar, punctuation, speaking prompts, listening buttons, quizzes, and parent-guided activities." />
-  <meta name="keywords" content="English for kids, English learning for children, vocabulary for kids, reading practice for kids, grammar for kids, punctuation for kids, speaking practice for children, phonics for kids" />
+  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Child-friendly English learning with an automatic Word of the Day, picture clues, vocabulary, phonics, reading practice, grammar, punctuation, speaking prompts, listening buttons, quizzes, and parent-guided activities." />
+  <meta name="keywords" content="English for kids, English learning for children, vocabulary for kids, reading practice for kids, grammar for kids, punctuation for kids, speaking practice for children, phonics for kids, word of the day for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/english.html" />
 
   <meta property="og:title" content="English for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful English learning page with listening buttons, vocabulary, phonics, reading, grammar, punctuation, speaking, quizzes, and daily practice." />
+  <meta property="og:description" content="A joyful English learning page with an automatic Word of the Day, picture clues, listening buttons, vocabulary, phonics, reading, grammar, speaking, and daily practice." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -26,7 +26,6 @@
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-dark: #075985;
       --sky-soft: #e0f2fe;
       --orange: #f97316;
       --orange-dark: #c2410c;
@@ -38,7 +37,6 @@
       --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
-      --teal-dark: #0f766e;
       --teal-soft: #ccfbf1;
       --white: #ffffff;
       --light: #f8fbff;
@@ -51,15 +49,8 @@
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -71,16 +62,8 @@
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input,
-    textarea {
-      font: inherit;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
 
     .container {
       width: min(100% - 32px, var(--max));
@@ -150,8 +133,7 @@
       transition: 0.2s ease;
     }
 
-    .nav a:hover,
-    .nav a:focus {
+    .nav a:hover, .nav a:focus {
       background: var(--blue-soft);
       color: var(--blue-dark);
     }
@@ -198,14 +180,9 @@
       transition: 0.2s ease;
     }
 
-    .stop-sound:hover {
-      background: rgba(255,255,255,0.18);
-      transform: translateY(-1px);
-    }
+    .stop-sound:hover { background: rgba(255,255,255,0.18); transform: translateY(-1px); }
 
-    .hero {
-      padding: 64px 0 44px;
-    }
+    .hero { padding: 64px 0 44px; }
 
     .hero-card {
       display: grid;
@@ -244,9 +221,7 @@
       margin-bottom: 18px;
     }
 
-    h1 span {
-      color: var(--orange);
-    }
+    h1 span { color: var(--orange); }
 
     .hero p {
       max-width: 650px;
@@ -255,17 +230,14 @@
       margin-bottom: 22px;
     }
 
-    .buttons,
-    .sound-actions {
+    .buttons, .sound-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
     }
 
-    .btn,
-    .listen-btn,
-    .repeat-btn {
+    .btn, .listen-btn, .repeat-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -279,17 +251,9 @@
       text-align: center;
     }
 
-    .btn {
-      min-height: 48px;
-      padding: 12px 19px;
-    }
+    .btn { min-height: 48px; padding: 12px 19px; }
 
-    .btn:hover,
-    .btn:focus,
-    .listen-btn:hover,
-    .listen-btn:focus,
-    .repeat-btn:hover,
-    .repeat-btn:focus {
+    .btn:hover, .btn:focus, .listen-btn:hover, .listen-btn:focus, .repeat-btn:hover, .repeat-btn:focus {
       transform: translateY(-2px);
     }
 
@@ -366,10 +330,7 @@
       text-align: center;
     }
 
-    .child-card .emoji {
-      font-size: 4rem;
-      margin-bottom: 8px;
-    }
+    .child-card .emoji { font-size: 4rem; margin-bottom: 8px; }
 
     .child-card h2 {
       color: var(--blue-dark);
@@ -378,11 +339,7 @@
       margin-bottom: 10px;
     }
 
-    .child-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
+    .child-card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -407,9 +364,7 @@
       font-weight: 700;
     }
 
-    .section {
-      padding: 52px 0;
-    }
+    .section { padding: 52px 0; }
 
     .section-head {
       margin-bottom: 26px;
@@ -442,19 +397,13 @@
       margin-top: 8px;
     }
 
-    .method-grid,
-    .topics-grid,
-    .phonics-grid,
-    .pathway {
+    .method-grid, .topics-grid, .phonics-grid, .pathway {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .method-card,
-    .topic-card,
-    .phonics-card,
-    .path-card {
+    .method-card, .topic-card, .phonics-card, .path-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
@@ -463,15 +412,9 @@
       transition: 0.22s ease;
     }
 
-    .topic-card:hover,
-    .phonics-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-    }
+    .topic-card:hover, .phonics-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 
-    .method-card .icon,
-    .topic-card .icon,
-    .phonics-card .icon {
+    .method-card .icon, .topic-card .icon, .phonics-card .icon {
       width: 56px;
       height: 56px;
       border-radius: 18px;
@@ -499,18 +442,12 @@
     .topic-card:nth-child(7) .icon { background: var(--teal-soft); }
     .topic-card:nth-child(8) .icon { background: #ecfccb; }
 
-    .method-card h3,
-    .topic-card h3,
-    .phonics-card h3,
-    .path-card h3 {
+    .method-card h3, .topic-card h3, .phonics-card h3, .path-card h3 {
       color: #0f172a;
       margin-bottom: 7px;
     }
 
-    .method-card p,
-    .topic-card p,
-    .phonics-card p,
-    .path-card p {
+    .method-card p, .topic-card p, .phonics-card p, .path-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
@@ -522,8 +459,7 @@
       font-weight: 950;
     }
 
-    .learning-box,
-    .reading-box {
+    .learning-box, .reading-box {
       background:
         radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
         linear-gradient(135deg, #eff6ff, #ecfeff);
@@ -533,16 +469,14 @@
       box-shadow: var(--shadow);
     }
 
-    .daily-grid,
-    .reader-layout {
+    .daily-grid, .reader-layout {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
       margin-top: 22px;
     }
 
-    .daily-card,
-    .reader-card {
+    .daily-card, .reader-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
@@ -550,11 +484,7 @@
       box-shadow: var(--shadow-soft);
     }
 
-    .daily-card h3,
-    .reader-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
+    .daily-card h3, .reader-card h3 { color: #0f172a; margin-bottom: 8px; }
 
     .big-word {
       font-size: clamp(2.4rem, 5vw, 4rem);
@@ -565,35 +495,69 @@
       letter-spacing: -0.04em;
     }
 
-    .word-note {
+    .word-visual-card {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+
+    .visual-clue {
+      background: linear-gradient(135deg, #dbeafe, #fef3c7);
+      border: 1px solid #dbeafe;
+      border-radius: 24px;
+      min-height: 132px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .visual-clue .emoji {
+      font-size: 4.2rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .visual-clue strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 0.95rem;
+    }
+
+    .word-support {
+      display: grid;
+      gap: 12px;
+    }
+
+    .word-note, .sentence-box, .clue-box, .mini-task {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 14px;
-      margin-top: 12px;
       color: #334155;
       font-weight: 750;
     }
 
-    .sentence-box {
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      margin: 12px 0;
-      color: #334155;
-      font-weight: 800;
-      font-size: 1.05rem;
+    .sentence-box { font-weight: 800; font-size: 1.05rem; }
+    .clue-box strong, .mini-task strong, .word-note strong { color: #0f172a; }
+
+    .today-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
     }
 
-    .reader-passage {
-      color: #334155;
-      font-size: 1.05rem;
-    }
-
-    .reader-passage p {
-      margin-bottom: 12px;
-    }
+    .reader-passage { color: #334155; font-size: 1.05rem; }
+    .reader-passage p { margin-bottom: 12px; }
 
     .highlight {
       background: var(--yellow-soft);
@@ -619,9 +583,7 @@
       cursor: pointer;
     }
 
-    .quiz-options button:hover {
-      background: var(--blue-soft);
-    }
+    .quiz-options button:hover { background: var(--blue-soft); }
 
     .result {
       margin-top: 12px;
@@ -705,10 +667,7 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 {
-      color: white;
-    }
-
+    .cta h2 { color: white; }
     .cta p {
       color: rgba(255,255,255,0.78);
       margin-top: 10px;
@@ -727,10 +686,7 @@
       font-weight: 800;
     }
 
-    .cta-list li::before {
-      content: "✓ ";
-      color: #93c5fd;
-    }
+    .cta-list li::before { content: "✓ "; color: #93c5fd; }
 
     .footer {
       margin-top: 40px;
@@ -747,12 +703,8 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 {
-      margin-bottom: 12px;
-    }
-
-    .footer p,
-    .footer a {
+    .footer h3 { margin-bottom: 12px; }
+    .footer p, .footer a {
       color: rgba(255,255,255,0.72);
       font-weight: 650;
     }
@@ -770,37 +722,24 @@
     }
 
     @media (max-width: 980px) {
-      .hero-card,
-      .parent-box,
-      .cta {
+      .hero-card, .parent-box, .cta, .word-visual-card {
         grid-template-columns: 1fr;
       }
 
-      .method-grid,
-      .topics-grid,
-      .phonics-grid,
-      .pathway {
+      .method-grid, .topics-grid, .phonics-grid, .pathway {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .daily-grid,
-      .reader-layout {
+      .daily-grid, .reader-layout {
         grid-template-columns: 1fr;
       }
 
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .audio-bar {
-        top: 0;
-      }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
-      .container {
-        width: min(100% - 24px, var(--max));
-      }
+      .container { width: min(100% - 24px, var(--max)); }
 
       .top-inner {
         flex-direction: column;
@@ -808,44 +747,20 @@
         padding: 14px 0;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
+      .nav { justify-content: flex-start; }
 
-      .method-grid,
-      .topics-grid,
-      .phonics-grid,
-      .pathway,
-      .footer-grid {
+      .method-grid, .topics-grid, .phonics-grid, .pathway, .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .buttons,
-      .sound-actions {
-        display: grid;
-      }
+      .buttons, .sound-actions { display: grid; }
 
-      .btn,
-      .listen-btn,
-      .repeat-btn {
-        width: 100%;
-      }
+      .btn, .listen-btn, .repeat-btn { width: 100%; }
 
-      .hero {
-        padding-top: 28px;
-      }
-
-      .hero-visual {
-        min-height: 300px;
-      }
-
-      .section-head {
-        display: block;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
+      .hero { padding-top: 28px; }
+      .hero-visual { min-height: 300px; }
+      .section-head { display: block; }
+      .hero-stats { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -875,7 +790,7 @@
 
   <div class="audio-bar" aria-label="Audio learning controls">
     <div class="container audio-inner">
-      <p>🔊 Audio learning is now active. Click Listen, Repeat, or Stop Sound anytime.</p>
+      <p>🔊 Audio learning is active. Children can Listen, Repeat, and Stop Sound anytime.</p>
       <button class="stop-sound" type="button">⏹ Stop Sound</button>
     </div>
   </div>
@@ -928,7 +843,7 @@
             <h2 id="method-title">A strong English routine children enjoy</h2>
             <p class="section-lead">
               Young learners need sound, repetition, pictures, meaning, and real use. Every key activity
-              now includes listening support so children can hear and repeat.
+              includes listening support, and the Word of the Day now changes automatically.
             </p>
           </div>
         </div>
@@ -947,9 +862,9 @@
           </article>
 
           <article class="method-card">
-            <div class="icon">📖</div>
-            <h3>Read</h3>
-            <p>They read short, meaningful text with support and simple comprehension questions.</p>
+            <div class="icon">🖼️</div>
+            <h3>See</h3>
+            <p>Visual clues and picture-style icons help children connect the word with meaning instantly.</p>
           </article>
 
           <article class="method-card">
@@ -1094,20 +1009,37 @@
     <section class="section" id="practice" aria-labelledby="practice-title">
       <div class="container learning-box">
         <div class="section-label">Today’s English Practice</div>
-        <h2 id="practice-title">One word, one sentence, one small skill</h2>
+        <h2 id="practice-title">Automatic Word of the Day with visual meaning</h2>
         <p class="section-lead">
-          Children learn best through small daily practice. Each card includes listening support.
+          The Word of the Day changes automatically based on the date. It includes a child-friendly
+          visual clue, meaning, example sentence, audio, and a mini task.
         </p>
 
         <div class="daily-grid">
           <article class="daily-card">
             <h3>🌟 Word of the Day</h3>
-            <div class="big-word">brave</div>
-            <p><strong>Meaning:</strong> ready to do the right thing even when it feels difficult.</p>
-            <div class="sentence-box">The brave child told the truth.</div>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-speak="Word of the day. Brave. Brave means ready to do the right thing even when it feels difficult. The brave child told the truth." data-lang="en-US">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-speak="Brave. The brave child told the truth." data-lang="en-US">🔁 Repeat</button>
+            <div class="today-badge" id="todayBadge">📅 Loading today’s word...</div>
+            <div class="big-word" id="wordOfDay">brave</div>
+
+            <div class="word-visual-card">
+              <div class="visual-clue">
+                <div>
+                  <div class="emoji" id="wordEmoji">🦁</div>
+                  <strong id="visualTitle">Picture Clue</strong>
+                </div>
+              </div>
+
+              <div class="word-support">
+                <div class="word-note"><strong>Meaning:</strong> <span id="wordMeaning">ready to do the right thing even when it feels difficult.</span></div>
+                <div class="sentence-box" id="wordSentence">The brave child told the truth.</div>
+                <div class="clue-box"><strong>Visual clue:</strong> <span id="wordClue">Think of a child standing tall and telling the truth.</span></div>
+                <div class="mini-task"><strong>Mini task:</strong> <span id="wordTask">Say the word two times. Then use it in your own sentence.</span></div>
+              </div>
+            </div>
+
+            <div class="sound-actions" style="margin-top: 14px;">
+              <button class="listen-btn dynamic-word-listen" type="button">🔊 Listen</button>
+              <button class="repeat-btn dynamic-word-repeat" type="button">🔁 Repeat</button>
             </div>
           </article>
 
@@ -1325,15 +1257,15 @@
           <h2 id="parents-title">How to help children love English</h2>
           <p class="section-lead">
             English learning should feel safe, repeated, meaningful, and encouraging. Listening support
-            helps children hear rhythm and pronunciation before they speak.
+            and visual clues help children connect words with meaning more quickly.
           </p>
         </div>
 
         <div>
           <ul class="tips">
             <li>Use the Listen button first, then ask the child to repeat aloud.</li>
-            <li>Do not correct every small mistake immediately; protect confidence.</li>
-            <li>Ask children to use new words in their own sentences.</li>
+            <li>Show the child the visual clue before explaining the meaning.</li>
+            <li>Ask children to use the new word in their own sentence.</li>
             <li>Read short passages repeatedly because repetition builds fluency.</li>
             <li>Keep practice short: 10 focused minutes every day is powerful.</li>
           </ul>
@@ -1420,6 +1352,130 @@
     const result = document.getElementById("result");
     const stopButtons = document.querySelectorAll(".stop-sound");
 
+    const englishDailyWords = [
+      {
+        word: "brave",
+        meaning: "ready to do the right thing even when it feels difficult",
+        sentence: "The brave child told the truth.",
+        task: "Say the word two times. Then use it in your own sentence.",
+        clue: "Think of a child standing tall and telling the truth.",
+        emoji: "🦁"
+      },
+      {
+        word: "kind",
+        meaning: "gentle, caring, and helpful to others",
+        sentence: "A kind girl shared her lunch with her friend.",
+        task: "Tell one kind thing you can do today.",
+        clue: "Picture a child helping a friend with a smile.",
+        emoji: "💛"
+      },
+      {
+        word: "honest",
+        meaning: "truthful and not cheating or lying",
+        sentence: "An honest boy returned the lost pencil.",
+        task: "Use honest in a sentence about school or home.",
+        clue: "Imagine someone finding something and returning it.",
+        emoji: "🤝"
+      },
+      {
+        word: "curious",
+        meaning: "wanting to learn or know more",
+        sentence: "The curious child asked many good questions.",
+        task: "Ask one curious question about something you see.",
+        clue: "Think of a child looking closely and asking why.",
+        emoji: "🔎"
+      },
+      {
+        word: "gentle",
+        meaning: "soft, calm, and careful in action",
+        sentence: "Be gentle when you hold the baby bird.",
+        task: "Say gentle and show a gentle action.",
+        clue: "Imagine careful hands touching something softly.",
+        emoji: "🕊️"
+      },
+      {
+        word: "patient",
+        meaning: "able to wait calmly without getting upset",
+        sentence: "The patient boy waited for his turn.",
+        task: "Tell when you had to wait patiently.",
+        clue: "Picture a child sitting calmly in a line.",
+        emoji: "⏳"
+      },
+      {
+        word: "helpful",
+        meaning: "willing to help others",
+        sentence: "My helpful sister cleaned the table.",
+        task: "Name one helpful job you can do at home.",
+        clue: "Think of hands helping with a small task.",
+        emoji: "🧹"
+      },
+      {
+        word: "careful",
+        meaning: "doing things with attention to avoid mistakes or harm",
+        sentence: "Be careful when you carry a glass of water.",
+        task: "Show one careful action with your hands.",
+        clue: "Imagine walking slowly with something easy to spill.",
+        emoji: "🚶"
+      },
+      {
+        word: "cheerful",
+        meaning: "happy and bright in mood",
+        sentence: "Her cheerful smile made everyone happy.",
+        task: "Say the word and smile while you say it.",
+        clue: "Think of a smiling face brightening the room.",
+        emoji: "😊"
+      },
+      {
+        word: "thankful",
+        meaning: "feeling grateful for kindness or blessings",
+        sentence: "We are thankful for our family and home.",
+        task: "Say one thing you are thankful for today.",
+        clue: "Picture a child saying thank you with a happy heart.",
+        emoji: "🙏"
+      },
+      {
+        word: "neat",
+        meaning: "clean, tidy, and well arranged",
+        sentence: "Her notebook is neat and easy to read.",
+        task: "Look at your desk. How can you make it neat?",
+        clue: "Imagine books and pencils arranged nicely.",
+        emoji: "📚"
+      },
+      {
+        word: "polite",
+        meaning: "showing good manners and respect",
+        sentence: "The polite child said please and thank you.",
+        task: "Use polite in a sentence with please or thank you.",
+        clue: "Think of a child greeting others kindly.",
+        emoji: "🙂"
+      },
+      {
+        word: "creative",
+        meaning: "good at making new ideas, art, or solutions",
+        sentence: "The creative child made a castle from boxes.",
+        task: "Name one creative thing you want to make.",
+        clue: "Picture paints, blocks, and a child building something new.",
+        emoji: "🎨"
+      },
+      {
+        word: "active",
+        meaning: "moving, energetic, and ready to do things",
+        sentence: "The active boy enjoyed running in the park.",
+        task: "Tell one active game you like to play.",
+        clue: "Imagine a child jumping, running, or playing outside.",
+        emoji: "🏃"
+      }
+    ];
+
+    let currentWordData = englishDailyWords[0];
+
+    function getDayOfYear(date = new Date()) {
+      const start = new Date(date.getFullYear(), 0, 0);
+      const diff = date - start;
+      const oneDay = 1000 * 60 * 60 * 24;
+      return Math.floor(diff / oneDay);
+    }
+
     function speakText(text, lang, repeat = false) {
       if (!("speechSynthesis" in window)) {
         alert("Sorry, your browser does not support audio reading.");
@@ -1448,6 +1504,28 @@
       window.speechSynthesis.speak(firstSpeech);
     }
 
+    function buildWordAudioText(item) {
+      return `Word of the day. ${item.word}. ${item.word} means ${item.meaning}. Example sentence. ${item.sentence}. Mini task. ${item.task}`;
+    }
+
+    function buildWordRepeatText(item) {
+      return `${item.word}. ${item.word}. ${item.sentence}`;
+    }
+
+    function updateWordOfDay() {
+      const dayIndex = getDayOfYear(new Date()) % englishDailyWords.length;
+      currentWordData = englishDailyWords[dayIndex];
+
+      document.getElementById("todayBadge").textContent = `📅 Today’s word changes automatically`;
+      document.getElementById("wordOfDay").textContent = currentWordData.word;
+      document.getElementById("wordMeaning").textContent = currentWordData.meaning;
+      document.getElementById("wordSentence").textContent = currentWordData.sentence;
+      document.getElementById("wordTask").textContent = currentWordData.task;
+      document.getElementById("wordClue").textContent = currentWordData.clue;
+      document.getElementById("wordEmoji").textContent = currentWordData.emoji;
+      document.getElementById("visualTitle").textContent = `${currentWordData.word} clue`;
+    }
+
     document.querySelectorAll(".listen-btn").forEach((button) => {
       button.addEventListener("click", () => {
         speakText(button.dataset.speak, button.dataset.lang, false);
@@ -1457,6 +1535,18 @@
     document.querySelectorAll(".repeat-btn").forEach((button) => {
       button.addEventListener("click", () => {
         speakText(button.dataset.speak, button.dataset.lang, true);
+      });
+    });
+
+    document.querySelectorAll(".dynamic-word-listen").forEach((button) => {
+      button.addEventListener("click", () => {
+        speakText(buildWordAudioText(currentWordData), "en-US", false);
+      });
+    });
+
+    document.querySelectorAll(".dynamic-word-repeat").forEach((button) => {
+      button.addEventListener("click", () => {
+        speakText(buildWordRepeatText(currentWordData), "en-US", true);
       });
     });
 
@@ -1487,6 +1577,8 @@
         window.speechSynthesis.cancel();
       }
     });
+
+    updateWordOfDay();
   </script>
 </body>
 </html>
