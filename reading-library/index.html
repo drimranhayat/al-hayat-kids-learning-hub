@@ -1173,6 +1173,348 @@
         border-radius: 26px;
       }
     }
+
+    /* === Premium Kids Interaction Upgrade === */
+    :root {
+      --pink: #ec4899;
+      --lime: #84cc16;
+      --gold: #facc15;
+      --cyan: #06b6d4;
+    }
+
+    ::selection {
+      background: #fde68a;
+      color: var(--ink);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      pointer-events: none;
+      z-index: -1;
+      border-radius: 999px;
+      filter: blur(2px);
+      opacity: 0.42;
+      animation: softDrift 13s ease-in-out infinite;
+    }
+
+    body::before {
+      width: 240px;
+      height: 240px;
+      left: -90px;
+      top: 28%;
+      background: radial-gradient(circle, rgba(250, 204, 21, 0.45), transparent 68%);
+    }
+
+    body::after {
+      width: 280px;
+      height: 280px;
+      right: -110px;
+      top: 56%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.32), transparent 68%);
+      animation-delay: 2.5s;
+    }
+
+    @keyframes softDrift {
+      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+      50% { transform: translate3d(18px, -26px, 0) scale(1.08); }
+    }
+
+    .btn,
+    .mini-btn,
+    .chip,
+    .nav-links a,
+    .topbar-links a {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn::before,
+    .mini-btn::before,
+    .chip::before,
+    .nav-links a::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.46), transparent);
+      transform: translateX(-130%);
+      transition: 0.55s ease;
+    }
+
+    .btn:hover::before,
+    .mini-btn:hover::before,
+    .chip:hover::before,
+    .nav-links a:hover::before {
+      opacity: 1;
+      transform: translateX(130%);
+    }
+
+    .btn:hover,
+    .mini-btn:hover,
+    .chip:hover,
+    .nav-links a:hover {
+      transform: translateY(-3px) scale(1.025);
+      box-shadow: 0 18px 38px rgba(15, 39, 71, 0.16);
+    }
+
+    .btn:active,
+    .mini-btn:active,
+    .chip:active,
+    .nav-links a:active,
+    .story-card:active,
+    .path-card:active {
+      transform: translateY(1px) scale(0.985);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    }
+
+    .btn-secondary:hover {
+      background: linear-gradient(135deg, #fff7ed, #eff6ff);
+      color: var(--blue);
+      border-color: #bfdbfe;
+    }
+
+    .btn-green:hover {
+      background: linear-gradient(135deg, #22c55e, #06b6d4);
+    }
+
+    .btn-orange:hover {
+      background: linear-gradient(135deg, #f43f5e, #f59e0b);
+    }
+
+    .mini-btn:hover {
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+    }
+
+    .chip:nth-child(2):hover,
+    .chip:nth-child(2).active { background: linear-gradient(135deg, #fb7185, #f97316); border-color: transparent; }
+    .chip:nth-child(3):hover,
+    .chip:nth-child(3).active { background: linear-gradient(135deg, #f59e0b, #facc15); border-color: transparent; color: #422006; }
+    .chip:nth-child(4):hover,
+    .chip:nth-child(4).active { background: linear-gradient(135deg, #10b981, #38bdf8); border-color: transparent; }
+    .chip:nth-child(5):hover,
+    .chip:nth-child(5).active { background: linear-gradient(135deg, #8b5cf6, #ec4899); border-color: transparent; }
+    .chip:nth-child(6):hover,
+    .chip:nth-child(6).active { background: linear-gradient(135deg, #2563eb, #14b8a6); border-color: transparent; }
+
+    .story-card,
+    .path-card,
+    .parent-card,
+    .word-card,
+    .tracker-box,
+    .stat-card {
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+    }
+
+    .path-card:hover,
+    .parent-card:hover,
+    .word-card:hover,
+    .tracker-box:hover,
+    .stat-card:hover {
+      transform: translateY(-6px);
+      border-color: #bfdbfe;
+      box-shadow: 0 22px 48px rgba(15, 39, 71, 0.14);
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+    }
+
+    .story-card::after,
+    .path-card::after,
+    .word-card::after {
+      content: "✨";
+      position: absolute;
+      right: 18px;
+      bottom: 12px;
+      opacity: 0;
+      transform: translateY(10px) scale(0.85);
+      transition: 0.25s ease;
+      pointer-events: none;
+    }
+
+    .story-card {
+      position: relative;
+    }
+
+    .story-card:hover::after,
+    .path-card:hover::after,
+    .word-card:hover::after {
+      opacity: 0.9;
+      transform: translateY(0) scale(1);
+    }
+
+    .story-card:hover .story-icon {
+      animation: iconWiggle 0.62s ease both;
+    }
+
+    @keyframes iconWiggle {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      22% { transform: rotate(-8deg) scale(1.08); }
+      52% { transform: rotate(8deg) scale(1.08); }
+      75% { transform: rotate(-3deg) scale(1.04); }
+    }
+
+    .hero-pills span {
+      animation: pillPop 4.8s ease-in-out infinite;
+    }
+
+    .hero-pills span:nth-child(2) { animation-delay: 0.4s; }
+    .hero-pills span:nth-child(3) { animation-delay: 0.8s; }
+    .hero-pills span:nth-child(4) { animation-delay: 1.2s; }
+    .hero-pills span:nth-child(5) { animation-delay: 1.6s; }
+
+    @keyframes pillPop {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .book-card:hover {
+      transform: translateY(-6px) rotate(0deg) !important;
+      box-shadow: 0 24px 55px rgba(15, 39, 71, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .sound-toggle {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 160;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 12px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 950;
+      color: white;
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      box-shadow: 0 18px 45px rgba(15, 39, 71, 0.18);
+      transition: 0.25s ease;
+    }
+
+    .sound-toggle:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: linear-gradient(135deg, #2563eb, #14b8a6);
+    }
+
+    .sound-toggle.off {
+      background: linear-gradient(135deg, #64748b, #334155);
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 84px;
+      transform: translate(-50%, 22px);
+      z-index: 220;
+      width: min(92%, 460px);
+      background: white;
+      color: var(--ink);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 12px 18px;
+      box-shadow: 0 22px 55px rgba(15, 39, 71, 0.18);
+      text-align: center;
+      font-weight: 950;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.28s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    #confettiLayer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 210;
+      overflow: hidden;
+    }
+
+    .confetti-piece {
+      position: absolute;
+      width: 10px;
+      height: 14px;
+      border-radius: 4px;
+      opacity: 0.95;
+      animation: confettiFall 920ms ease-out forwards;
+    }
+
+    @keyframes confettiFall {
+      0% { transform: translateY(-10px) rotate(0deg) scale(1); opacity: 1; }
+      100% { transform: translateY(150px) rotate(240deg) scale(0.85); opacity: 0; }
+    }
+
+    .ripple {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.55);
+      transform: translate(-50%, -50%) scale(0);
+      animation: ripple 0.62s ease-out forwards;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: translate(-50%, -50%) scale(14);
+        opacity: 0;
+      }
+    }
+
+    .story-card.read-glow {
+      border-color: #86efac;
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.15), 0 20px 48px rgba(15, 39, 71, 0.14);
+    }
+
+    .mission-card.completed {
+      outline: 4px solid rgba(255, 255, 255, 0.48);
+      transform: translateY(-4px);
+    }
+
+    .quiz-options button {
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quiz-options button:hover {
+      transform: translateX(5px);
+      box-shadow: 0 10px 24px rgba(15, 39, 71, 0.08);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .sound-toggle {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 13px;
+        font-size: 0.9rem;
+      }
+
+      .toast {
+        bottom: 74px;
+        border-radius: 20px;
+      }
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -1197,13 +1539,18 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Turn kids sounds on or off">
+    🔊 Sounds On
+  </button>
+
   <div class="topbar">
     <div class="container topbar-inner">
       <span>📚 Safe reading • Short stories • Islamic values • Parent-guided learning</span>
       <div class="topbar-links">
         <a href="#daily-reading">Today’s Reading</a>
+        <a href="#story-shelf">Story Shelf</a>
         <a href="#quiz">Reading Quiz</a>
-        <a href="../online-classes.html">Online Classes</a>
+        <a href="#parents">Parent Guide</a>
       </div>
     </div>
   </div>
@@ -1222,14 +1569,14 @@
 
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="../index.html">Home</a>
-        <a href="../subjects/english.html">English</a>
-        <a href="../subjects/islamic-studies.html">Islamic</a>
-        <a href="../subjects/arabic-for-kids.html">Arabic</a>
-        <a href="../subjects/math.html">Math</a>
-        <a href="../subjects/science.html">Science</a>
-        <a href="../subjects/general-knowledge.html">GK</a>
-        <a class="active" href="index.html">Stories</a>
-        <a class="nav-cta" href="../online-classes.html">Online Classes</a>
+        <a href="#age-paths">Age Levels</a>
+        <a href="#daily-reading">Find Story</a>
+        <a class="active" href="#story-shelf">Stories</a>
+        <a href="#missions">Missions</a>
+        <a href="#tracker">Progress</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#parents">Parents</a>
+        <a class="nav-cta" href="#online-help">Reading Help</a>
       </nav>
     </div>
   </header>
@@ -1898,21 +2245,21 @@
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="index.html">Reading Library</a></li>
-          <li><a href="../worksheets/index.html">Worksheets</a></li>
-          <li><a href="../activities/index.html">Activities</a></li>
-          <li><a href="../videos/index.html">Videos</a></li>
-          <li><a href="../islamic-corner/daily-duas.html">Daily Duas</a></li>
+          <li><a href="#story-shelf">Story Shelf</a></li>
+          <li><a href="#missions">Reading Missions</a></li>
+          <li><a href="#quiz">Reading Quiz</a></li>
+          <li><a href="#vocabulary">Vocabulary Builder</a></li>
+          <li><a href="#parents">Parent Guide</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Parent & Trust</h4>
         <ul>
-          <li><a href="../online-classes.html">Online Classes</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="#online-help">Reading Help</a></li>
+          <li><a href="#daily-reading">Find a Story</a></li>
+          <li><a href="#tracker">Progress Tracker</a></li>
+          <li><a href="#parents">Parent & Teacher Guide</a></li>
         </ul>
       </div>
     </div>
@@ -1921,6 +2268,9 @@
       © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
     </div>
   </footer>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <div class="toast" id="rewardToast" role="status" aria-live="polite">Great job! ⭐</div>
 
   <div class="modal" id="storyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-card">
@@ -2335,6 +2685,230 @@
         closeStory();
       }
     });
+
+
+    /* === Premium Kids Sound + Reward System === */
+    const soundPrefKey = "alhayatReadingSounds";
+    let soundOn = localStorage.getItem(soundPrefKey) !== "off";
+    let audioContext = null;
+
+    function initAudio() {
+      if (!soundOn) return null;
+      if (!audioContext) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return null;
+        audioContext = new AudioContextClass();
+      }
+      if (audioContext.state === "suspended") {
+        audioContext.resume();
+      }
+      return audioContext;
+    }
+
+    function playTone(freq = 440, duration = 0.08, type = "sine", volume = 0.04, delay = 0) {
+      if (!soundOn) return;
+      const ctx = initAudio();
+      if (!ctx) return;
+
+      const oscillator = ctx.createOscillator();
+      const gain = ctx.createGain();
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(freq, ctx.currentTime + delay);
+      gain.gain.setValueAtTime(0.0001, ctx.currentTime + delay);
+      gain.gain.exponentialRampToValueAtTime(volume, ctx.currentTime + delay + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + duration);
+
+      oscillator.connect(gain);
+      gain.connect(ctx.destination);
+      oscillator.start(ctx.currentTime + delay);
+      oscillator.stop(ctx.currentTime + delay + duration + 0.02);
+    }
+
+    function playSound(kind = "click") {
+      if (!soundOn) return;
+
+      const patterns = {
+        hover: [[620, 0.035, "sine", 0.022]],
+        click: [[520, 0.055, "triangle", 0.035], [720, 0.055, "triangle", 0.028, 0.055]],
+        open: [[392, 0.07, "sine", 0.035], [523, 0.08, "sine", 0.035, 0.075], [659, 0.09, "sine", 0.03, 0.15]],
+        correct: [[523, 0.07, "triangle", 0.04], [659, 0.08, "triangle", 0.035, 0.07], [784, 0.12, "triangle", 0.035, 0.15]],
+        wrong: [[220, 0.09, "sawtooth", 0.025], [175, 0.12, "sawtooth", 0.018, 0.09]],
+        star: [[659, 0.06, "sine", 0.035], [784, 0.06, "sine", 0.035, 0.065], [988, 0.12, "sine", 0.03, 0.13]],
+        filter: [[330, 0.04, "square", 0.018], [440, 0.05, "square", 0.018, 0.05]],
+        close: [[420, 0.05, "sine", 0.02], [260, 0.08, "sine", 0.018, 0.055]]
+      };
+
+      (patterns[kind] || patterns.click).forEach(note => playTone(...note));
+    }
+
+    function updateSoundToggle() {
+      const btn = document.getElementById("soundToggle");
+      if (!btn) return;
+      btn.textContent = soundOn ? "🔊 Sounds On" : "🔇 Sounds Off";
+      btn.classList.toggle("off", !soundOn);
+    }
+
+    function toggleSounds() {
+      soundOn = !soundOn;
+      localStorage.setItem(soundPrefKey, soundOn ? "on" : "off");
+      updateSoundToggle();
+      if (soundOn) {
+        playSound("star");
+        showToast("Sounds are on! 🔊✨");
+      } else {
+        showToast("Sounds are off. 🔇");
+        stopSpeaking();
+      }
+    }
+
+    function showToast(message = "Great job! ⭐") {
+      const toast = document.getElementById("rewardToast");
+      if (!toast) return;
+
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    function burstConfetti(originElement) {
+      const layer = document.getElementById("confettiLayer");
+      if (!layer) return;
+
+      const colors = ["#2563eb", "#14b8a6", "#f97316", "#fb7185", "#8b5cf6", "#facc15", "#22c55e"];
+      const rect = originElement && originElement.getBoundingClientRect
+        ? originElement.getBoundingClientRect()
+        : { left: window.innerWidth / 2, top: window.innerHeight / 2, width: 0, height: 0 };
+
+      const startX = rect.left + rect.width / 2;
+      const startY = rect.top + rect.height / 2;
+
+      for (let i = 0; i < 24; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.style.left = `${startX + (Math.random() * 90 - 45)}px`;
+        piece.style.top = `${startY + (Math.random() * 22 - 11)}px`;
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.transform = `rotate(${Math.random() * 180}deg)`;
+        piece.style.animationDelay = `${Math.random() * 0.12}s`;
+        layer.appendChild(piece);
+        setTimeout(() => piece.remove(), 1100);
+      }
+    }
+
+    function addRipple(event) {
+      const target = event.target.closest("button, .btn, .mini-btn, .chip, .nav-links a, .topbar-links a");
+      if (!target) return;
+
+      const rect = target.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      ripple.style.left = `${event.clientX - rect.left}px`;
+      ripple.style.top = `${event.clientY - rect.top}px`;
+      target.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 680);
+    }
+
+    function attachKidsInteractions() {
+      document.addEventListener("pointerdown", event => {
+        const target = event.target.closest("button, .btn, .mini-btn, .chip, .nav-links a, .topbar-links a");
+        if (target) {
+          initAudio();
+          playSound("click");
+          addRipple(event);
+        }
+      });
+
+      document.querySelectorAll("button, .btn, .mini-btn, .chip, .story-card, .path-card, .word-card").forEach(item => {
+        item.addEventListener("mouseenter", () => playSound("hover"));
+      });
+
+      document.querySelectorAll("[data-age], [data-type]").forEach(item => {
+        item.addEventListener("click", () => {
+          playSound("filter");
+          showToast("Filter applied! 🔎");
+        });
+      });
+    }
+
+    const originalOpenStory = openStory;
+    openStory = function(id) {
+      originalOpenStory(id);
+      playSound("open");
+      const story = stories[id];
+      showToast(story ? `Opened: ${story.title} 📖` : "Story opened 📖");
+    };
+
+    const originalCloseStory = closeStory;
+    closeStory = function() {
+      playSound("close");
+      originalCloseStory();
+    };
+
+    const originalMarkStoryRead = markStoryRead;
+    markStoryRead = function(id) {
+      const alreadyRead = getProgress().stories.includes(id);
+      originalMarkStoryRead(id);
+
+      const card = document.querySelector(`.story-card[data-id="${id}"]`);
+      if (card) {
+        card.classList.add("read-glow");
+        setTimeout(() => card.classList.remove("read-glow"), 950);
+      }
+
+      if (!alreadyRead) {
+        playSound("star");
+        burstConfetti(card || document.body);
+        showToast("Excellent reading! +3 stars ⭐");
+      } else {
+        showToast("Already completed. Keep reading! ✅");
+      }
+    };
+
+    const originalCompleteMission = completeMission;
+    completeMission = function(mission) {
+      const alreadyDone = getProgress().missions.includes(mission);
+      originalCompleteMission(mission);
+
+      const clickEvent = typeof window.event !== "undefined" ? window.event : null;
+      const button = clickEvent && clickEvent.target ? clickEvent.target : null;
+      const missionCard = button ? button.closest(".mission-card") : null;
+      if (missionCard) missionCard.classList.add("completed");
+
+      if (!alreadyDone) {
+        playSound("correct");
+        burstConfetti(missionCard || document.body);
+        showToast("Mission complete! +2 stars 🌟");
+      } else {
+        showToast("Mission already done! ✅");
+      }
+    };
+
+    const originalCheckAnswer = checkAnswer;
+    checkAnswer = function(button, isCorrect) {
+      originalCheckAnswer(button, isCorrect);
+      if (isCorrect) {
+        playSound("correct");
+        burstConfetti(button);
+        showToast("Correct answer! Brilliant! 🎉");
+      } else {
+        playSound("wrong");
+        showToast("Try the next one carefully. 💪");
+      }
+    };
+
+    const originalSpeakText = speakText;
+    speakText = function(text) {
+      initAudio();
+      playSound("open");
+      originalSpeakText(text);
+      showToast("Listening mode started. 🔊");
+    };
+
+    document.getElementById("soundToggle").addEventListener("click", toggleSounds);
+    updateSoundToggle();
+    attachKidsInteractions();
+
 
     updateTracker();
   </script>
