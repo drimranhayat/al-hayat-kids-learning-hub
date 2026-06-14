@@ -806,32 +806,166 @@
     return items;
   }
 
+  /*
+    Natural kid-friendly voice helper
+
+    Important:
+    - Browser speech voices depend on the child/parent device and browser.
+    - This function tries to choose the most natural available voice.
+    - It prefers high-quality English voices when available.
+    - It uses a slightly slower rate and warm pitch for children.
+    - No autoplay is used; sound starts only after the child/parent clicks a button.
+  */
+
+  function getAvailableVoices() {
+    if (!("speechSynthesis" in window)) {
+      return [];
+    }
+
+    return window.speechSynthesis.getVoices() || [];
+  }
+
+  function scoreVoice(voice, lang) {
+    const requestedLang = (lang || "en-US").toLowerCase();
+    const voiceName = (voice.name || "").toLowerCase();
+    const voiceLang = (voice.lang || "").toLowerCase();
+    let score = 0;
+
+    if (voiceLang === requestedLang) score += 60;
+    if (voiceLang.startsWith(requestedLang.split("-")[0])) score += 35;
+
+    /*
+      Common browser/device voices that often sound more natural.
+      The exact voice list changes by browser and operating system.
+    */
+    const preferredNames = [
+      "google us english",
+      "google uk english female",
+      "google uk english male",
+      "microsoft aria",
+      "microsoft jenny",
+      "microsoft michelle",
+      "microsoft libby",
+      "samantha",
+      "victoria",
+      "karen",
+      "serena",
+      "moira",
+      "daniel"
+    ];
+
+    preferredNames.forEach((name, index) => {
+      if (voiceName.includes(name)) {
+        score += 50 - index;
+      }
+    });
+
+    if (voiceName.includes("female")) score += 6;
+    if (voiceName.includes("child")) score += 10;
+    if (voice.localService) score += 3;
+
+    return score;
+  }
+
+  function chooseBestVoice(lang) {
+    const voices = getAvailableVoices();
+
+    if (!voices.length) {
+      return null;
+    }
+
+    return voices
+      .slice()
+      .sort((a, b) => scoreVoice(b, lang) - scoreVoice(a, lang))[0] || null;
+  }
+
+  function createSpeechUtterance(text, lang, options) {
+    const speech = new SpeechSynthesisUtterance(text);
+    const selectedLang = lang || "en-US";
+    const selectedVoice = chooseBestVoice(selectedLang);
+
+    speech.lang = selectedLang;
+
+    if (selectedVoice) {
+      speech.voice = selectedVoice;
+    }
+
+    /*
+      Kid-friendly settings:
+      - rate below 1.0 keeps pronunciation clearer
+      - pitch slightly above 1.0 sounds warmer on many devices
+      - volume kept at 1 for clarity
+    */
+    speech.rate = options?.rate || 0.82;
+    speech.pitch = options?.pitch || 1.08;
+    speech.volume = options?.volume || 1;
+
+    return speech;
+  }
+
   function speakText(text, lang, repeat) {
     if (!("speechSynthesis" in window)) {
       alert("Sorry, your browser does not support audio reading.");
       return;
     }
 
-    window.speechSynthesis.cancel();
+    if (!text || !String(text).trim()) {
+      return;
+    }
 
-    const firstSpeech = new SpeechSynthesisUtterance(text);
-    firstSpeech.lang = lang || "en-US";
-    firstSpeech.rate = 0.82;
-    firstSpeech.pitch = 1;
-    firstSpeech.volume = 1;
+    const speakNow = function () {
+      window.speechSynthesis.cancel();
 
-    if (repeat) {
-      firstSpeech.onend = function () {
-        const secondSpeech = new SpeechSynthesisUtterance(text);
-        secondSpeech.lang = lang || "en-US";
-        secondSpeech.rate = 0.76;
-        secondSpeech.pitch = 1;
-        secondSpeech.volume = 1;
-        window.speechSynthesis.speak(secondSpeech);
+      const firstSpeech = createSpeechUtterance(text, lang || "en-US", {
+        rate: 0.82,
+        pitch: 1.08,
+        volume: 1
+      });
+
+      if (repeat) {
+        firstSpeech.onend = function () {
+          const secondSpeech = createSpeechUtterance(text, lang || "en-US", {
+            rate: 0.76,
+            pitch: 1.08,
+            volume: 1
+          });
+
+          window.speechSynthesis.speak(secondSpeech);
+        };
+      }
+
+      window.speechSynthesis.speak(firstSpeech);
+    };
+
+    /*
+      Some browsers load voices asynchronously. If voices are not ready,
+      wait briefly, then speak with the best available voice.
+    */
+    if (getAvailableVoices().length === 0) {
+      window.speechSynthesis.onvoiceschanged = speakNow;
+      window.setTimeout(speakNow, 300);
+    } else {
+      speakNow();
+    }
+  }
+
+  function getBestVoiceInfo(lang) {
+    const voice = chooseBestVoice(lang || "en-US");
+
+    if (!voice) {
+      return {
+        available: false,
+        name: "Default browser voice",
+        lang: lang || "en-US"
       };
     }
 
-    window.speechSynthesis.speak(firstSpeech);
+    return {
+      available: true,
+      name: voice.name,
+      lang: voice.lang,
+      localService: voice.localService
+    };
   }
 
   function stopSpeech() {
@@ -851,6 +985,7 @@
     getCategoryProgressTotal,
     getReviewItems,
     speakText,
+    getBestVoiceInfo,
     stopSpeech
   };
 })();
