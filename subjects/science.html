@@ -1,1 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Science for Kids | Space, Animals, Plants & Experiments | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="Science for Kids at Al-Hayat Kids Learning Hub. Explore space, animals, plants, the human body, weather, water cycle, simple experiments, daily science facts, quizzes, and safe parent-guided activities." />
+  <meta name="keywords" content="science for kids, science explorer, space for kids, animals for kids, plants for kids, water cycle for kids, simple science experiments, science quiz for children" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/science.html" />
+
+  <meta property="og:title" content="Science for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A joyful child-friendly Science learning page with space, animals, plants, weather, water cycle, experiments, quizzes, and discovery activities." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --green: #138a3d;
+      --green-dark: #075c2a;
+      --green-soft: #e8f8ee;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --sky: #38bdf8;
+      --sky-dark: #075985;
+      --sky-soft: #e0f2fe;
+      --orange: #f97316;
+      --orange-soft: #ffedd5;
+      --yellow: #f6c445;
+      --yellow-soft: #fef3c7;
+      --purple: #7c3aed;
+      --purple-soft: #ede9fe;
+      --pink: #ec4899;
+      --pink-soft: #fce7f3;
+      --teal: #14b8a6;
+      --teal-dark: #0f766e;
+      --teal-soft: #ccfbf1;
+      --white: #ffffff;
+      --light: #f8fbff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 28rem),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.20), transparent 24rem),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .top-header {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      backdrop-filter: blur(16px);
+    }
+
+    .top-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      color: var(--green-dark);
+    }
+
+    .brand-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--teal), var(--sky));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.6rem;
+      box-shadow: 0 12px 24px rgba(20, 184, 166, 0.22);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: -2px;
+      font-size: 0.78rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      background: var(--teal-soft);
+      color: var(--teal-dark);
+    }
+
+    .nav .cta {
+      background: var(--yellow);
+      color: #111827;
+      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
+    }
+
+    .hero {
+      padding: 64px 0 44px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+      background:
+        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.35), transparent 14rem),
+        radial-gradient(circle at 20% 80%, rgba(20, 184, 166, 0.22), transparent 16rem),
+        linear-gradient(135deg, #ecfeff, #f0fdf4);
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      overflow: hidden;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--teal-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 5.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      color: var(--teal-dark);
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: var(--blue-dark);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: #334155;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 19px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 0;
+      cursor: pointer;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--teal), var(--sky));
+      color: white;
+      box-shadow: 0 14px 28px rgba(20, 184, 166, 0.22);
+    }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: #111827;
+      box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--teal-dark);
+      border: 1px solid var(--border);
+    }
+
+    .hero-visual {
+      min-height: 390px;
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
+        linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.35));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 950;
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
+    }
+
+    .sun {
+      width: 90px;
+      height: 90px;
+      background: var(--yellow);
+      left: 32px;
+      top: 34px;
+      color: #92400e;
+    }
+
+    .earth {
+      width: 74px;
+      height: 74px;
+      background: linear-gradient(135deg, var(--blue), var(--green));
+      right: 48px;
+      top: 84px;
+      color: white;
+    }
+
+    .moon {
+      width: 46px;
+      height: 46px;
+      background: #e5e7eb;
+      right: 128px;
+      top: 34px;
+      color: #475569;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border: 3px dashed rgba(14, 116, 144, 0.15);
+      border-radius: 50%;
+      transform: rotate(-14deg);
+    }
+
+    .child-card {
+      width: min(92%, 430px);
+      background: white;
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .child-card .emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .child-card h2 {
+      color: var(--teal-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .child-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .hero-stat {
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 12px;
+      font-weight: 900;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .section-label {
+      color: var(--teal-dark);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      margin-bottom: 6px;
+    }
+
+    .section h2 {
+      color: #0f172a;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+      max-width: 760px;
+      margin-top: 8px;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .method-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .method-card .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--teal-soft);
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+    }
+
+    .method-card:nth-child(2) .icon { background: var(--yellow-soft); }
+    .method-card:nth-child(3) .icon { background: var(--blue-soft); }
+    .method-card:nth-child(4) .icon { background: var(--purple-soft); }
+
+    .method-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
+
+    .method-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .topic-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
+      min-height: 215px;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .topic-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.9rem;
+      margin-bottom: 16px;
+      background: var(--teal-soft);
+    }
+
+    .topic-card:nth-child(2) .topic-icon { background: var(--blue-soft); }
+    .topic-card:nth-child(3) .topic-icon { background: var(--green-soft); }
+    .topic-card:nth-child(4) .topic-icon { background: var(--yellow-soft); }
+    .topic-card:nth-child(5) .topic-icon { background: var(--orange-soft); }
+    .topic-card:nth-child(6) .topic-icon { background: var(--pink-soft); }
+    .topic-card:nth-child(7) .topic-icon { background: var(--purple-soft); }
+    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
+
+    .topic-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 1.18rem;
+    }
+
+    .topic-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-bottom: 14px;
+    }
+
+    .topic-card a {
+      color: var(--teal-dark);
+      font-weight: 950;
+    }
+
+    .science-lab {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
+        linear-gradient(135deg, #ecfeff, #f0fdf4);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .lab-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 22px;
+    }
+
+    .lab-card {
+      background: white;
+      border-radius: 28px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .water-cycle {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .cycle-step {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .cycle-step:hover,
+    .cycle-step.is-active {
+      background: var(--sky-soft);
+      transform: translateY(-3px);
+      border-color: #7dd3fc;
+    }
+
+    .cycle-step strong {
+      display: block;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .cycle-detail {
+      margin-top: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .experiment {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .experiment-item {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .experiment-item strong {
+      color: var(--teal-dark);
+    }
+
+    .daily-box {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
+        linear-gradient(135deg, #ecfeff, #eff6ff);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .daily-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .daily-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .daily-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .big-science {
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      line-height: 1;
+      font-weight: 950;
+      color: var(--teal-dark);
+      margin: 14px 0;
+      letter-spacing: -0.04em;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .quiz-options button:hover {
+      background: var(--teal-soft);
+    }
+
+    .result {
+      margin-top: 12px;
+      min-height: 24px;
+      font-weight: 900;
+    }
+
+    .discovery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .discovery-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .discovery-emoji {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .discovery-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .discovery-card p {
+      color: var(--muted);
+    }
+
+    .parent-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 36px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .tips {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .tips li {
+      background: #f8fafc;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .pathway {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .path-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: var(--teal);
+      color: white;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+    }
+
+    .path-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .path-card p {
+      color: var(--muted);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #0f766e);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 46px);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #99f6e4;
+    }
+
+    .footer {
+      margin-top: 40px;
+      background: #0f172a;
+      color: white;
+      padding: 42px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      padding-bottom: 26px;
+    }
+
+    .footer h3 {
+      margin-bottom: 12px;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .lab-grid,
+      .parent-box,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .method-grid,
+      .topics-grid,
+      .pathway,
+      .discovery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .daily-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .method-grid,
+      .topics-grid,
+      .pathway,
+      .discovery-grid,
+      .footer-grid,
+      .water-cycle {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-visual {
+        min-height: 300px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container top-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-icon">🔬</span>
+        <span>
+          Al-Hayat Kids Learning Hub
+          <small>Learn • Explore • Grow</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="islamic-studies.html">Islamic</a>
+        <a href="arabic-for-kids.html">Arabic</a>
+        <a href="english.html">English</a>
+        <a href="math.html">Math</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a class="cta" href="../online-classes.html">Online Classes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <div class="kicker">🔬 Science Explorer for Kids</div>
+          <h1>Science <span>for Kids</span></h1>
+          <p>
+            A joyful science learning space where children explore space, animals, plants,
+            weather, the human body, water cycle, and simple experiments through observation,
+            questions, pictures, quizzes, and safe parent-guided activities.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#explore">Start Exploring</a>
+            <a class="btn btn-yellow" href="#science-lab">Try Science Lab</a>
+            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="planet sun">☀️</div>
+          <div class="planet earth">🌍</div>
+          <div class="planet moon">🌙</div>
+
+          <div class="child-card">
+            <div class="emoji">🚀</div>
+            <h2>Ask, observe, test, and explain</h2>
+            <p>Science becomes exciting when children notice the world and learn to ask “why?” and “how?”</p>
+
+            <div class="hero-stats">
+              <div class="hero-stat">Observe <span>Carefully</span></div>
+              <div class="hero-stat">Ask <span>Questions</span></div>
+              <div class="hero-stat">Explore <span>Safely</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Method</div>
+            <h2 id="method-title">A science routine children can follow</h2>
+            <p class="section-lead">
+              Good science learning starts with curiosity. Children should observe, ask questions,
+              make simple predictions, test safely, and explain what they noticed.
+            </p>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <div class="icon">👀</div>
+            <h3>Observe</h3>
+            <p>Look closely at objects, animals, plants, weather, light, sound, and movement.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">❓</div>
+            <h3>Ask</h3>
+            <p>Ask simple questions such as: What is happening? Why? How can we know?</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">🧪</div>
+            <h3>Test</h3>
+            <p>Try safe activities with adult help, using everyday materials and careful steps.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">💬</div>
+            <h3>Explain</h3>
+            <p>Use simple words, drawings, and examples to explain what was discovered.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="explore" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Explore Science</div>
+            <h2 id="topics-title">What children can discover here</h2>
+            <p class="section-lead">
+              This page can grow into a complete science zone with lessons, quizzes, experiments,
+              printable sheets, videos, and curiosity-based activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="topics-grid">
+          <article class="topic-card">
+            <div class="topic-icon">🪐</div>
+            <h3>Space & Planets</h3>
+            <p>Sun, Moon, Earth, planets, day and night, stars, and simple space facts.</p>
+            <a href="#practice">Explore Space →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🐾</div>
+            <h3>Animals</h3>
+            <p>Habitats, animal groups, life cycles, food, movement, and care for living things.</p>
+            <a href="#practice">Learn Animals →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🌱</div>
+            <h3>Plants</h3>
+            <p>Seeds, roots, stems, leaves, flowers, sunlight, water, and plant growth.</p>
+            <a href="#practice">Learn Plants →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">💧</div>
+            <h3>Water Cycle</h3>
+            <p>Evaporation, condensation, precipitation, and collection in child-friendly steps.</p>
+            <a href="#science-lab">Open Water Cycle →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🌦️</div>
+            <h3>Weather</h3>
+            <p>Sunny, cloudy, rainy, windy, temperature, seasons, and weather observation.</p>
+            <a href="../worksheets/index.html">Weather Worksheets →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🫀</div>
+            <h3>Human Body</h3>
+            <p>Senses, bones, muscles, heart, lungs, healthy food, sleep, and exercise.</p>
+            <a href="../reading-library/index.html">Read Body Facts →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🧲</div>
+            <h3>Forces & Magnets</h3>
+            <p>Push, pull, motion, floating, sinking, magnets, and simple classroom experiments.</p>
+            <a href="#science-lab">Try Experiments →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🧠</div>
+            <h3>Daily Science</h3>
+            <p>A small observation or question every day helps children think like explorers.</p>
+            <a href="../daily-learning/index.html">Daily Learning →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="science-lab" aria-labelledby="lab-title">
+      <div class="container science-lab">
+        <div class="section-label">Science Lab</div>
+        <h2 id="lab-title">Water cycle explorer</h2>
+        <p class="section-lead">
+          Click each step to learn how water moves through nature. Keep explanations short,
+          visual, and connected to rain, clouds, rivers, and the Sun.
+        </p>
+
+        <div class="lab-grid">
+          <article class="lab-card">
+            <h3>💧 Water Cycle Steps</h3>
+            <div class="water-cycle" aria-label="Water cycle steps">
+              <button class="cycle-step is-active" type="button" data-detail="The Sun warms water in seas, rivers, lakes, and puddles. Some water changes into water vapour and rises into the air.">
+                <strong>☀️ Evaporation</strong>
+                Water rises
+              </button>
+
+              <button class="cycle-step" type="button" data-detail="High in the sky, water vapour cools and forms tiny droplets. These droplets gather together and make clouds.">
+                <strong>☁️ Condensation</strong>
+                Clouds form
+              </button>
+
+              <button class="cycle-step" type="button" data-detail="When cloud droplets become heavy, water falls back to Earth as rain, snow, sleet, or hail.">
+                <strong>🌧️ Precipitation</strong>
+                Water falls
+              </button>
+
+              <button class="cycle-step" type="button" data-detail="Water collects in rivers, lakes, oceans, soil, and underground. Then the cycle can begin again.">
+                <strong>🌊 Collection</strong>
+                Water gathers
+              </button>
+            </div>
+
+            <div class="cycle-detail" id="cycleDetail" aria-live="polite">
+              The Sun warms water in seas, rivers, lakes, and puddles. Some water changes into water vapour and rises into the air.
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <h3>🧪 Safe Home Experiment: Sink or Float</h3>
+            <p>
+              This simple activity helps children observe, predict, test, and explain.
+              Adult supervision is recommended.
+            </p>
+
+            <div class="experiment">
+              <div class="experiment-item">
+                <strong>Materials:</strong> bowl of water, spoon, small plastic cap, coin, leaf, pencil.
+              </div>
+              <div class="experiment-item">
+                <strong>Question:</strong> Which objects will sink? Which will float?
+              </div>
+              <div class="experiment-item">
+                <strong>Task:</strong> Predict first. Test gently. Then discuss what happened.
+              </div>
+              <div class="experiment-item">
+                <strong>Safety:</strong> Keep water shallow, avoid sharp objects, and clean the area after the activity.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practice" aria-labelledby="practice-title">
+      <div class="container daily-box">
+        <div class="section-label">Today’s Science Practice</div>
+        <h2 id="practice-title">One fact, one question, one observation</h2>
+        <p class="section-lead">
+          Short daily science activities help children become careful observers and confident thinkers.
+        </p>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>🌍 Fact of the Day</h3>
+            <div class="big-science">Earth spins</div>
+            <p>
+              Earth rotates. This rotation helps create day and night.
+            </p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🌱 Observation Task</h3>
+            <p>
+              Look at a plant near your home. Can you find its stem, leaves, and roots?
+              Draw the plant and label its parts.
+            </p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🐾 Animal Thinking</h3>
+            <p>
+              Choose one animal. Ask: Where does it live? What does it eat? How does it move?
+              What helps it survive?
+            </p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🧠 Quick Quiz</h3>
+            <p>What do plants usually need to grow?</p>
+            <div class="quiz-options">
+              <button type="button" data-answer="wrong">Only toys</button>
+              <button type="button" data-answer="correct">Water, sunlight, air, and soil/nutrients</button>
+              <button type="button" data-answer="wrong">Only darkness</button>
+            </div>
+            <div class="result" id="result" aria-live="polite"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="discovery-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Discovery Cards</div>
+            <h2 id="discovery-title">Three ways to explore today</h2>
+            <p class="section-lead">
+              These small activities are easy for parents and teachers to use at home or in class.
+            </p>
+          </div>
+        </div>
+
+        <div class="discovery-grid">
+          <article class="discovery-card">
+            <div class="discovery-emoji">🔎</div>
+            <h3>Look closely</h3>
+            <p>Choose a leaf, stone, toy, or cup. Describe its color, shape, size, texture, and use.</p>
+          </article>
+
+          <article class="discovery-card">
+            <div class="discovery-emoji">📒</div>
+            <h3>Keep a science notebook</h3>
+            <p>Draw what you observe and write one sentence: “I noticed that…”</p>
+          </article>
+
+          <article class="discovery-card">
+            <div class="discovery-emoji">💬</div>
+            <h3>Explain kindly</h3>
+            <p>Tell a parent or teacher what you discovered and what question you want to ask next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="path-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Pathway</div>
+            <h2 id="path-title">A strong science foundation in four steps</h2>
+            <p class="section-lead">
+              Children learn science best when they are guided to notice, wonder, test, and explain.
+            </p>
+          </div>
+        </div>
+
+        <div class="pathway">
+          <article class="path-card">
+            <strong>1</strong>
+            <h3>Notice</h3>
+            <p>Look carefully at living things, objects, weather, and changes.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>2</strong>
+            <h3>Wonder</h3>
+            <p>Ask questions and make simple predictions.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>3</strong>
+            <h3>Try</h3>
+            <p>Do safe activities with adult support and careful steps.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>4</strong>
+            <h3>Explain</h3>
+            <p>Draw, speak, write, or show what was learned.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="parents-title">
+      <div class="container parent-box">
+        <div>
+          <div class="section-label">For Parents & Teachers</div>
+          <h2 id="parents-title">How to help children love science</h2>
+          <p class="section-lead">
+            Science should feel like safe discovery, not memorization only. Let children ask
+            questions, touch safe materials, draw observations, and explain in their own words.
+          </p>
+        </div>
+
+        <div>
+          <ul class="tips">
+            <li>Use real examples from home: water, light, plants, food, weather, shadows, and sounds.</li>
+            <li>Ask “What do you notice?” before giving the answer.</li>
+            <li>Let children predict first, then test safely with adult supervision.</li>
+            <li>Encourage drawing and labeling because children often understand before they can write long answers.</li>
+            <li>Connect science with care for Allah’s creation: kindness to animals, plants, water, and the environment.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="section-label" style="color:#99f6e4;">Personal Guidance</div>
+          <h2>Book Online Science Support with Dr. Imran Hayat</h2>
+          <p>
+            If your child needs structured support in science basics, reading science passages,
+            understanding concepts, observation skills, or confidence-building, you can book online
+            classes along with these free learning resources.
+          </p>
+
+          <ul class="cta-list">
+            <li>Science concepts explained simply</li>
+            <li>Reading and vocabulary support</li>
+            <li>Quiz and worksheet practice</li>
+            <li>Confidence-building through guided learning</li>
+          </ul>
+        </div>
+
+        <div>
+          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <br /><br />
+          <a class="btn btn-white" href="../contact.html">Contact for Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌟 Al-Hayat Kids Learning Hub</h3>
+        <p>
+          A joyful Islamic and academic learning platform where children learn,
+          read, play, explore, and grow.
+        </p>
+      </div>
+
+      <div>
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="islamic-studies.html">Islamic Studies</a></li>
+          <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="math.html">Math</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="../reading-library/index.html">Reading Library</a></li>
+          <li><a href="../worksheets/index.html">Worksheets</a></li>
+          <li><a href="../activities/quizzes.html">Quizzes</a></li>
+          <li><a href="../videos/index.html">Videos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Parent & Trust</h3>
+        <ul>
+          <li><a href="../parent-resources/index.html">Parent Resources</a></li>
+          <li><a href="../online-classes.html">Online Classes</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const result = document.getElementById("result");
+
+    document.querySelectorAll(".quiz-options button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.answer === "correct") {
+          result.textContent = "Correct! Most plants need water, sunlight, air, and nutrients to grow. ⭐";
+          result.style.color = "#0f766e";
+        } else {
+          result.textContent = "Good try! Plants usually need water, sunlight, air, and soil/nutrients.";
+          result.style.color = "#b45309";
+        }
+      });
+    });
+
+    const cycleSteps = document.querySelectorAll(".cycle-step");
+    const cycleDetail = document.getElementById("cycleDetail");
+
+    cycleSteps.forEach((step) => {
+      step.addEventListener("click", () => {
+        cycleSteps.forEach((item) => item.classList.remove("is-active"));
+        step.classList.add("is-active");
+        cycleDetail.textContent = step.dataset.detail;
+      });
+    });
+  </script>
+</body>
+</html>
