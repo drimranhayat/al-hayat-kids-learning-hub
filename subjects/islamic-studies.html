@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Islamic Studies for Kids Ages 3–7 | Age-Based Learning Garden | Al-Hayat Kids Learning Hub</title>
+  <title>Islamic Studies for Kids Ages 3–7 | Complete Lesson Library | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="A focused age-based Islamic Studies learning garden for children ages 3–7. Choose age 3, 4, 5, 6, or 7 and learn only the relevant level content: Allah and faith, Prophet Muhammad ﷺ, Qur’an love, duas, Salah habits, Five Pillars, good manners, Ramadan, Eid, stories, games, missions, and progress tracking." />
-  <meta name="keywords" content="Islamic Studies for kids ages 3 4 5 6 7, Islamic learning for children, duas for kids, Islamic manners for children, Prophet stories for kids, Five Pillars for children, Qur'an love for kids, Salah manners, Muslim kids learning" />
+  <meta name="description" content="Complete age-based Islamic Studies lesson library for children ages 3–7. Each age level has focused lessons, simple Islamic concepts, duas, stories, games, quizzes, missions, improved short audio, and safe local progress tracking." />
+  <meta name="keywords" content="Islamic Studies for kids ages 3 4 5 6 7, Muslim kids curriculum, duas for children, Islamic manners for kids, Prophet stories, Five Pillars children, Qur'an love, Salah manners, Islamic learning games" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/islamic-studies.html" />
@@ -17,12 +17,10 @@
       --green: #138a3d;
       --green-dark: #075c2a;
       --green-soft: #e8f8ee;
-      --emerald-soft: #d1fae5;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-soft: #e0f2fe;
       --orange: #f97316;
       --orange-soft: #ffedd5;
       --gold: #f6c445;
@@ -33,10 +31,8 @@
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
       --teal-soft: #ccfbf1;
-      --red: #ef4444;
       --red-soft: #fee2e2;
       --lime-soft: #ecfccb;
-      --cream: #fffbeb;
       --white: #ffffff;
       --text: #1f2937;
       --muted: #64748b;
@@ -204,7 +200,7 @@
       filter: brightness(1.06);
     }
 
-    .hero { padding: 60px 0 26px; }
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
@@ -260,7 +256,7 @@
     }
 
     .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
-    .quiz-options button, .choice-options button {
+    .quiz-options button, .choice-options button, .lesson-chip {
       position: relative;
       overflow: hidden;
       display: inline-flex;
@@ -280,13 +276,14 @@
     .btn { min-height: 48px; padding: 12px 19px; }
 
     .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
-    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover {
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
       transform: translateY(-2px);
     }
 
     .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
     .tool-btn::after, .age-tab::after, .quiz-options button::after,
-    .choice-options button::after {
+    .choice-options button::after, .lesson-chip::after {
       content: "";
       position: absolute;
       inset: 0;
@@ -298,17 +295,18 @@
 
     .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
     .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
-    .quiz-options button:hover::after, .choice-options button:hover::after {
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
       opacity: 1;
     }
 
-    .btn-primary, .learned-btn, .tool-btn, .age-tab.active {
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
       background: linear-gradient(135deg, var(--green), var(--teal));
       color: white;
       box-shadow: 0 14px 28px rgba(19, 138, 61, 0.20);
     }
 
-    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover {
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
       background: linear-gradient(135deg, #0ea5e9, #22c55e);
       color: #ffffff;
       box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
@@ -326,13 +324,13 @@
       box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
     }
 
-    .btn-white, .age-tab {
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
       color: var(--green-dark);
       border: 1px solid var(--border);
     }
 
-    .btn-white:hover, .age-tab:hover {
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
       background: linear-gradient(135deg, #ffffff, #ecfdf5);
       color: var(--green-dark);
       border-color: #86efac;
@@ -586,6 +584,48 @@
       margin-top: 2px;
     }
 
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
     .grid-2, .daily-grid, .practice-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -604,7 +644,7 @@
       gap: 16px;
     }
 
-    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card {
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
@@ -613,17 +653,17 @@
       transition: 0.22s ease;
     }
 
-    .lesson-card:hover, .mission-card:hover, .mini-card:hover {
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--shadow);
     }
 
-    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3 {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
       color: #0f172a;
       margin-bottom: 7px;
     }
 
-    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p {
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
@@ -637,30 +677,6 @@
       background: var(--green-soft);
       font-size: 1.65rem;
       margin-bottom: 14px;
-    }
-
-    .lesson-card:nth-child(2n) .icon-pill { background: var(--gold-soft); }
-    .lesson-card:nth-child(3n) .icon-pill { background: var(--blue-soft); }
-    .lesson-card:nth-child(4n) .icon-pill { background: var(--purple-soft); }
-
-    .material-list {
-      list-style: none;
-      display: grid;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .material-list li {
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 12px;
-      color: #334155;
-      font-weight: 750;
-    }
-
-    .material-list li::before {
-      content: "🌱 ";
     }
 
     .badge, .today-badge, .level-badge {
@@ -746,10 +762,7 @@
       font-size: 0.95rem;
     }
 
-    .support-grid {
-      display: grid;
-      gap: 12px;
-    }
+    .support-grid { display: grid; gap: 12px; }
 
     .quiz-options, .choice-options {
       display: grid;
@@ -785,22 +798,37 @@
       font-weight: 900;
     }
 
-    .writing-area {
-      width: 100%;
-      min-height: 130px;
-      border: 2px dashed #86efac;
-      background: #f0fdf4;
-      border-radius: 20px;
-      padding: 14px;
-      resize: vertical;
+    .activity-options {
+      display: grid;
+      gap: 10px;
       margin-top: 12px;
-      color: #0f172a;
-      outline: none;
     }
 
-    .writing-area:focus {
-      border-color: var(--green);
-      background: white;
+    .activity-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 12px;
+      text-align: left;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .activity-options button:hover {
+      background: var(--green-soft);
+      border-color: #86efac;
+    }
+
+    .activity-options button.correct {
+      background: var(--green-soft);
+      color: #166534;
+      border-color: #86efac;
+    }
+
+    .activity-options button.wrong {
+      background: var(--red-soft);
+      color: #991b1b;
+      border-color: #fecaca;
     }
 
     .progress-section, .parent-box {
@@ -985,9 +1013,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .audio-bar {
-        top: 0;
-      }
+      .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
@@ -1009,7 +1035,7 @@
         display: grid;
       }
 
-      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab {
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
         width: 100%;
       }
 
@@ -1024,7 +1050,7 @@
       .sound-hover-pop { animation: none; }
       .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
       .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
-      .choice-options button:hover { transform: none; }
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -1051,7 +1077,7 @@
 
   <div class="audio-bar" aria-label="Audio learning controls">
     <div class="container audio-inner">
-      <p>🔊 Focused age-based Islamic learning is active. Choose age, learn that level only, and earn stars.</p>
+      <p>🔊 Improved audio: buttons now read only the necessary lesson, phrase, story, question, or mission.</p>
       <div class="sound-control-group">
         <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
         <button class="stop-sound" type="button">⏹ Stop Sound</button>
@@ -1063,35 +1089,35 @@
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">🌙 Focused Islamic Studies • Ages 3–7</div>
-          <h1>Choose Age. <span>Start Learning.</span></h1>
+          <div class="kicker">🌙 Complete Islamic Lesson Library • Ages 3–7</div>
+          <h1>Choose Age. <span>Choose Lesson.</span></h1>
           <p>
-            A focused Islamic Studies system for young children. The visitor first chooses the child’s age,
-            then the page shows only that age level: lessons, duas, story, game, mission, quiz, and mastery path.
-            No clutter. No repeated random content. Just gradual learning from age 3 to age 7.
+            A complete age-based Islamic Studies foundation. The child first chooses age, then selects a lesson
+            from that level’s library. Every lesson has a short concept, phrase, mini story, game, quiz, mission,
+            and improved short audio.
           </p>
 
           <div class="buttons">
             <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
-            <a class="btn btn-gold" href="#active-level">Start Today’s Lesson</a>
+            <a class="btn btn-gold" href="#lesson-library">Open Lesson Library</a>
             <a class="btn btn-white" href="#parent-guide">Parent Guide</a>
           </div>
 
           <div class="sound-actions" style="margin-top: 14px;">
-            <button class="listen-btn" type="button" data-static-speak="Welcome to focused Islamic Studies for children ages three to seven. Choose the child age and learn only that level." data-lang="en-US">🔊 Listen Intro</button>
-            <button class="repeat-btn" type="button" data-static-speak="Choose age. Learn that level. Practice today. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one lesson. Listen to short necessary audio. Practice and earn stars." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. Listen. Practice. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-box">
             <div class="emoji">🌱</div>
-            <h2>Age-based learning path</h2>
-            <p>Age 3 begins with love and daily words. Age 7 reaches responsibility, worship habits, and character mastery.</p>
+            <h2>Level 1 to Level 5 mastery</h2>
+            <p>Age 3 begins with love and daily words. Age 7 reaches worship habits, responsibility, and character mastery.</p>
             <div class="hero-stats">
-              <div class="hero-stat">Age 3–7 <span>Levels</span></div>
-              <div class="hero-stat">Focused <span>Content</span></div>
-              <div class="hero-stat">Stars <span>& Badges</span></div>
+              <div class="hero-stat">59 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Games <span>Every Lesson</span></div>
+              <div class="hero-stat">Short Audio <span>Focused</span></div>
             </div>
           </div>
         </div>
@@ -1104,7 +1130,7 @@
           <div>
             <div class="section-label">Step 1</div>
             <h2>Choose the child’s age</h2>
-            <p>After choosing an age, the learning area below will show only that age’s relevant content.</p>
+            <p>After choosing an age, the lesson library below will show only that age level’s lessons.</p>
           </div>
           <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
         </div>
@@ -1117,24 +1143,26 @@
         <div class="level-hero" id="levelHero"></div>
         <div class="level-progress" id="levelProgress"></div>
 
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused lesson. Each lesson has its own learning, story, activity, quiz, and mission.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
+        </div>
+
         <div class="daily-grid" style="margin-top:20px;">
           <article class="lesson-card" id="lessonCard"></article>
-          <article class="quiz-card" id="quizCard"></article>
+          <article class="activity-card" id="activityCard"></article>
         </div>
-
-        <div class="section-head" style="margin-top:34px;">
-          <div>
-            <div class="section-label">Focused Content</div>
-            <h2 id="modulesTitle">This age level’s learning modules</h2>
-            <p class="section-lead" id="modulesLead">Only the selected age content appears here.</p>
-          </div>
-        </div>
-
-        <div class="grid-3" id="modulesGrid"></div>
 
         <div class="practice-grid" style="margin-top:18px;">
           <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
           <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
         </div>
       </div>
     </section>
@@ -1142,7 +1170,7 @@
     <section class="section" id="progress">
       <div class="container progress-section">
         <div class="section-label">Progress Tracker</div>
-        <h2>Stars, streaks, learned duas, stories, manners, and missions</h2>
+        <h2>Stars, streaks, learned lessons, stories, games, quizzes, and missions</h2>
         <p class="section-lead">
           Progress is saved only on this browser/device using local storage. No login, no child name,
           no email, and no server collection.
@@ -1160,22 +1188,22 @@
       <div class="container parent-box">
         <div>
           <div class="section-label">Parent & Teacher Zone</div>
-          <h2>Method and curriculum map moved here</h2>
+          <h2>Curriculum method and map</h2>
           <p class="section-lead">
-            The main learning area stays focused on the selected age. The teaching method and the 8 learning worlds
-            are now placed here for parents and teachers, not in the child’s main activity area.
+            The child area stays focused on the selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
           </p>
 
           <details class="curriculum-details">
             <summary>Open: How young children should learn Islamic Studies</summary>
             <div class="details-body">
               <p class="section-lead">
-                For ages 3–7, Islamic learning should not be heavy or fear-based. It should be loving, visual,
-                short, repeated, story-based, practical, and connected with daily life.
+                For ages 3–7, Islamic learning should be loving, visual, short, repeated, story-based,
+                practical, and connected with daily life.
               </p>
               <div class="grid-4" style="margin-top:16px;">
                 <div class="mini-card"><div class="icon-pill">👀</div><h3>See</h3><p>Icons, cards, scenes, and colors help children understand before reading.</p></div>
-                <div class="mini-card"><div class="icon-pill">👂</div><h3>Hear & Say</h3><p>Children listen, then repeat short duas, words, manners, and missions.</p></div>
+                <div class="mini-card"><div class="icon-pill">👂</div><h3>Hear & Say</h3><p>Children listen, then repeat only the key phrase or necessary lesson.</p></div>
                 <div class="mini-card"><div class="icon-pill">💚</div><h3>Do & Love</h3><p>Every lesson becomes a tiny real-life action: kindness, gratitude, sharing, or respect.</p></div>
                 <div class="mini-card"><div class="icon-pill">⭐</div><h3>Repeat & Earn</h3><p>Stars, streaks, and badges encourage children to return daily without pressure.</p></div>
               </div>
@@ -1186,8 +1214,8 @@
             <summary>Open: 8 Islamic Learning Worlds curriculum map</summary>
             <div class="details-body">
               <p class="section-lead">
-                The full curriculum is built around eight child-friendly Islamic worlds. In the child area above,
-                each age receives the correct part of these worlds gradually.
+                The full curriculum is built around eight child-friendly Islamic worlds. Each age receives
+                the correct level of these worlds gradually.
               </p>
               <div class="compact-worlds" id="compactWorlds"></div>
             </div>
@@ -1196,11 +1224,11 @@
 
         <div>
           <ul class="tips">
-            <li>Age 3 should not receive Age 7 content; the page now avoids that overload.</li>
-            <li>Each level has its own lesson, dua, story, quiz, mission, and modules.</li>
-            <li>Use one age level for a few weeks before moving forward.</li>
-            <li>Let the child repeat often; mastery grows through gentle habit.</li>
-            <li>For exact Qur’an/tajweed and duas, later add real recorded MP3 audio.</li>
+            <li>Use one level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is now short: lesson title, key phrase, story, quiz, or mission only.</li>
+            <li>Games are simple because ages 3–7 learn best through small choices and repetition.</li>
+            <li>For exact Qur’an/tajweed and duas, add real recorded MP3 audio later.</li>
           </ul>
         </div>
       </div>
@@ -1219,7 +1247,7 @@
 
           <ul class="cta-list">
             <li>Age 3–7 Islamic foundation plan</li>
-            <li>Focused lessons by age level</li>
+            <li>Focused lesson library by age level</li>
             <li>Seerah-inspired stories and daily missions</li>
             <li>Gentle guided learning for children</li>
           </ul>
@@ -1291,37 +1319,20 @@
         label: "Age 3",
         icon: "🌱",
         title: "Age 3: Love Allah & Daily Words",
-        subtitle: "Goal: love, recognition, routine, and very short Islamic phrases.",
-        mastery: "By the end of this level, the child recognizes Allah as the Giver of blessings, says basic Islamic words, and practices gentle daily manners.",
-        lesson: {
-          badge: "🌟 Today’s Level 1 Lesson",
-          topic: "Allah gives us blessings",
-          arabic: "بِسْمِ اللّٰهِ",
-          say: "Bismillah",
-          meaning: "In the name of Allah.",
-          explain: "We say Bismillah before eating or starting a good action because we remember Allah.",
-          visual: "🍽️",
-          mission: "Say Bismillah before food and share one thing today."
-        },
-        modules: [
-          { icon: "☝️", title: "Allah & Faith", text: "Allah made me, my family, the sun, the moon, animals, food, and water.", practice: "Point to one blessing and say: Allah made it." },
-          { icon: "🤲", title: "Daily Words", text: "Bismillah, Alhamdulillah, Assalamu Alaikum.", practice: "Say Bismillah before one meal." },
-          { icon: "💚", title: "Good Manners", text: "Gentle hands, sharing toys, clean hands, saying please and sorry.", practice: "Share one toy kindly." },
-          { icon: "📖", title: "Qur’an Love", text: "The Qur’an is special and should be touched and kept respectfully.", practice: "Look at the Qur’an respectfully with an adult." },
-          { icon: "🌟", title: "Prophet ﷺ", text: "Prophet Muhammad ﷺ taught kindness and good manners.", practice: "Use one kind word today." },
-          { icon: "🌙", title: "Muslim Daily Life", text: "Muslims say good words and try to do good actions every day.", practice: "Say Alhamdulillah after one blessing." }
-        ],
-        story: {
-          title: "The Sharing Toy",
-          text: "A child had a favorite toy. A friend wanted to play too. The child shared the toy for a little while. Both children smiled. The child learned that sharing makes hearts happy.",
-          lesson: "Sharing is a beautiful Islamic manner.",
-          questions: ["What did the child share?", "How did the friend feel?", "What good manner did the story teach?"]
-        },
-        quiz: {
-          question: "What should we say before eating?",
-          options: ["Bismillah", "I am angry", "Give me now"],
-          answer: "Bismillah"
-        }
+        subtitle: "Love, recognition, routine, and very short Islamic phrases.",
+        mastery: "By the end of this level, the child recognizes Allah as the Giver of blessings, says basic Islamic words, and practices gentle manners.",
+        lessons: [
+          lesson("allah-made-me", "☝️", "Allah Made Me", "Allah made me and loves good actions.", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "All praise is for Allah.", "Look in the mirror with an adult and say: Allah made me.", "A child looked at little hands and little feet and smiled. The parent said, “Allah made you and gave you many blessings.”", "Who made us?", ["Allah", "A toy", "A chair"], "Allah", "Point to yourself and say Alhamdulillah.", "Tap the blessing", ["My eyes", "My shoes", "My toy box"], "My eyes"),
+          lesson("allah-made-family", "👨‍👩‍👧", "Allah Made My Family", "Family is a blessing from Allah.", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "Thank you, Allah.", "Hug a parent or say a kind word to family.", "A child gave a small smile to mother and father. Everyone felt happy because kind words make home beautiful.", "What should we say for family blessings?", ["Alhamdulillah", "Go away", "I am angry"], "Alhamdulillah", "Say one kind word to a family member.", "Choose the kind word", ["Thank you", "Move now", "No"], "Thank you"),
+          lesson("allah-made-sun-moon", "☀️", "Allah Made the Sun and Moon", "Allah made the bright sun and beautiful moon.", "سُبْحَانَ اللّٰهِ", "SubhanAllah", "Glory be to Allah.", "Look at the sky safely and remember Allah.", "A child saw the moon at night and said, “SubhanAllah.” The moon reminded the child that Allah made beautiful things.", "Who made the sun and moon?", ["Allah", "A pencil", "A car"], "Allah", "Point to the sky and say SubhanAllah.", "Find Allah's creation", ["Moon", "Sofa", "Spoon"], "Moon"),
+          lesson("bismillah-food", "🍽️", "Bismillah Before Food", "We remember Allah before eating.", "بِسْمِ اللّٰهِ", "Bismillah", "In the name of Allah.", "Say Bismillah before one meal.", "A child was ready to eat. Before the first bite, the child remembered to say Bismillah.", "What do we say before eating?", ["Bismillah", "Goodbye", "I want more"], "Bismillah", "Say Bismillah before food today.", "Pick the good habit", ["Say Bismillah", "Throw food", "Shout"], "Say Bismillah"),
+          lesson("alhamdulillah-after-food", "🙏", "Alhamdulillah After Food", "We thank Allah after eating.", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "All praise is for Allah.", "Say Alhamdulillah after one meal.", "A child finished eating and smiled. The child said Alhamdulillah because food is a blessing.", "What do we say after eating?", ["Alhamdulillah", "Push away", "No thanks"], "Alhamdulillah", "Say Alhamdulillah after food.", "Choose thankfulness", ["Say Alhamdulillah", "Complain loudly", "Waste food"], "Say Alhamdulillah"),
+          lesson("salam", "🤝", "Assalamu Alaikum", "Muslims greet with peace.", "السَّلَامُ عَلَيْكُمْ", "Assalamu Alaikum", "Peace be upon you.", "Greet one person with Salam.", "A child entered the room and said Assalamu Alaikum. The family smiled and replied with peace.", "Which greeting means peace?", ["Assalamu Alaikum", "Give me", "Move"], "Assalamu Alaikum", "Say Salam to a family member.", "Pick the peaceful greeting", ["Assalamu Alaikum", "Go away", "Mine"], "Assalamu Alaikum"),
+          lesson("clean-hands", "🧼", "Clean Hands", "Clean hands are a good habit.", "", "Clean hands", "Keep clean before food and play.", "Wash hands before eating.", "A child washed hands before food. Clean hands helped the child stay fresh and ready.", "What should we do before eating?", ["Wash hands", "Play in mud", "Throw food"], "Wash hands", "Wash hands before a meal.", "Choose clean habit", ["Wash hands", "Dirty hands", "Mess the table"], "Wash hands"),
+          lesson("share-toys", "🧸", "Sharing Toys", "Sharing makes hearts happy.", "", "Share kindly", "Give others a turn.", "Share one toy for a little while.", "A child shared a favorite toy. The friend smiled. Both children enjoyed playing together.", "What is a good action?", ["Share", "Push", "Hide everything"], "Share", "Share one toy today.", "Choose good action", ["Share toy", "Grab toy", "Break toy"], "Share toy"),
+          lesson("kind-words", "💬", "Kind Words", "Good words make people happy.", "", "Kind words", "Speak gently.", "Say please, sorry, or thank you.", "A child said “please” and “thank you.” The home felt peaceful and happy.", "Which is a kind word?", ["Thank you", "Go away", "Mine now"], "Thank you", "Say thank you today.", "Pick the kind word", ["Please", "No way", "Give me now"], "Please"),
+          lesson("love-parents", "💚", "Love Parents", "Parents are a blessing.", "", "Love parents", "Be gentle and respectful.", "Help a parent with a small task.", "A child gave mother a glass of water. Mother smiled and made dua for the child.", "How can we show love to parents?", ["Help them", "Shout", "Ignore"], "Help them", "Help your parents today.", "Choose respect", ["Help parents", "Shout loudly", "Make a mess"], "Help parents")
+        ]
       },
       {
         id: "age-4",
@@ -1329,37 +1340,20 @@
         label: "Age 4",
         icon: "🌿",
         title: "Age 4: Duas, Greetings & Manners",
-        subtitle: "Goal: connect Islamic words with daily routines and kindness.",
-        mastery: "By the end of this level, the child uses Islamic greetings, connects duas to routines, and practices kindness toward people and animals.",
-        lesson: {
-          badge: "🌟 Today’s Level 2 Lesson",
-          topic: "Greeting with peace",
-          arabic: "السَّلَامُ عَلَيْكُمْ",
-          say: "Assalamu Alaikum",
-          meaning: "Peace be upon you.",
-          explain: "A Muslim greets others with peace, respect, and a smiling face.",
-          visual: "🤝",
-          mission: "Greet one person politely and help someone today."
-        },
-        modules: [
-          { icon: "🤝", title: "Greeting of Peace", text: "Assalamu Alaikum means peace be upon you.", practice: "Greet a family member politely." },
-          { icon: "🙏", title: "Gratitude", text: "Alhamdulillah means all praise is for Allah.", practice: "Say Alhamdulillah after food." },
-          { icon: "💚", title: "Kindness", text: "Be kind to parents, siblings, friends, guests, and animals.", practice: "Help someone without being asked." },
-          { icon: "🧼", title: "Clean Habits", text: "Wash hands, keep clothes clean, and keep your space tidy.", practice: "Wash hands before eating." },
-          { icon: "🌟", title: "Prophet ﷺ", text: "The Prophet ﷺ had beautiful manners and taught mercy.", practice: "Speak gently today." },
-          { icon: "🌙", title: "Daily Muslim Life", text: "Good Muslim habits begin at home: greeting, helping, thanking, and sharing.", practice: "Use one polite sentence." }
-        ],
-        story: {
-          title: "The Kind Cup of Water",
-          text: "A child saw a thirsty bird near the garden. The child placed a small bowl of water safely nearby. The bird drank and flew away. The child felt happy because kindness is beautiful.",
-          lesson: "Kindness includes caring for people, animals, and the world around us.",
-          questions: ["What did the child see?", "How did the child help?", "What does the story teach?"]
-        },
-        quiz: {
-          question: "Which greeting means peace?",
-          options: ["Assalamu Alaikum", "I am angry", "Move away"],
-          answer: "Assalamu Alaikum"
-        }
+        subtitle: "Daily Islamic words connected with real routines and kindness.",
+        mastery: "By the end of this level, the child uses Islamic greetings, connects duas to routines, and practices kindness to people and animals.",
+        lessons: [
+          lesson("allah-is-kind", "💚", "Allah Is Kind", "Allah gives us blessings with kindness.", "الرَّحْمٰن", "Ar-Rahman", "The Most Merciful.", "Name one blessing from Allah.", "A child saw food, water, and family. The parent said these are blessings from Allah, the Most Merciful.", "What does Allah give us?", ["Blessings", "Bad words", "Broken toys"], "Blessings", "Say Alhamdulillah for one blessing.", "Pick a blessing", ["Water", "Anger", "Mess"], "Water"),
+          lesson("food-dua-routine", "🍽️", "Food Routine", "Say Bismillah before food and Alhamdulillah after food.", "بِسْمِ اللّٰهِ", "Bismillah", "In the name of Allah.", "Practice before and after food.", "A child remembered Allah before eating and thanked Allah after eating.", "What comes before food?", ["Bismillah", "Sleep", "Shouting"], "Bismillah", "Use both food phrases today.", "Complete routine", ["Bismillah then Alhamdulillah", "Shout then eat", "Waste food"], "Bismillah then Alhamdulillah"),
+          lesson("peace-greeting", "🤝", "Greeting with Peace", "Salam is a greeting of peace.", "السَّلَامُ عَلَيْكُمْ", "Assalamu Alaikum", "Peace be upon you.", "Greet someone with Salam.", "A child greeted grandfather with Salam. Grandfather smiled and replied kindly.", "What does Salam bring?", ["Peace", "Anger", "Noise"], "Peace", "Say Salam politely today.", "Choose peaceful action", ["Say Salam", "Ignore", "Push"], "Say Salam"),
+          lesson("kind-to-animals", "🐈", "Kind to Animals", "Allah loves kindness to His creation.", "", "Be gentle", "Do not hurt animals.", "Place water safely for a bird or animal with an adult.", "A child saw a thirsty bird and placed water safely nearby. The bird drank and flew away.", "How should we treat animals?", ["Kindly", "Cruelly", "Loudly"], "Kindly", "Be gentle to an animal today.", "Pick kindness", ["Give water safely", "Throw stones", "Scare animals"], "Give water safely"),
+          lesson("help-parents", "🏠", "Helping Parents", "Helping at home is a good deed.", "", "I can help", "Small help matters.", "Put one item in its place.", "A child picked up toys without being asked. The room became neat and the parent felt happy.", "What is a good deed at home?", ["Helping", "Making mess", "Shouting"], "Helping", "Help at home today.", "Choose help", ["Pick up toys", "Throw toys", "Ignore mess"], "Pick up toys"),
+          lesson("speak-gently", "🗣️", "Speaking Gently", "Gentle words are better than harsh words.", "", "Speak gently", "Use a soft voice.", "Use one gentle sentence today.", "Two children wanted the same crayon. One child used gentle words and asked for a turn.", "How should we speak?", ["Gently", "Harshly", "Angrily"], "Gently", "Use a gentle voice today.", "Pick gentle words", ["May I have a turn?", "Give it now!", "Move!"], "May I have a turn?"),
+          lesson("truthfulness", "🌟", "Truthfulness", "A Muslim tries to tell the truth.", "", "Tell the truth", "Truth makes the heart brave.", "Tell the truth in one small situation.", "A child spilled water and told the truth. The parent helped clean it and praised honesty.", "What should we tell?", ["Truth", "Lies", "Excuses always"], "Truth", "Tell the truth today.", "Choose truth", ["I spilled it", "He did it", "Hide it"], "I spilled it"),
+          lesson("cleanliness", "🧼", "Cleanliness", "Clean body, clean clothes, clean place.", "", "Keep clean", "Cleanliness is a good habit.", "Clean one small place.", "A child put shoes in place and washed hands. Clean habits made the home comfortable.", "Which is clean?", ["Wash hands", "Dirty table", "Messy floor"], "Wash hands", "Clean one small area.", "Pick clean habit", ["Put rubbish in bin", "Throw rubbish", "Leave mess"], "Put rubbish in bin"),
+          lesson("sleep-manners", "🌙", "Sleep Manners", "End the day peacefully and thank Allah.", "", "Good night with gratitude", "Sleep with calmness.", "Say Alhamdulillah before sleeping.", "A child remembered the blessings of the day and slept peacefully.", "What can we say before sleep?", ["Alhamdulillah", "I hate everything", "Give me now"], "Alhamdulillah", "Say one thankful sentence before sleep.", "Choose bedtime calm", ["Thank Allah", "Shout", "Fight"], "Thank Allah"),
+          lesson("thankfulness", "🙏", "Thankfulness", "A thankful child notices blessings.", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "All praise is for Allah.", "Name three blessings.", "A child counted food, family, and health as blessings and said Alhamdulillah.", "What does thankfulness mean?", ["Being grateful", "Complaining", "Breaking things"], "Being grateful", "Say Alhamdulillah for three blessings.", "Pick gratitude", ["Thank you", "Complain", "Waste"], "Thank you")
+        ]
       },
       {
         id: "age-5",
@@ -1367,37 +1361,22 @@
         label: "Age 5",
         icon: "🌳",
         title: "Age 5: Muslim Identity & Simple Worship",
-        subtitle: "Goal: understand simple Muslim identity: Allah, Prophet ﷺ, Qur’an, Salah, Ramadan, Eid.",
-        mastery: "By the end of this level, the child can answer basic Islamic identity questions and recognizes key signs of Muslim worship and manners.",
-        lesson: {
-          badge: "🌟 Today’s Level 3 Lesson",
-          topic: "The Qur’an is the Book of Allah",
-          arabic: "الْقُرْآنُ كِتَابُ اللّٰهِ",
-          say: "The Qur’an is the Book of Allah",
-          meaning: "Allah gave guidance through the Qur’an.",
-          explain: "We love the Qur’an, listen to it respectfully, and keep it in a clean place.",
-          visual: "📖",
-          mission: "Look at the Qur’an respectfully with an adult and say: I love the Qur’an."
-        },
-        modules: [
-          { icon: "☝️", title: "Who is Allah?", text: "Allah is One. He is the Creator and gives us blessings.", practice: "Name three blessings from Allah." },
-          { icon: "🌟", title: "Who is Prophet ﷺ?", text: "Prophet Muhammad ﷺ is the best example for Muslims.", practice: "Copy one good manner today." },
-          { icon: "📖", title: "What is Qur’an?", text: "The Qur’an is the Book of Allah and should be respected.", practice: "Keep a book carefully and respectfully." },
-          { icon: "🕌", title: "What is Salah?", text: "Salah is prayer and a way to remember Allah.", practice: "Stand calmly and respectfully for a short practice." },
-          { icon: "🌙", title: "Ramadan & Eid", text: "Ramadan is a special month of worship and patience. Eid is a joyful celebration.", practice: "Say one thing you are thankful for." },
-          { icon: "💚", title: "Islamic Character", text: "Truthfulness, respect, cleanliness, sharing, and kindness.", practice: "Tell the truth in one small situation." }
-        ],
-        story: {
-          title: "The Honest Cup",
-          text: "A child accidentally broke a cup and felt afraid. The child told the truth. The parent appreciated the honesty and helped clean it safely. The child learned that truth makes the heart brave.",
-          lesson: "A Muslim should try to be truthful and responsible.",
-          questions: ["What happened to the cup?", "What did the child do?", "What value did the child learn?"]
-        },
-        quiz: {
-          question: "What is the Qur’an?",
-          options: ["The Book of Allah", "A toy box", "A food plate"],
-          answer: "The Book of Allah"
-        }
+        subtitle: "Allah, Prophet Muhammad ﷺ, Qur’an, Salah, Ramadan, Eid, and Muslim character.",
+        mastery: "By the end of this level, the child can answer basic Islamic identity questions and recognizes key worship signs and good Muslim habits.",
+        lessons: [
+          lesson("who-is-allah", "☝️", "Who Is Allah?", "Allah is One, the Creator, and the Giver of blessings.", "اللّٰهُ أَحَدٌ", "Allahu Ahad", "Allah is One.", "Name three things Allah made.", "A child looked at flowers, food, and family and learned that Allah is the Creator.", "Who is the Creator?", ["Allah", "A toy", "A book"], "Allah", "Say Allah is One.", "Choose creation", ["Flowers", "Noise", "Anger"], "Flowers"),
+          lesson("prophet-muhammad", "🌟", "Who Is Prophet Muhammad ﷺ?", "Prophet Muhammad ﷺ is the best example for Muslims.", "", "Best example", "We learn good manners from the Prophet ﷺ.", "Copy one good manner today.", "A child learned that the Prophet ﷺ taught truth, kindness, mercy, and patience.", "Who is the best example for Muslims?", ["Prophet Muhammad ﷺ", "A cartoon", "A toy"], "Prophet Muhammad ﷺ", "Practice one good manner.", "Choose Prophetic manner", ["Kindness", "Cruelty", "Lying"], "Kindness"),
+          lesson("quran-book", "📖", "What Is the Qur’an?", "The Qur’an is the Book of Allah.", "الْقُرْآنُ كِتَابُ اللّٰهِ", "The Qur’an is the Book of Allah", "Allah’s guidance.", "Look at the Qur’an respectfully with an adult.", "A child saw the Qur’an kept clean and high. The parent said, “We respect the Book of Allah.”", "What is the Qur’an?", ["The Book of Allah", "A toy box", "A food plate"], "The Book of Allah", "Say: I love the Qur’an.", "Choose respect", ["Keep Qur’an clean", "Throw book", "Step on book"], "Keep Qur’an clean"),
+          lesson("what-is-salah", "🕌", "What Is Salah?", "Salah is prayer and a way to remember Allah.", "", "Salah", "Prayer to Allah.", "Stand calmly for a short practice.", "A child saw the family getting ready for Salah. The child learned that Salah is special time with Allah.", "What is Salah?", ["Prayer", "A game only", "A toy"], "Prayer", "Stand calmly and respectfully.", "Pick Salah manner", ["Be calm", "Run around", "Laugh loudly"], "Be calm"),
+          lesson("ramadan", "🌙", "What Is Ramadan?", "Ramadan is a special month of worship, patience, Qur’an, and kindness.", "", "Ramadan", "A special month.", "Say one thing people do in Ramadan.", "A child saw the family sharing food and reading Qur’an in Ramadan. The child learned patience and gratitude.", "What is Ramadan?", ["A special month", "A toy", "A chair"], "A special month", "Share one good thing today.", "Pick Ramadan habit", ["Sharing", "Wasting", "Fighting"], "Sharing"),
+          lesson("eid", "🎉", "What Is Eid?", "Eid is a joyful celebration after worship.", "", "Eid Mubarak", "Blessed Eid.", "Say Eid is for joy and thankfulness.", "A child wore clean clothes, greeted family, and thanked Allah for Eid joy.", "What feeling belongs to Eid?", ["Joy", "Anger", "Mess"], "Joy", "Say a kind Eid greeting.", "Choose Eid manner", ["Greet kindly", "Grab gifts", "Fight"], "Greet kindly"),
+          lesson("muslim-identity", "🧒", "I Am Muslim", "A Muslim believes in Allah and tries to do good.", "", "I am Muslim", "I try to do good.", "Say one good Muslim habit.", "A child said, “I am Muslim. I try to be kind, truthful, clean, and respectful.”", "What does a Muslim try to do?", ["Good actions", "Bad words", "Breaking things"], "Good actions", "Do one good action.", "Choose Muslim habit", ["Truth", "Lying", "Hurting"], "Truth"),
+          lesson("respect-parents", "👨‍👩‍👧", "Respect Parents", "Respecting parents is a beautiful habit.", "", "Respect parents", "Speak gently and help.", "Help a parent today.", "A child helped father carry a small bag and spoke gently to mother. The home felt peaceful.", "How can we respect parents?", ["Help them", "Shout", "Ignore"], "Help them", "Help parents today.", "Choose respect", ["Speak gently", "Shout loudly", "Disobey rudely"], "Speak gently"),
+          lesson("sharing-charity", "🤲", "Sharing and Charity", "Sharing good things helps others.", "", "Sadaqah", "Giving and helping.", "Share something useful.", "A child gave an extra pencil to a friend. The friend could complete the work.", "What is sharing?", ["Helping others", "Keeping all", "Breaking items"], "Helping others", "Share one useful thing.", "Choose charity", ["Give kindly", "Hide everything", "Mock someone"], "Give kindly"),
+          lesson("honesty", "🌟", "Honesty", "Honesty means telling the truth and being trustworthy.", "", "Honesty", "Tell the truth.", "Tell the truth today.", "A child found a pencil and gave it to the teacher. The teacher smiled and praised honesty.", "What is honesty?", ["Telling truth", "Taking others' things", "Hiding truth"], "Telling truth", "Return something to its owner if needed.", "Pick honest action", ["Return pencil", "Hide pencil", "Say nothing"], "Return pencil"),
+          lesson("good-habits", "✅", "Good Muslim Habits", "Good habits make daily life beautiful.", "", "Good habits", "Clean, kind, truthful, respectful.", "Choose one good habit to practice.", "A child made a habit chart: Salam, Bismillah, clean hands, truth, and kindness.", "Which is a good habit?", ["Clean hands", "Bad words", "Pushing"], "Clean hands", "Practice one good habit.", "Choose habit", ["Say Salam", "Shout", "Waste food"], "Say Salam"),
+          lesson("respect-teachers", "🏫", "Respect Teachers", "Teachers help us learn good things.", "", "Respect teachers", "Listen and speak politely.", "Thank a teacher or elder.", "A child listened carefully and said thank you to the teacher. Learning became easier.", "How should we speak to teachers?", ["Politely", "Rudely", "Angrily"], "Politely", "Say thank you to a teacher or elder.", "Pick respect", ["Listen carefully", "Interrupt rudely", "Ignore"], "Listen carefully")
+        ]
       },
       {
         id: "age-6",
@@ -1405,37 +1384,22 @@
         label: "Age 6",
         icon: "🌴",
         title: "Age 6: Five Pillars & Seerah Values",
-        subtitle: "Goal: learn core Islamic concepts clearly: Tawheed, Five Pillars, Wudu readiness, Salah manners, Ramadan habits, Seerah values.",
-        mastery: "By the end of this level, the child can recognize the Five Pillars, explain simple Tawheed, and connect Seerah values with behavior.",
-        lesson: {
-          badge: "🌟 Today’s Level 4 Lesson",
-          topic: "Allah is One",
-          arabic: "اللّٰهُ أَحَدٌ",
-          say: "Allahu Ahad",
-          meaning: "Allah is One.",
-          explain: "Tawheed means we worship Allah alone and know that He is the Creator and Giver of all blessings.",
-          visual: "☝️",
-          mission: "Name three blessings from Allah and say Alhamdulillah."
-        },
-        modules: [
-          { icon: "☝️", title: "Tawheed", text: "Allah is One, the Creator, and the One we worship.", practice: "Say: Allah is One." },
-          { icon: "🕋", title: "Five Pillars", text: "Shahadah, Salah, Zakah, Sawm, and Hajj.", practice: "Name two pillars today." },
-          { icon: "🧼", title: "Wudu Readiness", text: "Cleanliness helps prepare for prayer.", practice: "Wash hands properly before food." },
-          { icon: "🕌", title: "Salah Manners", text: "Prayer needs calmness, cleanliness, respect, and focus.", practice: "Stand calmly for 20 seconds." },
-          { icon: "🌙", title: "Ramadan Habits", text: "Ramadan teaches patience, gratitude, Qur’an, sharing, and self-control.", practice: "Share one good thing today." },
-          { icon: "🌟", title: "Seerah Values", text: "The Prophet ﷺ showed honesty, mercy, patience, forgiveness, and beautiful character.", practice: "Forgive one small mistake." }
-        ],
-        story: {
-          title: "The Patient Turn",
-          text: "At playtime, a child wanted to use the swing first. Another child was already waiting. Instead of pushing ahead, the child waited calmly. When the turn came, the child felt happy because patience made the heart peaceful.",
-          lesson: "Patience means staying calm and choosing good behavior while waiting.",
-          questions: ["What did the child want?", "How did the child show patience?", "Why is patience good?"]
-        },
-        quiz: {
-          question: "Which one is a pillar of Islam?",
-          options: ["Salah", "Shouting", "Breaking promises"],
-          answer: "Salah"
-        }
+        subtitle: "Tawheed, Shahadah, Five Pillars, Wudu readiness, Salah manners, Ramadan, Hajj, and character.",
+        mastery: "By the end of this level, the child recognizes the Five Pillars, explains simple Tawheed, and connects Seerah values with behavior.",
+        lessons: [
+          lesson("tawheed", "☝️", "Tawheed", "Tawheed means Allah is One and we worship Allah alone.", "اللّٰهُ أَحَدٌ", "Allahu Ahad", "Allah is One.", "Say Allah is One and name one blessing.", "A child learned that Allah is One, the Creator, and the Giver of every blessing.", "What does Tawheed teach?", ["Allah is One", "Many gods", "No kindness"], "Allah is One", "Say Allah is One.", "Choose Tawheed", ["Worship Allah alone", "Worship toys", "Forget Allah"], "Worship Allah alone"),
+          lesson("shahadah", "☝️", "Shahadah", "Shahadah is the statement of Muslim belief.", "لَا إِلٰهَ إِلَّا اللّٰهُ", "La ilaha illa Allah", "There is no god but Allah.", "Repeat the meaning with an adult.", "A child heard the Shahadah and learned it is the heart of Muslim belief.", "What is Shahadah about?", ["Belief in Allah", "A game", "Food"], "Belief in Allah", "Say the meaning: no god but Allah.", "Choose belief", ["Allah alone", "A toy", "A stone"], "Allah alone"),
+          lesson("five-pillars", "🕋", "Five Pillars", "The Five Pillars are Shahadah, Salah, Zakah, Sawm, and Hajj.", "", "Five Pillars", "Main acts of Islam.", "Name two pillars.", "A child saw five cards and learned that each pillar is part of Muslim life.", "Which is a pillar?", ["Salah", "Shouting", "Breaking promises"], "Salah", "Name two pillars today.", "Pick a pillar", ["Sawm", "Fighting", "Lying"], "Sawm"),
+          lesson("wudu-readiness", "🧼", "Wudu Readiness", "Cleanliness helps prepare for Salah.", "", "Wudu", "Cleaning before prayer.", "Wash hands properly.", "A child washed hands and learned that Muslims care about cleanliness before worship.", "What helps prepare for Salah?", ["Cleanliness", "Mess", "Noise"], "Cleanliness", "Wash hands properly today.", "Choose clean action", ["Wash hands", "Dirty clothes", "Mess the floor"], "Wash hands"),
+          lesson("salah-manners", "🕌", "Salah Manners", "Salah needs calmness, cleanliness, respect, and focus.", "", "Salah manners", "Be calm and respectful.", "Stand calmly for 20 seconds.", "A child stood quietly beside the family and learned that Salah time is special.", "How should we behave at Salah time?", ["Calmly", "Loudly", "Rudely"], "Calmly", "Practice calm standing.", "Pick Salah manner", ["Quiet respect", "Run around", "Laugh loudly"], "Quiet respect"),
+          lesson("zakah-sadaqah", "🤲", "Zakah and Sadaqah", "Giving helps people in need.", "", "Sadaqah", "Giving and helping.", "Help someone with a useful action.", "A child shared food with someone and learned that giving softens the heart.", "What does giving do?", ["Helps others", "Hurts people", "Makes mess"], "Helps others", "Do one helpful action.", "Choose giving", ["Share food", "Waste food", "Hide food"], "Share food"),
+          lesson("ramadan-fasting", "🌙", "Ramadan and Fasting Basics", "Fasting teaches patience, gratitude, and self-control.", "", "Sawm", "Fasting.", "Practice patience for a short time.", "A child watched family fasting and learned that Ramadan teaches patience and thankfulness.", "What does fasting teach?", ["Patience", "Greed", "Anger"], "Patience", "Practice waiting calmly.", "Pick Ramadan value", ["Patience", "Waste", "Fight"], "Patience"),
+          lesson("hajj-intro", "🕋", "Hajj Introduction", "Hajj is the pilgrimage to Makkah for those who are able.", "", "Hajj", "Pilgrimage to Makkah.", "Look at a picture of the Ka'bah with an adult.", "A child saw the Ka'bah and learned that Muslims around the world love Makkah.", "Where is Hajj connected?", ["Makkah", "Playground", "Toy shop"], "Makkah", "Say: Muslims love Makkah.", "Choose Hajj place", ["Ka'bah", "Toy box", "School bag"], "Ka'bah"),
+          lesson("seerah-mercy", "🌟", "Seerah Value: Mercy", "Prophet Muhammad ﷺ showed mercy and kindness.", "", "Mercy", "Kindness and care.", "Show mercy to someone younger.", "A child helped a younger sibling instead of shouting. The child learned mercy.", "What is mercy?", ["Kind care", "Cruelty", "Mocking"], "Kind care", "Help someone younger.", "Pick mercy", ["Help gently", "Push", "Laugh at mistake"], "Help gently"),
+          lesson("patience", "⏳", "Patience", "Patience means staying calm and choosing good behavior.", "", "Sabr", "Patience.", "Wait calmly for your turn.", "A child waited for a turn on the swing. Waiting calmly made the heart peaceful.", "What is patience?", ["Waiting calmly", "Pushing", "Shouting"], "Waiting calmly", "Wait calmly today.", "Choose patience", ["Wait turn", "Grab first", "Cry loudly"], "Wait turn"),
+          lesson("forgiveness", "🕊️", "Forgiveness", "Forgiveness keeps the heart soft.", "", "Forgive", "Let go of anger.", "Forgive one small mistake.", "A friend made a mistake. The child forgave and both felt peaceful again.", "What does forgiveness do?", ["Softens the heart", "Keeps anger", "Starts a fight"], "Softens the heart", "Forgive one small mistake.", "Choose forgiveness", ["It's okay", "I hate you", "Never talk"], "It's okay"),
+          lesson("gratitude", "🙏", "Gratitude", "Gratitude means noticing blessings and thanking Allah.", "الْحَمْدُ لِلّٰهِ", "Alhamdulillah", "All praise is for Allah.", "Name three blessings.", "A child counted family, food, and health and said Alhamdulillah.", "What is gratitude?", ["Thankfulness", "Complaining", "Wasting"], "Thankfulness", "Say Alhamdulillah for three blessings.", "Pick gratitude", ["Thank Allah", "Complain", "Waste"], "Thank Allah")
+        ]
       },
       {
         id: "age-7",
@@ -1443,44 +1407,41 @@
         label: "Age 7",
         icon: "🌟",
         title: "Age 7: Responsibility, Worship & Character Mastery",
-        subtitle: "Goal: strengthen worship habits, responsibility, Islamic identity, and moral choices.",
+        subtitle: "Tawheed review, Ibadah, Salah responsibility, Qur’an respect, Sadaqah, anger control, Ramadan/Eid, and self-check habits.",
         mastery: "By the end of this level, the child understands worship through prayer and good actions, knows basic responsibility, and can make better choices at home and school.",
-        lesson: {
-          badge: "🌟 Today’s Level 5 Lesson",
-          topic: "Responsibility and worship",
-          arabic: "الْعِبَادَةُ",
-          say: "Ibadah",
-          meaning: "Worship.",
-          explain: "Worship includes Salah, remembering Allah, telling the truth, helping others, being thankful, and doing good actions sincerely.",
-          visual: "🧭",
-          mission: "Do one good action today without being asked."
-        },
-        modules: [
-          { icon: "☝️", title: "Tawheed Review", text: "Allah alone is the Creator, Sustainer, and the One we worship.", practice: "Name three blessings and say Alhamdulillah." },
-          { icon: "🕌", title: "Salah Connection", text: "Salah is a daily connection with Allah and teaches discipline.", practice: "Prepare respectfully when prayer time comes." },
-          { icon: "📖", title: "Qur’an Respect", text: "The Qur’an guides Muslims and should be loved, heard, and respected.", practice: "Listen quietly to a short recitation with an adult." },
-          { icon: "🤲", title: "Sadaqah & Service", text: "Helping others can be money, food, kind words, or useful actions.", practice: "Help someone today." },
-          { icon: "💚", title: "Good Choices", text: "A responsible Muslim tries to do right even when nobody is watching.", practice: "Choose honesty in one situation." },
-          { icon: "🌙", title: "Ramadan & Eid Review", text: "Ramadan builds patience and gratitude; Eid brings joy and thankfulness.", practice: "Say one Ramadan or Eid blessing." }
-        ],
-        story: {
-          title: "The Quiet Good Deed",
-          text: "A child saw paper on the floor. No one asked for help. The child picked it up and placed it in the bin. The room looked cleaner. The child learned that a good deed is beautiful even when nobody is watching.",
-          lesson: "Responsibility means doing the right thing even when no one is watching.",
-          questions: ["What did the child see?", "What did the child do?", "What does responsibility mean?"]
-        },
-        quiz: {
-          question: "What does responsibility mean?",
-          options: ["Doing the right thing", "Blaming others", "Breaking promises"],
-          answer: "Doing the right thing"
-        }
+        lessons: [
+          lesson("tawheed-review", "☝️", "Tawheed Review", "Allah alone is the Creator, Sustainer, and the One we worship.", "اللّٰهُ أَحَدٌ", "Allahu Ahad", "Allah is One.", "Name three blessings from Allah.", "A child reviewed that Allah made everything and deserves worship alone.", "Who do Muslims worship?", ["Allah alone", "Toys", "People"], "Allah alone", "Say Allah is One and name blessings.", "Choose Tawheed", ["Allah alone", "A toy", "A game"], "Allah alone"),
+          lesson("ibadah", "🤲", "Ibadah", "Ibadah means worship. Worship includes Salah and good actions done for Allah.", "الْعِبَادَةُ", "Ibadah", "Worship.", "Do one good action sincerely.", "A child learned that prayer, honesty, helping, and gratitude can be acts of worship when done for Allah.", "What is Ibadah?", ["Worship", "Only playing", "Bad words"], "Worship", "Do one good action for Allah.", "Pick worship action", ["Help kindly", "Lie", "Hurt"], "Help kindly"),
+          lesson("salah-responsibility", "🕌", "Salah Responsibility", "Salah is a daily connection with Allah and teaches discipline.", "", "Salah", "Prayer.", "Prepare respectfully when prayer time comes.", "A child heard the call to prayer and prepared quietly with respect.", "What does Salah connect us with?", ["Allah", "Toys", "Noise"], "Allah", "Be respectful at prayer time.", "Choose Salah habit", ["Prepare calmly", "Make noise", "Run away"], "Prepare calmly"),
+          lesson("quran-respect", "📖", "Qur’an Respect", "The Qur’an guides Muslims and should be loved, heard, and respected.", "", "Qur’an respect", "Love and respect the Qur’an.", "Listen quietly to short recitation with an adult.", "A child listened quietly to Qur’an and felt calm. The child learned to respect Allah’s Book.", "How should we treat Qur’an?", ["Respectfully", "Carelessly", "Rudely"], "Respectfully", "Listen quietly to Qur’an.", "Choose respect", ["Listen quietly", "Make fun", "Throw book"], "Listen quietly"),
+          lesson("daily-duas-review", "🤲", "Daily Duas Review", "Daily duas help us remember Allah in routines.", "بِسْمِ اللّٰهِ", "Bismillah", "In the name of Allah.", "Use Bismillah and Alhamdulillah today.", "A child used duas before food, after food, and before a good task.", "Why use daily duas?", ["To remember Allah", "To show off", "To shout"], "To remember Allah", "Use two daily duas today.", "Choose dua habit", ["Bismillah", "Bad words", "Complain"], "Bismillah"),
+          lesson("sadaqah-service", "🤲", "Sadaqah and Service", "Sadaqah can be money, food, kind words, or useful help.", "", "Sadaqah", "Giving and helping.", "Help someone today.", "A child helped carry books and learned that useful help can be a good deed.", "What can be sadaqah?", ["Helpful action", "Mocking", "Hurting"], "Helpful action", "Help someone today.", "Choose service", ["Carry books", "Laugh at mistake", "Waste food"], "Carry books"),
+          lesson("home-responsibility", "🏠", "Responsibility at Home", "A responsible child helps at home without waiting every time.", "", "Responsibility", "Doing the right thing.", "Complete one home task.", "A child put shoes in place before being asked. The home became neat.", "What is responsibility?", ["Doing right", "Making mess", "Blaming"], "Doing right", "Do one home responsibility.", "Choose responsibility", ["Put shoes away", "Throw clothes", "Ignore"], "Put shoes away"),
+          lesson("school-responsibility", "🏫", "Responsibility at School", "A responsible student respects learning, teachers, classmates, and property.", "", "Respect learning", "Learn with good manners.", "Keep one school item safe.", "A child returned a library book carefully and thanked the teacher.", "How can we respect school?", ["Keep things safe", "Break things", "Shout always"], "Keep things safe", "Protect one school item.", "Choose school responsibility", ["Listen carefully", "Disturb class", "Damage book"], "Listen carefully"),
+          lesson("good-bad-choices", "🧭", "Good and Bad Choices", "A Muslim tries to choose what is truthful, kind, and respectful.", "", "Good choices", "Choose what pleases Allah.", "Choose one good action even if hard.", "A child wanted to hide a mistake but chose truth. The heart felt lighter.", "What is a good choice?", ["Truth", "Lying", "Hurting"], "Truth", "Choose truth today.", "Pick good choice", ["Tell truth", "Hide truth", "Blame others"], "Tell truth"),
+          lesson("anger-control", "😌", "Controlling Anger", "A strong child tries to stay calm when upset.", "", "Stay calm", "Use patience.", "Take a deep breath when upset.", "A child lost a game and felt angry. The child breathed slowly and used kind words.", "What helps anger?", ["Calm breathing", "Pushing", "Throwing"], "Calm breathing", "Practice calm breathing.", "Choose calm action", ["Take a breath", "Push", "Throw"], "Take a breath"),
+          lesson("seerah-character", "🌟", "Seerah Character", "The Prophet ﷺ taught honesty, mercy, patience, forgiveness, and kindness.", "", "Beautiful character", "Good manners.", "Practice one Prophetic value.", "A child chose mercy for a younger child and remembered the Prophet’s beautiful example.", "Which is a good character?", ["Mercy", "Cruelty", "Lying"], "Mercy", "Practice one value.", "Pick Seerah value", ["Honesty", "Mocking", "Anger"], "Honesty"),
+          lesson("ramadan-habits", "🌙", "Ramadan Habits", "Ramadan builds patience, gratitude, Qur’an love, and helping others.", "", "Ramadan habits", "Patience and gratitude.", "Practice patience in one moment.", "A child waited patiently before food and remembered people who have less.", "What does Ramadan build?", ["Patience", "Greed", "Waste"], "Patience", "Practice patience today.", "Choose Ramadan habit", ["Share food", "Waste food", "Fight"], "Share food"),
+          lesson("eid-manners", "🎉", "Eid Manners", "Eid is joy with gratitude, greetings, family love, and good manners.", "", "Eid manners", "Joy with gratitude.", "Say a kind greeting.", "A child greeted relatives kindly and remembered to thank Allah for Eid.", "What belongs to Eid?", ["Greeting kindly", "Fighting", "Being rude"], "Greeting kindly", "Use one Eid manner.", "Choose Eid manner", ["Smile and greet", "Grab rudely", "Ignore family"], "Smile and greet"),
+          lesson("weekly-good-deed", "📅", "Weekly Good Deed Plan", "A good deed plan helps us practice Islam every week.", "", "Good deed plan", "Plan good actions.", "Choose one deed for the week.", "A child planned three good deeds: help mother, speak truth, and share a snack.", "What does a plan help us do?", ["Practice good", "Forget everything", "Break things"], "Practice good", "Plan one good deed.", "Pick good deed", ["Help mother", "Mock friend", "Waste food"], "Help mother"),
+          lesson("self-check", "✅", "Self-Check Habit", "A Muslim learns to check actions gently and improve.", "", "Self-check", "Think and improve.", "Ask: Did I speak kindly today?", "At bedtime, a child thought about the day and decided to speak more gently tomorrow.", "What is self-check?", ["Thinking to improve", "Blaming others", "Boasting"], "Thinking to improve", "Do one self-check today.", "Choose self-check", ["Did I speak kindly?", "Was I always right?", "Blame others"], "Did I speak kindly?")
+        ]
       }
     ];
 
     let activeAge = ageLevels[0];
+    let activeLessonIndex = 0;
     let funSoundsEnabled = true;
     let funAudioContext = null;
     let lastHoverSoundTime = 0;
+
+    function lesson(id, icon, title, concept, arabic, say, meaning, childTask, story, quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer) {
+      return { id, icon, title, concept, arabic, say, meaning, childTask, story, quizQuestion, quizOptions, quizAnswer, mission, activityTitle, activityOptions, activityAnswer };
+    }
+
+    function getActiveLesson() {
+      return activeAge.lessons[activeLessonIndex] || activeAge.lessons[0];
+    }
 
     function getTracker() {
       return window.AlHayatProgressTracker || null;
@@ -1606,7 +1567,7 @@
 
       document.addEventListener("pointerdown", () => initFunAudioContext(), { once: true });
 
-      const selector = [".btn", ".listen-btn", ".repeat-btn", ".learned-btn", ".tool-btn", ".age-tab", ".quiz-options button", ".choice-options button", ".nav a"].join(",");
+      const selector = [".btn", ".listen-btn", ".repeat-btn", ".learned-btn", ".tool-btn", ".age-tab", ".lesson-chip", ".quiz-options button", ".choice-options button", ".activity-options button", ".nav a"].join(",");
 
       document.addEventListener("mouseover", (event) => {
         const target = event.target.closest(selector);
@@ -1653,6 +1614,7 @@
         button.textContent = `${level.icon} ${level.label}`;
         button.addEventListener("click", () => {
           activeAge = level;
+          activeLessonIndex = 0;
           renderAgeTabs();
           renderActiveLevel();
           getTracker()?.markCompleted?.("islamicDaily", `${activeAge.id}-selected`, { type: "age-selected" });
@@ -1664,14 +1626,36 @@
 
     function renderProgressDots() {
       const container = document.getElementById("levelProgress");
-      container.innerHTML = ageLevels.map((level, index) => `
+      container.innerHTML = ageLevels.map((level) => `
         <div class="level-dot ${level.id === activeAge.id ? "active" : ""}">
           ${level.level}<span>${level.label}</span>
         </div>
       `).join("");
     }
 
+    function renderLessonLibrary() {
+      const container = document.getElementById("lessonLibrary");
+      document.getElementById("libraryTitle").textContent = `${activeAge.label} Lesson Library`;
+      document.getElementById("libraryLead").textContent = `${activeAge.lessons.length} focused lessons for ${activeAge.label}. Choose one lesson at a time.`;
+
+      container.innerHTML = activeAge.lessons.map((lessonItem, index) => `
+        <button type="button" class="lesson-chip ${index === activeLessonIndex ? "active" : ""}" data-lesson-index="${index}">
+          <small>${index + 1}</small>${lessonItem.icon} ${lessonItem.title}
+        </button>
+      `).join("");
+
+      container.querySelectorAll(".lesson-chip").forEach(button => {
+        button.addEventListener("click", () => {
+          activeLessonIndex = Number(button.dataset.lessonIndex);
+          renderActiveLevel();
+          document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    }
+
     function renderActiveLevel() {
+      const selectedLesson = getActiveLesson();
+
       renderProgressDots();
 
       document.getElementById("levelHero").innerHTML = `
@@ -1684,35 +1668,58 @@
         </div>
       `;
 
+      renderLessonLibrary();
+
       document.getElementById("lessonCard").innerHTML = `
-        <h3>🌟 Today’s Lesson</h3>
-        <div class="today-badge">${activeAge.lesson.badge}</div>
+        <h3>${selectedLesson.icon} Lesson ${activeLessonIndex + 1}: ${selectedLesson.title}</h3>
+        <div class="today-badge">Focused short audio enabled</div>
         <div class="visual-card">
           <div class="visual-clue">
             <div>
-              <div class="emoji">${activeAge.lesson.visual}</div>
-              <strong>${activeAge.lesson.topic}</strong>
+              <div class="emoji">${selectedLesson.icon}</div>
+              <strong>${selectedLesson.title}</strong>
             </div>
           </div>
           <div class="support-grid">
-            <div class="note-box"><strong>Topic:</strong> ${activeAge.lesson.topic}</div>
-            <div class="big-arabic arabic">${activeAge.lesson.arabic}</div>
-            <div class="note-box"><strong>Say it:</strong> ${activeAge.lesson.say}</div>
-            <div class="note-box"><strong>Meaning:</strong> ${activeAge.lesson.meaning}</div>
-            <div class="task-box"><strong>Child explanation:</strong> ${activeAge.lesson.explain}</div>
-            <div class="mission-box"><strong>Mission:</strong> ${activeAge.lesson.mission}</div>
+            <div class="note-box"><strong>Concept:</strong> ${selectedLesson.concept}</div>
+            ${selectedLesson.arabic ? `<div class="big-arabic arabic">${selectedLesson.arabic}</div>` : ""}
+            <div class="note-box"><strong>Say:</strong> ${selectedLesson.say}</div>
+            <div class="note-box"><strong>Meaning:</strong> ${selectedLesson.meaning}</div>
+            <div class="task-box"><strong>Practice:</strong> ${selectedLesson.childTask}</div>
           </div>
         </div>
         <div class="sound-actions" style="margin-top:14px;">
           <button class="listen-btn" id="listenLessonBtn" type="button">🔊 Listen Lesson</button>
-          <button class="repeat-btn" id="repeatLessonBtn" type="button">🔁 Repeat Phrase</button>
-          <button class="learned-btn" id="learnedLessonBtn" type="button">✅ I practiced this</button>
+          <button class="repeat-btn" id="repeatPhraseBtn" type="button">🔁 Repeat Phrase</button>
+          <button class="learned-btn" id="learnedLessonBtn" type="button">✅ I learned this</button>
+        </div>
+      `;
+
+      document.getElementById("activityCard").innerHTML = `
+        <h3>🎮 Mini Activity Game</h3>
+        <div class="mission-box"><strong>${selectedLesson.activityTitle}:</strong> Choose the best answer.</div>
+        <div class="activity-options" id="activityOptions"></div>
+        <div class="result" id="activityResult" aria-live="polite"></div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenActivityBtn" type="button">🔊 Listen Activity</button>
+          <button class="learned-btn" id="completeActivityBtn" type="button">✅ Complete Activity</button>
+        </div>
+      `;
+
+      document.getElementById("storyCard").innerHTML = `
+        <h3>📖 Mini Story</h3>
+        <div class="story-text">${selectedLesson.story}</div>
+        <div class="reflection-box" style="margin-top:12px;"><strong>Lesson:</strong> ${selectedLesson.concept}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenStoryBtn" type="button">🔊 Listen Story</button>
+          <button class="repeat-btn" id="repeatStoryPointBtn" type="button">🔁 Repeat Point</button>
+          <button class="learned-btn" id="completeStoryBtn" type="button">✅ Story Done</button>
         </div>
       `;
 
       document.getElementById("quizCard").innerHTML = `
-        <h3>🧠 Level Quiz</h3>
-        <p>${activeAge.quiz.question}</p>
+        <h3>🧠 Lesson Quiz</h3>
+        <p>${selectedLesson.quizQuestion}</p>
         <div class="quiz-options" id="levelQuizOptions"></div>
         <div class="result" id="levelQuizResult" aria-live="polite"></div>
         <div class="sound-actions" style="margin-top:14px;">
@@ -1721,48 +1728,31 @@
         </div>
       `;
 
-      document.getElementById("modulesTitle").textContent = `${activeAge.label} learning modules only`;
-      document.getElementById("modulesLead").textContent = "The modules below are only for the selected age level, so the child does not see irrelevant higher-level material.";
-
-      document.getElementById("modulesGrid").innerHTML = activeAge.modules.map(module => `
-        <article class="lesson-card">
-          <div class="icon-pill">${module.icon}</div>
-          <h3>${module.title}</h3>
-          <p>${module.text}</p>
-          <div class="mission-box" style="margin-top:12px;"><strong>Practice:</strong> ${module.practice}</div>
-          <div class="sound-actions" style="margin-top:14px;">
-            <button class="listen-btn module-listen" type="button" data-title="${module.title}" data-text="${module.text}" data-practice="${module.practice}">🔊 Listen</button>
-            <button class="learned-btn module-done" type="button" data-id="${activeAge.id}-${module.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}">✅ Done</button>
-          </div>
-        </article>
-      `).join("");
-
-      document.getElementById("storyCard").innerHTML = `
-        <h3>📖 Level Story: ${activeAge.story.title}</h3>
-        <div class="story-text">${activeAge.story.text}</div>
-        <div class="reflection-box" style="margin-top:12px;"><strong>Lesson:</strong> ${activeAge.story.lesson}</div>
-        <div style="margin-top:12px;">
-          <h3>Story Questions</h3>
-          ${activeAge.story.questions.map((q, i) => `<p><strong>${i + 1}.</strong> ${q}</p>`).join("")}
-        </div>
-        <div class="sound-actions" style="margin-top:14px;">
-          <button class="listen-btn" id="listenStoryBtn" type="button">🔊 Listen Story</button>
-          <button class="repeat-btn" id="repeatStoryLessonBtn" type="button">🔁 Repeat Lesson</button>
-          <button class="learned-btn" id="completeStoryBtn" type="button">✅ Completed</button>
-        </div>
-      `;
-
       document.getElementById("missionCard").innerHTML = `
-        <h3>✅ Daily Good Deed Mission</h3>
-        <div class="mission-box">${activeAge.lesson.mission}</div>
-        <textarea class="writing-area" id="reflectionBox" placeholder="Child or parent can write: Today I practiced..."></textarea>
+        <h3>✅ Daily Mission</h3>
+        <div class="mission-box">${selectedLesson.mission}</div>
         <div class="sound-actions" style="margin-top:14px;">
           <button class="listen-btn" id="listenMissionBtn" type="button">🔊 Listen Mission</button>
           <button class="repeat-btn" id="repeatMissionBtn" type="button">🔁 Repeat Mission</button>
-          <button class="learned-btn" id="saveMissionBtn" type="button">✅ Save Mission</button>
+          <button class="learned-btn" id="saveMissionBtn" type="button">✅ Mission Done</button>
         </div>
       `;
 
+      document.getElementById("masteryCard").innerHTML = `
+        <h3>🏆 Mastery Check</h3>
+        <p>Can the child say the phrase, understand the meaning, choose the good action, and complete the mission?</p>
+        <ul class="tips">
+          <li>Phrase: ${selectedLesson.say}</li>
+          <li>Meaning: ${selectedLesson.meaning}</li>
+          <li>Action: ${selectedLesson.mission}</li>
+        </ul>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" id="listenMasteryBtn" type="button">🔊 Listen Mastery</button>
+          <button class="tool-btn" id="nextLessonBtn" type="button">➡️ Next Lesson</button>
+        </div>
+      `;
+
+      renderActivityOptions();
       renderQuizOptions();
       attachDynamicHandlers();
 
@@ -1771,25 +1761,62 @@
       }, 100);
     }
 
+    function renderActivityOptions() {
+      const selectedLesson = getActiveLesson();
+      const optionsEl = document.getElementById("activityOptions");
+      const resultEl = document.getElementById("activityResult");
+      optionsEl.innerHTML = "";
+      resultEl.textContent = "";
+
+      selectedLesson.activityOptions.forEach(option => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = option;
+        btn.addEventListener("click", () => {
+          const isCorrect = option === selectedLesson.activityAnswer;
+          optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
+          btn.classList.add(isCorrect ? "correct" : "wrong");
+
+          getTracker()?.markQuiz?.("islamicDaily", `${activeAge.id}-${selectedLesson.id}-activity`, isCorrect, {
+            question: selectedLesson.activityTitle,
+            selected: option,
+            answer: selectedLesson.activityAnswer
+          });
+
+          if (isCorrect) {
+            resultEl.textContent = "Beautiful choice! ⭐";
+            resultEl.style.color = "#166534";
+            speak("Beautiful choice.", "en-US", false);
+          } else {
+            resultEl.textContent = `Good try. Better choice: ${selectedLesson.activityAnswer}`;
+            resultEl.style.color = "#b45309";
+            speak(`Good try. Better choice is ${selectedLesson.activityAnswer}.`, "en-US", false);
+          }
+        });
+        optionsEl.appendChild(btn);
+      });
+    }
+
     function renderQuizOptions() {
+      const selectedLesson = getActiveLesson();
       const optionsEl = document.getElementById("levelQuizOptions");
       const resultEl = document.getElementById("levelQuizResult");
       optionsEl.innerHTML = "";
       resultEl.textContent = "";
 
-      activeAge.quiz.options.forEach(option => {
+      selectedLesson.quizOptions.forEach(option => {
         const btn = document.createElement("button");
         btn.type = "button";
         btn.textContent = option;
         btn.addEventListener("click", () => {
-          const isCorrect = option === activeAge.quiz.answer;
+          const isCorrect = option === selectedLesson.quizAnswer;
           optionsEl.querySelectorAll("button").forEach(b => b.classList.remove("correct", "wrong"));
           btn.classList.add(isCorrect ? "correct" : "wrong");
 
-          getTracker()?.markQuiz?.("islamicDaily", `${activeAge.id}-quiz`, isCorrect, {
-            question: activeAge.quiz.question,
+          getTracker()?.markQuiz?.("islamicDaily", `${activeAge.id}-${selectedLesson.id}-quiz`, isCorrect, {
+            question: selectedLesson.quizQuestion,
             selected: option,
-            answer: activeAge.quiz.answer
+            answer: selectedLesson.quizAnswer
           });
 
           if (isCorrect) {
@@ -1797,9 +1824,9 @@
             resultEl.style.color = "#166534";
             speak("Correct. Beautiful learning.", "en-US", false);
           } else {
-            resultEl.textContent = `Good try! Correct answer: ${activeAge.quiz.answer}`;
+            resultEl.textContent = `Good try! Correct answer: ${selectedLesson.quizAnswer}`;
             resultEl.style.color = "#b45309";
-            speak(`Good try. The correct answer is ${activeAge.quiz.answer}.`, "en-US", false);
+            speak(`Good try. The correct answer is ${selectedLesson.quizAnswer}.`, "en-US", false);
           }
         });
         optionsEl.appendChild(btn);
@@ -1807,71 +1834,76 @@
     }
 
     function attachDynamicHandlers() {
+      const selectedLesson = getActiveLesson();
+      const lessonKey = `${activeAge.id}-${selectedLesson.id}`;
+
       document.getElementById("listenLessonBtn").addEventListener("click", () => {
-        const text = `${activeAge.label}. ${activeAge.lesson.topic}. ${activeAge.lesson.arabic}. ${activeAge.lesson.say}. Meaning: ${activeAge.lesson.meaning}. ${activeAge.lesson.explain}. Mission: ${activeAge.lesson.mission}`;
-        speak(text, "en-US", false);
-        getTracker()?.markListened?.("islamicDaily", `${activeAge.id}-lesson`, { type: "lesson" });
+        speak(`${selectedLesson.title}. ${selectedLesson.concept}. Say: ${selectedLesson.say}. Meaning: ${selectedLesson.meaning}.`, "en-US", false);
+        getTracker()?.markListened?.("islamicDaily", `${lessonKey}-lesson`, { type: "lesson" });
       });
 
-      document.getElementById("repeatLessonBtn").addEventListener("click", () => {
-        speak(`${activeAge.lesson.say}. ${activeAge.lesson.say}.`, "en-US", true);
-        getTracker()?.markRepeated?.("islamicDaily", `${activeAge.id}-phrase`, { type: "phrase" });
+      document.getElementById("repeatPhraseBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.say}. ${selectedLesson.say}.`, "en-US", true);
+        getTracker()?.markRepeated?.("islamicDaily", `${lessonKey}-phrase`, { type: "phrase" });
       });
 
       document.getElementById("learnedLessonBtn").addEventListener("click", (e) => {
-        getTracker()?.markLearned?.("islamicDaily", `${activeAge.id}-lesson`, { type: "lesson" });
-        e.currentTarget.textContent = "✅ Practiced!";
+        getTracker()?.markLearned?.("islamicDaily", `${lessonKey}-lesson`, { type: "lesson" });
+        e.currentTarget.textContent = "✅ Learned!";
       });
 
-      document.getElementById("listenQuizBtn").addEventListener("click", () => {
-        speak(`Quiz question. ${activeAge.quiz.question}. Options are: ${activeAge.quiz.options.join(", ")}.`, "en-US", false);
+      document.getElementById("listenActivityBtn").addEventListener("click", () => {
+        speak(`${selectedLesson.activityTitle}. Choose the best answer.`, "en-US", false);
       });
 
-      document.getElementById("repeatAnswerBtn").addEventListener("click", () => {
-        speak(`The answer is ${activeAge.quiz.answer}.`, "en-US", true);
-      });
-
-      document.querySelectorAll(".module-listen").forEach(button => {
-        button.addEventListener("click", () => {
-          speak(`${button.dataset.title}. ${button.dataset.text}. Practice. ${button.dataset.practice}`, "en-US", false);
-          getTracker()?.markListened?.("islamicDaily", `${activeAge.id}-${button.dataset.title}`, { type: "module" });
-        });
-      });
-
-      document.querySelectorAll(".module-done").forEach(button => {
-        button.addEventListener("click", () => {
-          getTracker()?.markCompleted?.("islamicDaily", button.dataset.id, { type: "module" });
-          button.textContent = "✅ Done!";
-        });
+      document.getElementById("completeActivityBtn").addEventListener("click", (e) => {
+        getTracker()?.markCompleted?.("islamicDaily", `${lessonKey}-activity`, { type: "activity" });
+        e.currentTarget.textContent = "✅ Activity completed!";
       });
 
       document.getElementById("listenStoryBtn").addEventListener("click", () => {
-        speak(`${activeAge.story.title}. ${activeAge.story.text}. Lesson. ${activeAge.story.lesson}`, "en-US", false);
-        getTracker()?.markListened?.("islamicDaily", `${activeAge.id}-story`, { type: "story" });
+        speak(selectedLesson.story, "en-US", false);
+        getTracker()?.markListened?.("islamicDaily", `${lessonKey}-story`, { type: "story" });
       });
 
-      document.getElementById("repeatStoryLessonBtn").addEventListener("click", () => {
-        speak(activeAge.story.lesson, "en-US", true);
+      document.getElementById("repeatStoryPointBtn").addEventListener("click", () => {
+        speak(selectedLesson.concept, "en-US", true);
       });
 
       document.getElementById("completeStoryBtn").addEventListener("click", (e) => {
-        getTracker()?.markCompleted?.("islamicDaily", `${activeAge.id}-story`, { type: "story" });
-        e.currentTarget.textContent = "✅ Completed!";
+        getTracker()?.markCompleted?.("islamicDaily", `${lessonKey}-story`, { type: "story" });
+        e.currentTarget.textContent = "✅ Story completed!";
+      });
+
+      document.getElementById("listenQuizBtn").addEventListener("click", () => {
+        speak(`Question. ${selectedLesson.quizQuestion}.`, "en-US", false);
+      });
+
+      document.getElementById("repeatAnswerBtn").addEventListener("click", () => {
+        speak(`Answer: ${selectedLesson.quizAnswer}.`, "en-US", true);
       });
 
       document.getElementById("listenMissionBtn").addEventListener("click", () => {
-        speak(activeAge.lesson.mission, "en-US", false);
+        speak(selectedLesson.mission, "en-US", false);
       });
 
       document.getElementById("repeatMissionBtn").addEventListener("click", () => {
-        speak(activeAge.lesson.mission, "en-US", true);
+        speak(selectedLesson.mission, "en-US", true);
       });
 
       document.getElementById("saveMissionBtn").addEventListener("click", (e) => {
-        getTracker()?.markCompleted?.("islamicDaily", `${activeAge.id}-mission`, {
-          reflectionWritten: document.getElementById("reflectionBox").value.trim().length > 0
-        });
+        getTracker()?.markCompleted?.("islamicDaily", `${lessonKey}-mission`, { type: "mission" });
         e.currentTarget.textContent = "✅ Mission saved!";
+      });
+
+      document.getElementById("listenMasteryBtn").addEventListener("click", () => {
+        speak(`Mastery check. Say ${selectedLesson.say}. Meaning: ${selectedLesson.meaning}. Mission: ${selectedLesson.mission}.`, "en-US", false);
+      });
+
+      document.getElementById("nextLessonBtn").addEventListener("click", () => {
+        activeLessonIndex = (activeLessonIndex + 1) % activeAge.lessons.length;
+        renderActiveLevel();
+        document.getElementById("lessonCard").scrollIntoView({ behavior: "smooth", block: "start" });
       });
     }
 
@@ -1888,7 +1920,7 @@
 
     function setupMainButtons() {
       document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
-        speak("Choose the child age. Age three, age four, age five, age six, or age seven. The page will show only that level.", "en-US", false);
+        speak("Choose the child age. Then choose one lesson from that age level.", "en-US", false);
       });
 
       document.querySelectorAll(".stop-sound").forEach(btn => btn.addEventListener("click", stopSound));
