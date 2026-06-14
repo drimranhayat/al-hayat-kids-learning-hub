@@ -4,96 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>General Knowledge for Kids | Facts, World, Culture & Quiz | Al-Hayat Kids Learning Hub</title>
+  <title>General Knowledge for Kids Ages 3–7 | Lesson Library & Quiz Games | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="General Knowledge for Kids at Al-Hayat Kids Learning Hub. Explore countries, continents, flags, inventions, famous places, nature facts, cultures, daily facts, quizzes, and child-friendly learning activities." />
-  <meta name="keywords" content="general knowledge for kids, GK for children, facts for kids, countries for kids, continents for kids, flags for kids, quiz for kids, inventions for kids" />
+  <meta name="description" content="Complete age-based General Knowledge lesson library for children ages 3–7. Learn about self, family, home, school, community helpers, animals, plants, seasons, transport, countries, flags, manners, safety, environment, space, maps, quizzes, missions, whiteboard, audio, and progress tracking." />
+  <meta name="keywords" content="general knowledge for kids, GK for kids ages 3 4 5 6 7, preschool general knowledge, kindergarten GK, kids quiz, community helpers for kids, animals for kids, seasons for kids, transport for kids, space for kids, maps for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/general-knowledge.html" />
-
-  <meta property="og:title" content="General Knowledge for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful child-friendly General Knowledge page with world facts, countries, continents, inventions, famous places, cultures, daily facts, and quizzes." />
-  <meta property="og:type" content="website" />
 
   <style>
     :root {
-      --green: #138a3d;
-      --green-dark: #075c2a;
-      --green-soft: #e8f8ee;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-dark: #075985;
       --sky-soft: #e0f2fe;
+      --green: #16a34a;
+      --green-dark: #166534;
+      --green-soft: #dcfce7;
       --orange: #f97316;
-      --orange-dark: #c2410c;
       --orange-soft: #ffedd5;
-      --yellow: #f6c445;
-      --yellow-soft: #fef3c7;
+      --gold: #f6c445;
+      --gold-soft: #fef3c7;
       --purple: #7c3aed;
       --purple-soft: #ede9fe;
       --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
-      --teal-dark: #0f766e;
       --teal-soft: #ccfbf1;
+      --red-soft: #fee2e2;
+      --lime-soft: #ecfccb;
       --white: #ffffff;
-      --light: #f8fbff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
       --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
       --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
-      --radius: 24px;
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(124, 58, 237, 0.15), transparent 28rem),
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 24rem),
+        radial-gradient(circle at top left, rgba(20, 184, 166, 0.14), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        radial-gradient(circle at 90% 70%, rgba(124, 58, 237, 0.12), transparent 22rem),
         linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, textarea { font: inherit; }
 
-    button,
-    input {
-      font: inherit;
-    }
-
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin-inline: auto;
-    }
+    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
 
     .top-header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255,255,255,0.92);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
 
     .top-inner {
@@ -109,32 +85,31 @@
       align-items: center;
       gap: 12px;
       font-weight: 900;
-      color: var(--green-dark);
+      color: var(--blue-dark);
     }
 
     .brand-icon {
       width: 52px;
       height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--purple), var(--sky));
+      background: linear-gradient(135deg, var(--teal), var(--sky));
+      color: white;
       display: grid;
       place-items: center;
-      color: white;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.22);
+      box-shadow: 0 12px 24px rgba(20, 184, 166, 0.20);
     }
 
     .brand small {
       display: block;
       color: var(--muted);
       font-weight: 700;
-      margin-top: -2px;
       font-size: 0.78rem;
+      margin-top: -2px;
     }
 
     .nav {
       display: flex;
-      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -145,39 +120,96 @@
       border-radius: 999px;
       font-weight: 800;
       font-size: 0.94rem;
-      color: var(--text);
       transition: 0.2s ease;
     }
 
-    .nav a:hover,
-    .nav a:focus {
-      background: var(--purple-soft);
-      color: var(--purple);
+    .nav a:hover, .nav a:focus {
+      background: linear-gradient(135deg, var(--teal-soft), var(--gold-soft));
+      color: var(--blue-dark);
+      box-shadow: 0 10px 20px rgba(20, 184, 166, 0.10);
     }
 
     .nav .cta {
-      background: var(--yellow);
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
     }
 
-    .hero {
-      padding: 64px 0 44px;
+    .audio-bar {
+      position: sticky;
+      top: 76px;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.94);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
     }
+
+    .audio-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .sound-control-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .fun-sound-toggle, .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fun-sound-toggle {
+      background: linear-gradient(135deg, rgba(246,196,69,0.95), rgba(20,184,166,0.92));
+      color: #0f172a;
+      box-shadow: 0 10px 22px rgba(246, 196, 69, 0.18);
+    }
+
+    .fun-sound-toggle.off, .stop-sound {
+      background: rgba(255,255,255,0.10);
+      color: white;
+    }
+
+    .fun-sound-toggle:hover,
+    .fun-sound-toggle:focus,
+    .stop-sound:hover,
+    .stop-sound:focus {
+      transform: translateY(-2px) scale(1.03);
+      filter: brightness(1.06);
+    }
+
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.32), transparent 14rem),
-        radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.18), transparent 16rem),
-        linear-gradient(135deg, #f5f3ff, #e0f2fe);
+        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.28), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.28), transparent 16rem),
+        linear-gradient(135deg, #ecfeff, #fefce8);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255,255,255,0.78);
       overflow: hidden;
     }
 
@@ -186,7 +218,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--purple);
+      color: var(--blue-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -195,65 +227,135 @@
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 5.1rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
-      color: var(--purple);
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
+      color: var(--blue-dark);
       margin-bottom: 18px;
     }
 
-    h1 span {
-      color: var(--sky-dark);
-    }
+    h1 span { color: var(--orange); }
 
     .hero p {
-      max-width: 650px;
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      max-width: 700px;
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
       color: #334155;
       margin-bottom: 22px;
     }
 
-    .buttons {
+    .buttons, .sound-actions, .toolbar, .age-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
+      align-items: center;
     }
 
-    .btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
+    .quiz-options button, .choice-options button, .lesson-chip {
+      position: relative;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 19px;
+      min-height: 44px;
+      padding: 10px 15px;
       border-radius: 999px;
       font-weight: 900;
       border: 0;
       cursor: pointer;
       transition: 0.2s ease;
       text-align: center;
+      will-change: transform, background, box-shadow;
     }
 
-    .btn:hover,
-    .btn:focus {
+    .btn { min-height: 48px; padding: 12px 19px; }
+
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
       transform: translateY(-2px);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--purple), var(--sky));
-      color: white;
-      box-shadow: 0 14px 28px rgba(124, 58, 237, 0.22);
+    .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
+    .tool-btn::after, .age-tab::after, .quiz-options button::after,
+    .choice-options button::after, .lesson-chip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 34%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
     }
 
-    .btn-yellow {
-      background: var(--yellow);
+    .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
+    .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
+      opacity: 1;
+    }
+
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
+      background: linear-gradient(135deg, var(--teal), var(--sky));
+      color: white;
+      box-shadow: 0 14px 28px rgba(20, 184, 166, 0.20);
+    }
+
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
+      background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
+    }
+
+    .btn-gold {
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
 
-    .btn-white {
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #facc15, #fb923c);
+      color: #111827;
+      box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
+    }
+
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
-      color: var(--purple);
+      color: var(--blue-dark);
       border: 1px solid var(--border);
+    }
+
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
+      background: linear-gradient(135deg, #ffffff, #ecfeff);
+      color: var(--blue-dark);
+      border-color: #67e8f9;
+      box-shadow: 0 14px 26px rgba(20, 184, 166, 0.13);
+    }
+
+    .listen-btn {
+      background: var(--teal-soft);
+      color: #0f766e;
+      border: 1px solid #99f6e4;
+    }
+
+    .listen-btn:hover {
+      background: linear-gradient(135deg, #ccfbf1, #e0f2fe);
+      color: #0f766e;
+      border-color: #2dd4bf;
+      box-shadow: 0 14px 26px rgba(20, 184, 166, 0.14);
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
+    .repeat-btn:hover {
+      background: linear-gradient(135deg, #fef3c7, #ffffff);
+      color: #92400e;
+      border-color: #facc15;
+      box-shadow: 0 14px 26px rgba(246, 196, 69, 0.14);
     }
 
     .hero-visual {
@@ -269,51 +371,46 @@
     }
 
     .hero-visual::before {
-      content: "🌍";
+      content: "🌍 🧠";
       position: absolute;
-      font-size: 9rem;
-      left: 28px;
+      font-size: 4.5rem;
+      font-weight: 950;
+      color: rgba(20, 184, 166, 0.12);
+      left: 24px;
       top: 24px;
-      opacity: 0.17;
+      letter-spacing: -0.08em;
     }
 
     .hero-visual::after {
-      content: "🧭";
+      content: "🚀";
       position: absolute;
-      font-size: 8rem;
-      right: 36px;
+      font-size: 7rem;
+      right: 34px;
       bottom: 18px;
-      opacity: 0.20;
+      opacity: 0.16;
     }
 
-    .child-card {
-      width: min(92%, 430px);
+    .hero-box {
+      width: min(92%, 450px);
       background: white;
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
-    .child-card .emoji {
-      font-size: 4rem;
-      margin-bottom: 8px;
-    }
+    .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
 
-    .child-card h2 {
-      color: var(--purple);
+    .hero-box h2 {
+      color: var(--blue-dark);
       font-size: 1.65rem;
       line-height: 1.15;
       margin-bottom: 10px;
     }
 
-    .child-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
+    .hero-box p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -327,7 +424,6 @@
       border-radius: 18px;
       padding: 12px;
       font-weight: 900;
-      color: var(--text);
       border: 1px solid var(--border);
     }
 
@@ -338,9 +434,39 @@
       font-weight: 700;
     }
 
-    .section {
-      padding: 52px 0;
+    .age-choice { padding: 22px 0 12px; }
+
+    .age-choice-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: clamp(18px, 4vw, 28px);
+      box-shadow: var(--shadow-soft);
     }
+
+    .age-choice-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .age-choice-title h2 {
+      color: #0f172a;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .age-choice-title p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 700px;
+    }
+
+    .section { padding: 44px 0; }
 
     .section-head {
       margin-bottom: 26px;
@@ -351,7 +477,7 @@
     }
 
     .section-label {
-      color: var(--purple);
+      color: var(--blue-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -361,7 +487,7 @@
 
     .section h2 {
       color: #0f172a;
-      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
@@ -369,239 +495,294 @@
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 850px;
       margin-top: 8px;
     }
 
-    .method-grid {
+    .level-shell {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(20,184,166,0.14), transparent 18rem),
+        radial-gradient(circle at 92% 18%, rgba(246,196,69,0.18), transparent 16rem),
+        linear-gradient(135deg, #ecfeff, #fff7ed);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .level-hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      background: white;
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 28px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 20px;
+    }
+
+    .level-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--teal-soft), var(--gold-soft));
+      border: 1px solid rgba(20, 184, 166, 0.14);
+    }
+
+    .level-hero h2 {
+      color: var(--blue-dark);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .level-hero p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 850px;
+    }
+
+    .level-progress {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .level-dot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 950;
+      color: #475569;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .level-dot.active {
+      background: linear-gradient(135deg, var(--teal), var(--sky));
+      color: white;
+      border-color: transparent;
+    }
+
+    .level-dot span {
+      display: block;
+      font-size: 0.76rem;
+      opacity: 0.78;
+      margin-top: 2px;
+    }
+
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
+    .daily-grid, .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .method-card {
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
     }
 
-    .method-card .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: var(--purple-soft);
-      font-size: 1.7rem;
-      margin-bottom: 14px;
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
     }
 
-    .method-card:nth-child(2) .icon { background: var(--sky-soft); }
-    .method-card:nth-child(3) .icon { background: var(--green-soft); }
-    .method-card:nth-child(4) .icon { background: var(--yellow-soft); }
-
-    .method-card h3 {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
       color: #0f172a;
       margin-bottom: 7px;
     }
 
-    .method-card p {
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
       color: var(--muted);
       font-size: 0.95rem;
     }
 
-    .topics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .topic-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow-soft);
-      transition: 0.22s ease;
-      min-height: 215px;
-    }
-
-    .topic-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-    }
-
-    .topic-icon {
-      width: 58px;
-      height: 58px;
+    .icon-pill {
+      width: 54px;
+      height: 54px;
       border-radius: 18px;
       display: grid;
       place-items: center;
-      font-size: 1.9rem;
-      margin-bottom: 16px;
-      background: var(--purple-soft);
-    }
-
-    .topic-card:nth-child(2) .topic-icon { background: var(--sky-soft); }
-    .topic-card:nth-child(3) .topic-icon { background: var(--green-soft); }
-    .topic-card:nth-child(4) .topic-icon { background: var(--yellow-soft); }
-    .topic-card:nth-child(5) .topic-icon { background: var(--orange-soft); }
-    .topic-card:nth-child(6) .topic-icon { background: var(--pink-soft); }
-    .topic-card:nth-child(7) .topic-icon { background: var(--teal-soft); }
-    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
-
-    .topic-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-      font-size: 1.18rem;
-    }
-
-    .topic-card p {
-      color: var(--muted);
-      font-size: 0.96rem;
+      background: var(--teal-soft);
+      font-size: 1.65rem;
       margin-bottom: 14px;
     }
 
-    .topic-card a {
-      color: var(--purple);
-      font-weight: 950;
-    }
-
-    .world-lab {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
-        linear-gradient(135deg, #f5f3ff, #eff6ff);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 22px;
-      align-items: stretch;
-      margin-top: 22px;
-    }
-
-    .lab-card {
-      background: white;
-      border-radius: 28px;
-      padding: 24px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .compass {
-      width: 220px;
-      height: 220px;
-      margin: 18px auto;
-      border-radius: 50%;
-      border: 12px solid var(--sky-soft);
-      background:
-        radial-gradient(circle, white 0 36%, #f8fafc 37% 100%);
-      position: relative;
-      box-shadow: inset 0 0 0 2px #dbeafe, var(--shadow-soft);
-    }
-
-    .compass span {
-      position: absolute;
-      font-weight: 950;
-      color: var(--purple);
-      font-size: 1.2rem;
-    }
-
-    .north { top: 12px; left: 50%; transform: translateX(-50%); }
-    .south { bottom: 12px; left: 50%; transform: translateX(-50%); }
-    .east { right: 16px; top: 50%; transform: translateY(-50%); }
-    .west { left: 16px; top: 50%; transform: translateY(-50%); }
-
-    .needle {
-      position: absolute;
-      width: 18px;
-      height: 92px;
-      background: linear-gradient(180deg, var(--orange), var(--blue));
-      top: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      clip-path: polygon(50% 0, 100% 100%, 50% 82%, 0 100%);
+    .badge, .today-badge, .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
       border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
     }
 
-    .continent-list {
+    .level-badge {
+      background: var(--teal-soft);
+      color: #0f766e;
+      border-color: #99f6e4;
+    }
+
+    .gk-display {
+      font-size: clamp(3rem, 9vw, 5.6rem);
+      line-height: 1.05;
+      font-weight: 950;
+      color: var(--blue-dark);
+      margin: 12px 0;
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+
+    .visual-demo {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.4;
+      text-align: center;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      min-height: 92px;
       display: grid;
-      gap: 10px;
-      margin-top: 16px;
+      place-items: center;
+      margin-top: 12px;
+      word-break: break-word;
     }
 
-    .continent-item {
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box, .parent-note {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 14px;
-      font-weight: 800;
       color: #334155;
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: center;
+      font-weight: 750;
     }
 
-    .continent-item span {
-      color: var(--muted);
+    .mission-box {
+      background: linear-gradient(135deg, #ffffff, #ecfeff);
+      border-color: #99f6e4;
+    }
+
+    .parent-note {
+      background: var(--gold-soft);
+      border-color: #fde68a;
+      color: #92400e;
+    }
+
+    .story-text {
       font-weight: 700;
-      font-size: 0.92rem;
+      line-height: 1.8;
     }
 
-    .daily-box {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #f5f3ff, #ecfeff);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 36px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .daily-grid {
+    .visual-card {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 22px;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
     }
 
-    .daily-card {
-      background: white;
+    .visual-clue {
+      background: linear-gradient(135deg, #ccfbf1, #fef3c7);
+      border: 1px solid #99f6e4;
       border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
     }
 
-    .daily-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    .big-gk {
-      font-size: clamp(2.2rem, 4vw, 3.6rem);
+    .visual-clue .emoji {
+      font-size: 4.2rem;
       line-height: 1;
-      font-weight: 950;
-      color: var(--purple);
-      margin: 14px 0;
-      letter-spacing: -0.04em;
+      margin-bottom: 6px;
     }
 
-    .quiz-options {
+    .visual-clue strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 0.95rem;
+    }
+
+    .support-grid { display: grid; gap: 12px; }
+
+    .quiz-options, .choice-options {
       display: grid;
       gap: 10px;
       margin-top: 14px;
     }
 
-    .quiz-options button {
+    .quiz-options button, .choice-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
       border-radius: 14px;
@@ -609,11 +790,19 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .quiz-options button:hover {
-      background: var(--purple-soft);
+    .quiz-options button:hover, .choice-options button:hover {
+      background: linear-gradient(135deg, #ecfeff, #fef3c7);
+      color: var(--blue-dark);
+      border-color: #67e8f9;
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 12px 22px rgba(20, 184, 166, 0.10);
     }
+
+    .quiz-options button.correct, .choice-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong, .choice-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
     .result {
       margin-top: 12px;
@@ -621,41 +810,103 @@
       font-weight: 900;
     }
 
-    .discovery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .discovery-card {
-      background: white;
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow-soft);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
-    .discovery-emoji {
-      font-size: 3rem;
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
       margin-bottom: 12px;
     }
 
-    .discovery-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .whiteboard-head strong {
+      color: var(--blue-dark);
+      font-size: 1rem;
     }
 
-    .discovery-card p {
-      color: var(--muted);
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .parent-box {
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #67e8f9;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
+
+    .progress-section, .parent-box {
       background: white;
       border: 1px solid var(--border);
       border-radius: 34px;
       box-shadow: var(--shadow);
       padding: clamp(24px, 4vw, 36px);
+    }
+
+    .progress-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .progress-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      text-align: center;
+      font-weight: 950;
+    }
+
+    .progress-card strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .progress-card span {
+      color: var(--muted);
+      font-weight: 750;
+      font-size: 0.88rem;
+    }
+
+    .parent-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
@@ -684,43 +935,59 @@
       font-weight: 950;
     }
 
-    .pathway {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .path-card {
+    details.curriculum-details {
       background: white;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+      border-radius: 24px;
       box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      margin-top: 16px;
     }
 
-    .path-card strong {
-      display: inline-grid;
-      place-items: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 15px;
-      background: var(--purple);
-      color: white;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
+    details.curriculum-details summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      font-weight: 950;
+      color: var(--blue-dark);
+      background: linear-gradient(135deg, #ffffff, #ecfeff);
     }
 
-    .path-card h3 {
-      color: #0f172a;
-      margin-bottom: 8px;
+    .details-body {
+      padding: 22px;
+      border-top: 1px solid var(--border);
     }
 
-    .path-card p {
-      color: var(--muted);
+    .compact-worlds {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
     }
 
-    .cta {
-      background: linear-gradient(135deg, #0f172a, #4c1d95);
+    .compact-world {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .compact-world span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    .sound-hover-pop { animation: soundHoverPop 0.34s ease; }
+
+    @keyframes soundHoverPop {
+      0% { transform: translateY(0) scale(1); }
+      45% { transform: translateY(-3px) scale(1.04); }
+      100% { transform: translateY(-2px) scale(1.02); }
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--blue-dark), #0f172a);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -731,11 +998,9 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 {
-      color: white;
-    }
+    .cta-section h2 { color: white; }
 
-    .cta p {
+    .cta-section p {
       color: rgba(255,255,255,0.78);
       margin-top: 10px;
       font-size: 1.05rem;
@@ -755,7 +1020,7 @@
 
     .cta-list li::before {
       content: "✓ ";
-      color: #c4b5fd;
+      color: #99f6e4;
     }
 
     .footer {
@@ -773,12 +1038,9 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 {
-      margin-bottom: 12px;
-    }
+    .footer h3 { margin-bottom: 12px; }
 
-    .footer p,
-    .footer a {
+    .footer p, .footer a {
       color: rgba(255,255,255,0.72);
       font-weight: 650;
     }
@@ -796,33 +1058,31 @@
     }
 
     @media (max-width: 980px) {
-      .hero-card,
-      .lab-grid,
-      .parent-box,
-      .cta {
+      .hero-card, .parent-box, .cta-section, .visual-card, .level-hero {
         grid-template-columns: 1fr;
       }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .discovery-grid {
+      .daily-grid, .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3, .grid-4, .compact-worlds {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .daily-grid {
-        grid-template-columns: 1fr;
+      .level-progress, .progress-cards {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
-      .container {
-        width: min(100% - 24px, var(--max));
-      }
+      .container { width: min(100% - 24px, var(--max)); }
 
       .top-inner {
         flex-direction: column;
@@ -830,46 +1090,32 @@
         padding: 14px 0;
       }
 
-      .nav {
-        justify-content: flex-start;
-      }
+      .nav { justify-content: flex-start; }
 
-      .method-grid,
-      .topics-grid,
-      .pathway,
-      .discovery-grid,
-      .footer-grid {
+      .grid-3, .grid-4, .compact-worlds, .footer-grid, .progress-cards {
         grid-template-columns: 1fr;
       }
 
-      .buttons {
+      .buttons, .sound-actions, .toolbar, .age-tabs {
         display: grid;
       }
 
-      .btn {
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
         width: 100%;
       }
 
-      .hero {
-        padding-top: 28px;
-      }
+      .hero { padding-top: 28px; }
+      .hero-visual { min-height: 300px; }
+      .section-head { display: block; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .level-progress { grid-template-columns: 1fr; }
+    }
 
-      .hero-visual {
-        min-height: 300px;
-      }
-
-      .section-head {
-        display: block;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .compass {
-        width: 190px;
-        height: 190px;
-      }
+    @media (prefers-reduced-motion: reduce) {
+      .sound-hover-pop { animation: none; }
+      .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+      .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -879,10 +1125,7 @@
     <div class="container top-inner">
       <a class="brand" href="../index.html">
         <span class="brand-icon">🌍</span>
-        <span>
-          Al-Hayat Kids Learning Hub
-          <small>Learn • Explore • Grow</small>
-        </span>
+        <span>Al-Hayat Kids Learning Hub<small>World • Nature • Manners • Discovery</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -892,375 +1135,233 @@
         <a href="english.html">English</a>
         <a href="math.html">Math</a>
         <a href="science.html">Science</a>
+        <a href="../reading-library/index.html">Stories</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
     </div>
   </header>
 
+  <div class="audio-bar" aria-label="Audio learning controls">
+    <div class="container audio-inner">
+      <p>🔊 General Knowledge audio is short and focused: fact, question, mission, answer, or safety reminder only.</p>
+      <div class="sound-control-group">
+        <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
+        <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">🌍 General Knowledge for Kids</div>
-          <h1>General Knowledge <span>for Kids</span></h1>
+          <div class="kicker">🌍 Complete General Knowledge Library • Ages 3–7</div>
+          <h1>Know the World. <span>Grow Smart.</span></h1>
           <p>
-            A joyful learning space where children explore the world, countries, continents,
-            flags, cultures, inventions, famous places, nature facts, and everyday knowledge
-            through simple explanations, quizzes, and discovery activities.
+            A complete age-based General Knowledge foundation. The child first chooses age, then selects a lesson from that
+            level’s discovery library. Every lesson has a simple fact, visual clue, mini story, quiz game,
+            daily mission, whiteboard practice, and short focused audio.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#explore">Start Exploring</a>
-            <a class="btn btn-yellow" href="#world-lab">Open World Lab</a>
-            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+            <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
+            <a class="btn btn-gold" href="#lesson-library">Open GK Library</a>
+            <a class="btn btn-white" href="#whiteboard">Discovery Whiteboard</a>
+          </div>
+
+          <div class="sound-actions" style="margin-top: 14px;">
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one general knowledge lesson. See the picture clue. Listen to the fact. Play the quiz. Do the mission. Draw or write on the whiteboard." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. See. Listen. Think. Answer. Draw. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="child-card">
+          <div class="hero-box">
             <div class="emoji">🧭</div>
-            <h2>Know the world with wonder and respect</h2>
-            <p>General knowledge helps children ask better questions, understand people, and connect learning with real life.</p>
-
+            <h2>General Knowledge Level 1 to Level 5</h2>
+            <p>Age 3 begins with self, family, home, and animals. Age 7 reaches maps, countries, space, environment, inventions, and global awareness.</p>
             <div class="hero-stats">
-              <div class="hero-stat">World <span>Awareness</span></div>
-              <div class="hero-stat">Facts <span>& Quiz</span></div>
-              <div class="hero-stat">Curious <span>Minds</span></div>
+              <div class="hero-stat">60 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Quiz Games <span>Every Lesson</span></div>
+              <div class="hero-stat">Missions <span>Real Life</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="method-title">
-      <div class="container">
-        <div class="section-head">
+    <section class="age-choice" id="choose-age">
+      <div class="container age-choice-card">
+        <div class="age-choice-title">
           <div>
-            <div class="section-label">Learning Method</div>
-            <h2 id="method-title">A global learning routine for curious children</h2>
-            <p class="section-lead">
-              General knowledge should not be memorized blindly. Children learn best when facts
-              are connected with maps, stories, pictures, daily life, and respectful curiosity.
-            </p>
+            <div class="section-label">Step 1</div>
+            <h2>Choose the child’s age</h2>
+            <p>After choosing an age, the discovery library below will show only that age level’s General Knowledge lessons.</p>
           </div>
+          <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
+        </div>
+        <div class="age-tabs" id="ageTabs"></div>
+      </div>
+    </section>
+
+    <section class="section" id="active-level">
+      <div class="container level-shell">
+        <div class="level-hero" id="levelHero"></div>
+        <div class="level-progress" id="levelProgress"></div>
+
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">General Knowledge Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused discovery lesson. Each lesson has fact, story, quiz, mission, and writing/drawing practice.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
         </div>
 
-        <div class="method-grid">
-          <article class="method-card">
-            <div class="icon">👀</div>
-            <h3>Notice</h3>
-            <p>Observe maps, flags, places, people, animals, inventions, and daily life examples.</p>
+        <div class="daily-grid" style="margin-top:20px;">
+          <article class="lesson-card" id="lessonCard"></article>
+          <article class="activity-card" id="activityCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
+        </div>
+
+        <div class="practice-grid" style="margin-top:18px;" id="whiteboard">
+          <article class="practice-card">
+            <h3>✍️ Discovery Whiteboard</h3>
+            <div class="whiteboard-wrap" aria-label="General Knowledge whiteboard">
+              <div class="whiteboard-head">
+                <strong id="boardTitle">Draw or write today’s discovery word</strong>
+                <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
+              </div>
+
+              <canvas id="gkWhiteboard" class="whiteboard-canvas" aria-label="Write or draw using mouse, touch, or stylus"></canvas>
+
+              <p class="board-tip">
+                Tip: Trace the faint guide first, then draw the object or write the discovery word yourself.
+              </p>
+            </div>
+
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Guide</button>
+              <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Guide</button>
+              <button class="learned-btn" id="saveBoardBtn" type="button">✅ Save Writing</button>
+            </div>
           </article>
 
-          <article class="method-card">
-            <div class="icon">❓</div>
-            <h3>Ask</h3>
-            <p>Ask what, where, who, why, and how questions to build real understanding.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">🗺️</div>
-            <h3>Connect</h3>
-            <p>Connect facts with geography, history, science, culture, and values.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">💬</div>
-            <h3>Share</h3>
-            <p>Explain one new fact to a parent, teacher, or friend in simple words.</p>
+          <article class="practice-card">
+            <h3>🏆 Discovery Goal</h3>
+            <div class="mission-box" id="writingGoal">Draw the selected object, place, helper, animal, planet, or map idea.</div>
+            <ul class="tips">
+              <li>Ask one simple question before giving the answer.</li>
+              <li>Connect every lesson to the child’s home, school, and surroundings.</li>
+              <li>Use pictures, toys, real objects, and short stories.</li>
+              <li>Celebrate curiosity, careful observation, and good manners.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="explore" aria-labelledby="topics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Explore GK</div>
-            <h2 id="topics-title">What children can discover here</h2>
-            <p class="section-lead">
-              This page can grow into a complete general knowledge zone with world facts,
-              quizzes, maps, flags, inventions, famous places, nature facts, and printable activities.
-            </p>
-          </div>
-        </div>
-
-        <div class="topics-grid">
-          <article class="topic-card">
-            <div class="topic-icon">🗺️</div>
-            <h3>World & Maps</h3>
-            <p>Directions, continents, oceans, countries, cities, landmarks, and map skills.</p>
-            <a href="#world-lab">Open World Lab →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🏳️</div>
-            <h3>Flags & Countries</h3>
-            <p>Recognize flags, learn country names, and respect different cultures.</p>
-            <a href="#practice">Try Facts →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">💡</div>
-            <h3>Inventions</h3>
-            <p>Learn how useful inventions changed travel, communication, health, and learning.</p>
-            <a href="#practice">Learn Inventions →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🏛️</div>
-            <h3>Famous Places</h3>
-            <p>Explore landmarks, mosques, museums, mountains, rivers, and wonders of the world.</p>
-            <a href="../reading-library/index.html">Read More →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🐾</div>
-            <h3>Nature Facts</h3>
-            <p>Animals, plants, oceans, forests, deserts, mountains, and environmental care.</p>
-            <a href="science.html">Science Explorer →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🤝</div>
-            <h3>People & Culture</h3>
-            <p>Food, clothes, languages, homes, festivals, and respectful global awareness.</p>
-            <a href="#practice">Explore Culture →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🧠</div>
-            <h3>GK Quiz</h3>
-            <p>Short quizzes help children remember facts and build confidence.</p>
-            <a href="#quiz">Take Quiz →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-icon">🌟</div>
-            <h3>Daily GK</h3>
-            <p>One new fact every day builds curiosity and conversation skills.</p>
-            <a href="../daily-learning/index.html">Daily Learning →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="world-lab" aria-labelledby="world-title">
-      <div class="container world-lab">
-        <div class="section-label">World Lab</div>
-        <h2 id="world-title">Learn directions and continents</h2>
+    <section class="section" id="progress">
+      <div class="container progress-section">
+        <div class="section-label">Progress Tracker</div>
+        <h2>Stars, learned facts, quiz wins, missions, and writing practice</h2>
         <p class="section-lead">
-          Children can begin global awareness with simple map skills: directions, continents,
-          oceans, countries, and respectful curiosity about people.
+          Progress is saved only on this browser/device using local storage. No login, no child name,
+          no email, and no server collection.
         </p>
 
-        <div class="lab-grid">
-          <article class="lab-card">
-            <h3>🧭 Compass Directions</h3>
-            <p>
-              A compass helps us understand directions. Start with four main directions:
-              north, south, east, and west.
-            </p>
+        <div class="progress-cards" id="progressCards">
+          <div class="progress-card"><strong id="starsCount">0</strong><span>Stars Earned</span></div>
+          <div class="progress-card"><strong id="lessonsCount">0</strong><span>Lessons Learned</span></div>
+          <div class="progress-card"><strong id="quizCount">0</strong><span>Quiz Wins</span></div>
+          <div class="progress-card"><strong id="missionCount">0</strong><span>Missions Done</span></div>
+        </div>
 
-            <div class="compass" aria-label="Compass showing north, south, east, and west">
-              <span class="north">N</span>
-              <span class="south">S</span>
-              <span class="east">E</span>
-              <span class="west">W</span>
-              <div class="needle"></div>
-            </div>
-
-            <p><strong>Practice:</strong> Ask your child: Which direction is shown at the top of the compass?</p>
-          </article>
-
-          <article class="lab-card">
-            <h3>🌍 Continents</h3>
-            <p>
-              Many schools teach seven continents. Children can learn them through songs,
-              maps, puzzles, and repeated visual practice.
-            </p>
-
-            <div class="continent-list">
-              <div class="continent-item">Asia <span>Largest continent</span></div>
-              <div class="continent-item">Africa <span>Many climates and cultures</span></div>
-              <div class="continent-item">North America <span>Large countries and varied lands</span></div>
-              <div class="continent-item">South America <span>Amazon rainforest region</span></div>
-              <div class="continent-item">Antarctica <span>Very cold continent</span></div>
-              <div class="continent-item">Europe <span>Many countries close together</span></div>
-              <div class="continent-item">Australia/Oceania <span>Island countries and Australia</span></div>
-            </div>
-          </article>
+        <div class="sound-actions" style="margin-top: 16px;">
+          <button class="repeat-btn" type="button" id="resetProgressBtn">Reset local progress</button>
         </div>
       </div>
     </section>
 
-    <section class="section" id="practice" aria-labelledby="practice-title">
-      <div class="container daily-box">
-        <div class="section-label">Today’s GK Practice</div>
-        <h2 id="practice-title">One fact, one question, one conversation</h2>
-        <p class="section-lead">
-          General knowledge grows through small daily facts, map practice, discussion, and quizzes.
-        </p>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>🌍 Fact of the Day</h3>
-            <div class="big-gk">Maps guide us</div>
-            <p>
-              A map is a drawing or digital picture of a place. It helps us find locations,
-              directions, roads, rivers, mountains, and countries.
-            </p>
-          </article>
-
-          <article class="daily-card">
-            <h3>💡 Invention of the Day</h3>
-            <p>
-              The wheel is one of the most important inventions. It made it easier for people
-              to move things, travel, and build vehicles.
-            </p>
-          </article>
-
-          <article class="daily-card">
-            <h3>🤝 Culture Question</h3>
-            <p>
-              People around the world speak different languages, eat different foods, and wear
-              different clothes. What is one respectful question you can ask about another culture?
-            </p>
-          </article>
-
-          <article class="daily-card" id="quiz">
-            <h3>🧠 Quick Quiz</h3>
-            <p>Which direction is usually shown at the top of a compass?</p>
-            <div class="quiz-options">
-              <button type="button" data-answer="correct">North</button>
-              <button type="button" data-answer="wrong">South</button>
-              <button type="button" data-answer="wrong">West</button>
-            </div>
-            <div class="result" id="result" aria-live="polite"></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="discovery-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Discovery Cards</div>
-            <h2 id="discovery-title">Three ways to explore today</h2>
-            <p class="section-lead">
-              These small activities help parents and teachers turn general knowledge into real conversation.
-            </p>
-          </div>
-        </div>
-
-        <div class="discovery-grid">
-          <article class="discovery-card">
-            <div class="discovery-emoji">🗺️</div>
-            <h3>Find a country</h3>
-            <p>Choose one country on a map. Learn its name, flag, continent, and one famous place.</p>
-          </article>
-
-          <article class="discovery-card">
-            <div class="discovery-emoji">📒</div>
-            <h3>Make a fact notebook</h3>
-            <p>Write one new fact each day and draw a small picture next to it.</p>
-          </article>
-
-          <article class="discovery-card">
-            <div class="discovery-emoji">💬</div>
-            <h3>Share one fact</h3>
-            <p>Tell a parent, teacher, or friend: “Today I learned that…”</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="path-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2 id="path-title">A strong GK foundation in four steps</h2>
-            <p class="section-lead">
-              Children remember facts better when they connect them with places, pictures, stories, and questions.
-            </p>
-          </div>
-        </div>
-
-        <div class="pathway">
-          <article class="path-card">
-            <strong>1</strong>
-            <h3>Learn</h3>
-            <p>Start with one simple fact, word, place, country, or invention.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>2</strong>
-            <h3>Locate</h3>
-            <p>Find it on a map, picture, object, timeline, or daily-life example.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>3</strong>
-            <h3>Question</h3>
-            <p>Ask who, what, where, when, why, and how questions.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>4</strong>
-            <h3>Share</h3>
-            <p>Explain the fact in your own words and connect it with life.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="parents-title">
+    <section class="section" id="parent-guide">
       <div class="container parent-box">
         <div>
-          <div class="section-label">For Parents & Teachers</div>
-          <h2 id="parents-title">How to build global awareness kindly</h2>
+          <div class="section-label">Parent & Teacher Zone</div>
+          <h2>General Knowledge curriculum method and map</h2>
           <p class="section-lead">
-            General knowledge should make children curious, respectful, and thoughtful. It should
-            not become pressure to memorize random facts without understanding.
+            The child area stays focused on selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
           </p>
+
+          <details class="curriculum-details">
+            <summary>Open: How young children should learn General Knowledge</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                Ages 3–7 should learn General Knowledge through observation, real-life examples, pictures,
+                conversation, stories, role play, field awareness, drawing, quizzes, and kind behaviour.
+              </p>
+              <div class="grid-4" style="margin-top:16px;">
+                <div class="mini-card"><div class="icon-pill">👀</div><h3>Observe</h3><p>Look carefully at people, places, animals, weather, maps, and objects.</p></div>
+                <div class="mini-card"><div class="icon-pill">💬</div><h3>Ask</h3><p>Use simple questions: What is it? Where is it? Who helps us? Why is it important?</p></div>
+                <div class="mini-card"><div class="icon-pill">🎭</div><h3>Role Play</h3><p>Act as a doctor, teacher, shopkeeper, pilot, farmer, explorer, or scientist.</p></div>
+                <div class="mini-card"><div class="icon-pill">✍️</div><h3>Draw & Tell</h3><p>Children remember better when they draw, point, name, and explain.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="curriculum-details">
+            <summary>Open: General Knowledge learning worlds map</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                The curriculum gradually covers self, family, home, school, helpers, animals, plants, food,
+                weather, transport, safety, manners, environment, maps, countries, flags, space, inventions,
+                public places, and responsible citizenship.
+              </p>
+              <div class="compact-worlds" id="compactWorlds"></div>
+            </div>
+          </details>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Use maps, globes, pictures, stories, and real objects whenever possible.</li>
-            <li>Teach children to respect all people, languages, cultures, and countries.</li>
-            <li>Ask children to explain facts in their own words instead of only repeating them.</li>
-            <li>Connect GK with Islamic values: gratitude, respect, care for creation, and love of beneficial knowledge.</li>
-            <li>Keep practice short, joyful, and conversation-based.</li>
+            <li>Use one age level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is short: fact, question, mission, or answer only.</li>
+            <li>Children should observe real life before memorizing facts.</li>
+            <li>Mix home items: books, fruits, toys, clock, calendar, plants, maps, water, bags, and pictures.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container cta">
+      <div class="container cta-section">
         <div>
-          <div class="section-label" style="color:#c4b5fd;">Personal Guidance</div>
-          <h2>Book Online Learning Support with Dr. Imran Hayat</h2>
+          <div class="section-label" style="color:#99f6e4;">Personal Guidance</div>
+          <h2>Book Online General Knowledge Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured support in reading, vocabulary, general awareness,
-            speaking confidence, quiz preparation, or overall learning habits, you can book online
-            classes along with these free resources.
+            If your child needs structured support in early awareness, vocabulary, observation,
+            confidence, conversation, quiz preparation, and real-life understanding, you can book online classes
+            alongside these free resources.
           </p>
 
           <ul class="cta-list">
-            <li>General knowledge and speaking confidence</li>
-            <li>Reading and vocabulary support</li>
-            <li>Quiz and worksheet practice</li>
-            <li>Confidence-building through guided discussion</li>
+            <li>Age 3–7 General Knowledge foundation plan</li>
+            <li>Focused lesson library by age level</li>
+            <li>Visual clues, quizzes, stories, and whiteboard practice</li>
+            <li>Gentle guided learning for curious children</li>
           </ul>
         </div>
 
         <div>
-          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <a class="btn btn-gold" href="../online-classes.html">Book Online Classes</a>
           <br /><br />
           <a class="btn btn-white" href="../contact.html">Contact for Details</a>
         </div>
@@ -1272,10 +1373,7 @@
     <div class="container footer-grid">
       <div>
         <h3>🌟 Al-Hayat Kids Learning Hub</h3>
-        <p>
-          A joyful Islamic and academic learning platform where children learn,
-          read, play, explore, and grow.
-        </p>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
       <div>
@@ -1309,26 +1407,571 @@
         </ul>
       </div>
     </div>
-
-    <div class="container copyright">
-      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
-    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
   <script>
-    const result = document.getElementById("result");
+    const compactWorlds = [
+      ["👧", "Self & Body"], ["🏠", "Home & Family"], ["🏫", "School"], ["👩‍⚕️", "Helpers"],
+      ["🐾", "Animals"], ["🌱", "Plants"], ["🍎", "Food"], ["🌦️", "Weather"],
+      ["🚗", "Transport"], ["🛡️", "Safety"], ["🤝", "Manners"], ["🌳", "Environment"],
+      ["🗺️", "Maps"], ["🏳️", "Flags"], ["🪐", "Space"], ["💡", "Inventions"]
+    ];
 
-    document.querySelectorAll(".quiz-options button").forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.dataset.answer === "correct") {
-          result.textContent = "Correct! North is usually shown at the top of a compass. ⭐";
-          result.style.color = "#7c3aed";
-        } else {
-          result.textContent = "Good try! The usual top direction on a compass is North.";
-          result.style.color = "#b45309";
-        }
+    function lesson(id, icon, title, fact, keyWord, visual, question, options, answer, mission, gamePrompt, gameOptions, gameAnswer, writing, story) {
+      return { id, icon, title, fact, keyWord, visual, question, options, answer, mission, gamePrompt, gameOptions, gameAnswer, writing, story };
+    }
+
+    const ageLevels = [
+      {
+        id: "age-3",
+        level: "Level 1",
+        label: "Age 3",
+        icon: "🌱",
+        title: "Age 3: Me, My Home & My Little World",
+        subtitle: "Self, body parts, family, home items, fruits, pets, colors, clean habits, and simple manners.",
+        mastery: "By the end of this level, the child can name familiar people, body parts, home objects, common animals, fruits, and simple good habits.",
+        lessons: [
+          lesson("my-name", "👧", "My Name", "Every child has a name. A name helps people call us kindly.", "Name", "👧 🧒 🪪", "What do people use to call you?", ["Your name", "Your shoe", "Your spoon"], "Your name", "Say your name clearly to a parent.", "Choose the name item", ["Name card", "Ball", "Cup"], "Name card", "Write or trace your name.", "A little child said, “My name is important. I say it politely and smile.”"),
+          lesson("body-parts", "👃", "Body Parts", "We use our eyes to see, ears to hear, nose to smell, hands to hold, and feet to walk.", "Body", "👀 👂 👃 ✋ 🦶", "Which body part helps us see?", ["Eyes", "Ears", "Feet"], "Eyes", "Point to five body parts and name them.", "Choose the seeing part", ["Eyes", "Nose", "Hand"], "Eyes", "Draw a face with eyes, nose, and mouth.", "Sara looked at a flower with her eyes and smelled it with her nose."),
+          lesson("my-family", "👨‍👩‍👧", "My Family", "A family loves, helps, teaches, and protects the child.", "Family", "👨‍👩‍👧‍👦 ❤️ 🏠", "Who helps and loves the child at home?", ["Family", "Chair", "Cloud"], "Family", "Name three family members.", "Choose family", ["Mother", "Table", "Window"], "Mother", "Draw your family or home.", "Ali helped his family by putting his toys in the basket."),
+          lesson("home-objects", "🏠", "Things at Home", "A home has useful things such as bed, chair, table, cup, plate, door, and window.", "Home", "🛏️ 🪑 🚪 🪟", "Which object is found at home?", ["Bed", "Tiger", "Moon"], "Bed", "Find three safe home objects.", "Choose home object", ["Chair", "River", "Star"], "Chair", "Draw one object from your room.", "Mina looked around and named her bed, chair, table, and window."),
+          lesson("fruits", "🍎", "Fruits", "Fruits are healthy foods. Apples, bananas, mangoes, and oranges are fruits.", "Fruit", "🍎 🍌 🥭 🍊", "Which one is a fruit?", ["Apple", "Pencil", "Shoe"], "Apple", "Name two fruits at home.", "Choose fruit", ["Banana", "Book", "Bus"], "Banana", "Draw your favorite fruit.", "Hamza ate an apple and said, “Healthy food helps me grow.”"),
+          lesson("pets", "🐈", "Pets", "Some animals live with people as pets, such as cats, dogs, birds, and fish.", "Pet", "🐈 🐕 🐦 🐟", "Which animal can be a pet?", ["Cat", "Mountain", "Chair"], "Cat", "Name one animal you have seen.", "Choose pet", ["Fish", "Cup", "Cloud"], "Fish", "Draw a cat, bird, or fish.", "A small cat drank water. The child watched gently and did not scare it."),
+          lesson("colors", "🎨", "Colors Around Us", "Colors help us describe things. Red, blue, green, yellow, black, and white are common colors.", "Color", "🔴 🔵 🟢 🟡 ⚫ ⚪", "What color is the sun often drawn?", ["Yellow", "Black", "Purple"], "Yellow", "Find three colors in your room.", "Choose a color", ["Green", "Table", "Door"], "Green", "Draw three colored circles.", "Noor saw a red apple, a green leaf, and a yellow sun."),
+          lesson("clean-hands", "🧼", "Clean Hands", "Clean hands help us stay healthy. We wash hands before eating and after using the toilet.", "Clean", "🧼 💧 ✋", "When should we wash hands?", ["Before eating", "Before sleeping only", "Never"], "Before eating", "Practice washing hands properly.", "Choose clean habit", ["Wash hands", "Dirty hands", "Throw soap"], "Wash hands", "Draw soap and water.", "Before lunch, Omar washed his hands with soap and water."),
+          lesson("please-thankyou", "🙏", "Please and Thank You", "Good manners make people happy. Say please when asking and thank you when receiving.", "Manners", "🙏 😊 💬", "What should you say after receiving help?", ["Thank you", "Go away", "Nothing"], "Thank you", "Say please and thank you today.", "Choose good words", ["Please", "Shout", "Push"], "Please", "Write or trace: Thank you.", "A child said, “Please may I have water?” Then he said, “Thank you.”"),
+          lesson("safe-touch", "🛡️", "Safe and Unsafe", "A child should stay near trusted adults and ask for help when something feels unsafe.", "Safe", "🛡️ 👨‍👩‍👧 🚦", "Who should a child ask for help?", ["Trusted adult", "Stranger", "Toy"], "Trusted adult", "Practice saying: I need help.", "Choose safe action", ["Tell a trusted adult", "Hide problem", "Run alone"], "Tell a trusted adult", "Draw a safety shield.", "If Zain felt worried, he told his mother. Asking for help is brave.")
+        ]
+      },
+      {
+        id: "age-4",
+        level: "Level 2",
+        label: "Age 4",
+        icon: "🌿",
+        title: "Age 4: School, Helpers, Animals & Weather",
+        subtitle: "School places, classroom things, community helpers, farm/wild animals, weather, clothes, transport, and safety.",
+        mastery: "By the end of this level, the child can identify common school objects, helpers, animals, weather types, clothes, and simple safety rules.",
+        lessons: [
+          lesson("school", "🏫", "My School", "A school is a place where children learn, read, play, and practice good manners.", "School", "🏫 📚 ✏️", "What do children do at school?", ["Learn", "Fly", "Swim in clouds"], "Learn", "Name one thing you use at school.", "Choose school item", ["Book", "Pillow", "Spoon"], "Book", "Draw a school bag.", "At school, Fatima listened, shared, and learned a new word."),
+          lesson("classroom", "🖍️", "Classroom Things", "A classroom may have books, pencils, crayons, board, table, chair, and bags.", "Classroom", "📚 ✏️ 🖍️ 🪑", "Which thing is used for writing?", ["Pencil", "Shoe", "Plate"], "Pencil", "Find a book or pencil at home.", "Choose writing tool", ["Crayon", "Cup", "Ball"], "Crayon", "Draw a pencil.", "The teacher wrote on the board. The children used pencils carefully."),
+          lesson("doctor", "👩‍⚕️", "Doctor", "A doctor helps sick people and tells us how to stay healthy.", "Doctor", "👩‍⚕️ 🩺 💊", "Who helps sick people?", ["Doctor", "Pilot", "Farmer"], "Doctor", "Say one healthy habit.", "Choose doctor tool", ["Stethoscope", "Paint brush", "Football"], "Stethoscope", "Draw a doctor bag.", "When Bilal had fever, the doctor checked him gently."),
+          lesson("teacher", "👩‍🏫", "Teacher", "A teacher helps children learn, read, count, think, and behave well.", "Teacher", "👩‍🏫 📖 🧠", "Who helps children learn?", ["Teacher", "Tailor only", "Lion"], "Teacher", "Say thank you to a teacher.", "Choose teacher item", ["Book", "Hammer", "Fish"], "Book", "Write or trace: Teacher.", "The teacher smiled and helped the child read a new sentence."),
+          lesson("farmer", "👨‍🌾", "Farmer", "A farmer grows crops, fruits, and vegetables and takes care of fields or animals.", "Farmer", "👨‍🌾 🌾 🐄", "Who grows food?", ["Farmer", "Driver", "Doctor"], "Farmer", "Name one food grown on farms.", "Choose farm item", ["Wheat", "Bus", "Chair"], "Wheat", "Draw a field or plant.", "A farmer planted seeds and watered them every day."),
+          lesson("farm-animals", "🐄", "Farm Animals", "Farm animals include cow, goat, sheep, horse, hen, and duck.", "Farm", "🐄 🐐 🐑 🐔", "Which animal gives milk?", ["Cow", "Tiger", "Fish"], "Cow", "Make animal sounds gently.", "Choose farm animal", ["Goat", "Lion", "Whale"], "Goat", "Draw a cow or goat.", "The cow lived on the farm and gave milk to the family."),
+          lesson("wild-animals", "🦁", "Wild Animals", "Wild animals live in forests, mountains, rivers, or open land. They are not pets.", "Wild", "🦁 🐘 🐒 🦓", "Which is a wild animal?", ["Lion", "Cat", "Hen"], "Lion", "Name one wild animal.", "Choose wild animal", ["Elephant", "Cow", "Goat"], "Elephant", "Draw a lion or elephant.", "The children watched a lion safely in a picture book."),
+          lesson("weather", "🌦️", "Weather", "Weather tells us if the day is sunny, rainy, cloudy, windy, hot, or cold.", "Weather", "☀️ 🌧️ ☁️ 💨", "What do we use in rain?", ["Umbrella", "Sunglasses only", "Plate"], "Umbrella", "Look outside and name the weather.", "Choose rainy item", ["Umbrella", "Book", "Shoe"], "Umbrella", "Draw today’s weather.", "It was rainy, so Ayesha carried an umbrella."),
+          lesson("clothes", "👕", "Clothes", "Clothes protect our body. We wear different clothes for hot, cold, rain, school, and sleep.", "Clothes", "👕 🧥 👟 🧢", "What do we wear in cold weather?", ["Jacket", "Swimsuit only", "Paper"], "Jacket", "Name two clothes you wear.", "Choose clothing", ["Shirt", "Apple", "Table"], "Shirt", "Draw a shirt or jacket.", "On a cold morning, the child wore a warm jacket."),
+          lesson("transport", "🚗", "Transport", "Transport helps people move from one place to another. Cars, buses, trains, bikes, and planes are transport.", "Transport", "🚗 🚌 🚆 ✈️", "Which one moves people?", ["Bus", "Chair", "Tree"], "Bus", "Name one vehicle you have seen.", "Choose transport", ["Train", "Mango", "Door"], "Train", "Draw a car or bus.", "The family sat in a bus and went to visit grandparents."),
+          lesson("traffic-light", "🚦", "Traffic Light", "Traffic lights help people and vehicles stay safe on the road.", "Traffic", "🔴 🟡 🟢", "Which color usually means stop?", ["Red", "Green", "Blue"], "Red", "Look for traffic lights with an adult.", "Choose stop color", ["Red", "Green", "Yellow"], "Red", "Draw a traffic light.", "At the road, the child held an adult’s hand and waited for the red light.")
+        ]
+      },
+      {
+        id: "age-5",
+        level: "Level 3",
+        label: "Age 5",
+        icon: "🌳",
+        title: "Age 5: Nature, Places, Safety & Healthy Life",
+        subtitle: "Plants, water, seasons, day and night, public places, jobs, food groups, hygiene, emergency awareness, and simple environment care.",
+        mastery: "By the end of this level, the child can describe nature, public places, healthy habits, seasons, safety rules, and simple care for the environment.",
+        lessons: [
+          lesson("plants", "🌱", "Plants", "Plants are living things. Many plants need soil, water, air, and sunlight to grow.", "Plants", "🌱 💧 ☀️", "What helps a plant grow?", ["Water", "Shoes", "Television"], "Water", "Water a plant with an adult.", "Choose plant need", ["Sunlight", "Pillow", "Spoon"], "Sunlight", "Draw a plant with roots and leaves.", "Mariam planted a seed and watched it become a small plant."),
+          lesson("parts-plant", "🌿", "Parts of a Plant", "A plant may have roots, stem, leaves, flowers, fruits, and seeds.", "Plant Parts", "🌱 🌿 🌸 🍎", "Which part is under the soil?", ["Roots", "Flower", "Fruit"], "Roots", "Look at a plant and name two parts.", "Choose plant part", ["Leaf", "Chair", "Shoe"], "Leaf", "Draw roots, stem, and leaves.", "The roots held the plant in the soil while the leaves faced the sun."),
+          lesson("water", "💧", "Water", "Water is needed for people, animals, and plants. We drink clean water.", "Water", "💧 🥤 🌱", "What do we drink when thirsty?", ["Water", "Sand", "Paper"], "Water", "Drink water and say why it helps.", "Choose water user", ["Plant", "Stone only", "Shoe"], "Plant", "Draw a glass of water.", "After playing, Hassan drank clean water and felt fresh."),
+          lesson("day-night", "🌞", "Day and Night", "Day is bright because of the sun. Night is dark and we can see the moon and stars.", "Day/Night", "☀️ 🌙 ⭐", "What shines in the day?", ["Sun", "Spoon", "Chair"], "Sun", "Tell one thing you do in day and one at night.", "Choose night object", ["Moon", "Sun only", "Umbrella"], "Moon", "Draw day and night.", "In the day, the child played. At night, the child rested."),
+          lesson("seasons", "🍂", "Seasons", "Seasons are different parts of the year such as summer, winter, spring, and autumn.", "Seasons", "☀️ ❄️ 🌸 🍂", "Which season is usually cold?", ["Winter", "Summer", "Spring only"], "Winter", "Name today’s season if you know it.", "Choose cold season", ["Winter", "Summer", "Raincoat"], "Winter", "Draw summer and winter clothes.", "In winter, Sara wore a sweater. In summer, she drank more water."),
+          lesson("public-places", "🏥", "Public Places", "Public places are used by many people, such as school, hospital, park, mosque, library, and market.", "Public Places", "🏫 🏥 🕌 📚", "Where do sick people go for help?", ["Hospital", "Playground only", "Kitchen"], "Hospital", "Name one public place near you.", "Choose public place", ["Library", "Shoe", "Pencil"], "Library", "Draw a park, mosque, or school.", "The family visited the library and spoke softly."),
+          lesson("healthy-food", "🥦", "Healthy Food", "Healthy food gives energy and helps children grow. Fruits, vegetables, grains, milk, eggs, and clean water are helpful foods.", "Healthy Food", "🍎 🥦 🥚 🥛", "Which is usually healthy?", ["Vegetables", "Too much candy", "Plastic"], "Vegetables", "Eat one healthy food today.", "Choose healthy food", ["Fruit", "Stone", "Toy"], "Fruit", "Draw a healthy plate.", "The child ate fruit and vegetables to grow strong."),
+          lesson("hygiene", "🪥", "Hygiene", "Hygiene means keeping the body clean: brush teeth, wash hands, bathe, comb hair, and wear clean clothes.", "Hygiene", "🪥 🧼 🚿", "What do we use to clean teeth?", ["Toothbrush", "Spoon", "Leaf"], "Toothbrush", "Brush your teeth properly.", "Choose hygiene habit", ["Wash hands", "Dirty clothes", "Throw toothbrush"], "Wash hands", "Draw toothbrush and soap.", "Before bed, Hamza brushed his teeth and washed his hands."),
+          lesson("emergency", "🚨", "Emergency Help", "In danger, children should call or tell a trusted adult. Emergency helpers include police, doctor, firefighter, and ambulance staff.", "Emergency", "🚨 👮 🚑 🚒", "Who should a child tell in danger?", ["Trusted adult", "Unknown stranger", "Toy car"], "Trusted adult", "Practice saying your guardian’s name.", "Choose helper", ["Police officer", "Chair", "Cloud"], "Police officer", "Draw an emergency helper.", "When the child got lost, he stayed calm and asked a trusted adult for help."),
+          lesson("environment", "🌳", "Care for Earth", "We care for Earth by saving water, not littering, planting trees, and keeping places clean.", "Environment", "🌳 💧 🗑️ ♻️", "Where should rubbish go?", ["Dustbin", "Road", "Garden soil always"], "Dustbin", "Put one wrapper in the dustbin.", "Choose earth care", ["Save water", "Waste water", "Throw litter"], "Save water", "Draw a clean park.", "The children cleaned the park and put rubbish in the bin."),
+          lesson("good-neighbor", "🤝", "Good Neighbor", "A good neighbor is polite, helpful, quiet when needed, and respectful.", "Neighbor", "🏘️ 🤝 😊", "What does a good neighbor do?", ["Helps politely", "Shouts always", "Breaks things"], "Helps politely", "Say salam or hello politely to a neighbor with family guidance.", "Choose good action", ["Speak politely", "Push others", "Make noise at night"], "Speak politely", "Draw two homes.", "The child smiled and greeted the neighbor politely.")
+        ]
+      },
+      {
+        id: "age-6",
+        level: "Level 4",
+        label: "Age 6",
+        icon: "🌴",
+        title: "Age 6: World Around Me, Maps, Jobs, Time & Responsibility",
+        subtitle: "Directions, maps, city/village, countries, flags, land/water, occupations, tools, calendar, money awareness, safety, and citizenship.",
+        mastery: "By the end of this level, the child can understand simple maps, places, jobs, tools, calendars, money use, safety, and responsible behaviour.",
+        lessons: [
+          lesson("directions", "🧭", "Directions", "Directions help us know where to go. Common direction words are left, right, up, down, near, far, front, and back.", "Directions", "⬅️ ➡️ ⬆️ ⬇️", "Which word is a direction?", ["Left", "Apple", "Sleep"], "Left", "Point left and right.", "Choose direction", ["Right", "Banana", "Chair"], "Right", "Draw arrows left and right.", "The child followed the arrow and found the reading corner."),
+          lesson("simple-map", "🗺️", "Simple Map", "A map is a drawing that shows places. It helps us find where things are.", "Map", "🗺️ 🏠 🏫", "What does a map show?", ["Places", "Only food", "Only songs"], "Places", "Draw a simple map of your room.", "Choose map use", ["Find places", "Brush teeth", "Eat soup"], "Find places", "Draw home and school on a map.", "A little map showed the park near the school."),
+          lesson("city-village", "🏙️", "City and Village", "A city is usually large with many buildings and roads. A village is usually smaller with open spaces and fields.", "City/Village", "🏙️ 🏡 🌾", "Which place usually has many tall buildings?", ["City", "Village", "Forest"], "City", "Talk about your area: city or village.", "Choose village clue", ["Fields", "Airport only", "Many towers only"], "Fields", "Draw city and village.", "The city had tall buildings. The village had quiet fields."),
+          lesson("country", "🌍", "Country", "A country is a land where people live under shared rules, culture, and identity.", "Country", "🌍 🏳️ 👨‍👩‍👧‍👦", "Pakistan is a what?", ["Country", "Toy", "Fruit"], "Country", "Name your country.", "Choose country", ["Pakistan", "Apple", "Chair"], "Pakistan", "Draw your country flag if you know it.", "The child learned the name of the country and spoke about it respectfully."),
+          lesson("flag", "🏳️", "Flag", "A flag is a symbol of a country, school, team, or group.", "Flag", "🏳️ 🇵🇰 🎒", "What can represent a country?", ["Flag", "Spoon", "Shoe"], "Flag", "Look at a flag with an adult.", "Choose symbol", ["Flag", "Plate", "Pillow"], "Flag", "Draw a simple flag shape.", "The children stood respectfully when they saw the national flag."),
+          lesson("land-water", "🏞️", "Land and Water", "Earth has land and water. Land includes mountains, plains, deserts, and forests. Water includes rivers, lakes, and seas.", "Land/Water", "⛰️ 🌊 🏜️ 🌲", "Which one is water?", ["River", "Mountain", "Desert"], "River", "Name one landform and one water body.", "Choose land", ["Mountain", "Lake", "Sea"], "Mountain", "Draw land and water.", "The map showed blue water and green land."),
+          lesson("occupations", "🧰", "Jobs and Tools", "People use tools to do different jobs. A doctor uses medical tools, a farmer uses farm tools, and a painter uses brushes.", "Jobs", "👩‍⚕️ 👨‍🌾 🎨 🧰", "Who uses a stethoscope?", ["Doctor", "Farmer", "Driver"], "Doctor", "Match one helper with one tool.", "Choose painter tool", ["Brush", "Stethoscope", "Tractor"], "Brush", "Draw a helper and tool.", "The painter used a brush, and the farmer used tools in the field."),
+          lesson("calendar", "📅", "Calendar", "A calendar shows days, weeks, months, and dates.", "Calendar", "📅 Monday June", "What does a calendar show?", ["Dates", "Only animals", "Only colors"], "Dates", "Look at today’s date with an adult.", "Choose calendar word", ["Month", "Pencil", "Door"], "Month", "Draw a calendar box.", "Every morning, the child checked the day on the calendar."),
+          lesson("money-use", "🪙", "Money Use", "Money is used to buy things. Children should learn needs, wants, saving, and careful spending.", "Money", "🪙 🛒 💰", "What is money used for?", ["Buying things", "Flying like bird", "Growing plants directly"], "Buying things", "Talk about one need and one want.", "Choose need", ["Food", "Toy number 20", "Extra candy"], "Food", "Draw coins or a shop.", "At the shop, the child learned that food is a need and toys are wants."),
+          lesson("road-safety", "🚦", "Road Safety", "Road safety means crossing carefully, holding an adult’s hand, using zebra crossing, and watching traffic lights.", "Road Safety", "🚦 🚸 👨‍👩‍👧", "Where should we cross safely?", ["Zebra crossing", "Middle of road", "Behind a bus"], "Zebra crossing", "Practice stop, look, listen with an adult.", "Choose safe action", ["Hold adult hand", "Run suddenly", "Play on road"], "Hold adult hand", "Draw a zebra crossing.", "Before crossing, the child stopped, looked, listened, and held an adult’s hand."),
+          lesson("responsibility", "✅", "Responsibility", "Responsibility means doing the right task carefully, such as cleaning toys, caring for books, and helping at home.", "Responsibility", "✅ 📚 🧸", "Which is responsible?", ["Put toys away", "Break books", "Waste water"], "Put toys away", "Do one helpful task today.", "Choose responsible action", ["Care for books", "Throw books", "Waste food"], "Care for books", "Write or trace: Help.", "The child put toys away and felt proud of being responsible.")
+        ]
+      },
+      {
+        id: "age-7",
+        level: "Level 5",
+        label: "Age 7",
+        icon: "🌟",
+        title: "Age 7: Earth, Space, Countries, Inventions & Global Awareness",
+        subtitle: "Solar system, continents, oceans, capital city concept, famous places, inventions, communication, recycling, energy, natural disasters, and world citizenship.",
+        mastery: "By the end of this level, the child can discuss Earth, maps, countries, space, inventions, environment care, emergencies, and respectful global citizenship.",
+        lessons: [
+          lesson("solar-system", "🪐", "Solar System", "The solar system has the Sun and objects that move around it, including planets.", "Solar System", "☀️ 🪐 🌍", "What is at the center of our solar system?", ["Sun", "Moon", "Cloud"], "Sun", "Name Earth and Sun.", "Choose planet", ["Earth", "Table", "Shoe"], "Earth", "Draw the Sun and Earth.", "The child looked at a space picture and saw planets around the Sun."),
+          lesson("earth", "🌍", "Planet Earth", "Earth is our home planet. It has land, water, air, people, animals, and plants.", "Earth", "🌍 🌊 🌳 👨‍👩‍👧", "What planet do we live on?", ["Earth", "Mars only", "Sun"], "Earth", "Say one way to care for Earth.", "Choose Earth care", ["Plant tree", "Throw litter", "Waste water"], "Plant tree", "Draw Earth.", "Earth gives us a home, so we should keep it clean."),
+          lesson("continents", "🗺️", "Continents", "Continents are very large areas of land on Earth.", "Continents", "🗺️ 🌍", "What is a continent?", ["Large land area", "Tiny cup", "Only one house"], "Large land area", "Look at a world map with an adult.", "Choose continent clue", ["Large land", "Spoon", "Pencil"], "Large land", "Draw a world map outline.", "The map showed large land areas called continents."),
+          lesson("oceans", "🌊", "Oceans", "Oceans are huge bodies of salty water on Earth.", "Oceans", "🌊 🐋 🚢", "What is an ocean?", ["Huge salty water", "Small chair", "Dry desert only"], "Huge salty water", "Point to blue water on a map.", "Choose ocean animal", ["Whale", "Cow", "Cat"], "Whale", "Draw ocean waves.", "A ship sailed on the ocean while whales lived in the water."),
+          lesson("capital-city", "🏛️", "Capital City", "A capital city is an important city where a country’s government works.", "Capital", "🏛️ 🏙️ 🇵🇰", "What is a capital city?", ["Important government city", "Only a playground", "Only a farm"], "Important government city", "Ask an adult the capital of your country.", "Choose capital idea", ["Government city", "Toy box", "Kitchen only"], "Government city", "Draw a city building.", "The child learned that a capital city is important for a country."),
+          lesson("famous-places", "🕌", "Famous Places", "Famous places are known by many people because of history, beauty, worship, learning, or culture.", "Famous Place", "🕌 🏛️ 🗼", "Why are famous places known?", ["History or importance", "Because they are invisible", "Because nobody visits"], "History or importance", "Name one famous place with family help.", "Choose famous place type", ["Museum", "Spoon", "Sock"], "Museum", "Draw a famous building.", "The family visited a famous mosque and learned to respect the place."),
+          lesson("inventions", "💡", "Inventions", "An invention is a new thing made to solve a problem or help people.", "Invention", "💡 📞 💻 🚲", "What is an invention?", ["A helpful new thing", "A cloud only", "A fruit"], "A helpful new thing", "Name one useful invention.", "Choose invention", ["Telephone", "Banana", "Stone only"], "Telephone", "Draw a bulb or phone.", "The light bulb helped people see at night."),
+          lesson("communication", "📞", "Communication", "Communication means sharing messages through speaking, writing, signs, phones, letters, or the internet.", "Communication", "💬 ✉️ 📞 💻", "What does communication share?", ["Messages", "Only food", "Only shoes"], "Messages", "Send a kind message to a family member.", "Choose communication tool", ["Phone", "Plate", "Pillow"], "Phone", "Draw a letter or phone.", "The child called grandfather and spoke kindly."),
+          lesson("recycling", "♻️", "Recycling", "Recycling means using materials again to reduce waste and care for Earth.", "Recycling", "♻️ 🗑️ 📦", "Why do we recycle?", ["Reduce waste", "Make more litter", "Waste water"], "Reduce waste", "Put paper or plastic in the correct place if available.", "Choose recycling item", ["Paper", "Fresh food", "Dirty water"], "Paper", "Draw a recycling sign.", "The children put paper in the recycling box."),
+          lesson("energy", "⚡", "Energy", "Energy helps things work. Sunlight, food, electricity, and movement give different kinds of energy.", "Energy", "☀️ 🍎 ⚡ 🏃", "What gives us energy to play?", ["Food", "Stone", "Empty plate"], "Food", "Turn off an unused light.", "Choose energy saver", ["Switch off light", "Waste electricity", "Leave fan on forever"], "Switch off light", "Draw a sun or bulb.", "The child saved energy by turning off the light."),
+          lesson("natural-disasters", "🌪️", "Natural Disasters", "Natural disasters are dangerous natural events such as floods, earthquakes, storms, and fires. Children should follow trusted adults and safety rules.", "Disaster Safety", "🌊 🌍 🌪️ 🔥", "What should children do in danger?", ["Follow trusted adults", "Run alone", "Hide and tell no one"], "Follow trusted adults", "Practice emergency words: I need help.", "Choose safe response", ["Stay calm and listen", "Panic and run", "Ignore adults"], "Stay calm and listen", "Draw a safety bag.", "During a storm, the child stayed near family and listened carefully."),
+          lesson("world-citizen", "🤝", "World Citizen", "A good world citizen respects people, protects nature, learns about others, and helps make the world better.", "Citizen", "🌍 🤝 🌳 ❤️", "What does a good citizen do?", ["Respects and helps", "Hurts people", "Litters everywhere"], "Respects and helps", "Do one kind action today.", "Choose good citizenship", ["Keep place clean", "Waste food", "Break things"], "Keep place clean", "Write or trace: Respect.", "The child learned that kindness and respect make the world better.")
+        ]
+      }
+    ];
+
+    const state = {
+      activeAgeIndex: 0,
+      activeLessonIndex: 0,
+      funSound: true,
+      progress: loadProgress()
+    };
+
+    const ageTabs = document.getElementById("ageTabs");
+    const levelHero = document.getElementById("levelHero");
+    const levelProgress = document.getElementById("levelProgress");
+    const lessonLibrary = document.getElementById("lessonLibrary");
+    const lessonCard = document.getElementById("lessonCard");
+    const activityCard = document.getElementById("activityCard");
+    const storyCard = document.getElementById("storyCard");
+    const quizCard = document.getElementById("quizCard");
+    const missionCard = document.getElementById("missionCard");
+    const masteryCard = document.getElementById("masteryCard");
+    const compactWorldsEl = document.getElementById("compactWorlds");
+    const boardTitle = document.getElementById("boardTitle");
+    const writingGoal = document.getElementById("writingGoal");
+
+    function loadProgress() {
+      try {
+        return JSON.parse(localStorage.getItem("alhayat-gk-progress")) || {
+          stars: 0,
+          lessons: [],
+          quizzes: [],
+          missions: [],
+          writings: []
+        };
+      } catch (e) {
+        return { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
+      }
+    }
+
+    function saveProgress() {
+      localStorage.setItem("alhayat-gk-progress", JSON.stringify(state.progress));
+      updateProgressCards();
+    }
+
+    function addUniqueProgress(type, id, stars) {
+      if (!state.progress[type].includes(id)) {
+        state.progress[type].push(id);
+        state.progress.stars += stars;
+        saveProgress();
+        playSuccessSound();
+      }
+    }
+
+    function updateProgressCards() {
+      document.getElementById("starsCount").textContent = state.progress.stars;
+      document.getElementById("lessonsCount").textContent = state.progress.lessons.length;
+      document.getElementById("quizCount").textContent = state.progress.quizzes.length;
+      document.getElementById("missionCount").textContent = state.progress.missions.length;
+    }
+
+    function speak(text, lang = "en-US") {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = 0.82;
+      utterance.pitch = 1.05;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function playSuccessSound() {
+      if (!state.funSound) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioContext();
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+        oscillator.type = "sine";
+        oscillator.frequency.setValueAtTime(660, ctx.currentTime);
+        oscillator.frequency.setValueAtTime(880, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.28);
+        oscillator.connect(gain);
+        gain.connect(ctx.destination);
+        oscillator.start();
+        oscillator.stop(ctx.currentTime + 0.3);
+      } catch (e) {}
+    }
+
+    function currentLevel() {
+      return ageLevels[state.activeAgeIndex];
+    }
+
+    function currentLesson() {
+      return currentLevel().lessons[state.activeLessonIndex];
+    }
+
+    function renderAgeTabs() {
+      ageTabs.innerHTML = ageLevels.map((level, index) => `
+        <button class="age-tab ${index === state.activeAgeIndex ? "active" : ""}" type="button" data-age-index="${index}">
+          ${level.icon} ${level.label}
+        </button>
+      `).join("");
+
+      ageTabs.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeAgeIndex = Number(btn.dataset.ageIndex);
+          state.activeLessonIndex = 0;
+          renderAll();
+          speak(`${currentLevel().label}. ${currentLevel().title}. Choose one discovery lesson.`);
+        });
       });
+    }
+
+    function renderLevelHero() {
+      const level = currentLevel();
+      levelHero.innerHTML = `
+        <div class="level-icon">${level.icon}</div>
+        <div>
+          <div class="level-badge">${level.level} • ${level.label}</div>
+          <h2>${level.title}</h2>
+          <p>${level.subtitle}</p>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" id="listenLevelBtn">🔊 Listen Level</button>
+            <button class="repeat-btn" type="button" id="repeatLevelBtn">🔁 Repeat Goal</button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("listenLevelBtn").addEventListener("click", () => speak(`${level.title}. ${level.subtitle}`));
+      document.getElementById("repeatLevelBtn").addEventListener("click", () => speak(level.mastery));
+    }
+
+    function renderLevelProgress() {
+      levelProgress.innerHTML = ageLevels.map((level, index) => `
+        <div class="level-dot ${index === state.activeAgeIndex ? "active" : ""}">
+          ${level.icon} ${level.label}
+          <span>${level.level}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderLessonLibrary() {
+      const level = currentLevel();
+      document.getElementById("libraryTitle").textContent = `${level.label} General Knowledge Library`;
+      document.getElementById("libraryLead").textContent = level.mastery;
+
+      lessonLibrary.innerHTML = level.lessons.map((item, index) => `
+        <button class="lesson-chip ${index === state.activeLessonIndex ? "active" : ""}" type="button" data-lesson-index="${index}">
+          <small>${index + 1}</small> ${item.icon} ${item.title}
+        </button>
+      `).join("");
+
+      lessonLibrary.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeLessonIndex = Number(btn.dataset.lessonIndex);
+          renderAll(false);
+          speak(`${currentLesson().title}. ${currentLesson().fact}`);
+        });
+      });
+    }
+
+    function renderLessonCards() {
+      const item = currentLesson();
+      const lessonId = `${currentLevel().id}-${item.id}`;
+
+      lessonCard.innerHTML = `
+        <div class="badge">Today’s Discovery</div>
+        <h3>${item.icon} ${item.title}</h3>
+        <p>${item.fact}</p>
+        <div class="gk-display">${item.keyWord}</div>
+        <div class="visual-card">
+          <div class="visual-clue">
+            <div>
+              <div class="emoji">${item.icon}</div>
+              <strong>${item.title}</strong>
+            </div>
+          </div>
+          <div class="support-grid">
+            <div class="note-box"><strong>Simple Fact:</strong> ${item.fact}</div>
+            <div class="visual-demo">${item.visual}</div>
+          </div>
+        </div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenLessonBtn">🔊 Listen Fact</button>
+          <button class="repeat-btn" type="button" id="repeatLessonBtn">🔁 Repeat Word</button>
+          <button class="learned-btn" type="button" id="learnedLessonBtn">✅ I Learned This</button>
+        </div>
+      `;
+
+      activityCard.innerHTML = `
+        <div class="badge">Picture Thinking Game</div>
+        <h3>🧠 Choose the correct answer</h3>
+        <p>${item.gamePrompt}</p>
+        <div class="choice-options" id="gameOptions">
+          ${item.gameOptions.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="gameResult"></div>
+      `;
+
+      storyCard.innerHTML = `
+        <div class="badge">Mini Story</div>
+        <h3>📖 Learn through story</h3>
+        <div class="story-text">${item.story}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenStoryBtn">🔊 Listen Story</button>
+          <button class="repeat-btn" type="button" id="repeatQuestionBtn">🔁 Repeat Question</button>
+        </div>
+      `;
+
+      quizCard.innerHTML = `
+        <div class="badge">Quick Quiz</div>
+        <h3>❓ ${item.question}</h3>
+        <div class="quiz-options" id="quizOptions">
+          ${item.options.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="quizResult"></div>
+      `;
+
+      missionCard.innerHTML = `
+        <div class="badge">Real-Life Mission</div>
+        <h3>🎯 Mission for today</h3>
+        <div class="mission-box">${item.mission}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenMissionBtn">🔊 Listen Mission</button>
+          <button class="learned-btn" type="button" id="missionDoneBtn">✅ Mission Done</button>
+        </div>
+      `;
+
+      masteryCard.innerHTML = `
+        <div class="badge">Mastery Check</div>
+        <h3>🏆 Can the child explain it?</h3>
+        <p class="section-lead" style="margin-top:0;">A lesson is stronger when the child can point, name, answer, and use the idea in real life.</p>
+        <ul class="tips">
+          <li>Child can name: <strong>${item.keyWord}</strong>.</li>
+          <li>Child can answer: <strong>${item.question}</strong></li>
+          <li>Child can complete the mission: <strong>${item.mission}</strong></li>
+          <li>Child can draw or write: <strong>${item.writing}</strong></li>
+        </ul>
+      `;
+
+      boardTitle.textContent = `Trace or draw: ${item.keyWord}`;
+      writingGoal.textContent = item.writing;
+
+      document.getElementById("listenLessonBtn").addEventListener("click", () => speak(`${item.title}. ${item.fact}`));
+      document.getElementById("repeatLessonBtn").addEventListener("click", () => speak(`${item.keyWord}. ${item.keyWord}. ${item.keyWord}.`));
+      document.getElementById("learnedLessonBtn").addEventListener("click", () => {
+        addUniqueProgress("lessons", lessonId, 2);
+        speak(`Excellent. You learned ${item.title}.`);
+      });
+
+      document.getElementById("listenStoryBtn").addEventListener("click", () => speak(item.story));
+      document.getElementById("repeatQuestionBtn").addEventListener("click", () => speak(item.question));
+      document.getElementById("listenMissionBtn").addEventListener("click", () => speak(item.mission));
+      document.getElementById("missionDoneBtn").addEventListener("click", () => {
+        addUniqueProgress("missions", lessonId, 3);
+        speak("Wonderful mission completed. You earned stars.");
+      });
+
+      document.querySelectorAll("#quizOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.answer, "quizResult", "quizzes", lessonId));
+      });
+
+      document.querySelectorAll("#gameOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.gameAnswer, "gameResult", "quizzes", `${lessonId}-game`));
+      });
+
+      drawGuide();
+    }
+
+    function checkAnswer(button, correctAnswer, resultId, progressType, progressId) {
+      const siblings = button.parentElement.querySelectorAll("button");
+      siblings.forEach(btn => {
+        btn.classList.remove("correct", "wrong");
+        btn.disabled = true;
+      });
+
+      const result = document.getElementById(resultId);
+      if (button.textContent.trim() === correctAnswer) {
+        button.classList.add("correct");
+        result.textContent = "✅ Correct! Wonderful thinking.";
+        result.style.color = "#166534";
+        addUniqueProgress(progressType, progressId, 2);
+        speak("Correct. Wonderful thinking.");
+      } else {
+        button.classList.add("wrong");
+        result.textContent = `❌ Try again next time. Correct answer: ${correctAnswer}`;
+        result.style.color = "#991b1b";
+        speak(`Good try. The correct answer is ${correctAnswer}.`);
+      }
+    }
+
+    function renderCompactWorlds() {
+      compactWorldsEl.innerHTML = compactWorlds.map(world => `
+        <div class="compact-world"><span>${world[0]}</span>${world[1]}</div>
+      `).join("");
+    }
+
+    function renderAll(reset = true) {
+      renderAgeTabs();
+      renderLevelHero();
+      renderLevelProgress();
+      renderLessonLibrary();
+      renderLessonCards();
+      updateProgressCards();
+      if (reset) drawGuide();
+    }
+
+    document.addEventListener("click", event => {
+      const speakButton = event.target.closest("[data-static-speak]");
+      if (speakButton) speak(speakButton.dataset.staticSpeak, speakButton.dataset.lang || "en-US");
     });
+
+    document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
+      speak("Choose the child age. Then choose one General Knowledge lesson from the library.");
+    });
+
+    document.querySelector(".stop-sound").addEventListener("click", () => {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    });
+
+    document.getElementById("funSoundToggle").addEventListener("click", event => {
+      state.funSound = !state.funSound;
+      event.currentTarget.classList.toggle("off", !state.funSound);
+      event.currentTarget.textContent = state.funSound ? "🔔 Fun Sounds: On" : "🔕 Fun Sounds: Off";
+      event.currentTarget.setAttribute("aria-pressed", String(state.funSound));
+    });
+
+    document.getElementById("resetProgressBtn").addEventListener("click", () => {
+      state.progress = { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
+      saveProgress();
+      speak("Progress reset on this device.");
+    });
+
+    const canvas = document.getElementById("gkWhiteboard");
+    const ctx = canvas.getContext("2d");
+    let drawing = false;
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = rect.width * ratio;
+      canvas.height = rect.height * ratio;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      drawGuide();
+    }
+
+    function drawGuide() {
+      if (!ctx) return;
+      const rect = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, rect.width, rect.height);
+
+      const item = currentLesson();
+      ctx.save();
+      ctx.globalAlpha = 0.16;
+      ctx.fillStyle = "#0f766e";
+      ctx.font = "900 52px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(item.keyWord, rect.width / 2, rect.height / 2 - 22);
+      ctx.font = "700 28px Arial";
+      ctx.fillText(item.icon, rect.width / 2, rect.height / 2 + 45);
+      ctx.restore();
+
+      ctx.strokeStyle = "#dbeafe";
+      ctx.lineWidth = 1;
+      for (let y = 42; y < rect.height; y += 42) {
+        ctx.beginPath();
+        ctx.moveTo(24, y);
+        ctx.lineTo(rect.width - 24, y);
+        ctx.stroke();
+      }
+    }
+
+    function getPointerPosition(event) {
+      const rect = canvas.getBoundingClientRect();
+      const source = event.touches ? event.touches[0] : event;
+      return {
+        x: source.clientX - rect.left,
+        y: source.clientY - rect.top
+      };
+    }
+
+    function startDrawing(event) {
+      event.preventDefault();
+      drawing = true;
+      const pos = getPointerPosition(event);
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+
+    function draw(event) {
+      if (!drawing) return;
+      event.preventDefault();
+      const pos = getPointerPosition(event);
+      ctx.lineTo(pos.x, pos.y);
+      ctx.strokeStyle = "#0f766e";
+      ctx.lineWidth = 5;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.stroke();
+    }
+
+    function stopDrawing() {
+      drawing = false;
+    }
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mouseleave", stopDrawing);
+    canvas.addEventListener("touchstart", startDrawing, { passive: false });
+    canvas.addEventListener("touchmove", draw, { passive: false });
+    canvas.addEventListener("touchend", stopDrawing);
+
+    document.getElementById("clearBoardBtn").addEventListener("click", drawGuide);
+
+    document.getElementById("listenBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`Draw or write ${item.keyWord}. ${item.writing}`);
+    });
+
+    document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`${item.keyWord}. Draw it. Say it. Remember it.`);
+    });
+
+    document.getElementById("saveBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      const id = `${currentLevel().id}-${item.id}-writing`;
+      addUniqueProgress("writings", id, 1);
+      speak("Writing or drawing saved on this device. Good effort.");
+    });
+
+    window.addEventListener("resize", resizeCanvas);
+
+    renderCompactWorlds();
+    renderAll();
+    resizeCanvas();
   </script>
 </body>
 </html>
