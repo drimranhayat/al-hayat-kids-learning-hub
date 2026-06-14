@@ -1,1 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Math for Kids | Numbers, Addition, Shapes & Fun Practice | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="Math for Kids at Al-Hayat Kids Learning Hub. Child-friendly math lessons with numbers, counting, addition, subtraction, shapes, patterns, word problems, daily quiz, practice board, and online classes." />
+  <meta name="keywords" content="math for kids, mathematics for children, addition for kids, subtraction for kids, shapes for kids, counting practice, number sense, math worksheets for kids" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/math.html" />
+
+  <meta property="og:title" content="Math for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A joyful child-friendly Math learning page with numbers, counting, addition, subtraction, shapes, patterns, quizzes, and practice activities." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --green: #138a3d;
+      --green-dark: #075c2a;
+      --green-soft: #e8f8ee;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --sky: #38bdf8;
+      --sky-soft: #e0f2fe;
+      --orange: #f97316;
+      --orange-dark: #c2410c;
+      --orange-soft: #ffedd5;
+      --yellow: #f6c445;
+      --yellow-soft: #fef3c7;
+      --purple: #7c3aed;
+      --purple-soft: #ede9fe;
+      --pink: #ec4899;
+      --pink-soft: #fce7f3;
+      --teal: #14b8a6;
+      --teal-soft: #ccfbf1;
+      --white: #ffffff;
+      --light: #f8fbff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(249, 115, 22, 0.16), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .top-header {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      backdrop-filter: blur(16px);
+    }
+
+    .top-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      color: var(--green-dark);
+    }
+
+    .brand-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.6rem;
+      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.22);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: -2px;
+      font-size: 0.78rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      background: var(--orange-soft);
+      color: var(--orange-dark);
+    }
+
+    .nav .cta {
+      background: var(--yellow);
+      color: #111827;
+      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
+    }
+
+    .hero {
+      padding: 64px 0 44px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+      background:
+        radial-gradient(circle at 88% 18%, rgba(246, 196, 69, 0.35), transparent 14rem),
+        radial-gradient(circle at 20% 80%, rgba(249, 115, 22, 0.18), transparent 16rem),
+        linear-gradient(135deg, #fff7ed, #eff6ff);
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      overflow: hidden;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--orange-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 5.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      color: var(--orange-dark);
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: var(--blue-dark);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: #334155;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 19px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 0;
+      cursor: pointer;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      color: #111827;
+      box-shadow: 0 14px 28px rgba(249, 115, 22, 0.22);
+    }
+
+    .btn-blue {
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+      color: white;
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--orange-dark);
+      border: 1px solid var(--border);
+    }
+
+    .hero-visual {
+      min-height: 390px;
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
+        linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.35));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "1+2";
+      position: absolute;
+      font-size: 7rem;
+      font-weight: 950;
+      color: rgba(249, 115, 22, 0.12);
+      left: 28px;
+      top: 18px;
+    }
+
+    .hero-visual::after {
+      content: "△";
+      position: absolute;
+      font-size: 11rem;
+      font-weight: 950;
+      color: rgba(37, 99, 235, 0.12);
+      right: 38px;
+      bottom: -34px;
+    }
+
+    .child-card {
+      width: min(92%, 430px);
+      background: white;
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .child-card .emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .child-card h2 {
+      color: var(--orange-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .child-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .hero-stat {
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 12px;
+      font-weight: 900;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .section-label {
+      color: var(--orange-dark);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      margin-bottom: 6px;
+    }
+
+    .section h2 {
+      color: #0f172a;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+      max-width: 760px;
+      margin-top: 8px;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .method-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .method-card .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--orange-soft);
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+    }
+
+    .method-card:nth-child(2) .icon { background: var(--blue-soft); }
+    .method-card:nth-child(3) .icon { background: var(--green-soft); }
+    .method-card:nth-child(4) .icon { background: var(--purple-soft); }
+
+    .method-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
+
+    .method-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .number-lab {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
+        linear-gradient(135deg, #fff7ed, #eff6ff);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .lab-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 22px;
+    }
+
+    .lab-card {
+      background: white;
+      border-radius: 28px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .number-display {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .counter-dot {
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--yellow-soft);
+      border: 2px solid #fde68a;
+      font-weight: 950;
+      color: var(--orange-dark);
+      font-size: 1.4rem;
+      user-select: none;
+    }
+
+    .number-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .small-btn {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      color: #0f172a;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .small-btn:hover {
+      background: var(--orange-soft);
+    }
+
+    .number-line {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 6px;
+      margin-top: 18px;
+      align-items: end;
+    }
+
+    .line-item {
+      text-align: center;
+      font-weight: 900;
+      color: var(--muted);
+      position: relative;
+      padding-top: 30px;
+    }
+
+    .line-item::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 14px;
+      background: #cbd5e1;
+    }
+
+    .line-item.is-active {
+      color: var(--orange-dark);
+      font-size: 1.25rem;
+    }
+
+    .line-item.is-active::after {
+      content: "⭐";
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.3rem;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .topic-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
+      min-height: 215px;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .topic-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.9rem;
+      margin-bottom: 16px;
+      background: var(--orange-soft);
+    }
+
+    .topic-card:nth-child(2) .topic-icon { background: var(--yellow-soft); }
+    .topic-card:nth-child(3) .topic-icon { background: var(--blue-soft); }
+    .topic-card:nth-child(4) .topic-icon { background: var(--green-soft); }
+    .topic-card:nth-child(5) .topic-icon { background: var(--purple-soft); }
+    .topic-card:nth-child(6) .topic-icon { background: var(--pink-soft); }
+    .topic-card:nth-child(7) .topic-icon { background: var(--teal-soft); }
+    .topic-card:nth-child(8) .topic-icon { background: #ecfccb; }
+
+    .topic-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 1.18rem;
+    }
+
+    .topic-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-bottom: 14px;
+    }
+
+    .topic-card a {
+      color: var(--orange-dark);
+      font-weight: 950;
+    }
+
+    .daily-box {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
+        linear-gradient(135deg, #fff7ed, #ecfdf5);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .daily-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .daily-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .daily-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .big-math {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1;
+      font-weight: 950;
+      color: var(--orange-dark);
+      margin: 14px 0;
+      letter-spacing: -0.04em;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .quiz-options button:hover {
+      background: var(--orange-soft);
+    }
+
+    .result {
+      margin-top: 12px;
+      min-height: 24px;
+      font-weight: 900;
+    }
+
+    .shape-play {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .shape-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .shape {
+      width: 86px;
+      height: 86px;
+      margin: 0 auto 14px;
+      display: grid;
+      place-items: center;
+    }
+
+    .circle {
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+    }
+
+    .square {
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--blue), var(--sky));
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 48px solid transparent;
+      border-right: 48px solid transparent;
+      border-bottom: 86px solid var(--green);
+      background: transparent;
+    }
+
+    .rectangle {
+      width: 110px;
+      height: 70px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--purple), #a78bfa);
+    }
+
+    .parent-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 36px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .tips {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .tips li {
+      background: #f8fafc;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .pathway {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .path-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: var(--orange);
+      color: white;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+    }
+
+    .path-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .path-card p {
+      color: var(--muted);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #7c2d12);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 46px);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #fed7aa;
+    }
+
+    .footer {
+      margin-top: 40px;
+      background: #0f172a;
+      color: white;
+      padding: 42px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      padding-bottom: 26px;
+    }
+
+    .footer h3 {
+      margin-bottom: 12px;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .lab-grid,
+      .parent-box,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .method-grid,
+      .topics-grid,
+      .pathway,
+      .shape-play {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .daily-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .method-grid,
+      .topics-grid,
+      .pathway,
+      .shape-play,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-visual {
+        min-height: 300px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .number-display {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container top-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-icon">➕</span>
+        <span>
+          Al-Hayat Kids Learning Hub
+          <small>Learn • Explore • Grow</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="islamic-studies.html">Islamic</a>
+        <a href="arabic-for-kids.html">Arabic</a>
+        <a href="english.html">English</a>
+        <a href="../reading-library/index.html">Stories</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a class="cta" href="../online-classes.html">Online Classes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <div class="kicker">➕ Math Learning for Kids</div>
+          <h1>Math <span>for Kids</span></h1>
+          <p>
+            A joyful beginner-friendly math learning space where children build number sense,
+            counting, addition, subtraction, shapes, patterns, and problem-solving through short,
+            visual, hands-on activities.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#number-lab">Start Counting</a>
+            <a class="btn btn-blue" href="#practice">Practice Today</a>
+            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="child-card">
+            <div class="emoji">🧮</div>
+            <h2>See it, count it, build it, solve it</h2>
+            <p>Math becomes easier when children use pictures, objects, number lines, shapes, and joyful practice.</p>
+
+            <div class="hero-stats">
+              <div class="hero-stat">10 <span>Number Sense</span></div>
+              <div class="hero-stat">4 <span>Practice Steps</span></div>
+              <div class="hero-stat">Fun <span>Quizzes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Method</div>
+            <h2 id="method-title">A math routine children understand</h2>
+            <p class="section-lead">
+              Strong early math starts with meaning, not memorization only. This page follows a
+              child-friendly routine: use objects, see pictures, talk about numbers, and then solve.
+            </p>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <div class="icon">🧸</div>
+            <h3>Concrete</h3>
+            <p>Children first count real or imagined objects like blocks, stars, pencils, and toys.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">🖼️</div>
+            <h3>Picture</h3>
+            <p>They use dots, number lines, shapes, and drawings to see the math idea clearly.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">🔢</div>
+            <h3>Symbol</h3>
+            <p>After understanding, they connect the idea to numbers and signs like +, −, =.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">💬</div>
+            <h3>Explain</h3>
+            <p>They say how they solved it, which builds confidence and real understanding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="number-lab" aria-labelledby="lab-title">
+      <div class="container number-lab">
+        <div class="section-label">Number Sense Lab</div>
+        <h2 id="lab-title">Count, see, and understand numbers</h2>
+        <p class="section-lead">
+          Click the buttons to change the number. Children can count the dots, see the number line,
+          and connect quantity with a written number.
+        </p>
+
+        <div class="lab-grid">
+          <article class="lab-card">
+            <h3>Counting Dots</h3>
+            <p>Current number: <strong id="numberValue">5</strong></p>
+            <div class="number-display" id="numberDisplay" aria-label="Counting dots"></div>
+
+            <div class="number-controls">
+              <button class="small-btn" type="button" id="minusBtn">− 1</button>
+              <button class="small-btn" type="button" id="plusBtn">+ 1</button>
+              <button class="small-btn" type="button" id="resetBtn">Reset</button>
+            </div>
+          </article>
+
+          <article class="lab-card">
+            <h3>Number Line</h3>
+            <p>Number lines help children understand order, before, after, addition, and subtraction.</p>
+            <div class="number-line" id="numberLine" aria-label="Number line from 0 to 10"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Explore Math</div>
+            <h2 id="topics-title">What children can learn here</h2>
+            <p class="section-lead">
+              This page can grow into a complete math zone with lessons, printable sheets,
+              games, quizzes, and real-life problem-solving.
+            </p>
+          </div>
+        </div>
+
+        <div class="topics-grid">
+          <article class="topic-card">
+            <div class="topic-icon">🔢</div>
+            <h3>Numbers & Counting</h3>
+            <p>Recognize numbers, count objects, compare numbers, and understand order.</p>
+            <a href="#number-lab">Start Counting →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">➕</div>
+            <h3>Addition</h3>
+            <p>Use objects, dots, and number lines to understand “putting together.”</p>
+            <a href="#practice">Practice Addition →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">➖</div>
+            <h3>Subtraction</h3>
+            <p>Learn “taking away” and “finding the difference” through visual practice.</p>
+            <a href="#practice">Practice Subtraction →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🔷</div>
+            <h3>Shapes</h3>
+            <p>Circle, square, triangle, rectangle, sides, corners, and patterns.</p>
+            <a href="#shapes">Explore Shapes →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🧩</div>
+            <h3>Patterns</h3>
+            <p>Find, continue, and create patterns using colors, shapes, and numbers.</p>
+            <a href="../activities/index.html">Try Activities →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">⏰</div>
+            <h3>Time & Money</h3>
+            <p>Read clocks, understand daily routines, count coins, and solve simple tasks.</p>
+            <a href="../worksheets/index.html">Open Worksheets →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🧠</div>
+            <h3>Word Problems</h3>
+            <p>Use real-life stories to decide which operation to use and explain why.</p>
+            <a href="#practice">Solve Problems →</a>
+          </article>
+
+          <article class="topic-card">
+            <div class="topic-icon">🌟</div>
+            <h3>Daily Math</h3>
+            <p>A small math activity every day builds accuracy, speed, and confidence.</p>
+            <a href="../daily-learning/index.html">Daily Learning →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practice" aria-labelledby="practice-title">
+      <div class="container daily-box">
+        <div class="section-label">Today’s Math Practice</div>
+        <h2 id="practice-title">One small problem, one clear strategy</h2>
+        <p class="section-lead">
+          Children should learn how to think, not only how to answer. Today’s practice uses dots,
+          number facts, and a short quiz.
+        </p>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>➕ Addition of the Day</h3>
+            <div class="big-math">4 + 3 = 7</div>
+            <p><strong>Think:</strong> Start with 4, then count 3 more: 5, 6, 7.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>➖ Subtraction of the Day</h3>
+            <div class="big-math">9 − 2 = 7</div>
+            <p><strong>Think:</strong> Start with 9, take away 2, and count what remains.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>📘 Word Problem</h3>
+            <p>
+              Amina has 5 pencils. Her mother gives her 2 more pencils.
+              How many pencils does Amina have now?
+            </p>
+            <p><strong>Answer:</strong> 5 + 2 = 7 pencils.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🧠 Quick Quiz</h3>
+            <p>What is 6 + 2?</p>
+            <div class="quiz-options">
+              <button type="button" data-answer="wrong">7</button>
+              <button type="button" data-answer="correct">8</button>
+              <button type="button" data-answer="wrong">9</button>
+            </div>
+            <div class="result" id="result" aria-live="polite"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shapes" aria-labelledby="shapes-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Shape Explorer</div>
+            <h2 id="shapes-title">Learn shapes through seeing and naming</h2>
+            <p class="section-lead">
+              Early geometry becomes easy when children notice shapes around them: plates,
+              books, doors, signs, tiles, and toys.
+            </p>
+          </div>
+        </div>
+
+        <div class="shape-play">
+          <article class="shape-card">
+            <div class="shape circle"></div>
+            <h3>Circle</h3>
+            <p>No corners, round shape.</p>
+          </article>
+
+          <article class="shape-card">
+            <div class="shape square"></div>
+            <h3>Square</h3>
+            <p>4 equal sides and 4 corners.</p>
+          </article>
+
+          <article class="shape-card">
+            <div class="shape triangle"></div>
+            <h3>Triangle</h3>
+            <p>3 sides and 3 corners.</p>
+          </article>
+
+          <article class="shape-card">
+            <div class="shape rectangle"></div>
+            <h3>Rectangle</h3>
+            <p>4 sides and 4 corners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="path-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Learning Pathway</div>
+            <h2 id="path-title">A strong math foundation in four steps</h2>
+            <p class="section-lead">
+              Children grow faster when math is clear, practical, and connected to real life.
+            </p>
+          </div>
+        </div>
+
+        <div class="pathway">
+          <article class="path-card">
+            <strong>1</strong>
+            <h3>Count</h3>
+            <p>Start with objects, fingers, dots, and number lines.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>2</strong>
+            <h3>Represent</h3>
+            <p>Draw pictures, groups, shapes, and simple models.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>3</strong>
+            <h3>Solve</h3>
+            <p>Use numbers, signs, equations, and strategies.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>4</strong>
+            <h3>Explain</h3>
+            <p>Say how the answer was found and why it makes sense.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="parents-title">
+      <div class="container parent-box">
+        <div>
+          <div class="section-label">For Parents & Teachers</div>
+          <h2 id="parents-title">How to help children love math</h2>
+          <p class="section-lead">
+            Math anxiety often begins when children feel rushed or embarrassed. Keep math slow,
+            visual, encouraging, and connected to daily life.
+          </p>
+        </div>
+
+        <div>
+          <ul class="tips">
+            <li>Use real objects like spoons, pencils, blocks, fruits, and coins.</li>
+            <li>Ask children to explain their thinking instead of only giving an answer.</li>
+            <li>Use short practice sessions: 5 to 10 minutes can be very effective.</li>
+            <li>Praise effort, strategy, neat work, and improvement.</li>
+            <li>Connect math with daily routines: shopping, time, sharing, cooking, and games.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="section-label" style="color:#fed7aa;">Personal Guidance</div>
+          <h2>Book Online Math Support with Dr. Imran Hayat</h2>
+          <p>
+            If your child needs structured support in basic math, counting, addition,
+            subtraction, shapes, word problems, or confidence-building, you can book online
+            classes along with these free learning resources.
+          </p>
+
+          <ul class="cta-list">
+            <li>Numbers and counting support</li>
+            <li>Addition and subtraction practice</li>
+            <li>Word problems and reasoning</li>
+            <li>Confidence-building through gentle practice</li>
+          </ul>
+        </div>
+
+        <div>
+          <a class="btn btn-primary" href="../online-classes.html">Book Online Classes</a>
+          <br /><br />
+          <a class="btn btn-white" href="../contact.html">Contact for Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌟 Al-Hayat Kids Learning Hub</h3>
+        <p>
+          A joyful Islamic and academic learning platform where children learn,
+          read, play, explore, and grow.
+        </p>
+      </div>
+
+      <div>
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="islamic-studies.html">Islamic Studies</a></li>
+          <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="science.html">Science</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="../reading-library/index.html">Reading Library</a></li>
+          <li><a href="../worksheets/index.html">Worksheets</a></li>
+          <li><a href="../activities/quizzes.html">Quizzes</a></li>
+          <li><a href="../videos/index.html">Videos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Parent & Trust</h3>
+        <ul>
+          <li><a href="../parent-resources/index.html">Parent Resources</a></li>
+          <li><a href="../online-classes.html">Online Classes</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const result = document.getElementById("result");
+
+    document.querySelectorAll(".quiz-options button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.answer === "correct") {
+          result.textContent = "Correct! 6 + 2 = 8. ⭐";
+          result.style.color = "#c2410c";
+        } else {
+          result.textContent = "Good try! Count 6, then 2 more: 7, 8.";
+          result.style.color = "#b45309";
+        }
+      });
+    });
+
+    let currentNumber = 5;
+    const numberValue = document.getElementById("numberValue");
+    const numberDisplay = document.getElementById("numberDisplay");
+    const numberLine = document.getElementById("numberLine");
+    const minusBtn = document.getElementById("minusBtn");
+    const plusBtn = document.getElementById("plusBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    function renderNumber() {
+      numberValue.textContent = currentNumber;
+
+      numberDisplay.innerHTML = "";
+      for (let i = 1; i <= 10; i++) {
+        const dot = document.createElement("div");
+        dot.className = "counter-dot";
+        dot.textContent = i <= currentNumber ? i : "";
+        dot.style.opacity = i <= currentNumber ? "1" : "0.25";
+        numberDisplay.appendChild(dot);
+      }
+
+      numberLine.innerHTML = "";
+      for (let i = 0; i <= 10; i++) {
+        const item = document.createElement("div");
+        item.className = "line-item" + (i === currentNumber ? " is-active" : "");
+        item.textContent = i;
+        numberLine.appendChild(item);
+      }
+    }
+
+    minusBtn.addEventListener("click", () => {
+      currentNumber = Math.max(0, currentNumber - 1);
+      renderNumber();
+    });
+
+    plusBtn.addEventListener("click", () => {
+      currentNumber = Math.min(10, currentNumber + 1);
+      renderNumber();
+    });
+
+    resetBtn.addEventListener("click", () => {
+      currentNumber = 5;
+      renderNumber();
+    });
+
+    renderNumber();
+  </script>
+</body>
+</html>
