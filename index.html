@@ -1759,6 +1759,276 @@
         transform: scale(0.78);
       }
     }
+
+    /* =========================================================
+       FINAL HOMEPAGE VISIBILITY PATCH
+       Fixes:
+       1) "Learning Hub" clipping in logo/title
+       2) hero illustration staying on the right side
+       3) button/Subjects overlap
+       4) stronger mobile visibility
+       ========================================================= */
+
+    html {
+      scroll-padding-top: 154px;
+    }
+
+    .brand,
+    .brand-text,
+    .brand-text strong,
+    .brand-text span {
+      overflow: visible;
+    }
+
+    .brand {
+      align-items: center;
+    }
+
+    .brand-text strong {
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      padding-bottom: 2px;
+    }
+
+    .brand-text .kids,
+    .brand-text .hub {
+      display: inline-block;
+      line-height: 1.15;
+      padding-bottom: 2px;
+    }
+
+    .footer-brand .brand {
+      align-items: flex-start;
+    }
+
+    .hero {
+      min-height: 470px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      min-height: 470px;
+      grid-template-columns: minmax(410px, 0.9fr) minmax(540px, 1.1fr);
+      gap: clamp(12px, 2vw, 28px);
+      align-items: center;
+    }
+
+    .hero-copy {
+      padding: 42px 0 88px clamp(6px, 5vw, 72px);
+      max-width: 650px;
+      z-index: 5;
+    }
+
+    .hero-title {
+      line-height: 0.98;
+      margin-bottom: 18px;
+      overflow: visible;
+    }
+
+    .hero-title span {
+      display: block;
+      line-height: 1.12;
+      padding: 4px 0 8px;
+      margin-top: 0;
+      overflow: visible;
+    }
+
+    .hero-lead {
+      margin-top: 2px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .primary-btn,
+    .button,
+    .button-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      border-radius: 14px;
+      border: 0;
+      padding: 0 26px;
+      font-weight: 1000;
+      line-height: 1.1;
+      box-shadow: 0 16px 26px rgba(6, 95, 37, 0.24);
+    }
+
+    .hero-art {
+      width: 100%;
+      max-width: 710px;
+      min-height: 420px;
+      justify-self: end;
+      place-items: end center;
+      padding-top: 18px;
+      padding-bottom: 62px;
+      transform: translateX(18px);
+      opacity: 1;
+      visibility: visible;
+      z-index: 4;
+    }
+
+    .kids-scene {
+      width: min(690px, 100%);
+      min-height: 315px;
+      transform: none;
+    }
+
+    .desk {
+      width: min(590px, 95%);
+    }
+
+    .category-shell {
+      z-index: 10;
+      margin-top: -14px;
+      padding-top: 0;
+      clear: both;
+    }
+
+    #subjects {
+      scroll-margin-top: 155px;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    .cat-item:focus-visible,
+    .nav-link:focus-visible,
+    .btn:focus-visible,
+    .primary-btn:focus-visible,
+    .quick-action:focus-visible,
+    .resource-card:focus-visible {
+      outline: 4px solid rgba(255, 201, 40, 0.55);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 1130px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 0;
+      }
+
+      .hero-copy {
+        padding: 38px 0 18px;
+        max-width: 760px;
+      }
+
+      .hero-art {
+        justify-self: center;
+        max-width: 760px;
+        min-height: 390px;
+        transform: none;
+        padding-bottom: 62px;
+      }
+
+      .category-shell {
+        margin-top: -10px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      html {
+        scroll-padding-top: 128px;
+      }
+
+      .brand-text strong {
+        line-height: 1.15;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-copy {
+        text-align: center;
+        padding: 34px 0 8px;
+      }
+
+      .hero-title {
+        font-size: clamp(3rem, 15vw, 4.55rem);
+        line-height: 1.02;
+      }
+
+      .hero-title span {
+        font-size: 0.64em;
+        line-height: 1.18;
+        padding-bottom: 10px;
+      }
+
+      .learning-tags,
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-art {
+        width: 116%;
+        max-width: none;
+        min-height: 330px;
+        margin-left: -8%;
+        padding: 0 0 60px;
+        transform: scale(0.86);
+        transform-origin: center bottom;
+      }
+
+      .category-shell {
+        margin-top: -8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-text strong {
+        font-size: 1.22rem;
+        line-height: 1.16;
+      }
+
+      .brand-text span {
+        line-height: 1.2;
+      }
+
+      .hero-title {
+        font-size: clamp(2.9rem, 15vw, 3.45rem);
+        letter-spacing: -0.06em;
+      }
+
+      .hero-title span {
+        letter-spacing: -0.045em;
+      }
+
+      .hero-art {
+        width: 132%;
+        margin-left: -16%;
+        min-height: 286px;
+        margin-top: -18px;
+        transform: scale(0.74);
+      }
+
+      .kids-scene {
+        transform: none;
+      }
+
+      .category-shell {
+        margin-top: -4px;
+      }
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -1908,8 +2178,9 @@
           </div>
 
           <div class="hero-actions">
-            <a href="#subjects" class="button button-primary primary-btn">Start Learning Now →</a>
+            <a href="#subjects" class="btn btn-green primary-btn">Start Learning Now →</a>
           </div>
+        </div>
 
         <div class="hero-art" aria-hidden="true">
           <span class="sky-object star-1">⭐</span>
@@ -1964,7 +2235,7 @@
     </section>
 
     <section class="category-shell" id="subjects" aria-labelledby="subjects-title">
-      <h2 id="subjects-title" class="skip-link">Subjects</h2>
+      <h2 id="subjects-title" class="visually-hidden">Subjects</h2>
       <div class="container">
         <div class="category-card">
           <a class="cat-item" href="subjects/english.html">
