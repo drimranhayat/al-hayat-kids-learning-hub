@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reading Library for Kids | Stories, Values & Reading Practice | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="Reading Library for Kids at Al-Hayat Kids Learning Hub. Read moral stories, Islamic stories, animal stories, Prophet stories, bedtime stories, vocabulary practice, reflection questions, and parent-guided reading activities." />
+  <meta name="keywords" content="reading library for kids, kids stories, moral stories for children, Islamic stories for kids, Prophet stories for children, animal stories for kids, bedtime stories, reading practice for kids" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/" />
+
+  <meta property="og:title" content="Reading Library for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A joyful child-friendly reading library with moral stories, Islamic stories, animal stories, vocabulary, reflection questions, and parent-guided reading practice." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --green: #138a3d;
+      --green-dark: #075c2a;
+      --green-soft: #e8f8ee;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #dbeafe;
+      --sky: #38bdf8;
+      --sky-dark: #075985;
+      --sky-soft: #e0f2fe;
+      --orange: #f97316;
+      --orange-dark: #c2410c;
+      --orange-soft: #ffedd5;
+      --yellow: #f6c445;
+      --yellow-soft: #fef3c7;
+      --purple: #7c3aed;
+      --purple-soft: #ede9fe;
+      --pink: #ec4899;
+      --pink-soft: #fce7f3;
+      --teal: #14b8a6;
+      --teal-dark: #0f766e;
+      --teal-soft: #ccfbf1;
+      --white: #ffffff;
+      --light: #f8fbff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(246, 196, 69, 0.18), transparent 28rem),
+        radial-gradient(circle at top right, rgba(236, 72, 153, 0.13), transparent 24rem),
+        linear-gradient(180deg, #ffffff 0%, #fff7ed 50%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .top-header {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      backdrop-filter: blur(16px);
+    }
+
+    .top-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      color: var(--green-dark);
+    }
+
+    .brand-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.6rem;
+      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.22);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: -2px;
+      font-size: 0.78rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      background: var(--yellow-soft);
+      color: var(--orange-dark);
+    }
+
+    .nav .cta {
+      background: var(--green);
+      color: white;
+      box-shadow: 0 10px 20px rgba(19, 138, 61, 0.22);
+    }
+
+    .hero {
+      padding: 64px 0 44px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+      background:
+        radial-gradient(circle at 88% 18%, rgba(246, 196, 69, 0.36), transparent 14rem),
+        radial-gradient(circle at 20% 80%, rgba(236, 72, 153, 0.12), transparent 16rem),
+        linear-gradient(135deg, #fff7ed, #fef3c7);
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 54px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      overflow: hidden;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--orange-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 5.1rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      color: var(--orange-dark);
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: var(--green-dark);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: #334155;
+      margin-bottom: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 19px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 0;
+      cursor: pointer;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      color: #111827;
+      box-shadow: 0 14px 28px rgba(249, 115, 22, 0.22);
+    }
+
+    .btn-green {
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      color: white;
+      box-shadow: 0 14px 28px rgba(19, 138, 61, 0.22);
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--orange-dark);
+      border: 1px solid var(--border);
+    }
+
+    .hero-visual {
+      min-height: 390px;
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
+        linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,255,255,0.35));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "📚";
+      position: absolute;
+      font-size: 9rem;
+      left: 22px;
+      top: 18px;
+      opacity: 0.18;
+    }
+
+    .hero-visual::after {
+      content: "✨";
+      position: absolute;
+      font-size: 8rem;
+      right: 40px;
+      bottom: 28px;
+      opacity: 0.22;
+    }
+
+    .storybook-card {
+      width: min(92%, 430px);
+      background: white;
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .storybook-card .emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .storybook-card h2 {
+      color: var(--orange-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .storybook-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .hero-stat {
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 12px;
+      font-weight: 900;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .section-label {
+      color: var(--orange-dark);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      margin-bottom: 6px;
+    }
+
+    .section h2 {
+      color: #0f172a;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+      max-width: 760px;
+      margin-top: 8px;
+    }
+
+    .method-grid,
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .method-card,
+    .category-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .method-card .icon,
+    .category-card .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow-soft);
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+    }
+
+    .method-card:nth-child(2) .icon,
+    .category-card:nth-child(2) .icon { background: var(--green-soft); }
+
+    .method-card:nth-child(3) .icon,
+    .category-card:nth-child(3) .icon { background: var(--sky-soft); }
+
+    .method-card:nth-child(4) .icon,
+    .category-card:nth-child(4) .icon { background: var(--purple-soft); }
+
+    .category-card:nth-child(5) .icon { background: var(--orange-soft); }
+    .category-card:nth-child(6) .icon { background: var(--pink-soft); }
+    .category-card:nth-child(7) .icon { background: var(--teal-soft); }
+    .category-card:nth-child(8) .icon { background: #ecfccb; }
+
+    .method-card h3,
+    .category-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
+
+    .method-card p,
+    .category-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .category-card a {
+      display: inline-flex;
+      margin-top: 12px;
+      color: var(--orange-dark);
+      font-weight: 950;
+    }
+
+    .story-section {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.24), transparent 18rem),
+        linear-gradient(135deg, #fff7ed, #ecfdf5);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: start;
+      margin-top: 22px;
+    }
+
+    .story-info,
+    .story-reader {
+      background: white;
+      border-radius: 28px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .story-cover {
+      min-height: 260px;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.35), transparent 12rem),
+        linear-gradient(135deg, #ffedd5, #fef3c7);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+
+    .story-cover .book-emoji {
+      font-size: 5rem;
+      margin-bottom: 10px;
+    }
+
+    .story-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .story-tags span {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 11px;
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .story-text {
+      font-size: 1.05rem;
+      color: #334155;
+    }
+
+    .story-text p {
+      margin-bottom: 14px;
+    }
+
+    .story-text strong {
+      color: #0f172a;
+    }
+
+    .reflection-box {
+      margin-top: 18px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .reflection-box h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .reflection-box ul {
+      margin-left: 18px;
+      color: #334155;
+      font-weight: 700;
+      display: grid;
+      gap: 8px;
+    }
+
+    .word-bank {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .word-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .word-card strong {
+      color: var(--orange-dark);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .daily-box {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.18), transparent 18rem),
+        linear-gradient(135deg, #fff7ed, #eff6ff);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 36px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .daily-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .daily-card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .daily-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .quiz-options button:hover {
+      background: var(--yellow-soft);
+    }
+
+    .result {
+      margin-top: 12px;
+      min-height: 24px;
+      font-weight: 900;
+    }
+
+    .reading-shelf {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .shelf-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
+    }
+
+    .shelf-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .shelf-card .emoji {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .shelf-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .shelf-card p {
+      color: var(--muted);
+    }
+
+    .parent-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 36px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .tips {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .tips li {
+      background: #f8fafc;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 14px;
+      color: #334155;
+      font-weight: 750;
+    }
+
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .pathway {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .path-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .path-card strong {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: var(--orange);
+      color: white;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+    }
+
+    .path-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .path-card p {
+      color: var(--muted);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #7c2d12);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(26px, 5vw, 46px);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #fed7aa;
+    }
+
+    .footer {
+      margin-top: 40px;
+      background: #0f172a;
+      color: white;
+      padding: 42px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      padding-bottom: 26px;
+    }
+
+    .footer h3 {
+      margin-bottom: 12px;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .story-layout,
+      .parent-box,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .method-grid,
+      .category-grid,
+      .pathway {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .daily-grid,
+      .reading-shelf {
+        grid-template-columns: 1fr;
+      }
+
+      .word-bank {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .method-grid,
+      .category-grid,
+      .pathway,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-visual {
+        min-height: 300px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container top-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-icon">📖</span>
+        <span>
+          Al-Hayat Kids Learning Hub
+          <small>Learn • Read • Grow</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../subjects/islamic-studies.html">Islamic</a>
+        <a href="../subjects/arabic-for-kids.html">Arabic</a>
+        <a href="../subjects/english.html">English</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a class="cta" href="../online-classes.html">Online Classes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <div class="kicker">📖 Reading Library for Kids</div>
+          <h1>Read Stories. <span>Grow Values.</span></h1>
+          <p>
+            A joyful reading library where children build fluency, vocabulary, imagination,
+            Islamic manners, moral understanding, and confidence through short stories,
+            reflection questions, and parent-guided reading practice.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#story-of-day">Read Today’s Story</a>
+            <a class="btn btn-green" href="#categories">Explore Categories</a>
+            <a class="btn btn-white" href="../online-classes.html">Book Reading Support</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="storybook-card">
+            <div class="emoji">📚</div>
+            <h2>Stories children want to read again</h2>
+            <p>Short, warm, meaningful stories with simple language, values, vocabulary, and reflection.</p>
+
+            <div class="hero-stats">
+              <div class="hero-stat">5 min <span>Stories</span></div>
+              <div class="hero-stat">Values <span>& Manners</span></div>
+              <div class="hero-stat">Parent <span>Guided</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Reading Method</div>
+            <h2 id="method-title">A simple reading routine that works</h2>
+            <p class="section-lead">
+              Children become stronger readers when stories are short, meaningful, repeated,
+              discussed, and connected with real life.
+            </p>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <div class="icon">👂</div>
+            <h3>Listen</h3>
+            <p>A parent or teacher reads first so the child hears rhythm, expression, and meaning.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">📖</div>
+            <h3>Read</h3>
+            <p>The child reads slowly, one sentence at a time, with support and encouragement.</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">🧠</div>
+            <h3>Understand</h3>
+            <p>Ask simple questions: Who? What happened? Why was it important?</p>
+          </article>
+
+          <article class="method-card">
+            <div class="icon">🌱</div>
+            <h3>Apply</h3>
+            <p>Connect the story value with daily life: honesty, kindness, patience, or gratitude.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Story Categories</div>
+            <h2 id="categories-title">Choose a reading path</h2>
+            <p class="section-lead">
+              The library will grow gradually with original stories, carefully verified Islamic content,
+              age-friendly vocabulary, and printable reading activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="icon">🌱</div>
+            <h3>Moral Stories</h3>
+            <p>Short stories about honesty, kindness, patience, respect, courage, and gratitude.</p>
+            <a href="#story-of-day">Read a Moral Story →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">🕌</div>
+            <h3>Islamic Stories</h3>
+            <p>Value-based Islamic stories for children, written with care and checked for accuracy.</p>
+            <a href="../subjects/islamic-studies.html">Islamic Learning →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">☀️</div>
+            <h3>Prophet Stories</h3>
+            <p>Prophet stories should be created from reliable sources and written in child-friendly language.</p>
+            <a href="../islamic-corner/prophet-stories.html">Prophet Stories →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">🐾</div>
+            <h3>Animal Stories</h3>
+            <p>Stories with animals that teach care, observation, responsibility, and kindness.</p>
+            <a href="#reading-shelf">Explore Animals →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">🌙</div>
+            <h3>Bedtime Stories</h3>
+            <p>Calm stories with gentle endings, positive messages, and peaceful reflection.</p>
+            <a href="#reading-shelf">Bedtime Reading →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">⭐</div>
+            <h3>Famous Personalities</h3>
+            <p>Age-friendly biographies that inspire learning, service, courage, and good character.</p>
+            <a href="#reading-shelf">Coming Soon →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">📝</div>
+            <h3>Reading Practice</h3>
+            <p>Short passages with vocabulary, comprehension questions, and sentence practice.</p>
+            <a href="../subjects/english.html">English Learning →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="icon">🎧</div>
+            <h3>Read Aloud</h3>
+            <p>Future read-aloud stories can support pronunciation, fluency, and listening skills.</p>
+            <a href="../videos/index.html">Videos →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story-of-day" aria-labelledby="story-title">
+      <div class="container story-section">
+        <div class="section-label">Story of the Day</div>
+        <h2 id="story-title">The Honest Boy</h2>
+        <p class="section-lead">
+          A short original moral story for reading practice. It teaches honesty, responsibility,
+          and courage to tell the truth.
+        </p>
+
+        <div class="story-layout">
+          <article class="story-info">
+            <div class="story-cover">
+              <div>
+                <div class="book-emoji">📖</div>
+                <h3>The Honest Boy</h3>
+                <p>A gentle story about truthfulness.</p>
+              </div>
+            </div>
+
+            <div class="story-tags">
+              <span>⏱️ 5 minutes</span>
+              <span>👧 Ages 6–10</span>
+              <span>🌱 Value: Honesty</span>
+              <span>📚 Level: Easy</span>
+            </div>
+
+            <div class="word-bank">
+              <div class="word-card">
+                <strong>Honest</strong>
+                Telling the truth.
+              </div>
+              <div class="word-card">
+                <strong>Promise</strong>
+                Words we should keep.
+              </div>
+              <div class="word-card">
+                <strong>Courage</strong>
+                Doing the right thing even when it is hard.
+              </div>
+            </div>
+          </article>
+
+          <article class="story-reader">
+            <div class="story-text">
+              <p>
+                <strong>One morning,</strong> a young boy named Hamza found a small wallet near the school gate.
+                The wallet had some money and a little card inside it.
+              </p>
+
+              <p>
+                Hamza looked around. Many children were walking quickly to their classrooms.
+                No one seemed to notice the wallet on the ground.
+              </p>
+
+              <p>
+                For a moment, Hamza felt confused. He wanted to buy a new pencil box, and the money looked useful.
+                But then he remembered what his mother always said: “A truthful person is trusted by people.”
+              </p>
+
+              <p>
+                Hamza picked up the wallet and went straight to his teacher. “I found this near the gate,” he said.
+                “I think someone has lost it.”
+              </p>
+
+              <p>
+                The teacher smiled kindly and checked the card. Soon, a worried student came to the office.
+                It was his wallet. He was very happy to get it back.
+              </p>
+
+              <p>
+                “Thank you, Hamza,” the student said. “You helped me today.”
+              </p>
+
+              <p>
+                Hamza felt peaceful. He did not get a new pencil box that day, but he gained something better:
+                the happiness of doing the right thing.
+              </p>
+            </div>
+
+            <div class="reflection-box">
+              <h3>Think and Talk</h3>
+              <ul>
+                <li>What did Hamza find near the school gate?</li>
+                <li>Why was it difficult for him to decide what to do?</li>
+                <li>What value did Hamza show?</li>
+                <li>What would you do if you found something that belonged to someone else?</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="daily-reading" aria-labelledby="daily-title">
+      <div class="container daily-box">
+        <div class="section-label">Daily Reading Practice</div>
+        <h2 id="daily-title">One story, one word, one reflection</h2>
+        <p class="section-lead">
+          Daily reading should be small, warm, and consistent. A short story plus discussion can build
+          vocabulary, fluency, confidence, and values.
+        </p>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>🌟 Word of the Day</h3>
+            <p><strong>Honest</strong></p>
+            <p>Meaning: someone who tells the truth and does not cheat.</p>
+            <p>Sentence: Hamza was honest when he returned the wallet.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>📘 Reading Skill</h3>
+            <p><strong>Predicting</strong></p>
+            <p>Before reading, look at the title and ask: “What do I think this story will be about?”</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>✍️ Writing Task</h3>
+            <p>Write three sentences about a time when you told the truth or helped someone.</p>
+          </article>
+
+          <article class="daily-card">
+            <h3>🧠 Quick Quiz</h3>
+            <p>What is the main value in “The Honest Boy”?</p>
+            <div class="quiz-options">
+              <button type="button" data-answer="wrong">Laziness</button>
+              <button type="button" data-answer="correct">Honesty</button>
+              <button type="button" data-answer="wrong">Carelessness</button>
+            </div>
+            <div class="result" id="result" aria-live="polite"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reading-shelf" aria-labelledby="shelf-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Reading Shelf</div>
+            <h2 id="shelf-title">Coming story collections</h2>
+            <p class="section-lead">
+              These collections can be expanded gradually with original stories and verified Islamic content.
+            </p>
+          </div>
+        </div>
+
+        <div class="reading-shelf">
+          <article class="shelf-card">
+            <div class="emoji">🌱</div>
+            <h3>10 Moral Stories</h3>
+            <p>Honesty, kindness, gratitude, patience, responsibility, respect, courage, forgiveness, sharing, and cleanliness.</p>
+          </article>
+
+          <article class="shelf-card">
+            <div class="emoji">🐾</div>
+            <h3>10 Animal Stories</h3>
+            <p>Stories about animals that gently teach care, teamwork, observation, and respect for creation.</p>
+          </article>
+
+          <article class="shelf-card">
+            <div class="emoji">🕌</div>
+            <h3>10 Islamic Value Stories</h3>
+            <p>Short stories connected with manners, duas, family life, prayer habits, and good character.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="path-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Reading Pathway</div>
+            <h2 id="path-title">A strong reading habit in four steps</h2>
+            <p class="section-lead">
+              Children grow into readers when reading feels safe, meaningful, and successful.
+            </p>
+          </div>
+        </div>
+
+        <div class="pathway">
+          <article class="path-card">
+            <strong>1</strong>
+            <h3>Listen</h3>
+            <p>Hear the story read aloud with expression.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>2</strong>
+            <h3>Read</h3>
+            <p>Read slowly, sentence by sentence, without pressure.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>3</strong>
+            <h3>Discuss</h3>
+            <p>Talk about characters, events, words, and values.</p>
+          </article>
+
+          <article class="path-card">
+            <strong>4</strong>
+            <h3>Write</h3>
+            <p>Write a sentence, reflection, or personal example.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="parents-title">
+      <div class="container parent-box">
+        <div>
+          <div class="section-label">For Parents & Teachers</div>
+          <h2 id="parents-title">How to help children love reading</h2>
+          <p class="section-lead">
+            Children should not feel reading is punishment. A small daily story, a warm voice,
+            and kind encouragement can transform reading confidence.
+          </p>
+        </div>
+
+        <div>
+          <ul class="tips">
+            <li>Read aloud first, then invite the child to read a short part.</li>
+            <li>Do not stop after every small mistake; support meaning and confidence.</li>
+            <li>Ask gentle questions about characters, choices, and values.</li>
+            <li>Let children repeat favorite stories because repetition builds fluency.</li>
+            <li>Connect stories with Islamic manners, kindness, honesty, gratitude, and family life.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="section-label" style="color:#fed7aa;">Personal Guidance</div>
+          <h2>Book Online Reading Support with Dr. Imran Hayat</h2>
+          <p>
+            If your child needs reading fluency, vocabulary, comprehension, pronunciation,
+            speaking confidence, or regular practice, you can book online classes along with
+            these free reading resources.
+          </p>
+
+          <ul class="cta-list">
+            <li>Reading fluency and confidence</li>
+            <li>Vocabulary and comprehension</li>
+            <li>Story discussion and writing practice</li>
+            <li>Parent feedback and guided improvement</li>
+          </ul>
+        </div>
+
+        <div>
+          <a class="btn btn-primary" href="../online-classes.html">Book Online Classes</a>
+          <br /><br />
+          <a class="btn btn-white" href="../contact.html">Contact for Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌟 Al-Hayat Kids Learning Hub</h3>
+        <p>
+          A joyful Islamic and academic learning platform where children learn,
+          read, play, explore, and grow.
+        </p>
+      </div>
+
+      <div>
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="../subjects/islamic-studies.html">Islamic Studies</a></li>
+          <li><a href="../subjects/arabic-for-kids.html">Arabic for Kids</a></li>
+          <li><a href="../subjects/english.html">English</a></li>
+          <li><a href="../subjects/math.html">Math</a></li>
+          <li><a href="../subjects/science.html">Science</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Library</h3>
+        <ul>
+          <li><a href="#story-of-day">Story of the Day</a></li>
+          <li><a href="#categories">Story Categories</a></li>
+          <li><a href="#daily-reading">Daily Reading</a></li>
+          <li><a href="../worksheets/index.html">Worksheets</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Parent & Trust</h3>
+        <ul>
+          <li><a href="../parent-resources/index.html">Parent Resources</a></li>
+          <li><a href="../online-classes.html">Online Classes</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const result = document.getElementById("result");
+
+    document.querySelectorAll(".quiz-options button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.answer === "correct") {
+          result.textContent = "Correct! The main value is honesty. ⭐";
+          result.style.color = "#c2410c";
+        } else {
+          result.textContent = "Good try! The story teaches honesty.";
+          result.style.color = "#b45309";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
