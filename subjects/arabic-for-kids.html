@@ -672,6 +672,73 @@
     .footer ul { list-style: none; display: grid; gap: 8px; }
     .copyright { padding-top: 18px; color: rgba(255,255,255,0.6); font-size: 0.92rem; }
 
+
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .whiteboard-head strong {
+      color: #312e81;
+      font-size: 1rem;
+    }
+
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #c4b5fd;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .whiteboard-tools {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      align-items: center;
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
+
     @media (max-width: 980px) {
       .hero-card, .parent-box, .cta, .word-visual-card { grid-template-columns: 1fr; }
       .grid-4, .topic-grid, .steps-grid, .letter-grid { grid-template-columns: repeat(2, 1fr); }
@@ -984,6 +1051,25 @@
             <h3>📝 Handwriting Prompt</h3>
             <p id="tracePrompt">Write the letter on paper 5 times. Then say the word قَمَر (qamar).</p>
             <textarea class="writing-area" id="traceNotes" placeholder="Parent note or child practice reflection: I traced the letter ق today."></textarea>
+
+            <div class="whiteboard-wrap" aria-label="Arabic handwriting whiteboard">
+              <div class="whiteboard-head">
+                <strong>🖍️ Handwriting Whiteboard</strong>
+                <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
+              </div>
+
+              <canvas id="handwritingBoard" class="whiteboard-canvas" aria-label="Write the Arabic letter using mouse, touch, or stylus"></canvas>
+
+              <div class="whiteboard-tools">
+                <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Letter Again</button>
+                <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Letter</button>
+              </div>
+
+              <p class="board-tip">
+                Tip: Use mouse, finger, or touch pen. Trace the faint letter first, then try writing it yourself.
+              </p>
+            </div>
+
             <div class="sound-actions">
               <button class="listen-btn" id="listenPromptBtn" type="button">🔊 Listen Prompt</button>
               <button class="learned-btn" id="saveTraceBtn" type="button">✅ Save Practice</button>
@@ -1425,6 +1511,7 @@
       }
 
       renderQuiz();
+      refreshWhiteboardGuide();
     }
 
     function renderQuiz() {
@@ -1475,6 +1562,172 @@
           speak(text, lang, repeat);
         });
       });
+    }
+
+
+    let boardContext = null;
+    let boardDrawing = false;
+    window.arabicWhiteboardUsed = false;
+
+    function setupWhiteboard() {
+      const canvas = document.getElementById("handwritingBoard");
+      const clearButton = document.getElementById("clearBoardBtn");
+
+      if (!canvas || !clearButton) {
+        return;
+      }
+
+      boardContext = canvas.getContext("2d", { willReadFrequently: true });
+
+      function resizeBoard() {
+        const rect = canvas.getBoundingClientRect();
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = Math.max(320, Math.floor(rect.width * ratio));
+        canvas.height = Math.floor(280 * ratio);
+        boardContext.setTransform(ratio, 0, 0, ratio, 0, 0);
+        clearBoard(false);
+      }
+
+      function drawGuide() {
+        const rect = canvas.getBoundingClientRect();
+        const width = rect.width;
+        const height = 280;
+
+        boardContext.save();
+
+        boardContext.fillStyle = "#ffffff";
+        boardContext.fillRect(0, 0, width, height);
+
+        boardContext.strokeStyle = "rgba(124, 58, 237, 0.16)";
+        boardContext.lineWidth = 2;
+        boardContext.setLineDash([10, 10]);
+
+        [70, 140, 210].forEach((y) => {
+          boardContext.beginPath();
+          boardContext.moveTo(18, y);
+          boardContext.lineTo(width - 18, y);
+          boardContext.stroke();
+        });
+
+        boardContext.setLineDash([]);
+
+        boardContext.font = "150px 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', serif";
+        boardContext.textAlign = "center";
+        boardContext.textBaseline = "middle";
+        boardContext.fillStyle = "rgba(124, 58, 237, 0.13)";
+        boardContext.fillText(currentWord?.traceLetter || "ق", width / 2, height / 2 + 10);
+
+        boardContext.restore();
+      }
+
+      function clearBoard(showMessage = true) {
+        if (!boardContext) return;
+        drawGuide();
+        window.arabicWhiteboardUsed = false;
+
+        if (showMessage && getTracker()?.showToast) {
+          getTracker().showToast("🧽 Whiteboard cleared.");
+        }
+      }
+
+      function getPoint(event) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          x: event.clientX - rect.left,
+          y: event.clientY - rect.top
+        };
+      }
+
+      function startDrawing(event) {
+        event.preventDefault();
+        boardDrawing = true;
+        window.arabicWhiteboardUsed = true;
+
+        const point = getPoint(event);
+        boardContext.beginPath();
+        boardContext.moveTo(point.x, point.y);
+      }
+
+      function draw(event) {
+        if (!boardDrawing) return;
+        event.preventDefault();
+
+        const point = getPoint(event);
+        boardContext.lineWidth = 7;
+        boardContext.lineCap = "round";
+        boardContext.lineJoin = "round";
+        boardContext.strokeStyle = "#0f172a";
+        boardContext.lineTo(point.x, point.y);
+        boardContext.stroke();
+      }
+
+      function stopDrawing() {
+        if (!boardDrawing) return;
+        boardDrawing = false;
+        boardContext.closePath();
+      }
+
+      canvas.addEventListener("pointerdown", startDrawing);
+      canvas.addEventListener("pointermove", draw);
+      canvas.addEventListener("pointerup", stopDrawing);
+      canvas.addEventListener("pointerleave", stopDrawing);
+      canvas.addEventListener("pointercancel", stopDrawing);
+
+      clearButton.addEventListener("click", () => clearBoard(true));
+
+      window.addEventListener("resize", () => {
+        window.clearTimeout(setupWhiteboard.resizeTimer);
+        setupWhiteboard.resizeTimer = window.setTimeout(resizeBoard, 160);
+      });
+
+      document.getElementById("listenBoardBtn").addEventListener("click", () => {
+        speak(`${currentWord.traceLetter}. ${currentWord.traceLetterName}. ${currentWord.arabic}.`, "ar-SA", false);
+      });
+
+      document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+        speak(`${currentWord.traceLetter}. ${currentWord.traceLetter}. ${currentWord.arabic}.`, "ar-SA", true);
+      });
+
+      resizeBoard();
+    }
+
+    function refreshWhiteboardGuide() {
+      if (!boardContext) return;
+      const canvas = document.getElementById("handwritingBoard");
+      if (!canvas) return;
+
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width;
+      const height = 280;
+
+      boardContext.clearRect(0, 0, width, height);
+      boardContext.fillStyle = "#ffffff";
+      boardContext.fillRect(0, 0, width, height);
+
+      boardContext.save();
+
+      boardContext.strokeStyle = "rgba(124, 58, 237, 0.16)";
+      boardContext.lineWidth = 2;
+      boardContext.setLineDash([10, 10]);
+
+      [70, 140, 210].forEach((y) => {
+        boardContext.beginPath();
+        boardContext.moveTo(18, y);
+        boardContext.lineTo(width - 18, y);
+        boardContext.stroke();
+      });
+
+      boardContext.setLineDash([]);
+
+      boardContext.font = "150px 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', serif";
+      boardContext.textAlign = "center";
+      boardContext.textBaseline = "middle";
+      boardContext.fillStyle = "rgba(124, 58, 237, 0.13)";
+      boardContext.fillText(currentWord?.traceLetter || "ق", width / 2, height / 2 + 10);
+
+      boardContext.restore();
+
+      window.arabicWhiteboardUsed = false;
     }
 
     function setupMainButtons() {
@@ -1529,7 +1782,8 @@
       document.getElementById("saveTraceBtn").addEventListener("click", (e) => {
         getTracker()?.markCompleted?.("arabicWords", `${currentWord.id}-trace`, {
           letter: currentWord.traceLetter,
-          notes: document.getElementById("traceNotes").value.trim().length > 0
+          notes: document.getElementById("traceNotes").value.trim().length > 0,
+          whiteboardUsed: window.arabicWhiteboardUsed === true
         });
         e.currentTarget.textContent = "✅ Practice saved!";
       });
@@ -1559,6 +1813,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       renderLetters();
       renderDailyWord();
+      setupWhiteboard();
       setupStaticButtons();
       setupMainButtons();
       setTimeout(() => {
