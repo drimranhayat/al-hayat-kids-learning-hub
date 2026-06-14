@@ -6,15 +6,15 @@
 
   <title>English for Kids | Reading, Vocabulary, Grammar & Speaking | Al-Hayat Kids Learning Hub</title>
 
-  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. A child-friendly English learning page with vocabulary, phonics, reading practice, grammar basics, punctuation, speaking confidence, writing prompts, quizzes, and online classes." />
-  <meta name="keywords" content="English for kids, vocabulary for kids, reading practice for children, grammar for kids, punctuation for kids, speaking English for kids, English worksheets, kids English learning" />
+  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Child-friendly English learning with vocabulary, phonics, reading practice, grammar, punctuation, speaking prompts, listening buttons, quizzes, and parent-guided activities." />
+  <meta name="keywords" content="English for kids, English learning for children, vocabulary for kids, reading practice for kids, grammar for kids, punctuation for kids, speaking practice for children, phonics for kids" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/english.html" />
 
   <meta property="og:title" content="English for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="Learn English vocabulary, reading, grammar, punctuation, speaking, and writing through joyful child-friendly activities." />
+  <meta property="og:description" content="A joyful English learning page with listening buttons, vocabulary, phonics, reading, grammar, punctuation, speaking, quizzes, and daily practice." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -26,8 +26,10 @@
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
+      --sky-dark: #075985;
       --sky-soft: #e0f2fe;
-      --orange: #ff8a1f;
+      --orange: #f97316;
+      --orange-dark: #c2410c;
       --orange-soft: #ffedd5;
       --yellow: #f6c445;
       --yellow-soft: #fef3c7;
@@ -36,6 +38,7 @@
       --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
+      --teal-dark: #0f766e;
       --teal-soft: #ccfbf1;
       --white: #ffffff;
       --light: #f8fbff;
@@ -48,22 +51,41 @@
       --max: 1180px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(124, 58, 237, 0.16), transparent 28rem),
-        radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.20), transparent 24rem),
         linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; }
-    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
 
     .top-header {
       background: rgba(255, 255, 255, 0.92);
@@ -95,12 +117,12 @@
       width: 52px;
       height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--purple), var(--blue));
+      background: linear-gradient(135deg, var(--blue), var(--sky));
       display: grid;
       place-items: center;
       color: white;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.20);
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.20);
     }
 
     .brand small {
@@ -130,8 +152,8 @@
 
     .nav a:hover,
     .nav a:focus {
-      background: var(--purple-soft);
-      color: var(--purple);
+      background: var(--blue-soft);
+      color: var(--blue-dark);
     }
 
     .nav .cta {
@@ -140,7 +162,50 @@
       box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
     }
 
-    .hero { padding: 64px 0 44px; }
+    .audio-bar {
+      position: sticky;
+      top: 76px;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.94);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .audio-inner {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.10);
+      color: white;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .stop-sound:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      padding: 64px 0 44px;
+    }
 
     .hero-card {
       display: grid;
@@ -148,9 +213,9 @@
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(246, 196, 69, 0.34), transparent 14rem),
-        radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.16), transparent 16rem),
-        linear-gradient(135deg, #ede9fe, #e0f2fe);
+        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.34), transparent 14rem),
+        radial-gradient(circle at 20% 80%, rgba(246, 196, 69, 0.24), transparent 16rem),
+        linear-gradient(135deg, #eff6ff, #ecfeff);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
@@ -163,7 +228,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--purple);
+      color: var(--blue-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -179,7 +244,9 @@
       margin-bottom: 18px;
     }
 
-    h1 span { color: var(--orange); }
+    h1 span {
+      color: var(--orange);
+    }
 
     .hero p {
       max-width: 650px;
@@ -188,18 +255,22 @@
       margin-bottom: 22px;
     }
 
-    .buttons {
+    .buttons,
+    .sound-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
+      align-items: center;
     }
 
-    .btn {
+    .btn,
+    .listen-btn,
+    .repeat-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 19px;
+      min-height: 44px;
+      padding: 10px 15px;
       border-radius: 999px;
       font-weight: 900;
       border: 0;
@@ -208,13 +279,24 @@
       text-align: center;
     }
 
+    .btn {
+      min-height: 48px;
+      padding: 12px 19px;
+    }
+
     .btn:hover,
-    .btn:focus { transform: translateY(-2px); }
+    .btn:focus,
+    .listen-btn:hover,
+    .listen-btn:focus,
+    .repeat-btn:hover,
+    .repeat-btn:focus {
+      transform: translateY(-2px);
+    }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--purple), var(--blue));
+      background: linear-gradient(135deg, var(--blue), var(--sky));
       color: white;
-      box-shadow: 0 14px 28px rgba(124, 58, 237, 0.22);
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
     }
 
     .btn-yellow {
@@ -229,8 +311,20 @@
       border: 1px solid var(--border);
     }
 
+    .listen-btn {
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      border: 1px solid #bfdbfe;
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
     .hero-visual {
-      min-height: 380px;
+      min-height: 390px;
       border-radius: 32px;
       background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), transparent 10rem),
@@ -244,25 +338,25 @@
     .hero-visual::before {
       content: "ABC";
       position: absolute;
-      font-size: 7rem;
+      font-size: 6.8rem;
       font-weight: 950;
-      color: rgba(124, 58, 237, 0.12);
-      left: 34px;
-      top: 20px;
+      color: rgba(37, 99, 235, 0.12);
+      left: 28px;
+      top: 18px;
       letter-spacing: -0.08em;
     }
 
     .hero-visual::after {
-      content: "📚";
+      content: "📘";
       position: absolute;
-      font-size: 7rem;
+      font-size: 8rem;
       right: 38px;
       bottom: 18px;
-      opacity: 0.42;
+      opacity: 0.18;
     }
 
     .child-card {
-      width: min(92%, 420px);
+      width: min(92%, 430px);
       background: white;
       border-radius: 30px;
       padding: 26px;
@@ -272,7 +366,10 @@
       text-align: center;
     }
 
-    .child-card .emoji { font-size: 4rem; margin-bottom: 8px; }
+    .child-card .emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
 
     .child-card h2 {
       color: var(--blue-dark);
@@ -281,7 +378,11 @@
       margin-bottom: 10px;
     }
 
-    .child-card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+    .child-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
 
     .hero-stats {
       display: grid;
@@ -306,7 +407,9 @@
       font-weight: 700;
     }
 
-    .section { padding: 52px 0; }
+    .section {
+      padding: 52px 0;
+    }
 
     .section-head {
       margin-bottom: 26px;
@@ -317,7 +420,7 @@
     }
 
     .section-label {
-      color: var(--purple);
+      color: var(--blue-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -335,19 +438,23 @@
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 780px;
+      max-width: 760px;
       margin-top: 8px;
     }
 
     .method-grid,
-    .skills-grid {
+    .topics-grid,
+    .phonics-grid,
+    .pathway {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
     .method-card,
-    .skill-card {
+    .topic-card,
+    .phonics-card,
+    .path-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
@@ -356,165 +463,144 @@
       transition: 0.22s ease;
     }
 
-    .method-card:hover,
-    .skill-card:hover {
+    .topic-card:hover,
+    .phonics-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow);
     }
 
-    .icon {
+    .method-card .icon,
+    .topic-card .icon,
+    .phonics-card .icon {
       width: 56px;
       height: 56px;
       border-radius: 18px;
       display: grid;
       place-items: center;
-      background: var(--purple-soft);
+      background: var(--blue-soft);
       font-size: 1.7rem;
       margin-bottom: 14px;
     }
 
     .method-card:nth-child(2) .icon,
-    .skill-card:nth-child(2) .icon { background: var(--yellow-soft); }
+    .topic-card:nth-child(2) .icon,
+    .phonics-card:nth-child(2) .icon { background: var(--yellow-soft); }
+
     .method-card:nth-child(3) .icon,
-    .skill-card:nth-child(3) .icon { background: var(--green-soft); }
+    .topic-card:nth-child(3) .icon,
+    .phonics-card:nth-child(3) .icon { background: var(--green-soft); }
+
     .method-card:nth-child(4) .icon,
-    .skill-card:nth-child(4) .icon { background: var(--blue-soft); }
-    .skill-card:nth-child(5) .icon { background: var(--orange-soft); }
-    .skill-card:nth-child(6) .icon { background: var(--pink-soft); }
-    .skill-card:nth-child(7) .icon { background: var(--teal-soft); }
-    .skill-card:nth-child(8) .icon { background: var(--sky-soft); }
+    .topic-card:nth-child(4) .icon,
+    .phonics-card:nth-child(4) .icon { background: var(--purple-soft); }
+
+    .topic-card:nth-child(5) .icon { background: var(--orange-soft); }
+    .topic-card:nth-child(6) .icon { background: var(--pink-soft); }
+    .topic-card:nth-child(7) .icon { background: var(--teal-soft); }
+    .topic-card:nth-child(8) .icon { background: #ecfccb; }
 
     .method-card h3,
-    .skill-card h3 { color: #0f172a; margin-bottom: 7px; }
-    .method-card p,
-    .skill-card p { color: var(--muted); font-size: 0.95rem; }
-    .skill-card a { display: inline-flex; margin-top: 12px; color: var(--blue-dark); font-weight: 950; }
+    .topic-card h3,
+    .phonics-card h3,
+    .path-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
 
-    .daily-box {
+    .method-card p,
+    .topic-card p,
+    .phonics-card p,
+    .path-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .topic-card a {
+      display: inline-flex;
+      margin-top: 12px;
+      color: var(--blue-dark);
+      font-weight: 950;
+    }
+
+    .learning-box,
+    .reading-box {
       background:
-        radial-gradient(circle at 10% 20%, rgba(246,196,69,0.22), transparent 18rem),
-        linear-gradient(135deg, #f5f3ff, #eff6ff);
+        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
+        linear-gradient(135deg, #eff6ff, #ecfeff);
       border-radius: 34px;
       padding: clamp(22px, 4vw, 36px);
       border: 1px solid rgba(226, 232, 240, 0.9);
       box-shadow: var(--shadow);
     }
 
-    .daily-grid {
+    .daily-grid,
+    .reader-layout {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
       margin-top: 22px;
     }
 
-    .daily-card {
+    .daily-card,
+    .reader-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
     }
 
-    .daily-card h3 { color: #0f172a; margin-bottom: 10px; }
+    .daily-card h3,
+    .reader-card h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
 
-    .word-big {
-      font-size: 2.45rem;
-      line-height: 1.05;
-      color: var(--purple);
+    .big-word {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1;
       font-weight: 950;
-      letter-spacing: -0.05em;
-      margin: 10px 0;
+      color: var(--blue-dark);
+      margin: 14px 0;
+      letter-spacing: -0.04em;
     }
 
-    .meaning-box {
+    .word-note {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 14px;
       margin-top: 12px;
-    }
-
-    .reading-card {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 22px;
-      align-items: stretch;
-      background: white;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      border-radius: 34px;
-      padding: clamp(22px, 4vw, 34px);
-    }
-
-    .story-panel {
-      border-radius: 28px;
-      padding: 24px;
-      background:
-        radial-gradient(circle at top right, rgba(246,196,69,0.30), transparent 12rem),
-        linear-gradient(135deg, #fff7ed, #fef3c7);
-      min-height: 330px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .story-panel::after {
-      content: "📖";
-      position: absolute;
-      right: 18px;
-      bottom: 8px;
-      font-size: 7rem;
-      opacity: 0.18;
-    }
-
-    .story-panel h3 {
-      font-size: 2rem;
-      line-height: 1.1;
-      color: #0f172a;
-      margin: 14px 0;
-    }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 14px 0;
-    }
-
-    .badge {
-      background: white;
-      border-radius: 999px;
-      padding: 8px 12px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 800;
-      border: 1px solid rgba(226,232,240,0.8);
-    }
-
-    .story-text {
-      background: #f8fafc;
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-    }
-
-    .story-text p { margin-bottom: 12px; color: #334155; }
-
-    .question-list {
-      margin-top: 16px;
-      display: grid;
-      gap: 10px;
-      list-style: none;
-    }
-
-    .question-list li {
-      padding: 12px;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: white;
-      font-weight: 750;
       color: #334155;
+      font-weight: 750;
+    }
+
+    .sentence-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      margin: 12px 0;
+      color: #334155;
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .reader-passage {
+      color: #334155;
+      font-size: 1.05rem;
+    }
+
+    .reader-passage p {
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      background: var(--yellow-soft);
+      padding: 2px 7px;
+      border-radius: 9px;
+      font-weight: 900;
+      color: #92400e;
     }
 
     .quiz-options {
@@ -533,7 +619,9 @@
       cursor: pointer;
     }
 
-    .quiz-options button:hover { background: var(--purple-soft); }
+    .quiz-options button:hover {
+      background: var(--blue-soft);
+    }
 
     .result {
       margin-top: 12px;
@@ -541,51 +629,22 @@
       font-weight: 900;
     }
 
-    .sentence-builder {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 34px;
-      box-shadow: var(--shadow);
-      padding: clamp(22px, 4vw, 34px);
-    }
-
-    .builder-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .word-bank {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .word-chip {
-      border: 1px solid var(--border);
-      background: #f8fafc;
-      border-radius: 999px;
-      padding: 9px 13px;
-      font-weight: 850;
-      cursor: pointer;
-    }
-
-    .word-chip:hover { background: var(--yellow-soft); }
-
-    .writing-box {
-      min-height: 180px;
+    .writing-area {
       width: 100%;
+      min-height: 130px;
+      border: 2px dashed #bfdbfe;
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 14px;
       resize: vertical;
-      border-radius: 22px;
-      border: 2px dashed #c4b5fd;
-      padding: 16px;
+      margin-top: 12px;
       color: #0f172a;
-      background:
-        repeating-linear-gradient(to bottom, #ffffff, #ffffff 36px, #eef2ff 37px, #ffffff 38px);
       outline: none;
-      font-weight: 700;
+    }
+
+    .writing-area:focus {
+      border-color: var(--blue);
+      background: white;
     }
 
     .parent-box {
@@ -622,37 +681,20 @@
       font-weight: 950;
     }
 
-    .pathway {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .path-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow-soft);
-    }
-
     .path-card strong {
       display: inline-grid;
       place-items: center;
       width: 44px;
       height: 44px;
       border-radius: 15px;
-      background: var(--purple);
+      background: var(--blue);
       color: white;
       margin-bottom: 14px;
       font-size: 1.2rem;
     }
 
-    .path-card h3 { color: #0f172a; margin-bottom: 8px; }
-    .path-card p { color: var(--muted); }
-
     .cta {
-      background: linear-gradient(135deg, #0f172a, #312e81);
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -663,7 +705,9 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 { color: white; }
+    .cta h2 {
+      color: white;
+    }
 
     .cta p {
       color: rgba(255,255,255,0.78);
@@ -685,7 +729,7 @@
 
     .cta-list li::before {
       content: "✓ ";
-      color: #c4b5fd;
+      color: #93c5fd;
     }
 
     .footer {
@@ -703,9 +747,21 @@
       padding-bottom: 26px;
     }
 
-    .footer h3 { margin-bottom: 12px; }
-    .footer p, .footer a { color: rgba(255,255,255,0.72); font-weight: 650; }
-    .footer ul { list-style: none; display: grid; gap: 8px; }
+    .footer h3 {
+      margin-bottom: 12px;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
 
     .copyright {
       padding-top: 18px;
@@ -715,31 +771,81 @@
 
     @media (max-width: 980px) {
       .hero-card,
-      .reading-card,
-      .builder-grid,
       .parent-box,
-      .cta { grid-template-columns: 1fr; }
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
       .method-grid,
-      .skills-grid,
-      .pathway { grid-template-columns: repeat(2, 1fr); }
-      .daily-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .topics-grid,
+      .phonics-grid,
+      .pathway {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .daily-grid,
+      .reader-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .audio-bar {
+        top: 0;
+      }
     }
 
     @media (max-width: 640px) {
-      .container { width: min(100% - 24px, var(--max)); }
-      .top-inner { flex-direction: column; align-items: flex-start; padding: 14px 0; }
-      .nav { justify-content: flex-start; }
+      .container {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
       .method-grid,
-      .skills-grid,
+      .topics-grid,
+      .phonics-grid,
       .pathway,
-      .footer-grid { grid-template-columns: 1fr; }
-      .buttons { display: grid; }
-      .btn { width: 100%; }
-      .hero { padding-top: 28px; }
-      .hero-visual { min-height: 300px; }
-      .section-head { display: block; }
-      .hero-stats { grid-template-columns: 1fr; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons,
+      .sound-actions {
+        display: grid;
+      }
+
+      .btn,
+      .listen-btn,
+      .repeat-btn {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-visual {
+        min-height: 300px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -748,10 +854,10 @@
   <header class="top-header">
     <div class="container top-inner">
       <a class="brand" href="../index.html">
-        <span class="brand-icon">📚</span>
+        <span class="brand-icon">📘</span>
         <span>
           Al-Hayat Kids Learning Hub
-          <small>Learn • Explore • Grow</small>
+          <small>Learn • Read • Speak • Grow</small>
         </span>
       </a>
 
@@ -759,41 +865,54 @@
         <a href="../index.html">Home</a>
         <a href="islamic-studies.html">Islamic</a>
         <a href="arabic-for-kids.html">Arabic</a>
+        <a href="math.html">Math</a>
+        <a href="science.html">Science</a>
         <a href="../reading-library/index.html">Stories</a>
-        <a href="../worksheets/index.html">Worksheets</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
     </div>
   </header>
 
+  <div class="audio-bar" aria-label="Audio learning controls">
+    <div class="container audio-inner">
+      <p>🔊 Audio learning is now active. Click Listen, Repeat, or Stop Sound anytime.</p>
+      <button class="stop-sound" type="button">⏹ Stop Sound</button>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">📚 English Learning for Kids</div>
+          <div class="kicker">📘 English Learning for Kids</div>
           <h1>English <span>for Kids</span></h1>
           <p>
-            A joyful English learning space where children build vocabulary, reading fluency,
-            grammar confidence, punctuation awareness, speaking skills, and writing habits through
-            short, meaningful, and repeatable activities.
+            A joyful English learning space where children build vocabulary, phonics, reading fluency,
+            grammar, punctuation, writing, speaking, and listening confidence through short,
+            child-friendly activities.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#skills">Start Learning</a>
-            <a class="btn btn-yellow" href="#daily-practice">Practice Today</a>
+            <a class="btn btn-primary" href="#practice">Start Today’s Practice</a>
+            <a class="btn btn-yellow" href="#reading">Read a Passage</a>
             <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+          </div>
+
+          <div class="sound-actions" style="margin-top: 14px;">
+            <button class="listen-btn" type="button" data-speak="Welcome to English for Kids. Listen, repeat, read, speak, and grow with confidence." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-speak="Welcome to English for Kids. Listen, repeat, read, speak, and grow with confidence." data-lang="en-US">🔁 Repeat</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
           <div class="child-card">
-            <div class="emoji">📖</div>
-            <h2>Read clearly, speak confidently, write beautifully</h2>
-            <p>English becomes easier when children learn words, sentences, stories, and expression together.</p>
+            <div class="emoji">🗣️</div>
+            <h2>Listen, repeat, read, speak, and write</h2>
+            <p>English becomes easier when children hear words, say them aloud, read with meaning, and use them in sentences.</p>
 
             <div class="hero-stats">
               <div class="hero-stat">Daily <span>Words</span></div>
-              <div class="hero-stat">Short <span>Reading</span></div>
+              <div class="hero-stat">Audio <span>Practice</span></div>
               <div class="hero-stat">Fun <span>Quiz</span></div>
             </div>
           </div>
@@ -806,236 +925,355 @@
         <div class="section-head">
           <div>
             <div class="section-label">Learning Method</div>
-            <h2 id="method-title">A simple English routine children enjoy</h2>
+            <h2 id="method-title">A strong English routine children enjoy</h2>
             <p class="section-lead">
-              Children learn English best when vocabulary, reading, speaking, and writing support one another.
-              The goal is not memorisation only; the goal is confident daily use.
+              Young learners need sound, repetition, pictures, meaning, and real use. Every key activity
+              now includes listening support so children can hear and repeat.
             </p>
           </div>
         </div>
 
         <div class="method-grid">
           <article class="method-card">
-            <div class="icon">👀</div>
-            <h3>See</h3>
-            <p>Children see a clear word, sentence, picture clue, or reading passage.</p>
+            <div class="icon">👂</div>
+            <h3>Listen</h3>
+            <p>Children hear the word, sentence, passage, or question before reading it themselves.</p>
           </article>
 
           <article class="method-card">
-            <div class="icon">🗣️</div>
-            <h3>Say</h3>
-            <p>They say the word or sentence aloud to build pronunciation and confidence.</p>
+            <div class="icon">🔁</div>
+            <h3>Repeat</h3>
+            <p>They repeat aloud to improve pronunciation, confidence, rhythm, and fluency.</p>
           </article>
 
           <article class="method-card">
             <div class="icon">📖</div>
             <h3>Read</h3>
-            <p>They read short meaningful texts and answer simple questions.</p>
+            <p>They read short, meaningful text with support and simple comprehension questions.</p>
           </article>
 
           <article class="method-card">
             <div class="icon">✍️</div>
-            <h3>Write</h3>
-            <p>They write sentences, short paragraphs, and personal responses.</p>
+            <h3>Use</h3>
+            <p>They use new words in speaking, writing, grammar, and daily-life sentences.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills" aria-labelledby="skills-title">
+    <section class="section" aria-labelledby="topics-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <div class="section-label">English Skills</div>
-            <h2 id="skills-title">What children can learn here</h2>
+            <div class="section-label">Explore English</div>
+            <h2 id="topics-title">What children can learn here</h2>
             <p class="section-lead">
-              This English zone will grow into a complete learning area with vocabulary, reading, grammar,
-              punctuation, speaking, writing, quizzes, and printable worksheets.
+              This page can grow into a complete English zone with vocabulary, phonics, reading,
+              grammar, punctuation, writing, speaking, listening, quizzes, and worksheets.
             </p>
           </div>
         </div>
 
-        <div class="skills-grid">
-          <article class="skill-card">
-            <div class="icon">🌟</div>
+        <div class="topics-grid">
+          <article class="topic-card">
+            <div class="icon">🔤</div>
             <h3>Vocabulary</h3>
-            <p>Learn useful words with meaning, example sentences, synonyms, and simple practice.</p>
-            <a href="#daily-practice">Word Practice →</a>
+            <p>Learn useful words with meaning, pronunciation, example sentences, and daily practice.</p>
+            <a href="#practice">Start Vocabulary →</a>
           </article>
 
-          <article class="skill-card">
+          <article class="topic-card">
+            <div class="icon">🎧</div>
+            <h3>Listening</h3>
+            <p>Use Listen and Repeat buttons to hear words, sentences, and passages.</p>
+            <a href="#reading">Practice Listening →</a>
+          </article>
+
+          <article class="topic-card">
             <div class="icon">📖</div>
             <h3>Reading</h3>
-            <p>Read short stories and passages with comprehension questions and moral reflection.</p>
-            <a href="#reading">Start Reading →</a>
+            <p>Read short passages, understand main ideas, and answer simple questions.</p>
+            <a href="#reading">Read Passage →</a>
           </article>
 
-          <article class="skill-card">
+          <article class="topic-card">
             <div class="icon">🧩</div>
-            <h3>Grammar Basics</h3>
-            <p>Learn nouns, verbs, adjectives, sentences, tenses, and everyday grammar patterns.</p>
-            <a href="#daily-practice">Grammar Practice →</a>
+            <h3>Grammar</h3>
+            <p>Learn nouns, verbs, adjectives, sentences, tenses, and simple grammar patterns.</p>
+            <a href="#practice">Grammar Bite →</a>
           </article>
 
-          <article class="skill-card">
-            <div class="icon">❗</div>
-            <h3>Punctuation</h3>
-            <p>Use capital letters, full stops, commas, question marks, and speech marks correctly.</p>
-            <a href="#daily-practice">Punctuation →</a>
+          <article class="topic-card">
+            <div class="icon">✏️</div>
+            <h3>Writing</h3>
+            <p>Write sentences, short paragraphs, descriptions, and reflections from prompts.</p>
+            <a href="#writing">Writing Task →</a>
           </article>
 
-          <article class="skill-card">
+          <article class="topic-card">
             <div class="icon">🗣️</div>
             <h3>Speaking</h3>
-            <p>Practice short answers, self-introduction, polite expressions, and confidence-building.</p>
-            <a href="#speaking">Speaking Task →</a>
+            <p>Practice short speaking prompts for confidence, clarity, and expression.</p>
+            <a href="#speaking">Speaking Prompt →</a>
           </article>
 
-          <article class="skill-card">
-            <div class="icon">✍️</div>
-            <h3>Writing</h3>
-            <p>Write simple sentences, descriptions, short stories, and paragraph responses.</p>
-            <a href="#sentence-builder">Write Now →</a>
-          </article>
-
-          <article class="skill-card">
-            <div class="icon">🧠</div>
+          <article class="topic-card">
+            <div class="icon">❓</div>
             <h3>Quizzes</h3>
-            <p>Try mini quizzes to check vocabulary, grammar, punctuation, and reading skills.</p>
+            <p>Use small quizzes to check meaning, grammar, punctuation, and reading.</p>
             <a href="#quiz">Try Quiz →</a>
           </article>
 
-          <article class="skill-card">
-            <div class="icon">📝</div>
+          <article class="topic-card">
+            <div class="icon">📄</div>
             <h3>Worksheets</h3>
-            <p>Download printable practice sheets for vocabulary, grammar, reading, and writing.</p>
+            <p>Printable worksheets can support handwriting, vocabulary, grammar, and reading.</p>
             <a href="../worksheets/index.html">Open Worksheets →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="daily-practice" aria-labelledby="daily-title">
-      <div class="container daily-box">
+    <section class="section" id="phonics" aria-labelledby="phonics-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Phonics Corner</div>
+            <h2 id="phonics-title">Hear the sound, say the word</h2>
+            <p class="section-lead">
+              Phonics practice helps children connect letters with sounds. Keep it slow, playful,
+              and repeated.
+            </p>
+          </div>
+        </div>
+
+        <div class="phonics-grid">
+          <article class="phonics-card">
+            <div class="icon">🍎</div>
+            <h3>A sound</h3>
+            <p><strong>a</strong> as in apple.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="A says a, as in apple. Apple." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="A says a, as in apple. Apple." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
+
+          <article class="phonics-card">
+            <div class="icon">⚽</div>
+            <h3>B sound</h3>
+            <p><strong>b</strong> as in ball.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="B says b, as in ball. Ball." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="B says b, as in ball. Ball." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
+
+          <article class="phonics-card">
+            <div class="icon">🐱</div>
+            <h3>C sound</h3>
+            <p><strong>c</strong> as in cat.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="C says k, as in cat. Cat." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="C says k, as in cat. Cat." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
+
+          <article class="phonics-card">
+            <div class="icon">🐶</div>
+            <h3>D sound</h3>
+            <p><strong>d</strong> as in dog.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="D says d, as in dog. Dog." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="D says d, as in dog. Dog." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practice" aria-labelledby="practice-title">
+      <div class="container learning-box">
         <div class="section-label">Today’s English Practice</div>
-        <h2 id="daily-title">One word, one sentence, one joyful activity</h2>
+        <h2 id="practice-title">One word, one sentence, one small skill</h2>
         <p class="section-lead">
-          A few minutes of daily English practice can build strong habits over time.
+          Children learn best through small daily practice. Each card includes listening support.
         </p>
 
         <div class="daily-grid">
           <article class="daily-card">
             <h3>🌟 Word of the Day</h3>
-            <div class="word-big">Generous</div>
-            <div class="meaning-box">
-              <p><strong>Meaning:</strong> kind and willing to share.</p>
-              <p><strong>Example:</strong> Ali is generous to his friends.</p>
-              <p><strong>Try it:</strong> Write one sentence using “generous”.</p>
+            <div class="big-word">brave</div>
+            <p><strong>Meaning:</strong> ready to do the right thing even when it feels difficult.</p>
+            <div class="sentence-box">The brave child told the truth.</div>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Word of the day. Brave. Brave means ready to do the right thing even when it feels difficult. The brave child told the truth." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="Brave. The brave child told the truth." data-lang="en-US">🔁 Repeat</button>
             </div>
           </article>
 
           <article class="daily-card">
             <h3>🧩 Grammar Bite</h3>
-            <p><strong>Today’s focus:</strong> Adjectives</p>
-            <p>An adjective tells us more about a noun.</p>
-            <div class="meaning-box">
-              <p><strong>Example:</strong> The <b>kind</b> boy helped his friend.</p>
-              <p>Here, <b>kind</b> describes the boy.</p>
+            <p><strong>Adjective:</strong> A word that describes a noun.</p>
+            <div class="sentence-box">The <span class="highlight">kind</span> girl helped her friend.</div>
+            <p>In this sentence, <strong>kind</strong> describes the girl.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Grammar bite. An adjective is a word that describes a noun. The kind girl helped her friend. In this sentence, kind describes the girl." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="An adjective describes a noun. The kind girl helped her friend." data-lang="en-US">🔁 Repeat</button>
             </div>
           </article>
 
           <article class="daily-card">
-            <h3>❗ Punctuation Fix</h3>
-            <p>Which sentence is correct?</p>
-            <div class="quiz-options">
-              <button type="button" data-answer="wrong">where is my book.</button>
-              <button type="button" data-answer="correct">Where is my book?</button>
-              <button type="button" data-answer="wrong">Where is my book.</button>
+            <h3>✏️ Punctuation Fix</h3>
+            <p>Add a capital letter and full stop.</p>
+            <div class="sentence-box">i like reading books</div>
+            <p><strong>Correct:</strong> I like reading books.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Punctuation fix. I like reading books. The sentence begins with a capital I and ends with a full stop." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="I like reading books." data-lang="en-US">🔁 Repeat</button>
             </div>
-            <div class="result" id="result" aria-live="polite"></div>
           </article>
 
-          <article class="daily-card" id="speaking">
-            <h3>🗣️ Speaking Prompt</h3>
-            <p><strong>Say aloud:</strong></p>
-            <div class="meaning-box">
-              <p>“My name is _____. I like reading because _____.”</p>
+          <article class="daily-card" id="quiz">
+            <h3>🧠 Quick Quiz</h3>
+            <p>Which word is an adjective?</p>
+            <div class="quiz-options">
+              <button type="button" data-answer="wrong">run</button>
+              <button type="button" data-answer="correct">happy</button>
+              <button type="button" data-answer="wrong">school</button>
             </div>
-            <p>Practice slowly, clearly, and confidently.</p>
+            <div class="result" id="result" aria-live="polite"></div>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Quick quiz. Which word is an adjective? Run. Happy. School." data-lang="en-US">🔊 Listen Question</button>
+              <button class="repeat-btn" type="button" data-speak="Which word is an adjective? Happy is an adjective because it describes a feeling." data-lang="en-US">🔁 Repeat Answer</button>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="reading" aria-labelledby="reading-title">
-      <div class="container reading-card">
-        <article class="story-panel">
-          <div>
-            <div class="section-label">Reading Practice</div>
-            <h3 id="reading-title">The Helpful Friend</h3>
-            <p>A short reading passage about kindness, friendship, and helping others.</p>
-            <div class="badge-row">
-              <span class="badge">⏱️ 4 minutes</span>
-              <span class="badge">👧 Ages 6–10</span>
-              <span class="badge">🌱 Value: Kindness</span>
+      <div class="container reading-box">
+        <div class="section-label">Reading Practice</div>
+        <h2 id="reading-title">Read, listen, and understand</h2>
+        <p class="section-lead">
+          This short passage builds fluency, vocabulary, and comprehension. Children can listen first,
+          then read aloud.
+        </p>
+
+        <div class="reader-layout">
+          <article class="reader-card">
+            <h3>📖 Passage: The Little Garden</h3>
+            <div class="reader-passage">
+              <p>
+                Sara had a small garden near her home. Every morning, she gave water to the plants.
+                She watched the tiny leaves grow bigger day by day.
+              </p>
+              <p>
+                One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved
+                it to a place with more sunlight.
+              </p>
+              <p>
+                After a few days, the plant looked fresh again. Sara smiled and said,
+                “Small care can make a big difference.”
+              </p>
             </div>
-          </div>
-          <a class="btn btn-primary" href="../reading-library/index.html">Visit Reading Library</a>
-        </article>
 
-        <article class="story-text">
-          <p>
-            Sara saw her friend Amina sitting quietly in the playground. Amina had lost her pencil box
-            and looked worried. Sara smiled and said, “Do not worry. I will help you find it.”
-          </p>
-          <p>
-            They looked near the bench, under the tree, and beside the classroom door. At last, Sara
-            found the pencil box on a chair. Amina thanked her happily.
-          </p>
-          <p>
-            Sara said, “Friends help each other.” Amina smiled and promised to help others too.
-          </p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="The Little Garden. Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day. One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight. After a few days, the plant looked fresh again. Sara smiled and said, Small care can make a big difference." data-lang="en-US">🔊 Listen Passage</button>
+              <button class="repeat-btn" type="button" data-speak="Small care can make a big difference." data-lang="en-US">🔁 Repeat Key Sentence</button>
+            </div>
+          </article>
 
-          <h3>Comprehension Questions</h3>
-          <ul class="question-list">
-            <li>What did Amina lose?</li>
-            <li>How did Sara help her friend?</li>
-            <li>What value do we learn from this story?</li>
-          </ul>
-        </article>
+          <article class="reader-card">
+            <h3>✅ Comprehension Questions</h3>
+            <p><strong>1.</strong> What did Sara have near her home?</p>
+            <p><strong>2.</strong> What happened to one plant?</p>
+            <p><strong>3.</strong> How did Sara help the plant?</p>
+            <p><strong>4.</strong> What lesson can we learn from the story?</p>
+
+            <div class="word-note">
+              <strong>Vocabulary:</strong> garden, tiny, ignore, sunlight, fresh, difference.
+            </div>
+
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Comprehension questions. What did Sara have near her home? What happened to one plant? How did Sara help the plant? What lesson can we learn from the story?" data-lang="en-US">🔊 Listen Questions</button>
+              <button class="repeat-btn" type="button" data-speak="Garden. Tiny. Ignore. Sunlight. Fresh. Difference." data-lang="en-US">🔁 Repeat Vocabulary</button>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="sentence-builder" aria-labelledby="builder-title">
-      <div class="container sentence-builder">
-        <div class="section-label">Writing Practice</div>
-        <h2 id="builder-title">Build your own sentence</h2>
-        <p class="section-lead">
-          Click a word to add it to your writing box. Then complete the sentence in your own words.
-        </p>
-
-        <div class="builder-grid">
+    <section class="section" id="speaking" aria-labelledby="speaking-title">
+      <div class="container">
+        <div class="section-head">
           <div>
-            <h3>Word Bank</h3>
-            <div class="word-bank" aria-label="Word bank">
-              <button class="word-chip" type="button">kind</button>
-              <button class="word-chip" type="button">helpful</button>
-              <button class="word-chip" type="button">honest</button>
-              <button class="word-chip" type="button">generous</button>
-              <button class="word-chip" type="button">friend</button>
-              <button class="word-chip" type="button">school</button>
-              <button class="word-chip" type="button">because</button>
-              <button class="word-chip" type="button">today</button>
+            <div class="section-label">Speaking Practice</div>
+            <h2 id="speaking-title">Speak with confidence</h2>
+            <p class="section-lead">
+              Speaking improves when children hear a model, repeat the sentence, and answer in their own words.
+            </p>
+          </div>
+        </div>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>🗣️ Speaking Prompt</h3>
+            <p>Talk for 30 seconds:</p>
+            <div class="sentence-box">My favourite book is...</div>
+            <p>Try to include: title, character, reason, and one lesson.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Speaking prompt. My favourite book is. Say the title, one character, why you like it, and one lesson from the book." data-lang="en-US">🔊 Listen Prompt</button>
+              <button class="repeat-btn" type="button" data-speak="My favourite book is. I like it because. The lesson is." data-lang="en-US">🔁 Repeat Frame</button>
             </div>
+          </article>
 
-            <br />
-            <button class="btn btn-white" type="button" id="clearWriting">Clear Writing</button>
-          </div>
+          <article class="daily-card">
+            <h3>🎯 Good Speaking Checklist</h3>
+            <p>Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Good speaking checklist. Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence." data-lang="en-US">🔊 Listen Checklist</button>
+              <button class="repeat-btn" type="button" data-speak="Speak slowly. Use clear words. Give one reason." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <div class="container">
+        <div class="section-head">
           <div>
-            <h3>Your Writing Box</h3>
-            <textarea class="writing-box" id="writingBox" placeholder="Write your sentence here..."></textarea>
+            <div class="section-label">Writing Practice</div>
+            <h2 id="writing-title">Write a short answer</h2>
+            <p class="section-lead">
+              Children can type a short answer here for practice. This is a local practice box only;
+              it does not collect or send personal data.
+            </p>
           </div>
+        </div>
+
+        <div class="daily-grid">
+          <article class="daily-card">
+            <h3>✍️ Writing Task</h3>
+            <p>Write three sentences about a kind act you did or saw.</p>
+            <textarea class="writing-area" placeholder="Example: I helped my friend. She was happy. I felt good."></textarea>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Writing task. Write three sentences about a kind act you did or saw. Start with, I helped. Then explain what happened." data-lang="en-US">🔊 Listen Task</button>
+              <button class="repeat-btn" type="button" data-speak="I helped my friend. She was happy. I felt good." data-lang="en-US">🔁 Repeat Example</button>
+            </div>
+          </article>
+
+          <article class="daily-card">
+            <h3>🌟 Sentence Builder</h3>
+            <p>Use this pattern:</p>
+            <div class="sentence-box">I felt _____ because _____.</div>
+            <p>Example: I felt proud because I told the truth.</p>
+            <div class="sound-actions">
+              <button class="listen-btn" type="button" data-speak="Sentence builder. I felt blank because blank. Example. I felt proud because I told the truth." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-speak="I felt proud because I told the truth." data-lang="en-US">🔁 Repeat</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1047,7 +1285,7 @@
             <div class="section-label">Learning Pathway</div>
             <h2 id="path-title">A strong English foundation in four steps</h2>
             <p class="section-lead">
-              Keep English learning meaningful, active, and connected with real communication.
+              This pathway helps parents and teachers use the page in a simple, repeatable way.
             </p>
           </div>
         </div>
@@ -1055,26 +1293,26 @@
         <div class="pathway">
           <article class="path-card">
             <strong>1</strong>
-            <h3>Learn Words</h3>
-            <p>Understand meaning, pronunciation, and example sentences.</p>
+            <h3>Hear</h3>
+            <p>Listen to the word, sentence, passage, or question.</p>
           </article>
 
           <article class="path-card">
             <strong>2</strong>
-            <h3>Read Short Texts</h3>
-            <p>Read simple passages and answer comprehension questions.</p>
+            <h3>Repeat</h3>
+            <p>Say it aloud slowly and clearly.</p>
           </article>
 
           <article class="path-card">
             <strong>3</strong>
-            <h3>Speak Clearly</h3>
-            <p>Practice short responses and everyday expressions.</p>
+            <h3>Read</h3>
+            <p>Read with meaning, expression, and confidence.</p>
           </article>
 
           <article class="path-card">
             <strong>4</strong>
-            <h3>Write Confidently</h3>
-            <p>Write sentences and short paragraphs with correct punctuation.</p>
+            <h3>Use</h3>
+            <p>Use the language in speaking, writing, and real life.</p>
           </article>
         </div>
       </div>
@@ -1086,18 +1324,18 @@
           <div class="section-label">For Parents & Teachers</div>
           <h2 id="parents-title">How to help children love English</h2>
           <p class="section-lead">
-            English learning should feel useful, kind, and confidence-building. Small daily reading,
-            speaking, and writing routines are better than long stressful lessons.
+            English learning should feel safe, repeated, meaningful, and encouraging. Listening support
+            helps children hear rhythm and pronunciation before they speak.
           </p>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Read one short passage daily and ask two simple questions.</li>
-            <li>Teach words with examples, not only meanings.</li>
-            <li>Let children speak without fear of mistakes; correct gently.</li>
-            <li>Use stories, pictures, games, and real-life sentences.</li>
-            <li>Praise effort, clear pronunciation, and complete sentences.</li>
+            <li>Use the Listen button first, then ask the child to repeat aloud.</li>
+            <li>Do not correct every small mistake immediately; protect confidence.</li>
+            <li>Ask children to use new words in their own sentences.</li>
+            <li>Read short passages repeatedly because repetition builds fluency.</li>
+            <li>Keep practice short: 10 focused minutes every day is powerful.</li>
           </ul>
         </div>
       </div>
@@ -1106,19 +1344,19 @@
     <section class="section">
       <div class="container cta">
         <div>
-          <div class="section-label" style="color:#c4b5fd;">Personal Guidance</div>
+          <div class="section-label" style="color:#93c5fd;">Personal Guidance</div>
           <h2>Book Online English Classes with Dr. Imran Hayat</h2>
           <p>
-            If your child needs structured English support, reading practice, vocabulary building,
-            grammar help, speaking confidence, and writing guidance, you can book online classes
-            along with these free resources.
+            If your child needs structured support in reading, vocabulary, grammar, speaking,
+            writing, pronunciation, or confidence-building, you can book online classes along with
+            these free learning resources.
           </p>
 
           <ul class="cta-list">
-            <li>Vocabulary and reading practice</li>
-            <li>Grammar and punctuation support</li>
-            <li>Speaking confidence and pronunciation</li>
-            <li>Writing skills and paragraph practice</li>
+            <li>Vocabulary and pronunciation support</li>
+            <li>Reading fluency and comprehension</li>
+            <li>Grammar, punctuation, and writing practice</li>
+            <li>Speaking confidence through guided prompts</li>
           </ul>
         </div>
 
@@ -1146,8 +1384,9 @@
         <ul>
           <li><a href="islamic-studies.html">Islamic Studies</a></li>
           <li><a href="arabic-for-kids.html">Arabic for Kids</a></li>
-          <li><a href="english.html">English</a></li>
           <li><a href="math.html">Math</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="general-knowledge.html">General Knowledge</a></li>
         </ul>
       </div>
 
@@ -1179,35 +1418,75 @@
 
   <script>
     const result = document.getElementById("result");
+    const stopButtons = document.querySelectorAll(".stop-sound");
 
-    document.querySelectorAll(".quiz-options button").forEach((button) => {
+    function speakText(text, lang, repeat = false) {
+      if (!("speechSynthesis" in window)) {
+        alert("Sorry, your browser does not support audio reading.");
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const firstSpeech = new SpeechSynthesisUtterance(text);
+      firstSpeech.lang = lang || "en-US";
+      firstSpeech.rate = 0.82;
+      firstSpeech.pitch = 1;
+      firstSpeech.volume = 1;
+
+      if (repeat) {
+        firstSpeech.onend = () => {
+          const secondSpeech = new SpeechSynthesisUtterance(text);
+          secondSpeech.lang = lang || "en-US";
+          secondSpeech.rate = 0.76;
+          secondSpeech.pitch = 1;
+          secondSpeech.volume = 1;
+          window.speechSynthesis.speak(secondSpeech);
+        };
+      }
+
+      window.speechSynthesis.speak(firstSpeech);
+    }
+
+    document.querySelectorAll(".listen-btn").forEach((button) => {
       button.addEventListener("click", () => {
-        if (button.dataset.answer === "correct") {
-          result.textContent = "Correct! A question begins with a capital letter and ends with a question mark. ⭐";
-          result.style.color = "#138a3d";
-        } else {
-          result.textContent = "Good try! The correct answer is: Where is my book?";
-          result.style.color = "#b45309";
+        speakText(button.dataset.speak, button.dataset.lang, false);
+      });
+    });
+
+    document.querySelectorAll(".repeat-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        speakText(button.dataset.speak, button.dataset.lang, true);
+      });
+    });
+
+    stopButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
         }
       });
     });
 
-    const writingBox = document.getElementById("writingBox");
-    const clearWriting = document.getElementById("clearWriting");
-
-    document.querySelectorAll(".word-chip").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const current = writingBox.value.trim();
-        writingBox.value = current ? current + " " + chip.textContent : chip.textContent;
-        writingBox.focus();
+    document.querySelectorAll(".quiz-options button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.answer === "correct") {
+          result.textContent = "Correct! Happy is an adjective because it describes a feeling. ⭐";
+          result.style.color = "#1d4ed8";
+          speakText("Correct! Happy is an adjective because it describes a feeling. Great job!", "en-US", false);
+        } else {
+          result.textContent = "Good try! Happy is the adjective because it describes a feeling.";
+          result.style.color = "#b45309";
+          speakText("Good try! The correct answer is happy. Happy is an adjective because it describes a feeling.", "en-US", false);
+        }
       });
     });
 
-    clearWriting.addEventListener("click", () => {
-      writingBox.value = "";
-      writingBox.focus();
+    window.addEventListener("beforeunload", () => {
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
     });
   </script>
 </body>
 </html>
-
