@@ -3,19 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>English for Kids | Daily Word Bank, Audio & Progress | Al-Hayat Kids Learning Hub</title>
-
-  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Learn with a daily word bank, visual clues, audio listening, repeat practice, reading, grammar, writing, quizzes, stars, streaks, and safe local progress tracking." />
-  <meta name="keywords" content="English for kids, word of the day for kids, English vocabulary, reading practice for kids, grammar for kids, phonics for kids, kids progress tracker, listen and repeat English" />
+  <title>English for Kids | ABC Phonics, Daily Word & Progress | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Learn with ABC phonics cards, alphabet sounds, a daily word bank, visual clues, audio listening, repeat practice, reading, grammar, writing, quizzes, stars, streaks, and safe local progress tracking." />
+  <meta name="keywords" content="English for kids, alphabet sounds for kids, ABC phonics, phonics for kids, word of the day for kids, reading practice for kids, grammar for kids, kids progress tracker, listen and repeat English" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/english.html" />
-
-  <meta property="og:title" content="English for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful English learning page with daily word bank, visual clues, audio, quizzes, stars, streaks, and local progress tracking." />
-  <meta property="og:type" content="website" />
 
   <style>
     :root {
@@ -26,29 +19,23 @@
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
-      --sky-soft: #e0f2fe;
       --orange: #f97316;
-      --orange-dark: #c2410c;
       --orange-soft: #ffedd5;
       --yellow: #f6c445;
       --yellow-soft: #fef3c7;
-      --purple: #7c3aed;
       --purple-soft: #ede9fe;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
       --teal-soft: #ccfbf1;
-      --white: #ffffff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
       --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
       --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.07);
-      --radius: 24px;
       --max: 1180px;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -62,21 +49,18 @@
     }
 
     a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; }
+    button, textarea { font: inherit; }
 
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin-inline: auto;
-    }
+    .container { width: min(100% - 32px, var(--max)); margin-inline: auto; }
 
     .top-header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255,255,255,0.92);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
 
     .top-inner {
@@ -96,52 +80,28 @@
     }
 
     .brand-icon {
-      width: 52px;
-      height: 52px;
+      width: 52px; height: 52px;
       border-radius: 18px;
       background: linear-gradient(135deg, var(--blue), var(--sky));
+      color: #fff;
       display: grid;
       place-items: center;
-      color: white;
       font-size: 1.6rem;
       box-shadow: 0 12px 24px rgba(37, 99, 235, 0.20);
     }
 
-    .brand small {
-      display: block;
-      color: var(--muted);
-      font-weight: 700;
-      margin-top: -2px;
-      font-size: 0.78rem;
-    }
+    .brand small { display: block; color: var(--muted); font-weight: 700; font-size: 0.78rem; margin-top: -2px; }
 
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
+    .nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
     .nav a {
       padding: 10px 13px;
       border-radius: 999px;
       font-weight: 800;
       font-size: 0.94rem;
-      color: var(--text);
       transition: 0.2s ease;
     }
-
-    .nav a:hover, .nav a:focus {
-      background: var(--blue-soft);
-      color: var(--blue-dark);
-    }
-
-    .nav .cta {
-      background: var(--yellow);
-      color: #111827;
-      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
-    }
+    .nav a:hover, .nav a:focus { background: var(--blue-soft); color: var(--blue-dark); }
+    .nav .cta { background: var(--yellow); color: #111827; box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25); }
 
     .audio-bar {
       position: sticky;
@@ -162,11 +122,7 @@
       padding: 8px 0;
     }
 
-    .audio-inner p {
-      color: rgba(255,255,255,0.86);
-      font-weight: 750;
-      font-size: 0.94rem;
-    }
+    .audio-inner p { color: rgba(255,255,255,0.86); font-weight: 750; font-size: 0.94rem; }
 
     .stop-sound {
       border: 1px solid rgba(255,255,255,0.22);
@@ -176,10 +132,7 @@
       padding: 8px 13px;
       font-weight: 900;
       cursor: pointer;
-      transition: 0.2s ease;
     }
-
-    .stop-sound:hover { background: rgba(255,255,255,0.18); transform: translateY(-1px); }
 
     .hero { padding: 64px 0 44px; }
 
@@ -229,14 +182,14 @@
       margin-bottom: 22px;
     }
 
-    .buttons, .sound-actions {
+    .buttons, .sound-actions, .alphabet-toolbar {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
     }
 
-    .btn, .listen-btn, .repeat-btn, .learned-btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .pill-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -251,42 +204,26 @@
     }
 
     .btn { min-height: 48px; padding: 12px 19px; }
-
-    .btn:hover, .btn:focus, .listen-btn:hover, .listen-btn:focus, .repeat-btn:hover, .repeat-btn:focus, .learned-btn:hover, .learned-btn:focus {
-      transform: translateY(-2px);
-    }
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover, .pill-btn:hover { transform: translateY(-2px); }
 
     .btn-primary {
       background: linear-gradient(135deg, var(--blue), var(--sky));
       color: white;
       box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
     }
-
     .btn-yellow {
       background: var(--yellow);
       color: #111827;
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
-
     .btn-white {
       background: white;
       color: var(--blue-dark);
       border: 1px solid var(--border);
     }
-
-    .listen-btn {
-      background: var(--blue-soft);
-      color: var(--blue-dark);
-      border: 1px solid #bfdbfe;
-    }
-
-    .repeat-btn {
-      background: #f8fafc;
-      color: #0f172a;
-      border: 1px solid var(--border);
-    }
-
-    .learned-btn {
+    .listen-btn { background: var(--blue-soft); color: var(--blue-dark); border: 1px solid #bfdbfe; }
+    .repeat-btn { background: #f8fafc; color: #0f172a; border: 1px solid var(--border); }
+    .learned-btn, .pill-btn {
       background: linear-gradient(135deg, var(--green), var(--teal));
       color: white;
       box-shadow: 0 12px 24px rgba(19, 138, 61, 0.18);
@@ -330,21 +267,14 @@
       border-radius: 30px;
       padding: 26px;
       box-shadow: var(--shadow);
+      text-align: center;
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
     .child-card .emoji { font-size: 4rem; margin-bottom: 8px; }
-
-    .child-card h2 {
-      color: var(--blue-dark);
-      font-size: 1.65rem;
-      line-height: 1.15;
-      margin-bottom: 10px;
-    }
-
-    .child-card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+    .child-card h2 { color: var(--blue-dark); font-size: 1.65rem; line-height: 1.15; margin-bottom: 10px; }
+    .child-card p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -358,27 +288,13 @@
       border-radius: 18px;
       padding: 12px;
       font-weight: 900;
-      color: var(--text);
       border: 1px solid var(--border);
     }
 
-    .hero-stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
+    .hero-stat span { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
 
     .section { padding: 52px 0; }
-
-    .section-head {
-      margin-bottom: 26px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
+    .section-head { margin-bottom: 26px; display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
     .section-label {
       color: var(--blue-dark);
       font-weight: 950;
@@ -387,14 +303,12 @@
       font-size: 0.78rem;
       margin-bottom: 6px;
     }
-
     .section h2 {
       color: #0f172a;
       font-size: clamp(2rem, 4vw, 3.1rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
-
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
@@ -402,69 +316,40 @@
       margin-top: 8px;
     }
 
-    .method-grid, .topics-grid, .phonics-grid, .pathway {
+    .method-grid, .topics-grid, .pathway {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .method-card, .topic-card, .phonics-card, .path-card {
+    .method-card, .topic-card, .path-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
-      transition: 0.22s ease;
     }
 
-    .topic-card:hover, .phonics-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .topic-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); transition: 0.22s ease; }
 
-    .method-card .icon, .topic-card .icon, .phonics-card .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
+    .method-card .icon, .topic-card .icon {
+      width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; font-size: 1.7rem; margin-bottom: 14px;
       background: var(--blue-soft);
-      font-size: 1.7rem;
-      margin-bottom: 14px;
     }
 
-    .method-card:nth-child(2) .icon,
-    .topic-card:nth-child(2) .icon,
-    .phonics-card:nth-child(2) .icon { background: var(--yellow-soft); }
-
-    .method-card:nth-child(3) .icon,
-    .topic-card:nth-child(3) .icon,
-    .phonics-card:nth-child(3) .icon { background: var(--green-soft); }
-
-    .method-card:nth-child(4) .icon,
-    .topic-card:nth-child(4) .icon,
-    .phonics-card:nth-child(4) .icon { background: var(--purple-soft); }
-
+    .method-card:nth-child(2) .icon, .topic-card:nth-child(2) .icon { background: var(--yellow-soft); }
+    .method-card:nth-child(3) .icon, .topic-card:nth-child(3) .icon { background: var(--green-soft); }
+    .method-card:nth-child(4) .icon, .topic-card:nth-child(4) .icon { background: var(--purple-soft); }
     .topic-card:nth-child(5) .icon { background: var(--orange-soft); }
     .topic-card:nth-child(6) .icon { background: var(--pink-soft); }
     .topic-card:nth-child(7) .icon { background: var(--teal-soft); }
     .topic-card:nth-child(8) .icon { background: #ecfccb; }
 
-    .method-card h3, .topic-card h3, .phonics-card h3, .path-card h3 {
-      color: #0f172a;
-      margin-bottom: 7px;
-    }
+    .method-card h3, .topic-card h3, .path-card h3 { color: #0f172a; margin-bottom: 7px; }
+    .method-card p, .topic-card p, .path-card p { color: var(--muted); font-size: 0.95rem; }
+    .topic-card a { display: inline-flex; margin-top: 12px; color: var(--blue-dark); font-weight: 950; }
 
-    .method-card p, .topic-card p, .phonics-card p, .path-card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .topic-card a {
-      display: inline-flex;
-      margin-top: 12px;
-      color: var(--blue-dark);
-      font-weight: 950;
-    }
-
-    .learning-box, .reading-box {
+    .phonics-shell, .learning-box, .reading-box {
       background:
         radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
         linear-gradient(135deg, #eff6ff, #ecfeff);
@@ -472,6 +357,98 @@
       padding: clamp(22px, 4vw, 36px);
       border: 1px solid rgba(226, 232, 240, 0.9);
       box-shadow: var(--shadow);
+    }
+
+    .alphabet-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .alphabet-card {
+      background: white;
+      border-radius: 24px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
+    }
+
+    .alphabet-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+
+    .letter-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow-soft);
+      border: 1px solid #fde68a;
+      color: #92400e;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 950;
+      margin-bottom: 12px;
+    }
+
+    .letter-main {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .letter-main strong {
+      font-size: 2.4rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: var(--blue-dark);
+    }
+
+    .letter-main span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+
+    .letter-icon {
+      width: 68px; height: 68px; border-radius: 22px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--purple-soft), var(--pink-soft));
+      font-size: 2rem;
+    }
+
+    .sound-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #bfdbfe;
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .alphabet-card p {
+      color: #334155;
+      font-weight: 750;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .alphabet-mini {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      color: #475569;
+      font-size: 0.92rem;
+      font-weight: 750;
+      margin-bottom: 12px;
     }
 
     .daily-grid, .reader-layout {
@@ -501,6 +478,19 @@
       text-transform: lowercase;
     }
 
+    .today-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--yellow-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
     .word-visual-card {
       display: grid;
       grid-template-columns: 132px 1fr;
@@ -520,23 +510,10 @@
       padding: 12px;
     }
 
-    .visual-clue .emoji {
-      font-size: 4.2rem;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
+    .visual-clue .emoji { font-size: 4.2rem; line-height: 1; margin-bottom: 6px; }
+    .visual-clue strong { display: block; color: var(--blue-dark); font-size: 0.95rem; }
 
-    .visual-clue strong {
-      display: block;
-      color: var(--blue-dark);
-      font-size: 0.95rem;
-    }
-
-    .word-support {
-      display: grid;
-      gap: 12px;
-    }
-
+    .word-support { display: grid; gap: 12px; }
     .word-note, .sentence-box, .clue-box, .mini-task {
       background: #f8fafc;
       border: 1px solid var(--border);
@@ -545,26 +522,11 @@
       color: #334155;
       font-weight: 750;
     }
-
     .sentence-box { font-weight: 800; font-size: 1.05rem; }
     .clue-box strong, .mini-task strong, .word-note strong { color: #0f172a; }
 
-    .today-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--yellow-soft);
-      color: #92400e;
-      border: 1px solid #fde68a;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 900;
-      margin-bottom: 10px;
-    }
-
     .reader-passage { color: #334155; font-size: 1.05rem; }
     .reader-passage p { margin-bottom: 12px; }
-
     .highlight {
       background: var(--yellow-soft);
       padding: 2px 7px;
@@ -573,12 +535,7 @@
       color: #92400e;
     }
 
-    .quiz-options {
-      display: grid;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
+    .quiz-options { display: grid; gap: 10px; margin-top: 14px; }
     .quiz-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
@@ -587,18 +544,13 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
-      transition: 0.2s ease;
     }
 
     .quiz-options button:hover { background: var(--blue-soft); }
     .quiz-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
     .quiz-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
-    .result {
-      margin-top: 12px;
-      min-height: 24px;
-      font-weight: 900;
-    }
+    .result { margin-top: 12px; min-height: 24px; font-weight: 900; }
 
     .writing-area {
       width: 100%;
@@ -613,25 +565,17 @@
       outline: none;
     }
 
-    .writing-area:focus {
-      border-color: var(--blue);
-      background: white;
-    }
+    .writing-area:focus { border-color: var(--blue); background: white; }
 
-    .progress-section {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 34px;
-      box-shadow: var(--shadow);
-      padding: clamp(22px, 4vw, 36px);
-    }
-
-    .parent-box {
+    .progress-section, .parent-box {
       background: white;
       border: 1px solid var(--border);
       border-radius: 34px;
       box-shadow: var(--shadow);
       padding: clamp(24px, 4vw, 36px);
+    }
+
+    .parent-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
@@ -654,17 +598,12 @@
       font-weight: 750;
     }
 
-    .tips li::before {
-      content: "✓ ";
-      color: var(--green);
-      font-weight: 950;
-    }
+    .tips li::before { content: "✓ "; color: var(--green); font-weight: 950; }
 
     .path-card strong {
       display: inline-grid;
       place-items: center;
-      width: 44px;
-      height: 44px;
+      width: 44px; height: 44px;
       border-radius: 15px;
       background: var(--blue);
       color: white;
@@ -685,24 +624,9 @@
     }
 
     .cta h2 { color: white; }
-    .cta p {
-      color: rgba(255,255,255,0.78);
-      margin-top: 10px;
-      font-size: 1.05rem;
-    }
-
-    .cta-list {
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-      list-style: none;
-    }
-
-    .cta-list li {
-      color: rgba(255,255,255,0.9);
-      font-weight: 800;
-    }
-
+    .cta p { color: rgba(255,255,255,0.78); margin-top: 10px; font-size: 1.05rem; }
+    .cta-list { display: grid; gap: 10px; margin-top: 18px; list-style: none; }
+    .cta-list li { color: rgba(255,255,255,0.9); font-weight: 800; }
     .cta-list li::before { content: "✓ "; color: #93c5fd; }
 
     .footer {
@@ -721,63 +645,30 @@
     }
 
     .footer h3 { margin-bottom: 12px; }
-    .footer p, .footer a {
-      color: rgba(255,255,255,0.72);
-      font-weight: 650;
-    }
-
-    .footer ul {
-      list-style: none;
-      display: grid;
-      gap: 8px;
-    }
-
-    .copyright {
-      padding-top: 18px;
-      color: rgba(255,255,255,0.6);
-      font-size: 0.92rem;
-    }
+    .footer p, .footer a { color: rgba(255,255,255,0.72); font-weight: 650; }
+    .footer ul { list-style: none; display: grid; gap: 8px; }
+    .copyright { padding-top: 18px; color: rgba(255,255,255,0.6); font-size: 0.92rem; }
 
     @media (max-width: 980px) {
-      .hero-card, .parent-box, .cta, .word-visual-card {
-        grid-template-columns: 1fr;
-      }
-
-      .method-grid, .topics-grid, .phonics-grid, .pathway {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .daily-grid, .reader-layout {
-        grid-template-columns: 1fr;
-      }
-
+      .hero-card, .parent-box, .cta, .word-visual-card { grid-template-columns: 1fr; }
+      .method-grid, .topics-grid, .pathway, .alphabet-grid { grid-template-columns: repeat(2, 1fr); }
+      .daily-grid, .reader-layout { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: repeat(2, 1fr); }
       .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
       .container { width: min(100% - 24px, var(--max)); }
-
-      .top-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 14px 0;
-      }
-
+      .top-inner { flex-direction: column; align-items: flex-start; padding: 14px 0; }
       .nav { justify-content: flex-start; }
-
-      .method-grid, .topics-grid, .phonics-grid, .pathway, .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .buttons, .sound-actions { display: grid; }
-
-      .btn, .listen-btn, .repeat-btn, .learned-btn { width: 100%; }
-
+      .method-grid, .topics-grid, .pathway, .alphabet-grid, .footer-grid { grid-template-columns: 1fr; }
+      .buttons, .sound-actions, .alphabet-toolbar { display: grid; }
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .pill-btn { width: 100%; }
       .hero { padding-top: 28px; }
       .hero-visual { min-height: 300px; }
       .section-head { display: block; }
       .hero-stats { grid-template-columns: 1fr; }
+      .letter-main { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -787,10 +678,7 @@
     <div class="container top-inner">
       <a class="brand" href="../index.html">
         <span class="brand-icon">📘</span>
-        <span>
-          Al-Hayat Kids Learning Hub
-          <small>Learn • Read • Speak • Grow</small>
-        </span>
+        <span>Al-Hayat Kids Learning Hub<small>Learn • Read • Speak • Grow</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -819,20 +707,20 @@
           <div class="kicker">📘 English Learning for Kids</div>
           <h1>English <span>for Kids</span></h1>
           <p>
-            A joyful English learning space where children build vocabulary, phonics, reading fluency,
-            grammar, punctuation, writing, speaking, and listening confidence through daily word-bank
-            practice, audio support, quizzes, stars, and safe local progress tracking.
+            A joyful English learning space where children build alphabet awareness, phonics, vocabulary,
+            reading fluency, grammar, punctuation, writing, speaking, and listening confidence through
+            ABC sound cards, a daily word bank, audio support, quizzes, stars, and safe local progress tracking.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#practice">Start Today’s Practice</a>
-            <a class="btn btn-yellow" href="#progress">View Progress</a>
-            <a class="btn btn-white" href="../online-classes.html">Book Online Classes</a>
+            <a class="btn btn-primary" href="#abc-phonics">Start ABC Phonics</a>
+            <a class="btn btn-yellow" href="#practice">Today’s Word</a>
+            <a class="btn btn-white" href="#progress">View Progress</a>
           </div>
 
           <div class="sound-actions" style="margin-top: 14px;">
-            <button class="listen-btn" type="button" data-static-speak="Welcome to English for Kids. Listen, repeat, read, speak, and grow with confidence." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="intro">🔊 Listen Intro</button>
-            <button class="repeat-btn" type="button" data-static-speak="Welcome to English for Kids. Listen, repeat, read, speak, and grow with confidence." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="intro">🔁 Repeat</button>
+            <button class="listen-btn" type="button" data-static-speak="Welcome to English for Kids. Learn your letters, sounds, words, reading, and speaking with fun practice." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Welcome to English for Kids. Learn your letters, sounds, words, reading, and speaking with fun practice." data-lang="en-US">🔁 Repeat</button>
           </div>
         </div>
 
@@ -840,11 +728,10 @@
           <div class="child-card">
             <div class="emoji">🗣️</div>
             <h2>Listen, repeat, learn, and earn stars</h2>
-            <p>English becomes easier when children hear words, see clues, answer quizzes, and track small wins every day.</p>
-
+            <p>English becomes easier when children hear sounds, see visual clues, answer quizzes, and track small wins every day.</p>
             <div class="hero-stats">
+              <div class="hero-stat">ABC <span>Phonics</span></div>
               <div class="hero-stat">Daily <span>Word Bank</span></div>
-              <div class="hero-stat">Audio <span>Practice</span></div>
               <div class="hero-stat">Stars <span>& Streaks</span></div>
             </div>
           </div>
@@ -858,37 +745,15 @@
           <div>
             <div class="section-label">Learning Method</div>
             <h2 id="method-title">A strong English routine children enjoy</h2>
-            <p class="section-lead">
-              Young learners need sound, repetition, pictures, meaning, real use, and gentle rewards.
-              This page now connects with your shared learning-data and progress-tracker files.
-            </p>
+            <p class="section-lead">Young learners need sound, repetition, pictures, meaning, real use, and gentle rewards. This page connects with your shared learning-data and progress-tracker files.</p>
           </div>
         </div>
 
         <div class="method-grid">
-          <article class="method-card">
-            <div class="icon">👂</div>
-            <h3>Listen</h3>
-            <p>Children hear the word, sentence, passage, or question before reading it themselves.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">🔁</div>
-            <h3>Repeat</h3>
-            <p>They repeat aloud to improve pronunciation, confidence, rhythm, and fluency.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">🖼️</div>
-            <h3>See</h3>
-            <p>Visual clues and picture-style icons help children connect the word with meaning quickly.</p>
-          </article>
-
-          <article class="method-card">
-            <div class="icon">⭐</div>
-            <h3>Track</h3>
-            <p>Stars, streaks, learned items, and badges encourage children to return daily.</p>
-          </article>
+          <article class="method-card"><div class="icon">👂</div><h3>Listen</h3><p>Children hear the sound, word, sentence, passage, or question before reading it themselves.</p></article>
+          <article class="method-card"><div class="icon">🔁</div><h3>Repeat</h3><p>They repeat aloud to improve pronunciation, confidence, rhythm, and fluency.</p></article>
+          <article class="method-card"><div class="icon">🖼️</div><h3>See</h3><p>Visual clues and icons help children connect letters and words with meaning quickly.</p></article>
+          <article class="method-card"><div class="icon">⭐</div><h3>Track</h3><p>Stars, streaks, learned items, and badges encourage children to return daily.</p></article>
         </div>
       </div>
     </section>
@@ -899,127 +764,33 @@
           <div>
             <div class="section-label">Explore English</div>
             <h2 id="topics-title">What children can learn here</h2>
-            <p class="section-lead">
-              This English zone supports vocabulary, phonics, reading, grammar, punctuation,
-              writing, speaking, listening, quizzes, and worksheets.
-            </p>
+            <p class="section-lead">This English zone supports alphabet sounds, vocabulary, phonics, reading, grammar, punctuation, writing, speaking, listening, quizzes, and worksheets.</p>
           </div>
         </div>
 
         <div class="topics-grid">
-          <article class="topic-card">
-            <div class="icon">🔤</div>
-            <h3>Vocabulary</h3>
-            <p>Learn daily words with meaning, pronunciation, example sentence, visual clue, and quiz.</p>
-            <a href="#practice">Start Vocabulary →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">🎧</div>
-            <h3>Listening</h3>
-            <p>Use Listen and Repeat buttons to hear words, sentences, and passages.</p>
-            <a href="#reading">Practice Listening →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">📖</div>
-            <h3>Reading</h3>
-            <p>Read short passages, understand main ideas, and answer simple questions.</p>
-            <a href="#reading">Read Passage →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">🧩</div>
-            <h3>Grammar</h3>
-            <p>Learn nouns, verbs, adjectives, sentences, tenses, and simple grammar patterns.</p>
-            <a href="#grammar">Grammar Bite →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">✏️</div>
-            <h3>Writing</h3>
-            <p>Write sentences, short paragraphs, descriptions, and reflections from prompts.</p>
-            <a href="#writing">Writing Task →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">🗣️</div>
-            <h3>Speaking</h3>
-            <p>Practice short speaking prompts for confidence, clarity, and expression.</p>
-            <a href="#speaking">Speaking Prompt →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">🏆</div>
-            <h3>Progress</h3>
-            <p>Track stars, streaks, learned words, quiz answers, and badges on this browser.</p>
-            <a href="#progress">View Progress →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="icon">📄</div>
-            <h3>Worksheets</h3>
-            <p>Printable worksheets can support handwriting, vocabulary, grammar, and reading.</p>
-            <a href="../worksheets/index.html">Open Worksheets →</a>
-          </article>
+          <article class="topic-card"><div class="icon">🔤</div><h3>Alphabet Sounds</h3><p>Learn A–Z with capital and small letters, sound, word, icon, audio, and mini practice.</p><a href="#abc-phonics">Open ABC Phonics →</a></article>
+          <article class="topic-card"><div class="icon">📘</div><h3>Vocabulary</h3><p>Learn daily words with meaning, pronunciation, example sentence, visual clue, and quiz.</p><a href="#practice">Start Vocabulary →</a></article>
+          <article class="topic-card"><div class="icon">🎧</div><h3>Listening</h3><p>Use Listen and Repeat buttons to hear sounds, words, sentences, and passages.</p><a href="#reading">Practice Listening →</a></article>
+          <article class="topic-card"><div class="icon">📖</div><h3>Reading</h3><p>Read short passages, understand main ideas, and answer simple questions.</p><a href="#reading">Read Passage →</a></article>
+          <article class="topic-card"><div class="icon">🧩</div><h3>Grammar</h3><p>Learn nouns, verbs, adjectives, sentences, tenses, and simple grammar patterns.</p><a href="#grammar">Grammar Bite →</a></article>
+          <article class="topic-card"><div class="icon">✏️</div><h3>Writing</h3><p>Write sentences, short paragraphs, descriptions, and reflections from prompts.</p><a href="#writing">Writing Task →</a></article>
+          <article class="topic-card"><div class="icon">🗣️</div><h3>Speaking</h3><p>Practice short speaking prompts for confidence, clarity, and expression.</p><a href="#speaking">Speaking Prompt →</a></article>
+          <article class="topic-card"><div class="icon">🏆</div><h3>Progress</h3><p>Track stars, streaks, learned words, quiz answers, and badges on this browser.</p><a href="#progress">View Progress →</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="phonics" aria-labelledby="phonics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Phonics Corner</div>
-            <h2 id="phonics-title">Hear the sound, say the word</h2>
-            <p class="section-lead">
-              Phonics practice helps children connect letters with sounds. Keep it slow, playful,
-              and repeated.
-            </p>
-          </div>
+    <section class="section" id="abc-phonics" aria-labelledby="abc-title">
+      <div class="container phonics-shell">
+        <div class="section-label">ABC Phonics Corner</div>
+        <h2 id="abc-title">A–Z letters, sounds, and words</h2>
+        <p class="section-lead">Each card shows the capital letter, small letter, sound, a simple example word, a visual icon, and audio buttons. Children can also mark each sound as learned.</p>
+        <div class="alphabet-toolbar">
+          <button class="pill-btn" type="button" id="playAlphabetIntroBtn">🔊 Listen ABC Intro</button>
+          <button class="pill-btn" type="button" id="playAlphabetReviewBtn">🔁 Review A–Z</button>
         </div>
-
-        <div class="phonics-grid">
-          <article class="phonics-card">
-            <div class="icon">🍎</div>
-            <h3>A sound</h3>
-            <p><strong>a</strong> as in apple.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="A says a, as in apple. Apple." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="phonics-a">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="A says a, as in apple. Apple." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="phonics-a">🔁 Repeat</button>
-            </div>
-          </article>
-
-          <article class="phonics-card">
-            <div class="icon">⚽</div>
-            <h3>B sound</h3>
-            <p><strong>b</strong> as in ball.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="B says b, as in ball. Ball." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="phonics-b">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="B says b, as in ball. Ball." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="phonics-b">🔁 Repeat</button>
-            </div>
-          </article>
-
-          <article class="phonics-card">
-            <div class="icon">🐱</div>
-            <h3>C sound</h3>
-            <p><strong>c</strong> as in cat.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="C says k, as in cat. Cat." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="phonics-c">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="C says k, as in cat. Cat." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="phonics-c">🔁 Repeat</button>
-            </div>
-          </article>
-
-          <article class="phonics-card">
-            <div class="icon">🐶</div>
-            <h3>D sound</h3>
-            <p><strong>d</strong> as in dog.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="D says d, as in dog. Dog." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="phonics-d">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="D says d, as in dog. Dog." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="phonics-d">🔁 Repeat</button>
-            </div>
-          </article>
-        </div>
+        <div class="alphabet-grid" id="alphabetGrid"></div>
       </div>
     </section>
 
@@ -1027,10 +798,7 @@
       <div class="container learning-box">
         <div class="section-label">Today’s English Practice</div>
         <h2 id="practice-title">Daily Word Bank with audio, quiz, and progress</h2>
-        <p class="section-lead">
-          Today’s word is pulled from <strong>assets/learning-data.js</strong>. The child can listen,
-          repeat, answer the quiz, mark it as learned, and save progress locally.
-        </p>
+        <p class="section-lead">Today’s word is pulled from <strong>assets/learning-data.js</strong>. The child can listen, repeat, answer the quiz, mark it as learned, and save progress locally.</p>
 
         <div class="daily-grid">
           <article class="daily-card">
@@ -1066,7 +834,6 @@
             <p id="dailyQuizQuestion">Loading quiz question...</p>
             <div class="quiz-options" id="dailyQuizOptions"></div>
             <div class="result" id="dailyQuizResult" aria-live="polite"></div>
-
             <div class="sound-actions">
               <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
               <button class="repeat-btn" id="repeatQuizAnswerBtn" type="button">🔁 Repeat Answer</button>
@@ -1079,8 +846,8 @@
             <div class="sentence-box">The <span class="highlight">kind</span> girl helped her friend.</div>
             <p>In this sentence, <strong>kind</strong> describes the girl.</p>
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Grammar bite. An adjective is a word that describes a noun. The kind girl helped her friend. In this sentence, kind describes the girl." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="grammar-adjective">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="An adjective describes a noun. The kind girl helped her friend." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="grammar-adjective">🔁 Repeat</button>
+              <button class="listen-btn" type="button" data-static-speak="Grammar bite. An adjective is a word that describes a noun. The kind girl helped her friend. In this sentence, kind describes the girl." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-static-speak="An adjective describes a noun. The kind girl helped her friend." data-lang="en-US">🔁 Repeat</button>
             </div>
           </article>
 
@@ -1090,8 +857,8 @@
             <div class="sentence-box">i like reading books</div>
             <p><strong>Correct:</strong> I like reading books.</p>
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Punctuation fix. I like reading books. The sentence begins with a capital I and ends with a full stop." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="punctuation-basic">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="I like reading books." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="punctuation-basic">🔁 Repeat</button>
+              <button class="listen-btn" type="button" data-static-speak="Punctuation fix. I like reading books. The sentence begins with a capital I and ends with a full stop." data-lang="en-US">🔊 Listen</button>
+              <button class="repeat-btn" type="button" data-static-speak="I like reading books." data-lang="en-US">🔁 Repeat</button>
             </div>
           </article>
         </div>
@@ -1101,14 +868,9 @@
     <section class="section" id="progress" aria-labelledby="progress-title">
       <div class="container progress-section">
         <div class="section-label">Progress Tracker</div>
-        <h2 id="progress-title">Stars, streaks, learned words, and badges</h2>
-        <p class="section-lead">
-          Progress is saved only on this browser/device using local storage. No login, no child name,
-          no email, and no server collection.
-        </p>
-
+        <h2 id="progress-title">Stars, streaks, learned words, sounds, and badges</h2>
+        <p class="section-lead">Progress is saved only on this browser/device using local storage. No login, no child name, no email, and no server collection.</p>
         <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="englishWords"></div>
-
         <div class="sound-actions" style="margin-top: 16px;">
           <button class="repeat-btn" type="button" data-progress-reset="true">Reset local progress</button>
         </div>
@@ -1119,33 +881,21 @@
       <div class="container reading-box">
         <div class="section-label">Reading Practice</div>
         <h2 id="reading-title">Read, listen, and understand</h2>
-        <p class="section-lead">
-          This short passage builds fluency, vocabulary, and comprehension. Children can listen first,
-          then read aloud.
-        </p>
+        <p class="section-lead">This short passage builds fluency, vocabulary, and comprehension. Children can listen first, then read aloud.</p>
 
         <div class="reader-layout">
           <article class="reader-card">
             <h3>📖 Passage: The Little Garden</h3>
             <div class="reader-passage">
-              <p>
-                Sara had a small garden near her home. Every morning, she gave water to the plants.
-                She watched the tiny leaves grow bigger day by day.
-              </p>
-              <p>
-                One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved
-                it to a place with more sunlight.
-              </p>
-              <p>
-                After a few days, the plant looked fresh again. Sara smiled and said,
-                “Small care can make a big difference.”
-              </p>
+              <p>Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day.</p>
+              <p>One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight.</p>
+              <p>After a few days, the plant looked fresh again. Sara smiled and said, “Small care can make a big difference.”</p>
             </div>
 
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="The Little Garden. Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day. One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight. After a few days, the plant looked fresh again. Sara smiled and said, Small care can make a big difference." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="reading-little-garden">🔊 Listen Passage</button>
-              <button class="repeat-btn" type="button" data-static-speak="Small care can make a big difference." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="reading-little-garden">🔁 Repeat Key Sentence</button>
-              <button class="learned-btn" type="button" data-progress-action="complete" data-category="englishWords" data-item-id="reading-little-garden">✅ Completed</button>
+              <button class="listen-btn" type="button" id="listenReadingBtn">🔊 Listen Passage</button>
+              <button class="repeat-btn" type="button" id="repeatReadingBtn">🔁 Repeat Key Sentence</button>
+              <button class="learned-btn" type="button" id="completeReadingBtn">✅ Completed</button>
             </div>
           </article>
 
@@ -1156,13 +906,11 @@
             <p><strong>3.</strong> How did Sara help the plant?</p>
             <p><strong>4.</strong> What lesson can we learn from the story?</p>
 
-            <div class="word-note">
-              <strong>Vocabulary:</strong> garden, tiny, ignore, sunlight, fresh, difference.
-            </div>
+            <div class="word-note"><strong>Vocabulary:</strong> garden, tiny, ignore, sunlight, fresh, difference.</div>
 
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Comprehension questions. What did Sara have near her home? What happened to one plant? How did Sara help the plant? What lesson can we learn from the story?" data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="reading-questions">🔊 Listen Questions</button>
-              <button class="repeat-btn" type="button" data-static-speak="Garden. Tiny. Ignore. Sunlight. Fresh. Difference." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="reading-vocabulary">🔁 Repeat Vocabulary</button>
+              <button class="listen-btn" type="button" id="listenQuestionsBtn">🔊 Listen Questions</button>
+              <button class="repeat-btn" type="button" id="repeatVocabularyBtn">🔁 Repeat Vocabulary</button>
             </div>
           </article>
         </div>
@@ -1175,9 +923,7 @@
           <div>
             <div class="section-label">Speaking Practice</div>
             <h2 id="speaking-title">Speak with confidence</h2>
-            <p class="section-lead">
-              Speaking improves when children hear a model, repeat the sentence, and answer in their own words.
-            </p>
+            <p class="section-lead">Speaking improves when children hear a model, repeat the sentence, and answer in their own words.</p>
           </div>
         </div>
 
@@ -1188,9 +934,9 @@
             <div class="sentence-box">My favourite book is...</div>
             <p>Try to include: title, character, reason, and one lesson.</p>
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Speaking prompt. My favourite book is. Say the title, one character, why you like it, and one lesson from the book." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="speaking-favourite-book">🔊 Listen Prompt</button>
-              <button class="repeat-btn" type="button" data-static-speak="My favourite book is. I like it because. The lesson is." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="speaking-favourite-book">🔁 Repeat Frame</button>
-              <button class="learned-btn" type="button" data-progress-action="complete" data-category="englishWords" data-item-id="speaking-favourite-book">✅ Practiced</button>
+              <button class="listen-btn" type="button" id="listenSpeakingBtn">🔊 Listen Prompt</button>
+              <button class="repeat-btn" type="button" id="repeatSpeakingBtn">🔁 Repeat Frame</button>
+              <button class="learned-btn" type="button" id="completeSpeakingBtn">✅ Practiced</button>
             </div>
           </article>
 
@@ -1198,8 +944,8 @@
             <h3>🎯 Good Speaking Checklist</h3>
             <p>Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence.</p>
             <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Good speaking checklist. Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence." data-lang="en-US" data-progress-action="listen" data-category="englishWords" data-item-id="speaking-checklist">🔊 Listen Checklist</button>
-              <button class="repeat-btn" type="button" data-static-speak="Speak slowly. Use clear words. Give one reason." data-lang="en-US" data-progress-action="repeat" data-category="englishWords" data-item-id="speaking-checklist">🔁 Repeat</button>
+              <button class="listen-btn" type="button" id="listenChecklistBtn">🔊 Listen Checklist</button>
+              <button class="repeat-btn" type="button" id="repeatChecklistBtn">🔁 Repeat</button>
             </div>
           </article>
         </div>
@@ -1212,10 +958,7 @@
           <div>
             <div class="section-label">Writing Practice</div>
             <h2 id="writing-title">Write a short answer</h2>
-            <p class="section-lead">
-              Children can type a short answer here for practice. This is a local practice box only;
-              it does not collect or send personal data.
-            </p>
+            <p class="section-lead">Children can type a short answer here for practice. This is a local practice box only; it does not collect or send personal data.</p>
           </div>
         </div>
 
@@ -1250,36 +993,15 @@
           <div>
             <div class="section-label">Learning Pathway</div>
             <h2 id="path-title">A strong English foundation in four steps</h2>
-            <p class="section-lead">
-              This pathway helps parents and teachers use the page in a simple, repeatable way.
-            </p>
+            <p class="section-lead">This pathway helps parents and teachers use the page in a simple, repeatable way.</p>
           </div>
         </div>
 
         <div class="pathway">
-          <article class="path-card">
-            <strong>1</strong>
-            <h3>Hear</h3>
-            <p>Listen to the word, sentence, passage, or question.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>2</strong>
-            <h3>Repeat</h3>
-            <p>Say it aloud slowly and clearly.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>3</strong>
-            <h3>Use</h3>
-            <p>Use today’s word in a sentence, quiz, or speaking task.</p>
-          </article>
-
-          <article class="path-card">
-            <strong>4</strong>
-            <h3>Track</h3>
-            <p>Mark learned, earn stars, and build a daily streak.</p>
-          </article>
+          <article class="path-card"><strong>1</strong><h3>Hear</h3><p>Listen to the sound, word, sentence, passage, or question.</p></article>
+          <article class="path-card"><strong>2</strong><h3>Repeat</h3><p>Say it aloud slowly and clearly.</p></article>
+          <article class="path-card"><strong>3</strong><h3>Use</h3><p>Use today’s sound or word in a sentence, quiz, or speaking task.</p></article>
+          <article class="path-card"><strong>4</strong><h3>Track</h3><p>Mark learned, earn stars, and build a daily streak.</p></article>
         </div>
       </div>
     </section>
@@ -1289,18 +1011,15 @@
         <div>
           <div class="section-label">For Parents & Teachers</div>
           <h2 id="parents-title">How to help children love English</h2>
-          <p class="section-lead">
-            English learning should feel safe, repeated, meaningful, and encouraging. Listening support,
-            visual clues, and local progress tracking help children stay motivated.
-          </p>
+          <p class="section-lead">English learning should feel safe, repeated, meaningful, and encouraging. Listening support, visual clues, and local progress tracking help children stay motivated.</p>
         </div>
 
         <div>
           <ul class="tips">
+            <li>Begin with alphabet sounds, then move to words and short sentences.</li>
             <li>Use the Listen button first, then ask the child to repeat aloud.</li>
-            <li>Show the child the visual clue before explaining the meaning.</li>
-            <li>Ask children to use the new word in their own sentence.</li>
-            <li>Let the child click “I learned this” after real practice, not before.</li>
+            <li>Show the icon or picture clue before explaining the meaning.</li>
+            <li>Let the child click “I learned this” only after real practice.</li>
             <li>Progress stays only on the same browser/device and does not collect personal data.</li>
           </ul>
         </div>
@@ -1312,14 +1031,9 @@
         <div>
           <div class="section-label" style="color:#93c5fd;">Personal Guidance</div>
           <h2>Book Online English Classes with Dr. Imran Hayat</h2>
-          <p>
-            If your child needs structured support in reading, vocabulary, grammar, speaking,
-            writing, pronunciation, or confidence-building, you can book online classes along with
-            these free learning resources.
-          </p>
-
+          <p>If your child needs structured support in phonics, reading, vocabulary, grammar, speaking, writing, pronunciation, or confidence-building, you can book online classes along with these free learning resources.</p>
           <ul class="cta-list">
-            <li>Vocabulary and pronunciation support</li>
+            <li>ABC phonics and sound blending support</li>
             <li>Reading fluency and comprehension</li>
             <li>Grammar, punctuation, and writing practice</li>
             <li>Speaking confidence through guided prompts</li>
@@ -1339,10 +1053,7 @@
     <div class="container footer-grid">
       <div>
         <h3>🌟 Al-Hayat Kids Learning Hub</h3>
-        <p>
-          A joyful Islamic and academic learning platform where children learn,
-          read, play, explore, and grow.
-        </p>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
       <div>
@@ -1376,10 +1087,7 @@
         </ul>
       </div>
     </div>
-
-    <div class="container copyright">
-      © 2026 Al-Hayat Kids Learning Hub. All rights reserved.
-    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
   <script src="../assets/learning-data.js"></script>
@@ -1404,70 +1112,72 @@
       }
     };
 
-    function getLearningData() {
-      return window.AlHayatLearningData || null;
-    }
+    const alphabetData = [
+      { id: "alpha-a", upper: "A", lower: "a", sound: "/a/", word: "Apple", icon: "🍎", clue: "A is for Apple.", speak: "A, small a. Sound a. A is for Apple." },
+      { id: "alpha-b", upper: "B", lower: "b", sound: "/b/", word: "Ball", icon: "⚽", clue: "B is for Ball.", speak: "B, small b. Sound b. B is for Ball." },
+      { id: "alpha-c", upper: "C", lower: "c", sound: "/k/", word: "Cat", icon: "🐱", clue: "C is for Cat.", speak: "C, small c. Sound k. C is for Cat." },
+      { id: "alpha-d", upper: "D", lower: "d", sound: "/d/", word: "Dog", icon: "🐶", clue: "D is for Dog.", speak: "D, small d. Sound d. D is for Dog." },
+      { id: "alpha-e", upper: "E", lower: "e", sound: "/e/", word: "Egg", icon: "🥚", clue: "E is for Egg.", speak: "E, small e. Sound e. E is for Egg." },
+      { id: "alpha-f", upper: "F", lower: "f", sound: "/f/", word: "Fish", icon: "🐟", clue: "F is for Fish.", speak: "F, small f. Sound f. F is for Fish." },
+      { id: "alpha-g", upper: "G", lower: "g", sound: "/g/", word: "Goat", icon: "🐐", clue: "G is for Goat.", speak: "G, small g. Sound g. G is for Goat." },
+      { id: "alpha-h", upper: "H", lower: "h", sound: "/h/", word: "Hat", icon: "🎩", clue: "H is for Hat.", speak: "H, small h. Sound h. H is for Hat." },
+      { id: "alpha-i", upper: "I", lower: "i", sound: "/i/", word: "Igloo", icon: "🧊", clue: "I is for Igloo.", speak: "I, small i. Sound i. I is for Igloo." },
+      { id: "alpha-j", upper: "J", lower: "j", sound: "/j/", word: "Juice", icon: "🧃", clue: "J is for Juice.", speak: "J, small j. Sound j. J is for Juice." },
+      { id: "alpha-k", upper: "K", lower: "k", sound: "/k/", word: "Kite", icon: "🪁", clue: "K is for Kite.", speak: "K, small k. Sound k. K is for Kite." },
+      { id: "alpha-l", upper: "L", lower: "l", sound: "/l/", word: "Lion", icon: "🦁", clue: "L is for Lion.", speak: "L, small l. Sound l. L is for Lion." },
+      { id: "alpha-m", upper: "M", lower: "m", sound: "/m/", word: "Moon", icon: "🌙", clue: "M is for Moon.", speak: "M, small m. Sound m. M is for Moon." },
+      { id: "alpha-n", upper: "N", lower: "n", sound: "/n/", word: "Nest", icon: "🪺", clue: "N is for Nest.", speak: "N, small n. Sound n. N is for Nest." },
+      { id: "alpha-o", upper: "O", lower: "o", sound: "/o/", word: "Octopus", icon: "🐙", clue: "O is for Octopus.", speak: "O, small o. Sound o. O is for Octopus." },
+      { id: "alpha-p", upper: "P", lower: "p", sound: "/p/", word: "Pen", icon: "🖊️", clue: "P is for Pen.", speak: "P, small p. Sound p. P is for Pen." },
+      { id: "alpha-q", upper: "Q", lower: "q", sound: "/kw/", word: "Queen", icon: "👑", clue: "Q is for Queen.", speak: "Q, small q. Sound kw. Q is for Queen." },
+      { id: "alpha-r", upper: "R", lower: "r", sound: "/r/", word: "Rabbit", icon: "🐰", clue: "R is for Rabbit.", speak: "R, small r. Sound r. R is for Rabbit." },
+      { id: "alpha-s", upper: "S", lower: "s", sound: "/s/", word: "Sun", icon: "☀️", clue: "S is for Sun.", speak: "S, small s. Sound s. S is for Sun." },
+      { id: "alpha-t", upper: "T", lower: "t", sound: "/t/", word: "Tiger", icon: "🐯", clue: "T is for Tiger.", speak: "T, small t. Sound t. T is for Tiger." },
+      { id: "alpha-u", upper: "U", lower: "u", sound: "/u/", word: "Umbrella", icon: "☂️", clue: "U is for Umbrella.", speak: "U, small u. Sound u. U is for Umbrella." },
+      { id: "alpha-v", upper: "V", lower: "v", sound: "/v/", word: "Van", icon: "🚐", clue: "V is for Van.", speak: "V, small v. Sound v. V is for Van." },
+      { id: "alpha-w", upper: "W", lower: "w", sound: "/w/", word: "Whale", icon: "🐋", clue: "W is for Whale.", speak: "W, small w. Sound w. W is for Whale." },
+      { id: "alpha-x", upper: "X", lower: "x", sound: "/ks/", word: "Xylophone", icon: "🎼", clue: "X is for Xylophone.", speak: "X, small x. Sound ks. X is for Xylophone." },
+      { id: "alpha-y", upper: "Y", lower: "y", sound: "/y/", word: "Yo-yo", icon: "🪀", clue: "Y is for Yo-yo.", speak: "Y, small y. Sound y. Y is for Yo-yo." },
+      { id: "alpha-z", upper: "Z", lower: "z", sound: "/z/", word: "Zebra", icon: "🦓", clue: "Z is for Zebra.", speak: "Z, small z. Sound z. Z is for Zebra." }
+    ];
 
-    function getTracker() {
-      return window.AlHayatProgressTracker || null;
-    }
+    function getLearningData() { return window.AlHayatLearningData || null; }
+    function getTracker() { return window.AlHayatProgressTracker || null; }
 
     function speak(text, lang = "en-US", repeat = false) {
       const data = getLearningData();
-
       if (data && typeof data.speakText === "function") {
         data.speakText(text, lang, repeat);
         return;
       }
-
       if (!("speechSynthesis" in window)) {
         alert("Sorry, your browser does not support audio reading.");
         return;
       }
-
       window.speechSynthesis.cancel();
       const speech = new SpeechSynthesisUtterance(text);
       speech.lang = lang;
       speech.rate = repeat ? 0.76 : 0.82;
-      speech.pitch = 1;
+      speech.pitch = 1.08;
       speech.volume = 1;
       window.speechSynthesis.speak(speech);
-
-      if (repeat) {
-        speech.onend = () => {
-          const speech2 = new SpeechSynthesisUtterance(text);
-          speech2.lang = lang;
-          speech2.rate = 0.76;
-          window.speechSynthesis.speak(speech2);
-        };
-      }
     }
 
     function stopSound() {
       const data = getLearningData();
-
       if (data && typeof data.stopSpeech === "function") {
         data.stopSpeech();
         return;
       }
-
-      if ("speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     }
 
     function buildWordAudioText(item) {
       const data = getLearningData();
-
       if (data && typeof data.buildAudioText === "function") {
         return data.buildAudioText("englishWords", item);
       }
-
       return `Word of the day. ${item.word}. ${item.word} means ${item.meaning}. Example sentence. ${item.sentence}. Mini task. ${item.miniTask}`;
-    }
-
-    function buildWordRepeatText(item) {
-      return `${item.word}. ${item.word}. ${item.sentence}`;
     }
 
     function renderWordOfDay() {
@@ -1482,7 +1192,6 @@
       document.getElementById("wordClue").textContent = currentWordData.visualClue;
       document.getElementById("wordEmoji").textContent = currentWordData.emoji || "📘";
       document.getElementById("visualTitle").textContent = `${currentWordData.word} clue`;
-
       document.getElementById("dynamicWritingPrompt").textContent = `Write three sentences using today’s word: ${currentWordData.word}.`;
       document.getElementById("writingBox").placeholder = `Example: ${currentWordData.sentence}`;
       document.getElementById("sentenceBuilder").textContent = `I can be ${currentWordData.word} when _____.`;
@@ -1505,36 +1214,25 @@
         const button = document.createElement("button");
         button.type = "button";
         button.textContent = option;
-
         button.addEventListener("click", () => {
           const isCorrect = option === quiz.answer;
-          const tracker = getTracker();
-
-          optionsEl.querySelectorAll("button").forEach((btn) => {
-            btn.classList.remove("correct", "wrong");
-          });
-
+          optionsEl.querySelectorAll("button").forEach((btn) => btn.classList.remove("correct", "wrong"));
           button.classList.add(isCorrect ? "correct" : "wrong");
-
-          if (tracker && typeof tracker.markQuiz === "function") {
-            tracker.markQuiz("englishWords", item.id, isCorrect, {
-              question: quiz.question,
-              selected: option,
-              answer: quiz.answer
-            });
-          }
-
+          getTracker()?.markQuiz?.("englishWords", item.id, isCorrect, {
+            question: quiz.question,
+            selected: option,
+            answer: quiz.answer
+          });
           if (isCorrect) {
             resultEl.textContent = "Correct! Great job. ⭐";
             resultEl.style.color = "#166534";
-            speak(`Correct! Great job. ${item.word} means ${item.meaning}.`, "en-US", false);
+            speak(`Correct! Great job. ${item.word} means ${item.meaning}.`);
           } else {
             resultEl.textContent = `Good try! Correct answer: ${quiz.answer}`;
             resultEl.style.color = "#b45309";
-            speak(`Good try. The correct answer is ${quiz.answer}.`, "en-US", false);
+            speak(`Good try. The correct answer is ${quiz.answer}.`);
           }
         });
-
         optionsEl.appendChild(button);
       });
     }
@@ -1550,6 +1248,71 @@
       });
     }
 
+    function renderAlphabetCards() {
+      const grid = document.getElementById("alphabetGrid");
+      grid.innerHTML = "";
+      alphabetData.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "alphabet-card";
+        card.innerHTML = `
+          <div class="letter-badge">🔤 Letter Card</div>
+          <div class="letter-main">
+            <div>
+              <strong>${item.upper} ${item.lower}</strong>
+              <span>Word: ${item.word}</span>
+            </div>
+            <div class="letter-icon" aria-hidden="true">${item.icon}</div>
+          </div>
+          <div class="sound-chip">🔊 Sound: ${item.sound}</div>
+          <p><strong>${item.upper}</strong> is for <strong>${item.word}</strong>.</p>
+          <div class="alphabet-mini">${item.clue} Say the sound clearly, then say the word.</div>
+          <div class="sound-actions">
+            <button class="listen-btn" type="button" data-alpha-action="listen" data-alpha-id="${item.id}">🔊 Listen</button>
+            <button class="repeat-btn" type="button" data-alpha-action="repeat" data-alpha-id="${item.id}">🔁 Repeat</button>
+            <button class="learned-btn" type="button" data-alpha-action="learned" data-alpha-id="${item.id}">✅ Learned</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll("[data-alpha-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const action = button.dataset.alphaAction;
+          const item = alphabetData.find((entry) => entry.id === button.dataset.alphaId);
+          if (!item) return;
+
+          if (action === "listen") {
+            speak(item.speak, "en-US", false);
+            getTracker()?.markListened?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
+          }
+
+          if (action === "repeat") {
+            speak(item.speak, "en-US", true);
+            getTracker()?.markRepeated?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
+          }
+
+          if (action === "learned") {
+            getTracker()?.markLearned?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
+            button.textContent = "✅ Learned!";
+            button.disabled = true;
+          }
+        });
+      });
+    }
+
+    function setupAlphabetToolbar() {
+      document.getElementById("playAlphabetIntroBtn").addEventListener("click", () => {
+        speak("Welcome to ABC Phonics. Listen to the letter, say the sound, then say the word.");
+        getTracker()?.markListened?.("englishWords", "alphabet-intro", { type: "alphabet-intro" });
+      });
+
+      document.getElementById("playAlphabetReviewBtn").addEventListener("click", () => {
+        const reviewText = alphabetData.map((item) => `${item.upper} says ${item.sound}. ${item.word}.`).join(" ");
+        speak(reviewText, "en-US", false);
+        getTracker()?.markRepeated?.("englishWords", "alphabet-review", { type: "alphabet-review" });
+      });
+    }
+
     function setupDynamicButtons() {
       document.getElementById("listenWordBtn").addEventListener("click", () => {
         speak(buildWordAudioText(currentWordData), "en-US", false);
@@ -1557,7 +1320,7 @@
       });
 
       document.getElementById("repeatWordBtn").addEventListener("click", () => {
-        speak(buildWordRepeatText(currentWordData), "en-US", true);
+        speak(`${currentWordData.word}. ${currentWordData.word}. ${currentWordData.sentence}`, "en-US", true);
         getTracker()?.markRepeated?.("englishWords", currentWordData.id, { word: currentWordData.word });
       });
 
@@ -1569,7 +1332,7 @@
 
       document.getElementById("listenQuizBtn").addEventListener("click", () => {
         const quiz = currentWordData.quiz || fallbackWord.quiz;
-        speak(`Quiz question. ${quiz.question}. Options are: ${quiz.options.join(", ")}.`, "en-US", false);
+        speak(`Quiz question. ${quiz.question}. Options are: ${quiz.options.join(", ")}.`);
         getTracker()?.markListened?.("englishWords", `${currentWordData.id}-quiz`, { word: currentWordData.word });
       });
 
@@ -1580,7 +1343,7 @@
       });
 
       document.getElementById("listenWritingBtn").addEventListener("click", () => {
-        speak(`Writing task. Write three sentences using today's word: ${currentWordData.word}. Example: ${currentWordData.sentence}`, "en-US", false);
+        speak(`Writing task. Write three sentences using today's word: ${currentWordData.word}. Example: ${currentWordData.sentence}`);
         getTracker()?.markListened?.("englishWords", `${currentWordData.id}-writing`, { word: currentWordData.word });
       });
 
@@ -1593,31 +1356,73 @@
       });
 
       document.getElementById("listenSentenceBuilderBtn").addEventListener("click", () => {
-        speak(`Sentence builder. I can be ${currentWordData.word} when blank. Example: ${currentWordData.sentence}`, "en-US", false);
+        speak(`Sentence builder. I can be ${currentWordData.word} when blank. Example: ${currentWordData.sentence}`);
       });
 
       document.getElementById("repeatSentenceBuilderBtn").addEventListener("click", () => {
         speak(`I can be ${currentWordData.word} when blank.`, "en-US", true);
       });
+
+      document.getElementById("listenReadingBtn").addEventListener("click", () => {
+        speak("The Little Garden. Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day. One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight. After a few days, the plant looked fresh again. Sara smiled and said, Small care can make a big difference.");
+        getTracker()?.markListened?.("englishWords", "reading-little-garden", { type: "reading" });
+      });
+
+      document.getElementById("repeatReadingBtn").addEventListener("click", () => {
+        speak("Small care can make a big difference.", "en-US", true);
+        getTracker()?.markRepeated?.("englishWords", "reading-little-garden", { type: "reading" });
+      });
+
+      document.getElementById("completeReadingBtn").addEventListener("click", (event) => {
+        getTracker()?.markCompleted?.("englishWords", "reading-little-garden", { type: "reading" });
+        event.currentTarget.textContent = "✅ Completed!";
+        event.currentTarget.disabled = true;
+      });
+
+      document.getElementById("listenQuestionsBtn").addEventListener("click", () => {
+        speak("Comprehension questions. What did Sara have near her home? What happened to one plant? How did Sara help the plant? What lesson can we learn from the story?");
+      });
+
+      document.getElementById("repeatVocabularyBtn").addEventListener("click", () => {
+        speak("Garden. Tiny. Ignore. Sunlight. Fresh. Difference.", "en-US", true);
+      });
+
+      document.getElementById("listenSpeakingBtn").addEventListener("click", () => {
+        speak("Speaking prompt. My favourite book is. Say the title, one character, why you like it, and one lesson from the book.");
+      });
+
+      document.getElementById("repeatSpeakingBtn").addEventListener("click", () => {
+        speak("My favourite book is. I like it because. The lesson is.", "en-US", true);
+      });
+
+      document.getElementById("completeSpeakingBtn").addEventListener("click", (event) => {
+        getTracker()?.markCompleted?.("englishWords", "speaking-favourite-book", { type: "speaking" });
+        event.currentTarget.textContent = "✅ Practiced!";
+        event.currentTarget.disabled = true;
+      });
+
+      document.getElementById("listenChecklistBtn").addEventListener("click", () => {
+        speak("Good speaking checklist. Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence.");
+      });
+
+      document.getElementById("repeatChecklistBtn").addEventListener("click", () => {
+        speak("Speak slowly. Use clear words. Give one reason.", "en-US", true);
+      });
     }
 
     function setupStopSound() {
-      document.querySelectorAll(".stop-sound").forEach((button) => {
-        button.addEventListener("click", stopSound);
-      });
-
+      document.querySelectorAll(".stop-sound").forEach((button) => button.addEventListener("click", stopSound));
       window.addEventListener("beforeunload", stopSound);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
       renderWordOfDay();
+      renderAlphabetCards();
+      setupAlphabetToolbar();
       setupStaticAudioButtons();
       setupDynamicButtons();
       setupStopSound();
-
-      window.setTimeout(() => {
-        getTracker()?.renderAllProgressWidgets?.();
-      }, 100);
+      window.setTimeout(() => { getTracker()?.renderAllProgressWidgets?.(); }, 100);
     });
   </script>
 </body>
