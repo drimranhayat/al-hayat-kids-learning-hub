@@ -1,1 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Complete Kids Worksheets Library | 80+ Printable-Style Practice Sheets | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="A comprehensive global kids worksheets hub with 80+ printable-style practice sheets across English, reading, writing, math, science, Arabic, Islamic values, life skills, general knowledge, creativity, logic and STEM." />
+  <meta name="keywords" content="kids worksheets, printable worksheets, English worksheets, math worksheets, science worksheets, Arabic worksheets, Islamic worksheets, phonics worksheets, reading comprehension worksheets, kids practice sheets" />
+  <meta name="author" content="Al-Hayat Kids Learning Hub" />
+
+  <style>
+    :root {
+      --ink:#14213d; --text:#334155; --muted:#64748b; --white:#ffffff; --navy:#0f2747;
+      --blue:#2563eb; --sky:#38bdf8; --green:#16a34a; --emerald:#10b981; --orange:#f97316;
+      --amber:#f59e0b; --pink:#ec4899; --purple:#8b5cf6; --teal:#14b8a6; --red:#ef4444;
+      --border:#e2e8f0; --shadow:0 18px 45px rgba(15,39,71,.12); --soft-shadow:0 12px 28px rgba(15,39,71,.08);
+      --radius-xl:30px; --radius-lg:22px; --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Segoe UI",Arial,sans-serif;color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(56,189,248,.18),transparent 34rem),
+        radial-gradient(circle at top right,rgba(251,113,133,.16),transparent 31rem),
+        radial-gradient(circle at 50% 38%,rgba(253,224,71,.15),transparent 32rem),
+        linear-gradient(180deg,#f8fbff 0%,#fff7ed 44%,#f8fafc 100%);
+      line-height:1.6;overflow-x:hidden;
+    }
+    body::before{
+      content:"";position:fixed;inset:0;pointer-events:none;
+      background-image:
+        radial-gradient(circle at 12% 18%,rgba(37,99,235,.08) 0 3px,transparent 4px),
+        radial-gradient(circle at 88% 22%,rgba(249,115,22,.1) 0 3px,transparent 4px),
+        radial-gradient(circle at 78% 74%,rgba(20,184,166,.1) 0 4px,transparent 5px),
+        radial-gradient(circle at 20% 82%,rgba(139,92,246,.08) 0 4px,transparent 5px);
+      z-index:-1;
+    }
+    a{text-decoration:none;color:inherit} button,input{font:inherit} .container{width:min(100% - 32px,var(--max));margin:0 auto}
+    .skip-link{position:absolute;left:-999px;top:12px;background:var(--navy);color:white;padding:10px 14px;border-radius:10px;z-index:999}
+    .skip-link:focus{left:12px}
+
+    .topbar{background:linear-gradient(135deg,#0f2747,#1d4ed8);color:white;font-size:.92rem}
+    .topbar-inner{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:8px 0}
+    .topbar-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .topbar-links a,.topbar-links button{background:rgba(255,255,255,.13);color:white;border:0;padding:6px 10px;border-radius:999px;transition:.25s ease;cursor:pointer;font-weight:850}
+    .topbar-links a:hover,.topbar-links button:hover{background:rgba(255,255,255,.24);transform:translateY(-1px)}
+
+    header{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(226,232,240,.9)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:950;color:var(--ink)}
+    .brand-mark{width:50px;height:50px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#2563eb,#14b8a6,#f97316);color:white;font-size:1.55rem;box-shadow:var(--soft-shadow);animation:brandPulse 4s ease-in-out infinite}
+    @keyframes brandPulse{0%,100%{transform:rotate(0) scale(1)}35%{transform:rotate(-3deg) scale(1.04)}70%{transform:rotate(3deg) scale(1.02)}}
+    .brand small{display:block;font-weight:750;color:var(--muted);font-size:.78rem;margin-top:-3px}
+    .menu-toggle{display:none;border:0;background:var(--ink);color:white;border-radius:14px;padding:10px 13px;cursor:pointer;font-weight:850}
+    .nav-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .nav-links a{color:var(--ink);font-weight:850;font-size:.92rem;padding:10px 12px;border-radius:999px;transition:.25s ease;position:relative;overflow:hidden}
+    .nav-links a::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(20,184,166,.12));transform:scaleX(0);transform-origin:left;transition:.25s ease;z-index:-1}
+    .nav-links a:hover::before,.nav-links a.active::before{transform:scaleX(1)} .nav-links a:hover,.nav-links a.active{color:var(--blue);transform:translateY(-1px)}
+    .nav-cta{background:linear-gradient(135deg,var(--blue),var(--teal))!important;color:white!important;box-shadow:var(--soft-shadow)}
+
+    .sound-pill{position:fixed;right:18px;bottom:18px;z-index:120;border:0;cursor:pointer;color:white;background:linear-gradient(135deg,var(--blue),var(--teal));border-radius:999px;padding:12px 15px;font-weight:950;box-shadow:0 18px 45px rgba(37,99,235,.25);transition:.25s ease}
+    .sound-pill:hover{transform:translateY(-3px) scale(1.03);filter:saturate(1.18)}
+
+    .hero{position:relative;padding:66px 0 42px} .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--blue);border:1px solid #dbeafe;font-weight:950;padding:9px 14px;border-radius:999px;box-shadow:var(--soft-shadow);margin-bottom:16px}
+    h1{color:var(--ink);font-size:clamp(2.25rem,5vw,4.8rem);line-height:1.02;letter-spacing:-.05em;margin-bottom:18px}
+    .gradient-text{background:linear-gradient(135deg,#2563eb,#14b8a6,#f97316,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{font-size:1.12rem;color:#475569;max-width:700px;margin-bottom:22px} .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+    .btn,.mini-btn,.chip{position:relative;isolation:isolate;overflow:hidden}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;border-radius:999px;padding:13px 18px;font-weight:950;transition:.25s ease;box-shadow:var(--soft-shadow);min-height:48px}
+    .btn::after,.mini-btn::after,.chip::after,.quiz-options button::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.38),transparent);transform:translateX(-120%);transition:.5s ease;z-index:-1}
+    .btn:hover::after,.mini-btn:hover::after,.chip:hover::after,.quiz-options button:hover::after{transform:translateX(120%)}
+    .btn-primary{color:white;background:linear-gradient(135deg,var(--blue),var(--teal))} .btn-secondary{color:var(--ink);background:white;border:1px solid var(--border)} .btn-green{color:white;background:linear-gradient(135deg,var(--green),var(--emerald))} .btn-purple{color:white;background:linear-gradient(135deg,var(--purple),var(--pink))} .btn-orange{color:white;background:linear-gradient(135deg,var(--orange),var(--amber))}
+    .btn:hover{transform:translateY(-3px) scale(1.02);filter:saturate(1.16);box-shadow:0 18px 40px rgba(15,39,71,.16)} .btn:active,.mini-btn:active,.chip:active{transform:translateY(1px) scale(.98)}
+
+    .hero-pills{display:flex;gap:10px;flex-wrap:wrap} .hero-pills span{background:rgba(255,255,255,.9);color:var(--ink);border:1px solid var(--border);padding:8px 12px;border-radius:999px;font-weight:850;box-shadow:var(--soft-shadow);transition:.25s ease} .hero-pills span:hover{transform:translateY(-2px) rotate(-1deg);background:white;border-color:#bfdbfe}
+
+    .worksheet-world{position:relative;min-height:450px;border-radius:38px;overflow:hidden;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.9),transparent 11rem),radial-gradient(circle at 85% 18%,rgba(254,215,170,.75),transparent 10rem),linear-gradient(135deg,#dbeafe,#ccfbf1 45%,#fce7f3);box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.82);padding:28px}
+    .worksheet-hero-card{position:absolute;background:white;border:1px solid rgba(226,232,240,.9);box-shadow:var(--soft-shadow);border-radius:24px;padding:17px;transition:.3s ease}
+    .worksheet-hero-card:hover{transform:translateY(-7px) rotate(0deg)!important;box-shadow:var(--shadow)} .worksheet-hero-card strong{color:var(--ink);display:block;font-size:1.05rem;margin-bottom:5px} .worksheet-hero-card span{color:var(--muted);font-size:.92rem}
+    .hero-main-card{width:70%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-2deg);text-align:center;padding:34px 24px}
+    .hero-main-card .icon{width:96px;height:96px;margin:0 auto 15px;border-radius:30px;display:grid;place-items:center;font-size:3.1rem;background:linear-gradient(135deg,#2563eb,#14b8a6,#f97316);color:white;animation:bounceIcon 2.8s ease-in-out infinite}
+    @keyframes bounceIcon{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(3deg)}}
+    .hero-mini-one{left:24px;top:28px;width:190px;transform:rotate(-6deg)} .hero-mini-two{right:24px;top:48px;width:190px;transform:rotate(5deg)} .hero-mini-three{left:42px;bottom:34px;width:212px;transform:rotate(4deg)} .hero-mini-four{right:42px;bottom:30px;width:206px;transform:rotate(-5deg)}
+    .floating-shape{position:absolute;width:54px;height:54px;display:grid;place-items:center;border-radius:18px;background:white;box-shadow:var(--soft-shadow);font-size:1.5rem;animation:float 4.5s ease-in-out infinite;user-select:none}
+    .shape-a{top:176px;left:22px} .shape-b{right:18px;top:208px;animation-delay:1s} .shape-c{left:50%;bottom:18px;animation-delay:1.6s}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(5deg)}}
+
+    section{padding:44px 0} .section-heading{max-width:790px;margin-bottom:24px} .section-kicker{color:var(--blue);font-weight:950;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem;margin-bottom:8px} h2{color:var(--ink);font-size:clamp(1.8rem,3.2vw,2.75rem);line-height:1.12;letter-spacing:-.035em;margin-bottom:10px} .section-heading p{color:var(--muted);font-size:1.04rem}
+
+    .stats-grid,.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px} .stat-card,.category-card{background:white;border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--soft-shadow);transition:.25s ease;overflow:hidden;position:relative}
+    .stat-card::before,.category-card::before{content:"";position:absolute;width:110px;height:110px;right:-55px;top:-55px;border-radius:50%;background:rgba(37,99,235,.1)} .stat-card:hover,.category-card:hover{transform:translateY(-4px);border-color:#bfdbfe}
+    .stat-card strong,.category-card strong{display:block;color:var(--ink);font-size:2rem;line-height:1;position:relative} .stat-card span,.category-card span{color:var(--muted);font-weight:850;position:relative}
+    .category-card h3{position:relative;color:var(--ink);margin-bottom:6px}
+
+    .panel{background:rgba(255,255,255,.9);border:1px solid rgba(226,232,240,.9);border-radius:var(--radius-xl);box-shadow:var(--shadow);padding:26px}
+    .worksheet-tools{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch} .search-box{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:14px}
+    .search-box input{width:100%;border:1px solid var(--border);border-radius:999px;padding:13px 16px;background:white;outline:none;transition:.22s ease} .search-box input:focus{border-color:#60a5fa;box-shadow:0 0 0 4px rgba(96,165,250,.18)}
+    .age-tabs,.filter-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0} .chip{border:1px solid var(--border);background:white;color:var(--ink);padding:10px 14px;border-radius:999px;font-weight:950;cursor:pointer;transition:.22s ease} .chip:hover{transform:translateY(-2px);border-color:#bfdbfe;color:var(--blue)} .chip.active{background:linear-gradient(135deg,var(--blue),var(--teal));color:white;border-color:transparent;box-shadow:var(--soft-shadow)}
+
+    .daily-card{background:radial-gradient(circle at top right,rgba(255,255,255,.72),transparent 11rem),linear-gradient(135deg,#2563eb,#14b8a6);color:white;border-radius:var(--radius-xl);padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden} .daily-card::before{content:"✏️";position:absolute;right:20px;top:16px;font-size:3rem;opacity:.22;animation:float 4s ease-in-out infinite} .daily-card h3{font-size:1.55rem;margin-bottom:8px;color:white} .daily-card p{opacity:.94;margin-bottom:14px;color:white} .daily-card .btn{background:white;color:var(--ink)}
+
+    .path-grid,.worksheet-grid,.parent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .path-card,.worksheet-card,.parent-card{background:white;border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;transition:.25s ease} .path-card:hover,.worksheet-card:hover,.parent-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#bfdbfe}
+    .path-card::before,.worksheet-card::before{content:"";position:absolute;width:128px;height:128px;right:-42px;top:-42px;border-radius:50%;background:rgba(20,184,166,.1)} .path-card .badge{display:inline-flex;background:#eff6ff;color:var(--blue);border-radius:999px;padding:6px 10px;font-weight:950;font-size:.8rem;margin-bottom:12px;position:relative}
+    .path-card h3,.worksheet-card h3,.mission-card h3,.parent-card h3{color:var(--ink);line-height:1.2;margin-bottom:8px;position:relative} .path-card ul,.parent-card ul,.routine-box ul{padding-left:20px;margin-top:10px;color:var(--text);position:relative}
+
+    .worksheet-card{display:flex;flex-direction:column;gap:12px;min-height:100%} .worksheet-card::before{inset:0;width:auto;height:auto;right:auto;top:auto;border-radius:0;background:linear-gradient(135deg,rgba(37,99,235,.04),rgba(20,184,166,.05),rgba(249,115,22,.04));opacity:0;transition:.25s ease} .worksheet-card:hover::before{opacity:1}
+    .worksheet-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;position:relative} .worksheet-icon{width:62px;height:62px;border-radius:20px;display:grid;place-items:center;font-size:1.85rem;color:white;background:linear-gradient(135deg,var(--blue),var(--teal));flex:0 0 auto;transition:.25s ease;font-weight:950} .worksheet-card:hover .worksheet-icon{transform:rotate(8deg) scale(1.07);filter:saturate(1.2)}
+    .worksheet-tags{display:flex;flex-wrap:wrap;gap:7px;position:relative} .tag{display:inline-flex;align-items:center;background:#f1f5f9;color:#475569;border-radius:999px;padding:5px 9px;font-size:.76rem;font-weight:900} .level-easy{background:#dcfce7;color:#166534} .level-medium{background:#fef3c7;color:#92400e} .level-advanced{background:#ede9fe;color:#5b21b6}
+    .worksheet-card p{color:var(--muted);flex-grow:1;position:relative} .worksheet-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:auto;position:relative} .mini-btn{border:0;cursor:pointer;background:#eff6ff;color:var(--blue);border-radius:999px;padding:9px 12px;font-weight:950;transition:.2s ease} .mini-btn:hover{background:linear-gradient(135deg,var(--blue),var(--teal));color:white;transform:translateY(-2px);box-shadow:var(--soft-shadow)} .mini-btn.done{background:#dcfce7;color:#166534}
+
+    .mission-grid,.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px} .mission-card{border-radius:var(--radius-lg);padding:20px;color:white;box-shadow:var(--soft-shadow);min-height:190px;position:relative;overflow:hidden} .mission-card::before{content:"";position:absolute;right:-45px;top:-45px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.18)} .mission-card:nth-child(1){background:linear-gradient(135deg,#2563eb,#38bdf8)} .mission-card:nth-child(2){background:linear-gradient(135deg,#16a34a,#14b8a6)} .mission-card:nth-child(3){background:linear-gradient(135deg,#f97316,#f59e0b)} .mission-card:nth-child(4){background:linear-gradient(135deg,#8b5cf6,#ec4899)} .mission-card h3,.mission-card p{color:white;position:relative} .mission-card p{opacity:.94;margin-bottom:12px}
+
+    .tracker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px} .tracker-box{background:white;border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;text-align:center;box-shadow:var(--soft-shadow);transition:.25s ease} .tracker-box:hover{transform:translateY(-3px);border-color:#bfdbfe} .tracker-box strong{display:block;color:var(--ink);font-size:1.75rem} .tracker-box span{color:var(--muted);font-weight:850;font-size:.9rem}
+
+    .skill-card{background:white;border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--soft-shadow);transition:.25s ease} .skill-card:hover{transform:translateY(-4px) rotate(-.5deg);border-color:#bfdbfe} .skill-card strong{color:var(--ink);display:block;font-size:1.25rem;margin-bottom:5px} .skill-card span{color:var(--muted);font-weight:700}
+
+    .routine-box{margin-top:18px;background:radial-gradient(circle at top left,rgba(255,255,255,.18),transparent 12rem),linear-gradient(135deg,#071a36 0%,#123b7a 52%,#1d4ed8 100%);color:white;border-radius:var(--radius-xl);padding:30px;box-shadow:0 22px 55px rgba(15,39,71,.22);border:1px solid rgba(255,255,255,.18)} .routine-box h3{color:white!important;font-weight:950;text-shadow:0 2px 10px rgba(0,0,0,.28);margin-bottom:8px} .routine-box p{color:#f8fafc!important;font-weight:750;text-shadow:0 1px 8px rgba(0,0,0,.2);margin-bottom:14px} .routine-box ul{color:white!important;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:16px 18px 16px 34px;margin-top:14px;backdrop-filter:blur(8px)} .routine-box li{color:white!important;font-weight:750;line-height:1.75;margin-bottom:8px;text-shadow:0 1px 8px rgba(0,0,0,.25)} .routine-box li::marker{color:#fbbf24;font-size:1.18em} .routine-box strong{color:white!important;font-weight:950;background:rgba(251,191,36,.22);padding:2px 7px;border-radius:999px}
+
+    .cta-band{background:radial-gradient(circle at 10% 20%,rgba(255,255,255,.28),transparent 16rem),linear-gradient(135deg,#2563eb,#14b8a6,#8b5cf6);color:white;border-radius:34px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;box-shadow:var(--shadow);overflow:hidden;position:relative} .cta-band::before{content:"🌟";position:absolute;right:26px;top:14px;font-size:3.5rem;opacity:.22;animation:float 4s ease-in-out infinite} .cta-band h2,.cta-band p{color:white;position:relative} .cta-band .btn{background:white;color:var(--ink)}
+
+    footer{background:#0f2747;color:white;padding:44px 0 22px;margin-top:36px} .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:30px} footer h3,footer h4{color:white;margin-bottom:12px} footer p,footer li{color:rgba(255,255,255,.78)} footer ul{list-style:none;display:grid;gap:8px} footer a{transition:.22s ease} footer a:hover{color:white;text-decoration:underline} .copyright{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;text-align:center;color:rgba(255,255,255,.72)}
+
+    .modal{position:fixed;inset:0;background:rgba(15,23,42,.64);display:none;align-items:center;justify-content:center;padding:20px;z-index:200} .modal.open{display:flex} .modal-card{width:min(100%,940px);max-height:86vh;overflow:auto;background:white;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.25);padding:26px;position:relative} .modal-close{position:sticky;top:0;float:right;border:0;background:var(--ink);color:white;border-radius:999px;padding:8px 12px;cursor:pointer;font-weight:950;z-index:2} .worksheet-content h2{color:var(--ink);margin-bottom:10px} .worksheet-content .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px} .worksheet-content p{margin-bottom:14px;font-size:1.05rem} .worksheet-box{background:#eff6ff;border-left:5px solid var(--blue);border-radius:14px;padding:14px;color:var(--ink);margin:16px 0} .worksheet-paper{border:2px dashed #bfdbfe;border-radius:20px;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#bfdbfe,#99f6e4,#fed7aa) border-box;padding:20px;margin:18px 0} .worksheet-paper h3{color:var(--ink);margin-bottom:10px} .worksheet-line{border-bottom:1px solid #cbd5e1;min-height:34px;margin:12px 0} .worksheet-grid-small{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px} .worksheet-mini-box{min-height:82px;border:1px solid #cbd5e1;border-radius:14px;padding:12px;background:#f8fafc} .worksheet-content ul,.worksheet-content ol{padding-left:22px;margin:10px 0 16px} .worksheet-content li{margin-bottom:8px}
+
+    .toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%) translateY(30px);background:#0f2747;color:white;border-radius:999px;padding:12px 18px;font-weight:950;box-shadow:var(--shadow);z-index:220;opacity:0;pointer-events:none;transition:.3s ease;text-align:center;max-width:min(92vw,640px)} .toast.show{opacity:1;transform:translateX(-50%) translateY(0)} .confetti-piece{position:fixed;top:-20px;width:10px;height:14px;border-radius:3px;z-index:210;pointer-events:none;animation:fallConfetti 1.7s ease-in forwards} @keyframes fallConfetti{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(105vh) rotate(720deg);opacity:0}} .hidden{display:none!important}
+
+    @media print{body *{visibility:hidden} .modal.open,.modal.open *{visibility:visible} .modal{position:static;display:block;background:white;padding:0} .modal-card{box-shadow:none;max-height:none;width:100%;padding:0} .modal-close,.worksheet-content .btn,.sound-pill,header,.topbar,footer,.toast{display:none!important} .worksheet-paper{page-break-inside:avoid}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+    @media (max-width:980px){.hero-grid,.worksheet-tools,.cta-band{grid-template-columns:1fr} .path-grid,.worksheet-grid,.parent-grid{grid-template-columns:repeat(2,1fr)} .stats-grid,.category-grid,.mission-grid,.tracker-grid,.skill-grid{grid-template-columns:repeat(2,1fr)} .footer-grid{grid-template-columns:1fr 1fr} .worksheet-world{min-height:370px} .hero-mini-one,.hero-mini-two,.hero-mini-three,.hero-mini-four{display:none} .hero-main-card{width:82%}}
+    @media (max-width:760px){.menu-toggle{display:inline-flex} .nav{align-items:center} .nav-links{position:absolute;left:16px;right:16px;top:78px;background:white;border:1px solid var(--border);box-shadow:var(--shadow);border-radius:22px;padding:14px;display:none;flex-direction:column;align-items:stretch} .nav-links.show{display:flex} .nav-links a{border-radius:14px} .topbar-inner{justify-content:center;text-align:center} .hero{padding-top:38px} .path-grid,.worksheet-grid,.parent-grid,.stats-grid,.category-grid,.mission-grid,.tracker-grid,.skill-grid,.footer-grid,.worksheet-grid-small{grid-template-columns:1fr} .search-box{grid-template-columns:1fr} .worksheet-world{min-height:305px;border-radius:26px} .hero-main-card{width:92%;padding:28px 18px} .hero-main-card .icon{width:74px;height:74px;font-size:2.25rem} .cta-band{padding:24px;border-radius:26px} .sound-pill{right:12px;bottom:12px;padding:10px 12px}}
+  </style>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LearningResource","name":"Complete Kids Worksheets Library","description":"A child-friendly worksheets library with 80+ printable-style practice sheets across English, math, science, Arabic, Islamic values, creativity, logic and life skills.","educationalLevel":"Early Years and Primary","audience":{"@type":"EducationalAudience","educationalRole":"student"},"provider":{"@type":"Organization","name":"Al-Hayat Kids Learning Hub"}}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <button class="sound-pill" type="button" id="soundToggle" aria-label="Turn worksheet sounds on or off">🔊 Sounds On</button>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>✏️ 80+ worksheet types • Global practice • Rewards • Parent-guided learning</span>
+      <div class="topbar-links">
+        <a href="#worksheet-shelf">Worksheets</a>
+        <a href="#categories">Categories</a>
+        <a href="#practice-missions">Missions</a>
+        <button type="button" onclick="playSound('sparkle')">✨ Test Sound</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub Home">
+        <span class="brand-mark">✏️</span>
+        <span>Al-Hayat Kids Learning Hub<small>Practice • Improve • Shine</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰ Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="#categories">Types</a>
+        <a class="active" href="#worksheet-shelf">Worksheets</a>
+        <a href="#practice-missions">Missions</a>
+        <a href="#tracker">Progress</a>
+        <a href="#parents">Parents</a>
+        <a class="nav-cta" href="#online-help">Practice Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">🌟 Complete Worksheet Library • Ages 3–12</span>
+          <h1>Practice every skill. Build confidence. <span class="gradient-text">Love learning.</span></h1>
+          <p>A comprehensive, global-style worksheet hub with 80+ printable-style practice sheets across early skills, English, reading, writing, math, science, Arabic, Islamic values, life skills, general knowledge, creativity, logic, and STEM.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#worksheet-shelf" onclick="playSound('pop')">Open Worksheets →</a>
+            <a class="btn btn-secondary" href="#worksheet-finder" onclick="playSound('tap')">Search by Age / Type</a>
+            <button class="btn btn-green" type="button" onclick="randomWorksheet()">🎲 Random Worksheet</button>
+            <button class="btn btn-purple" type="button" onclick="speakText('Welcome to the complete Al-Hayat Worksheets Library. Choose a worksheet, practice carefully, print if needed, and earn stars for your learning journey.')">🔊 Listen Intro</button>
+          </div>
+          <div class="hero-pills" aria-label="Worksheet features">
+            <span>🔤 English</span><span>📖 Reading</span><span>➕ Math</span><span>🔬 Science</span><span>ا Arabic</span><span>🕌 Islamic</span><span>🧩 Logic</span><span>⭐ Rewards</span>
+          </div>
+        </div>
+
+        <div class="worksheet-world" aria-label="Worksheets illustration">
+          <div class="worksheet-hero-card hero-mini-one"><strong>80+ Types</strong><span>All major child practice categories</span></div>
+          <div class="worksheet-hero-card hero-mini-two"><strong>Printable Style</strong><span>Open, complete, print when needed</span></div>
+          <div class="worksheet-hero-card hero-main-card"><div class="icon">📝</div><strong>Worksheet Universe</strong><span>Search, filter, practice, listen, print, complete, and earn stars.</span></div>
+          <div class="worksheet-hero-card hero-mini-three"><strong>Parent Guided</strong><span>Short tasks with simple checking</span></div>
+          <div class="worksheet-hero-card hero-mini-four"><strong>Safe Learning</strong><span>No login and no child data required</span></div>
+          <div class="floating-shape shape-a">⭐</div><div class="floating-shape shape-b">📘</div><div class="floating-shape shape-c">✨</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card"><strong>101+</strong><span>Worksheet templates</span></div>
+          <div class="stat-card"><strong>12</strong><span>Practice categories</span></div>
+          <div class="stat-card"><strong>5</strong><span>Age pathways</span></div>
+          <div class="stat-card"><strong>0</strong><span>Login required</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Worksheet Coverage</div>
+          <h2>Every major worksheet type in one place</h2>
+          <p>This hub is designed like a complete practice library, not a small worksheet page. Children can practice academic, creative, moral, social, and thinking skills.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section id="age-paths">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 1</div>
+          <h2>Choose the right worksheet level</h2>
+          <p>Worksheets should build confidence, not pressure. Start with tracing, matching and coloring, then move toward reading, writing, reasoning and independent practice.</p>
+        </div>
+        <div class="path-grid">
+          <article class="path-card"><span class="badge">Ages 3–4</span><h3>Trace, Color & Match</h3><p>Best for pencil grip, picture talk, colors, shapes and early recognition.</p><ul><li>Trace large lines</li><li>Circle pictures</li><li>Match same shapes</li><li>Color simple objects</li></ul></article>
+          <article class="path-card"><span class="badge">Ages 5–6</span><h3>Letters, Numbers & Words</h3><p>Best for phonics, early words, counting and neat worksheet habits.</p><ul><li>Trace letters</li><li>Write simple words</li><li>Count objects</li><li>Match word to picture</li></ul></article>
+          <article class="path-card"><span class="badge">Ages 7–8</span><h3>Read, Solve & Write</h3><p>Best for short reading tasks, simple math, science observation and sentence writing.</p><ul><li>Answer short questions</li><li>Solve math facts</li><li>Label diagrams</li><li>Write 2–3 lines</li></ul></article>
+          <article class="path-card"><span class="badge">Ages 9–10</span><h3>Practice & Explain</h3><p>Best for longer guided tasks, reasoning, summaries and value reflection.</p><ul><li>Write explanations</li><li>Complete tables</li><li>Summarize reading</li><li>Reflect on values</li></ul></article>
+          <article class="path-card"><span class="badge">Ages 11–12</span><h3>Independent Sheets</h3><p>Best for structured revision, paragraph answers, problem-solving and self-checking.</p><ul><li>Answer in paragraphs</li><li>Solve multi-step tasks</li><li>Review mistakes</li><li>Track improvement</li></ul></article>
+          <article class="path-card"><span class="badge">Parent Tip</span><h3>Practice Without Pressure</h3><p>Use one worksheet at a time. Praise neatness, effort, patience and correction.</p><ul><li>10–15 minutes daily</li><li>Use a pencil first</li><li>Check gently</li><li>Celebrate improvement</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="worksheet-finder">
+      <div class="container worksheet-tools">
+        <div class="panel">
+          <div class="section-kicker">Step 2</div>
+          <h2>Find a worksheet</h2>
+          <p>Search by subject, skill, value, topic, age or worksheet type. Use filters to make the library easy for children and parents.</p>
+          <div class="search-box">
+            <input id="worksheetSearch" type="search" placeholder="Search: phonics, fractions, dua, Arabic, science, kindness, maze..." aria-label="Search worksheets" />
+            <button class="btn btn-primary" type="button" onclick="filterWorksheets(); playSound('tap');">Search</button>
+          </div>
+          <div class="age-tabs" aria-label="Age filters" id="ageFilters"></div>
+          <div class="filter-tabs" aria-label="Worksheet category filters" id="categoryFilters"></div>
+        </div>
+        <aside class="daily-card">
+          <h3>🌞 Today’s Worksheet Mission</h3>
+          <p>Complete one worksheet. Say one thing you learned. Correct one mistake. Earn stars and celebrate.</p>
+          <button class="btn" type="button" onclick="randomWorksheet()">Open Random Worksheet</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="worksheet-shelf">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 3</div>
+          <h2>Complete Worksheet Shelf</h2>
+          <p>Each worksheet opens inside the page with purpose, instructions, printable-style practice, parent questions and a print button.</p>
+        </div>
+        <div class="worksheet-grid" id="worksheetGrid"></div>
+      </div>
+    </section>
+
+    <section id="practice-missions">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Step 4</div>
+          <h2>Practice missions</h2>
+          <p>Short missions help children complete worksheets with patience, neatness, checking and confidence.</p>
+        </div>
+        <div class="mission-grid">
+          <article class="mission-card"><h3>✏️ Neat Pencil</h3><p>Write slowly. Keep letters and numbers clear. Erase gently and try again.</p><button class="mini-btn" type="button" onclick="completeMission('neat-pencil')">Complete</button></article>
+          <article class="mission-card"><h3>👀 Check It</h3><p>Review your answer. Look for one mistake and fix it before showing your work.</p><button class="mini-btn" type="button" onclick="completeMission('check-it')">Complete</button></article>
+          <article class="mission-card"><h3>🎙️ Explain It</h3><p>Tell a parent what you practiced and which part felt easy or difficult.</p><button class="mini-btn" type="button" onclick="completeMission('explain-it')">Complete</button></article>
+          <article class="mission-card"><h3>⭐ Improve It</h3><p>Choose one line, answer or word and make it better than your first try.</p><button class="mini-btn" type="button" onclick="completeMission('improve-it')">Complete</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracker">
+      <div class="container">
+        <div class="panel">
+          <div class="section-heading">
+            <div class="section-kicker">Progress Tracker</div>
+            <h2>Stars, worksheets, missions, prints and neatness wins</h2>
+            <p>Progress is saved only on this browser/device using local storage. No login, child name, email or server data collection is required.</p>
+          </div>
+          <div class="tracker-grid">
+            <div class="tracker-box"><strong id="starsCount">0</strong><span>Stars Earned</span></div>
+            <div class="tracker-box"><strong id="worksheetsCount">0</strong><span>Worksheets Done</span></div>
+            <div class="tracker-box"><strong id="missionCount">0</strong><span>Missions Done</span></div>
+            <div class="tracker-box"><strong id="printCount">0</strong><span>Print Opens</span></div>
+            <div class="tracker-box"><strong id="neatnessCount">0</strong><span>Neatness Wins</span></div>
+          </div>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+            <button class="btn btn-secondary" type="button" onclick="resetProgress()">Reset local progress</button>
+            <button class="btn btn-orange" type="button" onclick="celebrateProgress()">Celebrate Progress</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Skill Builder</div>
+          <h2>Skills children build through worksheets</h2>
+          <p>Use these tiny goals to make every worksheet meaningful and confidence-building.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card"><strong>Trace</strong><span>Follow lines carefully.</span></div>
+          <div class="skill-card"><strong>Match</strong><span>Connect related ideas.</span></div>
+          <div class="skill-card"><strong>Count</strong><span>Use numbers correctly.</span></div>
+          <div class="skill-card"><strong>Read</strong><span>Understand short text.</span></div>
+          <div class="skill-card"><strong>Write</strong><span>Use clear sentences.</span></div>
+          <div class="skill-card"><strong>Label</strong><span>Name parts and pictures.</span></div>
+          <div class="skill-card"><strong>Check</strong><span>Review and correct.</span></div>
+          <div class="skill-card"><strong>Explain</strong><span>Say what you learned.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parents">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Parent & Teacher Zone</div>
+          <h2>How to use this worksheet library</h2>
+          <p>Worksheets should be used with patience, encouragement and gentle correction.</p>
+        </div>
+        <div class="parent-grid">
+          <article class="parent-card"><h3>Before Practice</h3><p>Prepare the child for focused work.</p><ul><li>Choose one suitable worksheet</li><li>Keep pencil and eraser ready</li><li>Read instructions together</li><li>Set a short time limit</li></ul></article>
+          <article class="parent-card"><h3>During Practice</h3><p>Guide without doing the work for the child.</p><ul><li>Let the child try first</li><li>Give hints, not full answers</li><li>Praise neatness and effort</li><li>Use calm correction</li></ul></article>
+          <article class="parent-card"><h3>After Practice</h3><p>Help the child reflect and improve.</p><ul><li>Ask what was easy</li><li>Ask what was difficult</li><li>Correct one mistake kindly</li><li>Celebrate one improvement</li></ul></article>
+        </div>
+        <div class="routine-box">
+          <h3>🌙 15-Minute Daily Worksheet Routine</h3>
+          <p>Use this simple routine at home after school, before homework or during weekend learning time.</p>
+          <ul>
+            <li><strong>2 minutes:</strong> Choose one worksheet and read instructions.</li>
+            <li><strong>5 minutes:</strong> Child completes the first part slowly and neatly.</li>
+            <li><strong>4 minutes:</strong> Child completes the remaining task with support.</li>
+            <li><strong>2 minutes:</strong> Parent checks one mistake and one strong answer.</li>
+            <li><strong>2 minutes:</strong> Child says, “Today I improved...”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="online-help">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Need guided worksheet practice?</h2>
+            <p>If your child needs help with handwriting, phonics, reading, math basics, Arabic letters, science tasks, Islamic values or confidence-building, online classes can support this worksheet library.</p>
+          </div>
+          <div><a class="btn" href="../online-classes.html" onclick="playSound('sparkle')">Book Online Classes →</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><h3>✏️ Al-Hayat Kids Learning Hub</h3><p>A joyful Islamic and academic learning platform where children learn, read, practice, explore and grow with safe educational content.</p></div>
+      <div><h4>Subjects</h4><ul><li><a href="../subjects/english.html">English</a></li><li><a href="../subjects/math.html">Math</a></li><li><a href="../subjects/science.html">Science</a></li><li><a href="../subjects/arabic-for-kids.html">Arabic for Kids</a></li><li><a href="../subjects/islamic-studies.html">Islamic Studies</a></li></ul></div>
+      <div><h4>Worksheet Sections</h4><ul><li><a href="#categories">Worksheet Types</a></li><li><a href="#worksheet-shelf">Worksheet Shelf</a></li><li><a href="#practice-missions">Practice Missions</a></li><li><a href="#tracker">Progress Tracker</a></li><li><a href="#skills">Skill Builder</a></li></ul></div>
+      <div><h4>Parent & Trust</h4><ul><li><a href="#parents">Parent Guide</a></li><li><a href="../reading-library/index.html">Reading Library</a></li><li><a href="../activities/index.html">Activities</a></li><li><a href="../online-classes.html">Online Classes</a></li></ul></div>
+    </div>
+    <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
+  </footer>
+
+  <div class="modal" id="worksheetModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" type="button" onclick="closeWorksheet()">Close ✕</button>
+      <div class="worksheet-content" id="worksheetContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const worksheets = [{"id": "line-tracing-adventure", "title": "Line Tracing Adventure", "emoji": "〰️", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4", "level": "Easy", "tags": ["Tracing", "Fine Motor"], "description": "Trace straight, curved, zigzag, and wavy lines to build pencil control.", "skills": ["Pencil grip", "Hand control", "Visual tracking"], "items": ["Straight line", "Curved line", "Zigzag line", "Wavy line", "Loop line"], "prompt": "Trace each line slowly, then draw one line of your own."}, {"id": "shape-tracing", "title": "Shape Tracing Sheet", "emoji": "🔷", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4 5-6", "level": "Easy", "tags": ["Shapes", "Tracing"], "description": "Trace and name common shapes with simple drawing practice.", "skills": ["Shape recognition", "Pre-writing", "Naming"], "items": ["Circle", "Square", "Triangle", "Rectangle", "Star"], "prompt": "Trace the shapes, name them aloud, then draw your favorite shape."}, {"id": "color-and-match", "title": "Color & Match Objects", "emoji": "🎨", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4 5-6", "level": "Easy", "tags": ["Colors", "Matching"], "description": "Color objects and match them with the correct color word.", "skills": ["Color recognition", "Matching", "Vocabulary"], "items": ["Red apple", "Blue ball", "Green leaf", "Yellow sun", "Orange carrot"], "prompt": "Color each object and match it to the correct color word."}, {"id": "big-small-sort", "title": "Big & Small Sorting", "emoji": "🐘", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4 5-6", "level": "Easy", "tags": ["Sorting", "Comparison"], "description": "Sort pictures into big and small groups.", "skills": ["Comparison", "Observation", "Sorting"], "items": ["Big elephant", "Small ant", "Big house", "Small cup", "Big tree"], "prompt": "Circle the big objects and put a box around the small objects."}, {"id": "same-different", "title": "Same or Different?", "emoji": "👀", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4 5-6", "level": "Easy", "tags": ["Observation", "Matching"], "description": "Find pictures that are the same and mark the one that is different.", "skills": ["Visual discrimination", "Attention", "Comparison"], "items": ["Two same stars", "Different flower", "Two same books", "Different cup", "Two same moons"], "prompt": "Look carefully. Tick the same pictures and circle the different one."}, {"id": "left-right-practice", "title": "Left & Right Practice", "emoji": "👈", "category": "early-skills", "categoryLabel": "Early Skills", "age": "5-6 7-8", "level": "Easy", "tags": ["Direction", "Body Awareness"], "description": "Practice left, right, up, down, before, and after.", "skills": ["Direction words", "Listening", "Body awareness"], "items": ["Left hand", "Right hand", "Up arrow", "Down arrow", "Before/after"], "prompt": "Follow the direction words and draw arrows in the correct place."}, {"id": "pattern-train", "title": "Pattern Train", "emoji": "🚂", "category": "early-skills", "categoryLabel": "Early Skills", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Patterns", "Logic"], "description": "Complete color, shape, and picture patterns.", "skills": ["Pattern recognition", "Prediction", "Logic"], "items": ["Red-blue-red-blue", "Circle-square-circle", "Star-moon-star", "Big-small-big", "1-2-1-2"], "prompt": "Look at each pattern and draw what comes next."}, {"id": "cut-and-paste-sort", "title": "Cut, Paste & Sort", "emoji": "✂️", "category": "early-skills", "categoryLabel": "Early Skills", "age": "5-6 7-8", "level": "Medium", "tags": ["Hands-on", "Sorting"], "description": "Sort pictures by type, size, color, or use.", "skills": ["Classification", "Fine motor", "Decision making"], "items": ["Food", "Animals", "Toys", "School things", "Clothes"], "prompt": "Cut the picture cards and paste them into the correct groups."}, {"id": "alphabet-uppercase", "title": "Uppercase Alphabet Practice", "emoji": "A", "category": "english", "categoryLabel": "English", "age": "3-4 5-6", "level": "Easy", "tags": ["Alphabet", "Writing"], "description": "Trace and write uppercase letters A–Z.", "skills": ["Letter recognition", "Handwriting", "Alphabet order"], "items": ["A", "B", "C", "D", "E"], "prompt": "Trace each uppercase letter, then write it on the blank line."}, {"id": "alphabet-lowercase", "title": "Lowercase Alphabet Practice", "emoji": "a", "category": "english", "categoryLabel": "English", "age": "3-4 5-6", "level": "Easy", "tags": ["Alphabet", "Writing"], "description": "Trace and write lowercase letters a–z.", "skills": ["Letter recognition", "Handwriting", "Alphabet order"], "items": ["a", "b", "c", "d", "e"], "prompt": "Trace each lowercase letter, then write it neatly."}, {"id": "beginning-sounds", "title": "Beginning Sounds", "emoji": "🔤", "category": "english", "categoryLabel": "English", "age": "5-6 7-8", "level": "Easy", "tags": ["Phonics", "Sounds"], "description": "Identify the first sound in common words.", "skills": ["Phonemic awareness", "Sound matching", "Vocabulary"], "items": ["Ball /b/", "Cat /c/", "Sun /s/", "Fish /f/", "Moon /m/"], "prompt": "Say each word and write the beginning sound."}, {"id": "ending-sounds", "title": "Ending Sounds", "emoji": "🔚", "category": "english", "categoryLabel": "English", "age": "5-6 7-8", "level": "Medium", "tags": ["Phonics", "Sounds"], "description": "Listen for final sounds in short words.", "skills": ["Final sounds", "Listening", "Spelling readiness"], "items": ["cat - t", "dog - g", "sun - n", "fish - sh", "book - k"], "prompt": "Say the word slowly and write the last sound you hear."}, {"id": "cvc-word-builder", "title": "CVC Word Builder", "emoji": "🧱", "category": "english", "categoryLabel": "English", "age": "5-6 7-8", "level": "Medium", "tags": ["CVC", "Blending"], "description": "Build short words using consonant-vowel-consonant patterns.", "skills": ["Blending", "Spelling", "Reading"], "items": ["cat", "pin", "sun", "map", "bed"], "prompt": "Blend the sounds, write the word, then draw a picture."}, {"id": "word-family-at", "title": "Word Family: -at", "emoji": "🐱", "category": "english", "categoryLabel": "English", "age": "5-6 7-8", "level": "Easy", "tags": ["Word Families", "Reading"], "description": "Practice rhyming words in the -at family.", "skills": ["Rhyming", "Word families", "Reading fluency"], "items": ["cat", "hat", "mat", "sat", "bat"], "prompt": "Read each word, circle the rhyming part, and write two more -at words."}, {"id": "sight-words-1", "title": "Sight Words Set 1", "emoji": "👁️", "category": "english", "categoryLabel": "English", "age": "5-6 7-8", "level": "Easy", "tags": ["Sight Words", "Reading"], "description": "Read and write common high-frequency words.", "skills": ["Word recognition", "Fluency", "Spelling"], "items": ["the", "and", "is", "to", "you"], "prompt": "Read, trace, write, and use each word in a sentence."}, {"id": "nouns-verbs-sort", "title": "Nouns & Verbs Sort", "emoji": "🏃", "category": "english", "categoryLabel": "English", "age": "7-8 9-10", "level": "Medium", "tags": ["Grammar", "Sorting"], "description": "Sort words into naming words and action words.", "skills": ["Grammar", "Classification", "Vocabulary"], "items": ["teacher", "run", "book", "jump", "garden"], "prompt": "Write each word under Noun or Verb. Then make two sentences."}, {"id": "adjectives-describing", "title": "Describing Words", "emoji": "🌈", "category": "english", "categoryLabel": "English", "age": "7-8 9-10", "level": "Medium", "tags": ["Adjectives", "Writing"], "description": "Use adjectives to describe people, places, and things.", "skills": ["Description", "Vocabulary", "Sentence writing"], "items": ["bright", "kind", "soft", "tall", "beautiful"], "prompt": "Choose describing words and write stronger sentences."}, {"id": "punctuation-practice", "title": "Punctuation Practice", "emoji": "❓", "category": "english", "categoryLabel": "English", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Punctuation", "Editing"], "description": "Add full stops, commas, question marks, and capital letters.", "skills": ["Editing", "Sentence control", "Accuracy"], "items": ["full stop", "comma", "question mark", "capital letter", "exclamation mark"], "prompt": "Rewrite the sentences with correct punctuation."}, {"id": "sentence-builder", "title": "Sentence Builder", "emoji": "✍️", "category": "english", "categoryLabel": "English", "age": "9-10 11-12", "level": "Advanced", "tags": ["Writing", "Grammar"], "description": "Build clear sentences using subject, verb, object, place, and time.", "skills": ["Sentence structure", "Grammar", "Writing"], "items": ["Who?", "Did what?", "What?", "Where?", "When?"], "prompt": "Complete each part and combine them into a strong sentence."}, {"id": "homophones-practice", "title": "Homophones Practice", "emoji": "🎧", "category": "english", "categoryLabel": "English", "age": "9-10 11-12", "level": "Advanced", "tags": ["Vocabulary", "Spelling"], "description": "Choose the correct word from common homophone pairs.", "skills": ["Meaning", "Spelling", "Context"], "items": ["there/their", "to/two/too", "see/sea", "right/write", "here/hear"], "prompt": "Choose the correct homophone and use it in a sentence."}, {"id": "picture-comprehension", "title": "Picture Comprehension", "emoji": "🖼️", "category": "reading", "categoryLabel": "Reading", "age": "3-4 5-6", "level": "Easy", "tags": ["Picture Talk", "Comprehension"], "description": "Look at a picture and answer who, what, where questions.", "skills": ["Observation", "Speaking", "Understanding"], "items": ["Who do you see?", "What is happening?", "Where are they?", "What color?", "How do they feel?"], "prompt": "Look carefully and answer the questions in words or short sentences."}, {"id": "short-passage-kindness", "title": "Short Passage: Kindness", "emoji": "💚", "category": "reading", "categoryLabel": "Reading", "age": "7-8 9-10", "level": "Medium", "tags": ["Comprehension", "Values"], "description": "Read a short kindness passage and answer questions.", "skills": ["Main idea", "Details", "Moral lesson"], "items": ["character", "setting", "problem", "action", "moral"], "prompt": "Read twice. Answer the questions and write the main idea."}, {"id": "sequence-story", "title": "Story Sequencing", "emoji": "1️⃣", "category": "reading", "categoryLabel": "Reading", "age": "5-6 7-8", "level": "Medium", "tags": ["Sequence", "Story"], "description": "Put story events in the correct order.", "skills": ["Ordering", "Retelling", "Comprehension"], "items": ["First", "Next", "Then", "After that", "Finally"], "prompt": "Number the story events from first to last."}, {"id": "main-idea-details", "title": "Main Idea & Details", "emoji": "💡", "category": "reading", "categoryLabel": "Reading", "age": "9-10 11-12", "level": "Advanced", "tags": ["Main Idea", "Details"], "description": "Find the central idea and supporting details.", "skills": ["Reading comprehension", "Summarizing", "Evidence"], "items": ["Main idea", "Detail 1", "Detail 2", "Detail 3", "Summary"], "prompt": "Read the text and write the main idea with three supporting details."}, {"id": "character-feelings", "title": "Character Feelings", "emoji": "🙂", "category": "reading", "categoryLabel": "Reading", "age": "7-8 9-10", "level": "Medium", "tags": ["Inference", "Feelings"], "description": "Identify how characters feel and explain why.", "skills": ["Inference", "Emotion words", "Evidence"], "items": ["happy", "worried", "excited", "sad", "proud"], "prompt": "Choose the feeling and write the clue that helped you know."}, {"id": "cause-effect", "title": "Cause and Effect", "emoji": "➡️", "category": "reading", "categoryLabel": "Reading", "age": "9-10 11-12", "level": "Advanced", "tags": ["Cause", "Effect"], "description": "Connect events with reasons and results.", "skills": ["Logical thinking", "Comprehension", "Writing"], "items": ["because", "so", "therefore", "as a result", "reason"], "prompt": "Write what happened and why it happened."}, {"id": "journal-prompt", "title": "Daily Journal Prompt", "emoji": "📓", "category": "writing", "categoryLabel": "Writing", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Journal", "Reflection"], "description": "Write about daily life with clear sentences.", "skills": ["Self-expression", "Sentence fluency", "Reflection"], "items": ["Today I learned", "I felt", "I helped", "I noticed", "Tomorrow I will"], "prompt": "Complete each starter and write a short journal paragraph."}, {"id": "story-mountain", "title": "Story Mountain Planner", "emoji": "⛰️", "category": "writing", "categoryLabel": "Writing", "age": "9-10 11-12", "level": "Advanced", "tags": ["Story Writing", "Planning"], "description": "Plan a story with beginning, problem, climax, solution, and ending.", "skills": ["Narrative structure", "Planning", "Creativity"], "items": ["Beginning", "Problem", "Climax", "Solution", "Ending"], "prompt": "Fill each part of the story mountain and write a short story."}, {"id": "friendly-letter", "title": "Friendly Letter Template", "emoji": "💌", "category": "writing", "categoryLabel": "Writing", "age": "9-10 11-12", "level": "Medium", "tags": ["Letter", "Writing"], "description": "Practice writing a friendly letter with greeting, body, and closing.", "skills": ["Letter format", "Audience", "Expression"], "items": ["Greeting", "Opening", "Main message", "Closing", "Signature"], "prompt": "Write a friendly letter to a family member or friend."}, {"id": "how-to-writing", "title": "How-To Writing Steps", "emoji": "🪜", "category": "writing", "categoryLabel": "Writing", "age": "7-8 9-10", "level": "Medium", "tags": ["Instructions", "Sequence"], "description": "Write step-by-step instructions for a simple task.", "skills": ["Sequencing", "Clarity", "Instruction writing"], "items": ["First", "Next", "Then", "After that", "Finally"], "prompt": "Choose a task and write clear how-to steps."}, {"id": "opinion-writing", "title": "Opinion Writing Starter", "emoji": "👍", "category": "writing", "categoryLabel": "Writing", "age": "9-10 11-12", "level": "Advanced", "tags": ["Opinion", "Reasoning"], "description": "State an opinion and support it with reasons.", "skills": ["Reasoning", "Paragraph writing", "Persuasion"], "items": ["I think", "Reason 1", "Reason 2", "Example", "Conclusion"], "prompt": "Write your opinion and support it with two reasons."}, {"id": "creative-picture-writing", "title": "Picture Story Writing", "emoji": "🖌️", "category": "writing", "categoryLabel": "Writing", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Creative", "Story"], "description": "Use a picture prompt to write a creative story.", "skills": ["Imagination", "Description", "Narrative"], "items": ["What do you see?", "Who is there?", "What happened?", "What changed?", "How did it end?"], "prompt": "Look at the picture idea and write a creative story."}, {"id": "number-tracing", "title": "Number Tracing 1–20", "emoji": "1️⃣", "category": "math", "categoryLabel": "Math", "age": "3-4 5-6", "level": "Easy", "tags": ["Numbers", "Tracing"], "description": "Trace and write numbers from 1 to 20.", "skills": ["Number formation", "Counting", "Fine motor"], "items": ["1", "2", "3", "4", "5"], "prompt": "Trace each number, write it, and count objects."}, {"id": "count-and-write", "title": "Count and Write", "emoji": "🔢", "category": "math", "categoryLabel": "Math", "age": "3-4 5-6", "level": "Easy", "tags": ["Counting", "Numbers"], "description": "Count groups of objects and write the number.", "skills": ["Counting", "Number recognition", "Accuracy"], "items": ["3 apples", "5 stars", "2 books", "4 moons", "6 balls"], "prompt": "Count each group and write the correct number."}, {"id": "addition-with-pictures", "title": "Addition with Pictures", "emoji": "➕", "category": "math", "categoryLabel": "Math", "age": "5-6 7-8", "level": "Easy", "tags": ["Addition", "Pictures"], "description": "Use pictures to solve simple addition problems.", "skills": ["Addition", "Counting on", "Number sense"], "items": ["2+3", "4+1", "5+2", "3+3", "6+1"], "prompt": "Count the pictures, add them, and write the answer."}, {"id": "subtraction-cross-out", "title": "Subtraction: Cross Out", "emoji": "➖", "category": "math", "categoryLabel": "Math", "age": "5-6 7-8", "level": "Medium", "tags": ["Subtraction", "Pictures"], "description": "Cross out objects to solve subtraction problems.", "skills": ["Subtraction", "Counting back", "Problem solving"], "items": ["5-2", "6-1", "7-3", "8-4", "10-5"], "prompt": "Cross out the taken-away objects and write how many are left."}, {"id": "place-value", "title": "Tens and Ones", "emoji": "🔟", "category": "math", "categoryLabel": "Math", "age": "7-8 9-10", "level": "Medium", "tags": ["Place Value", "Numbers"], "description": "Break numbers into tens and ones.", "skills": ["Place value", "Number building", "Base ten"], "items": ["14", "27", "35", "42", "58"], "prompt": "Write each number as tens and ones."}, {"id": "skip-counting", "title": "Skip Counting", "emoji": "⏭️", "category": "math", "categoryLabel": "Math", "age": "7-8 9-10", "level": "Medium", "tags": ["Patterns", "Counting"], "description": "Practice counting by 2s, 5s, and 10s.", "skills": ["Patterns", "Multiplication readiness", "Number fluency"], "items": ["2s", "5s", "10s", "20s", "50s"], "prompt": "Fill in the missing numbers in each skip-counting pattern."}, {"id": "multiplication-arrays", "title": "Multiplication Arrays", "emoji": "✖️", "category": "math", "categoryLabel": "Math", "age": "9-10 11-12", "level": "Advanced", "tags": ["Multiplication", "Arrays"], "description": "Use rows and columns to understand multiplication.", "skills": ["Multiplication", "Arrays", "Repeated addition"], "items": ["2x3", "3x4", "4x5", "5x6", "6x6"], "prompt": "Draw an array and write the multiplication sentence."}, {"id": "division-sharing", "title": "Division: Share Equally", "emoji": "🍪", "category": "math", "categoryLabel": "Math", "age": "9-10 11-12", "level": "Advanced", "tags": ["Division", "Sharing"], "description": "Share objects equally into groups.", "skills": ["Division", "Equal groups", "Reasoning"], "items": ["8 into 2 groups", "12 into 3 groups", "15 into 5 groups", "20 into 4 groups", "18 into 6 groups"], "prompt": "Share equally and write how many are in each group."}, {"id": "fractions-pizza", "title": "Fractions Pizza", "emoji": "🍕", "category": "math", "categoryLabel": "Math", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Fractions", "Parts"], "description": "Understand halves, thirds, and quarters using pizza models.", "skills": ["Fractions", "Part-whole", "Visual math"], "items": ["1/2", "1/3", "1/4", "2/4", "3/4"], "prompt": "Color the fraction shown and write the fraction name."}, {"id": "time-clock", "title": "Tell the Time", "emoji": "🕒", "category": "math", "categoryLabel": "Math", "age": "7-8 9-10", "level": "Medium", "tags": ["Time", "Clock"], "description": "Read analog and digital clock times.", "skills": ["Time reading", "Daily routine", "Math vocabulary"], "items": ["3:00", "5:30", "7:15", "9:45", "12:00"], "prompt": "Draw hands on the clock and write the digital time."}, {"id": "money-counting", "title": "Money Counting Practice", "emoji": "💰", "category": "math", "categoryLabel": "Math", "age": "9-10 11-12", "level": "Advanced", "tags": ["Money", "Addition"], "description": "Add coins or simple prices in pretend shopping tasks.", "skills": ["Money sense", "Addition", "Real-life math"], "items": ["Rs 5", "Rs 10", "Rs 20", "Rs 50", "Rs 100"], "prompt": "Add the prices and write the total amount."}, {"id": "word-problems", "title": "Math Word Problems", "emoji": "🧮", "category": "math", "categoryLabel": "Math", "age": "9-10 11-12", "level": "Advanced", "tags": ["Word Problems", "Reasoning"], "description": "Solve real-life addition, subtraction, multiplication, and division problems.", "skills": ["Problem solving", "Reading math", "Reasoning"], "items": ["find total", "how many left", "equal groups", "difference", "twice as many"], "prompt": "Underline key numbers, choose the operation, and solve."}, {"id": "five-senses", "title": "Five Senses Worksheet", "emoji": "👃", "category": "science", "categoryLabel": "Science", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Body", "Senses"], "description": "Match body parts with the five senses.", "skills": ["Observation", "Body awareness", "Science vocabulary"], "items": ["see", "hear", "smell", "taste", "touch"], "prompt": "Match each sense to the correct body part and draw an example."}, {"id": "living-nonliving", "title": "Living & Non-Living Sort", "emoji": "🌱", "category": "science", "categoryLabel": "Science", "age": "5-6 7-8", "level": "Easy", "tags": ["Sorting", "Nature"], "description": "Sort objects into living and non-living groups.", "skills": ["Classification", "Observation", "Nature"], "items": ["cat", "tree", "rock", "chair", "bird"], "prompt": "Write each item under Living or Non-Living."}, {"id": "animal-habitats", "title": "Animal Habitats", "emoji": "🦁", "category": "science", "categoryLabel": "Science", "age": "7-8 9-10", "level": "Medium", "tags": ["Animals", "Habitats"], "description": "Match animals with their homes and environments.", "skills": ["Life science", "Matching", "Vocabulary"], "items": ["lion-savanna", "fish-water", "camel-desert", "bird-nest", "frog-pond"], "prompt": "Match each animal to its habitat and write one fact."}, {"id": "plant-parts", "title": "Parts of a Plant", "emoji": "🌿", "category": "science", "categoryLabel": "Science", "age": "7-8 9-10", "level": "Medium", "tags": ["Plants", "Labeling"], "description": "Label root, stem, leaf, flower, and seed.", "skills": ["Labeling", "Life science", "Observation"], "items": ["root", "stem", "leaf", "flower", "seed"], "prompt": "Label the plant parts and write what each part does."}, {"id": "weather-chart", "title": "Weather Chart", "emoji": "☀️", "category": "science", "categoryLabel": "Science", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Weather", "Observation"], "description": "Observe daily weather and record it in a chart.", "skills": ["Data collection", "Observation", "Weather words"], "items": ["sunny", "cloudy", "rainy", "windy", "hot/cold"], "prompt": "Record the weather for five days and circle the most common."}, {"id": "water-cycle", "title": "Water Cycle Labels", "emoji": "💧", "category": "science", "categoryLabel": "Science", "age": "9-10 11-12", "level": "Advanced", "tags": ["Water Cycle", "Earth Science"], "description": "Label evaporation, condensation, precipitation, and collection.", "skills": ["Earth science", "Sequencing", "Vocabulary"], "items": ["evaporation", "condensation", "precipitation", "collection", "sun"], "prompt": "Label the water cycle and explain it in four steps."}, {"id": "float-sink", "title": "Float or Sink Table", "emoji": "🚢", "category": "science", "categoryLabel": "Science", "age": "5-6 7-8 9-10", "level": "Medium", "tags": ["Experiment", "Observation"], "description": "Predict and test which objects float or sink.", "skills": ["Prediction", "Testing", "Recording"], "items": ["leaf", "stone", "spoon", "pencil", "bottle cap"], "prompt": "Predict, test, and record whether each object floats or sinks."}, {"id": "magnet-test", "title": "Magnet Test Sheet", "emoji": "🧲", "category": "science", "categoryLabel": "Science", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Magnetism", "Experiment"], "description": "Test objects to see whether they are magnetic.", "skills": ["Testing", "Materials", "Recording"], "items": ["paper clip", "coin", "wood", "plastic cap", "key"], "prompt": "Predict and test which objects a magnet attracts."}, {"id": "food-groups", "title": "Healthy Food Groups", "emoji": "🥗", "category": "science", "categoryLabel": "Science", "age": "7-8 9-10", "level": "Medium", "tags": ["Health", "Nutrition"], "description": "Sort foods into fruits, vegetables, grains, protein, and dairy.", "skills": ["Health science", "Classification", "Daily habits"], "items": ["apple", "rice", "milk", "egg", "carrot"], "prompt": "Sort each food and write one healthy meal."}, {"id": "arabic-alif-baa-taa", "title": "Arabic Letters: Alif Baa Taa", "emoji": "ا", "category": "arabic", "categoryLabel": "Arabic", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Letters", "Tracing"], "description": "Trace and recognize the first Arabic letters.", "skills": ["Arabic letter recognition", "Tracing", "Pronunciation"], "items": ["ا", "ب", "ت", "ث", "ج"], "prompt": "Trace each letter and say its name aloud."}, {"id": "arabic-letter-match", "title": "Arabic Letter Match", "emoji": "ب", "category": "arabic", "categoryLabel": "Arabic", "age": "5-6 7-8", "level": "Easy", "tags": ["Matching", "Letters"], "description": "Match Arabic letters with the same letter shape.", "skills": ["Visual matching", "Letter recognition", "Memory"], "items": ["ا with ا", "ب with ب", "ت with ت", "ج with ج", "د with د"], "prompt": "Match each Arabic letter with the same letter."}, {"id": "arabic-colors", "title": "Arabic Colors Practice", "emoji": "🌈", "category": "arabic", "categoryLabel": "Arabic", "age": "5-6 7-8 9-10", "level": "Medium", "tags": ["Colors", "Vocabulary"], "description": "Practice Arabic color words with objects.", "skills": ["Vocabulary", "Color recognition", "Speaking"], "items": ["red", "blue", "green", "yellow", "white"], "prompt": "Color the object and say the color word with support."}, {"id": "arabic-numbers", "title": "Arabic Numbers 1–10", "emoji": "١", "category": "arabic", "categoryLabel": "Arabic", "age": "5-6 7-8", "level": "Easy", "tags": ["Numbers", "Tracing"], "description": "Trace Arabic numerals from 1 to 10.", "skills": ["Arabic numbers", "Counting", "Tracing"], "items": ["١", "٢", "٣", "٤", "٥"], "prompt": "Trace the numbers and count objects aloud."}, {"id": "arabic-family-words", "title": "Arabic Family Words", "emoji": "👨‍👩‍👧", "category": "arabic", "categoryLabel": "Arabic", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Vocabulary", "Family"], "description": "Learn simple Arabic words for family members.", "skills": ["Vocabulary", "Reading", "Speaking"], "items": ["father", "mother", "brother", "sister", "family"], "prompt": "Match each family word and write it neatly."}, {"id": "arabic-body-parts", "title": "Arabic Body Parts", "emoji": "👂", "category": "arabic", "categoryLabel": "Arabic", "age": "7-8 9-10", "level": "Medium", "tags": ["Vocabulary", "Body"], "description": "Match body parts with Arabic vocabulary.", "skills": ["Vocabulary", "Body awareness", "Matching"], "items": ["head", "hand", "eye", "ear", "foot"], "prompt": "Match the body part and say the word aloud."}, {"id": "daily-dua-routine", "title": "Daily Dua Routine", "emoji": "🤲", "category": "islamic", "categoryLabel": "Islamic Values", "age": "5-6 7-8 9-10", "level": "Medium", "tags": ["Dua", "Routine"], "description": "Connect daily routines with remembrance and good manners.", "skills": ["Islamic routine", "Manners", "Reflection"], "items": ["before eating", "before sleeping", "waking up", "leaving home", "studying"], "prompt": "Match each routine with a good remembrance habit."}, {"id": "good-manners-checklist", "title": "Good Manners Checklist", "emoji": "🌟", "category": "islamic", "categoryLabel": "Islamic Values", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Manners", "Checklist"], "description": "Practice everyday manners through a simple checklist.", "skills": ["Self-checking", "Manners", "Habit building"], "items": ["say salam", "say please", "say thank you", "share", "help"], "prompt": "Tick the good manners you practiced today."}, {"id": "kindness-tracker", "title": "Kindness Tracker", "emoji": "💚", "category": "islamic", "categoryLabel": "Islamic Values", "age": "5-6 7-8 9-10 11-12", "level": "Easy", "tags": ["Kindness", "Values"], "description": "Track small acts of kindness during the week.", "skills": ["Reflection", "Good deeds", "Character"], "items": ["helped someone", "shared something", "spoke kindly", "forgave", "smiled"], "prompt": "Write one kind action you did each day."}, {"id": "gratitude-list", "title": "Gratitude List", "emoji": "🤍", "category": "islamic", "categoryLabel": "Islamic Values", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Gratitude", "Writing"], "description": "Write blessings and reflect on thankfulness.", "skills": ["Reflection", "Writing", "Positive thinking"], "items": ["family", "food", "health", "learning", "nature"], "prompt": "Write what you are thankful for and how you can show gratitude."}, {"id": "halal-haram-choices", "title": "Good Choices Sort", "emoji": "✅", "category": "islamic", "categoryLabel": "Islamic Values", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Choices", "Values"], "description": "Sort actions into good choices and wrong choices using child-friendly examples.", "skills": ["Moral reasoning", "Decision making", "Reflection"], "items": ["telling truth", "lying", "helping parent", "wasting food", "sharing"], "prompt": "Sort the actions and write one better choice."}, {"id": "prophet-character", "title": "Prophet ﷺ Character Reflection", "emoji": "🌙", "category": "islamic", "categoryLabel": "Islamic Values", "age": "9-10 11-12", "level": "Advanced", "tags": ["Seerah", "Character"], "description": "Reflect on mercy, honesty, patience, and kindness.", "skills": ["Reflection", "Character education", "Writing"], "items": ["mercy", "honesty", "patience", "kindness", "trust"], "prompt": "Choose one character quality and write how a child can practice it."}, {"id": "mosque-etiquette", "title": "Mosque Manners", "emoji": "🕌", "category": "islamic", "categoryLabel": "Islamic Values", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Manners", "Mosque"], "description": "Learn respectful behavior in the mosque.", "skills": ["Manners", "Community awareness", "Self-control"], "items": ["quiet voice", "clean clothes", "respect others", "follow parents", "keep place clean"], "prompt": "Tick good mosque manners and draw one example."}, {"id": "feelings-chart", "title": "Feelings Chart", "emoji": "😊", "category": "life-skills", "categoryLabel": "Life Skills", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Feelings", "SEL"], "description": "Identify feelings and talk about them kindly.", "skills": ["Emotional vocabulary", "Self-awareness", "Speaking"], "items": ["happy", "sad", "angry", "worried", "excited"], "prompt": "Circle how you feel and say why."}, {"id": "calm-down-plan", "title": "Calm Down Plan", "emoji": "🧘", "category": "life-skills", "categoryLabel": "Life Skills", "age": "5-6 7-8 9-10 11-12", "level": "Medium", "tags": ["Self-control", "Calm"], "description": "Create a simple plan for handling big feelings.", "skills": ["Self-regulation", "Problem solving", "Reflection"], "items": ["breathe", "count", "ask for help", "drink water", "talk kindly"], "prompt": "Choose three calm actions you can use when upset."}, {"id": "friendship-choices", "title": "Friendship Choices", "emoji": "🤝", "category": "life-skills", "categoryLabel": "Life Skills", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Friendship", "Choices"], "description": "Choose kind actions in friendship situations.", "skills": ["Empathy", "Decision making", "Communication"], "items": ["share", "listen", "include", "apologize", "forgive"], "prompt": "Read each situation and choose the kind response."}, {"id": "responsibility-chart", "title": "Responsibility Chart", "emoji": "✅", "category": "life-skills", "categoryLabel": "Life Skills", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Responsibility", "Checklist"], "description": "Track daily responsibilities at home and school.", "skills": ["Independence", "Habits", "Self-checking"], "items": ["pack bag", "finish homework", "help parent", "clean space", "sleep on time"], "prompt": "Tick the responsibilities you completed today."}, {"id": "safety-rules", "title": "Safety Rules Worksheet", "emoji": "🛡️", "category": "life-skills", "categoryLabel": "Life Skills", "age": "5-6 7-8 9-10", "level": "Medium", "tags": ["Safety", "Rules"], "description": "Learn basic safety rules for home, road, and online spaces.", "skills": ["Safety awareness", "Decision making", "Rules"], "items": ["road safety", "home safety", "stranger safety", "online safety", "emergency help"], "prompt": "Match each situation with the safest action."}, {"id": "goal-setting", "title": "My Learning Goal", "emoji": "🎯", "category": "life-skills", "categoryLabel": "Life Skills", "age": "9-10 11-12", "level": "Advanced", "tags": ["Goals", "Reflection"], "description": "Set a small learning goal and track progress.", "skills": ["Planning", "Reflection", "Growth mindset"], "items": ["goal", "steps", "practice", "support", "review"], "prompt": "Write one goal, three steps, and how you will know you improved."}, {"id": "community-helpers", "title": "Community Helpers", "emoji": "👩‍⚕️", "category": "gk", "categoryLabel": "General Knowledge", "age": "5-6 7-8", "level": "Easy", "tags": ["People", "Community"], "description": "Match helpers with their jobs and tools.", "skills": ["Social knowledge", "Matching", "Vocabulary"], "items": ["doctor", "teacher", "farmer", "police officer", "firefighter"], "prompt": "Match each helper with their work and tool."}, {"id": "transport-sort", "title": "Transport Sort", "emoji": "🚗", "category": "gk", "categoryLabel": "General Knowledge", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Transport", "Sorting"], "description": "Sort vehicles into land, air, and water transport.", "skills": ["Classification", "Vocabulary", "World knowledge"], "items": ["car", "airplane", "boat", "train", "helicopter"], "prompt": "Sort each transport into land, air, or water."}, {"id": "continents-oceans", "title": "Continents & Oceans", "emoji": "🌍", "category": "gk", "categoryLabel": "General Knowledge", "age": "9-10 11-12", "level": "Advanced", "tags": ["World", "Map"], "description": "Practice continents and oceans with map labeling.", "skills": ["Map skills", "World knowledge", "Labeling"], "items": ["Asia", "Africa", "Europe", "Pacific Ocean", "Indian Ocean"], "prompt": "Label the map and write one fact about a continent."}, {"id": "days-months", "title": "Days & Months", "emoji": "📅", "category": "gk", "categoryLabel": "General Knowledge", "age": "5-6 7-8", "level": "Easy", "tags": ["Calendar", "Time"], "description": "Practice days of the week and months of the year.", "skills": ["Sequencing", "Calendar awareness", "Time vocabulary"], "items": ["Monday", "Tuesday", "January", "February", "December"], "prompt": "Put the days and months in the correct order."}, {"id": "healthy-habits", "title": "Healthy Habits", "emoji": "🥛", "category": "gk", "categoryLabel": "General Knowledge", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Health", "Habits"], "description": "Choose healthy habits for body and mind.", "skills": ["Health awareness", "Decision making", "Daily routine"], "items": ["drink water", "wash hands", "sleep well", "brush teeth", "exercise"], "prompt": "Tick healthy habits and write one habit to practice today."}, {"id": "coloring-values", "title": "Coloring Values Sheet", "emoji": "🎨", "category": "creative", "categoryLabel": "Creative", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Coloring", "Values"], "description": "Color value words and talk about good character.", "skills": ["Creativity", "Values vocabulary", "Fine motor"], "items": ["kindness", "honesty", "respect", "patience", "gratitude"], "prompt": "Color each value word and draw one matching action."}, {"id": "draw-and-label", "title": "Draw and Label", "emoji": "🏷️", "category": "creative", "categoryLabel": "Creative", "age": "5-6 7-8 9-10", "level": "Medium", "tags": ["Drawing", "Labels"], "description": "Draw an object and label its parts.", "skills": ["Labeling", "Observation", "Vocabulary"], "items": ["house", "plant", "animal", "school bag", "mosque"], "prompt": "Draw the object and add five labels."}, {"id": "islamic-patterns", "title": "Islamic Pattern Art", "emoji": "🔶", "category": "creative", "categoryLabel": "Creative", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Patterns", "Art"], "description": "Create repeating geometric patterns inspired by Islamic art.", "skills": ["Patterning", "Geometry", "Creativity"], "items": ["circle", "square", "star", "diamond", "repeat"], "prompt": "Use shapes to create a repeating pattern and color it neatly."}, {"id": "comic-strip", "title": "Comic Strip Planner", "emoji": "💬", "category": "creative", "categoryLabel": "Creative", "age": "9-10 11-12", "level": "Advanced", "tags": ["Story", "Art"], "description": "Plan a short comic with pictures and speech bubbles.", "skills": ["Storytelling", "Sequencing", "Creative writing"], "items": ["panel 1", "panel 2", "panel 3", "speech bubble", "ending"], "prompt": "Draw three panels and write speech bubbles."}, {"id": "design-a-book-cover", "title": "Design a Book Cover", "emoji": "📚", "category": "creative", "categoryLabel": "Creative", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Design", "Reading"], "description": "Create a book cover with title, picture, author, and blurb.", "skills": ["Design thinking", "Writing", "Creativity"], "items": ["title", "author", "picture", "blurb", "moral"], "prompt": "Design a cover for a storybook and write a short blurb."}, {"id": "poster-making", "title": "Poster Making Sheet", "emoji": "🖼️", "category": "creative", "categoryLabel": "Creative", "age": "9-10 11-12", "level": "Advanced", "tags": ["Poster", "Presentation"], "description": "Plan a poster with heading, images, facts, and message.", "skills": ["Visual communication", "Organization", "Writing"], "items": ["heading", "main message", "three facts", "picture", "call to action"], "prompt": "Plan and design a poster on a helpful topic."}, {"id": "maze-challenge", "title": "Maze Challenge", "emoji": "🌀", "category": "logic", "categoryLabel": "Logic & STEM", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Maze", "Problem Solving"], "description": "Find a path through a maze and explain your strategy.", "skills": ["Planning", "Direction", "Problem solving"], "items": ["start", "left", "right", "forward", "finish"], "prompt": "Draw a path from start to finish without crossing walls."}, {"id": "spot-the-difference", "title": "Spot the Difference", "emoji": "🔍", "category": "logic", "categoryLabel": "Logic & STEM", "age": "3-4 5-6 7-8", "level": "Easy", "tags": ["Observation", "Attention"], "description": "Compare two pictures and find differences.", "skills": ["Attention", "Visual scanning", "Comparison"], "items": ["color", "shape", "size", "missing object", "position"], "prompt": "Find five differences and circle them."}, {"id": "logic-grid", "title": "Simple Logic Grid", "emoji": "🧩", "category": "logic", "categoryLabel": "Logic & STEM", "age": "9-10 11-12", "level": "Advanced", "tags": ["Logic", "Reasoning"], "description": "Use clues to solve a small logic puzzle.", "skills": ["Deduction", "Careful reading", "Reasoning"], "items": ["clue 1", "clue 2", "clue 3", "match", "answer"], "prompt": "Read the clues and fill in the correct matches."}, {"id": "coding-arrows", "title": "Coding Arrows", "emoji": "➡️", "category": "logic", "categoryLabel": "Logic & STEM", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Coding", "Directions"], "description": "Use arrows to guide a character through a grid.", "skills": ["Algorithmic thinking", "Direction", "Sequencing"], "items": ["up", "down", "left", "right", "repeat"], "prompt": "Write arrow commands to move from start to finish."}, {"id": "symmetry-drawing", "title": "Symmetry Drawing", "emoji": "🦋", "category": "logic", "categoryLabel": "Logic & STEM", "age": "7-8 9-10", "level": "Medium", "tags": ["Symmetry", "Drawing"], "description": "Complete the other half of a symmetrical picture.", "skills": ["Spatial reasoning", "Drawing", "Geometry"], "items": ["butterfly", "heart", "leaf", "star", "pattern"], "prompt": "Complete the missing half so both sides match."}, {"id": "data-bar-graph", "title": "Simple Bar Graph", "emoji": "📊", "category": "logic", "categoryLabel": "Logic & STEM", "age": "9-10 11-12", "level": "Advanced", "tags": ["Data", "Graph"], "description": "Read and create a bar graph using simple data.", "skills": ["Data handling", "Graphing", "Comparison"], "items": ["apples 4", "bananas 6", "grapes 3", "mangoes 5", "oranges 2"], "prompt": "Draw a bar graph and answer comparison questions."}, {"id": "compound-words", "title": "Compound Words", "emoji": "🔗", "category": "english", "categoryLabel": "English", "age": "9-10 11-12", "level": "Advanced", "tags": ["Vocabulary", "Word Building"], "description": "Join two words to make a new compound word.", "skills": ["Vocabulary", "Word Building", "Practice"], "items": ["sun+flower", "rain+bow", "tooth+brush", "note+book", "class+room"], "prompt": "Join the words, write the compound word, and use it in a sentence."}, {"id": "prefix-suffix", "title": "Prefix & Suffix Practice", "emoji": "➕", "category": "english", "categoryLabel": "English", "age": "9-10 11-12", "level": "Advanced", "tags": ["Word Study", "Vocabulary"], "description": "Build new words using prefixes and suffixes.", "skills": ["Word Study", "Vocabulary", "Practice"], "items": ["un-", "re-", "pre-", "-ful", "-less"], "prompt": "Add a prefix or suffix and write the meaning."}, {"id": "fact-opinion", "title": "Fact or Opinion", "emoji": "⚖️", "category": "reading", "categoryLabel": "Reading", "age": "9-10 11-12", "level": "Advanced", "tags": ["Critical Reading", "Thinking"], "description": "Sort statements into facts and opinions.", "skills": ["Critical Reading", "Thinking", "Practice"], "items": ["can be proven", "personal feeling", "evidence", "I think", "data"], "prompt": "Read each statement and mark Fact or Opinion."}, {"id": "greater-less", "title": "Greater Than Less Than", "emoji": "🐊", "category": "math", "categoryLabel": "Math", "age": "5-6 7-8", "level": "Easy", "tags": ["Comparison", "Numbers"], "description": "Compare numbers using greater than, less than, and equal signs.", "skills": ["Comparison", "Numbers", "Practice"], "items": ["5 __ 3", "8 __ 8", "2 __ 7", "10 __ 6", "9 __ 4"], "prompt": "Write >, <, or = in each blank."}, {"id": "measurement", "title": "Measurement Practice", "emoji": "📏", "category": "math", "categoryLabel": "Math", "age": "7-8 9-10", "level": "Medium", "tags": ["Measurement", "Length"], "description": "Measure objects using non-standard or standard units.", "skills": ["Measurement", "Length", "Practice"], "items": ["pencil", "book", "table", "shoe", "leaf"], "prompt": "Measure each object and write the length."}, {"id": "materials-properties", "title": "Materials and Properties", "emoji": "🧱", "category": "science", "categoryLabel": "Science", "age": "7-8 9-10", "level": "Medium", "tags": ["Materials", "Properties"], "description": "Sort materials by hard, soft, rough, smooth, waterproof, and flexible.", "skills": ["Materials", "Properties", "Practice"], "items": ["wood", "metal", "plastic", "cloth", "glass"], "prompt": "Write one property for each material."}, {"id": "simple-machines", "title": "Simple Machines", "emoji": "⚙️", "category": "science", "categoryLabel": "Science", "age": "9-10 11-12", "level": "Advanced", "tags": ["Machines", "STEM"], "description": "Identify levers, wheels, pulleys, ramps, and screws.", "skills": ["Machines", "STEM", "Practice"], "items": ["lever", "wheel", "pulley", "inclined plane", "screw"], "prompt": "Match each simple machine to an example."}, {"id": "flags-countries", "title": "Flags and Countries", "emoji": "🚩", "category": "gk", "categoryLabel": "General Knowledge", "age": "9-10 11-12", "level": "Advanced", "tags": ["World", "Flags"], "description": "Match flags or country names with basic facts.", "skills": ["World", "Flags", "Practice"], "items": ["Pakistan", "Turkey", "Saudi Arabia", "Malaysia", "Indonesia"], "prompt": "Write one fact about each country."}, {"id": "screen-time-balance", "title": "Screen Time Balance", "emoji": "📱", "category": "life-skills", "categoryLabel": "Life Skills", "age": "9-10 11-12", "level": "Medium", "tags": ["Digital Habits", "Balance"], "description": "Plan healthy screen time and offline activities.", "skills": ["Digital Habits", "Balance", "Practice"], "items": ["learn", "play outside", "read", "help family", "rest"], "prompt": "Write a balanced daily plan."}, {"id": "mind-map", "title": "Mind Map Worksheet", "emoji": "🕸️", "category": "creative", "categoryLabel": "Creative", "age": "9-10 11-12", "level": "Advanced", "tags": ["Planning", "Ideas"], "description": "Create a mind map around one topic.", "skills": ["Planning", "Ideas", "Practice"], "items": ["main topic", "idea 1", "idea 2", "idea 3", "example"], "prompt": "Put the topic in the center and add connected ideas."}, {"id": "tangram-shapes", "title": "Tangram Shape Puzzle", "emoji": "🟨", "category": "logic", "categoryLabel": "Logic & STEM", "age": "7-8 9-10 11-12", "level": "Medium", "tags": ["Spatial", "Puzzle"], "description": "Use shapes to build animals, houses, and patterns.", "skills": ["Spatial", "Puzzle", "Practice"], "items": ["triangle", "square", "parallelogram", "rotate", "combine"], "prompt": "Use shapes to make a picture and label the pieces."}, {"id": "respect-parents", "title": "Respecting Parents", "emoji": "👨‍👩‍👧", "category": "islamic", "categoryLabel": "Islamic Values", "age": "5-6 7-8 9-10", "level": "Easy", "tags": ["Manners", "Family"], "description": "Practice respectful words and helpful actions at home.", "skills": ["Manners", "Family", "Practice"], "items": ["listen", "help", "speak kindly", "thank", "obey good instruction"], "prompt": "Tick actions that show respect and write one promise."}];
+    const categories = [["all", "All Worksheets"], ["early-skills", "Early Skills"], ["english", "English"], ["reading", "Reading"], ["writing", "Writing"], ["math", "Math"], ["science", "Science"], ["arabic", "Arabic"], ["islamic", "Islamic Values"], ["life-skills", "Life Skills"], ["gk", "General Knowledge"], ["creative", "Creative"], ["logic", "Logic & STEM"]];
+    const ages = [["all", "All Ages"], ["3-4", "Ages 3–4"], ["5-6", "Ages 5–6"], ["7-8", "Ages 7–8"], ["9-10", "Ages 9–10"], ["11-12", "Ages 11–12"]];
+    const progressKey = "alhayatMegaWorksheetsProgress";
+    let activeAge = "all";
+    let activeType = "all";
+    let soundsEnabled = localStorage.getItem("alhayatWorksheetSounds") !== "off";
+    let audioContext;
+
+    function levelClass(level) {
+      return level === "Easy" ? "level-easy" : level === "Medium" ? "level-medium" : "level-advanced";
+    }
+
+    function renderCategories() {
+      const grid = document.getElementById("categoryGrid");
+      grid.innerHTML = categories.filter(c => c[0] !== "all").map(([id, label]) => {
+        const count = worksheets.filter(w => w.category === id).length;
+        return `<article class="category-card" onclick="setCategory('${id}')"><h3>${label}</h3><strong>${count}</strong><span>worksheet types</span></article>`;
+      }).join("");
+    }
+
+    function renderFilters() {
+      document.getElementById("ageFilters").innerHTML = ages.map(([id, label]) => `<button class="chip ${id === 'all' ? 'active' : ''}" type="button" data-age="${id}">${label}</button>`).join("");
+      document.getElementById("categoryFilters").innerHTML = categories.map(([id, label]) => `<button class="chip ${id === 'all' ? 'active' : ''}" type="button" data-type="${id}">${label}</button>`).join("");
+    }
+
+    function renderWorksheets() {
+      const grid = document.getElementById("worksheetGrid");
+      grid.innerHTML = worksheets.map(w => `
+        <article class="worksheet-card" data-id="${w.id}" data-age="${w.age}" data-type="${w.category}" data-search="${[w.title,w.categoryLabel,w.level,w.description,...w.tags,...w.skills,...w.items].join(' ').toLowerCase()}">
+          <div class="worksheet-top">
+            <div>
+              <h3>${w.title}</h3>
+              <div class="worksheet-tags">
+                <span class="tag ${levelClass(w.level)}">${w.level}</span>
+                <span class="tag">${w.categoryLabel}</span>
+                <span class="tag">${w.tags[0] || "Practice"}</span>
+              </div>
+            </div>
+            <div class="worksheet-icon">${w.emoji}</div>
+          </div>
+          <p>${w.description}</p>
+          <div class="worksheet-actions">
+            <button class="mini-btn" type="button" onclick="openWorksheet('${w.id}')">Open</button>
+            <button class="mini-btn" type="button" onclick="speakWorksheet('${w.id}')">Listen</button>
+            <button class="mini-btn" type="button" onclick="markWorksheetDone('${w.id}')">Complete</button>
+          </div>
+        </article>
+      `).join("");
+      updateTracker();
+    }
+
+    function makePracticePaper(w) {
+      const itemBoxes = w.items.map((item, index) => `<div class="worksheet-mini-box"><strong>${index + 1}.</strong> ${item}<div class="worksheet-line"></div></div>`).join("");
+      const skills = w.skills.map(skill => `<li>${skill}</li>`).join("");
+      return `
+        <h3>${w.title} Practice Sheet</h3>
+        <p><strong>Name:</strong> ____________________ &nbsp;&nbsp; <strong>Date:</strong> ____________________</p>
+        <div class="worksheet-box"><strong>Task:</strong> ${w.prompt}</div>
+        <h3>Practice Items</h3>
+        <div class="worksheet-grid-small">${itemBoxes}</div>
+        <h3>Skill Focus</h3>
+        <ul>${skills}</ul>
+        <h3>My Best Answer / Drawing</h3>
+        <div class="worksheet-line"></div><div class="worksheet-line"></div><div class="worksheet-line"></div>
+        <h3>Self Check</h3>
+        <div class="worksheet-grid-small">
+          <div class="worksheet-mini-box">I tried carefully: ☐</div>
+          <div class="worksheet-mini-box">I checked one mistake: ☐</div>
+          <div class="worksheet-mini-box">I wrote neatly: ☐</div>
+          <div class="worksheet-mini-box">I can explain my work: ☐</div>
+        </div>
+      `;
+    }
+
+    function getProgress() {
+      const saved = localStorage.getItem(progressKey);
+      if (!saved) return {stars:0, worksheets:[], missions:[], prints:0, neatness:0};
+      try { return JSON.parse(saved); } catch { return {stars:0, worksheets:[], missions:[], prints:0, neatness:0}; }
+    }
+
+    function saveProgress(progress) {
+      localStorage.setItem(progressKey, JSON.stringify(progress));
+      updateTracker();
+    }
+
+    function updateTracker() {
+      const progress = getProgress();
+      const set = (id, value) => { const el = document.getElementById(id); if (el) el.textContent = value; };
+      set("starsCount", progress.stars || 0);
+      set("worksheetsCount", progress.worksheets.length || 0);
+      set("missionCount", progress.missions.length || 0);
+      set("printCount", progress.prints || 0);
+      set("neatnessCount", progress.neatness || 0);
+
+      document.querySelectorAll(".worksheet-card").forEach(card => {
+        const id = card.dataset.id;
+        const button = card.querySelector(".worksheet-actions button:nth-child(3)");
+        if (!button) return;
+        if (progress.worksheets.includes(id)) {
+          button.textContent = "✅ Done";
+          button.classList.add("done");
+        } else {
+          button.textContent = "Complete";
+          button.classList.remove("done");
+        }
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+    }
+
+    function getAudioContext() {
+      if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      return audioContext;
+    }
+
+    function tone(frequency, duration, type, gainValue, delay=0) {
+      if (!soundsEnabled) return;
+      try {
+        const ctx = getAudioContext();
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+        oscillator.type = type || "sine";
+        oscillator.frequency.setValueAtTime(frequency, ctx.currentTime + delay);
+        gain.gain.setValueAtTime(0.0001, ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(gainValue || 0.05, ctx.currentTime + delay + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + duration);
+        oscillator.connect(gain); gain.connect(ctx.destination);
+        oscillator.start(ctx.currentTime + delay); oscillator.stop(ctx.currentTime + delay + duration + 0.02);
+      } catch (error) {}
+    }
+
+    function playSound(kind) {
+      if (!soundsEnabled) return;
+      if (kind === "tap") tone(520,.08,"triangle",.04);
+      else if (kind === "pop") { tone(660,.08,"sine",.05); tone(880,.09,"sine",.04,.08); }
+      else if (kind === "sparkle") { tone(720,.07,"sine",.045); tone(940,.08,"sine",.04,.08); tone(1180,.1,"sine",.035,.16); }
+      else if (kind === "success") { tone(523,.1,"triangle",.055); tone(659,.1,"triangle",.055,.09); tone(784,.15,"triangle",.06,.18); }
+      else if (kind === "wrong") { tone(220,.14,"sawtooth",.035); tone(180,.14,"sawtooth",.03,.12); }
+      else tone(600,.08,"sine",.04);
+    }
+
+    function updateSoundToggle() {
+      document.getElementById("soundToggle").textContent = soundsEnabled ? "🔊 Sounds On" : "🔇 Sounds Off";
+    }
+
+    function makeConfetti(count=32) {
+      const colors = ["#2563eb","#14b8a6","#f97316","#ec4899","#8b5cf6","#f59e0b","#22c55e"];
+      for (let i=0; i<count; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.style.left = Math.random()*100 + "vw";
+        piece.style.background = colors[Math.floor(Math.random()*colors.length)];
+        piece.style.animationDelay = Math.random()*.35 + "s";
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 2100);
+      }
+    }
+
+    function openWorksheet(id) {
+      const w = worksheets.find(item => item.id === id);
+      if (!w) return;
+      playSound("pop");
+      const instructions = [
+        "Read the worksheet title and purpose.",
+        "Complete each practice item slowly and neatly.",
+        "Use pencil first so you can correct mistakes.",
+        "Explain one answer to a parent or teacher."
+      ].map(item => `<li>${item}</li>`).join("");
+      const questions = [
+        "What was the easiest part?",
+        "What was the most difficult part?",
+        "Which answer did you improve?",
+        "Can you explain one answer in your own words?"
+      ].map(item => `<li>${item}</li>`).join("");
+
+      document.getElementById("worksheetContent").innerHTML = `
+        <h2 id="modalTitle">${w.emoji} ${w.title}</h2>
+        <div class="meta">
+          <span class="tag">${w.age.replaceAll(" ", ", Ages ")}</span>
+          <span class="tag ${levelClass(w.level)}">${w.level}</span>
+          <span class="tag">${w.categoryLabel}</span>
+          ${w.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+        </div>
+        <div class="worksheet-box"><strong>Purpose:</strong> ${w.description}</div>
+        <h3>Instructions</h3>
+        <ol>${instructions}</ol>
+        <div class="worksheet-paper">${makePracticePaper(w)}</div>
+        <h3>Parent / Teacher Questions</h3>
+        <ul>${questions}</ul>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;">
+          <button class="btn btn-primary" type="button" onclick="speakWorksheet('${id}')">🔊 Listen</button>
+          <button class="btn btn-green" type="button" onclick="markWorksheetDone('${id}')">⭐ Mark Complete</button>
+          <button class="btn btn-secondary" type="button" onclick="printWorksheet()">🖨️ Print</button>
+          <button class="btn btn-secondary" type="button" onclick="stopSpeaking()">Stop Sound</button>
+        </div>
+      `;
+      document.getElementById("worksheetModal").classList.add("open");
+    }
+
+    function closeWorksheet() {
+      document.getElementById("worksheetModal").classList.remove("open");
+      stopSpeaking();
+    }
+
+    function printWorksheet() {
+      const progress = getProgress();
+      progress.prints = (progress.prints || 0) + 1;
+      saveProgress(progress);
+      playSound("tap");
+      window.print();
+    }
+
+    function speakText(text) {
+      playSound("tap");
+      if (!("speechSynthesis" in window)) { showToast("Audio reading is not supported in this browser."); return; }
+      stopSpeaking();
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = "en-US"; speech.rate = 0.88; speech.pitch = 1.06;
+      window.speechSynthesis.speak(speech);
+    }
+
+    function speakWorksheet(id) {
+      const w = worksheets.find(item => item.id === id);
+      if (!w) return;
+      speakText(`${w.title}. Category: ${w.categoryLabel}. ${w.description} Task: ${w.prompt}`);
+    }
+
+    function stopSpeaking() {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    }
+
+    function markWorksheetDone(id) {
+      const progress = getProgress();
+      if (!progress.worksheets.includes(id)) {
+        progress.worksheets.push(id);
+        progress.stars += 4;
+        progress.neatness += 1;
+        playSound("success");
+        makeConfetti(26);
+        showToast("Excellent work! Worksheet complete. You earned 4 stars! ⭐");
+      } else {
+        playSound("tap");
+        showToast("This worksheet is already complete. Try another one! 🌟");
+      }
+      saveProgress(progress);
+    }
+
+    function completeMission(mission) {
+      const progress = getProgress();
+      if (!progress.missions.includes(mission)) {
+        progress.missions.push(mission);
+        progress.stars += 2;
+        playSound("success");
+        makeConfetti(18);
+        showToast("Practice mission complete! You earned 2 stars! 🎉");
+      } else {
+        playSound("tap");
+        showToast("Mission already completed. Well done! ✅");
+      }
+      saveProgress(progress);
+    }
+
+    function resetProgress() {
+      if (!confirm("Reset worksheet progress saved on this browser?")) return;
+      localStorage.removeItem(progressKey);
+      updateTracker();
+      playSound("tap");
+      showToast("Progress reset on this device.");
+    }
+
+    function celebrateProgress() {
+      const progress = getProgress();
+      if ((progress.stars || 0) === 0) {
+        playSound("tap");
+        showToast("Complete a worksheet first, then celebrate your progress! 🌟");
+        return;
+      }
+      playSound("success");
+      makeConfetti(45);
+      showToast(`Amazing! You have earned ${progress.stars} stars. Keep practicing! 🚀`);
+    }
+
+    function randomWorksheet() {
+      const visible = [...document.querySelectorAll(".worksheet-card:not(.hidden)")];
+      const cards = visible.length ? visible : [...document.querySelectorAll(".worksheet-card")];
+      const card = cards[Math.floor(Math.random() * cards.length)];
+      if (card) openWorksheet(card.dataset.id);
+    }
+
+    function setCategory(id) {
+      activeType = id;
+      document.querySelectorAll("[data-type]").forEach(btn => btn.classList.toggle("active", btn.dataset.type === id));
+      filterWorksheets();
+      document.getElementById("worksheet-shelf").scrollIntoView({behavior:"smooth"});
+      playSound("tap");
+    }
+
+    function filterWorksheets() {
+      const searchValue = document.getElementById("worksheetSearch").value.toLowerCase().trim();
+      const cards = document.querySelectorAll(".worksheet-card");
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const ageMatch = activeAge === "all" || card.dataset.age.includes(activeAge);
+        const typeMatch = activeType === "all" || card.dataset.type === activeType;
+        const searchText = card.dataset.search;
+        const searchMatch = !searchValue || searchText.includes(searchValue);
+        const visible = ageMatch && typeMatch && searchMatch;
+        card.classList.toggle("hidden", !visible);
+        if (visible) visibleCount++;
+      });
+      if (visibleCount === 0) showToast("No worksheet found. Try another age, type or keyword.");
+    }
+
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("show");
+      playSound("tap");
+    });
+
+    document.getElementById("soundToggle").addEventListener("click", () => {
+      soundsEnabled = !soundsEnabled;
+      localStorage.setItem("alhayatWorksheetSounds", soundsEnabled ? "on" : "off");
+      updateSoundToggle();
+      if (soundsEnabled) { playSound("sparkle"); showToast("Sounds are on. Click buttons to hear worksheet sounds! 🔊"); }
+      else showToast("Sounds are off. You can turn them on anytime. 🔇");
+    });
+
+    document.getElementById("worksheetSearch").addEventListener("input", filterWorksheets);
+
+    document.getElementById("worksheetModal").addEventListener("click", event => {
+      if (event.target.id === "worksheetModal") closeWorksheet();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeWorksheet();
+    });
+
+    function wireFilters() {
+      document.querySelectorAll("[data-age]").forEach(button => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll("[data-age]").forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+          activeAge = button.dataset.age;
+          filterWorksheets();
+          playSound("tap");
+        });
+      });
+      document.querySelectorAll("[data-type]").forEach(button => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll("[data-type]").forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+          activeType = button.dataset.type;
+          filterWorksheets();
+          playSound("tap");
+        });
+      });
+    }
+
+    function initHoverSounds() {
+      document.querySelectorAll("a, button, .worksheet-card, .path-card, .skill-card, .stat-card, .category-card").forEach(item => {
+        item.addEventListener("mouseenter", () => {
+          if (window.matchMedia("(hover: hover)").matches) playSound("tap");
+        }, {passive:true});
+      });
+    }
+
+    renderCategories();
+    renderFilters();
+    renderWorksheets();
+    wireFilters();
+    initHoverSounds();
+    updateSoundToggle();
+    updateTracker();
+  </script>
+</body>
+</html>
