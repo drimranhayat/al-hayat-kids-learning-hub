@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>English for Kids | ABC Phonics, Daily Word & Progress | Al-Hayat Kids Learning Hub</title>
-  <meta name="description" content="English for Kids at Al-Hayat Kids Learning Hub. Learn with ABC phonics cards, alphabet sounds, a daily word bank, visual clues, audio listening, repeat practice, reading, grammar, writing, quizzes, stars, streaks, and safe local progress tracking." />
-  <meta name="keywords" content="English for kids, alphabet sounds for kids, ABC phonics, phonics for kids, word of the day for kids, reading practice for kids, grammar for kids, kids progress tracker, listen and repeat English" />
+
+  <title>English for Kids Ages 3–7 | Complete Lesson Library & Reading Games | Al-Hayat Kids Learning Hub</title>
+
+  <meta name="description" content="Complete age-based English for Kids lesson library for children ages 3–7. Alphabet, phonics, vocabulary, sight words, CVC words, rhyming, sentence reading, grammar, speaking, listening, story writing, quizzes, missions, whiteboard, audio, and progress tracking." />
+  <meta name="keywords" content="English for kids ages 3 4 5 6 7, phonics for kids, alphabet for kids, CVC words, sight words, reading for kids, writing for kids, grammar for kids, vocabulary games, English games for children" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/subjects/english.html" />
 
   <style>
     :root {
-      --green: #138a3d;
-      --green-dark: #075c2a;
-      --green-soft: #e8f8ee;
       --blue: #2563eb;
       --blue-dark: #1d4ed8;
       --blue-soft: #dbeafe;
       --sky: #38bdf8;
+      --sky-soft: #e0f2fe;
+      --green: #16a34a;
+      --green-dark: #166534;
+      --green-soft: #dcfce7;
       --orange: #f97316;
       --orange-soft: #ffedd5;
-      --yellow: #f6c445;
-      --yellow-soft: #fef3c7;
+      --gold: #f6c445;
+      --gold-soft: #fef3c7;
+      --purple: #7c3aed;
+      --purple-dark: #5b21b6;
       --purple-soft: #ede9fe;
+      --pink: #ec4899;
       --pink-soft: #fce7f3;
       --teal: #14b8a6;
       --teal-soft: #ccfbf1;
+      --red-soft: #fee2e2;
+      --lime-soft: #ecfccb;
+      --white: #ffffff;
       --text: #1f2937;
       --muted: #64748b;
       --border: #e5e7eb;
@@ -42,9 +51,10 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 28rem),
-        radial-gradient(circle at top right, rgba(246, 196, 69, 0.20), transparent 24rem),
-        linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(124, 58, 237, 0.14), transparent 28rem),
+        radial-gradient(circle at top right, rgba(246, 196, 69, 0.22), transparent 24rem),
+        radial-gradient(circle at 90% 70%, rgba(236, 72, 153, 0.12), transparent 22rem),
+        linear-gradient(180deg, #ffffff 0%, #fbf8ff 48%, #ffffff 100%);
       line-height: 1.6;
     }
 
@@ -76,23 +86,36 @@
       align-items: center;
       gap: 12px;
       font-weight: 900;
-      color: var(--green-dark);
+      color: var(--purple-dark);
     }
 
     .brand-icon {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       border-radius: 18px;
-      background: linear-gradient(135deg, var(--blue), var(--sky));
-      color: #fff;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: white;
       display: grid;
       place-items: center;
       font-size: 1.6rem;
-      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.20);
+      box-shadow: 0 12px 24px rgba(124, 58, 237, 0.20);
     }
 
-    .brand small { display: block; color: var(--muted); font-weight: 700; font-size: 0.78rem; margin-top: -2px; }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.78rem;
+      margin-top: -2px;
+    }
 
-    .nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     .nav a {
       padding: 10px 13px;
       border-radius: 999px;
@@ -100,8 +123,18 @@
       font-size: 0.94rem;
       transition: 0.2s ease;
     }
-    .nav a:hover, .nav a:focus { background: var(--blue-soft); color: var(--blue-dark); }
-    .nav .cta { background: var(--yellow); color: #111827; box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25); }
+
+    .nav a:hover, .nav a:focus {
+      background: linear-gradient(135deg, var(--purple-soft), var(--gold-soft));
+      color: var(--purple-dark);
+      box-shadow: 0 10px 20px rgba(124, 58, 237, 0.10);
+    }
+
+    .nav .cta {
+      background: var(--gold);
+      color: #111827;
+      box-shadow: 0 10px 20px rgba(246, 196, 69, 0.25);
+    }
 
     .audio-bar {
       position: sticky;
@@ -122,33 +155,62 @@
       padding: 8px 0;
     }
 
-    .audio-inner p { color: rgba(255,255,255,0.86); font-weight: 750; font-size: 0.94rem; }
-
-    .stop-sound {
-      border: 1px solid rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.10);
-      color: white;
-      border-radius: 999px;
-      padding: 8px 13px;
-      font-weight: 900;
-      cursor: pointer;
+    .audio-inner p {
+      color: rgba(255,255,255,0.86);
+      font-weight: 750;
+      font-size: 0.94rem;
     }
 
-    .hero { padding: 64px 0 44px; }
+    .sound-control-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .fun-sound-toggle, .stop-sound {
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fun-sound-toggle {
+      background: linear-gradient(135deg, rgba(246,196,69,0.95), rgba(236,72,153,0.92));
+      color: #0f172a;
+      box-shadow: 0 10px 22px rgba(246, 196, 69, 0.18);
+    }
+
+    .fun-sound-toggle.off, .stop-sound {
+      background: rgba(255,255,255,0.10);
+      color: white;
+    }
+
+    .fun-sound-toggle:hover,
+    .fun-sound-toggle:focus,
+    .stop-sound:hover,
+    .stop-sound:focus {
+      transform: translateY(-2px) scale(1.03);
+      filter: brightness(1.06);
+    }
+
+    .hero { padding: 58px 0 22px; }
 
     .hero-card {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
       background:
-        radial-gradient(circle at 88% 18%, rgba(56, 189, 248, 0.34), transparent 14rem),
-        radial-gradient(circle at 20% 80%, rgba(246, 196, 69, 0.24), transparent 16rem),
-        linear-gradient(135deg, #eff6ff, #ecfeff);
+        radial-gradient(circle at 88% 18%, rgba(236, 72, 153, 0.24), transparent 14rem),
+        radial-gradient(circle at 12% 80%, rgba(246, 196, 69, 0.28), transparent 16rem),
+        linear-gradient(135deg, #f5f3ff, #fefce8);
       border-radius: 34px;
       padding: clamp(26px, 5vw, 54px);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255,255,255,0.78);
       overflow: hidden;
     }
 
@@ -157,7 +219,7 @@
       align-items: center;
       gap: 8px;
       background: white;
-      color: var(--blue-dark);
+      color: var(--purple-dark);
       padding: 9px 14px;
       border-radius: 999px;
       font-weight: 900;
@@ -166,30 +228,33 @@
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 5.1rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
-      color: var(--blue-dark);
+      font-size: clamp(2.35rem, 6vw, 4.85rem);
+      line-height: 0.97;
+      letter-spacing: -0.06em;
+      color: var(--purple-dark);
       margin-bottom: 18px;
     }
 
     h1 span { color: var(--orange); }
 
     .hero p {
-      max-width: 650px;
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      max-width: 700px;
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
       color: #334155;
       margin-bottom: 22px;
     }
 
-    .buttons, .sound-actions, .alphabet-toolbar {
+    .buttons, .sound-actions, .toolbar, .age-tabs {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
     }
 
-    .btn, .listen-btn, .repeat-btn, .learned-btn, .pill-btn {
+    .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab,
+    .quiz-options button, .choice-options button, .lesson-chip {
+      position: relative;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -201,32 +266,97 @@
       cursor: pointer;
       transition: 0.2s ease;
       text-align: center;
+      will-change: transform, background, box-shadow;
     }
 
     .btn { min-height: 48px; padding: 12px 19px; }
-    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover, .pill-btn:hover { transform: translateY(-2px); }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--blue), var(--sky));
-      color: white;
-      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
+    .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+    .tool-btn:hover, .age-tab:hover, .quiz-options button:hover, .choice-options button:hover,
+    .lesson-chip:hover {
+      transform: translateY(-2px);
     }
-    .btn-yellow {
-      background: var(--yellow);
+
+    .btn::after, .listen-btn::after, .repeat-btn::after, .learned-btn::after,
+    .tool-btn::after, .age-tab::after, .quiz-options button::after,
+    .choice-options button::after, .lesson-chip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 34%);
+      opacity: 0;
+      transition: opacity 0.22s ease;
+      pointer-events: none;
+    }
+
+    .btn:hover::after, .listen-btn:hover::after, .repeat-btn:hover::after,
+    .learned-btn:hover::after, .tool-btn:hover::after, .age-tab:hover::after,
+    .quiz-options button:hover::after, .choice-options button:hover::after,
+    .lesson-chip:hover::after {
+      opacity: 1;
+    }
+
+    .btn-primary, .learned-btn, .tool-btn, .age-tab.active, .lesson-chip.active {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: white;
+      box-shadow: 0 14px 28px rgba(124, 58, 237, 0.20);
+    }
+
+    .btn-primary:hover, .learned-btn:hover, .tool-btn:hover, .age-tab.active:hover, .lesson-chip.active:hover {
+      background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(14, 165, 233, 0.26);
+    }
+
+    .btn-gold {
+      background: var(--gold);
       color: #111827;
       box-shadow: 0 14px 28px rgba(246, 196, 69, 0.22);
     }
-    .btn-white {
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #facc15, #fb923c);
+      color: #111827;
+      box-shadow: 0 18px 34px rgba(250, 204, 21, 0.30);
+    }
+
+    .btn-white, .age-tab, .lesson-chip {
       background: white;
-      color: var(--blue-dark);
+      color: var(--purple-dark);
       border: 1px solid var(--border);
     }
-    .listen-btn { background: var(--blue-soft); color: var(--blue-dark); border: 1px solid #bfdbfe; }
-    .repeat-btn { background: #f8fafc; color: #0f172a; border: 1px solid var(--border); }
-    .learned-btn, .pill-btn {
-      background: linear-gradient(135deg, var(--green), var(--teal));
-      color: white;
-      box-shadow: 0 12px 24px rgba(19, 138, 61, 0.18);
+
+    .btn-white:hover, .age-tab:hover, .lesson-chip:hover {
+      background: linear-gradient(135deg, #ffffff, #f5f3ff);
+      color: var(--purple-dark);
+      border-color: #c4b5fd;
+      box-shadow: 0 14px 26px rgba(124, 58, 237, 0.13);
+    }
+
+    .listen-btn {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      border: 1px solid #ddd6fe;
+    }
+
+    .listen-btn:hover {
+      background: linear-gradient(135deg, #ede9fe, #fce7f3);
+      color: #5b21b6;
+      border-color: #c4b5fd;
+      box-shadow: 0 14px 26px rgba(124, 58, 237, 0.14);
+    }
+
+    .repeat-btn {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+
+    .repeat-btn:hover {
+      background: linear-gradient(135deg, #fef3c7, #ffffff);
+      color: #92400e;
+      border-color: #facc15;
+      box-shadow: 0 14px 26px rgba(246, 196, 69, 0.14);
     }
 
     .hero-visual {
@@ -242,27 +372,27 @@
     }
 
     .hero-visual::before {
-      content: "ABC";
+      content: "A B C";
       position: absolute;
-      font-size: 6.8rem;
+      font-size: 5rem;
       font-weight: 950;
-      color: rgba(37, 99, 235, 0.12);
-      left: 28px;
-      top: 18px;
+      color: rgba(124, 58, 237, 0.10);
+      left: 24px;
+      top: 24px;
       letter-spacing: -0.08em;
     }
 
     .hero-visual::after {
-      content: "📘";
+      content: "📚";
       position: absolute;
-      font-size: 8rem;
-      right: 38px;
+      font-size: 7rem;
+      right: 34px;
       bottom: 18px;
-      opacity: 0.18;
+      opacity: 0.16;
     }
 
-    .child-card {
-      width: min(92%, 430px);
+    .hero-box {
+      width: min(92%, 450px);
       background: white;
       border-radius: 30px;
       padding: 26px;
@@ -272,9 +402,16 @@
       z-index: 2;
     }
 
-    .child-card .emoji { font-size: 4rem; margin-bottom: 8px; }
-    .child-card h2 { color: var(--blue-dark); font-size: 1.65rem; line-height: 1.15; margin-bottom: 10px; }
-    .child-card p { color: var(--muted); font-size: 0.98rem; }
+    .hero-box .emoji { font-size: 4rem; margin-bottom: 8px; }
+
+    .hero-box h2 {
+      color: var(--purple-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .hero-box p { color: var(--muted); font-size: 0.98rem; }
 
     .hero-stats {
       display: grid;
@@ -291,198 +428,244 @@
       border: 1px solid var(--border);
     }
 
-    .hero-stat span { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+    .hero-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
 
-    .section { padding: 52px 0; }
-    .section-head { margin-bottom: 26px; display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
+    .age-choice { padding: 22px 0 12px; }
+
+    .age-choice-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: clamp(18px, 4vw, 28px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .age-choice-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .age-choice-title h2 {
+      color: #0f172a;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .age-choice-title p {
+      color: var(--muted);
+      font-weight: 750;
+      max-width: 700px;
+    }
+
+    .section { padding: 44px 0; }
+
     .section-label {
-      color: var(--blue-dark);
+      color: var(--purple-dark);
       font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 0.78rem;
       margin-bottom: 6px;
     }
+
     .section h2 {
       color: #0f172a;
-      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.05;
       letter-spacing: -0.05em;
     }
+
     .section-lead {
       color: var(--muted);
       font-size: 1.04rem;
-      max-width: 760px;
+      max-width: 850px;
       margin-top: 8px;
     }
 
-    .method-grid, .topics-grid, .pathway {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .method-card, .topic-card, .path-card {
-      background: white;
-      border-radius: 24px;
-      padding: 22px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .topic-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); transition: 0.22s ease; }
-
-    .method-card .icon, .topic-card .icon {
-      width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; font-size: 1.7rem; margin-bottom: 14px;
-      background: var(--blue-soft);
-    }
-
-    .method-card:nth-child(2) .icon, .topic-card:nth-child(2) .icon { background: var(--yellow-soft); }
-    .method-card:nth-child(3) .icon, .topic-card:nth-child(3) .icon { background: var(--green-soft); }
-    .method-card:nth-child(4) .icon, .topic-card:nth-child(4) .icon { background: var(--purple-soft); }
-    .topic-card:nth-child(5) .icon { background: var(--orange-soft); }
-    .topic-card:nth-child(6) .icon { background: var(--pink-soft); }
-    .topic-card:nth-child(7) .icon { background: var(--teal-soft); }
-    .topic-card:nth-child(8) .icon { background: #ecfccb; }
-
-    .method-card h3, .topic-card h3, .path-card h3 { color: #0f172a; margin-bottom: 7px; }
-    .method-card p, .topic-card p, .path-card p { color: var(--muted); font-size: 0.95rem; }
-    .topic-card a { display: inline-flex; margin-top: 12px; color: var(--blue-dark); font-weight: 950; }
-
-    .phonics-shell, .learning-box, .reading-box {
+    .level-shell {
       background:
-        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.22), transparent 18rem),
-        linear-gradient(135deg, #eff6ff, #ecfeff);
+        radial-gradient(circle at 10% 20%, rgba(124,58,237,0.14), transparent 18rem),
+        radial-gradient(circle at 92% 18%, rgba(246,196,69,0.18), transparent 16rem),
+        linear-gradient(135deg, #f5f3ff, #fff7ed);
       border-radius: 34px;
       padding: clamp(22px, 4vw, 36px);
       border: 1px solid rgba(226, 232, 240, 0.9);
       box-shadow: var(--shadow);
     }
 
-    .alphabet-grid {
+    .level-hero {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 22px;
-    }
-
-    .alphabet-card {
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
       background: white;
-      border-radius: 24px;
-      padding: 18px;
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 28px);
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
-      transition: 0.22s ease;
+      margin-bottom: 20px;
     }
 
-    .alphabet-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-
-    .letter-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--yellow-soft);
-      border: 1px solid #fde68a;
-      color: #92400e;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 950;
-      margin-bottom: 12px;
-    }
-
-    .letter-main {
+    .level-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 30px;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 12px;
+      place-items: center;
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--purple-soft), var(--gold-soft));
+      border: 1px solid rgba(124, 58, 237, 0.14);
     }
 
-    .letter-main strong {
-      font-size: 2.4rem;
-      line-height: 1;
-      letter-spacing: -0.04em;
-      color: var(--blue-dark);
-    }
-
-    .letter-main span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.95rem;
-      font-weight: 800;
-      margin-top: 4px;
-    }
-
-    .letter-icon {
-      width: 68px; height: 68px; border-radius: 22px;
-      display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--purple-soft), var(--pink-soft));
-      font-size: 2rem;
-    }
-
-    .sound-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid #bfdbfe;
-      background: var(--blue-soft);
-      color: var(--blue-dark);
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-weight: 900;
-      margin-bottom: 10px;
-    }
-
-    .alphabet-card p {
-      color: #334155;
-      font-weight: 750;
-      font-size: 0.95rem;
+    .level-hero h2 {
+      color: var(--purple-dark);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
       margin-bottom: 8px;
     }
 
-    .alphabet-mini {
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 12px;
-      color: #475569;
-      font-size: 0.92rem;
+    .level-hero p {
+      color: var(--muted);
       font-weight: 750;
-      margin-bottom: 12px;
+      max-width: 850px;
     }
 
-    .daily-grid, .reader-layout {
+    .level-progress {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 18px 0 4px;
+    }
+
+    .level-dot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      font-weight: 950;
+      color: #475569;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .level-dot.active {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: white;
+      border-color: transparent;
+    }
+
+    .level-dot span {
+      display: block;
+      font-size: 0.76rem;
+      opacity: 0.78;
+      margin-top: 2px;
+    }
+
+    .library-wrap {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(18px, 4vw, 24px);
+      box-shadow: var(--shadow-soft);
+      margin-top: 20px;
+    }
+
+    .lesson-library {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .lesson-chip {
+      min-height: 46px;
+      padding: 10px 13px;
+      border-radius: 18px;
+      max-width: 100%;
+    }
+
+    .lesson-chip small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #92400e;
+      margin-right: 8px;
+      font-size: 0.76rem;
+      font-weight: 950;
+    }
+
+    .lesson-chip.active small {
+      background: rgba(255,255,255,0.22);
+      color: white;
+    }
+
+    .daily-grid, .practice-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
-      margin-top: 22px;
     }
 
-    .daily-card, .reader-card {
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .card, .lesson-card, .mission-card, .story-card, .quiz-card, .practice-card, .mini-card, .activity-card {
       background: white;
       border-radius: 24px;
       padding: 22px;
       border: 1px solid var(--border);
       box-shadow: var(--shadow-soft);
+      transition: 0.22s ease;
     }
 
-    .daily-card h3, .reader-card h3 { color: #0f172a; margin-bottom: 8px; }
-
-    .big-word {
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      line-height: 1;
-      font-weight: 950;
-      color: var(--blue-dark);
-      margin: 14px 0;
-      letter-spacing: -0.04em;
-      text-transform: lowercase;
+    .lesson-card:hover, .mission-card:hover, .mini-card:hover, .activity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
     }
 
-    .today-badge {
+    .card h3, .lesson-card h3, .mission-card h3, .story-card h3, .quiz-card h3, .practice-card h3, .mini-card h3, .activity-card h3 {
+      color: #0f172a;
+      margin-bottom: 7px;
+    }
+
+    .card p, .lesson-card p, .mission-card p, .story-card p, .quiz-card p, .practice-card p, .mini-card p, .activity-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .icon-pill {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--purple-soft);
+      font-size: 1.65rem;
+      margin-bottom: 14px;
+    }
+
+    .badge, .today-badge, .level-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--yellow-soft);
+      background: var(--gold-soft);
       color: #92400e;
       border: 1px solid #fde68a;
       border-radius: 999px;
@@ -491,30 +674,38 @@
       margin-bottom: 10px;
     }
 
-    .word-visual-card {
-      display: grid;
-      grid-template-columns: 132px 1fr;
-      gap: 16px;
-      align-items: stretch;
-      margin-top: 16px;
+    .level-badge {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      border-color: #ddd6fe;
     }
 
-    .visual-clue {
-      background: linear-gradient(135deg, #dbeafe, #fef3c7);
-      border: 1px solid #dbeafe;
-      border-radius: 24px;
-      min-height: 132px;
+    .english-display {
+      font-size: clamp(3rem, 9vw, 5.8rem);
+      line-height: 1.05;
+      font-weight: 950;
+      color: var(--purple-dark);
+      margin: 12px 0;
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+
+    .visual-demo {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.4;
+      text-align: center;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      min-height: 92px;
       display: grid;
       place-items: center;
-      text-align: center;
-      padding: 12px;
+      margin-top: 12px;
+      word-break: break-word;
     }
 
-    .visual-clue .emoji { font-size: 4.2rem; line-height: 1; margin-bottom: 6px; }
-    .visual-clue strong { display: block; color: var(--blue-dark); font-size: 0.95rem; }
-
-    .word-support { display: grid; gap: 12px; }
-    .word-note, .sentence-box, .clue-box, .mini-task {
+    .note-box, .sentence-box, .task-box, .story-text, .reflection-box, .mission-box, .parent-note {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 18px;
@@ -522,21 +713,57 @@
       color: #334155;
       font-weight: 750;
     }
-    .sentence-box { font-weight: 800; font-size: 1.05rem; }
-    .clue-box strong, .mini-task strong, .word-note strong { color: #0f172a; }
 
-    .reader-passage { color: #334155; font-size: 1.05rem; }
-    .reader-passage p { margin-bottom: 12px; }
-    .highlight {
-      background: var(--yellow-soft);
-      padding: 2px 7px;
-      border-radius: 9px;
-      font-weight: 900;
-      color: #92400e;
+    .mission-box {
+      background: linear-gradient(135deg, #ffffff, #f5f3ff);
+      border-color: #ddd6fe;
     }
 
-    .quiz-options { display: grid; gap: 10px; margin-top: 14px; }
-    .quiz-options button {
+    .story-text {
+      font-weight: 700;
+      line-height: 1.8;
+    }
+
+    .visual-card {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+
+    .visual-clue {
+      background: linear-gradient(135deg, #ede9fe, #fef3c7);
+      border: 1px solid #ddd6fe;
+      border-radius: 24px;
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .visual-clue .emoji {
+      font-size: 4.2rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .visual-clue strong {
+      display: block;
+      color: var(--purple-dark);
+      font-size: 0.95rem;
+    }
+
+    .support-grid { display: grid; gap: 12px; }
+
+    .quiz-options, .choice-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .quiz-options button, .choice-options button {
       border: 1px solid var(--border);
       background: #f8fafc;
       border-radius: 14px;
@@ -544,28 +771,83 @@
       text-align: left;
       font-weight: 800;
       cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .quiz-options button:hover { background: var(--blue-soft); }
-    .quiz-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
-    .quiz-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
+    .quiz-options button:hover, .choice-options button:hover {
+      background: linear-gradient(135deg, #f5f3ff, #fef3c7);
+      color: var(--purple-dark);
+      border-color: #c4b5fd;
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 12px 22px rgba(124, 58, 237, 0.10);
+    }
 
-    .result { margin-top: 12px; min-height: 24px; font-weight: 900; }
+    .quiz-options button.correct, .choice-options button.correct { background: var(--green-soft); border-color: #86efac; color: #166534; }
+    .quiz-options button.wrong, .choice-options button.wrong { background: #fee2e2; border-color: #fecaca; color: #991b1b; }
 
-    .writing-area {
-      width: 100%;
-      min-height: 130px;
-      border: 2px dashed #bfdbfe;
-      background: #f8fafc;
-      border-radius: 20px;
-      padding: 14px;
-      resize: vertical;
+    .result {
       margin-top: 12px;
-      color: #0f172a;
-      outline: none;
+      min-height: 24px;
+      font-weight: 900;
     }
 
-    .writing-area:focus { border-color: var(--blue); background: white; }
+    .whiteboard-wrap {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .whiteboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .whiteboard-head strong {
+      color: var(--purple-dark);
+      font-size: 1rem;
+    }
+
+    .clear-board-btn {
+      border: 0;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .clear-board-btn:hover {
+      transform: translateY(-1px);
+      background: #fecaca;
+    }
+
+    .whiteboard-canvas {
+      width: 100%;
+      height: 280px;
+      display: block;
+      background: #ffffff;
+      border: 3px solid #c4b5fd;
+      border-radius: 22px;
+      touch-action: none;
+      cursor: crosshair;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+    }
+
+    .board-tip {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 750;
+    }
 
     .progress-section, .parent-box {
       background: white;
@@ -573,6 +855,36 @@
       border-radius: 34px;
       box-shadow: var(--shadow);
       padding: clamp(24px, 4vw, 36px);
+    }
+
+    .progress-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .progress-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      text-align: center;
+      font-weight: 950;
+    }
+
+    .progress-card strong {
+      display: block;
+      color: var(--purple-dark);
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .progress-card span {
+      color: var(--muted);
+      font-weight: 750;
+      font-size: 0.88rem;
     }
 
     .parent-box {
@@ -598,21 +910,65 @@
       font-weight: 750;
     }
 
-    .tips li::before { content: "✓ "; color: var(--green); font-weight: 950; }
-
-    .path-card strong {
-      display: inline-grid;
-      place-items: center;
-      width: 44px; height: 44px;
-      border-radius: 15px;
-      background: var(--blue);
-      color: white;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
+    .tips li::before {
+      content: "✓ ";
+      color: var(--green);
+      font-weight: 950;
     }
 
-    .cta {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    details.curriculum-details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      margin-top: 16px;
+    }
+
+    details.curriculum-details summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      font-weight: 950;
+      color: var(--purple-dark);
+      background: linear-gradient(135deg, #ffffff, #f5f3ff);
+    }
+
+    .details-body {
+      padding: 22px;
+      border-top: 1px solid var(--border);
+    }
+
+    .compact-worlds {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .compact-world {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .compact-world span {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+    }
+
+    .sound-hover-pop { animation: soundHoverPop 0.34s ease; }
+
+    @keyframes soundHoverPop {
+      0% { transform: translateY(0) scale(1); }
+      45% { transform: translateY(-3px) scale(1.04); }
+      100% { transform: translateY(-2px) scale(1.02); }
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--purple-dark), #0f172a);
       color: white;
       border-radius: 34px;
       padding: clamp(26px, 5vw, 46px);
@@ -623,11 +979,30 @@
       box-shadow: var(--shadow);
     }
 
-    .cta h2 { color: white; }
-    .cta p { color: rgba(255,255,255,0.78); margin-top: 10px; font-size: 1.05rem; }
-    .cta-list { display: grid; gap: 10px; margin-top: 18px; list-style: none; }
-    .cta-list li { color: rgba(255,255,255,0.9); font-weight: 800; }
-    .cta-list li::before { content: "✓ "; color: #93c5fd; }
+    .cta-section h2 { color: white; }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.78);
+      margin-top: 10px;
+      font-size: 1.05rem;
+    }
+
+    .cta-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      list-style: none;
+    }
+
+    .cta-list li {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+    }
+
+    .cta-list li::before {
+      content: "✓ ";
+      color: #c4b5fd;
+    }
 
     .footer {
       margin-top: 40px;
@@ -645,30 +1020,82 @@
     }
 
     .footer h3 { margin-bottom: 12px; }
-    .footer p, .footer a { color: rgba(255,255,255,0.72); font-weight: 650; }
-    .footer ul { list-style: none; display: grid; gap: 8px; }
-    .copyright { padding-top: 18px; color: rgba(255,255,255,0.6); font-size: 0.92rem; }
+
+    .footer p, .footer a {
+      color: rgba(255,255,255,0.72);
+      font-weight: 650;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      padding-top: 18px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+    }
 
     @media (max-width: 980px) {
-      .hero-card, .parent-box, .cta, .word-visual-card { grid-template-columns: 1fr; }
-      .method-grid, .topics-grid, .pathway, .alphabet-grid { grid-template-columns: repeat(2, 1fr); }
-      .daily-grid, .reader-layout { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-card, .parent-box, .cta-section, .visual-card, .level-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .daily-grid, .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-4, .compact-worlds {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .level-progress, .progress-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .audio-bar { top: 0; }
     }
 
     @media (max-width: 640px) {
       .container { width: min(100% - 24px, var(--max)); }
-      .top-inner { flex-direction: column; align-items: flex-start; padding: 14px 0; }
+
+      .top-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
       .nav { justify-content: flex-start; }
-      .method-grid, .topics-grid, .pathway, .alphabet-grid, .footer-grid { grid-template-columns: 1fr; }
-      .buttons, .sound-actions, .alphabet-toolbar { display: grid; }
-      .btn, .listen-btn, .repeat-btn, .learned-btn, .pill-btn { width: 100%; }
+
+      .grid-4, .compact-worlds, .footer-grid, .progress-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons, .sound-actions, .toolbar, .age-tabs {
+        display: grid;
+      }
+
+      .btn, .listen-btn, .repeat-btn, .learned-btn, .tool-btn, .age-tab, .lesson-chip {
+        width: 100%;
+      }
+
       .hero { padding-top: 28px; }
       .hero-visual { min-height: 300px; }
-      .section-head { display: block; }
       .hero-stats { grid-template-columns: 1fr; }
-      .letter-main { grid-template-columns: 1fr; }
+      .level-progress { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sound-hover-pop { animation: none; }
+      .btn:hover, .listen-btn:hover, .repeat-btn:hover, .learned-btn:hover,
+      .tool-btn:hover, .age-tab:hover, .quiz-options button:hover,
+      .choice-options button:hover, .lesson-chip:hover { transform: none; }
     }
   </style>
 </head>
@@ -677,8 +1104,8 @@
   <header class="top-header">
     <div class="container top-inner">
       <a class="brand" href="../index.html">
-        <span class="brand-icon">📘</span>
-        <span>Al-Hayat Kids Learning Hub<small>Learn • Read • Speak • Grow</small></span>
+        <span class="brand-icon">📚</span>
+        <span>Al-Hayat Kids Learning Hub<small>Phonics • Reading • Speaking • Writing</small></span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -687,6 +1114,7 @@
         <a href="arabic-for-kids.html">Arabic</a>
         <a href="math.html">Math</a>
         <a href="science.html">Science</a>
+        <a href="general-knowledge.html">GK</a>
         <a href="../reading-library/index.html">Stories</a>
         <a class="cta" href="../online-classes.html">Online Classes</a>
       </nav>
@@ -695,8 +1123,11 @@
 
   <div class="audio-bar" aria-label="Audio learning controls">
     <div class="container audio-inner">
-      <p>🔊 Audio learning + local progress tracking are active. Listen, Repeat, Learn, and earn stars.</p>
-      <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      <p>🔊 English audio is short and focused: sound, word, sentence, story, question, or answer only.</p>
+      <div class="sound-control-group">
+        <button class="fun-sound-toggle" id="funSoundToggle" type="button" aria-pressed="true">🔔 Fun Sounds: On</button>
+        <button class="stop-sound" type="button">⏹ Stop Sound</button>
+      </div>
     </div>
   </div>
 
@@ -704,344 +1135,213 @@
     <section class="hero">
       <div class="container hero-card">
         <div>
-          <div class="kicker">📘 English Learning for Kids</div>
-          <h1>English <span>for Kids</span></h1>
+          <div class="kicker">📚 Complete English Lesson Library • Ages 3–7</div>
+          <h1>Listen. Read. <span>Speak English.</span></h1>
           <p>
-            A joyful English learning space where children build alphabet awareness, phonics, vocabulary,
-            reading fluency, grammar, punctuation, writing, speaking, and listening confidence through
-            ABC sound cards, a daily word bank, audio support, quizzes, stars, and safe local progress tracking.
+            A complete age-based English foundation. The child first chooses age, then selects a lesson from that
+            level’s English library. Every lesson has a sound or word focus, visual clue, mini story,
+            quiz game, speaking mission, whiteboard writing, and short focused audio.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-primary" href="#abc-phonics">Start ABC Phonics</a>
-            <a class="btn btn-yellow" href="#practice">Today’s Word</a>
-            <a class="btn btn-white" href="#progress">View Progress</a>
+            <a class="btn btn-primary" href="#choose-age">Choose Age Level</a>
+            <a class="btn btn-gold" href="#lesson-library">Open English Library</a>
+            <a class="btn btn-white" href="#whiteboard">Writing Whiteboard</a>
           </div>
 
           <div class="sound-actions" style="margin-top: 14px;">
-            <button class="listen-btn" type="button" data-static-speak="Welcome to English for Kids. Learn your letters, sounds, words, reading, and speaking with fun practice." data-lang="en-US">🔊 Listen Intro</button>
-            <button class="repeat-btn" type="button" data-static-speak="Welcome to English for Kids. Learn your letters, sounds, words, reading, and speaking with fun practice." data-lang="en-US">🔁 Repeat</button>
+            <button class="listen-btn" type="button" data-static-speak="Choose the child age. Choose one English lesson. Listen to the sound or word. Read the example. Play the quiz. Speak the sentence. Write on the whiteboard." data-lang="en-US">🔊 Listen Intro</button>
+            <button class="repeat-btn" type="button" data-static-speak="Choose age. Choose lesson. Listen. Say. Read. Write. Earn stars." data-lang="en-US">🔁 Repeat Method</button>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="child-card">
-            <div class="emoji">🗣️</div>
-            <h2>Listen, repeat, learn, and earn stars</h2>
-            <p>English becomes easier when children hear sounds, see visual clues, answer quizzes, and track small wins every day.</p>
+          <div class="hero-box">
+            <div class="emoji">🔤</div>
+            <h2>English Level 1 to Level 5</h2>
+            <p>Age 3 begins with sounds, words, and greetings. Age 7 reaches fluent sentences, grammar, reading comprehension, and story writing.</p>
             <div class="hero-stats">
-              <div class="hero-stat">ABC <span>Phonics</span></div>
-              <div class="hero-stat">Daily <span>Word Bank</span></div>
-              <div class="hero-stat">Stars <span>& Streaks</span></div>
+              <div class="hero-stat">60 Lessons <span>Age-wise</span></div>
+              <div class="hero-stat">Phonics <span>Reading</span></div>
+              <div class="hero-stat">Writing <span>Board</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="method-title">
-      <div class="container">
-        <div class="section-head">
+    <section class="age-choice" id="choose-age">
+      <div class="container age-choice-card">
+        <div class="age-choice-title">
           <div>
-            <div class="section-label">Learning Method</div>
-            <h2 id="method-title">A strong English routine children enjoy</h2>
-            <p class="section-lead">Young learners need sound, repetition, pictures, meaning, real use, and gentle rewards. This page connects with your shared learning-data and progress-tracker files.</p>
+            <div class="section-label">Step 1</div>
+            <h2>Choose the child’s age</h2>
+            <p>After choosing an age, the English library below will show only that age level’s lessons.</p>
           </div>
+          <button class="listen-btn" type="button" id="listenAgeSelectorBtn">🔊 Listen</button>
         </div>
-
-        <div class="method-grid">
-          <article class="method-card"><div class="icon">👂</div><h3>Listen</h3><p>Children hear the sound, word, sentence, passage, or question before reading it themselves.</p></article>
-          <article class="method-card"><div class="icon">🔁</div><h3>Repeat</h3><p>They repeat aloud to improve pronunciation, confidence, rhythm, and fluency.</p></article>
-          <article class="method-card"><div class="icon">🖼️</div><h3>See</h3><p>Visual clues and icons help children connect letters and words with meaning quickly.</p></article>
-          <article class="method-card"><div class="icon">⭐</div><h3>Track</h3><p>Stars, streaks, learned items, and badges encourage children to return daily.</p></article>
-        </div>
+        <div class="age-tabs" id="ageTabs"></div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="topics-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Explore English</div>
-            <h2 id="topics-title">What children can learn here</h2>
-            <p class="section-lead">This English zone supports alphabet sounds, vocabulary, phonics, reading, grammar, punctuation, writing, speaking, listening, quizzes, and worksheets.</p>
-          </div>
+    <section class="section" id="active-level">
+      <div class="container level-shell">
+        <div class="level-hero" id="levelHero"></div>
+        <div class="level-progress" id="levelProgress"></div>
+
+        <div class="library-wrap" id="lesson-library">
+          <div class="section-label">Step 2</div>
+          <h2 id="libraryTitle">English Lesson Library</h2>
+          <p class="section-lead" id="libraryLead">Choose one focused lesson. Each lesson has sound, word, sentence, story, quiz, mission, and writing practice.</p>
+          <div class="lesson-library" id="lessonLibrary"></div>
         </div>
 
-        <div class="topics-grid">
-          <article class="topic-card"><div class="icon">🔤</div><h3>Alphabet Sounds</h3><p>Learn A–Z with capital and small letters, sound, word, icon, audio, and mini practice.</p><a href="#abc-phonics">Open ABC Phonics →</a></article>
-          <article class="topic-card"><div class="icon">📘</div><h3>Vocabulary</h3><p>Learn daily words with meaning, pronunciation, example sentence, visual clue, and quiz.</p><a href="#practice">Start Vocabulary →</a></article>
-          <article class="topic-card"><div class="icon">🎧</div><h3>Listening</h3><p>Use Listen and Repeat buttons to hear sounds, words, sentences, and passages.</p><a href="#reading">Practice Listening →</a></article>
-          <article class="topic-card"><div class="icon">📖</div><h3>Reading</h3><p>Read short passages, understand main ideas, and answer simple questions.</p><a href="#reading">Read Passage →</a></article>
-          <article class="topic-card"><div class="icon">🧩</div><h3>Grammar</h3><p>Learn nouns, verbs, adjectives, sentences, tenses, and simple grammar patterns.</p><a href="#grammar">Grammar Bite →</a></article>
-          <article class="topic-card"><div class="icon">✏️</div><h3>Writing</h3><p>Write sentences, short paragraphs, descriptions, and reflections from prompts.</p><a href="#writing">Writing Task →</a></article>
-          <article class="topic-card"><div class="icon">🗣️</div><h3>Speaking</h3><p>Practice short speaking prompts for confidence, clarity, and expression.</p><a href="#speaking">Speaking Prompt →</a></article>
-          <article class="topic-card"><div class="icon">🏆</div><h3>Progress</h3><p>Track stars, streaks, learned words, quiz answers, and badges on this browser.</p><a href="#progress">View Progress →</a></article>
+        <div class="daily-grid" style="margin-top:20px;">
+          <article class="lesson-card" id="lessonCard"></article>
+          <article class="activity-card" id="activityCard"></article>
         </div>
-      </div>
-    </section>
 
-    <section class="section" id="abc-phonics" aria-labelledby="abc-title">
-      <div class="container phonics-shell">
-        <div class="section-label">ABC Phonics Corner</div>
-        <h2 id="abc-title">A–Z letters, sounds, and words</h2>
-        <p class="section-lead">Each card shows the capital letter, small letter, sound, a simple example word, a visual icon, and audio buttons. Children can also mark each sound as learned.</p>
-        <div class="alphabet-toolbar">
-          <button class="pill-btn" type="button" id="playAlphabetIntroBtn">🔊 Listen ABC Intro</button>
-          <button class="pill-btn" type="button" id="playAlphabetReviewBtn">🔁 Review A–Z</button>
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="story-card" id="storyCard"></article>
+          <article class="quiz-card" id="quizCard"></article>
         </div>
-        <div class="alphabet-grid" id="alphabetGrid"></div>
-      </div>
-    </section>
 
-    <section class="section" id="practice" aria-labelledby="practice-title">
-      <div class="container learning-box">
-        <div class="section-label">Today’s English Practice</div>
-        <h2 id="practice-title">Daily Word Bank with audio, quiz, and progress</h2>
-        <p class="section-lead">Today’s word is pulled from <strong>assets/learning-data.js</strong>. The child can listen, repeat, answer the quiz, mark it as learned, and save progress locally.</p>
+        <div class="practice-grid" style="margin-top:18px;">
+          <article class="mission-card" id="missionCard"></article>
+          <article class="practice-card" id="masteryCard"></article>
+        </div>
 
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>🌟 Word of the Day</h3>
-            <div class="today-badge" id="todayBadge">📅 Loading today’s word...</div>
-            <div class="big-word" id="wordOfDay">loading...</div>
-
-            <div class="word-visual-card">
-              <div class="visual-clue">
-                <div>
-                  <div class="emoji" id="wordEmoji">📘</div>
-                  <strong id="visualTitle">Picture Clue</strong>
-                </div>
+        <div class="practice-grid" style="margin-top:18px;" id="whiteboard">
+          <article class="practice-card">
+            <h3>✍️ English Whiteboard</h3>
+            <div class="whiteboard-wrap" aria-label="English writing whiteboard">
+              <div class="whiteboard-head">
+                <strong id="boardTitle">Trace today’s English word</strong>
+                <button class="clear-board-btn" id="clearBoardBtn" type="button">🧽 Clear Board</button>
               </div>
 
-              <div class="word-support">
-                <div class="word-note"><strong>Meaning:</strong> <span id="wordMeaning">Loading meaning...</span></div>
-                <div class="sentence-box" id="wordSentence">Loading example sentence...</div>
-                <div class="clue-box"><strong>Visual clue:</strong> <span id="wordClue">Loading clue...</span></div>
-                <div class="mini-task"><strong>Mini task:</strong> <span id="wordTask">Loading task...</span></div>
-              </div>
+              <canvas id="englishWhiteboard" class="whiteboard-canvas" aria-label="Write English using mouse, touch, or stylus"></canvas>
+
+              <p class="board-tip">
+                Tip: Trace the faint guide first, then write the letter, word, or sentence again yourself.
+              </p>
             </div>
 
-            <div class="sound-actions" style="margin-top: 14px;">
-              <button class="listen-btn" id="listenWordBtn" type="button">🔊 Listen</button>
-              <button class="repeat-btn" id="repeatWordBtn" type="button">🔁 Repeat</button>
-              <button class="learned-btn" id="learnedWordBtn" type="button">✅ I learned this</button>
+            <div class="sound-actions" style="margin-top:14px;">
+              <button class="listen-btn" id="listenBoardBtn" type="button">🔊 Listen Guide</button>
+              <button class="repeat-btn" id="repeatBoardBtn" type="button">🔁 Repeat Guide</button>
+              <button class="learned-btn" id="saveBoardBtn" type="button">✅ Save Writing</button>
             </div>
           </article>
 
-          <article class="daily-card" id="quiz">
-            <h3>🧠 Word Quiz</h3>
-            <p id="dailyQuizQuestion">Loading quiz question...</p>
-            <div class="quiz-options" id="dailyQuizOptions"></div>
-            <div class="result" id="dailyQuizResult" aria-live="polite"></div>
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenQuizBtn" type="button">🔊 Listen Question</button>
-              <button class="repeat-btn" id="repeatQuizAnswerBtn" type="button">🔁 Repeat Answer</button>
-            </div>
-          </article>
-
-          <article class="daily-card" id="grammar">
-            <h3>🧩 Grammar Bite</h3>
-            <p><strong>Adjective:</strong> A word that describes a noun.</p>
-            <div class="sentence-box">The <span class="highlight">kind</span> girl helped her friend.</div>
-            <p>In this sentence, <strong>kind</strong> describes the girl.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Grammar bite. An adjective is a word that describes a noun. The kind girl helped her friend. In this sentence, kind describes the girl." data-lang="en-US">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="An adjective describes a noun. The kind girl helped her friend." data-lang="en-US">🔁 Repeat</button>
-            </div>
-          </article>
-
-          <article class="daily-card">
-            <h3>✏️ Punctuation Fix</h3>
-            <p>Add a capital letter and full stop.</p>
-            <div class="sentence-box">i like reading books</div>
-            <p><strong>Correct:</strong> I like reading books.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" data-static-speak="Punctuation fix. I like reading books. The sentence begins with a capital I and ends with a full stop." data-lang="en-US">🔊 Listen</button>
-              <button class="repeat-btn" type="button" data-static-speak="I like reading books." data-lang="en-US">🔁 Repeat</button>
-            </div>
+          <article class="practice-card">
+            <h3>🏆 Writing Goal</h3>
+            <div class="mission-box" id="writingGoal">Write today’s letter, word, or sentence three times.</div>
+            <ul class="tips">
+              <li>Say the sound before writing the letter.</li>
+              <li>Read aloud slowly and clearly.</li>
+              <li>Use pictures before long explanations.</li>
+              <li>Celebrate pronunciation, effort, and confidence.</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="progress" aria-labelledby="progress-title">
+    <section class="section" id="progress">
       <div class="container progress-section">
         <div class="section-label">Progress Tracker</div>
-        <h2 id="progress-title">Stars, streaks, learned words, sounds, and badges</h2>
-        <p class="section-lead">Progress is saved only on this browser/device using local storage. No login, no child name, no email, and no server collection.</p>
-        <div style="margin-top: 22px;" id="alhayat-progress-widget" data-progress-category="englishWords"></div>
+        <h2>Stars, learned words, quiz wins, speaking missions, and writing practice</h2>
+        <p class="section-lead">
+          Progress is saved only on this browser/device using local storage. No login, no child name,
+          no email, and no server collection.
+        </p>
+
+        <div class="progress-cards" id="progressCards">
+          <div class="progress-card"><strong id="starsCount">0</strong><span>Stars Earned</span></div>
+          <div class="progress-card"><strong id="lessonsCount">0</strong><span>Lessons Learned</span></div>
+          <div class="progress-card"><strong id="quizCount">0</strong><span>Quiz Wins</span></div>
+          <div class="progress-card"><strong id="missionCount">0</strong><span>Missions Done</span></div>
+        </div>
+
         <div class="sound-actions" style="margin-top: 16px;">
-          <button class="repeat-btn" type="button" data-progress-reset="true">Reset local progress</button>
+          <button class="repeat-btn" type="button" id="resetProgressBtn">Reset local progress</button>
         </div>
       </div>
     </section>
 
-    <section class="section" id="reading" aria-labelledby="reading-title">
-      <div class="container reading-box">
-        <div class="section-label">Reading Practice</div>
-        <h2 id="reading-title">Read, listen, and understand</h2>
-        <p class="section-lead">This short passage builds fluency, vocabulary, and comprehension. Children can listen first, then read aloud.</p>
-
-        <div class="reader-layout">
-          <article class="reader-card">
-            <h3>📖 Passage: The Little Garden</h3>
-            <div class="reader-passage">
-              <p>Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day.</p>
-              <p>One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight.</p>
-              <p>After a few days, the plant looked fresh again. Sara smiled and said, “Small care can make a big difference.”</p>
-            </div>
-
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" id="listenReadingBtn">🔊 Listen Passage</button>
-              <button class="repeat-btn" type="button" id="repeatReadingBtn">🔁 Repeat Key Sentence</button>
-              <button class="learned-btn" type="button" id="completeReadingBtn">✅ Completed</button>
-            </div>
-          </article>
-
-          <article class="reader-card">
-            <h3>✅ Comprehension Questions</h3>
-            <p><strong>1.</strong> What did Sara have near her home?</p>
-            <p><strong>2.</strong> What happened to one plant?</p>
-            <p><strong>3.</strong> How did Sara help the plant?</p>
-            <p><strong>4.</strong> What lesson can we learn from the story?</p>
-
-            <div class="word-note"><strong>Vocabulary:</strong> garden, tiny, ignore, sunlight, fresh, difference.</div>
-
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" id="listenQuestionsBtn">🔊 Listen Questions</button>
-              <button class="repeat-btn" type="button" id="repeatVocabularyBtn">🔁 Repeat Vocabulary</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="speaking" aria-labelledby="speaking-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Speaking Practice</div>
-            <h2 id="speaking-title">Speak with confidence</h2>
-            <p class="section-lead">Speaking improves when children hear a model, repeat the sentence, and answer in their own words.</p>
-          </div>
-        </div>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>🗣️ Speaking Prompt</h3>
-            <p>Talk for 30 seconds:</p>
-            <div class="sentence-box">My favourite book is...</div>
-            <p>Try to include: title, character, reason, and one lesson.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" id="listenSpeakingBtn">🔊 Listen Prompt</button>
-              <button class="repeat-btn" type="button" id="repeatSpeakingBtn">🔁 Repeat Frame</button>
-              <button class="learned-btn" type="button" id="completeSpeakingBtn">✅ Practiced</button>
-            </div>
-          </article>
-
-          <article class="daily-card">
-            <h3>🎯 Good Speaking Checklist</h3>
-            <p>Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" type="button" id="listenChecklistBtn">🔊 Listen Checklist</button>
-              <button class="repeat-btn" type="button" id="repeatChecklistBtn">🔁 Repeat</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="writing" aria-labelledby="writing-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Writing Practice</div>
-            <h2 id="writing-title">Write a short answer</h2>
-            <p class="section-lead">Children can type a short answer here for practice. This is a local practice box only; it does not collect or send personal data.</p>
-          </div>
-        </div>
-
-        <div class="daily-grid">
-          <article class="daily-card">
-            <h3>✍️ Writing Task</h3>
-            <p id="dynamicWritingPrompt">Write three sentences using today’s word.</p>
-            <textarea class="writing-area" id="writingBox" placeholder="Example: I helped my friend. She was happy. I felt good."></textarea>
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenWritingBtn" type="button">🔊 Listen Task</button>
-              <button class="learned-btn" id="saveWritingBtn" type="button">✅ Save Practice</button>
-            </div>
-          </article>
-
-          <article class="daily-card">
-            <h3>🌟 Sentence Builder</h3>
-            <p>Use this pattern:</p>
-            <div class="sentence-box" id="sentenceBuilder">I can be _____ when _____.</div>
-            <p id="sentenceBuilderExample">Example: I can be kind when my friend needs help.</p>
-            <div class="sound-actions">
-              <button class="listen-btn" id="listenSentenceBuilderBtn" type="button">🔊 Listen</button>
-              <button class="repeat-btn" id="repeatSentenceBuilderBtn" type="button">🔁 Repeat</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="path-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Learning Pathway</div>
-            <h2 id="path-title">A strong English foundation in four steps</h2>
-            <p class="section-lead">This pathway helps parents and teachers use the page in a simple, repeatable way.</p>
-          </div>
-        </div>
-
-        <div class="pathway">
-          <article class="path-card"><strong>1</strong><h3>Hear</h3><p>Listen to the sound, word, sentence, passage, or question.</p></article>
-          <article class="path-card"><strong>2</strong><h3>Repeat</h3><p>Say it aloud slowly and clearly.</p></article>
-          <article class="path-card"><strong>3</strong><h3>Use</h3><p>Use today’s sound or word in a sentence, quiz, or speaking task.</p></article>
-          <article class="path-card"><strong>4</strong><h3>Track</h3><p>Mark learned, earn stars, and build a daily streak.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="parents-title">
+    <section class="section" id="parent-guide">
       <div class="container parent-box">
         <div>
-          <div class="section-label">For Parents & Teachers</div>
-          <h2 id="parents-title">How to help children love English</h2>
-          <p class="section-lead">English learning should feel safe, repeated, meaningful, and encouraging. Listening support, visual clues, and local progress tracking help children stay motivated.</p>
+          <div class="section-label">Parent & Teacher Zone</div>
+          <h2>English curriculum method and map</h2>
+          <p class="section-lead">
+            The child area stays focused on selected age and lesson. Parent guidance is placed here,
+            away from the main learning space.
+          </p>
+
+          <details class="curriculum-details">
+            <summary>Open: How young children should learn English</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                Ages 3–7 should learn English through listening, repetition, phonics, picture vocabulary,
+                short stories, speaking practice, sentence patterns, handwriting, games, and daily use.
+              </p>
+              <div class="grid-4" style="margin-top:16px;">
+                <div class="mini-card"><div class="icon-pill">👂</div><h3>Listen</h3><p>Hear the sound, word, sentence, and story before writing.</p></div>
+                <div class="mini-card"><div class="icon-pill">🗣️</div><h3>Speak</h3><p>Repeat clearly, answer gently, and use short sentences.</p></div>
+                <div class="mini-card"><div class="icon-pill">📖</div><h3>Read</h3><p>Move from pictures and sounds to words, sentences, and stories.</p></div>
+                <div class="mini-card"><div class="icon-pill">✍️</div><h3>Write</h3><p>Trace letters, copy words, and slowly build independent sentences.</p></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="curriculum-details">
+            <summary>Open: English learning worlds curriculum map</summary>
+            <div class="details-body">
+              <p class="section-lead">
+                The curriculum gradually covers listening, speaking, alphabet, phonics, vocabulary,
+                sight words, CVC words, rhyming, sentences, punctuation, grammar, reading comprehension,
+                storytelling, handwriting, and creative writing.
+              </p>
+              <div class="compact-worlds" id="compactWorlds"></div>
+            </div>
+          </details>
         </div>
 
         <div>
           <ul class="tips">
-            <li>Begin with alphabet sounds, then move to words and short sentences.</li>
-            <li>Use the Listen button first, then ask the child to repeat aloud.</li>
-            <li>Show the icon or picture clue before explaining the meaning.</li>
-            <li>Let the child click “I learned this” only after real practice.</li>
-            <li>Progress stays only on the same browser/device and does not collect personal data.</li>
+            <li>Use one age level for several weeks before moving forward.</li>
+            <li>Do one lesson at a time; do not overload the child.</li>
+            <li>Audio is short: sound, word, sentence, story, or answer only.</li>
+            <li>Children should listen and speak before writing long text.</li>
+            <li>Mix home items: books, toys, fruits, labels, flashcards, colors, pictures, and storybooks.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container cta">
+      <div class="container cta-section">
         <div>
-          <div class="section-label" style="color:#93c5fd;">Personal Guidance</div>
+          <div class="section-label" style="color:#c4b5fd;">Personal Guidance</div>
           <h2>Book Online English Classes with Dr. Imran Hayat</h2>
-          <p>If your child needs structured support in phonics, reading, vocabulary, grammar, speaking, writing, pronunciation, or confidence-building, you can book online classes along with these free learning resources.</p>
+          <p>
+            If your child needs structured support in phonics, reading, vocabulary, speaking,
+            sentence writing, grammar, spelling, comprehension, or story writing, you can book online classes
+            alongside these free resources.
+          </p>
+
           <ul class="cta-list">
-            <li>ABC phonics and sound blending support</li>
-            <li>Reading fluency and comprehension</li>
-            <li>Grammar, punctuation, and writing practice</li>
-            <li>Speaking confidence through guided prompts</li>
+            <li>Age 3–7 English foundation plan</li>
+            <li>Focused lesson library by age level</li>
+            <li>Phonics, vocabulary, stories, quizzes, and whiteboard practice</li>
+            <li>Gentle guided learning for confident English speaking</li>
           </ul>
         </div>
 
         <div>
-          <a class="btn btn-yellow" href="../online-classes.html">Book Online Classes</a>
+          <a class="btn btn-gold" href="../online-classes.html">Book Online Classes</a>
           <br /><br />
           <a class="btn btn-white" href="../contact.html">Contact for Details</a>
         </div>
@@ -1090,340 +1390,570 @@
     <div class="container copyright">© 2026 Al-Hayat Kids Learning Hub. All rights reserved.</div>
   </footer>
 
-  <script src="../assets/learning-data.js"></script>
-  <script src="../assets/progress-tracker.js"></script>
-
   <script>
-    let currentWordData = null;
-
-    const fallbackWord = {
-      id: "eng-fallback",
-      word: "brave",
-      type: "adjective",
-      emoji: "🦁",
-      meaning: "ready to do the right thing even when it feels difficult",
-      sentence: "The brave child told the truth.",
-      visualClue: "Think of a child standing tall and telling the truth.",
-      miniTask: "Use brave in your own sentence.",
-      quiz: {
-        question: "What does brave mean?",
-        options: ["afraid to try", "ready to do the right thing", "very sleepy"],
-        answer: "ready to do the right thing"
-      }
-    };
-
-    const alphabetData = [
-      { id: "alpha-a", upper: "A", lower: "a", sound: "/a/", word: "Apple", icon: "🍎", clue: "A is for Apple.", speak: "A, small a. Sound a. A is for Apple." },
-      { id: "alpha-b", upper: "B", lower: "b", sound: "/b/", word: "Ball", icon: "⚽", clue: "B is for Ball.", speak: "B, small b. Sound b. B is for Ball." },
-      { id: "alpha-c", upper: "C", lower: "c", sound: "/k/", word: "Cat", icon: "🐱", clue: "C is for Cat.", speak: "C, small c. Sound k. C is for Cat." },
-      { id: "alpha-d", upper: "D", lower: "d", sound: "/d/", word: "Dog", icon: "🐶", clue: "D is for Dog.", speak: "D, small d. Sound d. D is for Dog." },
-      { id: "alpha-e", upper: "E", lower: "e", sound: "/e/", word: "Egg", icon: "🥚", clue: "E is for Egg.", speak: "E, small e. Sound e. E is for Egg." },
-      { id: "alpha-f", upper: "F", lower: "f", sound: "/f/", word: "Fish", icon: "🐟", clue: "F is for Fish.", speak: "F, small f. Sound f. F is for Fish." },
-      { id: "alpha-g", upper: "G", lower: "g", sound: "/g/", word: "Goat", icon: "🐐", clue: "G is for Goat.", speak: "G, small g. Sound g. G is for Goat." },
-      { id: "alpha-h", upper: "H", lower: "h", sound: "/h/", word: "Hat", icon: "🎩", clue: "H is for Hat.", speak: "H, small h. Sound h. H is for Hat." },
-      { id: "alpha-i", upper: "I", lower: "i", sound: "/i/", word: "Igloo", icon: "🧊", clue: "I is for Igloo.", speak: "I, small i. Sound i. I is for Igloo." },
-      { id: "alpha-j", upper: "J", lower: "j", sound: "/j/", word: "Juice", icon: "🧃", clue: "J is for Juice.", speak: "J, small j. Sound j. J is for Juice." },
-      { id: "alpha-k", upper: "K", lower: "k", sound: "/k/", word: "Kite", icon: "🪁", clue: "K is for Kite.", speak: "K, small k. Sound k. K is for Kite." },
-      { id: "alpha-l", upper: "L", lower: "l", sound: "/l/", word: "Lion", icon: "🦁", clue: "L is for Lion.", speak: "L, small l. Sound l. L is for Lion." },
-      { id: "alpha-m", upper: "M", lower: "m", sound: "/m/", word: "Moon", icon: "🌙", clue: "M is for Moon.", speak: "M, small m. Sound m. M is for Moon." },
-      { id: "alpha-n", upper: "N", lower: "n", sound: "/n/", word: "Nest", icon: "🪺", clue: "N is for Nest.", speak: "N, small n. Sound n. N is for Nest." },
-      { id: "alpha-o", upper: "O", lower: "o", sound: "/o/", word: "Octopus", icon: "🐙", clue: "O is for Octopus.", speak: "O, small o. Sound o. O is for Octopus." },
-      { id: "alpha-p", upper: "P", lower: "p", sound: "/p/", word: "Pen", icon: "🖊️", clue: "P is for Pen.", speak: "P, small p. Sound p. P is for Pen." },
-      { id: "alpha-q", upper: "Q", lower: "q", sound: "/kw/", word: "Queen", icon: "👑", clue: "Q is for Queen.", speak: "Q, small q. Sound kw. Q is for Queen." },
-      { id: "alpha-r", upper: "R", lower: "r", sound: "/r/", word: "Rabbit", icon: "🐰", clue: "R is for Rabbit.", speak: "R, small r. Sound r. R is for Rabbit." },
-      { id: "alpha-s", upper: "S", lower: "s", sound: "/s/", word: "Sun", icon: "☀️", clue: "S is for Sun.", speak: "S, small s. Sound s. S is for Sun." },
-      { id: "alpha-t", upper: "T", lower: "t", sound: "/t/", word: "Tiger", icon: "🐯", clue: "T is for Tiger.", speak: "T, small t. Sound t. T is for Tiger." },
-      { id: "alpha-u", upper: "U", lower: "u", sound: "/u/", word: "Umbrella", icon: "☂️", clue: "U is for Umbrella.", speak: "U, small u. Sound u. U is for Umbrella." },
-      { id: "alpha-v", upper: "V", lower: "v", sound: "/v/", word: "Van", icon: "🚐", clue: "V is for Van.", speak: "V, small v. Sound v. V is for Van." },
-      { id: "alpha-w", upper: "W", lower: "w", sound: "/w/", word: "Whale", icon: "🐋", clue: "W is for Whale.", speak: "W, small w. Sound w. W is for Whale." },
-      { id: "alpha-x", upper: "X", lower: "x", sound: "/ks/", word: "Xylophone", icon: "🎼", clue: "X is for Xylophone.", speak: "X, small x. Sound ks. X is for Xylophone." },
-      { id: "alpha-y", upper: "Y", lower: "y", sound: "/y/", word: "Yo-yo", icon: "🪀", clue: "Y is for Yo-yo.", speak: "Y, small y. Sound y. Y is for Yo-yo." },
-      { id: "alpha-z", upper: "Z", lower: "z", sound: "/z/", word: "Zebra", icon: "🦓", clue: "Z is for Zebra.", speak: "Z, small z. Sound z. Z is for Zebra." }
+    const compactWorlds = [
+      ["👂", "Listening"], ["🗣️", "Speaking"], ["🔤", "Alphabet"], ["🎵", "Phonics"],
+      ["🖼️", "Vocabulary"], ["👀", "Sight Words"], ["🐈", "CVC Words"], ["🎶", "Rhyming"],
+      ["✍️", "Handwriting"], ["📖", "Reading"], ["🧱", "Sentences"], ["❓", "Questions"],
+      ["🔠", "Spelling"], ["📌", "Grammar"], ["🧠", "Comprehension"], ["📝", "Story Writing"]
     ];
 
-    function getLearningData() { return window.AlHayatLearningData || null; }
-    function getTracker() { return window.AlHayatProgressTracker || null; }
+    function lesson(id, icon, title, concept, keyWord, visual, question, options, answer, mission, gamePrompt, gameOptions, gameAnswer, writing, story) {
+      return { id, icon, title, concept, keyWord, visual, question, options, answer, mission, gamePrompt, gameOptions, gameAnswer, writing, story };
+    }
 
-    function speak(text, lang = "en-US", repeat = false) {
-      const data = getLearningData();
-      if (data && typeof data.speakText === "function") {
-        data.speakText(text, lang, repeat);
-        return;
+    const ageLevels = [
+      {
+        id: "age-3",
+        level: "Level 1",
+        label: "Age 3",
+        icon: "🌱",
+        title: "Age 3: Listen, Say & Notice English",
+        subtitle: "Greetings, name, simple words, colors, animals, family, action words, polite words, and early sound awareness.",
+        mastery: "By the end of this level, the child can say simple English words, respond to greetings, name familiar things, and enjoy sounds and pictures.",
+        lessons: [
+          lesson("hello", "👋", "Hello and Goodbye", "Hello is used when we meet. Goodbye is used when we leave.", "Hello", "👋 Hello / Goodbye", "What do we say when we meet someone?", ["Hello", "Goodbye", "Sleep"], "Hello", "Say hello and goodbye politely to someone at home.", "Choose the greeting", ["Hello", "Table", "Shoe"], "Hello", "Trace: Hello", "A little child smiled and said, “Hello!” When leaving, the child said, “Goodbye!”"),
+          lesson("my-name", "🪪", "My Name Is", "We use: My name is ___. This helps us introduce ourselves.", "Name", "My name is Ali.", "Which sentence tells your name?", ["My name is Ali.", "The sky is blue.", "I eat rice."], "My name is Ali.", "Say: My name is ___ clearly.", "Choose introduction", ["My name is Sara.", "Run fast.", "Big ball."], "My name is Sara.", "Write or trace: My name is", "Sara stood up and said, “My name is Sara.” Everyone listened kindly."),
+          lesson("yes-no", "✅", "Yes and No", "Yes means correct or agreeing. No means not correct or refusing politely.", "Yes / No", "✅ Yes  ❌ No", "What word means agreeing?", ["Yes", "No", "Door"], "Yes", "Answer three simple yes/no questions.", "Choose agreeing word", ["Yes", "Blue", "Chair"], "Yes", "Trace: Yes / No", "The teacher asked, “Is this an apple?” The child said, “Yes.”"),
+          lesson("colors", "🎨", "Color Words", "Color words help us describe things: red, blue, green, yellow, black, and white.", "Red", "🔴 red  🔵 blue  🟢 green", "Which is a color word?", ["Red", "Run", "Book"], "Red", "Point to three colors and say their English names.", "Choose color", ["Blue", "Cat", "Jump"], "Blue", "Write one color word.", "The child saw a red apple, a blue bag, and a green leaf."),
+          lesson("animals", "🐈", "Animal Words", "Animal words help us name living things: cat, dog, bird, fish, cow, and goat.", "Cat", "🐈 cat  🐕 dog  🐦 bird", "Which word names an animal?", ["Cat", "Cup", "Door"], "Cat", "Say three animal names in English.", "Choose animal", ["Dog", "Chair", "Pencil"], "Dog", "Write or trace: cat", "A cat sat near the door. The child said, “cat.”"),
+          lesson("family", "👨‍👩‍👧", "Family Words", "Family words include mother, father, brother, sister, baby, and family.", "Mother", "mother • father • sister", "Which word is a family word?", ["Mother", "Window", "Sun"], "Mother", "Name two family members in English.", "Choose family word", ["Father", "Apple", "Bus"], "Father", "Trace: family", "The child said, “Mother, father, sister, brother. This is my family.”"),
+          lesson("toys", "🧸", "Toy Words", "Toy words include ball, doll, blocks, car, teddy, and kite.", "Ball", "⚽ ball  🧸 teddy  🚗 car", "Which word names a toy?", ["Ball", "Water", "Sleep"], "Ball", "Pick one toy and say its English name.", "Choose toy", ["Doll", "Tree", "Spoon"], "Doll", "Trace: ball", "Omar played with a ball and said, “This is my ball.”"),
+          lesson("actions", "🏃", "Action Words", "Action words tell what we do: run, jump, sit, stand, clap, eat, and sleep.", "Run", "run • jump • sit • clap", "Which word is an action?", ["Run", "Red", "Cat"], "Run", "Act three words: run, jump, clap.", "Choose action", ["Jump", "Blue", "Mother"], "Jump", "Write or trace: run", "The child jumped, clapped, and laughed after saying the words."),
+          lesson("polite", "🙏", "Please and Thank You", "Please is used when asking. Thank you is used when receiving help.", "Please", "Please / Thank you", "What should you say after help?", ["Thank you", "Run", "No book"], "Thank you", "Use please and thank you today.", "Choose polite word", ["Please", "Push", "Shout"], "Please", "Trace: Thank you", "The child said, “Please may I have water?” Then said, “Thank you.”"),
+          lesson("listen-repeat", "👂", "Listen and Repeat", "Good English starts with listening carefully and repeating slowly.", "Listen", "👂 listen  🗣️ repeat", "What should we do first?", ["Listen", "Shout", "Run away"], "Listen", "Listen to one English word and repeat it three times.", "Choose good learning", ["Listen carefully", "Ignore sound", "Shout loudly"], "Listen carefully", "Trace: listen", "The child listened to the word, repeated it slowly, and smiled.")
+        ]
+      },
+      {
+        id: "age-4",
+        level: "Level 2",
+        label: "Age 4",
+        icon: "🌿",
+        title: "Age 4: Alphabet, Sounds & Picture Words",
+        subtitle: "Alphabet recognition, beginning sounds, picture vocabulary, rhyming, simple commands, prepositions, and first sight words.",
+        mastery: "By the end of this level, the child can recognize many letters, hear beginning sounds, say picture words, and follow simple English commands.",
+        lessons: [
+          lesson("alphabet", "🔤", "Alphabet A to Z", "The English alphabet has 26 letters from A to Z.", "A B C", "A B C ... X Y Z", "How many letters are in the English alphabet?", ["26", "10", "5"], "26", "Sing or say A to Z slowly.", "Choose alphabet start", ["A", "Z", "9"], "A", "Write A B C", "The child sang A B C and pointed to the letters."),
+          lesson("letter-a", "🍎", "Letter A Sound", "Letter A can begin words like apple, ant, and alligator.", "A", "A a • apple • ant", "Which word begins with A?", ["Apple", "Dog", "Sun"], "Apple", "Find or draw something that begins with A.", "Choose A word", ["Ant", "Ball", "Cat"], "Ant", "Trace: A a", "An apple was on the table. The child said, “A, apple.”"),
+          lesson("letter-b", "⚽", "Letter B Sound", "Letter B can begin words like ball, bat, book, and baby.", "B", "B b • ball • book", "Which word begins with B?", ["Ball", "Apple", "Cat"], "Ball", "Say three B words.", "Choose B word", ["Book", "Fish", "Sun"], "Book", "Trace: B b", "Bilal picked a book and said, “B is for book.”"),
+          lesson("letter-c", "🐈", "Letter C Sound", "Letter C can begin words like cat, cup, car, and cake.", "C", "C c • cat • cup", "Which word begins with C?", ["Cat", "Dog", "Apple"], "Cat", "Find a cup and say C cup.", "Choose C word", ["Car", "Ball", "Fish"], "Car", "Trace: C c", "A cat sat near a cup. The child heard the C sound."),
+          lesson("beginning-sounds", "🎵", "Beginning Sounds", "The beginning sound is the first sound we hear in a word.", "Sound", "cat starts with /c/", "What is the first sound in cat?", ["/c/", "/m/", "/s/"], "/c/", "Say the first sound of cat, ball, and apple.", "Choose first sound in ball", ["/b/", "/t/", "/a/"], "/b/", "Write: c b a", "The teacher said “cat.” The child heard the first sound /c/."),
+          lesson("picture-words", "🖼️", "Picture Words", "Pictures help children remember English words.", "Picture", "🍎 apple  🚗 car  🐟 fish", "What picture shows a fish?", ["🐟", "🚗", "🍎"], "🐟", "Point to three pictures and say their names.", "Choose apple picture", ["🍎", "🐈", "✏️"], "🍎", "Write one picture word.", "A picture of a fish helped the child read the word fish."),
+          lesson("rhyming", "🎶", "Rhyming Words", "Rhyming words end with the same sound, like cat and hat.", "Rhyme", "cat / hat / mat", "Which word rhymes with cat?", ["Hat", "Dog", "Sun"], "Hat", "Say cat, hat, mat three times.", "Choose rhyme", ["mat", "fish", "car"], "mat", "Write: cat hat", "The child laughed and said, “cat, hat, mat.”"),
+          lesson("commands", "🧍", "Simple Commands", "Commands tell us what to do: stand up, sit down, clap, look, listen, and read.", "Stand up", "Stand up. Sit down. Clap.", "Which is a command?", ["Stand up", "Blue bag", "Big cat"], "Stand up", "Follow three English commands.", "Choose command", ["Clap", "Red", "Pencil"], "Clap", "Trace: sit", "The teacher said, “Stand up.” The child stood up."),
+          lesson("prepositions", "📍", "In, On, Under", "Position words tell where something is: in, on, under.", "In", "ball in box • book on table", "Where is a book on a table?", ["On", "Under", "Run"], "On", "Put a toy in, on, and under a box.", "Choose position word", ["Under", "Apple", "Jump"], "Under", "Write: in on", "The ball was in the box. The book was on the table."),
+          lesson("sight-words-1", "👀", "First Sight Words", "Sight words are common words we see often: I, am, is, the, my.", "I am", "I am happy.", "Which is a sight word?", ["the", "banana", "elephant"], "the", "Read: I am happy.", "Choose sentence", ["I am Sam.", "Blue red.", "Cat table."], "I am Sam.", "Write: I am", "The child read, “I am happy,” and smiled.")
+        ]
+      },
+      {
+        id: "age-5",
+        level: "Level 3",
+        label: "Age 5",
+        icon: "🌳",
+        title: "Age 5: Phonics, CVC Words & First Sentences",
+        subtitle: "Letter sounds, blending, CVC words, sight words, nouns, verbs, describing words, punctuation, and short reading.",
+        mastery: "By the end of this level, the child can blend simple sounds, read CVC words, recognize common sight words, and read or copy short sentences.",
+        lessons: [
+          lesson("short-a", "🐈", "Short A Words", "Short a is heard in cat, mat, hat, bat, and jam.", "cat", "c-a-t = cat", "Which word has short a?", ["cat", "sun", "fish"], "cat", "Read cat, mat, hat aloud.", "Choose short a word", ["bat", "dog", "hen"], "bat", "Write: cat mat hat", "The cat sat on the mat. The child read the short a words."),
+          lesson("short-e", "🛏️", "Short E Words", "Short e is heard in bed, hen, pen, red, and ten.", "bed", "b-e-d = bed", "Which word has short e?", ["bed", "cat", "sun"], "bed", "Read bed, pen, ten aloud.", "Choose short e word", ["hen", "pig", "box"], "hen", "Write: bed pen", "A red pen was on the bed."),
+          lesson("short-i", "🐟", "Short I Words", "Short i is heard in pig, sit, pin, fish, and big.", "pig", "p-i-g = pig", "Which word has short i?", ["pig", "cat", "cup"], "pig", "Read pig, sit, pin aloud.", "Choose short i word", ["big", "red", "sun"], "big", "Write: pig sit", "A big pig sat near the pin."),
+          lesson("short-o", "🐕", "Short O Words", "Short o is heard in dog, log, pot, hot, and box.", "dog", "d-o-g = dog", "Which word has short o?", ["dog", "fish", "cat"], "dog", "Read dog, log, pot aloud.", "Choose short o word", ["box", "pen", "sun"], "box", "Write: dog box", "The dog sat by the box."),
+          lesson("short-u", "☀️", "Short U Words", "Short u is heard in sun, cup, bug, hut, and run.", "sun", "s-u-n = sun", "Which word has short u?", ["sun", "cat", "bed"], "sun", "Read sun, cup, bug aloud.", "Choose short u word", ["cup", "dog", "pen"], "cup", "Write: sun cup", "The sun was bright. The child held a cup."),
+          lesson("blending", "🧩", "Blend Sounds", "Blending means putting sounds together to read a word.", "Blend", "/c/ /a/ /t/ → cat", "What word is /c/ /a/ /t/?", ["cat", "dog", "sun"], "cat", "Blend three simple words.", "Blend /d/ /o/ /g/", ["dog", "dig", "dug"], "dog", "Write: cat dog", "The child touched each sound and blended them into a word."),
+          lesson("sight-words-2", "👀", "More Sight Words", "Common sight words include we, you, he, she, are, and like.", "like", "I like apples.", "Which word is a sight word?", ["like", "elephant", "computer"], "like", "Read: I like apples.", "Choose sentence", ["We are happy.", "Box run big.", "Cat blue the."], "We are happy.", "Write: I like", "The child read, “I like apples.”"),
+          lesson("nouns", "📦", "Naming Words", "Naming words are nouns. A noun can name a person, place, animal, or thing.", "Noun", "boy • school • cat • book", "Which is a noun?", ["book", "run", "blue"], "book", "Name three nouns around you.", "Choose noun", ["teacher", "jump", "fast"], "teacher", "Write three nouns.", "A teacher held a book near the school gate."),
+          lesson("verbs", "🏃", "Action Words", "Action words are verbs. They tell what someone does.", "Verb", "run • eat • read • jump", "Which is a verb?", ["run", "red", "table"], "run", "Act and say three verbs.", "Choose verb", ["read", "pencil", "big"], "read", "Write: run read", "The child can run, jump, read, and write."),
+          lesson("adjectives", "🌈", "Describing Words", "Describing words tell more about a noun, such as big, small, red, soft, and happy.", "Big", "big ball • red apple", "Which word describes?", ["big", "cat", "school"], "big", "Describe one object with color or size.", "Choose describing word", ["red", "book", "jump"], "red", "Write: big red", "The child saw a big red ball."),
+          lesson("sentences", "🧱", "Simple Sentences", "A sentence is a group of words that gives a complete idea.", "Sentence", "I see a cat.", "Which is a sentence?", ["I see a cat.", "cat see I", "blue"], "I see a cat.", "Read three short sentences aloud.", "Choose sentence", ["The dog runs.", "runs dog the", "happy"], "The dog runs.", "Write: I see a cat.", "The child read, “I see a cat,” and pointed to the picture."),
+          lesson("full-stop", "🔴", "Capital Letter and Full Stop", "A sentence begins with a capital letter and often ends with a full stop.", "Full Stop", "I like milk.", "What comes at the end of this sentence?", ["Full stop", "Apple", "Chair"], "Full stop", "Copy one sentence with a full stop.", "Choose correct sentence", ["I am happy.", "i am happy", "I am happy"], "I am happy.", "Write: I am happy.", "The child wrote a sentence and remembered the full stop.")
+        ]
+      },
+      {
+        id: "age-6",
+        level: "Level 4",
+        label: "Age 6",
+        icon: "🌴",
+        title: "Age 6: Fluency, Grammar & Better Sentences",
+        subtitle: "Blends, digraphs, long vowels, sentence types, questions, pronouns, prepositions, story sequence, and comprehension.",
+        mastery: "By the end of this level, the child can read short passages, answer simple questions, use basic grammar, and write better sentences.",
+        lessons: [
+          lesson("blends", "🔗", "Beginning Blends", "A blend has two consonant sounds together, such as bl, cl, fl, st, br, and gr.", "blend", "blue • clap • stop", "Which word has a blend?", ["stop", "apple", "egg"], "stop", "Read blue, clap, stop.", "Choose blend word", ["frog", "ant", "up"], "frog", "Write: stop clap", "The frog jumped near the blue flower."),
+          lesson("digraphs", "🤫", "Digraphs", "A digraph has two letters making one sound, such as sh, ch, th, and wh.", "sh", "ship • chair • thin", "Which word has sh?", ["ship", "cat", "dog"], "ship", "Say sh, ch, th words.", "Choose ch word", ["chair", "sun", "pot"], "chair", "Write: ship chair", "The ship was big. The child sat on a chair."),
+          lesson("long-a", "🎂", "Long A", "Long a says its name in words like cake, rain, day, and play.", "cake", "cake • rain • play", "Which word has long a?", ["cake", "cat", "bed"], "cake", "Read cake, rain, play.", "Choose long a word", ["day", "dog", "sun"], "day", "Write: cake play", "The child ate cake and went out to play."),
+          lesson("long-e", "🌳", "Long E", "Long e is heard in tree, bee, green, and happy.", "tree", "tree • bee • green", "Which word has long e?", ["tree", "cat", "box"], "tree", "Read tree, bee, green.", "Choose long e word", ["green", "cup", "hot"], "green", "Write: tree green", "A bee flew near the green tree."),
+          lesson("pronouns", "👦", "Pronouns", "Pronouns replace nouns. He, she, it, we, and they are pronouns.", "He", "Ali runs. He runs.", "Which word is a pronoun?", ["He", "Book", "Jump"], "He", "Use he, she, and it in short sentences.", "Choose pronoun", ["She", "Table", "Red"], "She", "Write: He is kind.", "Sara reads. She reads every day."),
+          lesson("prepositions-2", "📍", "Place Words", "Prepositions show place: in, on, under, behind, beside, and between.", "under", "The cat is under the table.", "Which word shows place?", ["under", "happy", "run"], "under", "Put a toy under and beside a box.", "Choose preposition", ["behind", "apple", "jump"], "behind", "Write: under the table", "The cat slept under the table."),
+          lesson("questions", "❓", "Question Sentences", "A question asks something and ends with a question mark.", "Question", "Where is my bag?", "What mark ends a question?", ["Question mark", "Full stop only", "Comma only"], "Question mark", "Ask one English question politely.", "Choose question", ["Where is it?", "I am happy.", "Run fast."], "Where is it?", "Write: What is this?", "The child asked, “Where is my book?”"),
+          lesson("capital-letters", "🔠", "Capital Letters", "Capital letters begin names, places, days, months, and sentences.", "Capital", "Ali • Monday • Pakistan", "Which needs a capital letter?", ["Ali", "apple", "chair"], "Ali", "Write your name with a capital letter.", "Choose correct name", ["Sara", "sara", "SARA only"], "Sara", "Write: My name is Ali.", "Ali wrote his name with a capital A."),
+          lesson("sequence", "1️⃣", "Story Sequence", "Story sequence means the order of events: beginning, middle, and end.", "Sequence", "First • Next • Last", "Which word shows beginning?", ["First", "Last", "Finally"], "First", "Tell a short story using first, next, last.", "Choose sequence word", ["Next", "Blue", "Chair"], "Next", "Write: First, Next, Last", "First, the child woke up. Next, he ate breakfast. Last, he went to school."),
+          lesson("comprehension", "🧠", "Read and Answer", "Comprehension means understanding what we read.", "Understand", "Read: The cat is black.", "What color is the cat?", ["Black", "Green", "Yellow"], "Black", "Read a short sentence and answer one question.", "Choose answer from sentence: The dog is big.", ["big", "small", "red"], "big", "Write: The cat is black.", "The child read slowly and answered from the sentence."),
+          lesson("conjunction-and", "➕", "Joining with And", "And joins words or ideas.", "and", "I like apples and bananas.", "Which word joins ideas?", ["and", "the", "run"], "and", "Make one sentence using and.", "Choose joined sentence", ["I like tea and milk.", "Milk tea I.", "And run."], "I like tea and milk.", "Write: apples and bananas", "Mina packed apples and bananas for lunch."),
+          lesson("speaking", "🎤", "Speak in Sentences", "Good speaking uses clear voice, complete sentences, and polite words.", "Speak", "I can read a book.", "Which is a complete sentence?", ["I can read.", "read can I", "book"], "I can read.", "Say three complete English sentences.", "Choose complete sentence", ["I am six years old.", "Six old.", "Am I years."], "I am six years old.", "Write: I can speak.", "The child stood confidently and said, “I can speak English.”")
+        ]
+      },
+      {
+        id: "age-7",
+        level: "Level 5",
+        label: "Age 7",
+        icon: "🌟",
+        title: "Age 7: Reading, Grammar, Comprehension & Story Writing",
+        subtitle: "Paragraph reading, tenses, punctuation, adjectives/adverbs, contractions, spelling, comprehension, summaries, and creative writing.",
+        mastery: "By the end of this level, the child can read short paragraphs, answer comprehension questions, use grammar more accurately, and write simple stories.",
+        lessons: [
+          lesson("paragraph", "📖", "Read a Paragraph", "A paragraph is a group of sentences about one idea.", "Paragraph", "The sun is hot. The children play.", "What is a paragraph?", ["A group of sentences", "One letter only", "A color"], "A group of sentences", "Read one short paragraph aloud.", "Choose paragraph clue", ["Many related sentences", "One dot", "Only A B C"], "Many related sentences", "Write two sentences about a cat.", "The child read a paragraph about a sunny day."),
+          lesson("main-idea", "💡", "Main Idea", "The main idea tells what a text is mostly about.", "Main Idea", "A text about cats.", "What does main idea tell?", ["What the text is mostly about", "Only the last word", "Only the picture color"], "What the text is mostly about", "Read a short text and say the main idea.", "Choose main idea", ["The topic", "The pencil", "The full stop"], "The topic", "Write: This text is about...", "The story had many details, but the main idea was caring for animals."),
+          lesson("details", "🔎", "Supporting Details", "Details give more information about the main idea.", "Details", "Cats have fur. Cats drink milk.", "What do details do?", ["Give more information", "Hide the meaning", "End every story"], "Give more information", "Find two details in a short passage.", "Choose detail", ["Cats have fur.", "The story is about cats.", "Title"], "Cats have fur.", "Write two details.", "The child found details and understood the passage better."),
+          lesson("past-tense", "⏪", "Past Tense", "Past tense tells about something that already happened.", "played", "I played yesterday.", "Which word shows past time?", ["played", "play", "playing now"], "played", "Say three past tense sentences.", "Choose past tense", ["walked", "walk", "walking"], "walked", "Write: I played.", "Yesterday, the child played in the park."),
+          lesson("present-tense", "▶️", "Present Tense", "Present tense tells what happens now or regularly.", "play", "I play every day.", "Which word shows present simple?", ["play", "played", "will play"], "play", "Say two things you do every day.", "Choose present tense", ["read", "readed", "will read"], "read", "Write: I read.", "I read every day after breakfast."),
+          lesson("future-tense", "⏩", "Future Tense", "Future tense tells what will happen later.", "will", "I will read tomorrow.", "Which word helps show future?", ["will", "was", "did"], "will", "Say one thing you will do tomorrow.", "Choose future sentence", ["I will write.", "I wrote.", "I writing."], "I will write.", "Write: I will read.", "Tomorrow, the child will read a new story."),
+          lesson("adverbs", "⚡", "Adverbs", "Adverbs tell how an action happens, such as slowly, quickly, softly, and carefully.", "slowly", "The turtle walks slowly.", "Which word tells how?", ["slowly", "turtle", "walks"], "slowly", "Act and say: walk slowly, clap softly.", "Choose adverb", ["quickly", "book", "green"], "quickly", "Write: slowly", "The child spoke softly and walked carefully."),
+          lesson("contractions", "✂️", "Contractions", "A contraction joins words and uses an apostrophe, such as I am → I’m and do not → don’t.", "I'm", "I am → I'm", "Which is a contraction?", ["I'm", "Iam", "I am tall"], "I'm", "Read I’m, don’t, can’t.", "Choose contraction", ["don't", "do not", "do"], "don't", "Write: I'm happy.", "The child wrote, “I’m happy,” with an apostrophe."),
+          lesson("comma", "🟡", "Commas in Lists", "A comma can separate items in a list.", "Comma", "I like apples, bananas, and grapes.", "What separates items in a list?", ["Comma", "Question mark", "Capital letter"], "Comma", "Say a list of three fruits.", "Choose list sentence", ["I have red, blue, and green pens.", "I have red blue and.", "Red? Blue."], "I have red, blue, and green pens.", "Write a list with commas.", "The child wrote a list: apples, bananas, and mangoes."),
+          lesson("spelling", "🔠", "Spelling Patterns", "Spelling patterns help us read and write groups of words.", "spelling", "light • night • right", "Which words share a spelling pattern?", ["light and night", "cat and dog", "sun and pen"], "light and night", "Read three words with the same pattern.", "Choose pattern pair", ["play/day", "cat/sun", "dog/pen"], "play/day", "Write: light night", "The child noticed that light and night look alike at the end."),
+          lesson("summary", "🧠", "Tell It Briefly", "A simple summary tells the important idea in fewer words.", "Summary", "The story is about a helpful boy.", "What does a summary do?", ["Tells important idea briefly", "Copies every word", "Changes all facts"], "Tells important idea briefly", "Tell a short story in one sentence.", "Choose summary", ["The story is about kindness.", "Blue table run.", "All words copied."], "The story is about kindness.", "Write: This story is about...", "The child told the story briefly and clearly."),
+          lesson("story-writing", "📝", "Write a Short Story", "A short story has characters, setting, events, and an ending.", "Story", "Character • Place • Problem • Ending", "What does a story need?", ["Characters and events", "Only numbers", "Only colors"], "Characters and events", "Tell a three-sentence story.", "Choose story part", ["Ending", "Comma only", "Sound only"], "Ending", "Write three story sentences.", "A boy found a lost bird. He helped it. The bird flew home.")
+        ]
       }
-      if (!("speechSynthesis" in window)) {
-        alert("Sorry, your browser does not support audio reading.");
-        return;
+    ];
+
+    const state = {
+      activeAgeIndex: 0,
+      activeLessonIndex: 0,
+      funSound: true,
+      progress: loadProgress()
+    };
+
+    const ageTabs = document.getElementById("ageTabs");
+    const levelHero = document.getElementById("levelHero");
+    const levelProgress = document.getElementById("levelProgress");
+    const lessonLibrary = document.getElementById("lessonLibrary");
+    const lessonCard = document.getElementById("lessonCard");
+    const activityCard = document.getElementById("activityCard");
+    const storyCard = document.getElementById("storyCard");
+    const quizCard = document.getElementById("quizCard");
+    const missionCard = document.getElementById("missionCard");
+    const masteryCard = document.getElementById("masteryCard");
+    const compactWorldsEl = document.getElementById("compactWorlds");
+    const boardTitle = document.getElementById("boardTitle");
+    const writingGoal = document.getElementById("writingGoal");
+
+    function loadProgress() {
+      try {
+        return JSON.parse(localStorage.getItem("alhayat-english-progress")) || {
+          stars: 0,
+          lessons: [],
+          quizzes: [],
+          missions: [],
+          writings: []
+        };
+      } catch (e) {
+        return { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
       }
+    }
+
+    function saveProgress() {
+      localStorage.setItem("alhayat-english-progress", JSON.stringify(state.progress));
+      updateProgressCards();
+    }
+
+    function addUniqueProgress(type, id, stars) {
+      if (!state.progress[type].includes(id)) {
+        state.progress[type].push(id);
+        state.progress.stars += stars;
+        saveProgress();
+        playSuccessSound();
+      }
+    }
+
+    function updateProgressCards() {
+      document.getElementById("starsCount").textContent = state.progress.stars;
+      document.getElementById("lessonsCount").textContent = state.progress.lessons.length;
+      document.getElementById("quizCount").textContent = state.progress.quizzes.length;
+      document.getElementById("missionCount").textContent = state.progress.missions.length;
+    }
+
+    function speak(text, lang = "en-US") {
+      if (!("speechSynthesis" in window)) return;
       window.speechSynthesis.cancel();
-      const speech = new SpeechSynthesisUtterance(text);
-      speech.lang = lang;
-      speech.rate = repeat ? 0.76 : 0.82;
-      speech.pitch = 1.08;
-      speech.volume = 1;
-      window.speechSynthesis.speak(speech);
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = 0.82;
+      utterance.pitch = 1.03;
+      window.speechSynthesis.speak(utterance);
     }
 
-    function stopSound() {
-      const data = getLearningData();
-      if (data && typeof data.stopSpeech === "function") {
-        data.stopSpeech();
-        return;
-      }
-      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    function playSuccessSound() {
+      if (!state.funSound) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioContext();
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+        oscillator.type = "sine";
+        oscillator.frequency.setValueAtTime(620, ctx.currentTime);
+        oscillator.frequency.setValueAtTime(820, ctx.currentTime + 0.08);
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.28);
+        oscillator.connect(gain);
+        gain.connect(ctx.destination);
+        oscillator.start();
+        oscillator.stop(ctx.currentTime + 0.3);
+      } catch (e) {}
     }
 
-    function buildWordAudioText(item) {
-      const data = getLearningData();
-      if (data && typeof data.buildAudioText === "function") {
-        return data.buildAudioText("englishWords", item);
-      }
-      return `Word of the day. ${item.word}. ${item.word} means ${item.meaning}. Example sentence. ${item.sentence}. Mini task. ${item.miniTask}`;
+    function currentLevel() {
+      return ageLevels[state.activeAgeIndex];
     }
 
-    function renderWordOfDay() {
-      const data = getLearningData();
-      currentWordData = data?.getDailyItem?.("englishWords", new Date()) || fallbackWord;
-
-      document.getElementById("todayBadge").textContent = "📅 Today’s word from the word bank";
-      document.getElementById("wordOfDay").textContent = currentWordData.word;
-      document.getElementById("wordMeaning").textContent = currentWordData.meaning;
-      document.getElementById("wordSentence").textContent = currentWordData.sentence;
-      document.getElementById("wordTask").textContent = currentWordData.miniTask;
-      document.getElementById("wordClue").textContent = currentWordData.visualClue;
-      document.getElementById("wordEmoji").textContent = currentWordData.emoji || "📘";
-      document.getElementById("visualTitle").textContent = `${currentWordData.word} clue`;
-      document.getElementById("dynamicWritingPrompt").textContent = `Write three sentences using today’s word: ${currentWordData.word}.`;
-      document.getElementById("writingBox").placeholder = `Example: ${currentWordData.sentence}`;
-      document.getElementById("sentenceBuilder").textContent = `I can be ${currentWordData.word} when _____.`;
-      document.getElementById("sentenceBuilderExample").textContent = `Example: ${currentWordData.sentence}`;
-
-      renderDailyQuiz(currentWordData);
+    function currentLesson() {
+      return currentLevel().lessons[state.activeLessonIndex];
     }
 
-    function renderDailyQuiz(item) {
-      const questionEl = document.getElementById("dailyQuizQuestion");
-      const optionsEl = document.getElementById("dailyQuizOptions");
-      const resultEl = document.getElementById("dailyQuizResult");
-      const quiz = item.quiz || fallbackWord.quiz;
+    function renderAgeTabs() {
+      ageTabs.innerHTML = ageLevels.map((level, index) => `
+        <button class="age-tab ${index === state.activeAgeIndex ? "active" : ""}" type="button" data-age-index="${index}">
+          ${level.icon} ${level.label}
+        </button>
+      `).join("");
 
-      questionEl.textContent = quiz.question;
-      optionsEl.innerHTML = "";
-      resultEl.textContent = "";
-
-      quiz.options.forEach((option) => {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = option;
-        button.addEventListener("click", () => {
-          const isCorrect = option === quiz.answer;
-          optionsEl.querySelectorAll("button").forEach((btn) => btn.classList.remove("correct", "wrong"));
-          button.classList.add(isCorrect ? "correct" : "wrong");
-          getTracker()?.markQuiz?.("englishWords", item.id, isCorrect, {
-            question: quiz.question,
-            selected: option,
-            answer: quiz.answer
-          });
-          if (isCorrect) {
-            resultEl.textContent = "Correct! Great job. ⭐";
-            resultEl.style.color = "#166534";
-            speak(`Correct! Great job. ${item.word} means ${item.meaning}.`);
-          } else {
-            resultEl.textContent = `Good try! Correct answer: ${quiz.answer}`;
-            resultEl.style.color = "#b45309";
-            speak(`Good try. The correct answer is ${quiz.answer}.`);
-          }
-        });
-        optionsEl.appendChild(button);
-      });
-    }
-
-    function setupStaticAudioButtons() {
-      document.querySelectorAll("[data-static-speak]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const text = button.dataset.staticSpeak || "";
-          const lang = button.dataset.lang || "en-US";
-          const repeat = button.classList.contains("repeat-btn");
-          speak(text, lang, repeat);
+      ageTabs.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeAgeIndex = Number(btn.dataset.ageIndex);
+          state.activeLessonIndex = 0;
+          renderAll();
+          speak(`${currentLevel().label}. ${currentLevel().title}. Choose one English lesson.`);
         });
       });
     }
 
-    function renderAlphabetCards() {
-      const grid = document.getElementById("alphabetGrid");
-      grid.innerHTML = "";
-      alphabetData.forEach((item) => {
-        const card = document.createElement("article");
-        card.className = "alphabet-card";
-        card.innerHTML = `
-          <div class="letter-badge">🔤 Letter Card</div>
-          <div class="letter-main">
+    function renderLevelHero() {
+      const level = currentLevel();
+      levelHero.innerHTML = `
+        <div class="level-icon">${level.icon}</div>
+        <div>
+          <div class="level-badge">${level.level} • ${level.label}</div>
+          <h2>${level.title}</h2>
+          <p>${level.subtitle}</p>
+          <div class="sound-actions" style="margin-top:14px;">
+            <button class="listen-btn" type="button" id="listenLevelBtn">🔊 Listen Level</button>
+            <button class="repeat-btn" type="button" id="repeatLevelBtn">🔁 Repeat Goal</button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("listenLevelBtn").addEventListener("click", () => speak(`${level.title}. ${level.subtitle}`));
+      document.getElementById("repeatLevelBtn").addEventListener("click", () => speak(level.mastery));
+    }
+
+    function renderLevelProgress() {
+      levelProgress.innerHTML = ageLevels.map((level, index) => `
+        <div class="level-dot ${index === state.activeAgeIndex ? "active" : ""}">
+          ${level.icon} ${level.label}
+          <span>${level.level}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderLessonLibrary() {
+      const level = currentLevel();
+      document.getElementById("libraryTitle").textContent = `${level.label} English Library`;
+      document.getElementById("libraryLead").textContent = level.mastery;
+
+      lessonLibrary.innerHTML = level.lessons.map((item, index) => `
+        <button class="lesson-chip ${index === state.activeLessonIndex ? "active" : ""}" type="button" data-lesson-index="${index}">
+          <small>${index + 1}</small> ${item.icon} ${item.title}
+        </button>
+      `).join("");
+
+      lessonLibrary.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.activeLessonIndex = Number(btn.dataset.lessonIndex);
+          renderAll(false);
+          speak(`${currentLesson().title}. ${currentLesson().concept}`);
+        });
+      });
+    }
+
+    function renderLessonCards() {
+      const item = currentLesson();
+      const lessonId = `${currentLevel().id}-${item.id}`;
+
+      lessonCard.innerHTML = `
+        <div class="badge">Today’s English Focus</div>
+        <h3>${item.icon} ${item.title}</h3>
+        <p>${item.concept}</p>
+        <div class="english-display">${item.keyWord}</div>
+        <div class="visual-card">
+          <div class="visual-clue">
             <div>
-              <strong>${item.upper} ${item.lower}</strong>
-              <span>Word: ${item.word}</span>
+              <div class="emoji">${item.icon}</div>
+              <strong>${item.title}</strong>
             </div>
-            <div class="letter-icon" aria-hidden="true">${item.icon}</div>
           </div>
-          <div class="sound-chip">🔊 Sound: ${item.sound}</div>
-          <p><strong>${item.upper}</strong> is for <strong>${item.word}</strong>.</p>
-          <div class="alphabet-mini">${item.clue} Say the sound clearly, then say the word.</div>
-          <div class="sound-actions">
-            <button class="listen-btn" type="button" data-alpha-action="listen" data-alpha-id="${item.id}">🔊 Listen</button>
-            <button class="repeat-btn" type="button" data-alpha-action="repeat" data-alpha-id="${item.id}">🔁 Repeat</button>
-            <button class="learned-btn" type="button" data-alpha-action="learned" data-alpha-id="${item.id}">✅ Learned</button>
+          <div class="support-grid">
+            <div class="note-box"><strong>Learning Point:</strong> ${item.concept}</div>
+            <div class="visual-demo">${item.visual}</div>
           </div>
-        `;
-        grid.appendChild(card);
+        </div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenLessonBtn">🔊 Listen</button>
+          <button class="repeat-btn" type="button" id="repeatLessonBtn">🔁 Repeat Word</button>
+          <button class="learned-btn" type="button" id="learnedLessonBtn">✅ I Learned This</button>
+        </div>
+      `;
+
+      activityCard.innerHTML = `
+        <div class="badge">Word Game</div>
+        <h3>🧠 Choose the correct answer</h3>
+        <p>${item.gamePrompt}</p>
+        <div class="choice-options" id="gameOptions">
+          ${item.gameOptions.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="gameResult"></div>
+      `;
+
+      storyCard.innerHTML = `
+        <div class="badge">Mini Reading</div>
+        <h3>📖 Read and listen</h3>
+        <div class="story-text">${item.story}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenStoryBtn">🔊 Listen Story</button>
+          <button class="repeat-btn" type="button" id="repeatQuestionBtn">🔁 Repeat Question</button>
+        </div>
+      `;
+
+      quizCard.innerHTML = `
+        <div class="badge">Quick Quiz</div>
+        <h3>❓ ${item.question}</h3>
+        <div class="quiz-options" id="quizOptions">
+          ${item.options.map(opt => `<button type="button">${opt}</button>`).join("")}
+        </div>
+        <div class="result" id="quizResult"></div>
+      `;
+
+      missionCard.innerHTML = `
+        <div class="badge">Speaking Mission</div>
+        <h3>🎯 Mission for today</h3>
+        <div class="mission-box">${item.mission}</div>
+        <div class="sound-actions" style="margin-top:14px;">
+          <button class="listen-btn" type="button" id="listenMissionBtn">🔊 Listen Mission</button>
+          <button class="learned-btn" type="button" id="missionDoneBtn">✅ Mission Done</button>
+        </div>
+      `;
+
+      masteryCard.innerHTML = `
+        <div class="badge">Mastery Check</div>
+        <h3>🏆 Can the child use it?</h3>
+        <p class="section-lead" style="margin-top:0;">A lesson is stronger when the child can listen, say, read, answer, and write the focus item.</p>
+        <ul class="tips">
+          <li>Child can say: <strong>${item.keyWord}</strong>.</li>
+          <li>Child can answer: <strong>${item.question}</strong></li>
+          <li>Child can complete the mission: <strong>${item.mission}</strong></li>
+          <li>Child can write: <strong>${item.writing}</strong></li>
+        </ul>
+      `;
+
+      boardTitle.textContent = `Trace or write: ${item.keyWord}`;
+      writingGoal.textContent = item.writing;
+
+      document.getElementById("listenLessonBtn").addEventListener("click", () => speak(`${item.title}. ${item.concept}. ${item.visual}`));
+      document.getElementById("repeatLessonBtn").addEventListener("click", () => speak(`${item.keyWord}. ${item.keyWord}. ${item.keyWord}.`));
+      document.getElementById("learnedLessonBtn").addEventListener("click", () => {
+        addUniqueProgress("lessons", lessonId, 2);
+        speak(`Excellent. You learned ${item.title}.`);
       });
 
-      grid.querySelectorAll("[data-alpha-action]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const action = button.dataset.alphaAction;
-          const item = alphabetData.find((entry) => entry.id === button.dataset.alphaId);
-          if (!item) return;
-
-          if (action === "listen") {
-            speak(item.speak, "en-US", false);
-            getTracker()?.markListened?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
-          }
-
-          if (action === "repeat") {
-            speak(item.speak, "en-US", true);
-            getTracker()?.markRepeated?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
-          }
-
-          if (action === "learned") {
-            getTracker()?.markLearned?.("englishWords", item.id, { type: "alphabet", letter: item.upper });
-            button.textContent = "✅ Learned!";
-            button.disabled = true;
-          }
-        });
+      document.getElementById("listenStoryBtn").addEventListener("click", () => speak(item.story));
+      document.getElementById("repeatQuestionBtn").addEventListener("click", () => speak(item.question));
+      document.getElementById("listenMissionBtn").addEventListener("click", () => speak(item.mission));
+      document.getElementById("missionDoneBtn").addEventListener("click", () => {
+        addUniqueProgress("missions", lessonId, 3);
+        speak("Wonderful speaking mission completed. You earned stars.");
       });
+
+      document.querySelectorAll("#quizOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.answer, "quizResult", "quizzes", lessonId));
+      });
+
+      document.querySelectorAll("#gameOptions button").forEach(btn => {
+        btn.addEventListener("click", () => checkAnswer(btn, item.gameAnswer, "gameResult", "quizzes", `${lessonId}-game`));
+      });
+
+      drawGuide();
     }
 
-    function setupAlphabetToolbar() {
-      document.getElementById("playAlphabetIntroBtn").addEventListener("click", () => {
-        speak("Welcome to ABC Phonics. Listen to the letter, say the sound, then say the word.");
-        getTracker()?.markListened?.("englishWords", "alphabet-intro", { type: "alphabet-intro" });
+    function checkAnswer(button, correctAnswer, resultId, progressType, progressId) {
+      const siblings = button.parentElement.querySelectorAll("button");
+      siblings.forEach(btn => {
+        btn.classList.remove("correct", "wrong");
+        btn.disabled = true;
       });
 
-      document.getElementById("playAlphabetReviewBtn").addEventListener("click", () => {
-        const reviewText = alphabetData.map((item) => `${item.upper} says ${item.sound}. ${item.word}.`).join(" ");
-        speak(reviewText, "en-US", false);
-        getTracker()?.markRepeated?.("englishWords", "alphabet-review", { type: "alphabet-review" });
-      });
+      const result = document.getElementById(resultId);
+      if (button.textContent.trim() === correctAnswer) {
+        button.classList.add("correct");
+        result.textContent = "✅ Correct! Wonderful English thinking.";
+        result.style.color = "#166534";
+        addUniqueProgress(progressType, progressId, 2);
+        speak("Correct. Wonderful English thinking.");
+      } else {
+        button.classList.add("wrong");
+        result.textContent = `❌ Good try. Correct answer: ${correctAnswer}`;
+        result.style.color = "#991b1b";
+        speak(`Good try. The correct answer is ${correctAnswer}.`);
+      }
     }
 
-    function setupDynamicButtons() {
-      document.getElementById("listenWordBtn").addEventListener("click", () => {
-        speak(buildWordAudioText(currentWordData), "en-US", false);
-        getTracker()?.markListened?.("englishWords", currentWordData.id, { word: currentWordData.word });
-      });
-
-      document.getElementById("repeatWordBtn").addEventListener("click", () => {
-        speak(`${currentWordData.word}. ${currentWordData.word}. ${currentWordData.sentence}`, "en-US", true);
-        getTracker()?.markRepeated?.("englishWords", currentWordData.id, { word: currentWordData.word });
-      });
-
-      document.getElementById("learnedWordBtn").addEventListener("click", (event) => {
-        getTracker()?.markLearned?.("englishWords", currentWordData.id, { word: currentWordData.word });
-        event.currentTarget.textContent = "✅ Learned today!";
-        event.currentTarget.disabled = true;
-      });
-
-      document.getElementById("listenQuizBtn").addEventListener("click", () => {
-        const quiz = currentWordData.quiz || fallbackWord.quiz;
-        speak(`Quiz question. ${quiz.question}. Options are: ${quiz.options.join(", ")}.`);
-        getTracker()?.markListened?.("englishWords", `${currentWordData.id}-quiz`, { word: currentWordData.word });
-      });
-
-      document.getElementById("repeatQuizAnswerBtn").addEventListener("click", () => {
-        const quiz = currentWordData.quiz || fallbackWord.quiz;
-        speak(`The answer is ${quiz.answer}. ${currentWordData.word} means ${currentWordData.meaning}.`, "en-US", true);
-        getTracker()?.markRepeated?.("englishWords", `${currentWordData.id}-quiz-answer`, { word: currentWordData.word });
-      });
-
-      document.getElementById("listenWritingBtn").addEventListener("click", () => {
-        speak(`Writing task. Write three sentences using today's word: ${currentWordData.word}. Example: ${currentWordData.sentence}`);
-        getTracker()?.markListened?.("englishWords", `${currentWordData.id}-writing`, { word: currentWordData.word });
-      });
-
-      document.getElementById("saveWritingBtn").addEventListener("click", (event) => {
-        getTracker()?.markCompleted?.("englishWords", `${currentWordData.id}-writing`, {
-          word: currentWordData.word,
-          hasText: document.getElementById("writingBox").value.trim().length > 0
-        });
-        event.currentTarget.textContent = "✅ Writing saved!";
-      });
-
-      document.getElementById("listenSentenceBuilderBtn").addEventListener("click", () => {
-        speak(`Sentence builder. I can be ${currentWordData.word} when blank. Example: ${currentWordData.sentence}`);
-      });
-
-      document.getElementById("repeatSentenceBuilderBtn").addEventListener("click", () => {
-        speak(`I can be ${currentWordData.word} when blank.`, "en-US", true);
-      });
-
-      document.getElementById("listenReadingBtn").addEventListener("click", () => {
-        speak("The Little Garden. Sara had a small garden near her home. Every morning, she gave water to the plants. She watched the tiny leaves grow bigger day by day. One afternoon, Sara saw a dry plant. She did not ignore it. She added water and moved it to a place with more sunlight. After a few days, the plant looked fresh again. Sara smiled and said, Small care can make a big difference.");
-        getTracker()?.markListened?.("englishWords", "reading-little-garden", { type: "reading" });
-      });
-
-      document.getElementById("repeatReadingBtn").addEventListener("click", () => {
-        speak("Small care can make a big difference.", "en-US", true);
-        getTracker()?.markRepeated?.("englishWords", "reading-little-garden", { type: "reading" });
-      });
-
-      document.getElementById("completeReadingBtn").addEventListener("click", (event) => {
-        getTracker()?.markCompleted?.("englishWords", "reading-little-garden", { type: "reading" });
-        event.currentTarget.textContent = "✅ Completed!";
-        event.currentTarget.disabled = true;
-      });
-
-      document.getElementById("listenQuestionsBtn").addEventListener("click", () => {
-        speak("Comprehension questions. What did Sara have near her home? What happened to one plant? How did Sara help the plant? What lesson can we learn from the story?");
-      });
-
-      document.getElementById("repeatVocabularyBtn").addEventListener("click", () => {
-        speak("Garden. Tiny. Ignore. Sunlight. Fresh. Difference.", "en-US", true);
-      });
-
-      document.getElementById("listenSpeakingBtn").addEventListener("click", () => {
-        speak("Speaking prompt. My favourite book is. Say the title, one character, why you like it, and one lesson from the book.");
-      });
-
-      document.getElementById("repeatSpeakingBtn").addEventListener("click", () => {
-        speak("My favourite book is. I like it because. The lesson is.", "en-US", true);
-      });
-
-      document.getElementById("completeSpeakingBtn").addEventListener("click", (event) => {
-        getTracker()?.markCompleted?.("englishWords", "speaking-favourite-book", { type: "speaking" });
-        event.currentTarget.textContent = "✅ Practiced!";
-        event.currentTarget.disabled = true;
-      });
-
-      document.getElementById("listenChecklistBtn").addEventListener("click", () => {
-        speak("Good speaking checklist. Speak slowly. Use clear words. Look confident. Give one reason. Finish with a complete sentence.");
-      });
-
-      document.getElementById("repeatChecklistBtn").addEventListener("click", () => {
-        speak("Speak slowly. Use clear words. Give one reason.", "en-US", true);
-      });
+    function renderCompactWorlds() {
+      compactWorldsEl.innerHTML = compactWorlds.map(world => `
+        <div class="compact-world"><span>${world[0]}</span>${world[1]}</div>
+      `).join("");
     }
 
-    function setupStopSound() {
-      document.querySelectorAll(".stop-sound").forEach((button) => button.addEventListener("click", stopSound));
-      window.addEventListener("beforeunload", stopSound);
+    function renderAll(reset = true) {
+      renderAgeTabs();
+      renderLevelHero();
+      renderLevelProgress();
+      renderLessonLibrary();
+      renderLessonCards();
+      updateProgressCards();
+      if (reset) drawGuide();
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      renderWordOfDay();
-      renderAlphabetCards();
-      setupAlphabetToolbar();
-      setupStaticAudioButtons();
-      setupDynamicButtons();
-      setupStopSound();
-      window.setTimeout(() => { getTracker()?.renderAllProgressWidgets?.(); }, 100);
+    document.addEventListener("click", event => {
+      const speakButton = event.target.closest("[data-static-speak]");
+      if (speakButton) speak(speakButton.dataset.staticSpeak, speakButton.dataset.lang || "en-US");
     });
+
+    document.getElementById("listenAgeSelectorBtn").addEventListener("click", () => {
+      speak("Choose the child age. Then choose one English lesson from the library.");
+    });
+
+    document.querySelector(".stop-sound").addEventListener("click", () => {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    });
+
+    document.getElementById("funSoundToggle").addEventListener("click", event => {
+      state.funSound = !state.funSound;
+      event.currentTarget.classList.toggle("off", !state.funSound);
+      event.currentTarget.textContent = state.funSound ? "🔔 Fun Sounds: On" : "🔕 Fun Sounds: Off";
+      event.currentTarget.setAttribute("aria-pressed", String(state.funSound));
+    });
+
+    document.getElementById("resetProgressBtn").addEventListener("click", () => {
+      state.progress = { stars: 0, lessons: [], quizzes: [], missions: [], writings: [] };
+      saveProgress();
+      speak("Progress reset on this device.");
+    });
+
+    const canvas = document.getElementById("englishWhiteboard");
+    const ctx = canvas.getContext("2d");
+    let drawing = false;
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = rect.width * ratio;
+      canvas.height = rect.height * ratio;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      drawGuide();
+    }
+
+    function drawGuide() {
+      if (!ctx) return;
+      const rect = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, rect.width, rect.height);
+
+      const item = currentLesson();
+      ctx.save();
+      ctx.globalAlpha = 0.16;
+      ctx.fillStyle = "#5b21b6";
+      ctx.font = "900 52px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      const guide = item.keyWord.length > 18 ? item.keyWord.slice(0, 18) + "..." : item.keyWord;
+      ctx.fillText(guide, rect.width / 2, rect.height / 2 - 20);
+      ctx.font = "700 28px Arial";
+      ctx.fillText(item.icon, rect.width / 2, rect.height / 2 + 45);
+      ctx.restore();
+
+      ctx.strokeStyle = "#ede9fe";
+      ctx.lineWidth = 1;
+      for (let y = 42; y < rect.height; y += 42) {
+        ctx.beginPath();
+        ctx.moveTo(24, y);
+        ctx.lineTo(rect.width - 24, y);
+        ctx.stroke();
+      }
+    }
+
+    function getPointerPosition(event) {
+      const rect = canvas.getBoundingClientRect();
+      const source = event.touches ? event.touches[0] : event;
+      return {
+        x: source.clientX - rect.left,
+        y: source.clientY - rect.top
+      };
+    }
+
+    function startDrawing(event) {
+      event.preventDefault();
+      drawing = true;
+      const pos = getPointerPosition(event);
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+
+    function draw(event) {
+      if (!drawing) return;
+      event.preventDefault();
+      const pos = getPointerPosition(event);
+      ctx.lineTo(pos.x, pos.y);
+      ctx.strokeStyle = "#5b21b6";
+      ctx.lineWidth = 5;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.stroke();
+    }
+
+    function stopDrawing() {
+      drawing = false;
+    }
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mouseleave", stopDrawing);
+    canvas.addEventListener("touchstart", startDrawing, { passive: false });
+    canvas.addEventListener("touchmove", draw, { passive: false });
+    canvas.addEventListener("touchend", stopDrawing);
+
+    document.getElementById("clearBoardBtn").addEventListener("click", drawGuide);
+
+    document.getElementById("listenBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`Write ${item.keyWord}. ${item.writing}`);
+    });
+
+    document.getElementById("repeatBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      speak(`${item.keyWord}. Say it. Read it. Write it.`);
+    });
+
+    document.getElementById("saveBoardBtn").addEventListener("click", () => {
+      const item = currentLesson();
+      const id = `${currentLevel().id}-${item.id}-writing`;
+      addUniqueProgress("writings", id, 1);
+      speak("Writing saved on this device. Good effort.");
+    });
+
+    window.addEventListener("resize", resizeCanvas);
+
+    renderCompactWorlds();
+    renderAll();
+    resizeCanvas();
   </script>
 </body>
 </html>
