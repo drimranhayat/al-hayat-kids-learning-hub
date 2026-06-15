@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Rewards & Progress Stars | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="Safe local progress and reward stars for reading, quizzes, worksheets, duas, manners and learning missions." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/activities/rewards.html" />
+  <style>
+:root{
+  --green:#087f5b;
+  --green2:#10b981;
+  --blue:#2563eb;
+  --sky:#e0f2fe;
+  --yellow:#fef3c7;
+  --orange:#f97316;
+  --pink:#ec4899;
+  --purple:#7c3aed;
+  --ink:#102033;
+  --muted:#5b6b7f;
+  --soft:#f8fafc;
+  --card:#ffffff;
+  --line:#dbe7f3;
+  --shadow:0 18px 45px rgba(15,23,42,.12);
+  --radius:26px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at top left, #fff7ed 0, transparent 32%),
+    radial-gradient(circle at 90% 10%, #dbeafe 0, transparent 32%),
+    linear-gradient(180deg,#f8fbff 0%,#eefdf6 55%,#fffaf0 100%);
+  line-height:1.65;
+}
+a{color:inherit;text-decoration:none}
+.skip{position:absolute;left:-999px;top:auto}
+.skip:focus{left:12px;top:12px;background:#fff;padding:10px 14px;border-radius:12px;z-index:99}
+.topbar{
+  background:#063b2e;
+  color:white;
+  padding:8px 18px;
+  font-size:.92rem;
+  text-align:center;
+}
+.header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter: blur(14px);
+  background:rgba(255,255,255,.92);
+  border-bottom:1px solid rgba(15,23,42,.08);
+}
+.nav{
+  width:min(1180px,94%);
+  margin:auto;
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900}
+.logo{
+  width:52px;height:52px;border-radius:18px;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  color:white;display:grid;place-items:center;
+  box-shadow:0 14px 28px rgba(37,99,235,.18);
+  font-size:1.2rem;
+}
+.brand small{display:block;color:var(--muted);font-weight:700;font-size:.76rem}
+.links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.links a{
+  padding:9px 12px;border-radius:999px;
+  font-weight:800;font-size:.92rem;color:#174151;
+}
+.links a:hover{background:#e7fff5;color:#05603e;transform:translateY(-1px)}
+.hero{
+  width:min(1180px,94%);
+  margin:34px auto 20px;
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:26px;align-items:center;
+}
+.panel,.card,.story-card,.guide-card{
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(148,163,184,.25);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.hero-text{padding:34px}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#e7fff5;color:#05603e;
+  padding:8px 13px;border-radius:999px;
+  font-weight:900;font-size:.92rem;
+}
+h1{font-size:clamp(2.1rem,5vw,4.45rem);line-height:1.04;margin:14px 0}
+h2{font-size:clamp(1.65rem,3vw,2.55rem);line-height:1.16;margin:0 0 12px}
+h3{font-size:1.22rem;margin:0 0 8px}
+p{margin:0 0 12px;color:#27445a}
+.lead{font-size:1.14rem;color:#334155}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 18px;border-radius:16px;
+  border:0;cursor:pointer;font-weight:900;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  color:white;box-shadow:0 12px 24px rgba(37,99,235,.18);
+  transition:.2s ease;
+}
+.btn:hover{transform:translateY(-2px) scale(1.01)}
+.btn.alt{background:white;color:var(--green);border:2px solid #b7f7dc}
+.btn.orange{background:linear-gradient(135deg,#fb923c,#ef4444)}
+.btn.purple{background:linear-gradient(135deg,#8b5cf6,#ec4899)}
+.visual{min-height:360px;padding:24px;display:grid;place-items:center;overflow:hidden}
+.big-emoji{
+  width:240px;height:240px;border-radius:50%;
+  background:conic-gradient(from 140deg,#d1fae5,#dbeafe,#fef3c7,#fee2e2,#d1fae5);
+  display:grid;place-items:center;font-size:5.8rem;
+  box-shadow:inset 0 0 0 16px rgba(255,255,255,.65);
+}
+.stats{
+  width:min(1180px,94%);
+  margin:18px auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+}
+.stat{padding:18px;text-align:center}
+.stat b{display:block;font-size:1.7rem;color:var(--green)}
+.section{width:min(1180px,94%);margin:44px auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card,.story-card,.guide-card{padding:22px}
+.icon{
+  width:54px;height:54px;border-radius:18px;
+  display:grid;place-items:center;
+  background:#ecfeff;font-size:1.7rem;margin-bottom:12px;
+}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.badge{padding:6px 10px;border-radius:999px;background:#f1f5f9;color:#33546a;font-size:.82rem;font-weight:900}
+.note{
+  border-left:6px solid var(--green);
+  padding:18px;background:#ecfdf5;border-radius:18px;margin:18px 0;
+}
+.searchbar{
+  display:flex;gap:10px;flex-wrap:wrap;margin:18px 0;
+}
+input,select,textarea{
+  border:2px solid #dbeafe;border-radius:14px;padding:12px 14px;
+  font:inherit;background:white;min-width:220px;
+}
+.hidden{display:none!important}
+.lesson-list{display:grid;gap:12px;margin-top:18px}
+.lesson{
+  padding:16px;border:1px solid #dbeafe;border-radius:18px;background:#fff;
+  display:flex;gap:12px;align-items:flex-start;justify-content:space-between;
+}
+.lesson strong{color:#0f513d}
+.footer{
+  margin-top:56px;background:#063b2e;color:white;padding:36px 0;
+}
+.footer-inner{width:min(1180px,94%);margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px}
+.footer a,.footer p{color:#dffbef}
+.footer h3{color:white}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .stats,.grid,.grid.two,.footer-inner{grid-template-columns:1fr}
+  .links{display:none}
+}
+</style>
+  
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="topbar">Safe, colorful, Islamic and academic learning for children • Parent-guided • No child login required</div>
+<header class="header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html">
+      <span class="logo">AH</span>
+      <span>Al-Hayat Kids Learning Hub <small>Learn • Read • Play • Grow</small></span>
+    </a>
+    <div class="links">
+      <a href="../index.html">Home</a>
+      <a href="../subjects/index.html">Subjects</a>
+      <a href="../reading-library/index.html">Stories</a>
+      <a href="../activities/index.html">Activities</a>
+      <a href="../worksheets/index.html">Worksheets</a>
+      <a href="../islamic-corner/index.html">Islamic</a>
+      <a href="../parents-corner/index.html">Parents</a>
+      <a href="../online-classes.html">Online Classes</a>
+    </div>
+  </nav>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="hero-text panel">
+    <span class="kicker">Activities • Safe Rewards</span>
+    <h1>Kids Rewards & Progress Stars</h1>
+    <p class="lead">A safe rewards page for learning motivation. Children collect stars for reading, quizzes, worksheets, duas, good manners, screen breaks and helpful home actions. Progress stays only on the same browser.</p>
+    <div class="actions">
+      <a class="btn" href="#rewards">Open Reward Board</a>
+      <a class="btn alt" href="quizzes.html">Take Quiz</a>
+      <button class="btn orange" data-say="Learn with effort, earn stars with honesty, and celebrate good habits.">Listen</button>
+    </div>
+  </div>
+  <div class="visual panel"><div class="big-emoji">⭐</div></div>
+</section>
+<section class="stats">
+  <div class="stat card"><b id="stars">0</b>Stars</div>
+  <div class="stat card"><b id="badges">0</b>Badges</div>
+  <div class="stat card"><b>8</b>Reward Areas</div>
+  <div class="stat card"><b>Safe</b>No Login</div>
+</section>
+<section class="section" id="rewards">
+  <h2>Reward Board</h2>
+  <p class="lead">Click a reward when the child completes the action honestly. This is for motivation, not pressure.</p>
+  <div class="grid" id="rewardCards"></div>
+  <div class="actions">
+    <button class="btn" id="celebrate">Celebrate Progress</button>
+    <button class="btn alt" id="reset">Reset Local Rewards</button>
+  </div>
+</section>
+<section class="section">
+  <h2>Reward Rules for Parents</h2>
+  <div class="grid two">
+    <div class="guide-card"><div class="icon">💚</div><h3>Praise effort first</h3><p>Reward trying, correction, patience and honesty—not only perfect answers.</p></div>
+    <div class="guide-card"><div class="icon">🧠</div><h3>Keep it healthy</h3><p>Stars should encourage learning. They should not become bribery or pressure.</p></div>
+    <div class="guide-card"><div class="icon">🤲</div><h3>Connect with values</h3><p>Celebrate reading, helping, kindness, prayer manners and gratitude.</p></div>
+    <div class="guide-card"><div class="icon">🧸</div><h3>Use small rewards</h3><p>Choose non-digital rewards: story time, stickers, drawing, family walk, or praise note.</p></div>
+  </div>
+</section>
+<script>
+const items=[
+ ["Reading Star","Read one short story with attention.","📖"],
+ ["Quiz Star","Complete one quiz and review mistakes.","❓"],
+ ["Worksheet Star","Finish one worksheet neatly.","✍️"],
+ ["Dua Star","Learn or revise one daily dua.","🤲"],
+ ["Manners Star","Practise one good manner today.","🌙"],
+ ["Helper Star","Help at home without being forced.","🏠"],
+ ["Screen Break Star","Take a healthy break after video learning.","👀"],
+ ["Kind Words Star","Use gentle words with family or classmates.","💬"]
+];
+let state=JSON.parse(localStorage.getItem("ah_rewards")||"{}");
+function save(){localStorage.setItem("ah_rewards",JSON.stringify(state));}
+function total(){return Object.values(state).reduce((a,b)=>a+b,0);}
+function render(){
+  document.getElementById("stars").textContent=total();
+  document.getElementById("badges").textContent=Object.values(state).filter(v=>v>=3).length;
+  const wrap=document.getElementById("rewardCards"); wrap.innerHTML="";
+  items.forEach((it,i)=>{
+    const count=state[i]||0;
+    const card=document.createElement("article");
+    card.className="card";
+    card.innerHTML=`<div class="icon">${it[2]}</div><h3>${it[0]}</h3><p>${it[1]}</p><p><strong>Earned:</strong> ${count} stars</p><button class="btn" data-add="${i}">Add Star</button>`;
+    wrap.appendChild(card);
+  });
+}
+document.addEventListener("click",e=>{
+  if(e.target.dataset.add!==undefined){const i=e.target.dataset.add; state[i]=(state[i]||0)+1; save(); render();}
+});
+document.getElementById("reset").onclick=()=>{if(confirm("Reset rewards on this browser?")){state={};save();render();}};
+document.getElementById("celebrate").onclick=()=>speakText("Wonderful effort. Keep learning, keep helping, and keep growing with good manners.");
+render();
+</script>
+
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h3>Al-Hayat Kids Learning Hub</h3>
+      <p>A joyful Islamic and academic learning platform where children learn with stories, worksheets, quizzes, manners, duas, routines and parent support.</p>
+    </div>
+    <div>
+      <h3>Learning</h3>
+      <p><a href="../subjects/index.html">Subjects</a></p>
+      <p><a href="../reading-library/index.html">Reading Library</a></p>
+      <p><a href="../activities/index.html">Activities</a></p>
+      <p><a href="../worksheets/index.html">Worksheets</a></p>
+    </div>
+    <div>
+      <h3>Parent Support</h3>
+      <p><a href="../parents-corner/index.html">Parents Corner</a></p>
+      <p><a href="../contact.html">Contact</a></p>
+      <p><a href="../privacy-policy.html">Privacy Policy</a></p>
+      <p><a href="../faq.html">FAQ</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  function speakText(text){
+    if(!("speechSynthesis" in window)) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.9; u.pitch = 1.05;
+    window.speechSynthesis.speak(u);
+  }
+  document.querySelectorAll("[data-say]").forEach(btn=>{
+    btn.addEventListener("click",()=>speakText(btn.getAttribute("data-say")));
+  });
+</script>
+</body>
+</html>
