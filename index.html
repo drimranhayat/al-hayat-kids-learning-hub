@@ -4,2044 +4,329 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Al-Hayat Kids Learning Hub | Learn • Explore • Grow</title>
-  <meta name="description" content="Al-Hayat Kids Learning Hub is a joyful global learning platform for children with Islamic Studies, Arabic, English, Math, Science, stories, quizzes, worksheets, videos, and online classes with Dr. Imran Hayat." />
-  <meta name="keywords" content="Al-Hayat Kids Learning Hub, kids learning website, Islamic learning for kids, Arabic for kids, English for kids, kids worksheets, kids quizzes, online classes with Dr Imran Hayat" />
+  <title>Al-Hayat Kids Learning Hub | Islamic & Academic Learning for Kids</title>
+  <meta name="description" content="Al-Hayat Kids Learning Hub is a colorful child-friendly learning platform for Islamic learning, English, Math, Science, Arabic, General Knowledge, worksheets, quizzes, stories, activities, parent support, and online classes." />
+  <meta name="keywords" content="Al-Hayat Kids Learning Hub, Islamic learning for kids, kids worksheets, online classes for children, English for kids, Math for kids, Science for kids, Arabic for kids, kids quizzes, moral stories" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0b7a34" />
+  <meta name="theme-color" content="#7c3aed" />
   <meta name="google-site-verification" content="Rx_9_FzqQaFZV240R-BGO37LMANtmEbQdejzFh3ZuYc" />
-
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/" />
 
-  <meta property="og:title" content="Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow." />
+  <meta property="og:title" content="Al-Hayat Kids Learning Hub | Learn • Read • Play • Grow" />
+  <meta property="og:description" content="A joyful Islamic and academic learning hub for children with subjects, worksheets, quizzes, stories, activities, parent support, and online classes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/" />
 
   <style>
     :root {
-      --green: #0b8f3a;
-      --green-2: #0a6f32;
-      --green-3: #064f27;
-      --light-green: #e7f8ed;
-      --blue: #1d6eea;
-      --blue-2: #0b4cba;
-      --light-blue: #e7f2ff;
-      --purple: #7c3aed;
-      --purple-2: #5b21b6;
-      --light-purple: #f1eaff;
-      --orange: #ff8a00;
-      --orange-2: #d97706;
-      --light-orange: #fff3df;
-      --pink: #ef5da8;
-      --light-pink: #fff0f7;
-      --cyan: #05b6c7;
-      --light-cyan: #e9fbfd;
-      --yellow: #ffc928;
-      --light-yellow: #fff8df;
-      --red: #ef4444;
-      --ink: #13233a;
-      --text: #334155;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --bg: #f7fbff;
-      --white: #ffffff;
-      --shadow: 0 16px 42px rgba(15, 23, 42, 0.12);
-      --shadow-soft: 0 10px 26px rgba(15, 23, 42, 0.08);
-      --radius: 22px;
-      --radius-lg: 30px;
-      --max: 1210px;
+      --purple:#7c3aed;
+      --purple-dark:#5b21b6;
+      --purple-soft:#ede9fe;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --blue-soft:#dbeafe;
+      --green:#16a34a;
+      --green-dark:#166534;
+      --green-soft:#dcfce7;
+      --teal:#0f766e;
+      --teal-dark:#115e59;
+      --teal-soft:#ccfbf1;
+      --pink:#ec4899;
+      --pink-dark:#be185d;
+      --pink-soft:#fce7f3;
+      --gold:#d97706;
+      --gold-dark:#92400e;
+      --gold-soft:#fef3c7;
+      --orange:#f97316;
+      --orange-soft:#ffedd5;
+      --rose:#e11d48;
+      --rose-soft:#ffe4e6;
+      --ink:#102033;
+      --text:#334155;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
+      --radius:24px;
+      --max:1240px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; scroll-padding-top:138px; }
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
+      color:var(--text);
+      line-height:1.7;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(124,58,237,.16), transparent 28%),
+        radial-gradient(circle at 92% 14%, rgba(236,72,153,.14), transparent 32%),
+        radial-gradient(circle at 74% 88%, rgba(22,163,74,.13), transparent 30%),
+        linear-gradient(180deg,#fbf8ff 0%,#ffffff 42%,#f7fff9 100%);
+      overflow-x:hidden;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input {
-      font: inherit;
-    }
-
-    img,
-    svg {
-      display: block;
-      max-width: 100%;
-    }
-
-    .container {
-      width: min(100% - 34px, var(--max));
-      margin-inline: auto;
-    }
-
+    a { color:inherit; text-decoration:none; }
+    button,input { font:inherit; }
+    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
     .skip-link {
-      position: absolute;
-      left: 16px;
-      top: -100px;
-      z-index: 9999;
-      background: var(--ink);
-      color: white;
-      padding: 10px 14px;
-      border-radius: 12px;
-      font-weight: 800;
+      position:absolute; top:-100px; left:16px; z-index:9999;
+      background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900;
     }
+    .skip-link:focus { top:16px; }
 
-    .skip-link:focus {
-      top: 16px;
+    .topbar {
+      position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
     }
-
-    /* ==============================
-       TOP HEADER
-       ============================== */
-
-    .top-header {
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid rgba(226, 232, 240, 0.95);
-      position: sticky;
-      top: 0;
-      z-index: 300;
-      backdrop-filter: blur(16px);
+    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark {
+      width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto;
+      background:linear-gradient(135deg,var(--purple),var(--pink),var(--green)); color:white; font-size:1.8rem; box-shadow:var(--soft-shadow);
     }
+    .brand-text strong { display:block; color:var(--purple-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em; }
+    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
 
-    .top-row {
-      min-height: 88px;
-      display: grid;
-      grid-template-columns: 295px 1fr 320px;
-      align-items: center;
-      gap: 24px;
+    .search-box {
+      display:grid; grid-template-columns:1fr 48px; align-items:center; min-width:280px; max-width:430px;
+      background:white; border:1px solid #cbd5e1; border-radius:16px; overflow:hidden; box-shadow:var(--soft-shadow);
     }
+    .search-box input { height:46px; border:0; outline:0; padding:0 14px; color:var(--ink); font-weight:750; }
+    .search-box button { height:46px; border:0; background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; cursor:pointer; font-size:1.1rem; }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .nav-actions a,.menu-btn {
+      min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px;
+      border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900; cursor:pointer;
     }
+    .nav-actions a.primary { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; border-color:transparent; }
+    .menu-btn { display:none; }
 
-    .brand-icon {
-      width: 64px;
-      height: 64px;
-      display: grid;
-      place-items: center;
-      position: relative;
-      border-radius: 18px;
+    .mega-nav {
+      position:sticky; top:76px; z-index:450;
+      background:linear-gradient(90deg,#5b21b6,#7c3aed,#2563eb,#16a34a,#d97706);
+      color:white; box-shadow:0 10px 22px rgba(124,58,237,.22);
+    }
+    .mega-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
+    .mega-inner::-webkit-scrollbar { display:none; }
+    .mega-inner a {
+      white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px;
+      border-radius:999px; font-weight:850; font-size:.92rem;
+    }
+    .mega-inner a:hover,.mega-inner a:focus { background:rgba(255,255,255,.16); }
+
+    .mobile-menu { display:none; background:white; border-bottom:1px solid var(--line); }
+    .mobile-menu.open { display:block; }
+    .mobile-grid { padding:14px 0; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+    .mobile-grid a { padding:12px; border-radius:14px; background:#f8fafc; border:1px solid var(--line); font-weight:900; }
+
+    .hero { position:relative; overflow:hidden; padding:58px 0 44px; }
+    .hero::before {
+      content:""; position:absolute; inset:0;
       background:
-        radial-gradient(circle at 50% 15%, #ffdd4a 0 8px, transparent 9px),
-        linear-gradient(135deg, #eafaf0 0%, #e8f1ff 100%);
-      box-shadow: var(--shadow-soft);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      flex: 0 0 auto;
+        radial-gradient(circle at 12% 18%, rgba(254,243,199,.82) 0 48px, transparent 49px),
+        radial-gradient(circle at 87% 18%, rgba(124,58,237,.16) 0 76px, transparent 77px),
+        radial-gradient(circle at 78% 86%, rgba(37,99,235,.13) 0 98px, transparent 99px);
+      pointer-events:none;
     }
-
-    .brand-icon .book-shape {
-      width: 42px;
-      height: 35px;
-      border-radius: 5px 5px 12px 12px;
-      background: linear-gradient(90deg, #0b8f3a 0 48%, #1d6eea 52% 100%);
-      position: relative;
-      margin-top: 10px;
+    .hero-grid { position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:34px; align-items:center; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:8px; min-height:34px; padding:0 12px; border-radius:999px;
+      background:white; border:1px solid var(--line); color:var(--purple-dark); font-weight:1000; box-shadow:var(--soft-shadow);
+      margin-bottom:16px;
     }
-
-    .brand-icon .book-shape::before,
-    .brand-icon .book-shape::after {
-      content: "";
-      position: absolute;
-      top: -15px;
-      width: 9px;
-      height: 24px;
-      border-radius: 999px;
-      background: #ff8a00;
-      transform-origin: bottom;
+    h1 {
+      color:var(--ink); font-size:clamp(2.75rem,6.2vw,6.1rem); line-height:.92;
+      letter-spacing:-.075em; font-weight:1000; margin-bottom:18px;
     }
-
-    .brand-icon .book-shape::before {
-      left: 8px;
-      transform: rotate(-30deg);
+    h1 span {
+      display:block; background:linear-gradient(90deg,var(--purple),var(--pink),var(--blue),var(--green),var(--gold));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
     }
-
-    .brand-icon .book-shape::after {
-      right: 8px;
-      background: #7c3aed;
-      transform: rotate(30deg);
-    }
-
-    .brand-text strong {
-      display: block;
-      font-size: 1.88rem;
-      line-height: 0.95;
-      letter-spacing: -0.04em;
-      color: var(--green);
-      font-weight: 950;
-    }
-
-    .brand-text .kids {
-      color: #ff6b00;
-    }
-
-    .brand-text .hub {
-      color: var(--purple);
-    }
-
-    .brand-text span {
-      display: block;
-      color: #65758b;
-      font-size: 0.94rem;
-      font-weight: 650;
-      margin-top: 3px;
-    }
-
-    .global-search {
-      display: grid;
-      grid-template-columns: 1fr 54px;
-      align-items: center;
-      max-width: 520px;
-      width: 100%;
-      justify-self: center;
-      background: white;
-      border: 1px solid #cfd8e3;
-      border-radius: 12px;
-      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
-      overflow: hidden;
-    }
-
-    .global-search input {
-      border: 0;
-      outline: 0;
-      height: 52px;
-      padding: 0 18px;
-      color: var(--ink);
-      font-size: 0.98rem;
-      font-weight: 600;
-    }
-
-    .global-search button {
-      height: 52px;
-      border: 0;
-      background: linear-gradient(135deg, var(--green), var(--green-2));
-      color: white;
-      font-size: 1.3rem;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-    }
-
-    .quick-actions {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .quick-action {
-      min-width: 64px;
-      display: grid;
-      justify-items: center;
-      gap: 4px;
-      font-weight: 760;
-      color: var(--ink);
-      font-size: 0.84rem;
-    }
-
-    .quick-action .qa-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      font-size: 1.32rem;
-      background: #f1f5f9;
-    }
-
-    .quick-action:nth-child(1) .qa-icon { background: #e7f2ff; color: var(--blue); }
-    .quick-action:nth-child(2) .qa-icon { background: #fff4d2; color: #f59e0b; }
-    .quick-action:nth-child(3) .qa-icon { background: #eef2ff; color: #4f46e5; }
-
-    .mobile-toggle {
-      display: none;
-      width: 48px;
-      height: 48px;
-      border: 0;
-      border-radius: 15px;
-      background: var(--light-green);
-      color: var(--green-2);
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-
-    /* ==============================
-       NAVIGATION BAR
-       ============================== */
-
-    .main-nav-wrap {
-      background: linear-gradient(90deg, #08722f, #0a8a3a, #08722f);
-      box-shadow: 0 8px 22px rgba(3, 84, 35, 0.20);
-      position: sticky;
-      top: 88px;
-      z-index: 250;
-    }
-
-    .main-nav {
-      min-height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .home-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 0;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-size: 1.65rem;
-      background: rgba(255, 255, 255, 0.08);
-      flex: 0 0 auto;
-    }
-
-    .nav-list {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      flex: 1;
-    }
-
-    .nav-item {
-      position: relative;
-    }
-
-    .nav-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      min-height: 50px;
-      padding: 0 13px;
-      color: white;
-      font-size: 0.92rem;
-      font-weight: 820;
-      white-space: nowrap;
-      transition: 0.2s ease;
-    }
-
-    .nav-link:hover,
-    .nav-link:focus {
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    .nav-arrow {
-      font-size: 0.72rem;
-      opacity: 0.9;
-    }
-
-    .sub-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 218px;
-      list-style: none;
-      background: white;
-      border: 1px solid #dbe5ef;
-      border-radius: 0 0 18px 18px;
-      box-shadow: var(--shadow);
-      padding: 10px;
-      display: none;
-      z-index: 400;
-    }
-
-    .nav-item:hover .sub-menu,
-    .nav-item:focus-within .sub-menu {
-      display: grid;
-    }
-
-    .sub-menu a {
-      display: block;
-      padding: 10px 12px;
-      border-radius: 12px;
-      font-weight: 750;
-      color: var(--ink);
-      font-size: 0.92rem;
-    }
-
-    .sub-menu a:hover,
-    .sub-menu a:focus {
-      background: var(--light-green);
-      color: var(--green-2);
-    }
-
-    .nav-class-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--yellow);
-      color: #1f2937;
-      font-weight: 950;
-      min-height: 40px;
-      padding: 0 18px;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(250, 204, 21, 0.25);
-      white-space: nowrap;
-    }
-
-    /* ==============================
-       HERO
-       ============================== */
-
-    .hero {
-      position: relative;
-      min-height: 418px;
-      background:
-        radial-gradient(circle at 10% 80%, rgba(255, 201, 40, 0.35) 0 4rem, transparent 4.1rem),
-        radial-gradient(circle at 30% 8%, rgba(255, 255, 255, 0.85) 0 4.5rem, transparent 4.6rem),
-        radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.78) 0 3.6rem, transparent 3.7rem),
-        linear-gradient(110deg, #c8f0ff 0%, #e5f7ff 45%, #d9f0ff 100%);
-      overflow: hidden;
-      border-bottom: 1px solid rgba(186, 230, 253, 0.8);
-    }
-
-    .hero::before,
-    .hero::after {
-      content: "";
-      position: absolute;
-      left: -6%;
-      right: -6%;
-      height: 95px;
-      bottom: -35px;
-      background:
-        radial-gradient(circle at 5% 50%, #fff 0 48px, transparent 49px),
-        radial-gradient(circle at 19% 65%, #fff 0 62px, transparent 63px),
-        radial-gradient(circle at 39% 45%, #fff 0 54px, transparent 55px),
-        radial-gradient(circle at 60% 58%, #fff 0 62px, transparent 63px),
-        radial-gradient(circle at 78% 46%, #fff 0 55px, transparent 56px),
-        radial-gradient(circle at 95% 55%, #fff 0 65px, transparent 66px);
-      opacity: 0.98;
-    }
-
-    .hero-grid {
-      min-height: 418px;
-      display: grid;
-      grid-template-columns: 0.94fr 1.06fr;
-      gap: 22px;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-copy {
-      padding: 38px 0 70px 72px;
-      position: relative;
-      z-index: 3;
-    }
-
-    .hero-copy .welcome {
-      display: block;
-      color: #0f172a;
-      font-size: clamp(1.35rem, 2.1vw, 2.1rem);
-      font-weight: 850;
-      letter-spacing: -0.04em;
-      margin-bottom: 2px;
-    }
-
-    .hero-title {
-      color: var(--green);
-      font-size: clamp(3.8rem, 7vw, 6.5rem);
-      font-weight: 1000;
-      letter-spacing: -0.075em;
-      line-height: 0.86;
-      margin-bottom: 20px;
-    }
-
-    .hero-title span {
-      display: block;
-      font-size: 0.62em;
-      letter-spacing: -0.055em;
-      background: linear-gradient(90deg, #ff6b00, #0b67d8, #8b35d6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin-top: 8px;
-    }
-
-    .hero-lead {
-      max-width: 485px;
-      color: #17324d;
-      font-weight: 650;
-      font-size: 1.08rem;
-      margin-bottom: 22px;
-    }
-
-    .learning-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin: 0 0 22px;
-    }
-
-    .learning-tags span {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      color: #24364e;
-      font-weight: 700;
-      font-size: 0.94rem;
-    }
-
+    .hero-lead { max-width:780px; font-size:clamp(1.03rem,2vw,1.25rem); color:#27415e; font-weight:650; margin-bottom:22px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 46px;
-      border-radius: 10px;
-      border: 0;
-      padding: 0 22px;
-      font-weight: 950;
-      cursor: pointer;
-      transition: 0.2s ease;
-      box-shadow: var(--shadow-soft);
+      min-height:50px; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow);
+      transition:.2s ease;
     }
+    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
+    .btn-purple { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; }
+    .btn-pink { background:linear-gradient(135deg,var(--pink),var(--pink-dark)); color:white; }
+    .btn-green { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; }
+    .btn-blue { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; }
+    .btn-gold { background:linear-gradient(135deg,var(--gold),var(--gold-dark)); color:white; }
+    .btn-white { background:white; color:var(--ink); border:1px solid var(--line); }
 
-    .btn:hover,
-    .btn:focus {
-      transform: translateY(-2px);
-      filter: saturate(1.08);
+    .stats { margin-top:24px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:880px; }
+    .stat { background:white; border:1px solid var(--line); border-radius:18px; padding:14px 12px; box-shadow:var(--soft-shadow); text-align:center; }
+    .stat strong { display:block; color:var(--purple-dark); font-size:1.35rem; line-height:1; font-weight:1000; }
+    .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:800; margin-top:4px; }
+
+    .hero-visual {
+      position:relative; min-height:456px; border-radius:38px; overflow:hidden; padding:26px;
+      background:
+        radial-gradient(circle at 45% 16%, rgba(255,255,255,.82) 0 58px, transparent 59px),
+        linear-gradient(135deg,#ede9fe,#fce7f3 42%,#dbeafe 72%,#dcfce7);
+      box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.82);
+      display:grid; place-items:center;
     }
-
-    .btn-green {
-      background: linear-gradient(135deg, var(--green), var(--green-2));
-      color: white;
+    .learning-tablet {
+      width:min(470px,100%); min-height:360px; border-radius:36px; background:rgba(255,255,255,.95);
+      border:1px solid rgba(226,232,240,.92); box-shadow:0 26px 52px rgba(15,23,42,.16);
+      padding:22px; transform:rotate(-2deg);
     }
-
-    .btn-blue {
-      background: linear-gradient(135deg, #1d6eea, #0b4cba);
-      color: white;
+    .tablet-top {
+      display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border-radius:20px;
+      background:linear-gradient(135deg,var(--purple),var(--blue)); color:white; font-weight:1000;
+      margin-bottom:16px;
     }
-
-    .btn-purple {
-      background: linear-gradient(135deg, var(--purple), var(--purple-2));
-      color: white;
+    .tile-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .learn-tile {
+      min-height:92px; border-radius:22px; display:grid; place-items:center; text-align:center; padding:10px;
+      color:white; font-weight:1000; box-shadow:var(--soft-shadow); transition:.2s ease;
+      animation:float 5.5s ease-in-out infinite;
     }
+    .learn-tile:nth-child(1){background:linear-gradient(135deg,var(--purple),var(--pink));}
+    .learn-tile:nth-child(2){background:linear-gradient(135deg,var(--blue),var(--teal)); animation-delay:.3s;}
+    .learn-tile:nth-child(3){background:linear-gradient(135deg,var(--green),#84cc16); animation-delay:.6s;}
+    .learn-tile:nth-child(4){background:linear-gradient(135deg,var(--gold),var(--orange)); animation-delay:.9s;}
+    .learn-tile:nth-child(5){background:linear-gradient(135deg,#0f766e,#16a34a); animation-delay:1.2s;}
+    .learn-tile:nth-child(6){background:linear-gradient(135deg,#e11d48,#7c3aed); animation-delay:1.5s;}
+    .learn-tile b { display:block; font-size:2rem; line-height:1; margin-bottom:5px; }
+    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-8px) rotate(2deg); } }
 
-    .btn-orange {
-      background: linear-gradient(135deg, var(--orange), var(--orange-2));
-      color: white;
+    .section { padding:38px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
+    .section-head small { color:var(--gold); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
+    .section-head h2 {
+      color:var(--ink); font-size:clamp(1.8rem,3vw,3.1rem); line-height:1.05;
+      letter-spacing:-.05em; margin-top:4px; font-weight:1000;
     }
+    .section-head p { max-width:860px; color:var(--muted); font-weight:650; margin-top:8px; }
+    .pill { display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px; background:var(--purple-soft); color:var(--purple-dark); font-weight:1000; font-size:.84rem; }
 
-    .btn-yellow {
-      background: linear-gradient(135deg, #ffd95c, #f59e0b);
-      color: #1f2937;
+    .path-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .path-card {
+      background:white; border:1px solid var(--line); border-radius:24px; padding:20px; box-shadow:var(--soft-shadow);
+      min-height:220px; transition:.2s ease; position:relative; overflow:hidden;
     }
+    .path-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .path-card .icon { font-size:2.5rem; margin-bottom:10px; }
+    .path-card h3 { color:var(--ink); font-size:1.18rem; font-weight:1000; margin-bottom:8px; }
+    .path-card p { color:#475569; font-weight:650; font-size:.94rem; margin-bottom:14px; }
+    .path-card a { color:var(--purple-dark); font-weight:1000; text-decoration:underline; text-underline-offset:5px; }
+    .path-card:nth-child(4n+1){background:linear-gradient(135deg,#fff,#f5f3ff);}
+    .path-card:nth-child(4n+2){background:linear-gradient(135deg,#fff,#eff6ff);}
+    .path-card:nth-child(4n+3){background:linear-gradient(135deg,#fff,#f0fdf4);}
+    .path-card:nth-child(4n+4){background:linear-gradient(135deg,#fff,#fffbeb);}
 
-    .hero-dots {
-      display: flex;
-      gap: 8px;
-      position: absolute;
-      left: 50%;
-      bottom: 38px;
-      transform: translateX(-50%);
-      z-index: 3;
-    }
-
-    .hero-dots span {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: rgba(15, 23, 42, 0.32);
-    }
-
-    .hero-dots span:first-child {
-      width: 22px;
-      border-radius: 999px;
-      background: var(--green);
-    }
-
-    .hero-art {
-      position: relative;
-      min-height: 380px;
-      display: grid;
-      place-items: end center;
-      padding-top: 20px;
-      padding-bottom: 48px;
-    }
-
-    .sky-object {
-      position: absolute;
-      font-size: 2.3rem;
-      filter: drop-shadow(0 8px 8px rgba(15, 23, 42, 0.12));
-      animation: float 5.8s ease-in-out infinite;
-    }
-
-    .star-1 { left: 5%; top: 15%; color: #ffc928; }
-    .star-2 { left: 39%; top: 10%; font-size: 1.8rem; color: #ffc928; animation-delay: 0.5s; }
-    .star-3 { right: 2%; top: 42%; color: #ffc928; animation-delay: 1s; }
-    .planet { left: 51%; top: 5%; font-size: 4.8rem; animation-delay: 0.8s; }
-    .globe { left: 18%; top: 37%; font-size: 5.6rem; animation-delay: 1.2s; }
-    .bulb { right: 9%; top: 12%; font-size: 4.7rem; animation-delay: 1.7s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-12px) rotate(3deg); }
-    }
-
-    .kids-scene {
-      width: min(620px, 100%);
-      min-height: 270px;
-      position: relative;
-      display: grid;
-      place-items: end center;
-    }
-
-    .desk {
-      position: absolute;
-      bottom: 0;
-      width: 520px;
-      height: 40px;
-      border-radius: 40px;
-      background: linear-gradient(90deg, rgba(255, 201, 40, 0.3), rgba(255, 138, 0, 0.25));
-      filter: blur(1px);
-      opacity: 0.7;
-    }
-
-    .book-stack {
-      position: absolute;
-      left: 42px;
-      bottom: 34px;
-      width: 210px;
-      height: 116px;
-    }
-
-    .stack-book {
-      position: absolute;
-      left: 0;
-      height: 31px;
-      border-radius: 9px;
-      color: white;
-      font-weight: 1000;
-      letter-spacing: 0.06em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.18);
-    }
-
-    .stack-book:nth-child(1) { bottom: 0; width: 210px; background: #ef5da8; }
-    .stack-book:nth-child(2) { bottom: 29px; width: 185px; left: 12px; background: #1d6eea; }
-    .stack-book:nth-child(3) { bottom: 58px; width: 160px; left: 25px; background: #0b8f3a; }
-
-    .children {
-      position: absolute;
-      bottom: 44px;
-      right: 118px;
-      width: 320px;
-      height: 230px;
-    }
-
-    .child {
-      position: absolute;
-      bottom: 0;
-      width: 150px;
-      height: 215px;
-    }
-
-    .child.boy { left: 0; }
-    .child.girl { right: 0; }
-
-    .head {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      width: 92px;
-      height: 92px;
-      border-radius: 50%;
-      background: #ffd3a5;
-      border: 5px solid rgba(255, 255, 255, 0.92);
-      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.16);
-      display: grid;
-      place-items: center;
-      font-size: 2.2rem;
-    }
-
-    .girl .head {
-      background: #ffc98d;
-      box-shadow: 0 0 0 18px #fbbf24, 0 10px 18px rgba(15, 23, 42, 0.16);
-    }
-
-    .boy .head::after,
-    .girl .head::after {
-      content: "😊";
-    }
-
-    .body {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 80px;
-      width: 112px;
-      height: 130px;
-      border-radius: 38px 38px 22px 22px;
-      background: #1fb55b;
-      box-shadow: 0 14px 20px rgba(15, 23, 42, 0.16);
-    }
-
-    .girl .body {
-      background: #ff7a00;
-    }
-
-    .open-book {
-      position: absolute;
-      left: 38px;
-      bottom: 28px;
-      width: 90px;
-      height: 62px;
-      border-radius: 10px;
-      background: white;
-      transform: rotate(-4deg);
-      box-shadow: 0 12px 18px rgba(15, 23, 42, 0.15);
-    }
-
-    .girl .open-book {
-      left: 22px;
-      width: 108px;
-      transform: rotate(4deg);
-    }
-
-    .open-book::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 8px;
-      bottom: 8px;
-      width: 2px;
-      background: #cbd5e1;
-    }
-
-    .pencils {
-      position: absolute;
-      right: 8px;
-      bottom: 10px;
-      width: 88px;
-      height: 170px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 5px;
-    }
-
-    .cup {
-      position: absolute;
-      bottom: 0;
-      width: 88px;
-      height: 90px;
-      border-radius: 16px 16px 28px 28px;
-      background: #2563eb;
-      box-shadow: 0 16px 22px rgba(15, 23, 42, 0.16);
-    }
-
-    .pencil {
-      position: relative;
-      z-index: 1;
-      width: 11px;
-      height: 145px;
-      border-radius: 999px 999px 4px 4px;
-      background: #ef4444;
-      transform-origin: bottom;
-    }
-
-    .pencil:nth-child(1) { transform: rotate(-16deg); background: #ef4444; }
-    .pencil:nth-child(2) { transform: rotate(-5deg); background: #f59e0b; height: 160px; }
-    .pencil:nth-child(3) { transform: rotate(8deg); background: #22c55e; height: 150px; }
-    .pencil:nth-child(4) { transform: rotate(18deg); background: #8b5cf6; height: 158px; }
-
-    .abc-blocks {
-      position: absolute;
-      right: 100px;
-      bottom: 12px;
-      display: grid;
-      grid-template-columns: repeat(2, 48px);
-      gap: 8px;
-    }
-
-    .abc-blocks span {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-size: 1.4rem;
-      font-weight: 1000;
-      box-shadow: 0 10px 16px rgba(15, 23, 42, 0.14);
-    }
-
-    .abc-blocks span:nth-child(1) { background: #f59e0b; }
-    .abc-blocks span:nth-child(2) { background: #22c55e; }
-    .abc-blocks span:nth-child(3) { background: #3b82f6; }
-
-    /* ==============================
-       CATEGORY STRIP
-       ============================== */
-
-    .category-shell {
-      position: relative;
-      z-index: 7;
-      margin-top: -26px;
-    }
-
-    .category-card {
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(16px);
-      border-radius: 20px;
-      padding: 24px 26px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 14px;
-    }
-
-    .cat-item {
-      min-height: 112px;
-      display: grid;
-      justify-items: center;
-      align-content: center;
-      gap: 8px;
-      color: var(--ink);
-      font-weight: 900;
-      text-align: center;
-      border-radius: 16px;
-      transition: 0.2s ease;
-    }
-
-    .cat-item:hover,
-    .cat-item:focus {
-      transform: translateY(-4px);
-      background: #f8fafc;
-    }
-
-    .cat-icon {
-      width: 68px;
-      height: 68px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-size: 2rem;
-      box-shadow: 0 14px 22px rgba(15, 23, 42, 0.14);
-      border: 4px solid rgba(255, 255, 255, 0.75);
-    }
-
-    .ci-green { background: linear-gradient(135deg, #84cc16, #16a34a); }
-    .ci-blue { background: linear-gradient(135deg, #60a5fa, #4f46e5); }
-    .ci-purple { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
-    .ci-emerald { background: linear-gradient(135deg, #34d399, #059669); }
-    .ci-orange { background: linear-gradient(135deg, #fb923c, #f97316); }
-    .ci-cyan { background: linear-gradient(135deg, #2dd4bf, #0891b2); }
-    .ci-pink { background: linear-gradient(135deg, #fb7185, #ec4899); }
-    .ci-violet { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
-
-    /* ==============================
-       CONTENT SECTIONS
-       ============================== */
-
-    .section {
-      padding: 28px 0;
-    }
-
-    .section-title-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 15px;
-    }
-
-    .section-title-row h2 {
-      color: var(--ink);
-      font-size: 1.42rem;
-      letter-spacing: -0.03em;
-    }
-
-    .view-all {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 33px;
-      padding: 0 16px;
-      border-radius: 999px;
-      background: white;
-      border: 1px solid #cbd5e1;
-      color: var(--ink);
-      font-size: 0.83rem;
-      font-weight: 900;
-    }
-
-    .daily-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
+    .daily-grid { display:grid; grid-template-columns:1.2fr .8fr .8fr; gap:18px; }
     .daily-card {
-      min-height: 300px;
-      border-radius: 14px;
-      padding: 20px;
-      border: 1px solid #e2e8f0;
-      box-shadow: var(--shadow-soft);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .daily-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-      font-weight: 950;
-    }
-
-    .word-card { background: linear-gradient(135deg, #fbf7ff, #f0e8ff); }
-    .question-card { background: linear-gradient(135deg, #fffbf0, #fff4df); }
-    .dua-card { background: linear-gradient(135deg, #f1faea, #edf8df); }
-    .fact-card { background: linear-gradient(135deg, #eff8ff, #e2f2ff); }
-
-    .daily-inner {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      border-radius: 12px;
-      padding: 18px;
-      min-height: 224px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .word-title {
-      font-size: 1.8rem;
-      color: var(--purple-2);
-      font-weight: 1000;
-      margin-bottom: 12px;
-      line-height: 1.1;
-    }
-
-    .daily-inner p {
-      font-size: 0.94rem;
-      color: #25364d;
-      margin: 8px 0;
-    }
-
-    .daily-inner b {
-      color: var(--ink);
-    }
-
-    .small-button {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 36px;
-      padding: 0 18px;
-      border-radius: 8px;
-      font-size: 0.84rem;
-      font-weight: 950;
-      color: white;
-      box-shadow: var(--shadow-soft);
-      margin-top: 12px;
-    }
-
-    .option-list {
-      display: grid;
-      gap: 8px;
-      margin: 12px 0 16px;
-    }
-
-    .option-list button {
-      border: 1px solid #d6e1ee;
-      background: white;
-      border-radius: 8px;
-      min-height: 30px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 4px 10px;
-      color: var(--ink);
-      font-weight: 700;
-      cursor: pointer;
-      text-align: left;
-      transition: 0.2s ease;
-    }
-
-    .option-list button:hover {
-      background: #eaf7e9;
-    }
-
-    .option-list .letter {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #eef2f7;
-      color: var(--ink);
-      font-size: 0.78rem;
-      flex: 0 0 auto;
-    }
-
-    .quiz-feedback {
-      min-height: 22px;
-      font-weight: 950;
-      font-size: 0.9rem;
-    }
-
-    .dua-arabic {
-      font-size: 1.42rem;
-      color: var(--ink);
-      line-height: 1.7;
-      text-align: right;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      margin-bottom: 8px;
-    }
-
-    .translit {
-      font-style: italic;
-      color: #334155;
-      line-height: 1.45;
-    }
-
-    .fact-card .elephant {
-      position: absolute;
-      right: 6px;
-      bottom: 8px;
-      font-size: 8rem;
-      opacity: 0.78;
-      filter: drop-shadow(0 10px 8px rgba(15, 23, 42, 0.12));
-      z-index: 1;
-    }
-
-    .fact-text {
-      font-size: 1.24rem !important;
-      max-width: 180px;
-      margin-top: 36px !important;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .feature-card {
-      min-height: 190px;
-      border-radius: 14px;
-      padding: 18px;
-      color: white;
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow-soft);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .feature-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
-      z-index: 1;
-    }
-
-    .feature-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .feature-card h3 {
-      font-size: 1.12rem;
-      font-weight: 1000;
-      margin-bottom: 4px;
-    }
-
-    .feature-card p {
-      color: rgba(255, 255, 255, 0.92);
-      font-size: 0.86rem;
-      margin-bottom: 12px;
-    }
-
-    .story-feature {
-      background:
-        linear-gradient(135deg, rgba(12, 42, 84, 0.2), rgba(7, 89, 133, 0.35)),
-        radial-gradient(circle at 24% 38%, #ffcf7a 0 16px, transparent 17px),
-        linear-gradient(135deg, #104e75, #0f766e);
-    }
-
-    .story-feature::before {
-      content: "🧒";
-      position: absolute;
-      left: 20px;
-      bottom: 12px;
-      font-size: 5.9rem;
-      z-index: 1;
-      filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.2));
-    }
-
-    .quiz-feature {
-      background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.28), transparent 40%), linear-gradient(135deg, #a855f7, #8b5cf6);
-      text-align: center;
-      justify-content: center;
-    }
-
-    .quiz-feature::before {
-      content: "🏆";
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 4.2rem;
-      z-index: 1;
-    }
-
-    .worksheet-feature {
-      background: linear-gradient(135deg, #d9fffb, #beeef2);
-      color: var(--ink);
-    }
-
-    .worksheet-feature::after {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.75));
-    }
-
-    .worksheet-feature .feature-content {
-      color: var(--ink);
-      max-width: 170px;
-    }
-
-    .worksheet-feature p {
-      color: #334155;
-    }
-
-    .worksheet-feature::before {
-      content: "📝";
-      position: absolute;
-      right: 22px;
-      top: 40px;
-      font-size: 6.5rem;
-      transform: rotate(-12deg);
-      z-index: 1;
-      opacity: 0.95;
-    }
-
-    .video-feature {
-      background: linear-gradient(135deg, #dff0ff, #bde4ff);
-      color: var(--ink);
-    }
-
-    .video-feature::after {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.72));
-    }
-
-    .video-screen {
-      position: absolute;
-      top: 18px;
-      left: 22px;
-      right: 22px;
-      height: 88px;
-      border-radius: 10px;
-      background:
-        radial-gradient(circle at 25% 55%, #0f766e 0 20px, transparent 21px),
-        radial-gradient(circle at 75% 55%, #f97316 0 20px, transparent 21px),
-        linear-gradient(135deg, #12324d, #0f766e);
-      box-shadow: 0 14px 20px rgba(15, 23, 42, 0.16);
-      z-index: 1;
-    }
-
-    .video-screen::after {
-      content: "▶";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: rgba(255, 255, 255, 0.85);
-      color: var(--blue-2);
-      font-size: 1.1rem;
-      padding-left: 3px;
-    }
-
-    .video-feature .feature-content {
-      color: var(--ink);
-    }
-
-    .video-feature p {
-      color: #334155;
-    }
-
-    .resources-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-    }
-
-    .resource-card {
-      min-height: 160px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #f8fafc, white);
-      border: 1px solid #dbe5ef;
-      box-shadow: var(--shadow-soft);
-      padding: 16px;
-      position: relative;
-      overflow: hidden;
-      transition: 0.2s ease;
-    }
-
-    .resource-card:hover,
-    .resource-card:focus {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow);
-    }
-
-    .resource-card h3 {
-      color: #075985;
-      font-size: 0.98rem;
-      margin-bottom: 8px;
-      font-weight: 950;
-    }
-
-    .resource-card p {
-      max-width: 130px;
-      color: #334155;
-      font-size: 0.83rem;
-      line-height: 1.45;
-    }
-
-    .resource-emoji {
-      position: absolute;
-      right: 18px;
-      bottom: 20px;
-      font-size: 4.6rem;
-      filter: drop-shadow(0 8px 6px rgba(15, 23, 42, 0.15));
-    }
-
-    .cart-dot {
-      position: absolute;
-      right: 12px;
-      bottom: 10px;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: #10b981;
-      color: white;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 8px 15px rgba(16, 185, 129, 0.25);
-    }
-
-    .bottom-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1.18fr;
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .bottom-card {
-      border-radius: 14px;
-      min-height: 178px;
-      padding: 22px;
-      border: 1px solid #dbe5ef;
-      box-shadow: var(--shadow-soft);
-      overflow: hidden;
-      position: relative;
-      display: grid;
-      align-items: center;
-    }
-
-    .parents-card {
-      background: linear-gradient(135deg, #e4f6ff, #d9f0ff);
-      grid-template-columns: 160px 1fr;
-      gap: 18px;
-    }
-
-    .parent-illustration {
-      width: 150px;
-      height: 140px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #bbf7d0, #e0f2fe);
-      display: grid;
-      place-items: center;
-      font-size: 4.2rem;
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-    }
-
-    .class-card {
-      background: linear-gradient(135deg, #fff9e8, #fff4d6);
-      grid-template-columns: 150px 1fr;
-      gap: 18px;
-    }
-
-    .teacher-mini {
-      width: 142px;
-      height: 140px;
-      border-radius: 18px;
-      background:
-        radial-gradient(circle at 50% 30%, #ffd3a5 0 36px, transparent 37px),
-        linear-gradient(180deg, transparent 0 68px, #1f2937 69px 118px, #0b8f3a 119px);
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
-      position: relative;
-    }
-
-    .teacher-mini::before {
-      content: "👨‍🏫";
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      font-size: 4.3rem;
-    }
-
-    .newsletter-card {
-      background: linear-gradient(135deg, #f4efff, #fff7ff);
-      grid-template-columns: 145px 1fr;
-      gap: 20px;
-    }
-
-    .newsletter-illustration {
-      width: 132px;
-      height: 132px;
-      border-radius: 20px;
-      display: grid;
-      place-items: center;
-      font-size: 5.2rem;
-      background: rgba(255, 255, 255, 0.6);
-    }
-
-    .bottom-card h3 {
-      color: var(--blue-2);
-      font-size: 1.2rem;
-      font-weight: 950;
-      margin-bottom: 8px;
-    }
-
-    .class-card h3 {
-      color: #92400e;
-    }
-
-    .newsletter-card h3 {
-      color: var(--purple-2);
-    }
-
-    .bottom-card p,
-    .bottom-card li {
-      color: #334155;
-      font-size: 0.9rem;
-    }
-
-    .check-list {
-      list-style: none;
-      display: grid;
-      gap: 3px;
-      margin-bottom: 8px;
-    }
-
-    .check-list li::before {
-      content: "✓";
-      color: var(--green);
-      font-weight: 1000;
-      margin-right: 8px;
-    }
-
-    .newsletter-form {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 9px;
-      margin-top: 10px;
-    }
-
-    .newsletter-form input {
-      height: 40px;
-      border-radius: 8px;
-      border: 1px solid #cbd5e1;
-      padding: 0 14px;
-      outline: 0;
-      font-size: 0.9rem;
-    }
-
-    .newsletter-message {
-      min-height: 20px;
-      font-size: 0.84rem;
-      font-weight: 800;
-      color: var(--green-2);
-    }
-
-    .trust-strip {
-      background: white;
-      border-top: 1px solid #e2e8f0;
-      border-bottom: 1px solid #e2e8f0;
-      margin-top: 18px;
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      padding: 18px 0;
-    }
-
-    .trust-item {
-      display: grid;
-      grid-template-columns: 54px 1fr;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .trust-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: #f0fdf4;
-      color: var(--green-2);
-      font-size: 1.6rem;
-      border: 1px solid #bbf7d0;
-    }
-
-    .trust-item strong {
-      display: block;
-      color: var(--green-3);
-      font-size: 0.94rem;
-      line-height: 1.25;
-    }
-
-    .trust-item span {
-      color: #475569;
-      font-size: 0.86rem;
-      line-height: 1.25;
-    }
-
-    /* ==============================
-       FOOTER
-       ============================== */
-
-    .site-footer {
-      background: white;
-      padding: 26px 0 14px;
-      color: #334155;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.7fr repeat(4, 1fr) 1.2fr;
-      gap: 26px;
-      align-items: start;
-    }
-
-    .footer-brand .brand {
-      margin-bottom: 12px;
-    }
-
-    .footer-brand p {
-      font-size: 0.9rem;
-      max-width: 245px;
-    }
-
-    .footer-col h3 {
-      color: var(--green-3);
-      font-size: 0.96rem;
-      margin-bottom: 9px;
-      font-weight: 950;
-    }
-
-    .footer-col ul {
-      list-style: none;
-      display: grid;
-      gap: 4px;
-    }
-
-    .footer-col a {
-      font-size: 0.88rem;
-      color: #334155;
-      font-weight: 650;
-    }
-
-    .footer-col a:hover,
-    .footer-col a:focus {
-      color: var(--green-2);
-    }
-
-    .socials {
-      display: flex;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .socials a {
-      width: 36px;
-      height: 36px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      color: white;
-      font-weight: 1000;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .socials a:nth-child(1) { background: #1877f2; }
-    .socials a:nth-child(2) { background: #ff0000; }
-    .socials a:nth-child(3) { background: #c13584; }
-    .socials a:nth-child(4) { background: #bd081c; }
-
-    .footer-bottom {
-      border-top: 1px solid #e2e8f0;
-      margin-top: 22px;
-      padding-top: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      font-size: 0.84rem;
-      color: #64748b;
-    }
-
+      background:white; border:1px solid var(--line); border-radius:26px; padding:22px; box-shadow:var(--soft-shadow); position:relative; overflow:hidden;
+    }
+    .daily-card h3 { color:var(--ink); font-size:1.3rem; font-weight:1000; letter-spacing:-.03em; margin-bottom:8px; }
+    .daily-card p { color:#475569; font-weight:650; }
+    .daily-word { font-size:2.2rem; font-weight:1000; color:var(--pink-dark); letter-spacing:-.04em; margin:8px 0; }
+    .quiz-options { display:grid; gap:8px; margin:12px 0; }
+    .quiz-options button {
+      min-height:42px; border:1px solid #cbd5e1; background:#f8fafc; color:var(--ink);
+      border-radius:14px; padding:8px 10px; text-align:left; font-weight:850; cursor:pointer;
+    }
+    .quiz-options button.correct { background:var(--green-soft); color:var(--green-dark); border-color:#86efac; }
+    .quiz-options button.wrong { background:var(--rose-soft); color:#9f1239; border-color:#fecdd3; }
+    .feedback { margin-top:8px; color:var(--purple-dark); font-weight:900; min-height:28px; }
+
+    .subject-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .subject-card {
+      min-height:238px; display:flex; flex-direction:column; background:white; border:1px solid var(--line);
+      border-radius:26px; padding:20px; box-shadow:var(--soft-shadow); transition:.2s ease;
+    }
+    .subject-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .subject-card .icon {
+      width:62px; height:62px; border-radius:20px; display:grid; place-items:center;
+      font-size:2.2rem; background:var(--gold-soft); box-shadow:var(--soft-shadow); margin-bottom:12px;
+    }
+    .subject-card h3 { color:var(--ink); font-size:1.28rem; font-weight:1000; letter-spacing:-.03em; margin-bottom:8px; }
+    .subject-card p { color:#475569; font-weight:650; margin-bottom:12px; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0 14px; }
+    .tag { min-height:26px; padding:0 9px; border-radius:999px; background:#f1f5f9; color:#334155; font-size:.75rem; font-weight:1000; display:inline-flex; align-items:center; }
+    .subject-card a { margin-top:auto; align-self:flex-start; }
+
+    .resource-band {
+      background:linear-gradient(135deg,#0f172a,#1e1b4b,#115e59);
+      border-radius:34px; padding:28px; color:white; box-shadow:var(--shadow); overflow:hidden; position:relative;
+    }
+    .resource-band::after { content:"🌈"; position:absolute; right:20px; bottom:-20px; font-size:8rem; opacity:.15; }
+    .resource-band h2 { font-size:clamp(1.8rem,3vw,3.1rem); line-height:1.05; letter-spacing:-.05em; margin-bottom:10px; }
+    .resource-band p { color:#dbeafe; font-weight:650; max-width:720px; }
+    .resource-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; position:relative; z-index:2; }
+    .resource-links a { background:rgba(255,255,255,.12); color:white; border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:10px 14px; font-weight:1000; }
+
+    .trust-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .trust-card { background:white; border:1px solid var(--line); border-radius:24px; padding:20px; box-shadow:var(--soft-shadow); min-height:180px; }
+    .trust-card .icon { font-size:2.2rem; margin-bottom:8px; }
+    .trust-card h3 { color:var(--ink); font-size:1.08rem; font-weight:1000; margin-bottom:6px; }
+    .trust-card p { color:#475569; font-weight:650; font-size:.92rem; }
+
+    .cta {
+      background:linear-gradient(135deg,#ecfdf5,#ffffff); border:1px solid #bbf7d0; border-radius:32px;
+      padding:26px; box-shadow:var(--soft-shadow); display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center;
+    }
+    .cta h2 { color:var(--green-dark); font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.08; letter-spacing:-.04em; font-weight:1000; }
+    .cta p { color:#475569; font-weight:650; margin-top:6px; }
+
+    .footer { margin-top:38px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:22px; }
+    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
+    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
+    .footer-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top:22px; padding-top:14px; color:#94a3b8; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; }
     .back-top {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--green);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-weight: 1000;
-      box-shadow: var(--shadow);
-      z-index: 200;
+      position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%;
+      display:grid; place-items:center; background:var(--purple); color:white; box-shadow:var(--shadow); font-weight:1000;
     }
 
-    /* ==============================
-       RESPONSIVE
-       ============================== */
-
-    @media (max-width: 1130px) {
-      .top-row {
-        grid-template-columns: 1fr auto;
-        gap: 12px;
-      }
-
-      .global-search,
-      .quick-actions {
-        display: none;
-      }
-
-      .mobile-toggle {
-        display: inline-grid;
-        place-items: center;
-        justify-self: end;
-      }
-
-      .main-nav-wrap {
-        top: 88px;
-      }
-
-      .main-nav {
-        display: none;
-        min-height: auto;
-        padding: 14px 0;
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .main-nav.is-open {
-        display: flex;
-      }
-
-      .home-btn {
-        width: 100%;
-        height: 44px;
-        border-radius: 12px;
-        justify-content: flex-start;
-        padding-left: 14px;
-      }
-
-      .nav-list {
-        display: grid;
-        width: 100%;
-        gap: 3px;
-      }
-
-      .nav-link {
-        width: 100%;
-        min-height: 42px;
-        border-radius: 10px;
-      }
-
-      .sub-menu {
-        position: static;
-        display: none;
-        box-shadow: none;
-        border-radius: 12px;
-        margin: 0 0 6px 15px;
-      }
-
-      .nav-item:hover .sub-menu,
-      .nav-item:focus-within .sub-menu {
-        display: grid;
-      }
-
-      .nav-class-btn {
-        width: 100%;
-        min-height: 44px;
-      }
-
-      .hero-copy {
-        padding-left: 0;
-      }
-
-      .category-card {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .daily-grid,
-      .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .resources-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .bottom-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    @media (max-width:1100px) {
+      .hero-grid,.cta { grid-template-columns:1fr; }
+      .search-box { display:none; }
+      .stats,.path-grid,.trust-grid { grid-template-columns:repeat(2,1fr); }
+      .daily-grid { grid-template-columns:1fr; }
+      .subject-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:repeat(2,1fr); }
     }
 
-    @media (max-width: 780px) {
-      .container {
-        width: min(100% - 24px, var(--max));
-      }
-
-      .top-row {
-        min-height: 78px;
-      }
-
-      .brand-icon {
-        width: 52px;
-        height: 52px;
-      }
-
-      .brand-icon .book-shape {
-        width: 34px;
-        height: 30px;
-      }
-
-      .brand-text strong {
-        font-size: 1.35rem;
-      }
-
-      .brand-text span {
-        font-size: 0.78rem;
-      }
-
-      .main-nav-wrap {
-        top: 78px;
-      }
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-        min-height: auto;
-      }
-
-      .hero-copy {
-        padding: 32px 0 12px;
-        text-align: left;
-      }
-
-      .hero-lead {
-        max-width: 100%;
-      }
-
-      .hero-art {
-        min-height: 285px;
-        padding: 0 0 56px;
-        transform: scale(0.88);
-        transform-origin: center bottom;
-      }
-
-      .hero-dots {
-        bottom: 24px;
-      }
-
-      .category-shell {
-        margin-top: -12px;
-      }
-
-      .category-card {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 16px;
-      }
-
-      .cat-item {
-        min-height: 102px;
-      }
-
-      .daily-grid,
-      .feature-grid,
-      .resources-grid,
-      .trust-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .parents-card,
-      .class-card,
-      .newsletter-card {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    @media (max-width:760px) {
+      html { scroll-padding-top:82px; }
+      .container { width:min(100% - 24px,var(--max)); }
+      .toprow { min-height:70px; }
+      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-text strong { font-size:1.02rem; }
+      .brand-text span { font-size:.73rem; }
+      .nav-actions a { display:none; }
+      .menu-btn { display:inline-flex; }
+      .mega-nav { display:none; }
+      .hero { padding-top:38px; }
+      h1 { font-size:3.1rem; }
+      .hero-visual { min-height:340px; border-radius:26px; }
+      .learning-tablet { transform:scale(.86) rotate(-2deg); }
+      .stats,.path-grid,.subject-grid,.trust-grid,.footer-grid,.mobile-grid { grid-template-columns:1fr; }
+      .section-head { display:block; }
+      .section-head .pill { margin-top:10px; }
+      .btn { width:100%; }
+      .resource-band { border-radius:24px; }
+      .footer-bottom { display:block; }
     }
-
-    @media (max-width: 480px) {
-      .hero-title {
-        font-size: 3.2rem;
-      }
-
-      .learning-tags {
-        gap: 10px;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .hero-cta {
-        width: 100%;
-      }
-
-      .category-card {
-        grid-template-columns: 1fr;
-      }
-
-      .daily-card {
-        min-height: auto;
-      }
-
-      .kids-scene {
-        transform: scale(0.78);
-      }
-    }
-
-    /* =========================================================
-       FINAL HOMEPAGE VISIBILITY PATCH
-       Fixes:
-       1) "Learning Hub" clipping in logo/title
-       2) hero illustration staying on the right side
-       3) button/Subjects overlap
-       4) stronger mobile visibility
-       ========================================================= */
-
-    html {
-      scroll-padding-top: 154px;
-    }
-
-    .brand,
-    .brand-text,
-    .brand-text strong,
-    .brand-text span {
-      overflow: visible;
-    }
-
-    .brand {
-      align-items: center;
-    }
-
-    .brand-text strong {
-      line-height: 1.12;
-      letter-spacing: -0.035em;
-      padding-bottom: 2px;
-    }
-
-    .brand-text .kids,
-    .brand-text .hub {
-      display: inline-block;
-      line-height: 1.15;
-      padding-bottom: 2px;
-    }
-
-    .footer-brand .brand {
-      align-items: flex-start;
-    }
-
-    .hero {
-      min-height: 470px;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      min-height: 470px;
-      grid-template-columns: minmax(410px, 0.9fr) minmax(540px, 1.1fr);
-      gap: clamp(12px, 2vw, 28px);
-      align-items: center;
-    }
-
-    .hero-copy {
-      padding: 42px 0 88px clamp(6px, 5vw, 72px);
-      max-width: 650px;
-      z-index: 5;
-    }
-
-    .hero-title {
-      line-height: 0.98;
-      margin-bottom: 18px;
-      overflow: visible;
-    }
-
-    .hero-title span {
-      display: block;
-      line-height: 1.12;
-      padding: 4px 0 8px;
-      margin-top: 0;
-      overflow: visible;
-    }
-
-    .hero-lead {
-      margin-top: 2px;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 8px;
-      position: relative;
-      z-index: 20;
-    }
-
-    .primary-btn,
-    .button,
-    .button-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 50px;
-      border-radius: 14px;
-      border: 0;
-      padding: 0 26px;
-      font-weight: 1000;
-      line-height: 1.1;
-      box-shadow: 0 16px 26px rgba(6, 95, 37, 0.24);
-    }
-
-    .hero-art {
-      width: 100%;
-      max-width: 710px;
-      min-height: 420px;
-      justify-self: end;
-      place-items: end center;
-      padding-top: 18px;
-      padding-bottom: 62px;
-      transform: translateX(18px);
-      opacity: 1;
-      visibility: visible;
-      z-index: 4;
-    }
-
-    .kids-scene {
-      width: min(690px, 100%);
-      min-height: 315px;
-      transform: none;
-    }
-
-    .desk {
-      width: min(590px, 95%);
-    }
-
-    .category-shell {
-      z-index: 10;
-      margin-top: -14px;
-      padding-top: 0;
-      clear: both;
-    }
-
-    #subjects {
-      scroll-margin-top: 155px;
-    }
-
-    .visually-hidden {
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      padding: 0 !important;
-      margin: -1px !important;
-      overflow: hidden !important;
-      clip: rect(0, 0, 0, 0) !important;
-      white-space: nowrap !important;
-      border: 0 !important;
-    }
-
-    .cat-item:focus-visible,
-    .nav-link:focus-visible,
-    .btn:focus-visible,
-    .primary-btn:focus-visible,
-    .quick-action:focus-visible,
-    .resource-card:focus-visible {
-      outline: 4px solid rgba(255, 201, 40, 0.55);
-      outline-offset: 3px;
-    }
-
-    @media (max-width: 1130px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        min-height: auto;
-        gap: 0;
-      }
-
-      .hero-copy {
-        padding: 38px 0 18px;
-        max-width: 760px;
-      }
-
-      .hero-art {
-        justify-self: center;
-        max-width: 760px;
-        min-height: 390px;
-        transform: none;
-        padding-bottom: 62px;
-      }
-
-      .category-shell {
-        margin-top: -10px;
-      }
-    }
-
-    @media (max-width: 780px) {
-      html {
-        scroll-padding-top: 128px;
-      }
-
-      .brand-text strong {
-        line-height: 1.15;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-copy {
-        text-align: center;
-        padding: 34px 0 8px;
-      }
-
-      .hero-title {
-        font-size: clamp(3rem, 15vw, 4.55rem);
-        line-height: 1.02;
-      }
-
-      .hero-title span {
-        font-size: 0.64em;
-        line-height: 1.18;
-        padding-bottom: 10px;
-      }
-
-      .learning-tags,
-      .hero-actions {
-        justify-content: center;
-      }
-
-      .hero-art {
-        width: 116%;
-        max-width: none;
-        min-height: 330px;
-        margin-left: -8%;
-        padding: 0 0 60px;
-        transform: scale(0.86);
-        transform-origin: center bottom;
-      }
-
-      .category-shell {
-        margin-top: -8px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .brand-text strong {
-        font-size: 1.22rem;
-        line-height: 1.16;
-      }
-
-      .brand-text span {
-        line-height: 1.2;
-      }
-
-      .hero-title {
-        font-size: clamp(2.9rem, 15vw, 3.45rem);
-        letter-spacing: -0.06em;
-      }
-
-      .hero-title span {
-        letter-spacing: -0.045em;
-      }
-
-      .hero-art {
-        width: 132%;
-        margin-left: -16%;
-        min-height: 286px;
-        margin-top: -18px;
-        transform: scale(0.74);
-      }
-
-      .kids-scene {
-        transform: none;
-      }
-
-      .category-shell {
-        margin-top: -4px;
-      }
-    }
-
   </style>
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Al-Hayat Kids Learning Hub",
-    "url": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
-    "description": "A joyful Islamic and academic learning platform for children with Islamic Studies, Arabic, English, Math, Science, stories, quizzes, worksheets, videos, and online classes.",
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. Imran Hayat"
-    }
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Al-Hayat Kids Learning Hub",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
+    "description":"A child-friendly Islamic and academic learning platform for subjects, worksheets, quizzes, stories, activities, parent support, and online classes.",
+    "publisher":{"@type":"Organization","name":"Al-Hayat Kids Learning Hub"}
   }
   </script>
 </head>
@@ -2049,592 +334,471 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="top-header" id="top">
-    <div class="container top-row">
+  <header class="topbar" id="top">
+    <div class="container toprow">
       <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
-        <span class="brand-icon" aria-hidden="true"><span class="book-shape"></span></span>
+        <span class="brand-mark" aria-hidden="true">🌈</span>
         <span class="brand-text">
-          <strong>Al-Hayat</strong>
-          <strong><span class="kids">Kids</span> <span class="hub">Learning Hub</span></strong>
-          <span>Learn • Explore • Grow</span>
+          <strong>Al-Hayat Kids Learning Hub</strong>
+          <span>Learn • Read • Play • Grow</span>
         </span>
       </a>
 
-      <form class="global-search" role="search" aria-label="Search learning topics" onsubmit="return false;">
-        <input id="siteSearch" type="search" placeholder="Search anything..." aria-label="Search anything" />
+      <form class="search-box" role="search" aria-label="Search learning topics" onsubmit="return false;">
+        <input id="siteSearch" type="search" placeholder="Search English, duas, stories, worksheets..." aria-label="Search the site" />
         <button id="siteSearchBtn" type="submit" aria-label="Search">🔍</button>
       </form>
 
-      <div class="quick-actions" aria-label="Quick actions">
-        <a class="quick-action" href="daily-learning/index.html">
-          <span class="qa-icon">🧾</span>
-          <span>Daily Quiz</span>
-        </a>
-        <a class="quick-action" href="activities/rewards.html">
-          <span class="qa-icon">🏆</span>
-          <span>Rewards</span>
-        </a>
-        <a class="quick-action" href="login.html">
-          <span class="qa-icon">👤</span>
-          <span>Login</span>
-        </a>
-      </div>
+      <nav class="nav-actions" aria-label="Top navigation">
+        <a href="worksheets/index.html">Worksheets</a>
+        <a href="activities/quizzes.html">Quizzes</a>
+        <a href="reading-library/index.html">Stories</a>
+        <a href="islamic-corner/index.html">Islamic</a>
+        <a class="primary" href="online-classes.html">Online Classes</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
 
-      <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container mobile-grid">
+        <a href="subjects/index.html">Subjects</a>
+        <a href="subjects/english.html">English</a>
+        <a href="subjects/math.html">Math</a>
+        <a href="subjects/science.html">Science</a>
+        <a href="subjects/arabic-for-kids.html">Arabic</a>
+        <a href="subjects/islamic-studies.html">Islamic Studies</a>
+        <a href="worksheets/index.html">Worksheets</a>
+        <a href="activities/index.html">Activities</a>
+        <a href="islamic-corner/index.html">Islamic Corner</a>
+        <a href="parents-corner/index.html">Parents</a>
+      </div>
     </div>
   </header>
 
-  <div class="main-nav-wrap">
-    <div class="container main-nav" id="mainNav" aria-label="Primary navigation">
-      <a class="home-btn" href="index.html" aria-label="Home">🏠</a>
-
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="subjects/index.html">Subjects <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="subjects/english.html">English</a></li>
-            <li><a href="subjects/math.html">Math</a></li>
-            <li><a href="subjects/science.html">Science</a></li>
-            <li><a href="subjects/arabic-for-kids.html">Arabic</a></li>
-            <li><a href="subjects/islamic-studies.html">Islamic Studies</a></li>
-            <li><a href="subjects/general-knowledge.html">General Knowledge</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="reading-library/index.html">Reading Library <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="reading-library/moral-stories.html">Moral Stories</a></li>
-            <li><a href="reading-library/islamic-stories.html">Islamic Stories</a></li>
-            <li><a href="reading-library/prophet-stories.html">Prophet Stories</a></li>
-            <li><a href="reading-library/animal-stories.html">Animal Stories</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="activities/index.html">Activities <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="activities/quizzes.html">Quizzes</a></li>
-            <li><a href="activities/puzzles.html">Puzzles</a></li>
-            <li><a href="activities/brain-games.html">Brain Games</a></li>
-            <li><a href="activities/memory-challenges.html">Memory Challenges</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="worksheets/index.html">Worksheets <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="worksheets/kindergarten.html">Kindergarten</a></li>
-            <li><a href="worksheets/grade-1.html">Grade 1</a></li>
-            <li><a href="worksheets/grade-2.html">Grade 2</a></li>
-            <li><a href="worksheets/grade-3.html">Grade 3</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="islamic-corner/index.html">Islamic Corner <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="islamic-corner/daily-duas.html">Daily Duas</a></li>
-            <li><a href="islamic-corner/good-manners.html">Good Manners</a></li>
-            <li><a href="islamic-corner/seerah.html">Seerah</a></li>
-            <li><a href="islamic-corner/prophets.html">Prophets</a></li>
-            <li><a href="islamic-corner/asma-ul-husna.html">Asma-ul-Husna</a></li>
-          </ul>
-        </li>
-
-        <li><a class="nav-link" href="videos/index.html">Videos</a></li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="parents-corner/index.html">Parent Resources <span class="nav-arrow">⌄</span></a>
-          <ul class="sub-menu">
-            <li><a href="parents-corner/reading-habits.html">Reading Habits</a></li>
-            <li><a href="parents-corner/screen-time.html">Screen Time</a></li>
-            <li><a href="parents-corner/islamic-manners.html">Islamic Manners</a></li>
-            <li><a href="parents-corner/study-routines.html">Study Routines</a></li>
-          </ul>
-        </li>
-
-        <li><a class="nav-link" href="recommended-resources.html">Learning Store</a></li>
-      </ul>
-
-      <a class="nav-class-btn" href="online-classes.html">Online Classes</a>
+  <nav class="mega-nav" aria-label="Main learning navigation">
+    <div class="container mega-inner">
+      <a href="subjects/index.html">📚 Subjects</a>
+      <a href="subjects/english.html">🔤 English</a>
+      <a href="subjects/math.html">🔢 Math</a>
+      <a href="subjects/science.html">🔬 Science</a>
+      <a href="subjects/arabic-for-kids.html">🌙 Arabic</a>
+      <a href="subjects/islamic-studies.html">🕌 Islamic Studies</a>
+      <a href="subjects/general-knowledge.html">🌍 General Knowledge</a>
+      <a href="reading-library/index.html">📖 Reading Library</a>
+      <a href="activities/index.html">🎮 Activities</a>
+      <a href="worksheets/index.html">📝 Worksheets</a>
+      <a href="parents-corner/index.html">👨‍👩‍👧 Parents</a>
+      <a href="recommended-resources.html">📚 Resources</a>
     </div>
-  </div>
+  </nav>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" aria-labelledby="page-title">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="welcome">Welcome to</span>
-          <h1 class="hero-title" id="hero-title">Al-Hayat <span>Kids Learning Hub</span></h1>
-          <p class="hero-lead">A complete learning platform for young minds to learn, explore and grow every day.</p>
-
-          <div class="learning-tags" aria-label="Learning themes">
-            <span>📗 Learn</span>
-            <span>📖 Read</span>
-            <span>🎮 Play</span>
-            <span>🚀 Explore</span>
-            <span>🌱 Grow</span>
-          </div>
+        <div>
+          <div class="eyebrow">⭐ Safe, colorful learning for children</div>
+          <h1 id="page-title">Al-Hayat Kids <span>Learning Hub</span></h1>
+          <p class="hero-lead">
+            A joyful Islamic and academic learning platform where children learn English, Math, Science,
+            Arabic, Islamic values, General Knowledge, stories, quizzes, worksheets, brain games, and daily good habits.
+          </p>
 
           <div class="hero-actions">
-            <a href="#subjects" class="btn btn-green primary-btn">Start Learning Now →</a>
+            <a class="btn btn-purple" href="#pathways">Start Learning Now</a>
+            <a class="btn btn-pink" href="activities/quizzes.html">Take Today’s Quiz</a>
+            <a class="btn btn-white" href="online-classes.html">Book Online Classes</a>
+          </div>
+
+          <div class="stats" aria-label="Website highlights">
+            <div class="stat"><strong>6</strong><span>Core Subjects</span></div>
+            <div class="stat"><strong>1000+</strong><span>Quiz Questions</span></div>
+            <div class="stat"><strong>1500+</strong><span>Practice Cards</span></div>
+            <div class="stat"><strong>Safe</strong><span>Parent Guided</span></div>
           </div>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <span class="sky-object star-1">⭐</span>
-          <span class="sky-object star-2">⭐</span>
-          <span class="sky-object star-3">⭐</span>
-          <span class="sky-object planet">🪐</span>
-          <span class="sky-object globe">🌍</span>
-          <span class="sky-object bulb">💡</span>
-
-          <div class="kids-scene">
-            <div class="book-stack">
-              <div class="stack-book">MATH</div>
-              <div class="stack-book">ENGLISH</div>
-              <div class="stack-book">SCIENCE</div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="learning-tablet">
+            <div class="tablet-top"><span>Today’s Learning</span><span>🌈</span></div>
+            <div class="tile-grid">
+              <a class="learn-tile" href="subjects/english.html"><b>A</b>English</a>
+              <a class="learn-tile" href="subjects/math.html"><b>1+</b>Math</a>
+              <a class="learn-tile" href="subjects/science.html"><b>⚗️</b>Science</a>
+              <a class="learn-tile" href="islamic-corner/daily-duas.html"><b>🤲</b>Duas</a>
+              <a class="learn-tile" href="activities/puzzles.html"><b>🧩</b>Puzzles</a>
+              <a class="learn-tile" href="worksheets/index.html"><b>✍️</b>Worksheets</a>
             </div>
-
-            <div class="children">
-              <div class="child boy">
-                <div class="head"></div>
-                <div class="body"></div>
-                <div class="open-book"></div>
-              </div>
-              <div class="child girl">
-                <div class="head"></div>
-                <div class="body"></div>
-                <div class="open-book"></div>
-              </div>
-            </div>
-
-            <div class="pencils">
-              <div class="pencil"></div>
-              <div class="pencil"></div>
-              <div class="pencil"></div>
-              <div class="pencil"></div>
-              <div class="cup"></div>
-            </div>
-
-            <div class="abc-blocks">
-              <span>A</span>
-              <span>B</span>
-              <span>C</span>
-            </div>
-
-            <div class="desk"></div>
           </div>
-        </div>
-
-        <div class="hero-dots" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
     </section>
 
-    <section class="category-shell" id="subjects" aria-labelledby="subjects-title">
-      <h2 id="subjects-title" class="visually-hidden">Subjects</h2>
+    <section class="section" id="pathways" aria-labelledby="pathways-title">
       <div class="container">
-        <div class="category-card">
-          <a class="cat-item" href="subjects/english.html">
-            <span class="cat-icon ci-green">📗</span>
-            <span>English</span>
-          </a>
-          <a class="cat-item" href="subjects/math.html">
-            <span class="cat-icon ci-blue">1+2</span>
-            <span>Math</span>
-          </a>
-          <a class="cat-item" href="subjects/science.html">
-            <span class="cat-icon ci-purple">⚗️</span>
-            <span>Science</span>
-          </a>
-          <a class="cat-item" href="subjects/islamic-studies.html">
-            <span class="cat-icon ci-emerald">🕌</span>
-            <span>Islamic Studies</span>
-          </a>
-          <a class="cat-item" href="subjects/arabic-for-kids.html">
-            <span class="cat-icon ci-orange">ب</span>
-            <span>Arabic</span>
-          </a>
-          <a class="cat-item" href="subjects/general-knowledge.html">
-            <span class="cat-icon ci-cyan">🌐</span>
-            <span>General Knowledge</span>
-          </a>
-          <a class="cat-item" href="subjects/art-crafts.html">
-            <span class="cat-icon ci-pink">🎨</span>
-            <span>Art & Crafts</span>
-          </a>
-          <a class="cat-item" href="activities/brain-games.html">
-            <span class="cat-icon ci-violet">🧩</span>
-            <span>Brain Games</span>
-          </a>
+        <div class="section-head">
+          <div>
+            <small>Learning Pathways</small>
+            <h2 id="pathways-title">Choose where your child starts</h2>
+            <p>All links below go to real completed pages or section index pages. No login, rewards, empty store, or placeholder pages are linked here.</p>
+          </div>
+          <span class="pill">Clean navigation for Google</span>
+        </div>
+
+        <div class="path-grid">
+          <article class="path-card">
+            <div class="icon">📚</div>
+            <h3>All Subjects</h3>
+            <p>English, Math, Science, Arabic, Islamic Studies, and General Knowledge in one clean subject hub.</p>
+            <a href="subjects/index.html">Open Subjects →</a>
+          </article>
+          <article class="path-card">
+            <div class="icon">📝</div>
+            <h3>Worksheets</h3>
+            <p>Kindergarten to Grade 3 printable and interactive worksheets with progress-friendly practice.</p>
+            <a href="worksheets/index.html">Open Worksheets →</a>
+          </article>
+          <article class="path-card">
+            <div class="icon">🎮</div>
+            <h3>Activities</h3>
+            <p>Quizzes, puzzles, brain games, and memory challenges for active learning.</p>
+            <a href="activities/index.html">Open Activities →</a>
+          </article>
+          <article class="path-card">
+            <div class="icon">🕌</div>
+            <h3>Islamic Corner</h3>
+            <p>Duas, manners, Seerah, prophets, Asma ul Husna, and Islamic stories for children.</p>
+            <a href="islamic-corner/index.html">Open Islamic Corner →</a>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="daily-title">
       <div class="container">
+        <div class="section-head">
+          <div>
+            <small>Daily Learning Zone</small>
+            <h2 id="daily-title">A small learning moment every day</h2>
+            <p>Children learn best through repetition, short tasks, and cheerful review.</p>
+          </div>
+          <span class="pill">Word • Dua • Quiz</span>
+        </div>
+
         <div class="daily-grid">
-          <article class="daily-card word-card">
-            <h3 id="daily-title" style="color:#6d28d9;">Word of the Day</h3>
-            <div class="daily-inner">
-              <div class="word-title">Generous 🔊</div>
-              <p><b>Meaning:</b> Kind and willing to share.</p>
-              <p><b>Arabic:</b> كريم</p>
-              <p><b>Urdu:</b> سخی</p>
-              <p><b>Example:</b> Ali is generous to his friends.</p>
-              <a class="small-button btn-purple" href="daily-learning/word-of-the-day.html">View More Words</a>
+          <article class="daily-card">
+            <h3>Word of the Day</h3>
+            <div class="daily-word">Generous</div>
+            <p><strong>Meaning:</strong> Kind and willing to share.</p>
+            <p><strong>Arabic:</strong> كريم &nbsp; <strong>Urdu:</strong> سخی</p>
+            <p><strong>Sentence:</strong> A generous child shares and helps others.</p>
+            <div class="hero-actions" style="margin-top:14px;">
+              <a class="btn btn-white" href="subjects/english.html">Practice English</a>
             </div>
           </article>
 
-          <article class="daily-card question-card">
-            <h3 style="color:#a45205;">Question of the Day</h3>
-            <div class="daily-inner">
-              <p><b>Which planet is called the Red Planet?</b></p>
-              <div class="option-list" id="quizOptions">
-                <button type="button" data-answer="wrong"><span class="letter">A</span> Earth</button>
-                <button type="button" data-answer="correct"><span class="letter">B</span> Mars</button>
-                <button type="button" data-answer="wrong"><span class="letter">C</span> Venus</button>
-                <button type="button" data-answer="wrong"><span class="letter">D</span> Jupiter</button>
-              </div>
-              <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
-              <a class="small-button btn-orange" href="activities/quizzes.html">Check More Quizzes</a>
+          <article class="daily-card">
+            <h3>Dua of the Day</h3>
+            <p style="font-size:1.3rem;direction:rtl;font-weight:900;color:var(--teal-dark);">بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ</p>
+            <p><strong>Meaning:</strong> In the name of Allah, I put my trust in Allah.</p>
+            <div class="hero-actions" style="margin-top:14px;">
+              <a class="btn btn-green" href="islamic-corner/daily-duas.html">More Duas</a>
             </div>
           </article>
 
-          <article class="daily-card dua-card">
-            <h3 style="color:#166534;">Dua of the Day</h3>
-            <div class="daily-inner">
-              <div class="dua-arabic">بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ<br>لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ</div>
-              <p class="translit">Bismillah, tawakkaltu ‘alallah la hawla wa la quwwata illa billah.</p>
-              <p><b>Meaning:</b> In the name of Allah, I put my trust in Allah; there is no might and no power except with Allah.</p>
-              <a class="small-button btn-green" href="islamic-corner/daily-duas.html">View More Duas</a>
+          <article class="daily-card">
+            <h3>Question of the Day</h3>
+            <p><strong>Which planet is called the Red Planet?</strong></p>
+            <div class="quiz-options" id="quizOptions">
+              <button type="button" data-answer="wrong">A. Earth</button>
+              <button type="button" data-answer="correct">B. Mars</button>
+              <button type="button" data-answer="wrong">C. Venus</button>
+              <button type="button" data-answer="wrong">D. Jupiter</button>
             </div>
-          </article>
-
-          <article class="daily-card fact-card">
-            <h3 style="color:#0752b8;">Fact of the Day</h3>
-            <div class="daily-inner">
-              <p class="fact-text">Elephants are the largest land animals on Earth.</p>
-              <a class="small-button btn-blue" href="subjects/general-knowledge.html" style="position:absolute;left:18px;bottom:18px;z-index:3;">More Facts</a>
-            </div>
-            <div class="elephant" aria-hidden="true">🐘</div>
+            <div class="feedback" id="quizFeedback">Choose an answer.</div>
+            <a class="btn btn-white" href="activities/quizzes.html" style="margin-top:10px;">More Quizzes</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-label="Featured activities">
+    <section class="section" id="subjects" aria-labelledby="subjects-title">
       <div class="container">
-        <div class="feature-grid">
-          <article class="feature-card story-feature">
-            <div class="feature-content" style="margin-left:118px;">
-              <h3>Today’s Story</h3>
-              <p><b>The Honest Boy</b><br>A short story about honesty and kindness.</p>
-              <a class="small-button btn-blue" href="reading-library/the-honest-boy.html">Read Story →</a>
-            </div>
+        <div class="section-head">
+          <div>
+            <small>Core Subjects</small>
+            <h2 id="subjects-title">Strong foundations for young learners</h2>
+            <p>Each subject page gives structured, child-friendly learning through lessons, games, reading, speaking, practice, and parent guidance.</p>
+          </div>
+          <span class="pill">Ages 3–7 foundation</span>
+        </div>
+
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="icon">📚</div>
+            <h3>Subjects Hub</h3>
+            <p>Start from the complete subject index for all core academic and Islamic areas.</p>
+            <div class="tags"><span class="tag">All Subjects</span><span class="tag">Parent Guide</span></div>
+            <a class="btn btn-purple" href="subjects/index.html">Open Subjects</a>
           </article>
 
-          <article class="feature-card quiz-feature">
-            <div class="feature-content" style="margin-top:74px;">
-              <h3>Take Today’s Quiz</h3>
-              <p>Test your knowledge with fun questions.</p>
-              <a class="small-button btn-yellow" href="activities/quizzes.html">Start Quiz</a>
-            </div>
+          <article class="subject-card">
+            <div class="icon">🔤</div>
+            <h3>English</h3>
+            <p>Phonics, vocabulary, reading, speaking, sentences, stories, and writing.</p>
+            <div class="tags"><span class="tag">Phonics</span><span class="tag">Reading</span><span class="tag">Speaking</span></div>
+            <a class="btn btn-purple" href="subjects/english.html">Open English</a>
           </article>
 
-          <article class="feature-card worksheet-feature">
-            <div class="feature-content">
-              <h3>Free Worksheets</h3>
-              <p>Download printable worksheets for all grades.</p>
-              <a class="small-button btn-green" href="worksheets/index.html">Download Now</a>
-            </div>
+          <article class="subject-card">
+            <div class="icon">🔢</div>
+            <h3>Math</h3>
+            <p>Counting, shapes, patterns, addition, subtraction, fractions, time, and logic.</p>
+            <div class="tags"><span class="tag">Numbers</span><span class="tag">Shapes</span><span class="tag">Games</span></div>
+            <a class="btn btn-blue" href="subjects/math.html">Open Math</a>
           </article>
 
-          <article class="feature-card video-feature">
-            <div class="video-screen" aria-hidden="true"></div>
-            <div class="feature-content" style="padding-top:90px;">
-              <h3>Watch & Learn</h3>
-              <p>Educational videos for curious minds.</p>
-              <a class="small-button btn-blue" href="videos/index.html">Watch Videos</a>
-            </div>
+          <article class="subject-card">
+            <div class="icon">🔬</div>
+            <h3>Science</h3>
+            <p>Plants, animals, senses, weather, space, simple experiments, and curiosity.</p>
+            <div class="tags"><span class="tag">Nature</span><span class="tag">Experiments</span><span class="tag">Facts</span></div>
+            <a class="btn btn-green" href="subjects/science.html">Open Science</a>
+          </article>
+
+          <article class="subject-card">
+            <div class="icon">🕌</div>
+            <h3>Islamic Studies</h3>
+            <p>Tawhid, manners, duas, prophets, Seerah values, and daily Islamic habits.</p>
+            <div class="tags"><span class="tag">Manners</span><span class="tag">Duas</span><span class="tag">Values</span></div>
+            <a class="btn btn-green" href="subjects/islamic-studies.html">Open Islamic Studies</a>
+          </article>
+
+          <article class="subject-card">
+            <div class="icon">🌍</div>
+            <h3>General Knowledge</h3>
+            <p>World facts, animals, geography, community, safety, inventions, and life skills.</p>
+            <div class="tags"><span class="tag">Facts</span><span class="tag">World</span><span class="tag">GK Quiz</span></div>
+            <a class="btn btn-blue" href="subjects/general-knowledge.html">Open GK</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="resources-title">
+    <section class="section" aria-labelledby="explore-title">
       <div class="container">
-        <div class="section-title-row">
-          <h2 id="resources-title">Recommended for You</h2>
-          <a class="view-all" href="recommended-resources.html">View All</a>
+        <div class="resource-band">
+          <h2 id="explore-title">Explore the complete hub</h2>
+          <p>These buttons connect only to real pages already created in your website structure.</p>
+          <div class="resource-links">
+            <a href="worksheets/kindergarten.html">Kindergarten Worksheets</a>
+            <a href="worksheets/grade-1.html">Grade 1 Worksheets</a>
+            <a href="worksheets/grade-2.html">Grade 2 Worksheets</a>
+            <a href="worksheets/grade-3.html">Grade 3 Worksheets</a>
+            <a href="activities/quizzes.html">Quizzes</a>
+            <a href="activities/puzzles.html">Puzzles</a>
+            <a href="activities/brain-games.html">Brain Games</a>
+            <a href="activities/memory-challenges.html">Memory Challenges</a>
+            <a href="reading-library/moral-stories.html">Moral Stories</a>
+            <a href="reading-library/islamic-stories.html">Islamic Stories</a>
+            <a href="reading-library/prophet-stories.html">Prophet Stories</a>
+            <a href="reading-library/animal-stories.html">Animal Stories</a>
+            <a href="islamic-corner/good-manners.html">Good Manners</a>
+            <a href="islamic-corner/seerah.html">Seerah</a>
+            <a href="islamic-corner/prophets.html">Prophets</a>
+            <a href="islamic-corner/asma-ul-husna.html">Asma ul Husna</a>
+            <a href="parents-corner/reading-habits.html">Reading Habits</a>
+            <a href="recommended-resources.html">Recommended Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <small>Parent Trust</small>
+            <h2 id="trust-title">Designed for safe, meaningful learning</h2>
+            <p>Parents remain central. Children learn with structure, care, Islamic values, and healthy learning habits.</p>
+          </div>
+          <span class="pill">Safe • Useful • Child-friendly</span>
         </div>
 
-        <div class="resources-grid">
-          <a class="resource-card" href="recommended-resources/best-books-for-kids.html">
-            <h3>Best Books for Kids</h3>
-            <p>Handpicked books to build knowledge & values.</p>
-            <span class="resource-emoji">📚</span>
-            <span class="cart-dot">🛒</span>
-          </a>
-
-          <a class="resource-card" href="recommended-resources/educational-toys.html">
-            <h3>Educational Toys</h3>
-            <p>Fun learning toys that inspire and educate.</p>
-            <span class="resource-emoji">🤖</span>
-            <span class="cart-dot">🛒</span>
-          </a>
-
-          <a class="resource-card" href="recommended-resources/school-supplies.html">
-            <h3>School Supplies</h3>
-            <p>Quality supplies for better learning every day.</p>
-            <span class="resource-emoji">🎨</span>
-            <span class="cart-dot">🛒</span>
-          </a>
-
-          <a class="resource-card" href="recommended-resources/learning-apps.html">
-            <h3>Learning Apps</h3>
-            <p>Top educational apps for kids.</p>
-            <span class="resource-emoji">📱</span>
-            <span class="cart-dot">🛒</span>
-          </a>
-
-          <a class="resource-card" href="recommended-resources/stem-science-kits.html">
-            <h3>STEM & Science Kits</h3>
-            <p>Spark curiosity with science kits.</p>
-            <span class="resource-emoji">🔬</span>
-            <span class="cart-dot">🛒</span>
-          </a>
-        </div>
-
-        <div class="bottom-grid">
-          <article class="bottom-card parents-card">
-            <div class="parent-illustration" aria-hidden="true">👨‍👩‍👧</div>
-            <div>
-              <h3>Parents’ Corner</h3>
-              <p>Tips, articles and resources to support your child’s learning and development.</p>
-              <a class="small-button btn-blue" href="parents-corner/index.html">Explore Articles</a>
-            </div>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <div class="icon">🔐</div>
+            <h3>Privacy aware</h3>
+            <p>No child account is required for the core learning pages. Progress is generally stored on the same browser.</p>
           </article>
-
-          <article class="bottom-card class-card">
-            <div class="teacher-mini" aria-hidden="true"></div>
-            <div>
-              <h3>Book Online Classes with Dr. Imran Hayat</h3>
-              <ul class="check-list">
-                <li>Islamic Studies</li>
-                <li>Arabic for Kids</li>
-                <li>English Language</li>
-                <li>Personalized Classes</li>
-              </ul>
-              <a class="small-button btn-green" href="online-classes.html">View Classes</a>
-            </div>
+          <article class="trust-card">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Parent guided</h3>
+            <p>Parents can use worksheets, routines, and resources to guide children at home.</p>
           </article>
-
-          <article class="bottom-card newsletter-card">
-            <div class="newsletter-illustration" aria-hidden="true">✉️</div>
-            <div>
-              <h3>Join Our Newsletter</h3>
-              <p>Get free worksheets, learning tips and special updates every week.</p>
-              <form class="newsletter-form" id="newsletterForm" action="#" method="post">
-                <input type="email" id="parentEmail" name="parent-email" placeholder="Enter your email address" aria-label="Parent email address" required />
-                <button class="btn btn-purple" type="submit" style="min-height:40px;">Subscribe</button>
-                <div class="newsletter-message" id="newsletterMessage" aria-live="polite"></div>
-              </form>
-            </div>
+          <article class="trust-card">
+            <div class="icon">🕌</div>
+            <h3>Islamic values</h3>
+            <p>Manners, gratitude, honesty, cleanliness, mercy, duas, and character are built into learning.</p>
+          </article>
+          <article class="trust-card">
+            <div class="icon">🎓</div>
+            <h3>Online classes</h3>
+            <p>Parents may request structured guidance for reading, worksheets, Islamic learning, and confidence.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="Trust features">
-      <div class="container trust-grid">
-        <div class="trust-item">
-          <span class="trust-icon">🛡️</span>
-          <span><strong>Safe & Child Friendly</strong><span>100% safe learning environment</span></span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">🏫</span>
-          <span><strong>Quality Content</strong><span>Curated by educators and experts</span></span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">💡</span>
-          <span><strong>Regular Updates</strong><span>New content added every week</span></span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon">💻</span>
-          <span><strong>Learn Anywhere</strong><span>Access on any device anytime</span></span>
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 id="cta-title">Need a guided plan for your child?</h2>
+            <p>Parents can send an inquiry for online classes, reading support, Islamic learning, or worksheet guidance.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="online-classes.html">View Online Classes</a>
+            <a class="btn btn-white" href="contact.html">Contact Us</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
-          <span class="brand-icon" aria-hidden="true"><span class="book-shape"></span></span>
-          <span class="brand-text">
-            <strong>Al-Hayat</strong>
-            <strong><span class="kids">Kids</span> <span class="hub">Learning Hub</span></strong>
-            <span>Learn • Explore • Grow</span>
-          </span>
-        </a>
-        <p>A complete learning hub for kids with quality content, activities and resources.</p>
+      <div>
+        <h2>Al-Hayat Kids Learning Hub</h2>
+        <p>A joyful Islamic and academic learning platform where children learn, read, play, explore, and grow.</p>
       </div>
 
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
+      <div>
+        <h3>Main Pages</h3>
+        <a href="about.html">About</a>
+        <a href="online-classes.html">Online Classes</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
       </div>
 
-      <div class="footer-col">
-        <h3>Subjects</h3>
-        <ul>
-          <li><a href="subjects/english.html">English</a></li>
-          <li><a href="subjects/math.html">Math</a></li>
-          <li><a href="subjects/science.html">Science</a></li>
-          <li><a href="subjects/arabic-for-kids.html">Arabic</a></li>
-          <li><a href="subjects/islamic-studies.html">Islamic Studies</a></li>
-        </ul>
+      <div>
+        <h3>Learning</h3>
+        <a href="subjects/index.html">Subjects</a>
+        <a href="subjects/english.html">English</a>
+        <a href="subjects/math.html">Math</a>
+        <a href="subjects/science.html">Science</a>
+        <a href="subjects/islamic-studies.html">Islamic Studies</a>
       </div>
 
-      <div class="footer-col">
+      <div>
         <h3>Resources</h3>
-        <ul>
-          <li><a href="worksheets/index.html">Worksheets</a></li>
-          <li><a href="activities/quizzes.html">Quizzes</a></li>
-          <li><a href="videos/index.html">Videos</a></li>
-          <li><a href="reading-library/index.html">Stories</a></li>
-          <li><a href="activities/index.html">Activities</a></li>
-        </ul>
+        <a href="worksheets/index.html">Worksheets</a>
+        <a href="activities/index.html">Activities</a>
+        <a href="reading-library/index.html">Reading Library</a>
+        <a href="islamic-corner/index.html">Islamic Corner</a>
+        <a href="recommended-resources.html">Recommended Resources</a>
       </div>
 
-      <div class="footer-col">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="help.html">Help Center</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Follow Us</h3>
-        <div class="socials" aria-label="Social links">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="YouTube">▶</a>
-          <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="Pinterest">p</a>
-        </div>
+      <div>
+        <h3>Parent Support</h3>
+        <a href="parents-corner/index.html">Parents Corner</a>
+        <a href="parents-corner/reading-habits.html">Reading Habits</a>
+        <a href="online-classes.html">Class Inquiry</a>
+        <a href="privacy-policy.html">Child Safety</a>
+        <a href="sitemap.xml">Sitemap</a>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <p>© 2026 Al-Hayat Kids Learning Hub. All Rights Reserved.</p>
-      <p>Designed for joyful, safe and meaningful learning.</p>
+      <p>Clean homepage version prepared for Google Search Console readiness.</p>
     </div>
   </footer>
 
-  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
-
   <script>
-    const mobileToggle = document.getElementById("mobileToggle");
-    const mainNav = document.getElementById("mainNav");
-
-    mobileToggle.addEventListener("click", () => {
-      const isOpen = mainNav.classList.toggle("is-open");
-      mobileToggle.setAttribute("aria-expanded", String(isOpen));
-      mobileToggle.textContent = isOpen ? "✕" : "☰";
-    });
-
-    mainNav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mainNav.classList.remove("is-open");
-        mobileToggle.setAttribute("aria-expanded", "false");
-        mobileToggle.textContent = "☰";
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+        menuBtn.textContent = isOpen ? "✕" : "☰";
       });
-    });
+    }
 
     const quizButtons = document.querySelectorAll("#quizOptions button");
     const quizFeedback = document.getElementById("quizFeedback");
-
-    quizButtons.forEach((button) => {
+    quizButtons.forEach(button => {
       button.addEventListener("click", () => {
-        quizButtons.forEach((btn) => {
-          btn.style.background = "white";
-          btn.style.borderColor = "#d6e1ee";
-        });
-
+        quizButtons.forEach(btn => btn.classList.remove("correct", "wrong"));
         if (button.dataset.answer === "correct") {
-          button.style.background = "#dcfce7";
-          button.style.borderColor = "#86efac";
-          quizFeedback.textContent = "Correct! Mars is called the Red Planet. ⭐";
-          quizFeedback.style.color = "#166534";
+          button.classList.add("correct");
+          quizFeedback.textContent = "Excellent! Mars is called the Red Planet.";
         } else {
-          button.style.background = "#fee2e2";
-          button.style.borderColor = "#fca5a5";
-          quizFeedback.textContent = "Good try! The correct answer is Mars.";
-          quizFeedback.style.color = "#b91c1c";
+          button.classList.add("wrong");
+          quizFeedback.textContent = "Good try. Correct answer: Mars.";
         }
       });
     });
 
     const routes = [
+      { key: "subjects", url: "subjects/index.html" },
       { key: "english", url: "subjects/english.html" },
       { key: "math", url: "subjects/math.html" },
       { key: "science", url: "subjects/science.html" },
       { key: "arabic", url: "subjects/arabic-for-kids.html" },
-      { key: "letters", url: "subjects/arabic-for-kids.html" },
-      { key: "islam", url: "subjects/islamic-studies.html" },
+      { key: "islamic studies", url: "subjects/islamic-studies.html" },
+      { key: "islam", url: "islamic-corner/index.html" },
       { key: "dua", url: "islamic-corner/daily-duas.html" },
       { key: "duas", url: "islamic-corner/daily-duas.html" },
+      { key: "manners", url: "islamic-corner/good-manners.html" },
+      { key: "seerah", url: "islamic-corner/seerah.html" },
+      { key: "prophets", url: "islamic-corner/prophets.html" },
+      { key: "asma", url: "islamic-corner/asma-ul-husna.html" },
       { key: "story", url: "reading-library/index.html" },
       { key: "stories", url: "reading-library/index.html" },
+      { key: "moral", url: "reading-library/moral-stories.html" },
       { key: "quiz", url: "activities/quizzes.html" },
+      { key: "quizzes", url: "activities/quizzes.html" },
+      { key: "puzzle", url: "activities/puzzles.html" },
       { key: "worksheets", url: "worksheets/index.html" },
       { key: "worksheet", url: "worksheets/index.html" },
-      { key: "videos", url: "videos/index.html" },
+      { key: "kindergarten", url: "worksheets/kindergarten.html" },
+      { key: "grade 1", url: "worksheets/grade-1.html" },
+      { key: "grade 2", url: "worksheets/grade-2.html" },
+      { key: "grade 3", url: "worksheets/grade-3.html" },
       { key: "parents", url: "parents-corner/index.html" },
+      { key: "reading habits", url: "parents-corner/reading-habits.html" },
       { key: "classes", url: "online-classes.html" },
       { key: "online", url: "online-classes.html" },
-      { key: "books", url: "recommended-resources.html" }
+      { key: "resources", url: "recommended-resources.html" },
+      { key: "contact", url: "contact.html" },
+      { key: "privacy", url: "privacy-policy.html" },
+      { key: "faq", url: "faq.html" }
     ];
 
     const siteSearch = document.getElementById("siteSearch");
     const siteSearchBtn = document.getElementById("siteSearchBtn");
 
-    function performSearch() {
-      const value = siteSearch.value.trim().toLowerCase();
-      const match = routes.find((route) => value.includes(route.key));
-      window.location.href = match ? match.url : "subjects/index.html";
+    function runSearch() {
+      const query = (siteSearch.value || "").trim().toLowerCase();
+      if (!query) return;
+      const route = routes.find(item => query.includes(item.key));
+      if (route) {
+        window.location.href = route.url;
+      } else {
+        window.location.href = "recommended-resources.html";
+      }
     }
 
-    siteSearchBtn.addEventListener("click", performSearch);
-
-    siteSearch.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        performSearch();
-      }
-    });
-
-    const newsletterForm = document.getElementById("newsletterForm");
-    const newsletterMessage = document.getElementById("newsletterMessage");
-
-    newsletterForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      newsletterMessage.textContent = "Thank you! Newsletter setup will be connected soon.";
-      newsletterForm.reset();
-    });
+    if (siteSearchBtn && siteSearch) {
+      siteSearchBtn.addEventListener("click", runSearch);
+      siteSearch.addEventListener("keydown", event => {
+        if (event.key === "Enter") runSearch();
+      });
+    }
   </script>
 </body>
 </html>
