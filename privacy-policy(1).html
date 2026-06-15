@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="Privacy Policy for Al-Hayat Kids Learning Hub, explaining child privacy, parent rights, local progress storage, contact forms, third-party links, and safe use of the website." />
+  <meta name="keywords" content="Al-Hayat Kids Learning Hub privacy policy, kids learning privacy, child online safety, parent privacy, Islamic kids learning" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#16a34a" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/privacy-policy.html" />
+
+  <meta property="og:title" content="Privacy Policy | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A clear privacy policy for parents and families using Al-Hayat Kids Learning Hub." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/privacy-policy.html" />
+
+  <style>
+    :root {
+      --green:#16a34a;
+      --green-dark:#166534;
+      --green-soft:#dcfce7;
+      --teal:#0f766e;
+      --teal-dark:#115e59;
+      --teal-soft:#ccfbf1;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --blue-soft:#dbeafe;
+      --purple:#7c3aed;
+      --purple-soft:#ede9fe;
+      --gold:#d97706;
+      --gold-soft:#fef3c7;
+      --rose:#e11d48;
+      --rose-soft:#ffe4e6;
+      --ink:#102033;
+      --text:#334155;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
+      --radius:24px;
+      --max:1180px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      line-height:1.7;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(22,163,74,.16), transparent 28%),
+        radial-gradient(circle at 92% 14%, rgba(15,118,110,.13), transparent 32%),
+        radial-gradient(circle at 74% 88%, rgba(217,119,6,.13), transparent 30%),
+        linear-gradient(180deg,#f4fff8 0%,#ffffff 44%,#f8fbff 100%);
+      overflow-x:hidden;
+    }
+
+    a { color:inherit; text-decoration:none; }
+    button { font:inherit; }
+    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
+
+    .skip-link {
+      position:absolute; top:-100px; left:16px; z-index:9999;
+      background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900;
+    }
+    .skip-link:focus { top:16px; }
+
+    .topbar {
+      position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
+    }
+    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark {
+      width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto;
+      background:linear-gradient(135deg,var(--green),var(--teal)); color:white; font-size:1.8rem; box-shadow:var(--soft-shadow);
+    }
+    .brand-text strong {
+      display:block; color:var(--green-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em;
+    }
+    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .nav-actions a {
+      min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px;
+      border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900;
+    }
+    .nav-actions a.primary { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; border-color:transparent; }
+
+    .mini-nav {
+      background:linear-gradient(90deg,#166534,#16a34a,#0f766e,#2563eb);
+      color:white; box-shadow:0 10px 22px rgba(22,163,74,.22);
+    }
+    .mini-nav-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
+    .mini-nav-inner::-webkit-scrollbar { display:none; }
+    .mini-nav a {
+      white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px;
+      border-radius:999px; font-weight:850; font-size:.92rem;
+    }
+    .mini-nav a:hover,.mini-nav a:focus { background:rgba(255,255,255,.16); }
+
+    .hero { position:relative; overflow:hidden; padding:58px 0 42px; }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(254,243,199,.70) 0 48px, transparent 49px),
+        radial-gradient(circle at 87% 18%, rgba(22,163,74,.18) 0 74px, transparent 75px),
+        radial-gradient(circle at 78% 86%, rgba(37,99,235,.12) 0 95px, transparent 96px);
+      pointer-events:none;
+    }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1fr .85fr; gap:32px; align-items:center; }
+    .breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px; color:var(--muted); font-weight:850; font-size:.94rem; }
+    .breadcrumb a { color:var(--green-dark); text-decoration:underline; text-underline-offset:5px; }
+    h1 {
+      color:var(--ink); font-size:clamp(2.5rem,6vw,5.45rem); line-height:.95;
+      letter-spacing:-.07em; font-weight:1000; margin-bottom:18px;
+    }
+    h1 span {
+      display:block; background:linear-gradient(90deg,var(--green),var(--teal),var(--blue),var(--gold));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-lead { max-width:760px; font-size:clamp(1.02rem,2vw,1.23rem); color:#27415e; font-weight:650; margin-bottom:22px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn {
+      min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow);
+      transition:.2s ease;
+    }
+    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
+    .btn-green { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; }
+    .btn-teal { background:linear-gradient(135deg,var(--teal),var(--teal-dark)); color:white; }
+    .btn-white { background:white; color:var(--ink); border:1px solid var(--line); }
+
+    .hero-card {
+      background:white; border:1px solid var(--line); border-radius:34px; padding:26px; box-shadow:var(--shadow);
+      position:relative; overflow:hidden;
+    }
+    .hero-card::after {
+      content:"🔐"; position:absolute; right:18px; bottom:-10px; font-size:7rem; opacity:.12;
+    }
+    .hero-card h2 { color:var(--ink); font-size:1.5rem; font-weight:1000; letter-spacing:-.03em; margin-bottom:10px; }
+    .safe-list { list-style:none; display:grid; gap:12px; position:relative; z-index:2; }
+    .safe-list li {
+      display:flex; gap:10px; align-items:flex-start; padding:12px; border-radius:18px; background:#f8fafc; border:1px solid var(--line);
+      color:#475569; font-weight:750;
+    }
+    .safe-list span { width:30px; height:30px; border-radius:11px; display:grid; place-items:center; background:var(--green-soft); color:var(--green-dark); font-weight:1000; flex:0 0 auto; }
+
+    .section { padding:34px 0; }
+    .section-head { margin-bottom:18px; }
+    .section-head small { color:var(--gold); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
+    .section-head h2 {
+      color:var(--ink); font-size:clamp(1.8rem,3vw,3rem); line-height:1.05;
+      letter-spacing:-.05em; margin-top:4px; font-weight:1000;
+    }
+    .section-head p { max-width:850px; color:var(--muted); font-weight:650; margin-top:8px; }
+
+    .layout { display:grid; grid-template-columns:300px 1fr; gap:22px; align-items:start; }
+    .toc {
+      position:sticky; top:132px; background:white; border:1px solid var(--line); border-radius:24px; padding:18px; box-shadow:var(--soft-shadow);
+    }
+    .toc h3 { color:var(--ink); font-size:1.08rem; font-weight:1000; margin-bottom:10px; }
+    .toc a {
+      display:flex; align-items:center; gap:8px; min-height:38px; padding:0 10px; border-radius:12px;
+      color:#475569; font-weight:850; font-size:.92rem;
+    }
+    .toc a:hover,.toc a:focus { background:var(--green-soft); color:var(--green-dark); }
+
+    .policy-grid { display:grid; gap:18px; }
+    .policy-card {
+      background:white; border:1px solid var(--line); border-radius:24px; padding:22px; box-shadow:var(--soft-shadow);
+    }
+    .policy-card h3 {
+      color:var(--ink); font-size:1.35rem; font-weight:1000; letter-spacing:-.03em; display:flex; align-items:center; gap:10px;
+      margin-bottom:10px;
+    }
+    .policy-card p { margin:10px 0; color:#475569; font-weight:650; }
+    .policy-card ul { padding-left:22px; margin:10px 0; color:#475569; font-weight:650; }
+    .policy-card li { margin:8px 0; }
+    .notice {
+      padding:16px; border-radius:18px; border:1px solid #bbf7d0; background:linear-gradient(135deg,var(--green-soft),#fff);
+      color:var(--green-dark); font-weight:850; margin-top:12px;
+    }
+    .warning {
+      padding:16px; border-radius:18px; border:1px solid #fecdd3; background:linear-gradient(135deg,var(--rose-soft),#fff);
+      color:#9f1239; font-weight:850; margin-top:12px;
+    }
+    .info-box {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:16px;
+    }
+    .info {
+      padding:16px; border-radius:18px; background:#f8fafc; border:1px solid var(--line);
+    }
+    .info strong { display:block; color:var(--ink); font-size:1.03rem; margin-bottom:4px; }
+    .info span { color:#64748b; font-weight:700; font-size:.92rem; }
+
+    .contact-box {
+      background:linear-gradient(135deg,#ecfdf5,#ffffff);
+      border:1px solid #bbf7d0; border-radius:26px; padding:24px; box-shadow:var(--soft-shadow);
+      display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center;
+    }
+    .contact-box h3 { color:var(--green-dark); font-size:1.5rem; font-weight:1000; letter-spacing:-.03em; }
+    .contact-box p { color:#475569; font-weight:650; margin-top:6px; }
+
+    .footer { margin-top:34px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:22px; }
+    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
+    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
+    .back-top {
+      position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%;
+      display:grid; place-items:center; background:var(--green); color:white; box-shadow:var(--shadow); font-weight:1000;
+    }
+
+    @media (max-width:1050px) {
+      .hero-grid,.layout,.contact-box { grid-template-columns:1fr; }
+      .toc { position:static; }
+      .info-box { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:680px) {
+      .container { width:min(100% - 24px,var(--max)); }
+      .toprow { min-height:70px; }
+      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-text strong { font-size:1.02rem; }
+      .brand-text span { font-size:.73rem; }
+      .nav-actions a { display:none; }
+      .hero { padding-top:36px; }
+      h1 { font-size:3rem; }
+      .hero-card { border-radius:24px; }
+      .btn { width:100%; }
+      .footer-grid { grid-template-columns:1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"PrivacyPolicy",
+    "name":"Privacy Policy | Al-Hayat Kids Learning Hub",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/privacy-policy.html",
+    "isPartOf":{"@type":"WebSite","name":"Al-Hayat Kids Learning Hub","url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"}
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" id="top">
+    <div class="container toprow">
+      <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true">🔐</span>
+        <span class="brand-text">
+          <strong>Al-Hayat Kids Learning Hub</strong>
+          <span>Privacy • safety • parent trust</span>
+        </span>
+      </a>
+
+      <nav class="nav-actions" aria-label="Quick links">
+        <a href="index.html">Home</a>
+        <a href="parents-corner/index.html">Parents</a>
+        <a href="contact.html">Contact</a>
+        <a class="primary" href="online-classes.html">Online Classes</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="mini-nav" aria-label="Page navigation">
+    <div class="container mini-nav-inner">
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html">🌟 About</a>
+      <a href="parents-corner/index.html">👨‍👩‍👧 Parents Corner</a>
+      <a href="contact.html">📩 Contact</a>
+      <a href="privacy-policy.html">🔐 Privacy Policy</a>
+      <a href="faq.html">❓ FAQ</a>
+      <a href="recommended-resources.html">📚 Resources</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>›</span> <span>Privacy Policy</span>
+          </div>
+          <h1 id="page-title">Privacy Policy <span>for Families</span></h1>
+          <p class="hero-lead">
+            We care about children’s safety, parent trust, and respectful learning. This page explains what information may be used on
+            Al-Hayat Kids Learning Hub, how progress features work, how parents can contact us, and how families can use the website safely.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="#summary">Read Summary</a>
+            <a class="btn btn-teal" href="#children">Children’s Privacy</a>
+            <a class="btn btn-white" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Privacy summary">
+          <h2>Parent-friendly summary</h2>
+          <ul class="safe-list">
+            <li><span>1</span> The website is designed as a safe educational space for children and families.</li>
+            <li><span>2</span> Interactive progress is mainly saved on the same device through browser local storage.</li>
+            <li><span>3</span> Children should not send personal details without parent or guardian permission.</li>
+            <li><span>4</span> External links may have their own privacy rules, so parents should supervise them.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="summary">
+      <div class="container layout">
+        <aside class="toc" aria-label="Privacy policy contents">
+          <h3>On this page</h3>
+          <a href="#overview">🌿 Overview</a>
+          <a href="#children">🧒 Children’s privacy</a>
+          <a href="#information">📌 Information we may receive</a>
+          <a href="#local-storage">💾 Local progress storage</a>
+          <a href="#contact-forms">📩 Contact forms</a>
+          <a href="#third-party">🔗 Third-party links</a>
+          <a href="#security">🛡️ Safety and security</a>
+          <a href="#parents">👨‍👩‍👧 Parent rights</a>
+          <a href="#updates">📝 Updates</a>
+          <a href="#contact">📬 Contact</a>
+        </aside>
+
+        <div class="policy-grid">
+          <article class="policy-card" id="overview">
+            <h3>🌿 1. Overview</h3>
+            <p>
+              Al-Hayat Kids Learning Hub is an educational website created for children, parents, and teachers. It provides worksheets,
+              stories, Islamic learning pages, quizzes, activities, and learning resources.
+            </p>
+            <p>
+              This policy explains our general approach to privacy. It is written in clear language for families and schools. It is not a
+              substitute for legal advice, and it may be updated as the website grows.
+            </p>
+            <div class="notice">
+              Last updated: 15 June 2026.
+            </div>
+          </article>
+
+          <article class="policy-card" id="children">
+            <h3>🧒 2. Children’s privacy</h3>
+            <p>
+              Children’s privacy is especially important. Children should use this website with the guidance of a parent, guardian, or teacher.
+              Children should not submit personal information such as full name, home address, phone number, school address, private photos,
+              or passwords through this website.
+            </p>
+            <ul>
+              <li>Parents should supervise online learning, especially when children open external links.</li>
+              <li>Children should use first names or nicknames only when a learning activity asks for a name line on a printable worksheet.</li>
+              <li>Any online class inquiry should be made by a parent or guardian, not by a child alone.</li>
+            </ul>
+          </article>
+
+          <article class="policy-card" id="information">
+            <h3>📌 3. Information we may receive</h3>
+            <p>
+              The main learning pages can be viewed without creating an account. If a parent contacts us voluntarily, we may receive information
+              such as a name, email address, phone or WhatsApp number, child’s grade level, preferred course, and message content.
+            </p>
+            <p>We use this information only to respond to inquiries, guide parents, improve learning support, or manage online class requests.</p>
+            <div class="info-box">
+              <div class="info"><strong>Website use</strong><span>Most pages are open for reading and practice.</span></div>
+              <div class="info"><strong>Parent inquiry</strong><span>Contact details may be used to reply.</span></div>
+              <div class="info"><strong>Class request</strong><span>Grade and subject details help us guide parents.</span></div>
+            </div>
+          </article>
+
+          <article class="policy-card" id="local-storage">
+            <h3>💾 4. Local progress storage</h3>
+            <p>
+              Some interactive pages use browser local storage to remember progress, badges, completed worksheets, completed story cards,
+              quiz progress, or learning preferences on the same device.
+            </p>
+            <ul>
+              <li>This progress is generally stored inside the user’s own browser.</li>
+              <li>It helps children continue learning without needing an account.</li>
+              <li>Clearing browser data may remove this saved progress.</li>
+              <li>Progress saved on one device may not appear on another device.</li>
+            </ul>
+            <div class="notice">
+              Current interactive features are designed for simple learning progress, not for collecting sensitive child profiles.
+            </div>
+          </article>
+
+          <article class="policy-card" id="contact-forms">
+            <h3>📩 5. Contact forms, email, and WhatsApp</h3>
+            <p>
+              If the website includes a contact form, email link, WhatsApp link, or online class inquiry link, the parent or guardian may choose
+              to send information to us. We may use that information to respond to the request.
+            </p>
+            <ul>
+              <li>Please do not send unnecessary personal details about a child.</li>
+              <li>Please do not send passwords, payment card details, or private identity documents through ordinary contact messages.</li>
+              <li>Parents may ask us to delete or correct inquiry information they previously sent.</li>
+            </ul>
+          </article>
+
+          <article class="policy-card" id="third-party">
+            <h3>🔗 6. Third-party links and embedded resources</h3>
+            <p>
+              The website may link to educational resources, Qur’an or hadith websites, videos, printable materials, GitHub Pages, or other
+              learning platforms. These external websites are not controlled by Al-Hayat Kids Learning Hub.
+            </p>
+            <ul>
+              <li>External websites may use their own cookies, analytics, ads, or privacy policies.</li>
+              <li>Parents should review external websites before children use them independently.</li>
+              <li>We aim to recommend helpful and respectful resources, but external content may change over time.</li>
+            </ul>
+            <div class="warning">
+              Parent supervision is strongly recommended whenever children leave this website through an external link.
+            </div>
+          </article>
+
+          <article class="policy-card" id="security">
+            <h3>🛡️ 7. Safety and security</h3>
+            <p>
+              We aim to keep the website safe, respectful, and child-friendly. However, no online system can be promised to be perfectly secure.
+              Families should use safe browsing habits and avoid sharing private information online.
+            </p>
+            <ul>
+              <li>Use trusted devices and updated browsers.</li>
+              <li>Do not share passwords with children or strangers.</li>
+              <li>Parents should guide children about safe online behavior.</li>
+              <li>Report any broken, unsafe, or inappropriate link through the contact page.</li>
+            </ul>
+          </article>
+
+          <article class="policy-card" id="parents">
+            <h3>👨‍👩‍👧 8. Parent and guardian choices</h3>
+            <p>Parents and guardians may contact us to ask questions about privacy, online class inquiries, or information they sent voluntarily.</p>
+            <ul>
+              <li>You may ask what information you previously sent through contact or inquiry messages.</li>
+              <li>You may request correction or deletion of inquiry information where reasonably possible.</li>
+              <li>You may clear local progress from your own browser settings.</li>
+              <li>You may choose not to use interactive progress features.</li>
+            </ul>
+          </article>
+
+          <article class="policy-card" id="updates">
+            <h3>📝 9. Updates to this policy</h3>
+            <p>
+              This privacy policy may be updated when new pages, class inquiry features, forms, analytics, audio resources, or other website
+              features are added. The updated date will be changed when major updates are made.
+            </p>
+          </article>
+
+          <article class="policy-card" id="contact">
+            <h3>📬 10. Contact us</h3>
+            <p>
+              For privacy questions, parent concerns, broken links, or online class inquiries, please use the contact page.
+            </p>
+            <div class="contact-box">
+              <div>
+                <h3>Need help or correction?</h3>
+                <p>Parents and teachers can contact us for support, feedback, or privacy-related questions.</p>
+              </div>
+              <a class="btn btn-green" href="contact.html">Open Contact Page</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Al-Hayat Kids Learning Hub</h2>
+        <p>Safe, colorful, Islamic and academic learning for children, parents, and teachers.</p>
+      </div>
+      <div>
+        <h3>Main Pages</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="online-classes.html">Online Classes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Learning</h3>
+        <a href="worksheets/index.html">Worksheets</a>
+        <a href="activities/index.html">Activities</a>
+        <a href="reading-library/index.html">Reading Library</a>
+        <a href="islamic-corner/index.html">Islamic Corner</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="parents-corner/index.html">Parents Corner</a>
+        <a href="recommended-resources.html">Recommended Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
