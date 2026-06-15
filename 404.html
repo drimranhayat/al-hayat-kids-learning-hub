@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Page Not Found | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="The page you are looking for could not be found. Return to Al-Hayat Kids Learning Hub homepage, subjects, reading library, worksheets, activities, Islamic corner or parents corner." />
+  <meta name="robots" content="noindex, follow" />
+
+  <style>
+    :root{
+      --green:#047857;
+      --green2:#10b981;
+      --blue:#2563eb;
+      --purple:#7c3aed;
+      --pink:#db2777;
+      --orange:#f97316;
+      --amber:#f59e0b;
+      --ink:#102033;
+      --text:#27445a;
+      --muted:#64748b;
+      --shadow:0 24px 70px rgba(15,23,42,.14);
+      --soft-shadow:0 12px 30px rgba(15,23,42,.09);
+      --radius:30px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 8% 0%,rgba(16,185,129,.22) 0 17%,transparent 34%),
+        radial-gradient(circle at 94% 4%,rgba(37,99,235,.20) 0 18%,transparent 34%),
+        radial-gradient(circle at 48% 100%,rgba(249,115,22,.18) 0 18%,transparent 36%),
+        linear-gradient(180deg,#f8fbff 0%,#ecfdf5 45%,#fff7ed 100%);
+      line-height:1.65;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:-1;
+      background-image:
+        radial-gradient(circle,rgba(4,120,87,.08) 1px,transparent 1px),
+        radial-gradient(circle,rgba(37,99,235,.06) 1px,transparent 1px);
+      background-size:30px 30px,46px 46px;
+      background-position:0 0,14px 18px;
+    }
+
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    .skip{
+      position:absolute;
+      left:-999px;
+      background:white;
+      color:#063b2e;
+      padding:10px 14px;
+      border-radius:14px;
+      z-index:999;
+    }
+    .skip:focus{left:12px;top:12px}
+
+    .topbar{
+      background:#063b2e;
+      color:#eafff6;
+      padding:8px 16px;
+      text-align:center;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(15,23,42,.08);
+    }
+    .nav{
+      width:min(var(--max),94%);
+      margin:auto;
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:1000;
+      letter-spacing:-.02em;
+    }
+    .brand-mark{
+      width:56px;
+      height:56px;
+      border-radius:20px;
+      background:
+        radial-gradient(circle at 31% 25%,#fef3c7 0 12%,transparent 13%),
+        linear-gradient(135deg,var(--green),var(--blue));
+      display:grid;
+      place-items:center;
+      box-shadow:0 18px 35px rgba(4,120,87,.22);
+      color:white;
+      overflow:hidden;
+    }
+    .brand-mark::after{content:"☾";font-size:1.9rem}
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:.75rem;
+      font-weight:800;
+      letter-spacing:0;
+    }
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:flex-end;
+    }
+    .links a{
+      padding:9px 12px;
+      border-radius:999px;
+      color:#164152;
+      font-weight:900;
+      font-size:.91rem;
+      transition:.2s ease;
+    }
+    .links a:hover{
+      background:#e7fff5;
+      color:#05603e;
+      transform:translateY(-1px);
+    }
+    .mobile-toggle{
+      display:none;
+      border:0;
+      background:#ecfdf5;
+      border-radius:14px;
+      padding:10px 12px;
+      cursor:pointer;
+      font-size:1.2rem;
+    }
+    .mobile-menu{
+      display:none;
+      width:min(var(--max),94%);
+      margin:0 auto 12px;
+      padding:12px;
+      background:white;
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      box-shadow:var(--soft-shadow);
+    }
+    .mobile-menu a{
+      display:block;
+      padding:12px;
+      border-radius:14px;
+      font-weight:900;
+    }
+    .mobile-menu a:hover{background:#ecfdf5;color:#047857}
+    .mobile-menu.show{display:block}
+
+    .hero{
+      width:min(var(--max),94%);
+      margin:34px auto 22px;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:26px;
+      align-items:stretch;
+    }
+    .panel,.card,.guide-card,.mini-card{
+      background:rgba(255,255,255,.94);
+      border:1px solid rgba(148,163,184,.24);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-text{
+      padding:38px;
+      position:relative;
+      overflow:hidden;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 13px;
+      border-radius:999px;
+      background:#e7fff5;
+      color:#05603e;
+      font-size:.92rem;
+      font-weight:1000;
+    }
+    h1{
+      margin:14px 0;
+      font-size:clamp(2.6rem,6vw,5.8rem);
+      line-height:1;
+      letter-spacing:-.06em;
+    }
+    h2{
+      margin:0 0 12px;
+      font-size:clamp(1.55rem,3vw,2.35rem);
+      line-height:1.15;
+      letter-spacing:-.035em;
+    }
+    h3{margin:0 0 8px;font-size:1.18rem;line-height:1.2}
+    p{margin:0 0 12px;color:var(--text)}
+    .lead{font-size:1.13rem;color:#334155}
+    .gradient-text{
+      background:linear-gradient(135deg,#047857,#2563eb,#f97316);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:22px;
+    }
+    .btn{
+      border:0;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:13px 18px;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--green),var(--blue));
+      color:white;
+      font-weight:1000;
+      box-shadow:0 14px 26px rgba(37,99,235,.19);
+      transition:.2s ease;
+      text-align:center;
+    }
+    .btn:hover{transform:translateY(-2px) scale(1.01)}
+    .btn.alt{background:white;color:#047857;border:2px solid #b7f7dc;box-shadow:none}
+    .btn.orange{background:linear-gradient(135deg,#fb923c,#ef4444)}
+    .btn.purple{background:linear-gradient(135deg,#8b5cf6,#ec4899)}
+
+    .visual{
+      min-height:430px;
+      position:relative;
+      overflow:hidden;
+      padding:26px;
+      display:grid;
+      place-items:center;
+    }
+    .visual::before{
+      content:"";
+      position:absolute;
+      inset:20px;
+      border-radius:38px;
+      background:
+        linear-gradient(135deg,rgba(236,253,245,.92),rgba(219,234,254,.78)),
+        repeating-linear-gradient(45deg,rgba(255,255,255,.45) 0 8px,transparent 8px 16px);
+    }
+    .notfound-world{
+      position:relative;
+      z-index:1;
+      width:min(380px,100%);
+      aspect-ratio:1/1;
+      border-radius:48px;
+      background:
+        radial-gradient(circle at center,#fff 0 28%,transparent 29%),
+        conic-gradient(from 180deg,#d1fae5,#dbeafe,#fef3c7,#fce7f3,#ede9fe,#d1fae5);
+      box-shadow:inset 0 0 0 16px rgba(255,255,255,.55),0 30px 80px rgba(15,23,42,.18);
+      display:grid;
+      place-items:center;
+      animation:floaty 5s ease-in-out infinite;
+    }
+    @keyframes floaty{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-8px)}
+    }
+    .world-center{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      background:white;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:18px;
+      box-shadow:0 14px 35px rgba(15,23,42,.12);
+      font-weight:1000;
+      color:#065f46;
+      font-size:3.2rem;
+      line-height:1;
+    }
+    .world-center small{
+      display:block;
+      font-size:.86rem;
+      line-height:1.25;
+      color:#475569;
+      margin-top:10px;
+    }
+    .orbit{
+      position:absolute;
+      width:68px;
+      height:68px;
+      border-radius:24px;
+      background:white;
+      display:grid;
+      place-items:center;
+      font-size:1.9rem;
+      box-shadow:0 12px 25px rgba(15,23,42,.12);
+    }
+    .o1{top:18px;left:50%;transform:translateX(-50%)}
+    .o2{right:18px;top:50%;transform:translateY(-50%)}
+    .o3{bottom:18px;left:50%;transform:translateX(-50%)}
+    .o4{left:18px;top:50%;transform:translateY(-50%)}
+
+    .section{
+      width:min(var(--max),94%);
+      margin:42px auto;
+    }
+    .section-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:18px;
+    }
+    .section-head p{max-width:700px}
+    .search-box{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      padding:16px;
+      border-radius:24px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(148,163,184,.26);
+      box-shadow:var(--soft-shadow);
+      margin:18px 0;
+      align-items:center;
+    }
+    .search-box input{
+      flex:1 1 260px;
+      min-height:50px;
+      border:2px solid #dbeafe;
+      border-radius:16px;
+      padding:10px 14px;
+      outline:none;
+      color:#102033;
+    }
+    .search-box input:focus{
+      border-color:#10b981;
+      box-shadow:0 0 0 4px rgba(16,185,129,.12);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .mini-card,.guide-card{
+      padding:22px;
+      box-shadow:var(--soft-shadow);
+      transition:.22s ease;
+    }
+    .mini-card:hover,.guide-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 22px 55px rgba(15,23,42,.14);
+    }
+    .icon{
+      width:58px;
+      height:58px;
+      border-radius:20px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#ecfdf5,#dbeafe);
+      font-size:1.8rem;
+      margin-bottom:13px;
+    }
+    .tag{
+      display:inline-flex;
+      padding:6px 9px;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#475569;
+      font-size:.78rem;
+      font-weight:1000;
+      margin-bottom:8px;
+    }
+    .note{
+      border-left:7px solid #10b981;
+      background:#ecfdf5;
+      border-radius:20px;
+      padding:18px;
+      box-shadow:var(--soft-shadow);
+      margin:18px 0;
+    }
+    .note.orange{background:#fff7ed;border-color:#f97316}
+    .quick-list{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin-top:12px;
+    }
+    .quick-link{
+      padding:14px 16px;
+      border-radius:18px;
+      background:white;
+      border:1px solid rgba(148,163,184,.22);
+      font-weight:1000;
+      color:#164152;
+      transition:.2s ease;
+      box-shadow:0 8px 20px rgba(15,23,42,.06);
+    }
+    .quick-link:hover{
+      transform:translateY(-2px);
+      background:#ecfdf5;
+      color:#047857;
+    }
+
+    .footer{
+      margin-top:60px;
+      background:#063b2e;
+      color:white;
+      padding:42px 0 24px;
+    }
+    .footer-inner{
+      width:min(var(--max),94%);
+      margin:auto;
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1fr;
+      gap:22px;
+    }
+    .footer p,.footer a{color:#dffbef}
+    .footer h3{color:white}
+    .footer-bottom{
+      width:min(var(--max),94%);
+      margin:28px auto 0;
+      padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.14);
+      color:#b7f7dc;
+      font-size:.92rem;
+    }
+
+    .fab{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:60;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .fab button{
+      width:50px;
+      height:50px;
+      border-radius:18px;
+      border:0;
+      display:grid;
+      place-items:center;
+      background:#063b2e;
+      color:white;
+      box-shadow:0 14px 32px rgba(15,23,42,.22);
+      cursor:pointer;
+      font-size:1.2rem;
+    }
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .visual{min-height:330px}
+      .grid,.grid.four{grid-template-columns:repeat(2,1fr)}
+      .footer-inner{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:760px){
+      .links{display:none}
+      .mobile-toggle{display:inline-grid}
+      .hero-text{padding:26px}
+      .grid,.grid.four,.quick-list,.footer-inner{grid-template-columns:1fr}
+      .section-head{display:block}
+      .brand span:last-child{font-size:.94rem}
+      .brand small{font-size:.68rem}
+      .fab{right:12px;bottom:12px}
+      .world-center{width:160px;height:160px}
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <div class="topbar">🌙 Don’t worry — let’s guide you back to learning.</div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Al-Hayat Kids Learning Hub <small>safe Islamic + academic learning for children</small></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+
+      <div class="links" aria-label="Primary links">
+        <a href="index.html">Home</a>
+        <a href="subjects/index.html">Subjects</a>
+        <a href="reading-library/index.html">Reading</a>
+        <a href="activities/index.html">Activities</a>
+        <a href="worksheets/index.html">Worksheets</a>
+        <a href="islamic-corner/index.html">Islamic</a>
+        <a href="parents-corner/index.html">Parents</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="subjects/index.html">Subjects</a>
+      <a href="reading-library/index.html">Reading Library</a>
+      <a href="activities/index.html">Activities</a>
+      <a href="worksheets/index.html">Worksheets</a>
+      <a href="islamic-corner/index.html">Islamic Corner</a>
+      <a href="parents-corner/index.html">Parents Corner</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-text panel">
+        <span class="kicker">🔎 Page Not Found</span>
+        <h1>Oops! This page has <span class="gradient-text">moved or changed</span></h1>
+        <p class="lead">
+          The link you opened may be old, renamed or typed incorrectly. No problem — Al-Hayat Kids Learning Hub has many helpful learning sections waiting for you.
+        </p>
+        <p>
+          Use the buttons below to return to the main learning areas. Parents and teachers can also use the search helper to find the closest section.
+        </p>
+        <div class="actions">
+          <a class="btn" href="index.html">Go to Homepage</a>
+          <a class="btn alt" href="sitemap.xml">Open Sitemap</a>
+          <a class="btn orange" href="contact.html">Report Broken Link</a>
+        </div>
+      </div>
+
+      <div class="visual panel" aria-label="404 visual">
+        <div class="notfound-world">
+          <div class="orbit o1">📚</div>
+          <div class="orbit o2">🧩</div>
+          <div class="orbit o3">🌙</div>
+          <div class="orbit o4">✍️</div>
+          <div class="world-center">404 <small>Let’s find the right learning path.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🧭 Find your section</span>
+          <h2>Search the most useful Al-Hayat pages</h2>
+        </div>
+        <p class="lead">Type what you need: stories, duas, worksheets, math, science, parents, screen time, Arabic, quizzes or activities.</p>
+      </div>
+
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="Search: stories, duas, math, worksheets, Arabic, screen time..." aria-label="Search page suggestions" />
+        <button class="btn" id="searchBtn">Find Page</button>
+      </div>
+
+      <div class="quick-list" id="suggestions"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">⭐ Popular learning paths</span>
+          <h2>Choose where you want to go</h2>
+        </div>
+      </div>
+
+      <div class="grid four">
+        <a class="guide-card" href="reading-library/islamic-stories.html">
+          <div class="icon">🌙</div>
+          <span class="tag">Reading</span>
+          <h3>Islamic Stories</h3>
+          <p>Faith, manners, kindness and child-friendly moral lessons.</p>
+        </a>
+
+        <a class="guide-card" href="reading-library/prophet-stories.html">
+          <div class="icon">⭐</div>
+          <span class="tag">Reading</span>
+          <h3>Prophet Stories</h3>
+          <p>Qur’anic story themes and values for children.</p>
+        </a>
+
+        <a class="guide-card" href="worksheets/grade-2.html">
+          <div class="icon">✍️</div>
+          <span class="tag">Worksheets</span>
+          <h3>Grade 2 Worksheets</h3>
+          <p>English, math, science, Islamic, Arabic and logic practice.</p>
+        </a>
+
+        <a class="guide-card" href="worksheets/grade-3.html">
+          <div class="icon">🚀</div>
+          <span class="tag">Worksheets</span>
+          <h3>Grade 3 Worksheets</h3>
+          <p>Advanced practice for independent learners.</p>
+        </a>
+
+        <a class="guide-card" href="activities/memory-challenges.html">
+          <div class="icon">🧠</div>
+          <span class="tag">Activities</span>
+          <h3>Memory Challenges</h3>
+          <p>Focus, recall, brain games and memory practice.</p>
+        </a>
+
+        <a class="guide-card" href="islamic-corner/daily-duas.html">
+          <div class="icon">🤲</div>
+          <span class="tag">Islamic</span>
+          <h3>Daily Duas</h3>
+          <p>Simple duas for daily routines and Islamic habits.</p>
+        </a>
+
+        <a class="guide-card" href="parents-corner/screen-time.html">
+          <div class="icon">👀</div>
+          <span class="tag">Parents</span>
+          <h3>Screen-Time Guide</h3>
+          <p>Balanced, safe and purposeful digital learning guidance.</p>
+        </a>
+
+        <a class="guide-card" href="recommended-resources.html">
+          <div class="icon">🌟</div>
+          <span class="tag">Resources</span>
+          <h3>Recommended Resources</h3>
+          <p>Parent-safe tools for academic and Islamic learning.</p>
+        </a>
+      </div>
+
+      <div class="note orange">
+        <strong>Tip:</strong> If you came from an old button or menu link, replace that old link with the closest page above. This keeps the website clean and professional.
+      </div>
+    </section>
+  </main>
+
+  <div class="fab" aria-label="Quick actions">
+    <button id="topBtn" title="Back to top">↑</button>
+    <button id="soundBtn" title="Read message">🔊</button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Al-Hayat Kids Learning Hub</h3>
+        <p>Islamic and academic learning through stories, worksheets, quizzes, duas, manners and parent-guided routines.</p>
+      </div>
+      <div>
+        <h3>Main</h3>
+        <p><a href="index.html">Homepage</a></p>
+        <p><a href="subjects/index.html">Subjects</a></p>
+        <p><a href="recommended-resources.html">Resources</a></p>
+        <p><a href="online-classes.html">Online Classes</a></p>
+      </div>
+      <div>
+        <h3>Learning</h3>
+        <p><a href="reading-library/index.html">Reading Library</a></p>
+        <p><a href="worksheets/index.html">Worksheets</a></p>
+        <p><a href="activities/index.html">Activities</a></p>
+        <p><a href="islamic-corner/index.html">Islamic Corner</a></p>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <p><a href="parents-corner/index.html">Parents Corner</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Al-Hayat Kids Learning Hub. Child-safe learning. Parent supervision recommended.
+    </div>
+  </footer>
+
+  <script>
+    const pages = [
+      {title:"Homepage", url:"index.html", keys:"home main landing start"},
+      {title:"Subjects", url:"subjects/index.html", keys:"subjects english math science general knowledge islamic arabic"},
+      {title:"English", url:"subjects/english.html", keys:"english grammar vocabulary writing reading"},
+      {title:"Math", url:"subjects/math.html", keys:"math numbers addition subtraction multiplication division"},
+      {title:"Science", url:"subjects/science.html", keys:"science plants animals materials experiments"},
+      {title:"Reading Library", url:"reading-library/index.html", keys:"reading stories books library"},
+      {title:"Islamic Stories", url:"reading-library/islamic-stories.html", keys:"islamic stories morals faith manners"},
+      {title:"Prophet Stories", url:"reading-library/prophet-stories.html", keys:"prophet prophets quran seerah stories"},
+      {title:"Animal Stories", url:"reading-library/animal-stories.html", keys:"animal animals stories kindness nature"},
+      {title:"Moral Stories", url:"reading-library/moral-stories.html", keys:"moral stories values honesty kindness"},
+      {title:"Worksheets", url:"worksheets/index.html", keys:"worksheets printable practice"},
+      {title:"Grade 2 Worksheets", url:"worksheets/grade-2.html", keys:"grade 2 class 2 worksheets"},
+      {title:"Grade 3 Worksheets", url:"worksheets/grade-3.html", keys:"grade 3 class 3 worksheets"},
+      {title:"Activities", url:"activities/index.html", keys:"activities games quizzes puzzles"},
+      {title:"Memory Challenges", url:"activities/memory-challenges.html", keys:"memory focus recall brain games"},
+      {title:"Quizzes", url:"activities/quizzes.html", keys:"quiz quizzes test practice"},
+      {title:"Puzzles", url:"activities/puzzles.html", keys:"puzzles logic games"},
+      {title:"Islamic Corner", url:"islamic-corner/index.html", keys:"islamic corner duas manners seerah"},
+      {title:"Daily Duas", url:"islamic-corner/daily-duas.html", keys:"dua duas daily prayer"},
+      {title:"Good Manners", url:"islamic-corner/good-manners.html", keys:"manners adab akhlaq character"},
+      {title:"Parents Corner", url:"parents-corner/index.html", keys:"parents parent guidance"},
+      {title:"Screen-Time Guide", url:"parents-corner/screen-time.html", keys:"screen time mobile phone digital"},
+      {title:"Study Routines", url:"parents-corner/study-routines.html", keys:"study routine timetable habits"},
+      {title:"Recommended Resources", url:"recommended-resources.html", keys:"resources tools books printables"},
+      {title:"Contact", url:"contact.html", keys:"contact help message"}
+    ];
+
+    const suggestions = document.getElementById("suggestions");
+    const searchInput = document.getElementById("searchInput");
+
+    function renderSuggestions(query = ""){
+      const q = query.trim().toLowerCase();
+      const matches = pages
+        .filter(page => !q || page.title.toLowerCase().includes(q) || page.keys.includes(q))
+        .slice(0, 10);
+
+      suggestions.innerHTML = matches.map(page =>
+        `<a class="quick-link" href="${page.url}">➡️ ${page.title}</a>`
+      ).join("");
+
+      if(!matches.length){
+        suggestions.innerHTML = `<a class="quick-link" href="index.html">🏠 No exact match — go to Homepage</a><a class="quick-link" href="contact.html">📩 Report this missing page</a>`;
+      }
+    }
+
+    function speakText(text){
+      if(!("speechSynthesis" in window)){
+        alert("Read-aloud is not supported on this browser.");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.9;
+      utterance.pitch = 1.04;
+      utterance.volume = 1;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    document.getElementById("searchBtn").addEventListener("click", () => renderSuggestions(searchInput.value));
+    searchInput.addEventListener("input", () => renderSuggestions(searchInput.value));
+    document.getElementById("topBtn").addEventListener("click", () => window.scrollTo({top:0,behavior:"smooth"}));
+    document.getElementById("soundBtn").addEventListener("click", () => speakText("This page could not be found. Please choose the homepage, subjects, reading library, worksheets, activities, Islamic corner, parents corner, or recommended resources."));
+    document.getElementById("mobileToggle").addEventListener("click", () => document.getElementById("mobileMenu").classList.toggle("show"));
+
+    renderSuggestions();
+  </script>
+</body>
+</html>
