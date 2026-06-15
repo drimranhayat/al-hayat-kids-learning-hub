@@ -859,6 +859,48 @@ h1 span {
   }
 }
 
+  
+/* =========================================================
+   FINAL PREVIEW CARD FIX
+   Fixes blank right side in page showcase:
+   iframe now fills the complete preview area instead of being
+   scaled to a fixed 1280px screenshot width.
+   ========================================================= */
+
+.preview-frame {
+  height: 260px !important;
+  background: #ffffff !important;
+}
+
+.preview-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  max-width: none !important;
+  transform: none !important;
+  transform-origin: center center !important;
+  border: 0 !important;
+  pointer-events: none !important;
+  background: #ffffff !important;
+}
+
+.preview-overlay {
+  padding-top: 54px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(16,32,51,.16) 30%, rgba(16,32,51,.82) 100%) !important;
+}
+
+@media (max-width: 760px) {
+  .preview-frame {
+    height: 255px !important;
+  }
+
+  .preview-frame iframe {
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+  }
+}
+
   </style>
 
   <script type="application/ld+json">
