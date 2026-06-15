@@ -4,395 +4,1604 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Prophet Stories for Kids | Al-Hayat Kids Learning Hub</title>
-  <meta name="description" content="A colorful, child-friendly library of Prophet stories in Islam with Qur’an references, gradual levels, lessons, questions, missions, read-aloud buttons, quiz cards, progress badges, and source notes." />
-  <meta name="keywords" content="Prophet stories for kids, prophets in Islam, Quran stories for children, 25 prophets, Islamic learning for kids, Al-Hayat Kids Learning Hub" />
-  <meta name="author" content="Dr. Imran Hayat" />
+  <title>Prophets' Stories for Kids | Qur'anic Lessons & Islamic Values | Al-Hayat Kids</title>
+  <meta name="description" content="A child-friendly Prophets' stories library for Muslim kids with Qur'anic story references, age filters, moral lessons, read-aloud buttons, reflection questions, missions, parent guidance and safe Islamic learning." />
+  <meta name="keywords" content="Prophets stories for kids, Islamic stories for children, Qur'anic stories for kids, Muslim kids learning, Prophet Adam story, Prophet Nuh story, Prophet Ibrahim story, Prophet Yusuf story, Prophet Musa story, Prophet Muhammad for kids" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1d4ed8" />
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/prophet-stories.html" />
 
-  <meta property="og:title" content="Prophet Stories for Kids | Al-Hayat Kids Learning Hub" />
-  <meta property="og:description" content="Learn the stories and lessons of the Prophets with Qur’an references, child-friendly summaries, quizzes, missions, and badges." />
+  <meta property="og:title" content="Prophets' Stories for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A safe, parent-guided library of Prophets' stories for children with moral lessons, reflection questions, read-aloud buttons and age-based filters." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/prophet-stories.html" />
 
   <style>
-    :root {
-      --blue:#2563eb;
-      --blue-dark:#1d4ed8;
-      --blue-soft:#dbeafe;
-      --cyan:#0891b2;
-      --cyan-soft:#cffafe;
+    :root{
+      --emerald:#047857;
+      --emerald2:#10b981;
       --teal:#0f766e;
-      --teal-soft:#ccfbf1;
-      --green:#16a34a;
-      --green-soft:#dcfce7;
+      --blue:#2563eb;
+      --sky:#0284c7;
       --purple:#7c3aed;
-      --purple-soft:#ede9fe;
-      --gold:#f59e0b;
-      --gold-soft:#fef3c7;
+      --pink:#db2777;
       --orange:#f97316;
-      --orange-soft:#ffedd5;
-      --pink:#ec4899;
-      --pink-soft:#fce7f3;
+      --amber:#f59e0b;
+      --rose:#e11d48;
       --ink:#102033;
-      --text:#334155;
+      --text:#27445a;
       --muted:#64748b;
-      --line:#e2e8f0;
-      --white:#ffffff;
-      --bg:#f8fbff;
-      --shadow:0 18px 45px rgba(15,23,42,.12);
-      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
-      --radius:24px;
-      --max:1220px;
+      --card:#ffffff;
+      --soft:#f8fafc;
+      --mint:#ecfdf5;
+      --cream:#fff7ed;
+      --line:rgba(15,23,42,.12);
+      --shadow:0 22px 60px rgba(15,23,42,.13);
+      --soft-shadow:0 12px 30px rgba(15,23,42,.09);
+      --radius:30px;
+      --radius-sm:18px;
+      --max:1180px;
     }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    html { scroll-behavior:smooth; }
-    body {
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+      color:var(--ink);
       background:
-        radial-gradient(circle at 7% 7%, rgba(37,99,235,.15), transparent 28%),
-        radial-gradient(circle at 92% 13%, rgba(245,158,11,.18), transparent 30%),
-        radial-gradient(circle at 80% 80%, rgba(15,118,110,.10), transparent 28%),
-        linear-gradient(180deg,#f8fbff 0%,#ffffff 48%,#f8fffb 100%);
-      color:var(--text); line-height:1.65; overflow-x:hidden;
+        radial-gradient(circle at 8% 2%,rgba(16,185,129,.24) 0 17%,transparent 34%),
+        radial-gradient(circle at 94% 4%,rgba(37,99,235,.20) 0 18%,transparent 34%),
+        radial-gradient(circle at 52% 100%,rgba(245,158,11,.18) 0 18%,transparent 36%),
+        linear-gradient(180deg,#f8fbff 0%,#eff6ff 37%,#f0fdf4 70%,#fff7ed 100%);
+      line-height:1.65;
+      overflow-x:hidden;
     }
-    a { color:inherit; text-decoration:none; }
-    button,input,select { font:inherit; }
-    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
-    .skip-link { position:absolute; top:-100px; left:16px; z-index:9999; background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900; }
-    .skip-link:focus { top:16px; }
-    .topbar { position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96); border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px); }
-    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
-    .brand-mark { width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto; background:linear-gradient(135deg,var(--blue),var(--teal)); color:white; font-size:1.75rem; box-shadow:var(--soft-shadow); }
-    .brand-text strong { display:block; color:var(--blue-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em; }
-    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
-    .nav-actions { display:flex; align-items:center; gap:10px; }
-    .nav-actions a,.sound-btn { min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px; border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900; cursor:pointer; }
-    .nav-actions a.primary { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; border-color:transparent; }
-    .mini-nav { background:linear-gradient(90deg,#1e3a8a,#2563eb,#0f766e); color:white; box-shadow:0 10px 22px rgba(37,99,235,.22); }
-    .mini-nav-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
-    .mini-nav-inner::-webkit-scrollbar { display:none; }
-    .mini-nav a { white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px; border-radius:999px; font-weight:850; font-size:.92rem; }
-    .mini-nav a:hover,.mini-nav a:focus { background:rgba(255,255,255,.16); }
-    .hero { position:relative; overflow:hidden; padding:58px 0 36px; }
-    .hero::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 13% 20%, rgba(251,191,36,.32) 0 45px, transparent 46px), radial-gradient(circle at 86% 20%, rgba(37,99,235,.17) 0 76px, transparent 77px), radial-gradient(circle at 78% 88%, rgba(15,118,110,.13) 0 98px, transparent 99px); pointer-events:none; }
-    .hero-grid { position:relative; display:grid; grid-template-columns:1.02fr .98fr; gap:28px; align-items:center; }
-    .breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px; color:var(--muted); font-weight:850; font-size:.94rem; }
-    .breadcrumb a { color:var(--blue-dark); text-decoration:underline; text-underline-offset:5px; }
-    h1 { color:var(--ink); font-size:clamp(2.65rem,6vw,5.8rem); line-height:.94; letter-spacing:-.07em; font-weight:1000; margin-bottom:18px; }
-    h1 span { display:block; background:linear-gradient(90deg,var(--blue),var(--teal),var(--green),var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent; }
-    .hero-lead { max-width:680px; font-size:clamp(1.02rem,2vw,1.24rem); color:#27415e; font-weight:650; margin-bottom:20px; }
-    .hero-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:760px; margin:24px 0; }
-    .stat { background:white; border:1px solid var(--line); border-radius:18px; padding:14px 12px; box-shadow:var(--soft-shadow); text-align:center; }
-    .stat strong { display:block; color:var(--blue-dark); font-size:1.35rem; line-height:1; font-weight:1000; }
-    .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:800; margin-top:4px; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
-    .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow); transition:.2s ease; }
-    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
-    .btn-blue { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; }
-    .btn-teal { background:linear-gradient(135deg,var(--teal),#115e59); color:white; }
-    .btn-gold { background:linear-gradient(135deg,#fbbf24,var(--gold)); color:#1f2937; }
-    .btn-purple { background:linear-gradient(135deg,var(--purple),#5b21b6); color:white; }
-    .hero-visual { position:relative; min-height:430px; border-radius:36px; overflow:hidden; padding:24px; background:radial-gradient(circle at 50% 13%, rgba(255,255,255,.78) 0 62px, transparent 63px), linear-gradient(135deg,#dbeafe,#ecfeff 52%,#fef3c7); box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.8); display:grid; align-items:end; }
-    .sky-moon { position:absolute; right:44px; top:38px; width:86px; height:86px; border-radius:50%; background:#fef3c7; box-shadow:0 0 0 18px rgba(254,243,199,.35), 0 14px 28px rgba(15,23,42,.1); }
-    .mount { position:absolute; left:-5%; right:-5%; bottom:0; height:155px; background:linear-gradient(135deg,#93c5fd,#60a5fa); clip-path:polygon(0 100%, 18% 45%, 34% 100%, 50% 30%, 70% 100%, 86% 42%, 100% 100%); opacity:.85; }
-    .path-line { position:absolute; left:50%; bottom:0; width:140px; height:230px; background:linear-gradient(180deg,#fef3c7,#fdba74); clip-path:polygon(44% 0,56% 0,86% 100%,14% 100%); transform:translateX(-50%); opacity:.9; }
-    .prophet-card { position:absolute; left:50%; bottom:32px; transform:translateX(-50%); width:min(360px,86%); background:rgba(255,255,255,.95); border:1px solid var(--line); border-radius:24px; padding:18px; box-shadow:var(--soft-shadow); text-align:center; }
-    .prophet-card .big { font-size:3rem; }
-    .prophet-card strong { display:block; color:var(--blue-dark); font-size:1.2rem; font-weight:1000; }
-    .prophet-card span { color:var(--muted); font-weight:800; }
-    .spark { position:absolute; font-size:2rem; filter:drop-shadow(0 8px 8px rgba(15,23,42,.12)); animation:float 6s ease-in-out infinite; }
-    .s1 { left:8%; top:11%; } .s2 { left:35%; top:8%; animation-delay:.5s; } .s3 { right:7%; bottom:32%; animation-delay:1s; } .s4 { left:15%; bottom:30%; animation-delay:1.5s; }
-    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-12px) rotate(3deg); } }
-    .panel { background:white; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--soft-shadow); }
-    .toolbar-section { padding:22px 0; }
-    .toolbar { padding:18px; display:grid; grid-template-columns:1.3fr repeat(3,.7fr); gap:12px; align-items:center; position:sticky; top:124px; z-index:80; }
-    .field input,.field select { width:100%; min-height:48px; border:1px solid #cbd5e1; border-radius:16px; padding:0 14px; outline:0; color:var(--ink); background:#fbfdff; font-weight:750; }
-    .field input:focus,.field select:focus { border-color:var(--blue); box-shadow:0 0 0 4px rgba(37,99,235,.14); }
-    .section { padding:34px 0; }
-    .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
-    .section-title small { color:var(--gold); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
-    .section-title h2 { color:var(--ink); font-size:clamp(1.8rem,3vw,3rem); line-height:1.05; letter-spacing:-.05em; margin-top:4px; font-weight:1000; }
-    .section-title p { max-width:820px; color:var(--muted); font-weight:650; margin-top:8px; }
-    .pill { display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px; background:var(--blue-soft); color:var(--blue-dark); font-weight:1000; font-size:.84rem; }
-    .path-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-    .path-card { padding:18px; min-height:195px; position:relative; overflow:hidden; }
-    .path-card::after { content:""; position:absolute; right:-28px; bottom:-34px; width:115px; height:115px; border-radius:50%; opacity:.45; background:currentColor; }
-    .path-card h3 { color:var(--ink); font-size:1.14rem; font-weight:1000; margin:8px 0; }
-    .path-card p { color:#475569; font-size:.92rem; font-weight:650; }
-    .path-card .icon { font-size:2rem; }
-    .path-card:nth-child(1) { color:var(--green); background:linear-gradient(135deg,#fff,#f0fdf4); }
-    .path-card:nth-child(2) { color:var(--blue); background:linear-gradient(135deg,#fff,#eff6ff); }
-    .path-card:nth-child(3) { color:var(--gold); background:linear-gradient(135deg,#fff,#fffbeb); }
-    .path-card:nth-child(4) { color:var(--purple); background:linear-gradient(135deg,#fff,#f5f3ff); }
-    .timeline { position:relative; display:grid; gap:12px; }
-    .timeline::before { content:""; position:absolute; left:22px; top:10px; bottom:10px; width:4px; border-radius:999px; background:linear-gradient(180deg,var(--blue),var(--teal),var(--gold)); }
-    .time-item { position:relative; padding:14px 16px 14px 58px; background:white; border:1px solid var(--line); border-radius:18px; box-shadow:var(--soft-shadow); }
-    .time-dot { position:absolute; left:8px; top:18px; width:32px; height:32px; border-radius:50%; background:var(--blue); color:white; display:grid; place-items:center; font-weight:1000; }
-    .time-item h3 { color:var(--ink); font-size:1rem; font-weight:1000; }
-    .time-item p { color:var(--muted); font-size:.9rem; font-weight:650; }
-    .story-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-    .story-card { position:relative; overflow:hidden; min-height:402px; display:flex; flex-direction:column; transition:.2s ease; }
-    .story-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
-    .story-top { padding:18px 18px 12px; display:flex; align-items:flex-start; justify-content:space-between; gap:10px; background:linear-gradient(135deg,#ffffff,#f8fafc); }
-    .story-emoji { width:56px; height:56px; display:grid; place-items:center; border-radius:18px; font-size:2rem; background:var(--gold-soft); box-shadow:var(--soft-shadow); flex:0 0 auto; }
-    .story-meta { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
-    .tag { min-height:26px; padding:0 9px; display:inline-flex; align-items:center; border-radius:999px; background:#f1f5f9; color:#334155; font-size:.76rem; font-weight:1000; }
-    .tag.level { background:var(--blue-soft); color:#1d4ed8; }
-    .tag.theme { background:var(--teal-soft); color:#115e59; }
-    .tag.age { background:var(--green-soft); color:#166534; }
-    .story-body { padding:0 18px 16px; flex:1; display:flex; flex-direction:column; }
-    .story-body h3 { color:var(--ink); line-height:1.12; letter-spacing:-.03em; font-size:1.25rem; margin:8px 0; font-weight:1000; }
-    .arabic { color:var(--blue-dark); font-weight:1000; font-size:1.25rem; }
-    .ref-line { color:var(--muted); font-size:.82rem; font-weight:800; margin-bottom:10px; }
-    .story-text { color:#35465f; font-weight:600; font-size:.94rem; display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; overflow:hidden; }
-    .lesson-box { margin:12px 0; padding:12px; border-radius:16px; background:linear-gradient(135deg,var(--gold-soft),#fff); border:1px solid #fde68a; color:#713f12; font-weight:850; font-size:.9rem; }
-    .card-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
-    .mini-btn { min-height:36px; border-radius:12px; border:1px solid var(--line); background:white; color:var(--ink); padding:0 10px; font-weight:950; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
-    .mini-btn.read { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; border-color:transparent; }
-    .mini-btn.listen { background:var(--purple-soft); color:var(--purple); border-color:#ddd6fe; }
-    .mini-btn.done { background:var(--green-soft); color:#166534; border-color:#bbf7d0; }
-    .game-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-    .game-card { padding:20px; background:linear-gradient(135deg,#fff,#eff6ff); }
-    .game-card:nth-child(2) { background:linear-gradient(135deg,#fff,#f0fdfa); }
-    .quiz-question { color:var(--ink); font-size:1.2rem; font-weight:1000; margin:12px 0; }
-    .answer-row { display:grid; gap:8px; margin-top:12px; }
-    .answer-row button { border:1px solid var(--line); border-radius:14px; background:white; padding:10px; cursor:pointer; text-align:left; font-weight:850; }
-    .answer-row button:hover { background:var(--blue-soft); }
-    .feedback { min-height:26px; margin-top:10px; font-weight:1000; }
-    .match-list { display:grid; gap:8px; margin-top:12px; }
-    .match-item { display:grid; grid-template-columns:1fr auto; gap:10px; align-items:center; padding:10px; border:1px solid var(--line); border-radius:14px; background:white; }
-    .match-item select { min-height:38px; border:1px solid #cbd5e1; border-radius:12px; padding:0 8px; font-weight:800; }
-    .progress-wrap { display:grid; grid-template-columns:1fr 320px; gap:18px; align-items:start; }
-    .progress-card,.mission-card { padding:22px; }
-    .progress-bar { height:18px; border-radius:999px; background:#e2e8f0; overflow:hidden; margin:14px 0; }
-    .progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--blue),var(--teal),var(--gold)); transition:.4s ease; }
-    .badges { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px; }
-    .badge { min-height:74px; border-radius:16px; background:#f8fafc; border:1px dashed #cbd5e1; display:grid; place-items:center; text-align:center; padding:8px; color:#94a3b8; font-weight:1000; font-size:.82rem; }
-    .badge.active { background:var(--gold-soft); color:#854d0e; border-color:#facc15; box-shadow:var(--soft-shadow); }
-    .mission-card { background:linear-gradient(135deg,#eff6ff,#fff); position:relative; overflow:hidden; }
-    .mission-card::after { content:"🌙"; position:absolute; right:12px; bottom:2px; font-size:6rem; opacity:.13; }
-    .mission-text { color:var(--ink); font-size:1.05rem; font-weight:850; margin:12px 0; position:relative; z-index:2; }
-    .source-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
-    .source-card { padding:18px; background:#f8fafc; }
-    .source-card h3 { color:var(--ink); font-size:1.12rem; font-weight:1000; margin-bottom:8px; }
-    .source-card p,.source-card li { color:#475569; font-weight:650; }
-    .source-card ul { padding-left:20px; }
-    .modal { position:fixed; inset:0; background:rgba(15,23,42,.62); z-index:1000; display:none; align-items:center; justify-content:center; padding:18px; }
-    .modal.open { display:flex; }
-    .modal-card { width:min(900px,100%); max-height:88vh; overflow:auto; background:white; border-radius:28px; box-shadow:0 30px 70px rgba(0,0,0,.28); border:1px solid rgba(255,255,255,.75); }
-    .modal-head { position:sticky; top:0; z-index:2; background:white; border-bottom:1px solid var(--line); padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .modal-head h2 { color:var(--ink); font-size:1.45rem; font-weight:1000; letter-spacing:-.03em; }
-    .close-btn { width:42px; height:42px; border-radius:50%; border:0; background:#f1f5f9; color:var(--ink); cursor:pointer; font-size:1.2rem; font-weight:1000; }
-    .modal-body { padding:20px; }
-    .modal-story { color:#263b55; font-size:1.08rem; font-weight:650; margin:10px 0 16px; }
-    .detail-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:16px; }
-    .detail-box { padding:14px; border-radius:18px; background:#f8fafc; border:1px solid var(--line); }
-    .detail-box h4 { color:var(--blue-dark); font-weight:1000; margin-bottom:8px; }
-    .detail-box ul { padding-left:18px; color:#475569; font-weight:650; }
-    .footer { margin-top:34px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
-    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:22px; }
-    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
-    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
-    .back-top { position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--blue); color:white; box-shadow:var(--shadow); font-weight:1000; }
-    @media (max-width:1050px) { .hero-grid,.progress-wrap,.game-grid { grid-template-columns:1fr; } .toolbar { position:static; grid-template-columns:1fr 1fr; } .story-grid { grid-template-columns:repeat(2,1fr); } .path-grid,.source-grid { grid-template-columns:repeat(2,1fr); } .footer-grid { grid-template-columns:repeat(2,1fr); } }
-    @media (max-width:680px) { .container { width:min(100% - 24px,var(--max)); } .toprow { min-height:70px; } .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; } .brand-text strong { font-size:1.02rem; } .brand-text span { font-size:.73rem; } .nav-actions a { display:none; } .hero { padding-top:36px; } h1 { font-size:3rem; } .hero-stats { grid-template-columns:repeat(2,1fr); } .hero-visual { min-height:320px; border-radius:24px; } .toolbar,.story-grid,.path-grid,.source-grid,.detail-grid,.badges,.footer-grid { grid-template-columns:1fr; } .section-head { display:block; } .section-head .pill { margin-top:10px; } .btn { width:100%; } }
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:-1;
+      background-image:
+        radial-gradient(circle,rgba(4,120,87,.08) 1px,transparent 1px),
+        radial-gradient(circle,rgba(37,99,235,.06) 1px,transparent 1px);
+      background-size:30px 30px,46px 46px;
+      background-position:0 0,14px 18px;
+    }
+
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    img{max-width:100%;display:block}
+    .skip{
+      position:absolute;
+      left:-999px;
+      background:white;
+      color:#063b2e;
+      padding:10px 14px;
+      border-radius:14px;
+      z-index:999;
+    }
+    .skip:focus{left:12px;top:12px}
+
+    .topbar{
+      background:#063b2e;
+      color:#eafff6;
+      padding:8px 16px;
+      text-align:center;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(15,23,42,.08);
+    }
+    .nav{
+      width:min(var(--max),94%);
+      margin:auto;
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:1000;
+      letter-spacing:-.02em;
+    }
+    .brand-mark{
+      width:56px;
+      height:56px;
+      border-radius:20px;
+      background:
+        radial-gradient(circle at 31% 25%,#fef3c7 0 12%,transparent 13%),
+        linear-gradient(135deg,var(--emerald),var(--blue));
+      display:grid;
+      place-items:center;
+      box-shadow:0 18px 35px rgba(4,120,87,.22);
+      color:white;
+      overflow:hidden;
+    }
+    .brand-mark::after{content:"☾";font-size:1.9rem}
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:.75rem;
+      font-weight:800;
+      letter-spacing:0;
+    }
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:flex-end;
+    }
+    .links a{
+      padding:9px 12px;
+      border-radius:999px;
+      color:#164152;
+      font-weight:900;
+      font-size:.91rem;
+      transition:.2s ease;
+    }
+    .links a:hover,.links a.active{
+      background:#e7fff5;
+      color:#05603e;
+      transform:translateY(-1px);
+    }
+    .mobile-toggle{
+      display:none;
+      border:0;
+      background:#ecfdf5;
+      border-radius:14px;
+      padding:10px 12px;
+      cursor:pointer;
+      font-size:1.2rem;
+    }
+    .mobile-menu{
+      display:none;
+      width:min(var(--max),94%);
+      margin:0 auto 12px;
+      padding:12px;
+      background:white;
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      box-shadow:var(--soft-shadow);
+    }
+    .mobile-menu a{
+      display:block;
+      padding:12px;
+      border-radius:14px;
+      font-weight:900;
+    }
+    .mobile-menu a:hover{background:#ecfdf5;color:#047857}
+
+    .hero{
+      width:min(var(--max),94%);
+      margin:34px auto 22px;
+      display:grid;
+      grid-template-columns:1.12fr .88fr;
+      gap:26px;
+      align-items:stretch;
+    }
+    .panel,.card,.prophet-card,.guide-card,.mini-card,.timeline-card{
+      background:rgba(255,255,255,.94);
+      border:1px solid rgba(148,163,184,.24);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-text{
+      padding:38px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-text::after{
+      content:"";
+      position:absolute;
+      width:190px;
+      height:190px;
+      border-radius:50%;
+      background:rgba(16,185,129,.10);
+      right:-50px;
+      bottom:-46px;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 13px;
+      border-radius:999px;
+      background:#e7fff5;
+      color:#05603e;
+      font-size:.92rem;
+      font-weight:1000;
+    }
+    h1{
+      margin:14px 0;
+      font-size:clamp(2.25rem,5.2vw,4.8rem);
+      line-height:1.02;
+      letter-spacing:-.055em;
+    }
+    h2{
+      margin:0 0 12px;
+      font-size:clamp(1.65rem,3vw,2.55rem);
+      line-height:1.15;
+      letter-spacing:-.035em;
+    }
+    h3{margin:0 0 8px;font-size:1.22rem;line-height:1.2}
+    p{margin:0 0 12px;color:var(--text)}
+    .lead{font-size:1.13rem;color:#334155}
+    .small{font-size:.92rem;color:var(--muted)}
+    .gradient-text{
+      background:linear-gradient(135deg,#047857,#2563eb,#7c3aed);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{
+      border:0;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:13px 18px;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--emerald),var(--blue));
+      color:white;
+      font-weight:1000;
+      box-shadow:0 14px 26px rgba(37,99,235,.19);
+      transition:.2s ease;
+      text-align:center;
+    }
+    .btn:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.06)}
+    .btn.alt{background:white;color:#047857;border:2px solid #b7f7dc;box-shadow:none}
+    .btn.orange{background:linear-gradient(135deg,#fb923c,#ef4444)}
+    .btn.purple{background:linear-gradient(135deg,#8b5cf6,#ec4899)}
+    .btn.dark{background:#063b2e}
+
+    .visual{
+      min-height:430px;
+      position:relative;
+      overflow:hidden;
+      padding:26px;
+      display:grid;
+      place-items:center;
+    }
+    .visual::before{
+      content:"";
+      position:absolute;
+      inset:20px;
+      border-radius:38px;
+      background:
+        linear-gradient(135deg,rgba(236,253,245,.92),rgba(219,234,254,.78)),
+        repeating-linear-gradient(45deg,rgba(255,255,255,.45) 0 8px,transparent 8px 16px);
+    }
+    .prophet-wheel{
+      position:relative;
+      z-index:1;
+      width:min(370px,100%);
+      aspect-ratio:1/1;
+      border-radius:45px;
+      background:
+        radial-gradient(circle at center,#fff 0 28%,transparent 29%),
+        conic-gradient(from 180deg,#d1fae5,#dbeafe,#fef3c7,#fce7f3,#ede9fe,#d1fae5);
+      box-shadow:inset 0 0 0 16px rgba(255,255,255,.55),0 30px 80px rgba(15,23,42,.18);
+      display:grid;
+      place-items:center;
+    }
+    .wheel-center{
+      width:170px;
+      height:170px;
+      border-radius:50%;
+      background:white;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:18px;
+      box-shadow:0 14px 35px rgba(15,23,42,.12);
+      font-weight:1000;
+      color:#065f46;
+    }
+    .orbit{
+      position:absolute;
+      width:66px;
+      height:66px;
+      border-radius:23px;
+      background:white;
+      display:grid;
+      place-items:center;
+      font-size:1.85rem;
+      box-shadow:0 12px 25px rgba(15,23,42,.12);
+    }
+    .o1{top:18px;left:50%;transform:translateX(-50%)}
+    .o2{right:18px;top:50%;transform:translateY(-50%)}
+    .o3{bottom:18px;left:50%;transform:translateX(-50%)}
+    .o4{left:18px;top:50%;transform:translateY(-50%)}
+
+    .section{
+      width:min(var(--max),94%);
+      margin:46px auto;
+    }
+    .section-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:18px;
+    }
+    .section-head p{max-width:720px}
+
+    .stats{
+      width:min(var(--max),94%);
+      margin:18px auto 28px;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+    }
+    .stat{
+      padding:18px;
+      text-align:center;
+      border-radius:22px;
+      box-shadow:var(--soft-shadow);
+    }
+    .stat b{
+      display:block;
+      font-size:1.75rem;
+      color:#047857;
+      line-height:1.1;
+    }
+    .stat span{font-weight:900;color:#53657a;font-size:.92rem}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .mini-card,.guide-card,.timeline-card{
+      padding:22px;
+      box-shadow:var(--soft-shadow);
+      transition:.22s ease;
+    }
+    .mini-card:hover,.guide-card:hover,.timeline-card:hover,.prophet-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 22px 55px rgba(15,23,42,.14);
+    }
+    .icon{
+      width:58px;
+      height:58px;
+      border-radius:20px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#ecfdf5,#dbeafe);
+      font-size:1.8rem;
+      margin-bottom:13px;
+    }
+
+    .note{
+      border-left:7px solid #10b981;
+      background:#ecfdf5;
+      border-radius:20px;
+      padding:18px;
+      box-shadow:var(--soft-shadow);
+      margin:18px 0;
+    }
+    .note.blue{background:#eff6ff;border-color:#2563eb}
+    .note.orange{background:#fff7ed;border-color:#f97316}
+    .note.purple{background:#f5f3ff;border-color:#7c3aed}
+
+    .controls{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      padding:16px;
+      border-radius:24px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(148,163,184,.26);
+      box-shadow:var(--soft-shadow);
+      margin:16px 0 22px;
+      align-items:center;
+    }
+    .controls input,.controls select{
+      min-height:48px;
+      border:2px solid #dbeafe;
+      border-radius:16px;
+      padding:10px 13px;
+      background:white;
+      color:#102033;
+      min-width:210px;
+      outline:none;
+    }
+    .controls input:focus,.controls select:focus{
+      border-color:#10b981;
+      box-shadow:0 0 0 4px rgba(16,185,129,.12);
+    }
+    .counter{
+      margin-left:auto;
+      padding:10px 13px;
+      border-radius:999px;
+      background:#063b2e;
+      color:white;
+      font-weight:1000;
+      white-space:nowrap;
+    }
+
+    .prophet-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .prophet-card{
+      padding:0;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      transition:.22s ease;
+    }
+    .card-top{
+      min-height:132px;
+      padding:22px;
+      background:linear-gradient(135deg,#d1fae5,#dbeafe);
+      position:relative;
+      overflow:hidden;
+    }
+    .card-top::after{
+      content:"";
+      position:absolute;
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:rgba(255,255,255,.50);
+      right:-30px;
+      bottom:-34px;
+    }
+    .prophet-emoji{
+      position:relative;
+      z-index:1;
+      width:68px;
+      height:68px;
+      border-radius:24px;
+      background:white;
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      box-shadow:0 12px 26px rgba(15,23,42,.10);
+    }
+    .card-body{
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      flex:1;
+    }
+    .title-row{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .age{
+      flex:0 0 auto;
+      padding:5px 8px;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#475569;
+      font-size:.78rem;
+      font-weight:1000;
+    }
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin:10px 0 12px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#365266;
+      font-size:.78rem;
+      font-weight:1000;
+    }
+    .badge.green{background:#dcfce7;color:#166534}
+    .badge.blue{background:#dbeafe;color:#1d4ed8}
+    .badge.amber{background:#fef3c7;color:#92400e}
+    .badge.pink{background:#fce7f3;color:#9d174d}
+    .badge.purple{background:#ede9fe;color:#5b21b6}
+
+    details{
+      margin-top:12px;
+      border-radius:16px;
+      border:1px solid #e2e8f0;
+      padding:10px 12px;
+      background:#fbfdff;
+    }
+    summary{
+      cursor:pointer;
+      font-weight:1000;
+      color:#0f513d;
+    }
+    .deeper{
+      margin-top:10px;
+      font-size:.96rem;
+    }
+    .story-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:auto;
+      padding-top:12px;
+    }
+    .small-btn{
+      border:0;
+      border-radius:13px;
+      padding:9px 11px;
+      font-size:.86rem;
+      font-weight:1000;
+      cursor:pointer;
+      background:#ecfdf5;
+      color:#047857;
+      transition:.18s ease;
+    }
+    .small-btn:hover{transform:translateY(-1px);background:#d1fae5}
+    .small-btn.primary{background:#047857;color:white}
+    .small-btn.done{background:#dbeafe;color:#1d4ed8}
+    .small-btn.warn{background:#fff7ed;color:#c2410c}
+
+    .empty{
+      display:none;
+      text-align:center;
+      padding:30px;
+      border:2px dashed #bfdbfe;
+      border-radius:24px;
+      background:#eff6ff;
+      color:#1e3a8a;
+      font-weight:1000;
+    }
+
+    .timeline{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+      counter-reset:steps;
+    }
+    .timeline-card{
+      position:relative;
+      border-radius:24px;
+      background:white;
+    }
+    .timeline-card::before{
+      counter-increment:steps;
+      content:counter(steps);
+      width:34px;
+      height:34px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:#063b2e;
+      color:white;
+      font-weight:1000;
+      margin-bottom:10px;
+    }
+
+    .reflection-box{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:18px;
+      align-items:center;
+      padding:24px;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at right top,rgba(255,255,255,.42),transparent 36%),
+        linear-gradient(135deg,#063b2e,#047857);
+      color:white;
+      box-shadow:var(--shadow);
+    }
+    .reflection-box p,.reflection-box h2{color:white}
+    .reflection-question{
+      min-height:74px;
+      padding:16px;
+      border-radius:20px;
+      background:rgba(255,255,255,.12);
+      color:#eafff6;
+      font-weight:900;
+    }
+
+    .poster{
+      padding:28px;
+      border-radius:30px;
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,253,245,.92)),
+        repeating-linear-gradient(45deg,rgba(16,185,129,.07) 0 12px,transparent 12px 24px);
+      border:1px solid rgba(16,185,129,.22);
+      box-shadow:var(--shadow);
+    }
+    .poster ul{margin:12px 0 0;padding-left:22px;color:var(--text)}
+    .poster li{margin:6px 0}
+
+    .footer{
+      margin-top:60px;
+      background:#063b2e;
+      color:white;
+      padding:42px 0 24px;
+    }
+    .footer-inner{
+      width:min(var(--max),94%);
+      margin:auto;
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1fr;
+      gap:22px;
+    }
+    .footer p,.footer a{color:#dffbef}
+    .footer h3{color:white}
+    .footer-bottom{
+      width:min(var(--max),94%);
+      margin:28px auto 0;
+      padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.14);
+      color:#b7f7dc;
+      font-size:.92rem;
+    }
+
+    .fab{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:60;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .fab button{
+      width:50px;
+      height:50px;
+      border-radius:18px;
+      border:0;
+      display:grid;
+      place-items:center;
+      background:#063b2e;
+      color:white;
+      box-shadow:0 14px 32px rgba(15,23,42,.22);
+      cursor:pointer;
+      font-size:1.2rem;
+    }
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .visual{min-height:330px}
+      .grid,.prophet-grid{grid-template-columns:repeat(2,1fr)}
+      .grid.four,.stats,.timeline{grid-template-columns:repeat(2,1fr)}
+      .footer-inner{grid-template-columns:1fr 1fr}
+      .reflection-box{grid-template-columns:1fr}
+    }
+    @media(max-width:760px){
+      .links{display:none}
+      .mobile-toggle{display:inline-grid}
+      .mobile-menu.show{display:block}
+      .hero-text{padding:26px}
+      .grid,.grid.two,.grid.four,.prophet-grid,.stats,.timeline,.footer-inner{grid-template-columns:1fr}
+      .section-head{display:block}
+      .controls input,.controls select{width:100%;min-width:0}
+      .counter{margin-left:0;width:100%;text-align:center}
+      .brand span:last-child{font-size:.94rem}
+      .brand small{font-size:.68rem}
+      .fab{right:12px;bottom:12px}
+    }
+    @media print{
+      .topbar,.header,.fab,.controls,.story-actions,.footer{display:none!important}
+      body{background:white}
+      .panel,.card,.prophet-card,.guide-card,.mini-card,.timeline-card{box-shadow:none;border:1px solid #ddd}
+      .prophet-grid,.grid,.timeline{grid-template-columns:1fr 1fr}
+    }
   </style>
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"CollectionPage",
-    "name":"Prophet Stories for Kids",
+    "name":"Prophets' Stories for Kids",
+    "description":"A child-friendly Islamic learning page with Prophets' stories, Qur'anic story references, moral lessons, reflection questions and parent-guided activities.",
     "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/prophet-stories.html",
-    "isPartOf":{"@type":"WebSite","name":"Al-Hayat Kids Learning Hub","url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"},
-    "about":["Prophets in Islam","Qur’an stories","children's Islamic learning","25 prophets"]
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"Al-Hayat Kids Learning Hub",
+      "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"
+    }
   }
   </script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="topbar" id="top">
-    <div class="container toprow">
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <div class="topbar">🌟 Prophets' stories for children • Qur'anic values • Parent-guided • Gentle, respectful and age-appropriate</div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub home">
-        <span class="brand-mark" aria-hidden="true">🌙</span>
-        <span class="brand-text"><strong>Al-Hayat Kids Learning Hub</strong><span>Prophet stories • Qur’an lessons • good deeds</span></span>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Al-Hayat Kids Learning Hub <small>Prophets' stories • Qur'anic lessons • character</small></span>
       </a>
-      <nav class="nav-actions" aria-label="Quick links">
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+
+      <div class="links" aria-label="Primary links">
         <a href="../index.html">Home</a>
-        <a href="index.html">Reading Library</a>
-        <a href="../islamic-corner/seerah.html">Seerah</a>
-        <a class="primary" href="../online-classes.html">Online Classes</a>
-      </nav>
-      <button class="sound-btn" id="soundToggle" type="button" aria-label="Toggle learning sounds">🔊</button>
+        <a href="../subjects/index.html">Subjects</a>
+        <a class="active" href="index.html">Reading</a>
+        <a href="../activities/index.html">Activities</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="../islamic-corner/index.html">Islamic</a>
+        <a href="../parents-corner/index.html">Parents</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">Home</a>
+      <a href="../subjects/index.html">Subjects</a>
+      <a href="index.html">Reading Library</a>
+      <a href="islamic-stories.html">Islamic Stories</a>
+      <a href="moral-stories.html">Moral Stories</a>
+      <a href="animal-stories.html">Animal Stories</a>
+      <a href="../islamic-corner/index.html">Islamic Corner</a>
+      <a href="../parents-corner/index.html">Parents Corner</a>
     </div>
   </header>
 
-  <nav class="mini-nav" aria-label="Page navigation">
-    <div class="container mini-nav-inner">
-      <a href="../index.html">🏠 Home</a>
-      <a href="index.html">📖 Library</a>
-      <a href="moral-stories.html">🌟 Moral Stories</a>
-      <a href="islamic-stories.html">🕌 Islamic Stories</a>
-      <a href="prophet-stories.html">🌙 Prophet Stories</a>
-      <a href="animal-stories.html">🐾 Animal Stories</a>
-      <a href="../islamic-corner/seerah.html">📜 Seerah</a>
-      <a href="../activities/quizzes.html">🏆 Quizzes</a>
-    </div>
-  </nav>
-
   <main id="main">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="container hero-grid">
+    <section class="hero">
+      <div class="hero-text panel">
+        <span class="kicker">🌟 Reading Library • Prophets' Stories</span>
+        <h1>Prophets' Stories for <span class="gradient-text">Young Hearts</span></h1>
+        <p class="lead">
+          A premium, child-friendly Prophets' story library that helps children learn faith, patience, honesty, courage, gratitude, mercy and trust in Allah through gentle summaries and practical reflection.
+        </p>
+        <p>
+          This page is designed for parents, teachers, tutors and weekend Islamic learning. It uses careful, non-sensational storytelling, moral lessons, age filters, value tags, read-aloud buttons and daily missions.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#prophet-library">Explore Stories</a>
+          <a class="btn alt" href="#teaching-method">Teaching Method</a>
+          <button class="btn purple" data-say="Welcome to Prophets' Stories for Kids. Read with love, learn beautiful values, and practise one good action today.">🔊 Listen</button>
+        </div>
+      </div>
+
+      <div class="visual panel" aria-label="Prophets' stories visual">
+        <div class="prophet-wheel">
+          <div class="orbit o1">🌙</div>
+          <div class="orbit o2">📖</div>
+          <div class="orbit o3">🤲</div>
+          <div class="orbit o4">⭐</div>
+          <div class="wheel-center">Qur'anic stories that build faith, adab and courage</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Page highlights">
+      <div class="stat panel"><b>28</b><span>Prophet Story Cards</span></div>
+      <div class="stat panel"><b>8</b><span>Core Values</span></div>
+      <div class="stat panel"><b>3</b><span>Age Levels</span></div>
+      <div class="stat panel"><b>0</b><span>Weak Empty Counter</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
         <div>
-          <div class="breadcrumb"><a href="../index.html">Home</a><span>›</span><a href="index.html">Reading Library</a><span>›</span><span>Prophet Stories</span></div>
-          <h1 id="page-title">Prophet Stories <span>for Young Muslims</span></h1>
-          <p class="hero-lead">A careful, colorful, child-friendly library covering the 25 prophets commonly listed as mentioned by name in the Qur’an, with source references, lessons, reflection questions, daily missions, quizzes, and progress badges.</p>
-          <div class="hero-stats" aria-label="Library summary">
-            <div class="stat"><strong>25</strong><span>Prophets</span></div>
-            <div class="stat"><strong id="totalCards">0</strong><span>Learning Cards</span></div>
-            <div class="stat"><strong>4</strong><span>Levels</span></div>
-            <div class="stat"><strong>200+</strong><span>Questions & Tasks</span></div>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-blue" href="#stories">Start Learning 🚀</a>
-            <a class="btn btn-teal" href="#timeline">View Journey Map 🗺️</a>
-            <a class="btn btn-gold" href="#games">Play Quiz 🏆</a>
-          </div>
+          <span class="kicker">🕋 Purpose</span>
+          <h2>Teach love, not fear; values, not confusion</h2>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="sky-moon"></div><span class="spark s1">⭐</span><span class="spark s2">✨</span><span class="spark s3">🌙</span><span class="spark s4">💚</span>
-          <div class="mount"></div><div class="path-line"></div>
-          <div class="prophet-card"><div class="big">📖</div><strong>Read • Reflect • Practice</strong><span>Lessons from Qur’an stories</span></div>
+        <p class="lead">Children need simple, warm and accurate moral guidance. This page avoids frightening detail and focuses on what children can understand and practise.</p>
+      </div>
+
+      <div class="grid four">
+        <article class="mini-card">
+          <div class="icon">🌱</div>
+          <h3>Faith grows gently</h3>
+          <p>Stories help children trust Allah, make dua and love doing good.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">🧭</div>
+          <h3>Clear moral lessons</h3>
+          <p>Every story has one main value so children remember the lesson.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">📚</div>
+          <h3>Reading development</h3>
+          <p>Children practise vocabulary, retelling, questioning and comprehension.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">👨‍👩‍👧</div>
+          <h3>Parent guided</h3>
+          <p>Each card includes a question and mission for home or classroom use.</p>
+        </article>
+      </div>
+
+      <div class="note blue">
+        <strong>Authenticity note:</strong> These are child-friendly summaries of Qur'anic story themes and widely taught Islamic moral lessons. They are not a replacement for the Qur’an, authentic Hadith, scholarly tafsir or qualified Islamic teaching. Parents and teachers should guide children respectfully and avoid adding invented details.
+      </div>
+    </section>
+
+    <section class="section" id="prophet-library">
+      <div class="section-head">
+        <div>
+          <span class="kicker">📖 Prophet Story Library</span>
+          <h2>Search by Prophet, age, value or lesson</h2>
+        </div>
+        <p class="lead">The cards below load directly in the HTML and through JavaScript enhancement. The counter shows real results instead of a weak “0 cards” message.</p>
+      </div>
+
+      <div class="controls" aria-label="Prophet story filters">
+        <input id="searchInput" type="search" placeholder="Search: Adam, Yusuf, patience, courage, dua..." aria-label="Search Prophet stories" />
+        <select id="prophetFilter" aria-label="Filter by Prophet">
+          <option value="all">All Prophets</option>
+          <option value="Adam">Adam</option>
+          <option value="Nuh">Nuh</option>
+          <option value="Ibrahim">Ibrahim</option>
+          <option value="Ismail">Ismail</option>
+          <option value="Yaqub">Yaqub</option>
+          <option value="Yusuf">Yusuf</option>
+          <option value="Ayyub">Ayyub</option>
+          <option value="Musa">Musa</option>
+          <option value="Harun">Harun</option>
+          <option value="Dawud">Dawud</option>
+          <option value="Sulayman">Sulayman</option>
+          <option value="Yunus">Yunus</option>
+          <option value="Zakariya">Zakariya</option>
+          <option value="Yahya">Yahya</option>
+          <option value="Isa">Isa</option>
+          <option value="Muhammad">Muhammad ﷺ</option>
+        </select>
+        <select id="ageFilter" aria-label="Filter by age">
+          <option value="all">All ages</option>
+          <option value="4-6">Ages 4–6</option>
+          <option value="7-9">Ages 7–9</option>
+          <option value="10-12">Ages 10–12</option>
+        </select>
+        <select id="valueFilter" aria-label="Filter by value">
+          <option value="all">All values</option>
+          <option value="faith">Faith</option>
+          <option value="patience">Patience</option>
+          <option value="honesty">Honesty</option>
+          <option value="gratitude">Gratitude</option>
+          <option value="courage">Courage</option>
+          <option value="forgiveness">Forgiveness</option>
+          <option value="kindness">Kindness</option>
+          <option value="respect">Respect</option>
+        </select>
+        <span class="counter" id="storyCounter">28 stories showing</span>
+      </div>
+
+      <div class="prophet-grid" id="storyGrid"></div>
+      <div class="empty" id="emptyState">No story matched your search. Try “Yusuf”, “Musa”, “patience”, “honesty”, “dua”, “courage” or “gratitude”.</div>
+    </section>
+
+    <section class="section" id="teaching-method">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🧑‍🏫 Teaching Method</span>
+          <h2>Five-step Prophets' story lesson</h2>
+        </div>
+        <p class="lead">Use this simple method so the child does not only hear a story but also understands and practises the value.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card">
+          <h3>Name the Prophet</h3>
+          <p>Say the Prophet’s name respectfully and ask what the child already knows.</p>
+        </article>
+        <article class="timeline-card">
+          <h3>Read the summary</h3>
+          <p>Read slowly. Keep the tone warm and avoid frightening exaggeration.</p>
+        </article>
+        <article class="timeline-card">
+          <h3>Find the value</h3>
+          <p>Ask: “Which value did this Prophet teach us?”</p>
+        </article>
+        <article class="timeline-card">
+          <h3>Connect to life</h3>
+          <p>Ask: “Where can we practise this at home or school?”</p>
+        </article>
+        <article class="timeline-card">
+          <h3>Do one mission</h3>
+          <p>Choose one action: say sorry, make dua, share, wait, tell the truth or help.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reflection-box">
+        <div>
+          <span class="kicker" style="background:rgba(255,255,255,.16);color:white;">🎲 Reflection Game</span>
+          <h2>Ask a child-friendly reflection question</h2>
+          <p>Use these after any Prophet story for speaking practice, moral thinking and classroom discussion.</p>
+          <div class="reflection-question" id="reflectionQuestion">Click the button to get a reflection question.</div>
+        </div>
+        <button class="btn orange" id="newQuestion">New Question</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🏠 Practical Use</span>
+          <h2>Ready-made routines for home and school</h2>
+        </div>
+        <p class="lead">Use the stories as short lessons, morning assemblies, bedtime reading, weekend Islamic learning or writing prompts.</p>
+      </div>
+
+      <div class="grid">
+        <article class="guide-card">
+          <div class="icon">🌙</div>
+          <h3>Bedtime Story</h3>
+          <p>Read one card, ask one question, make one dua, and end with one peaceful value reminder.</p>
+        </article>
+        <article class="guide-card">
+          <div class="icon">🏫</div>
+          <h3>Class Starter</h3>
+          <p>Read a summary, let students identify the value, then connect it to classroom behaviour.</p>
+        </article>
+        <article class="guide-card">
+          <div class="icon">✍️</div>
+          <h3>Writing Prompt</h3>
+          <p>Ask children to write: “The value I learned is…” and “I will practise it by…”.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="poster">
+        <span class="kicker">⭐ Parent & Teacher Promise</span>
+        <h2>Tell Prophets' stories with respect and responsibility</h2>
+        <p class="lead">These stories should strengthen love for Allah, respect for the Prophets and practical good manners.</p>
+        <ul>
+          <li>Use respectful language for all Prophets.</li>
+          <li>Do not add dramatic invented details to make children afraid.</li>
+          <li>Keep one clear moral lesson per session.</li>
+          <li>Let children ask questions kindly and safely.</li>
+          <li>Connect every story to one practical habit.</li>
+          <li>Use authentic Islamic sources and qualified teachers for deeper study.</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="islamic-stories.html">Islamic Stories</a>
+          <a class="btn alt" href="../islamic-corner/daily-duas.html">Daily Duas</a>
+          <a class="btn alt" href="../parents-corner/islamic-manners.html">Parent Manners Guide</a>
         </div>
       </div>
     </section>
 
-    <section class="toolbar-section" aria-label="Story search and filters">
-      <div class="container"><div class="toolbar panel">
-        <div class="field"><input id="searchInput" type="search" placeholder="Search prophets, values, references..." aria-label="Search prophet stories" /></div>
-        <div class="field"><select id="levelFilter" aria-label="Filter by level"><option value="all">All Levels</option><option value="Level 1">Level 1: Little Learners</option><option value="Level 2">Level 2: Growing Learners</option><option value="Level 3">Level 3: Confident Learners</option><option value="Level 4">Level 4: Wise Learners</option></select></div>
-        <div class="field"><select id="themeFilter" aria-label="Filter by theme"><option value="all">All Themes</option></select></div>
-        <button class="btn btn-purple" type="button" id="surpriseBtn">Surprise Me 🎲</button>
-      </div></div>
-    </section>
-
-    <section class="section" id="timeline" aria-labelledby="timeline-title">
-      <div class="container">
-        <div class="section-head"><div class="section-title"><small>Learning Strategy</small><h2 id="timeline-title">Prophet journey map</h2><p>Use this page as a gradual journey: begin with simple stories, then move to courage, patience, justice, sincerity, and deeper reflection.</p></div><span class="pill">Read → Reflect → Practice</span></div>
-        <div class="path-grid">
-          <article class="path-card panel"><div class="icon">🌱</div><h3>Level 1</h3><p>Short introductions for younger children: blessings, gratitude, family, and simple obedience.</p></article>
-          <article class="path-card panel"><div class="icon">🌿</div><h3>Level 2</h3><p>Core stories with clear lessons: patience, prayer, forgiveness, dua, and trust in Allah.</p></article>
-          <article class="path-card panel"><div class="icon">🌳</div><h3>Level 3</h3><p>More reflective stories: justice, fair trade, humility, worship, and responsible choices.</p></article>
-          <article class="path-card panel"><div class="icon">🏆</div><h3>Level 4</h3><p>Carefully guided topics for older children: moral courage, purity, and complex lessons.</p></article>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🔗 Continue Learning</span>
+          <h2>Related Al-Hayat pages</h2>
         </div>
       </div>
-    </section>
 
-    <section class="section" aria-label="Quick prophet order list">
-      <div class="container">
-        <div class="section-head"><div class="section-title"><small>Quick Reference</small><h2>25 prophets mentioned by name</h2><p>This quick list helps children recognize names before reading the story cards.</p></div></div>
-        <div class="timeline" id="timelineList"></div>
-      </div>
-    </section>
-
-    <section class="section" id="stories" aria-labelledby="stories-title">
-      <div class="container">
-        <div class="section-head"><div class="section-title"><small>Interactive Prophet Story Bank</small><h2 id="stories-title">Choose a prophet story</h2><p>Open each card for a child-friendly summary, Qur’an references, lesson, values, questions, and mission. Practice cards help children apply the lesson without inventing extra sacred details.</p></div><span class="pill" id="resultCount">0 cards showing</span></div>
-        <div class="story-grid" id="storyGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="games" aria-labelledby="games-title">
-      <div class="container">
-        <div class="section-head"><div class="section-title"><small>Fun Review</small><h2 id="games-title">Play and remember</h2><p>Use these mini activities after reading to help children remember names, lessons, and values.</p></div></div>
-        <div class="game-grid">
-          <article class="game-card panel"><h3>🏆 Quick Prophet Quiz</h3><p class="quiz-question" id="quizQuestion">Click Start Quiz to begin.</p><div class="answer-row" id="answerRow"></div><p class="feedback" id="quizFeedback"></p><button class="btn btn-blue" id="startQuiz" type="button">Start Quiz</button></article>
-          <article class="game-card panel"><h3>🔗 Match Values</h3><p>Choose the best prophet connected to each value, then check your answers.</p><div class="match-list" id="matchList"></div><p class="feedback" id="matchFeedback"></p><button class="btn btn-teal" id="checkMatch" type="button">Check Matches</button></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="progress-title">
-      <div class="container progress-wrap">
-        <article class="progress-card panel"><div class="section-title"><small>Prophet Story Quest</small><h2 id="progress-title">Track progress and earn badges</h2><p>Click “Done” after reading and practicing a mission. Progress is saved on the same device.</p></div><div class="progress-bar" aria-label="Reading progress"><div class="progress-fill" id="progressFill"></div></div><p><strong id="progressText">0 cards completed.</strong></p><div class="badges" id="badgeBox"></div></article>
-        <article class="mission-card panel"><div class="section-title"><small>Daily Mission</small><h2>Prophet Lesson Mission</h2></div><p class="mission-text" id="missionText">Click the button to get today’s mission.</p><button class="btn btn-gold" id="missionBtn" type="button">Give Me a Mission 🌙</button></article>
-      </div>
-    </section>
-
-    <section class="section" id="sources" aria-labelledby="sources-title">
-      <div class="container">
-        <div class="section-head"><div class="section-title"><small>Authenticity Note</small><h2 id="sources-title">Careful source-aware summaries</h2><p>This page gives age-appropriate summaries and references. It avoids long translations and avoids adding details where the Qur’an gives only brief mention.</p></div></div>
-        <div class="source-grid">
-          <article class="source-card panel"><h3>Primary Qur’an reference style</h3><p>Each main prophet card includes Qur’an references for parents and teachers. Children should learn prophet stories through careful explanation, not unsupported legends.</p></article>
-          <article class="source-card panel"><h3>Important classroom rule</h3><ul><li>Do not invent details for briefly mentioned prophets.</li><li>Use child-friendly language for serious stories.</li><li>Keep Muhammad ﷺ’s full Seerah on the dedicated Seerah page.</li><li>Use stories to build worship, manners, and character.</li></ul></article>
-        </div>
+      <div class="grid four">
+        <a class="guide-card" href="islamic-stories.html">
+          <div class="icon">📖</div>
+          <h3>Islamic Stories</h3>
+          <p>Broader Islamic values, Seerah lessons and daily-life morals.</p>
+        </a>
+        <a class="guide-card" href="moral-stories.html">
+          <div class="icon">💎</div>
+          <h3>Moral Stories</h3>
+          <p>Kindness, honesty, patience, respect and responsibility.</p>
+        </a>
+        <a class="guide-card" href="../islamic-corner/prophets.html">
+          <div class="icon">🌟</div>
+          <h3>Islamic Corner Prophets</h3>
+          <p>Continue learning about Prophets in the Islamic section.</p>
+        </a>
+        <a class="guide-card" href="../worksheets/index.html">
+          <div class="icon">✍️</div>
+          <h3>Worksheets</h3>
+          <p>Turn stories into writing, drawing and reflection tasks.</p>
+        </a>
       </div>
     </section>
   </main>
 
-  <div class="modal" id="storyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Story Title</h2><button class="close-btn" id="closeModal" type="button" aria-label="Close story">×</button></div><div class="modal-body" id="modalBody"></div></div></div>
-  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+  <div class="fab" aria-label="Quick actions">
+    <button id="topBtn" title="Back to top">↑</button>
+    <button id="printBtn" title="Print page">🖨️</button>
+  </div>
 
-  <footer class="footer"><div class="container footer-grid"><div><h2>Al-Hayat Kids Learning Hub</h2><p>Colorful Islamic and academic learning for children: stories, manners, quizzes, worksheets, videos, and online classes.</p></div><div><h3>Reading</h3><a href="moral-stories.html">Moral Stories</a><a href="islamic-stories.html">Islamic Stories</a><a href="prophet-stories.html">Prophet Stories</a><a href="animal-stories.html">Animal Stories</a></div><div><h3>Islamic Corner</h3><a href="../islamic-corner/good-manners.html">Good Manners</a><a href="../islamic-corner/seerah.html">Seerah</a><a href="../islamic-corner/prophets.html">Prophets</a><a href="../islamic-corner/asma-ul-husna.html">Asma-ul-Husna</a></div><div><h3>Activities</h3><a href="../activities/quizzes.html">Quizzes</a><a href="../activities/puzzles.html">Puzzles</a><a href="../activities/brain-games.html">Brain Games</a></div></div></footer>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Al-Hayat Kids Learning Hub</h3>
+        <p>Islamic and academic learning for children through stories, worksheets, quizzes, duas, manners, reading habits and parent-guided routines.</p>
+      </div>
+      <div>
+        <h3>Reading</h3>
+        <p><a href="index.html">Reading Library</a></p>
+        <p><a href="islamic-stories.html">Islamic Stories</a></p>
+        <p><a href="moral-stories.html">Moral Stories</a></p>
+        <p><a href="animal-stories.html">Animal Stories</a></p>
+      </div>
+      <div>
+        <h3>Islamic</h3>
+        <p><a href="../islamic-corner/index.html">Islamic Corner</a></p>
+        <p><a href="../islamic-corner/daily-duas.html">Daily Duas</a></p>
+        <p><a href="../islamic-corner/good-manners.html">Good Manners</a></p>
+        <p><a href="../islamic-corner/seerah.html">Seerah</a></p>
+      </div>
+      <div>
+        <h3>Parents</h3>
+        <p><a href="../parents-corner/index.html">Parents Corner</a></p>
+        <p><a href="../privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../online-classes.html">Online Classes</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Al-Hayat Kids Learning Hub. Child-safe learning. Parent supervision recommended.
+    </div>
+  </footer>
 
   <script>
-    const CARDS = [{"name": "Adam", "arabic": "آدم", "title": "The first human and prophet", "level": "Level 1", "age": "5–7", "theme": "Beginnings", "emoji": "🌍", "references": "Qur’an 2:30–39; 7:11–27; 20:115–123", "story": "Allah created Adam and taught him. Adam’s story teaches children that human beings are honored by Allah, that knowledge is a gift, and that when a person makes a mistake, the right path is to turn back to Allah. Adam’s story is a beginning story: it helps children understand responsibility, learning, and sincere repentance.", "lesson": "Learn, obey Allah, admit mistakes, and return to Allah with sincerity.", "values": ["Learning", "Responsibility", "Repentance"], "questions": ["What gift of learning did Allah give Adam?", "What should we do after making a mistake?", "How can knowledge help us become better?"], "mission": "Say sorry for one mistake and fix it with a good action.", "quickQuiz": ["Who was the first human?", "Adam"]}, {"name": "Idris", "arabic": "إدريس", "title": "Truthful and patient servant", "level": "Level 2", "age": "7–9", "theme": "Truthfulness", "emoji": "✍️", "references": "Qur’an 19:56–57; 21:85–86", "story": "The Qur’an mentions Idris as truthful and a prophet. His short mention teaches children that a person does not need a long story to leave a great lesson. Truthfulness, patience, and closeness to Allah raise a person’s rank. Children learn that quiet goodness can be very valuable.", "lesson": "Be truthful, patient, and consistent in good deeds.", "values": ["Truthfulness", "Patience", "Consistency"], "questions": ["Which quality is Idris known for?", "Why is truthfulness important?", "What small good deed can you do regularly?"], "mission": "Tell the truth today even in a small matter.", "quickQuiz": ["Which prophet is described as truthful in Surah Maryam?", "Idris"]}, {"name": "Nuh", "arabic": "نوح", "title": "Long patience and strong faith", "level": "Level 2", "age": "7–9", "theme": "Patience", "emoji": "🚢", "references": "Qur’an 11:25–49; Surah Nuh 71; 23:23–30; 54:9–17", "story": "Nuh called his people to worship Allah alone for a very long time. Many refused, but he remained patient and obedient. Allah commanded him to build the Ark. Nuh’s story teaches children perseverance, trust in Allah, and the courage to continue doing good even when others do not listen.", "lesson": "Keep doing what is right with patience and trust in Allah.", "values": ["Patience", "Courage", "Trust"], "questions": ["What did Nuh call his people to do?", "Why did he need patience?", "What can you keep trying even when it is hard?"], "mission": "Practice patience during one difficult task today.", "quickQuiz": ["Which prophet built the Ark by Allah’s command?", "Nuh"]}, {"name": "Hud", "arabic": "هود", "title": "Calling powerful people to humility", "level": "Level 3", "age": "9–11", "theme": "Humility", "emoji": "🏜️", "references": "Qur’an 7:65–72; 11:50–60; 26:123–140", "story": "Hud was sent to the people of ‘Ad, who were strong and proud. He reminded them to worship Allah and not be arrogant about their power. Hud’s story teaches children that strength, buildings, success, and wealth should not make people proud. Real strength is humility before Allah.", "lesson": "Do not become proud of strength or success; use blessings well.", "values": ["Humility", "Faith", "Gratitude"], "questions": ["What problem did the people of ‘Ad have?", "Why is arrogance dangerous?", "How can strong people stay humble?"], "mission": "Use one blessing today to help someone instead of showing off.", "quickQuiz": ["Which people was Prophet Hud sent to?", "‘Ad"]}, {"name": "Salih", "arabic": "صالح", "title": "A clear sign and a serious warning", "level": "Level 3", "age": "9–11", "theme": "Respecting Signs", "emoji": "🐪", "references": "Qur’an 7:73–79; 11:61–68; 26:141–159", "story": "Salih was sent to Thamud. Allah gave them a clear sign involving a she-camel, but many rejected the warning. Children learn that Allah’s signs should be treated with seriousness and that disobedience and cruelty bring harm. The story also teaches mercy toward living creatures.", "lesson": "Respect Allah’s signs, obey guidance, and never be cruel to animals.", "values": ["Obedience", "Mercy", "Respect"], "questions": ["Which people was Salih sent to?", "Why should signs from Allah be taken seriously?", "How can we show mercy to animals?"], "mission": "Be gentle with an animal or living thing today.", "quickQuiz": ["Which animal is connected with Prophet Salih’s story?", "She-camel"]}, {"name": "Ibrahim", "arabic": "إبراهيم", "title": "Friend of Allah and builder of faith", "level": "Level 2", "age": "7–9", "theme": "Tawhid", "emoji": "🕋", "references": "Qur’an 2:124–141; 6:74–83; 14:35–41; 21:51–73; 37:83–113", "story": "Ibrahim searched for truth, rejected false worship, and called people to worship Allah alone. He faced tests with courage and trust. With Isma‘il, he is connected to the rebuilding of the Ka‘bah. His story teaches children tawhid, bravery, hospitality, dua, and complete trust in Allah.", "lesson": "Worship Allah alone, trust Him, and be brave for the truth.", "values": ["Tawhid", "Courage", "Trust"], "questions": ["What did Ibrahim teach people?", "Why is he a model of trust?", "What dua can you make for your family?"], "mission": "Make a dua for your family today.", "quickQuiz": ["Which prophet is closely connected with the Ka‘bah along with Isma‘il?", "Ibrahim"]}, {"name": "Lut", "arabic": "لوط", "title": "Standing for purity and right conduct", "level": "Level 4", "age": "10–12", "theme": "Moral Courage", "emoji": "🏘️", "references": "Qur’an 7:80–84; 11:77–83; 26:160–175", "story": "Lut was sent to a people who were openly disobedient and immoral. For children, this story should be taught carefully by parents or teachers. Its age-appropriate lesson is that believers must stand for purity, modesty, safety, and obedience to Allah, even when society normalizes wrong actions.", "lesson": "Choose purity, safety, and obedience to Allah even when wrong behavior spreads.", "values": ["Purity", "Courage", "Obedience"], "questions": ["Why should this story be taught carefully?", "What does moral courage mean?", "How can children avoid unsafe or wrong situations?"], "mission": "Speak to an adult if you feel unsafe or confused about any behavior.", "quickQuiz": ["Which prophet warned his people against immoral behavior?", "Lut"]}, {"name": "Isma‘il", "arabic": "إسماعيل", "title": "Obedience, patience, and prayer", "level": "Level 2", "age": "7–9", "theme": "Obedience", "emoji": "💧", "references": "Qur’an 2:125–129; 19:54–55; 37:101–107", "story": "Isma‘il is remembered for truthfulness, patience, prayer, and obedience. His story is connected with Ibrahim, Hajar, Zamzam, and the sacred family of Makkah. Children learn to trust Allah, obey parents in good, love prayer, and be patient during tests.", "lesson": "Obey Allah, love prayer, and be patient with family tests.", "values": ["Obedience", "Prayer", "Patience"], "questions": ["Which city is strongly connected with Isma‘il’s family story?", "What qualities can children learn from him?", "How can you show love for prayer?"], "mission": "Prepare for one prayer early today.", "quickQuiz": ["Which prophet is connected with Zamzam and Makkah?", "Isma‘il"]}, {"name": "Ishaq", "arabic": "إسحاق", "title": "A blessed child and prophet", "level": "Level 1", "age": "5–7", "theme": "Blessings", "emoji": "👶", "references": "Qur’an 11:71–73; 37:112–113; 6:84", "story": "Ishaq was given as glad news to Ibrahim and his family. His story reminds children that Allah gives blessings in His own time and that families should be thankful for Allah’s gifts. Ishaq’s name also appears among the guided prophets mentioned in the Qur’an.", "lesson": "Be thankful for family, children, and blessings from Allah.", "values": ["Gratitude", "Family", "Hope"], "questions": ["Who was given the glad news of Ishaq?", "Why should families be thankful?", "Name one blessing in your family."], "mission": "Thank Allah for one family blessing.", "quickQuiz": ["Ishaq was the son of which prophet?", "Ibrahim"]}, {"name": "Ya‘qub", "arabic": "يعقوب", "title": "A patient father and faithful guide", "level": "Level 2", "age": "7–9", "theme": "Family", "emoji": "👨‍👦", "references": "Qur’an 2:132–133; Surah Yusuf 12; 6:84", "story": "Ya‘qub was a prophet and the father of Yusuf. He showed deep patience during sadness and kept trust in Allah. He also advised his children to remain faithful. Children learn that parents guide with love, believers remain hopeful, and sadness can be carried with patience and dua.", "lesson": "Be patient in sadness and keep hope in Allah.", "values": ["Patience", "Family", "Hope"], "questions": ["Who was Ya‘qub’s famous son?", "What did Ya‘qub show during sadness?", "How can families support each other?"], "mission": "Make dua for your parents or children today.", "quickQuiz": ["Which prophet was the father of Yusuf?", "Ya‘qub"]}, {"name": "Yusuf", "arabic": "يوسف", "title": "Beauty, patience, and forgiveness", "level": "Level 2", "age": "7–9", "theme": "Forgiveness", "emoji": "🌟", "references": "Surah Yusuf 12", "story": "Yusuf faced jealousy, separation, false blame, prison, and hardship, but he remained faithful and patient. Allah raised him in honor. He forgave his brothers and treated people with wisdom. Children learn patience, modesty, forgiveness, and trust that Allah can bring good after difficulty.", "lesson": "Stay patient, protect your character, and forgive when you are able.", "values": ["Patience", "Forgiveness", "Trust"], "questions": ["Which surah tells Yusuf’s story in detail?", "What hardships did Yusuf face?", "Why is forgiveness powerful?"], "mission": "Forgive one small mistake today.", "quickQuiz": ["Which surah is named after Prophet Yusuf?", "Surah Yusuf"]}, {"name": "Ayyub", "arabic": "أيوب", "title": "Patience during illness and hardship", "level": "Level 3", "age": "9–11", "theme": "Sabr", "emoji": "🤲", "references": "Qur’an 21:83–84; 38:41–44", "story": "Ayyub faced severe hardship and illness but remained patient and turned to Allah. His story teaches that believers may face tests, but they should not lose hope. Children learn to be grateful in ease, patient in difficulty, and gentle toward those who are sick or suffering.", "lesson": "Be patient in hardship and make dua with hope.", "values": ["Patience", "Dua", "Compassion"], "questions": ["What test did Ayyub face?", "How did he respond?", "How should we treat sick people?"], "mission": "Make dua for someone who is ill.", "quickQuiz": ["Which prophet is famous for patience during illness?", "Ayyub"]}, {"name": "Shu‘ayb", "arabic": "شعيب", "title": "Honesty in business and daily dealings", "level": "Level 3", "age": "9–11", "theme": "Fair Trade", "emoji": "⚖️", "references": "Qur’an 7:85–93; 11:84–95; 26:176–191", "story": "Shu‘ayb called his people to worship Allah and be honest in trade. They were warned against cheating in weights and measures. Children learn that Islam cares about fairness in buying, selling, schoolwork, games, and all dealings. Honesty is not only words; it includes actions.", "lesson": "Be fair in measuring, selling, scoring, and dealing with others.", "values": ["Honesty", "Justice", "Fairness"], "questions": ["What unfair action did Shu‘ayb warn against?", "Where do children need fairness?", "Why is cheating harmful?"], "mission": "Play one game today with complete fairness.", "quickQuiz": ["Which prophet warned against cheating in weights and measures?", "Shu‘ayb"]}, {"name": "Musa", "arabic": "موسى", "title": "Courage against oppression", "level": "Level 2", "age": "7–9", "theme": "Courage", "emoji": "🌊", "references": "Qur’an 20:9–98; 26:10–68; 28:3–46; 7:103–156", "story": "Musa was protected by Allah as a baby and later sent to call Fir‘awn away from arrogance and oppression. His story includes courage, dua, miracles by Allah’s permission, and leading his people. Children learn to trust Allah, speak truth, and stand against bullying and injustice.", "lesson": "Be brave for truth and trust Allah during fear.", "values": ["Courage", "Justice", "Dua"], "questions": ["Who did Musa speak to?", "Why did Musa need courage?", "How can you stand against bullying safely?"], "mission": "Stand up kindly for someone treated unfairly, with adult help if needed.", "quickQuiz": ["Which prophet was sent to Fir‘awn?", "Musa"]}, {"name": "Harun", "arabic": "هارون", "title": "Supportive brother and helper", "level": "Level 2", "age": "7–9", "theme": "Teamwork", "emoji": "🤝", "references": "Qur’an 20:29–36; 20:90–94; 7:142; 37:114–122", "story": "Harun supported Musa in his mission. Musa asked Allah to strengthen him through his brother. Harun’s story teaches children that helping a good mission is honorable. Not everyone has the same role, but every sincere helper matters.", "lesson": "Support good work and help your family with sincerity.", "values": ["Brotherhood", "Support", "Teamwork"], "questions": ["Whose brother was Harun?", "How did Harun help?", "Why are helpers important?"], "mission": "Help a sibling, friend, or classmate with one good task.", "quickQuiz": ["Harun was the brother of which prophet?", "Musa"]}, {"name": "Dhul-Kifl", "arabic": "ذو الكفل", "title": "Steadfast and righteous", "level": "Level 3", "age": "9–11", "theme": "Steadfastness", "emoji": "🛡️", "references": "Qur’an 21:85–86; 38:48", "story": "Dhul-Kifl is mentioned briefly among righteous and patient servants. Since the Qur’an gives few details, we should not invent a long story. Children can still learn an important lesson: Allah values patience, righteousness, and steadfastness, even when people do not know every detail of a person’s life.", "lesson": "Be patient and righteous even if people do not notice everything.", "values": ["Patience", "Righteousness", "Steadfastness"], "questions": ["Why should we avoid inventing details?", "What qualities are linked with Dhul-Kifl?", "How can you be steady in good habits?"], "mission": "Keep one good habit for three days in a row.", "quickQuiz": ["Which prophet is mentioned briefly with the patient and righteous?", "Dhul-Kifl"]}, {"name": "Dawud", "arabic": "داود", "title": "Worship, justice, and gratitude", "level": "Level 3", "age": "9–11", "theme": "Justice", "emoji": "🎵", "references": "Qur’an 2:251; 21:78–80; 34:10–11; 38:17–26", "story": "Dawud was given strength, wisdom, and beautiful worship. He is connected with the Zabur and with judging fairly. Children learn that gifts such as voice, skill, leadership, and intelligence should be used with gratitude, worship, and justice.", "lesson": "Use your talents to worship Allah and serve others fairly.", "values": ["Gratitude", "Justice", "Worship"], "questions": ["What gifts did Dawud have?", "How should talents be used?", "Why must leaders be fair?"], "mission": "Use one talent today to help someone.", "quickQuiz": ["Which prophet is linked with the Zabur?", "Dawud"]}, {"name": "Sulayman", "arabic": "سليمان", "title": "Power with gratitude and wisdom", "level": "Level 2", "age": "7–9", "theme": "Gratitude", "emoji": "🐜", "references": "Qur’an 21:78–82; 27:15–44; 34:12–14; 38:30–40", "story": "Sulayman was given great kingdom and special gifts by Allah. The Qur’an mentions his story with the ant and the Queen of Saba. His story teaches children that power should not make people arrogant. The best response to blessings is gratitude, justice, wisdom, and obedience to Allah.", "lesson": "Thank Allah for blessings and use power kindly.", "values": ["Gratitude", "Wisdom", "Leadership"], "questions": ["Which tiny creature appears in Sulayman’s story?", "Why should power not make us proud?", "How can leaders be kind?"], "mission": "Say Alhamdulillah for three abilities Allah gave you.", "quickQuiz": ["Which prophet understood the speech of the ant by Allah’s gift?", "Sulayman"]}, {"name": "Ilyas", "arabic": "إلياس", "title": "Calling people back to Allah", "level": "Level 3", "age": "9–11", "theme": "Tawhid", "emoji": "🔥", "references": "Qur’an 6:85; 37:123–132", "story": "Ilyas called his people away from false worship and back to Allah. His story teaches children that popularity is not the measure of truth. A believer must love tawhid and invite others to good with patience and clarity.", "lesson": "Worship Allah alone and invite to truth with patience.", "values": ["Tawhid", "Patience", "Courage"], "questions": ["What did Ilyas call people away from?", "Why is truth not always popular?", "How can you invite someone to good kindly?"], "mission": "Remind someone kindly about one good habit.", "quickQuiz": ["Which prophet called his people away from false worship in Surah As-Saffat?", "Ilyas"]}, {"name": "Al-Yasa‘", "arabic": "اليسع", "title": "Honored among the righteous", "level": "Level 3", "age": "9–11", "theme": "Righteousness", "emoji": "🌿", "references": "Qur’an 6:86; 38:48", "story": "Al-Yasa‘ is mentioned briefly in the Qur’an among honored and righteous servants. Because few details are given, children should learn not to add invented stories. The lesson is simple and powerful: Allah knows His righteous servants, even when their stories are short in our knowledge.", "lesson": "Live righteously; Allah knows every sincere servant.", "values": ["Righteousness", "Sincerity", "Humility"], "questions": ["Why should we avoid adding details?", "What does Allah know about sincere people?", "How can you live righteously today?"], "mission": "Do one sincere good deed quietly.", "quickQuiz": ["Which prophet is mentioned in Qur’an 6:86 and 38:48?", "Al-Yasa‘"]}, {"name": "Yunus", "arabic": "يونس", "title": "Dua in difficulty", "level": "Level 2", "age": "7–9", "theme": "Repentance", "emoji": "🐋", "references": "Qur’an 21:87–88; 37:139–148; 10:98; 68:48–50", "story": "Yunus left his people and later found himself in the darkness inside the great fish. He called upon Allah, and Allah saved him. His story teaches children that when we feel trapped by mistakes or fear, we should turn to Allah, admit our need, and never lose hope.", "lesson": "Turn to Allah quickly after mistakes and never lose hope in His mercy.", "values": ["Dua", "Repentance", "Hope"], "questions": ["Where was Yunus when he made dua?", "What does his story teach about mistakes?", "When should you ask Allah for help?"], "mission": "Make a sincere dua when you feel worried.", "quickQuiz": ["Which prophet was swallowed by a great fish?", "Yunus"]}, {"name": "Zakariya", "arabic": "زكريا", "title": "Hopeful dua and gentle care", "level": "Level 2", "age": "7–9", "theme": "Dua", "emoji": "🤲", "references": "Qur’an 3:37–41; 19:2–11; 21:89–90", "story": "Zakariya made dua to Allah with hope, even when having a child seemed unlikely. Allah blessed him with Yahya. His story teaches children to ask Allah with humility, keep hope alive, and care for those under their responsibility.", "lesson": "Make dua with hope and trust Allah’s wisdom.", "values": ["Dua", "Hope", "Care"], "questions": ["What did Zakariya ask Allah for?", "Who was he blessed with?", "Why should we keep hope in dua?"], "mission": "Make one dua with full attention today.", "quickQuiz": ["Zakariya was blessed with which son?", "Yahya"]}, {"name": "Yahya", "arabic": "يحيى", "title": "Pure, gentle, and dutiful", "level": "Level 2", "age": "7–9", "theme": "Purity", "emoji": "🌸", "references": "Qur’an 3:39; 19:12–15; 6:85", "story": "Yahya was blessed with wisdom from a young age. He is described with purity, kindness, and dutifulness to parents. Children learn that young people can be serious about goodness, gentle in character, and respectful toward parents.", "lesson": "Young hearts can be wise, pure, kind, and respectful.", "values": ["Purity", "Kindness", "Respect"], "questions": ["Who was Yahya’s father?", "What qualities can young children learn from Yahya?", "How can you honor your parents today?"], "mission": "Do one respectful action for your parents today.", "quickQuiz": ["Which prophet was the son of Zakariya?", "Yahya"]}, {"name": "Isa", "arabic": "عيسى", "title": "Mercy, miracles, and truth", "level": "Level 3", "age": "9–11", "theme": "Mercy", "emoji": "🕊️", "references": "Qur’an 3:45–55; 5:110–120; 19:16–36; 61:6", "story": "Isa, son of Maryam, was a noble messenger supported by Allah with miracles. The Qur’an teaches that he called people to worship Allah. His story teaches children respect for prophets, love of truth, mercy toward people, and careful belief according to the Qur’an.", "lesson": "Respect Allah’s messengers and follow the truth of worshipping Allah alone.", "values": ["Mercy", "Truth", "Tawhid"], "questions": ["Who was Isa’s mother?", "What did Isa call people to?", "Why must we learn prophet stories carefully from the Qur’an?"], "mission": "Show mercy to someone younger or weaker today.", "quickQuiz": ["Who was the mother of Prophet Isa?", "Maryam"]}, {"name": "Muhammad ﷺ", "arabic": "محمد", "title": "Final Prophet and mercy to the worlds", "level": "Level 2", "age": "7–9", "theme": "Final Messenger", "emoji": "🌙", "references": "Qur’an 33:40; 21:107; 48:29; 96:1–5; 68:4", "story": "Muhammad ﷺ is the final Prophet. The Qur’an was revealed to him, and his life teaches mercy, truthfulness, patience, worship, justice, and beautiful character. Children should learn his Seerah step by step with authentic guidance. This page gives only a gentle introduction; the full Seerah belongs on the Seerah page.", "lesson": "Love the Prophet ﷺ, follow his beautiful character, and learn the Qur’an and Sunnah carefully.", "values": ["Mercy", "Truthfulness", "Good Character"], "questions": ["Who is the final Prophet?", "What book was revealed to him?", "Name one beautiful character trait of the Prophet ﷺ."], "mission": "Send salawat and practice one Sunnah manner today.", "quickQuiz": ["Who is the final Prophet in Islam?", "Muhammad ﷺ"]}, {"name": "Practice: Adam Lesson", "arabic": "آدم", "title": "Apply the lesson of Adam", "level": "Level 1", "age": "5–7", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 2:30–39; 7:11–27; 20:115–123", "story": "This practice card helps children apply the lesson of Prophet Adam. Read the main story first, then choose one small action that reflects the value: Learning, Responsibility, Repentance. This keeps the page educational without inventing extra sacred story details.", "lesson": "Learn, obey Allah, admit mistakes, and return to Allah with sincerity.", "values": ["Learning", "Responsibility", "Repentance"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Say sorry for one mistake and fix it with a good action.", "quickQuiz": ["Who was the first human?", "Adam"]}, {"name": "Practice: Idris Lesson", "arabic": "إدريس", "title": "Apply the lesson of Idris", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 19:56–57; 21:85–86", "story": "This practice card helps children apply the lesson of Prophet Idris. Read the main story first, then choose one small action that reflects the value: Truthfulness, Patience, Consistency. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be truthful, patient, and consistent in good deeds.", "values": ["Truthfulness", "Patience", "Consistency"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Tell the truth today even in a small matter.", "quickQuiz": ["Which prophet is described as truthful in Surah Maryam?", "Idris"]}, {"name": "Practice: Nuh Lesson", "arabic": "نوح", "title": "Apply the lesson of Nuh", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 11:25–49; Surah Nuh 71; 23:23–30; 54:9–17", "story": "This practice card helps children apply the lesson of Prophet Nuh. Read the main story first, then choose one small action that reflects the value: Patience, Courage, Trust. This keeps the page educational without inventing extra sacred story details.", "lesson": "Keep doing what is right with patience and trust in Allah.", "values": ["Patience", "Courage", "Trust"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Practice patience during one difficult task today.", "quickQuiz": ["Which prophet built the Ark by Allah’s command?", "Nuh"]}, {"name": "Practice: Hud Lesson", "arabic": "هود", "title": "Apply the lesson of Hud", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 7:65–72; 11:50–60; 26:123–140", "story": "This practice card helps children apply the lesson of Prophet Hud. Read the main story first, then choose one small action that reflects the value: Humility, Faith, Gratitude. This keeps the page educational without inventing extra sacred story details.", "lesson": "Do not become proud of strength or success; use blessings well.", "values": ["Humility", "Faith", "Gratitude"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Use one blessing today to help someone instead of showing off.", "quickQuiz": ["Which people was Prophet Hud sent to?", "‘Ad"]}, {"name": "Practice: Salih Lesson", "arabic": "صالح", "title": "Apply the lesson of Salih", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 7:73–79; 11:61–68; 26:141–159", "story": "This practice card helps children apply the lesson of Prophet Salih. Read the main story first, then choose one small action that reflects the value: Obedience, Mercy, Respect. This keeps the page educational without inventing extra sacred story details.", "lesson": "Respect Allah’s signs, obey guidance, and never be cruel to animals.", "values": ["Obedience", "Mercy", "Respect"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Be gentle with an animal or living thing today.", "quickQuiz": ["Which animal is connected with Prophet Salih’s story?", "She-camel"]}, {"name": "Practice: Ibrahim Lesson", "arabic": "إبراهيم", "title": "Apply the lesson of Ibrahim", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 2:124–141; 6:74–83; 14:35–41; 21:51–73; 37:83–113", "story": "This practice card helps children apply the lesson of Prophet Ibrahim. Read the main story first, then choose one small action that reflects the value: Tawhid, Courage, Trust. This keeps the page educational without inventing extra sacred story details.", "lesson": "Worship Allah alone, trust Him, and be brave for the truth.", "values": ["Tawhid", "Courage", "Trust"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Make a dua for your family today.", "quickQuiz": ["Which prophet is closely connected with the Ka‘bah along with Isma‘il?", "Ibrahim"]}, {"name": "Practice: Lut Lesson", "arabic": "لوط", "title": "Apply the lesson of Lut", "level": "Level 4", "age": "10–12", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 7:80–84; 11:77–83; 26:160–175", "story": "This practice card helps children apply the lesson of Prophet Lut. Read the main story first, then choose one small action that reflects the value: Purity, Courage, Obedience. This keeps the page educational without inventing extra sacred story details.", "lesson": "Choose purity, safety, and obedience to Allah even when wrong behavior spreads.", "values": ["Purity", "Courage", "Obedience"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Speak to an adult if you feel unsafe or confused about any behavior.", "quickQuiz": ["Which prophet warned his people against immoral behavior?", "Lut"]}, {"name": "Practice: Isma‘il Lesson", "arabic": "إسماعيل", "title": "Apply the lesson of Isma‘il", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 2:125–129; 19:54–55; 37:101–107", "story": "This practice card helps children apply the lesson of Prophet Isma‘il. Read the main story first, then choose one small action that reflects the value: Obedience, Prayer, Patience. This keeps the page educational without inventing extra sacred story details.", "lesson": "Obey Allah, love prayer, and be patient with family tests.", "values": ["Obedience", "Prayer", "Patience"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Prepare for one prayer early today.", "quickQuiz": ["Which prophet is connected with Zamzam and Makkah?", "Isma‘il"]}, {"name": "Practice: Ishaq Lesson", "arabic": "إسحاق", "title": "Apply the lesson of Ishaq", "level": "Level 1", "age": "5–7", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 11:71–73; 37:112–113; 6:84", "story": "This practice card helps children apply the lesson of Prophet Ishaq. Read the main story first, then choose one small action that reflects the value: Gratitude, Family, Hope. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be thankful for family, children, and blessings from Allah.", "values": ["Gratitude", "Family", "Hope"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Thank Allah for one family blessing.", "quickQuiz": ["Ishaq was the son of which prophet?", "Ibrahim"]}, {"name": "Practice: Ya‘qub Lesson", "arabic": "يعقوب", "title": "Apply the lesson of Ya‘qub", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 2:132–133; Surah Yusuf 12; 6:84", "story": "This practice card helps children apply the lesson of Prophet Ya‘qub. Read the main story first, then choose one small action that reflects the value: Patience, Family, Hope. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be patient in sadness and keep hope in Allah.", "values": ["Patience", "Family", "Hope"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Make dua for your parents or children today.", "quickQuiz": ["Which prophet was the father of Yusuf?", "Ya‘qub"]}, {"name": "Practice: Yusuf Lesson", "arabic": "يوسف", "title": "Apply the lesson of Yusuf", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Surah Yusuf 12", "story": "This practice card helps children apply the lesson of Prophet Yusuf. Read the main story first, then choose one small action that reflects the value: Patience, Forgiveness, Trust. This keeps the page educational without inventing extra sacred story details.", "lesson": "Stay patient, protect your character, and forgive when you are able.", "values": ["Patience", "Forgiveness", "Trust"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Forgive one small mistake today.", "quickQuiz": ["Which surah is named after Prophet Yusuf?", "Surah Yusuf"]}, {"name": "Practice: Ayyub Lesson", "arabic": "أيوب", "title": "Apply the lesson of Ayyub", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 21:83–84; 38:41–44", "story": "This practice card helps children apply the lesson of Prophet Ayyub. Read the main story first, then choose one small action that reflects the value: Patience, Dua, Compassion. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be patient in hardship and make dua with hope.", "values": ["Patience", "Dua", "Compassion"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Make dua for someone who is ill.", "quickQuiz": ["Which prophet is famous for patience during illness?", "Ayyub"]}, {"name": "Practice: Shu‘ayb Lesson", "arabic": "شعيب", "title": "Apply the lesson of Shu‘ayb", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 7:85–93; 11:84–95; 26:176–191", "story": "This practice card helps children apply the lesson of Prophet Shu‘ayb. Read the main story first, then choose one small action that reflects the value: Honesty, Justice, Fairness. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be fair in measuring, selling, scoring, and dealing with others.", "values": ["Honesty", "Justice", "Fairness"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Play one game today with complete fairness.", "quickQuiz": ["Which prophet warned against cheating in weights and measures?", "Shu‘ayb"]}, {"name": "Practice: Musa Lesson", "arabic": "موسى", "title": "Apply the lesson of Musa", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 20:9–98; 26:10–68; 28:3–46; 7:103–156", "story": "This practice card helps children apply the lesson of Prophet Musa. Read the main story first, then choose one small action that reflects the value: Courage, Justice, Dua. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be brave for truth and trust Allah during fear.", "values": ["Courage", "Justice", "Dua"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Stand up kindly for someone treated unfairly, with adult help if needed.", "quickQuiz": ["Which prophet was sent to Fir‘awn?", "Musa"]}, {"name": "Practice: Harun Lesson", "arabic": "هارون", "title": "Apply the lesson of Harun", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 20:29–36; 20:90–94; 7:142; 37:114–122", "story": "This practice card helps children apply the lesson of Prophet Harun. Read the main story first, then choose one small action that reflects the value: Brotherhood, Support, Teamwork. This keeps the page educational without inventing extra sacred story details.", "lesson": "Support good work and help your family with sincerity.", "values": ["Brotherhood", "Support", "Teamwork"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Help a sibling, friend, or classmate with one good task.", "quickQuiz": ["Harun was the brother of which prophet?", "Musa"]}, {"name": "Practice: Dhul-Kifl Lesson", "arabic": "ذو الكفل", "title": "Apply the lesson of Dhul-Kifl", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 21:85–86; 38:48", "story": "This practice card helps children apply the lesson of Prophet Dhul-Kifl. Read the main story first, then choose one small action that reflects the value: Patience, Righteousness, Steadfastness. This keeps the page educational without inventing extra sacred story details.", "lesson": "Be patient and righteous even if people do not notice everything.", "values": ["Patience", "Righteousness", "Steadfastness"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Keep one good habit for three days in a row.", "quickQuiz": ["Which prophet is mentioned briefly with the patient and righteous?", "Dhul-Kifl"]}, {"name": "Practice: Dawud Lesson", "arabic": "داود", "title": "Apply the lesson of Dawud", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 2:251; 21:78–80; 34:10–11; 38:17–26", "story": "This practice card helps children apply the lesson of Prophet Dawud. Read the main story first, then choose one small action that reflects the value: Gratitude, Justice, Worship. This keeps the page educational without inventing extra sacred story details.", "lesson": "Use your talents to worship Allah and serve others fairly.", "values": ["Gratitude", "Justice", "Worship"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Use one talent today to help someone.", "quickQuiz": ["Which prophet is linked with the Zabur?", "Dawud"]}, {"name": "Practice: Sulayman Lesson", "arabic": "سليمان", "title": "Apply the lesson of Sulayman", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 21:78–82; 27:15–44; 34:12–14; 38:30–40", "story": "This practice card helps children apply the lesson of Prophet Sulayman. Read the main story first, then choose one small action that reflects the value: Gratitude, Wisdom, Leadership. This keeps the page educational without inventing extra sacred story details.", "lesson": "Thank Allah for blessings and use power kindly.", "values": ["Gratitude", "Wisdom", "Leadership"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Say Alhamdulillah for three abilities Allah gave you.", "quickQuiz": ["Which prophet understood the speech of the ant by Allah’s gift?", "Sulayman"]}, {"name": "Practice: Ilyas Lesson", "arabic": "إلياس", "title": "Apply the lesson of Ilyas", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 6:85; 37:123–132", "story": "This practice card helps children apply the lesson of Prophet Ilyas. Read the main story first, then choose one small action that reflects the value: Tawhid, Patience, Courage. This keeps the page educational without inventing extra sacred story details.", "lesson": "Worship Allah alone and invite to truth with patience.", "values": ["Tawhid", "Patience", "Courage"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Remind someone kindly about one good habit.", "quickQuiz": ["Which prophet called his people away from false worship in Surah As-Saffat?", "Ilyas"]}, {"name": "Practice: Al-Yasa‘ Lesson", "arabic": "اليسع", "title": "Apply the lesson of Al-Yasa‘", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 6:86; 38:48", "story": "This practice card helps children apply the lesson of Prophet Al-Yasa‘. Read the main story first, then choose one small action that reflects the value: Righteousness, Sincerity, Humility. This keeps the page educational without inventing extra sacred story details.", "lesson": "Live righteously; Allah knows every sincere servant.", "values": ["Righteousness", "Sincerity", "Humility"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Do one sincere good deed quietly.", "quickQuiz": ["Which prophet is mentioned in Qur’an 6:86 and 38:48?", "Al-Yasa‘"]}, {"name": "Practice: Yunus Lesson", "arabic": "يونس", "title": "Apply the lesson of Yunus", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 21:87–88; 37:139–148; 10:98; 68:48–50", "story": "This practice card helps children apply the lesson of Prophet Yunus. Read the main story first, then choose one small action that reflects the value: Dua, Repentance, Hope. This keeps the page educational without inventing extra sacred story details.", "lesson": "Turn to Allah quickly after mistakes and never lose hope in His mercy.", "values": ["Dua", "Repentance", "Hope"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Make a sincere dua when you feel worried.", "quickQuiz": ["Which prophet was swallowed by a great fish?", "Yunus"]}, {"name": "Practice: Zakariya Lesson", "arabic": "زكريا", "title": "Apply the lesson of Zakariya", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 3:37–41; 19:2–11; 21:89–90", "story": "This practice card helps children apply the lesson of Prophet Zakariya. Read the main story first, then choose one small action that reflects the value: Dua, Hope, Care. This keeps the page educational without inventing extra sacred story details.", "lesson": "Make dua with hope and trust Allah’s wisdom.", "values": ["Dua", "Hope", "Care"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Make one dua with full attention today.", "quickQuiz": ["Zakariya was blessed with which son?", "Yahya"]}, {"name": "Practice: Yahya Lesson", "arabic": "يحيى", "title": "Apply the lesson of Yahya", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 3:39; 19:12–15; 6:85", "story": "This practice card helps children apply the lesson of Prophet Yahya. Read the main story first, then choose one small action that reflects the value: Purity, Kindness, Respect. This keeps the page educational without inventing extra sacred story details.", "lesson": "Young hearts can be wise, pure, kind, and respectful.", "values": ["Purity", "Kindness", "Respect"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Do one respectful action for your parents today.", "quickQuiz": ["Which prophet was the son of Zakariya?", "Yahya"]}, {"name": "Practice: Isa Lesson", "arabic": "عيسى", "title": "Apply the lesson of Isa", "level": "Level 3", "age": "9–11", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 3:45–55; 5:110–120; 19:16–36; 61:6", "story": "This practice card helps children apply the lesson of Prophet Isa. Read the main story first, then choose one small action that reflects the value: Mercy, Truth, Tawhid. This keeps the page educational without inventing extra sacred story details.", "lesson": "Respect Allah’s messengers and follow the truth of worshipping Allah alone.", "values": ["Mercy", "Truth", "Tawhid"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Show mercy to someone younger or weaker today.", "quickQuiz": ["Who was the mother of Prophet Isa?", "Maryam"]}, {"name": "Practice: Muhammad ﷺ Lesson", "arabic": "محمد", "title": "Apply the lesson of Muhammad ﷺ", "level": "Level 2", "age": "7–9", "theme": "Practice Mission", "emoji": "✅", "references": "Qur’an 33:40; 21:107; 48:29; 96:1–5; 68:4", "story": "This practice card helps children apply the lesson of Prophet Muhammad ﷺ. Read the main story first, then choose one small action that reflects the value: Mercy, Truthfulness, Good Character. This keeps the page educational without inventing extra sacred story details.", "lesson": "Love the Prophet ﷺ, follow his beautiful character, and learn the Qur’an and Sunnah carefully.", "values": ["Mercy", "Truthfulness", "Good Character"], "questions": ["Which prophet lesson are you practicing?", "Which value will you choose today?", "How will you show this value at home or school?"], "mission": "Send salawat and practice one Sunnah manner today.", "quickQuiz": ["Who is the final Prophet in Islam?", "Muhammad ﷺ"]}];
-    const MAIN_PROPHETS = CARDS.slice(0, 25);
-    const grid = document.getElementById('storyGrid');
-    const searchInput = document.getElementById('searchInput');
-    const levelFilter = document.getElementById('levelFilter');
-    const themeFilter = document.getElementById('themeFilter');
-    const resultCount = document.getElementById('resultCount');
-    const totalCards = document.getElementById('totalCards');
-    const timelineList = document.getElementById('timelineList');
-    const modal = document.getElementById('storyModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalBody = document.getElementById('modalBody');
-    const closeModal = document.getElementById('closeModal');
-    const surpriseBtn = document.getElementById('surpriseBtn');
-    const progressFill = document.getElementById('progressFill');
-    const progressText = document.getElementById('progressText');
-    const badgeBox = document.getElementById('badgeBox');
-    const missionBtn = document.getElementById('missionBtn');
-    const missionText = document.getElementById('missionText');
-    const soundToggle = document.getElementById('soundToggle');
-    const startQuiz = document.getElementById('startQuiz');
-    const quizQuestion = document.getElementById('quizQuestion');
-    const answerRow = document.getElementById('answerRow');
-    const quizFeedback = document.getElementById('quizFeedback');
-    const matchList = document.getElementById('matchList');
-    const checkMatch = document.getElementById('checkMatch');
-    const matchFeedback = document.getElementById('matchFeedback');
-    let soundOn = true;
-    const storageKey = 'alhayat_prophet_stories_done_v1';
-    let doneCards = JSON.parse(localStorage.getItem(storageKey) || '[]');
-    const badges = [[1,'🌙 First Story'],[5,'📖 Young Learner'],[10,'⭐ Prophet Path'],[20,'💚 Lesson Builder'],[30,'🏆 Story Explorer'],[40,'💎 Character Star'],[50,'👑 Champion']];
-    const missions = MAIN_PROPHETS.map(p => p.mission);
-    const matchPairs = [
-      ['Patience in hardship','Ayyub'],['Forgiveness','Yusuf'],['Dua in difficulty','Yunus'],['Fair trade','Shu‘ayb'],['Power with gratitude','Sulayman']
+    const stories = [
+      {
+        prophet:"Adam",
+        title:"Prophet Adam: Learning to Return to Allah",
+        age:"4-6",
+        value:"forgiveness",
+        ref:"Qur'an story theme",
+        emoji:"🌿",
+        summary:"Prophet Adam teaches children that when a person makes a mistake, the best response is to turn back to Allah sincerely and try to do better.",
+        moral:"Allah loves sincere repentance and honest hearts.",
+        question:"What should we do after making a mistake?",
+        mission:"Say sorry kindly if you hurt someone today.",
+        deeper:"Children can learn that mistakes should not be hidden with lies. A good heart accepts correction, asks Allah for forgiveness and tries again."
+      },
+      {
+        prophet:"Adam",
+        title:"Prophet Adam: The First Human Family",
+        age:"4-6",
+        value:"respect",
+        ref:"Qur'an story theme",
+        emoji:"👨‍👩‍👧",
+        summary:"This lesson reminds children that all people come from one human family and should be treated with dignity and respect.",
+        moral:"Respect people because Allah created human beings with honour.",
+        question:"How can we show respect to others?",
+        mission:"Use gentle words with someone different from you.",
+        deeper:"This story focus helps children avoid mocking others. It supports kindness, respect and human dignity."
+      },
+      {
+        prophet:"Nuh",
+        title:"Prophet Nuh: Patience in Calling to Good",
+        age:"7-9",
+        value:"patience",
+        ref:"Surah Nuh; Surah Hud",
+        emoji:"⛵",
+        summary:"Prophet Nuh teaches children patience, steady effort and trust in Allah when people do not listen quickly.",
+        moral:"Good work needs patience and sincerity.",
+        question:"How can you stay patient when a good task is difficult?",
+        mission:"Complete one helpful task without complaining.",
+        deeper:"Children can learn that patience is not weakness. It means continuing good work calmly and trusting Allah."
+      },
+      {
+        prophet:"Nuh",
+        title:"Prophet Nuh: Safety Comes from Obeying Allah",
+        age:"7-9",
+        value:"faith",
+        ref:"Qur'an story theme",
+        emoji:"🌧️",
+        summary:"This lesson teaches that real safety comes from faith, obedience and following Allah’s guidance.",
+        moral:"Following good guidance protects us.",
+        question:"Why should we listen to good advice?",
+        mission:"Follow one parent or teacher instruction quickly today.",
+        deeper:"The story should be taught gently to children, focusing on obedience, trust and moral safety rather than frightening detail."
+      },
+      {
+        prophet:"Ibrahim",
+        title:"Prophet Ibrahim: Searching for Truth",
+        age:"7-9",
+        value:"faith",
+        ref:"Surah Al-An'am",
+        emoji:"⭐",
+        summary:"Prophet Ibrahim teaches children to think carefully, reject falsehood and recognise that Allah alone is the Creator.",
+        moral:"A thoughtful heart searches for truth.",
+        question:"What signs of Allah’s creation do you notice?",
+        mission:"Look at the sky or nature and say Alhamdulillah.",
+        deeper:"This story develops thinking skills. Children learn that Islam welcomes reflection on creation and gratitude to the Creator."
+      },
+      {
+        prophet:"Ibrahim",
+        title:"Prophet Ibrahim: Courage to Stand for Truth",
+        age:"10-12",
+        value:"courage",
+        ref:"Surah Al-Anbiya",
+        emoji:"🔥",
+        summary:"Prophet Ibrahim teaches courage, wisdom and trust in Allah when standing for what is true.",
+        moral:"True courage follows truth with wisdom.",
+        question:"What good choice needs courage at school?",
+        mission:"Choose truth today even if it feels difficult.",
+        deeper:"Older children can discuss courage without aggression: calm truthfulness, wise speech and trust in Allah."
+      },
+      {
+        prophet:"Ibrahim",
+        title:"Prophet Ibrahim: Hospitality and Generosity",
+        age:"7-9",
+        value:"kindness",
+        ref:"Qur'an story theme",
+        emoji:"🍽️",
+        summary:"This lesson highlights generous treatment of guests and warm manners at home.",
+        moral:"A generous home welcomes guests with respect.",
+        question:"How can children help when guests come?",
+        mission:"Help prepare or tidy something for family or guests.",
+        deeper:"Children learn that hospitality is not only food; it is smiling, helping, speaking kindly and respecting visitors."
+      },
+      {
+        prophet:"Ismail",
+        title:"Prophet Ismail: Trust and Obedience",
+        age:"7-9",
+        value:"faith",
+        ref:"Qur'an story theme",
+        emoji:"🐏",
+        summary:"Prophet Ismail teaches trust in Allah, respect for parents and calm obedience in a child-friendly way.",
+        moral:"A faithful heart trusts Allah and respects parents.",
+        question:"How can you show respect to your parents today?",
+        mission:"Help a parent with one task before being asked twice.",
+        deeper:"This story should be explained gently. The practical child-level lesson is trust, respect and obedience to what is good."
+      },
+      {
+        prophet:"Ismail",
+        title:"Prophet Ismail: Building with Family",
+        age:"7-9",
+        value:"kindness",
+        ref:"Qur'an story theme",
+        emoji:"🕋",
+        summary:"This lesson reminds children that great work can be done with family cooperation, dua and sincerity.",
+        moral:"Good families work together for Allah’s pleasure.",
+        question:"What good project can your family do together?",
+        mission:"Complete one small family task together.",
+        deeper:"Children can connect this story to teamwork, shared responsibility and making dua before good work."
+      },
+      {
+        prophet:"Yaqub",
+        title:"Prophet Yaqub: A Patient Father",
+        age:"10-12",
+        value:"patience",
+        ref:"Surah Yusuf",
+        emoji:"👨‍👦",
+        summary:"Prophet Yaqub teaches deep patience, trust in Allah and hope during sadness.",
+        moral:"Sabr means holding onto hope with Allah.",
+        question:"How can we comfort someone who is sad?",
+        mission:"Say one comforting sentence to someone today.",
+        deeper:"Older children can learn emotional patience. Feeling sadness is not a lack of faith; turning to Allah with hope is beautiful."
+      },
+      {
+        prophet:"Yusuf",
+        title:"Prophet Yusuf: Patience and Forgiveness",
+        age:"10-12",
+        value:"forgiveness",
+        ref:"Surah Yusuf",
+        emoji:"🌙",
+        summary:"Prophet Yusuf teaches patience in hardship, good character in changing situations and forgiveness when Allah gives honour.",
+        moral:"A noble person forgives and stays good after pain.",
+        question:"Why is forgiveness stronger than revenge?",
+        mission:"Let go of one small anger today.",
+        deeper:"Surah Yusuf is a powerful story of patience, dignity and forgiveness. Children can learn not to let hardship destroy their character."
+      },
+      {
+        prophet:"Yusuf",
+        title:"Prophet Yusuf: Honesty in Responsibility",
+        age:"10-12",
+        value:"honesty",
+        ref:"Surah Yusuf",
+        emoji:"🏺",
+        summary:"This lesson teaches honesty, responsibility and wisdom when a person is trusted with important work.",
+        moral:"Trustworthy people use responsibility wisely.",
+        question:"What responsibility do you have at home or school?",
+        mission:"Complete one duty carefully and honestly.",
+        deeper:"Older children learn that success should come with responsibility, not pride. Trust is a serious amanah."
+      },
+      {
+        prophet:"Ayyub",
+        title:"Prophet Ayyub: Patience During Hard Times",
+        age:"10-12",
+        value:"patience",
+        ref:"Qur'an story theme",
+        emoji:"🤲",
+        summary:"Prophet Ayyub teaches patience, dignity and hope during illness and hardship.",
+        moral:"Hard times can be faced with sabr and dua.",
+        question:"How can we help someone who is sick?",
+        mission:"Make dua for a sick person today.",
+        deeper:"Children should learn compassion. We do not mock illness or weakness; we help, pray and speak gently."
+      },
+      {
+        prophet:"Musa",
+        title:"Prophet Musa: Courage Against Wrong",
+        age:"10-12",
+        value:"courage",
+        ref:"Surah Taha; Surah Al-Qasas",
+        emoji:"🌊",
+        summary:"Prophet Musa teaches courage, prayer and standing against oppression with Allah’s help.",
+        moral:"Justice needs courage, dua and trust in Allah.",
+        question:"How can we stand against bullying politely?",
+        mission:"Support someone who is treated unfairly.",
+        deeper:"Children can learn that courage is not being loud or cruel. Courage is protecting truth and helping the weak."
+      },
+      {
+        prophet:"Musa",
+        title:"Prophet Musa: Asking Allah for Help",
+        age:"7-9",
+        value:"faith",
+        ref:"Surah Taha",
+        emoji:"🤲",
+        summary:"Prophet Musa teaches children to ask Allah for help before difficult tasks.",
+        moral:"Make dua before hard work.",
+        question:"What task do you need Allah’s help with?",
+        mission:"Say a short dua before studying today.",
+        deeper:"This story focus helps children connect effort with dua. They learn to prepare, pray and try."
+      },
+      {
+        prophet:"Harun",
+        title:"Prophet Harun: Helping a Good Mission",
+        age:"7-9",
+        value:"kindness",
+        ref:"Qur'an story theme",
+        emoji:"🤝",
+        summary:"Prophet Harun reminds children that helping someone do good is also a valuable service.",
+        moral:"Teamwork can support truth and goodness.",
+        question:"How can you help a friend do the right thing?",
+        mission:"Help someone complete a good task.",
+        deeper:"Children learn that not everyone has the same role, but every sincere helper matters."
+      },
+      {
+        prophet:"Dawud",
+        title:"Prophet Dawud: Worship and Responsibility",
+        age:"10-12",
+        value:"gratitude",
+        ref:"Qur'an story theme",
+        emoji:"🎵",
+        summary:"Prophet Dawud teaches worship, gratitude, strength and responsibility.",
+        moral:"Blessings should lead to worship and service.",
+        question:"How can talents be used for good?",
+        mission:"Use one talent today to help or encourage someone.",
+        deeper:"Children can reflect that skills are gifts from Allah. A grateful person uses talent responsibly."
+      },
+      {
+        prophet:"Dawud",
+        title:"Prophet Dawud: Fair Judgment",
+        age:"10-12",
+        value:"respect",
+        ref:"Qur'an story theme",
+        emoji:"⚖️",
+        summary:"This lesson teaches fairness, careful listening and responsibility when judging between people.",
+        moral:"Fairness means listening before deciding.",
+        question:"Why should we hear both sides of a problem?",
+        mission:"Listen carefully before giving your opinion today.",
+        deeper:"Older children can practise fairness in sibling arguments, classroom issues and friendship conflicts."
+      },
+      {
+        prophet:"Sulayman",
+        title:"Prophet Sulayman: Thankful for Blessings",
+        age:"7-9",
+        value:"gratitude",
+        ref:"Surah An-Naml",
+        emoji:"🐜",
+        summary:"Prophet Sulayman teaches gratitude, wisdom and care for even small creatures.",
+        moral:"Power and talent should make us thankful, not proud.",
+        question:"What blessing are you thankful for today?",
+        mission:"Say Alhamdulillah for three blessings.",
+        deeper:"Children learn that Allah’s gifts should create humility. Even small creatures deserve care and respect."
+      },
+      {
+        prophet:"Sulayman",
+        title:"Prophet Sulayman: Wisdom with Power",
+        age:"10-12",
+        value:"respect",
+        ref:"Qur'an story theme",
+        emoji:"👑",
+        summary:"This story focus teaches that leadership should be wise, grateful and fair.",
+        moral:"A good leader uses power responsibly.",
+        question:"How can a class monitor or older sibling lead kindly?",
+        mission:"Use responsibility today without bossiness.",
+        deeper:"Older children can discuss that status is a test. Good leadership serves others."
+      },
+      {
+        prophet:"Yunus",
+        title:"Prophet Yunus: Never Lose Hope",
+        age:"7-9",
+        value:"faith",
+        ref:"Qur'an story theme",
+        emoji:"🐋",
+        summary:"Prophet Yunus teaches children to remember Allah, return to Him and never lose hope in His mercy.",
+        moral:"Allah’s mercy is greater than our fear.",
+        question:"What can you say when you feel worried?",
+        mission:"Say a short dua when you feel upset.",
+        deeper:"This story should be taught with hope. Children learn that when they feel afraid or wrong, they should turn to Allah."
+      },
+      {
+        prophet:"Zakariya",
+        title:"Prophet Zakariya: Dua with Hope",
+        age:"7-9",
+        value:"faith",
+        ref:"Surah Maryam",
+        emoji:"🌸",
+        summary:"Prophet Zakariya teaches children to make dua with hope, humility and trust in Allah.",
+        moral:"Never stop asking Allah for good.",
+        question:"What good thing can you ask Allah for?",
+        mission:"Make one sincere dua today.",
+        deeper:"Children learn that dua is not only for emergencies. It is a loving connection with Allah."
+      },
+      {
+        prophet:"Yahya",
+        title:"Prophet Yahya: Pure Character",
+        age:"10-12",
+        value:"respect",
+        ref:"Surah Maryam",
+        emoji:"🕊️",
+        summary:"Prophet Yahya teaches purity of heart, kindness, respect and seriousness in doing good.",
+        moral:"A clean heart loves good actions.",
+        question:"What habit keeps the heart clean?",
+        mission:"Avoid one bad word or bad action today.",
+        deeper:"Older children can reflect on self-control, respect for parents and purity of speech and behaviour."
+      },
+      {
+        prophet:"Isa",
+        title:"Prophet Isa: Mercy and Goodness",
+        age:"7-9",
+        value:"kindness",
+        ref:"Surah Maryam; Qur'an story theme",
+        emoji:"🕊️",
+        summary:"Prophet Isa teaches mercy, kindness, worship of Allah and care for people.",
+        moral:"Mercy and worship go together.",
+        question:"How can you show mercy to someone younger or weaker?",
+        mission:"Help someone gently today.",
+        deeper:"Children should learn respect for Prophet Isa as a noble Prophet of Allah and connect the story to mercy and worship."
+      },
+      {
+        prophet:"Isa",
+        title:"Prophet Isa: Respect for Mother",
+        age:"7-9",
+        value:"respect",
+        ref:"Surah Maryam",
+        emoji:"👩‍👦",
+        summary:"This lesson reminds children of respect, kindness and care for mothers.",
+        moral:"Respect for parents is a beautiful Islamic value.",
+        question:"What kind sentence can you say to your mother or caregiver?",
+        mission:"Thank your mother or caregiver today.",
+        deeper:"Children learn that respect is shown through words, help, patience and gratitude."
+      },
+      {
+        prophet:"Muhammad",
+        title:"Prophet Muhammad ﷺ: The Trustworthy One",
+        age:"7-9",
+        value:"honesty",
+        ref:"Seerah value",
+        emoji:"✨",
+        summary:"The Prophet Muhammad ﷺ was known for truthfulness and trustworthiness. Children learn that honesty builds respect.",
+        moral:"A truthful person becomes trusted by others.",
+        question:"Why do people trust an honest child?",
+        mission:"Tell the truth today, even in a small matter.",
+        deeper:"Children can practise trustworthiness by keeping promises, returning borrowed items and not hiding mistakes."
+      },
+      {
+        prophet:"Muhammad",
+        title:"Prophet Muhammad ﷺ: Mercy for Children",
+        age:"4-6",
+        value:"kindness",
+        ref:"Seerah value",
+        emoji:"❤️",
+        summary:"The Prophet ﷺ showed mercy and gentleness. Children learn that kindness is part of beautiful Islamic character.",
+        moral:"A Muslim heart should be gentle and merciful.",
+        question:"How can you be gentle with a younger child?",
+        mission:"Use a gentle voice with someone today.",
+        deeper:"This story focus helps children connect love of the Prophet ﷺ with everyday manners."
+      },
+      {
+        prophet:"Muhammad",
+        title:"Prophet Muhammad ﷺ: Good Words",
+        age:"4-6",
+        value:"respect",
+        ref:"Seerah value",
+        emoji:"💬",
+        summary:"This lesson teaches children to use kind words, avoid hurtful speech and spread peace.",
+        moral:"Good words are a beautiful gift.",
+        question:"What kind word can you say today?",
+        mission:"Say please, thank you and sorry when needed.",
+        deeper:"A child-friendly Seerah lesson: the tongue should not hurt people. It should speak truth, kindness and peace."
+      },
+      {
+        prophet:"Muhammad",
+        title:"Prophet Muhammad ﷺ: Patience and Forgiveness",
+        age:"10-12",
+        value:"forgiveness",
+        ref:"Seerah value",
+        emoji:"🌙",
+        summary:"The Prophet ﷺ showed patience and forgiveness in many difficult moments. Older children learn emotional strength and mercy.",
+        moral:"Forgiveness is strength guided by mercy.",
+        question:"Why is forgiving sometimes harder than arguing?",
+        mission:"Forgive one small mistake today.",
+        deeper:"Older children can discuss that forgiveness does not mean approving wrong. It means controlling anger and choosing a higher moral response."
+      }
     ];
-    function beep(){ if(!soundOn) return; try{ const ctx=new (window.AudioContext||window.webkitAudioContext)(); const osc=ctx.createOscillator(); const gain=ctx.createGain(); osc.type='sine'; osc.frequency.value=720; gain.gain.value=.05; osc.connect(gain); gain.connect(ctx.destination); osc.start(); setTimeout(()=>{osc.stop();ctx.close();},110);}catch(e){} }
-    function speak(text){ if(!('speechSynthesis' in window)) return; window.speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.rate=.88; u.pitch=1.02; window.speechSynthesis.speak(u); }
-    function escapeHTML(str){ return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m])); }
-    function populateThemes(){ [...new Set(CARDS.map(s=>s.theme))].sort().forEach(theme=>{ const o=document.createElement('option'); o.value=theme; o.textContent=theme; themeFilter.appendChild(o); }); }
-    function renderTimeline(){ timelineList.innerHTML = MAIN_PROPHETS.map((p,i)=>`<article class="time-item"><span class="time-dot">${i+1}</span><h3>${escapeHTML(p.name)} <span class="arabic">${escapeHTML(p.arabic)}</span></h3><p>${escapeHTML(p.title)} • ${escapeHTML(p.theme)}</p></article>`).join(''); }
-    function matches(card){ const q=searchInput.value.trim().toLowerCase(); const hay=[card.name,card.arabic,card.title,card.level,card.age,card.theme,card.references,card.story,card.lesson,card.mission,...card.values,...card.questions].join(' ').toLowerCase(); return (!q||hay.includes(q))&&(levelFilter.value==='all'||card.level===levelFilter.value)&&(themeFilter.value==='all'||card.theme===themeFilter.value); }
-    function renderCards(){ const list=CARDS.filter(matches); resultCount.textContent=`${list.length} cards showing`; grid.innerHTML=list.map(card=>{ const index=CARDS.indexOf(card); const done=doneCards.includes(card.name); return `<article class="story-card panel"><div class="story-top"><div class="story-emoji" aria-hidden="true">${escapeHTML(card.emoji)}</div><div class="story-meta"><span class="tag level">${escapeHTML(card.level)}</span><span class="tag theme">${escapeHTML(card.theme)}</span><span class="tag age">${escapeHTML(card.age)}</span></div></div><div class="story-body"><h3>${escapeHTML(card.name)} <span class="arabic">${escapeHTML(card.arabic)}</span></h3><div class="ref-line">${escapeHTML(card.title)}<br>Reference: ${escapeHTML(card.references)}</div><p class="story-text">${escapeHTML(card.story)}</p><div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(card.lesson)}</div><div class="card-actions"><button class="mini-btn read" type="button" data-open="${index}">Read Full</button><button class="mini-btn listen" type="button" data-speak="${index}">🔊 Listen</button><button class="mini-btn done" type="button" data-done="${index}">${done?'✓ Done':'Mark Done'}</button></div></div></article>`; }).join(''); if(!list.length) grid.innerHTML='<article class="panel" style="padding:24px;grid-column:1/-1;"><h3 style="color:var(--ink);font-size:1.4rem;">No cards found</h3><p>Try another search word, level, or theme.</p></article>'; attachCardEvents(); }
-    function attachCardEvents(){ document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openCard(Number(b.dataset.open)))); document.querySelectorAll('[data-speak]').forEach(b=>b.addEventListener('click',()=>{ const c=CARDS[Number(b.dataset.speak)]; beep(); speak(`${c.name}. ${c.story} Lesson: ${c.lesson}`); })); document.querySelectorAll('[data-done]').forEach(b=>b.addEventListener('click',()=>{ const c=CARDS[Number(b.dataset.done)]; if(!doneCards.includes(c.name)){ doneCards.push(c.name); localStorage.setItem(storageKey,JSON.stringify(doneCards)); beep(); updateProgress(); renderCards(); } })); }
-    function openCard(index){ const c=CARDS[index]; modalTitle.textContent=`${c.emoji} ${c.name}`; modalBody.innerHTML=`<div class="story-meta" style="justify-content:flex-start;margin-bottom:10px;"><span class="tag level">${escapeHTML(c.level)}</span><span class="tag theme">${escapeHTML(c.theme)}</span><span class="tag age">${escapeHTML(c.age)}</span></div><p class="ref-line"><strong>Arabic:</strong> <span class="arabic">${escapeHTML(c.arabic)}</span><br><strong>Reference:</strong> ${escapeHTML(c.references)}</p><p class="modal-story">${escapeHTML(c.story)}</p><div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(c.lesson)}</div><div class="card-actions" style="margin:14px 0;"><button class="mini-btn read" type="button" id="modalListen">🔊 Read Aloud</button><button class="mini-btn done" type="button" id="modalDone">✓ Mark Done</button></div><div class="detail-grid"><div class="detail-box"><h4>Core Values</h4><ul>${c.values.map(v=>`<li>${escapeHTML(v)}</li>`).join('')}</ul></div><div class="detail-box"><h4>Think & Answer</h4><ul>${c.questions.map(q=>`<li>${escapeHTML(q)}</li>`).join('')}</ul></div><div class="detail-box"><h4>Practice Mission</h4><p>${escapeHTML(c.mission)}</p></div></div>`; modal.classList.add('open'); beep(); document.getElementById('modalListen').addEventListener('click',()=>speak(`${c.name}. ${c.story} Lesson: ${c.lesson}`)); document.getElementById('modalDone').addEventListener('click',()=>{ if(!doneCards.includes(c.name)){ doneCards.push(c.name); localStorage.setItem(storageKey,JSON.stringify(doneCards)); updateProgress(); renderCards(); beep(); } }); }
-    function updateProgress(){ doneCards=[...new Set(doneCards)].filter(name=>CARDS.some(c=>c.name===name)); localStorage.setItem(storageKey,JSON.stringify(doneCards)); const pct=Math.min(100,Math.round(doneCards.length/CARDS.length*100)); progressFill.style.width=`${pct}%`; progressText.textContent=`${doneCards.length} of ${CARDS.length} cards completed (${pct}%).`; badgeBox.innerHTML=badges.map(([need,label])=>`<div class="badge ${doneCards.length>=need?'active':''}">${doneCards.length>=need?label:'🔒 '+need+' cards'}</div>`).join(''); }
-    function randomCard(){ const visible=CARDS.filter(matches); const pool=visible.length?visible:CARDS; openCard(CARDS.indexOf(pool[Math.floor(Math.random()*pool.length)])); }
-    function startQuickQuiz(){ const item=MAIN_PROPHETS[Math.floor(Math.random()*MAIN_PROPHETS.length)]; const correct=item.quickQuiz[1]; const wrong=MAIN_PROPHETS.filter(p=>p.name!==correct).sort(()=>Math.random()-.5).slice(0,3).map(p=>p.name); const answers=[correct,...wrong].sort(()=>Math.random()-.5); quizQuestion.textContent=item.quickQuiz[0]; answerRow.innerHTML=answers.map(a=>`<button type="button" data-answer="${escapeHTML(a)}">${escapeHTML(a)}</button>`).join(''); quizFeedback.textContent=''; answerRow.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{ if(btn.dataset.answer===correct){ quizFeedback.textContent='Excellent! Correct answer 🌟'; quizFeedback.style.color='#166534'; beep(); } else { quizFeedback.textContent=`Almost. Correct answer: ${correct}`; quizFeedback.style.color='#b45309'; } })); }
-    function renderMatch(){ const names=matchPairs.map(p=>p[1]).sort(()=>Math.random()-.5); matchList.innerHTML=matchPairs.map(([value])=>`<div class="match-item"><strong>${escapeHTML(value)}</strong><select><option value="">Choose Prophet</option>${names.map(n=>`<option>${escapeHTML(n)}</option>`).join('')}</select></div>`).join(''); }
-    function checkMatches(){ let score=0; [...matchList.querySelectorAll('.match-item')].forEach((row,i)=>{ if(row.querySelector('select').value===matchPairs[i][1]) score++; }); matchFeedback.textContent=`You got ${score} out of ${matchPairs.length}.`; matchFeedback.style.color=score===matchPairs.length?'#166534':'#b45309'; if(score===matchPairs.length) beep(); }
-    searchInput.addEventListener('input',renderCards); levelFilter.addEventListener('change',renderCards); themeFilter.addEventListener('change',renderCards); surpriseBtn.addEventListener('click',randomCard); missionBtn.addEventListener('click',()=>{ missionText.textContent=missions[Math.floor(Math.random()*missions.length)]; beep(); }); startQuiz.addEventListener('click',startQuickQuiz); checkMatch.addEventListener('click',checkMatches);
-    closeModal.addEventListener('click',()=>{ modal.classList.remove('open'); if('speechSynthesis' in window) speechSynthesis.cancel(); }); modal.addEventListener('click',e=>{ if(e.target===modal){ modal.classList.remove('open'); if('speechSynthesis' in window) speechSynthesis.cancel(); }}); document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ modal.classList.remove('open'); if('speechSynthesis' in window) speechSynthesis.cancel(); }}); soundToggle.addEventListener('click',()=>{ soundOn=!soundOn; soundToggle.textContent=soundOn?'🔊':'🔇'; if(soundOn) beep(); });
-    totalCards.textContent=CARDS.length; populateThemes(); renderTimeline(); renderCards(); renderMatch(); updateProgress();
+
+    const questions = [
+      "Which value did this Prophet's story teach?",
+      "What can children practise from this story today?",
+      "Which part of the story shows faith, patience or courage?",
+      "How can this story help you at school?",
+      "How can this story help you at home?",
+      "What dua or good phrase connects with this story?",
+      "Retell the story in three simple sentences.",
+      "What mistake should children avoid after learning this story?",
+      "How can you show this value to your parents?",
+      "How can this story make your speech kinder?",
+      "What blessing should you thank Allah for?",
+      "What is one action you will do after this story?"
+    ];
+
+    const valueNames = {
+      faith:"Faith",
+      patience:"Patience",
+      honesty:"Honesty",
+      gratitude:"Gratitude",
+      courage:"Courage",
+      forgiveness:"Forgiveness",
+      kindness:"Kindness",
+      respect:"Respect"
+    };
+
+    const grid = document.getElementById("storyGrid");
+    const emptyState = document.getElementById("emptyState");
+    const storyCounter = document.getElementById("storyCounter");
+    const searchInput = document.getElementById("searchInput");
+    const prophetFilter = document.getElementById("prophetFilter");
+    const ageFilter = document.getElementById("ageFilter");
+    const valueFilter = document.getElementById("valueFilter");
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    let completed = JSON.parse(localStorage.getItem("ah_completed_prophet_stories") || "{}");
+
+    function speakText(text){
+      if(!("speechSynthesis" in window)){
+        alert("Read-aloud is not supported on this browser.");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.88;
+      utterance.pitch = 1.03;
+      utterance.volume = 1;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function storySpeak(story){
+      return `${story.title}. ${story.summary} Moral lesson: ${story.moral} Reflection question: ${story.question} Mission: ${story.mission}`;
+    }
+
+    function renderStories(){
+      const query = searchInput.value.trim().toLowerCase();
+      const prophet = prophetFilter.value;
+      const age = ageFilter.value;
+      const value = valueFilter.value;
+
+      const filtered = stories.filter(story => {
+        const text = `${story.prophet} ${story.title} ${story.age} ${story.value} ${story.ref} ${story.summary} ${story.moral} ${story.question} ${story.mission} ${story.deeper}`.toLowerCase();
+        const matchesQuery = !query || text.includes(query);
+        const matchesProphet = prophet === "all" || story.prophet === prophet;
+        const matchesAge = age === "all" || story.age === age;
+        const matchesValue = value === "all" || story.value === value;
+        return matchesQuery && matchesProphet && matchesAge && matchesValue;
+      });
+
+      grid.innerHTML = "";
+      filtered.forEach(story => {
+        const originalIndex = stories.indexOf(story);
+        const isDone = completed[story.title];
+        const card = document.createElement("article");
+        card.className = "prophet-card";
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="prophet-emoji">${story.emoji}</div>
+          </div>
+          <div class="card-body">
+            <div class="title-row">
+              <h3>${story.title}</h3>
+              <span class="age">${story.age}</span>
+            </div>
+            <div class="badges">
+              <span class="badge green">${story.prophet}</span>
+              <span class="badge blue">${valueNames[story.value]}</span>
+              <span class="badge amber">${story.ref}</span>
+              ${isDone ? '<span class="badge pink">Completed</span>' : ''}
+            </div>
+            <p>${story.summary}</p>
+            <p><strong>Moral:</strong> ${story.moral}</p>
+            <p><strong>Ask:</strong> ${story.question}</p>
+            <p><strong>Mission:</strong> ${story.mission}</p>
+            <details>
+              <summary>Read deeper note</summary>
+              <div class="deeper">
+                <p>${story.deeper}</p>
+                <p><strong>Retelling task:</strong> Name the Prophet, say the value, and explain one practical action.</p>
+              </div>
+            </details>
+            <div class="story-actions">
+              <button class="small-btn primary" data-speak="${originalIndex}">🔊 Read</button>
+              <button class="small-btn done" data-complete="${originalIndex}">${isDone ? "✓ Done" : "Mark Done"}</button>
+              <button class="small-btn warn" data-mission="${originalIndex}">⭐ Mission</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      storyCounter.textContent = `${filtered.length} ${filtered.length === 1 ? "story" : "stories"} showing`;
+      emptyState.style.display = filtered.length ? "none" : "block";
+    }
+
+    document.addEventListener("click", event => {
+      const speakIndex = event.target.getAttribute("data-speak");
+      const completeIndex = event.target.getAttribute("data-complete");
+      const missionIndex = event.target.getAttribute("data-mission");
+
+      if(speakIndex !== null){
+        speakText(storySpeak(stories[Number(speakIndex)]));
+      }
+
+      if(completeIndex !== null){
+        const story = stories[Number(completeIndex)];
+        completed[story.title] = !completed[story.title];
+        if(!completed[story.title]) delete completed[story.title];
+        localStorage.setItem("ah_completed_prophet_stories", JSON.stringify(completed));
+        renderStories();
+      }
+
+      if(missionIndex !== null){
+        const story = stories[Number(missionIndex)];
+        speakText(`Mission for ${story.title}. ${story.mission}`);
+      }
+
+      if(event.target.matches("[data-say]")){
+        speakText(event.target.getAttribute("data-say"));
+      }
+    });
+
+    [searchInput, prophetFilter, ageFilter, valueFilter].forEach(el => {
+      el.addEventListener("input", renderStories);
+      el.addEventListener("change", renderStories);
+    });
+
+    document.getElementById("newQuestion").addEventListener("click", () => {
+      const q = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("reflectionQuestion").textContent = q;
+      speakText(q);
+    });
+
+    document.getElementById("topBtn").addEventListener("click", () => {
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+
+    document.getElementById("printBtn").addEventListener("click", () => {
+      window.print();
+    });
+
+    mobileToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+
+    renderStories();
   </script>
 </body>
 </html>
