@@ -9,7 +9,7 @@
   <meta name="keywords" content="Al-Hayat Kids Learning Hub, Islamic learning for kids, kids worksheets, online classes for children, English for kids, Math for kids, Science for kids, Arabic for kids, kids quizzes, moral stories" />
   <meta name="author" content="Dr. Imran Hayat" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#7c3aed" />
+  <meta name="theme-color" content="#6d28d9" />
   <meta name="google-site-verification" content="Rx_9_FzqQaFZV240R-BGO37LMANtmEbQdejzFh3ZuYc" />
   <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/" />
 
@@ -21,6 +21,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml"
+    href='data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="%237c3aed"/>
+          <stop offset="50%" stop-color="%23ec4899"/>
+          <stop offset="100%" stop-color="%2316a34a"/>
+        </linearGradient>
+      </defs>
+      <rect width="128" height="128" rx="30" fill="url(%23g)"/>
+      <circle cx="95" cy="33" r="11" fill="%23fde68a"/>
+      <path d="M31 86c11-10 22-14 33-14s22 4 33 14V47c-11-8-22-12-33-12S42 39 31 47v39z" fill="white" opacity=".95"/>
+      <path d="M64 35v51" stroke="%236d28d9" stroke-width="4" opacity=".28"/>
+      <path d="M31 47c11-8 22-12 33-12s22 4 33 12" fill="none" stroke="%23ffffff" stroke-width="4" opacity=".85"/>
+      <text x="64" y="83" text-anchor="middle" font-family="Nunito, Arial" font-size="22" font-weight="900" fill="%236d28d9">AH</text>
+    </svg>' />
 
   <style>
     :root {
@@ -54,7 +72,7 @@
       --shadow:0 18px 45px rgba(15,23,42,.12);
       --soft-shadow:0 10px 26px rgba(15,23,42,.08);
       --radius:24px;
-      --max:1240px;
+      --max:1260px;
     }
 
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -83,15 +101,16 @@
       position:sticky; top:0; z-index:800; background:rgba(255,255,255,.96);
       border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
     }
-    .toprow { min-height:80px; display:grid; grid-template-columns:auto minmax(320px, 520px) auto; align-items:center; gap:16px; }
+    .toprow { min-height:84px; display:grid; grid-template-columns:auto minmax(320px, 560px) auto; align-items:center; gap:16px; }
     .brand { display:flex; align-items:center; gap:12px; min-width:0; overflow:visible; }
     .brand-mark {
-      width:56px; height:56px; border-radius:19px; display:grid; place-items:center; flex:0 0 auto;
-      background:linear-gradient(135deg,var(--purple),var(--pink),var(--green));
-      color:white; font-size:1.9rem; box-shadow:var(--soft-shadow);
+      width:60px; height:60px; flex:0 0 auto;
+      border-radius:20px;
+      box-shadow:var(--soft-shadow);
+      overflow:hidden;
       animation:logoPulse 4.5s ease-in-out infinite;
     }
-    @keyframes logoPulse { 0%,100% { transform:rotate(0deg) scale(1); } 50% { transform:rotate(3deg) scale(1.04); } }
+    @keyframes logoPulse { 0%,100% { transform:rotate(0deg) scale(1); } 50% { transform:rotate(3deg) scale(1.03); } }
     .brand-text { overflow:visible; }
     .brand-text strong {
       display:block;
@@ -111,10 +130,10 @@
       display:grid; grid-template-columns:1fr 48px; align-items:center; width:100%;
       background:white; border:1px solid #cbd5e1; border-radius:18px; overflow:hidden; box-shadow:var(--soft-shadow);
     }
-    .search-box input { height:48px; border:0; outline:0; padding:0 14px; color:var(--ink); font-weight:800; }
-    .search-box button { height:48px; border:0; background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; cursor:pointer; font-size:1.1rem; }
+    .search-box input { height:50px; border:0; outline:0; padding:0 14px; color:var(--ink); font-weight:800; }
+    .search-box button { height:50px; border:0; background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; cursor:pointer; font-size:1.1rem; }
     .search-suggestions {
-      position:absolute; left:0; right:0; top:58px; z-index:1000;
+      position:absolute; left:0; right:0; top:60px; z-index:1000;
       display:none; background:white; border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow); overflow:hidden;
       max-height:420px; overflow-y:auto;
     }
@@ -137,7 +156,7 @@
 
     .dropdown-nav-wrap {
       position:sticky;
-      top:80px;
+      top:84px;
       z-index:700;
       background:linear-gradient(90deg,#5b21b6,#7c3aed,#2563eb,#16a34a,#d97706);
       color:white;
@@ -148,13 +167,11 @@
       width:46px; min-height:42px; display:grid; place-items:center; border-radius:14px;
       background:rgba(255,255,255,.12); font-size:1.25rem;
     }
-    .nav-list {
-      list-style:none; display:flex; align-items:center; gap:3px; flex:1;
-    }
+    .nav-list { list-style:none; display:flex; align-items:center; gap:3px; flex:1; }
     .nav-item { position:relative; }
     .nav-link {
       min-height:54px; display:inline-flex; align-items:center; gap:6px; padding:0 11px;
-      color:white; font-size:.92rem; font-weight:950; white-space:nowrap; border-radius:12px;
+      color:white; font-size:.92rem; font-weight:950; white-space:nowrap; border-radius:12px; position:relative; overflow:hidden;
     }
     .nav-link:hover,.nav-link:focus,.nav-item:hover .nav-link { background:rgba(255,255,255,.15); }
     .nav-arrow { font-size:.75rem; opacity:.9; }
@@ -188,7 +205,13 @@
         radial-gradient(circle at 78% 86%, rgba(37,99,235,.13) 0 98px, transparent 99px);
       pointer-events:none;
     }
-    .hero-grid { position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:34px; align-items:center; }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1fr; gap:26px; }
+    .hero-copy {
+      display:grid;
+      grid-template-columns:1.04fr .96fr;
+      gap:32px;
+      align-items:center;
+    }
     .eyebrow {
       display:inline-flex; align-items:center; gap:8px; min-height:34px; padding:0 12px; border-radius:999px;
       background:white; border:1px solid var(--line); color:var(--purple-dark); font-weight:1000; box-shadow:var(--soft-shadow);
@@ -221,11 +244,11 @@
       transition:transform .2s ease, filter .2s ease, background .25s ease, box-shadow .2s ease;
       position:relative; overflow:hidden;
     }
-    .btn::after,.nav-link::after,.path-card a::after,.resource-links a::after,.learn-tile::after,.subject-card a::after {
+    .btn::after,.nav-link::after,.path-card a::after,.resource-links a::after,.subject-card a::after,.preview-card::after {
       content:""; position:absolute; inset:0; background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);
       transform:translateX(-130%); transition:.45s ease; pointer-events:none;
     }
-    .btn:hover::after,.btn:focus::after,.learn-tile:hover::after,.learn-tile:focus::after { transform:translateX(130%); }
+    .btn:hover::after,.btn:focus::after,.preview-card:hover::after { transform:translateX(130%); }
     .btn:hover,.btn:focus { transform:translateY(-3px) scale(1.02); filter:saturate(1.18); box-shadow:var(--shadow); }
     .btn:active { transform:translateY(0) scale(.98); }
     .btn-purple { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; }
@@ -246,52 +269,129 @@
     .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:900; margin-top:4px; }
 
     .hero-visual {
-      position:relative; min-height:480px; border-radius:38px; overflow:hidden; padding:18px;
+      position:relative; min-height:360px; border-radius:38px; overflow:hidden; padding:18px;
       background:
         radial-gradient(circle at 45% 16%, rgba(255,255,255,.82) 0 58px, transparent 59px),
         linear-gradient(135deg,#ede9fe,#fce7f3 42%,#dbeafe 72%,#dcfce7);
       box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.82);
       display:grid; place-items:center;
     }
-    .slide-frame {
-      width:100%; min-height:430px; border-radius:32px; background:rgba(255,255,255,.94);
-      border:1px solid rgba(226,232,240,.92); box-shadow:0 26px 52px rgba(15,23,42,.16);
-      overflow:hidden; position:relative;
+    .brand-showcase {
+      width:100%;
+      min-height:320px;
+      border-radius:30px;
+      background:rgba(255,255,255,.94);
+      border:1px solid rgba(226,232,240,.92);
+      box-shadow:0 26px 52px rgba(15,23,42,.16);
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:14px;
+      padding:18px;
+      align-items:center;
     }
-    .slides { position:absolute; inset:0; }
-    .slide {
-      position:absolute; inset:0; opacity:0; transform:scale(1.04);
-      transition:opacity .8s ease, transform .8s ease;
-      display:grid; grid-template-rows:auto 1fr auto; padding:22px;
-      background:linear-gradient(135deg,#fff,#f8fafc);
+    .brand-badge-big {
+      width:100px; height:100px; margin:auto;
+      filter:drop-shadow(0 18px 14px rgba(15,23,42,.16));
     }
-    .slide.active { opacity:1; transform:scale(1); z-index:2; }
-    .slide.subjects { background:linear-gradient(135deg,#f5f3ff,#dbeafe); }
-    .slide.worksheets { background:linear-gradient(135deg,#ecfdf5,#fef3c7); }
-    .slide.activities { background:linear-gradient(135deg,#fce7f3,#ede9fe); }
-    .slide.reading { background:linear-gradient(135deg,#eff6ff,#ccfbf1); }
-    .slide.islamic { background:linear-gradient(135deg,#ccfbf1,#fef3c7); }
-    .slide.classes { background:linear-gradient(135deg,#ffedd5,#f5f3ff); }
-    .slide-top {
-      display:flex; justify-content:space-between; align-items:center; gap:12px;
-      padding:12px 14px; border-radius:20px; background:rgba(255,255,255,.72);
-      border:1px solid rgba(255,255,255,.82); font-weight:1000; color:var(--ink);
+    .brand-showcase h2 {
+      font-family:"Baloo 2","Nunito",system-ui,sans-serif;
+      font-size:2rem; line-height:1.08; color:var(--ink); margin-bottom:8px;
     }
-    .slide-visual { display:grid; place-items:center; text-align:center; }
-    .slide-visual .big-icon { font-size:7rem; filter:drop-shadow(0 18px 14px rgba(15,23,42,.16)); animation:float 5s ease-in-out infinite; }
-    .slide h2 {
-      font-family:"Baloo 2","Nunito",system-ui,sans-serif; font-size:2.35rem; line-height:1.05;
-      letter-spacing:-.04em; color:var(--ink); margin:4px 0 8px;
+    .brand-showcase p { color:#475569; font-weight:800; }
+    .badge-points { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .badge-points span { padding:8px 12px; border-radius:999px; background:#f8fafc; border:1px solid var(--line); color:#334155; font-weight:900; font-size:.85rem; }
+
+    .showcase-panel {
+      margin-top:8px;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:34px;
+      box-shadow:var(--soft-shadow);
+      padding:18px;
     }
-    .slide p { color:#475569; font-weight:800; max-width:430px; margin:auto; }
-    .slide-bottom { display:flex; justify-content:space-between; gap:12px; align-items:center; }
-    .slide-bottom a { font-weight:1000; color:var(--purple-dark); text-decoration:underline; text-underline-offset:5px; }
-    .slide-dots { display:flex; gap:7px; align-items:center; }
-    .slide-dots button {
-      width:10px; height:10px; border-radius:50%; border:0; background:#cbd5e1; cursor:pointer;
+    .showcase-top {
+      display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:14px;
     }
-    .slide-dots button.active { width:26px; border-radius:999px; background:var(--purple); }
-    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-10px) rotate(3deg); } }
+    .showcase-top h2 {
+      color:var(--ink); font-family:"Baloo 2","Nunito",system-ui,sans-serif;
+      font-size:clamp(1.9rem,3vw,3rem); line-height:1.1; letter-spacing:-.04em; font-weight:800;
+    }
+    .showcase-top p { color:var(--muted); font-weight:800; max-width:720px; }
+    .showcase-controls { display:flex; gap:8px; }
+    .showcase-controls button {
+      width:42px; height:42px; border-radius:14px; border:1px solid var(--line); background:white;
+      font-size:1.15rem; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow);
+    }
+    .showcase-controls button:hover { transform:translateY(-2px); background:#f8fafc; }
+
+    .showcase-viewport {
+      overflow:hidden;
+      border-radius:24px;
+    }
+    .showcase-track {
+      display:flex;
+      gap:16px;
+      transition:transform .45s ease;
+      will-change:transform;
+    }
+    .preview-card {
+      flex:0 0 calc((100% - 32px) / 3);
+      background:linear-gradient(135deg,#ffffff,#fbfdff);
+      border:1px solid var(--line);
+      border-radius:26px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:var(--soft-shadow);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .preview-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .preview-head {
+      display:flex; justify-content:space-between; align-items:center;
+      background:linear-gradient(135deg,#f8fafc,#eef2ff);
+      padding:10px 12px;
+      border-bottom:1px solid var(--line);
+    }
+    .browser-dots { display:flex; gap:5px; }
+    .browser-dots span { width:10px; height:10px; border-radius:50%; background:#cbd5e1; }
+    .preview-type {
+      font-size:.78rem; font-weight:1000; color:var(--purple-dark);
+      background:var(--purple-soft); padding:4px 10px; border-radius:999px;
+    }
+    .preview-frame {
+      position:relative;
+      width:100%;
+      height:245px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .preview-frame iframe {
+      position:absolute;
+      top:0;
+      left:0;
+      width:1280px;
+      height:860px;
+      transform:scale(.28);
+      transform-origin:top left;
+      border:0;
+      pointer-events:none;
+      background:#fff;
+    }
+    .preview-overlay {
+      position:absolute; inset:auto 0 0 0;
+      padding:16px 14px 14px;
+      background:linear-gradient(180deg,rgba(255,255,255,0) 0%, rgba(16,32,51,.18) 18%, rgba(16,32,51,.75) 100%);
+      color:white;
+    }
+    .preview-overlay h3 { font-size:1.08rem; line-height:1.1; font-weight:1000; }
+    .preview-overlay p { font-size:.84rem; font-weight:800; opacity:.95; margin-top:3px; }
+    .preview-footer {
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
+      padding:12px 14px 14px;
+      color:#475569;
+      font-weight:900;
+      font-size:.9rem;
+    }
+    .preview-footer span:last-child { color:var(--purple-dark); }
 
     .section { padding:38px 0; }
     .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
@@ -398,6 +498,7 @@
       .nav-list { gap:0; }
       .nav-link { padding:0 8px; font-size:.86rem; }
       .class-chip { padding:0 10px; font-size:.88rem; }
+      .preview-card { flex-basis:calc((100% - 16px) / 2); }
     }
 
     @media (max-width:1030px) {
@@ -405,29 +506,35 @@
       .menu-btn { display:inline-flex; }
       .search-box { display:none; }
       .toprow { display:flex; }
-      .hero-grid,.cta { grid-template-columns:1fr; }
+      .hero-copy,.cta,.brand-showcase { grid-template-columns:1fr; }
       .stats,.path-grid,.trust-grid { grid-template-columns:repeat(2,1fr); }
       .daily-grid { grid-template-columns:1fr; }
       .subject-grid { grid-template-columns:repeat(2,1fr); }
       .footer-grid { grid-template-columns:repeat(2,1fr); }
+      .preview-card { flex-basis:calc((100% - 16px) / 2); }
+      .brand-showcase { text-align:center; }
+      .badge-points { justify-content:center; }
+      .showcase-top { display:block; }
+      .showcase-controls { margin-top:12px; }
     }
 
     @media (max-width:760px) {
       html { scroll-padding-top:82px; }
       .container { width:min(100% - 24px,var(--max)); }
       .toprow { min-height:70px; }
-      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-mark { width:48px; height:48px; border-radius:15px; }
       .brand-text strong { font-size:1.08rem; line-height:1.22; padding-bottom:3px; }
       .brand-text span { font-size:.73rem; }
       .nav-actions a { display:none; }
       .hero { padding-top:34px; }
       h1 { font-size:3.25rem; line-height:1.08; padding-bottom:12px; }
       h1 span { line-height:1.22; padding-bottom:14px; }
-      .hero-visual { min-height:360px; border-radius:26px; }
-      .slide-frame { min-height:320px; border-radius:24px; }
-      .slide { padding:16px; }
-      .slide-visual .big-icon { font-size:4.6rem; }
-      .slide h2 { font-size:1.8rem; }
+      .hero-visual { min-height:280px; border-radius:26px; }
+      .brand-showcase { min-height:auto; padding:16px; }
+      .brand-badge-big { width:82px; height:82px; }
+      .preview-card { flex-basis:100%; }
+      .preview-frame { height:230px; }
+      .preview-frame iframe { transform:scale(.245); width:1280px; height:860px; }
       .stats,.path-grid,.subject-grid,.trust-grid,.footer-grid,.mobile-grid { grid-template-columns:1fr; }
       .section-head { display:block; }
       .section-head .pill { margin-top:10px; }
@@ -460,7 +567,21 @@
   <header class="topbar" id="top">
     <div class="container toprow">
       <a class="brand sound-hover" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
-        <span class="brand-mark" aria-hidden="true">🌈</span>
+        <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true">
+          <defs>
+            <linearGradient id="brand-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="50%" stop-color="#ec4899"/>
+              <stop offset="100%" stop-color="#16a34a"/>
+            </linearGradient>
+          </defs>
+          <rect width="128" height="128" rx="30" fill="url(#brand-grad)"/>
+          <circle cx="95" cy="33" r="11" fill="#fde68a"/>
+          <path d="M31 86c11-10 22-14 33-14s22 4 33 14V47c-11-8-22-12-33-12S42 39 31 47v39z" fill="white" opacity=".95"/>
+          <path d="M64 35v51" stroke="#6d28d9" stroke-width="4" opacity=".28"/>
+          <path d="M31 47c11-8 22-12 33-12s22 4 33 12" fill="none" stroke="#ffffff" stroke-width="4" opacity=".85"/>
+          <text x="64" y="83" text-anchor="middle" font-family="Nunito, Arial" font-size="22" font-weight="900" fill="#6d28d9">AH</text>
+        </svg>
         <span class="brand-text">
           <strong>Al-Hayat Kids Learning Hub</strong>
           <span>Learn • Read • Play • Grow</span>
@@ -579,90 +700,234 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">⭐ Safe, colorful learning for children</div>
-          <h1 id="page-title">Al-Hayat Kids <span>Learning Hub</span></h1>
-          <p class="hero-lead">
-            A joyful Islamic and academic learning platform where children learn English, Math, Science,
-            Arabic, Islamic values, General Knowledge, stories, quizzes, worksheets, brain games, and daily good habits.
-          </p>
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">⭐ Safe, colorful learning for children</div>
+            <h1 id="page-title">Al-Hayat Kids <span>Learning Hub</span></h1>
+            <p class="hero-lead">
+              A joyful Islamic and academic learning platform where children learn English, Math, Science,
+              Arabic, Islamic values, General Knowledge, stories, quizzes, worksheets, brain games, and daily good habits.
+            </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-purple sound-hover" href="#pathways">Start Learning Now</a>
-            <a class="btn btn-pink sound-hover" href="activities/quizzes.html">Take Today’s Quiz</a>
-            <a class="btn btn-white sound-hover" href="online-classes.html">Book Online Classes</a>
+            <div class="hero-actions">
+              <a class="btn btn-purple sound-hover" href="#showcase">Start Learning Now</a>
+              <a class="btn btn-pink sound-hover" href="activities/quizzes.html">Take Today’s Quiz</a>
+              <a class="btn btn-white sound-hover" href="online-classes.html">Book Online Classes</a>
+            </div>
+
+            <div class="stats" aria-label="Website highlights">
+              <div class="stat"><strong>6</strong><span>Core Subjects</span></div>
+              <div class="stat"><strong>1000+</strong><span>Quiz Questions</span></div>
+              <div class="stat"><strong>1500+</strong><span>Practice Cards</span></div>
+              <div class="stat"><strong>Safe</strong><span>Parent Guided</span></div>
+            </div>
           </div>
 
-          <div class="stats" aria-label="Website highlights">
-            <div class="stat"><strong>6</strong><span>Core Subjects</span></div>
-            <div class="stat"><strong>1000+</strong><span>Quiz Questions</span></div>
-            <div class="stat"><strong>1500+</strong><span>Practice Cards</span></div>
-            <div class="stat"><strong>Safe</strong><span>Parent Guided</span></div>
+          <div class="hero-visual" aria-label="Professional brand identity of Al-Hayat Kids Learning Hub">
+            <div class="brand-showcase">
+              <svg class="brand-badge-big" viewBox="0 0 128 128" aria-hidden="true">
+                <defs>
+                  <linearGradient id="badge-grad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7c3aed"/>
+                    <stop offset="50%" stop-color="#ec4899"/>
+                    <stop offset="100%" stop-color="#16a34a"/>
+                  </linearGradient>
+                </defs>
+                <rect width="128" height="128" rx="30" fill="url(#badge-grad)"/>
+                <circle cx="95" cy="33" r="11" fill="#fde68a"/>
+                <path d="M31 86c11-10 22-14 33-14s22 4 33 14V47c-11-8-22-12-33-12S42 39 31 47v39z" fill="white" opacity=".95"/>
+                <path d="M64 35v51" stroke="#6d28d9" stroke-width="4" opacity=".28"/>
+                <path d="M31 47c11-8 22-12 33-12s22 4 33 12" fill="none" stroke="#ffffff" stroke-width="4" opacity=".85"/>
+                <text x="64" y="83" text-anchor="middle" font-family="Nunito, Arial" font-size="22" font-weight="900" fill="#6d28d9">AH</text>
+              </svg>
+              <div>
+                <h2>Professional Brand Identity</h2>
+                <p>
+                  This new book-and-star monogram is designed as a professional, memorable, child-friendly identity
+                  for Al-Hayat Kids Learning Hub. It works as your homepage icon, favicon, and brand recognition mark.
+                </p>
+                <div class="badge-points">
+                  <span>Book = learning</span>
+                  <span>Star = aspiration</span>
+                  <span>AH = brand recall</span>
+                  <span>Bright = kid-friendly</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Moving overview slides of website sections">
-          <div class="slide-frame">
-            <div class="slides" id="slides">
-              <article class="slide subjects active">
-                <div class="slide-top"><span>📚 Subjects Hub</span><span>English • Math • Science</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">📚</div>
-                  <h2>All Subjects in One Place</h2>
-                  <p>Start with English, Math, Science, Arabic, Islamic Studies, or General Knowledge.</p>
-                </div>
-                <div class="slide-bottom"><a class="sound-hover" href="subjects/index.html">Open Subjects →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+        <div class="showcase-panel" id="showcase">
+          <div class="showcase-top">
+            <div>
+              <h2>Website Page Showcase</h2>
+              <p>
+                Clear preview cards for the major pages of your website. Each preview is fully clickable and takes the visitor directly to the related page.
+              </p>
+            </div>
+            <div class="showcase-controls">
+              <button class="sound-click" id="showPrev" type="button" aria-label="Previous previews">‹</button>
+              <button class="sound-click" id="showNext" type="button" aria-label="Next previews">›</button>
+            </div>
+          </div>
 
-              <article class="slide worksheets">
-                <div class="slide-top"><span>📝 Worksheets</span><span>KG • Grade 1 • Grade 2 • Grade 3</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">✍️</div>
-                  <h2>Practice with Worksheets</h2>
-                  <p>Printable and interactive learning sheets for early learners.</p>
+          <div class="showcase-viewport">
+            <div class="showcase-track" id="showcaseTrack">
+              <a class="preview-card sound-hover" href="subjects/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Main</span>
                 </div>
-                <div class="slide-bottom"><a class="sound-hover" href="worksheets/index.html">Open Worksheets →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+                <div class="preview-frame">
+                  <iframe src="subjects/index.html" loading="lazy" title="Subjects preview"></iframe>
+                  <div class="preview-overlay"><h3>Subjects Hub</h3><p>All core subjects in one place</p></div>
+                </div>
+                <div class="preview-footer"><span>English • Math • Science</span><span>Open Page →</span></div>
+              </a>
 
-              <article class="slide activities">
-                <div class="slide-top"><span>🎮 Activities</span><span>Quizzes • Puzzles • Brain Games</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">🏆</div>
-                  <h2>Learn Through Play</h2>
-                  <p>Quizzes, puzzles, memory challenges, and brain games for children.</p>
+              <a class="preview-card sound-hover" href="subjects/english.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Subject</span>
                 </div>
-                <div class="slide-bottom"><a class="sound-hover" href="activities/index.html">Open Activities →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+                <div class="preview-frame">
+                  <iframe src="subjects/english.html" loading="lazy" title="English preview"></iframe>
+                  <div class="preview-overlay"><h3>English for Kids</h3><p>Phonics, vocabulary, and reading</p></div>
+                </div>
+                <div class="preview-footer"><span>Language foundation</span><span>Open Page →</span></div>
+              </a>
 
-              <article class="slide reading">
-                <div class="slide-top"><span>📖 Reading Library</span><span>Moral • Islamic • Prophet • Animal Stories</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">📖</div>
-                  <h2>Stories that Build Values</h2>
-                  <p>Read meaningful stories that improve vocabulary, imagination, and character.</p>
+              <a class="preview-card sound-hover" href="subjects/math.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Subject</span>
                 </div>
-                <div class="slide-bottom"><a class="sound-hover" href="reading-library/index.html">Open Stories →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+                <div class="preview-frame">
+                  <iframe src="subjects/math.html" loading="lazy" title="Math preview"></iframe>
+                  <div class="preview-overlay"><h3>Math for Kids</h3><p>Counting, shapes, and logic</p></div>
+                </div>
+                <div class="preview-footer"><span>Numbers and patterns</span><span>Open Page →</span></div>
+              </a>
 
-              <article class="slide islamic">
-                <div class="slide-top"><span>🕌 Islamic Corner</span><span>Duas • Manners • Seerah • Prophets</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">🕌</div>
-                  <h2>Faith, Manners, and Daily Habits</h2>
-                  <p>Help children learn duas, good manners, Seerah, prophets, and Asma ul Husna.</p>
+              <a class="preview-card sound-hover" href="subjects/science.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Subject</span>
                 </div>
-                <div class="slide-bottom"><a class="sound-hover" href="islamic-corner/index.html">Open Islamic Corner →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+                <div class="preview-frame">
+                  <iframe src="subjects/science.html" loading="lazy" title="Science preview"></iframe>
+                  <div class="preview-overlay"><h3>Science for Kids</h3><p>Nature, space, and experiments</p></div>
+                </div>
+                <div class="preview-footer"><span>Explore and discover</span><span>Open Page →</span></div>
+              </a>
 
-              <article class="slide classes">
-                <div class="slide-top"><span>🎓 Online Classes</span><span>Parent-guided support</span></div>
-                <div class="slide-visual">
-                  <div class="big-icon">👨‍🏫</div>
-                  <h2>Guided Learning Support</h2>
-                  <p>Parents can request support for reading, worksheets, Islamic learning, and confidence.</p>
+              <a class="preview-card sound-hover" href="reading-library/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Reading</span>
                 </div>
-                <div class="slide-bottom"><a class="sound-hover" href="online-classes.html">View Classes →</a><div class="slide-dots" data-dots></div></div>
-              </article>
+                <div class="preview-frame">
+                  <iframe src="reading-library/index.html" loading="lazy" title="Reading library preview"></iframe>
+                  <div class="preview-overlay"><h3>Reading Library</h3><p>Stories that build imagination</p></div>
+                </div>
+                <div class="preview-footer"><span>Moral and value stories</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="reading-library/moral-stories.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Story</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="reading-library/moral-stories.html" loading="lazy" title="Moral stories preview"></iframe>
+                  <div class="preview-overlay"><h3>Moral Stories</h3><p>Values, kindness, and character</p></div>
+                </div>
+                <div class="preview-footer"><span>Reading with meaning</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="activities/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Activities</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="activities/index.html" loading="lazy" title="Activities preview"></iframe>
+                  <div class="preview-overlay"><h3>Activities Hub</h3><p>Learning through play</p></div>
+                </div>
+                <div class="preview-footer"><span>Games and challenges</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="activities/quizzes.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Activities</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="activities/quizzes.html" loading="lazy" title="Quizzes preview"></iframe>
+                  <div class="preview-overlay"><h3>Quizzes</h3><p>1000+ fun questions</p></div>
+                </div>
+                <div class="preview-footer"><span>Practice and review</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="worksheets/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Worksheets</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="worksheets/index.html" loading="lazy" title="Worksheets preview"></iframe>
+                  <div class="preview-overlay"><h3>Worksheets Hub</h3><p>Printable grade-wise practice</p></div>
+                </div>
+                <div class="preview-footer"><span>KG to Grade 3</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="islamic-corner/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Islamic</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="islamic-corner/index.html" loading="lazy" title="Islamic corner preview"></iframe>
+                  <div class="preview-overlay"><h3>Islamic Corner</h3><p>Duas, manners, Seerah, prophets</p></div>
+                </div>
+                <div class="preview-footer"><span>Faith and character</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="islamic-corner/daily-duas.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Islamic</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="islamic-corner/daily-duas.html" loading="lazy" title="Daily duas preview"></iframe>
+                  <div class="preview-overlay"><h3>Daily Duas</h3><p>Daily supplications for children</p></div>
+                </div>
+                <div class="preview-footer"><span>Arabic and meaning</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="parents-corner/index.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Parents</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="parents-corner/index.html" loading="lazy" title="Parents corner preview"></iframe>
+                  <div class="preview-overlay"><h3>Parents Corner</h3><p>Guidance for home learning</p></div>
+                </div>
+                <div class="preview-footer"><span>Support for families</span><span>Open Page →</span></div>
+              </a>
+
+              <a class="preview-card sound-hover" href="online-classes.html">
+                <div class="preview-head">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <span class="preview-type">Support</span>
+                </div>
+                <div class="preview-frame">
+                  <iframe src="online-classes.html" loading="lazy" title="Online classes preview"></iframe>
+                  <div class="preview-overlay"><h3>Online Classes</h3><p>Guided support and inquiry</p></div>
+                </div>
+                <div class="preview-footer"><span>Learning assistance</span><span>Open Page →</span></div>
+              </a>
             </div>
           </div>
         </div>
@@ -949,7 +1214,7 @@
 
     <div class="container footer-bottom">
       <p>© 2026 Al-Hayat Kids Learning Hub. All Rights Reserved.</p>
-      <p>Clean homepage version prepared for Google Search Console readiness.</p>
+      <p>Homepage updated with clickable live page previews and custom brand identity.</p>
     </div>
   </footer>
 
@@ -965,19 +1230,13 @@
       });
     }
 
-    /* Kid-friendly button sounds:
-       Browser rules may require the first click/tap before hover sounds can play. */
     let audioCtx = null;
     let soundReady = false;
-
     function ensureAudio() {
-      if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      }
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       if (audioCtx.state === "suspended") audioCtx.resume();
       soundReady = true;
     }
-
     function playTone(type = "hover") {
       try {
         ensureAudio();
@@ -997,13 +1256,9 @@
         osc.stop(now + 0.14);
       } catch (error) {}
     }
-
     document.addEventListener("pointerdown", () => ensureAudio(), { once:true });
-
     document.querySelectorAll("a, button, .sound-hover").forEach(el => {
-      el.addEventListener("mouseenter", () => {
-        if (soundReady) playTone("hover");
-      });
+      el.addEventListener("mouseenter", () => { if (soundReady) playTone("hover"); });
       el.addEventListener("click", () => playTone("click"));
     });
 
@@ -1022,42 +1277,47 @@
       });
     });
 
-    const slides = [...document.querySelectorAll(".slide")];
-    const dotHolders = [...document.querySelectorAll("[data-dots]")];
-    let activeSlide = 0;
+    const track = document.getElementById("showcaseTrack");
+    const prevBtn = document.getElementById("showPrev");
+    const nextBtn = document.getElementById("showNext");
+    const cards = [...track.querySelectorAll(".preview-card")];
+    let visibleCards = window.innerWidth <= 760 ? 1 : window.innerWidth <= 1180 ? 2 : 3;
+    let currentIndex = 0;
+    const maxIndex = () => Math.max(0, cards.length - visibleCards);
 
-    function renderDots() {
-      dotHolders.forEach(holder => {
-        holder.innerHTML = slides.map((_, index) => `<button type="button" aria-label="Show slide ${index + 1}" data-slide="${index}" class="${index === activeSlide ? "active" : ""}"></button>`).join("");
-        holder.querySelectorAll("button").forEach(btn => {
-          btn.addEventListener("click", () => {
-            activeSlide = Number(btn.dataset.slide);
-            showSlide(activeSlide);
-            playTone("click");
-          });
-        });
-      });
+    function updateVisibleCards() {
+      visibleCards = window.innerWidth <= 760 ? 1 : window.innerWidth <= 1180 ? 2 : 3;
+      currentIndex = Math.min(currentIndex, maxIndex());
+      updateCarousel();
     }
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => slide.classList.toggle("active", i === index));
-      renderDots();
+    function updateCarousel() {
+      const gap = 16;
+      const cardWidth = cards[0].getBoundingClientRect().width + gap;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
 
-    function nextSlide() {
-      activeSlide = (activeSlide + 1) % slides.length;
-      showSlide(activeSlide);
+    function goNext() {
+      currentIndex = currentIndex >= maxIndex() ? 0 : currentIndex + 1;
+      updateCarousel();
+    }
+    function goPrev() {
+      currentIndex = currentIndex <= 0 ? maxIndex() : currentIndex - 1;
+      updateCarousel();
     }
 
-    renderDots();
-    setInterval(nextSlide, 4200);
+    prevBtn.addEventListener("click", goPrev);
+    nextBtn.addEventListener("click", goNext);
+    window.addEventListener("resize", updateVisibleCards);
+    setInterval(goNext, 5000);
+    window.addEventListener("load", updateVisibleCards);
 
     const SITE_INDEX = [
       { title:"Subjects Hub", url:"subjects/index.html", type:"Main", keywords:"subjects all subjects learning hub english math science arabic islamic studies general knowledge" },
       { title:"English for Kids", url:"subjects/english.html", type:"Subject", keywords:"english phonics reading writing vocabulary speaking alphabet words sentences grammar" },
       { title:"Math for Kids", url:"subjects/math.html", type:"Subject", keywords:"math maths mathematics numbers counting addition subtraction shapes patterns fractions time money logic" },
       { title:"Science for Kids", url:"subjects/science.html", type:"Subject", keywords:"science plants animals senses weather water materials force space experiments body nature" },
-      { title:"Arabic for Kids", url:"subjects/arabic-for-kids.html", type:"Subject", keywords:"arabic letters sounds words quran arabic alphabet numbers colors ب ت ث" },
+      { title:"Arabic for Kids", url:"subjects/arabic-for-kids.html", type:"Subject", keywords:"arabic letters sounds words quran arabic alphabet numbers colors" },
       { title:"Islamic Studies", url:"subjects/islamic-studies.html", type:"Subject", keywords:"islamic studies tawhid faith manners duas cleanliness gratitude prophets seerah values" },
       { title:"General Knowledge", url:"subjects/general-knowledge.html", type:"Subject", keywords:"general knowledge gk world animals places community helpers inventions safety environment facts" },
 
@@ -1094,9 +1354,7 @@
       { title:"About", url:"about.html", type:"Main", keywords:"about al hayat kids learning hub mission vision Dr Imran Hayat" },
       { title:"Contact", url:"contact.html", type:"Main", keywords:"contact email inquiry support online classes parent message" },
       { title:"Privacy Policy", url:"privacy-policy.html", type:"Main", keywords:"privacy policy child safety local storage data parent information" },
-      { title:"FAQ", url:"faq.html", type:"Main", keywords:"faq questions answers help parents children website" },
-      { title:"Sitemap", url:"sitemap.xml", type:"Technical", keywords:"sitemap urls google search console indexing pages" },
-      { title:"Robots", url:"robots.txt", type:"Technical", keywords:"robots crawl google search engine sitemap" }
+      { title:"FAQ", url:"faq.html", type:"Main", keywords:"faq questions answers help parents children website" }
     ];
 
     const siteSearch = document.getElementById("siteSearch");
@@ -1106,7 +1364,6 @@
     function normalize(text) {
       return String(text || "").toLowerCase().replace(/[^a-z0-9\sء-ي]/g, " ").replace(/\s+/g, " ").trim();
     }
-
     function scoreItem(item, query) {
       const q = normalize(query);
       const title = normalize(item.title);
@@ -1125,7 +1382,6 @@
       });
       return score;
     }
-
     function getResults(query) {
       return SITE_INDEX
         .map(item => ({ ...item, score: scoreItem(item, query) }))
@@ -1133,7 +1389,6 @@
         .sort((a,b) => b.score - a.score)
         .slice(0, 8);
     }
-
     function renderSuggestions() {
       const query = siteSearch.value.trim();
       const results = getResults(query);
@@ -1156,17 +1411,12 @@
         });
       });
     }
-
     function runSearch() {
       const query = siteSearch.value.trim();
       const results = getResults(query);
-      if (results.length) {
-        window.location.href = results[0].url;
-      } else if (query) {
-        window.location.href = "recommended-resources.html";
-      }
+      if (results.length) window.location.href = results[0].url;
+      else if (query) window.location.href = "recommended-resources.html";
     }
-
     if (siteSearchBtn && siteSearch) {
       siteSearchBtn.addEventListener("click", runSearch);
       siteSearch.addEventListener("input", renderSuggestions);
