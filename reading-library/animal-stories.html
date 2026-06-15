@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Animal Stories for Kids | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="A colorful animal stories library for kids with moral lessons, animal facts, habitats, reading levels, read-aloud buttons, quizzes, missions, badges, and nature-care activities." />
+  <meta name="keywords" content="animal stories for kids, animal facts for children, moral animal stories, kids reading library, wildlife learning, Al-Hayat Kids Learning Hub" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html" />
+
+  <meta property="og:title" content="Animal Stories for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="Fun animal stories with facts, habitats, morals, questions, activities, and progress badges." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html" />
+
+  <style>
+    :root {
+      --sky:#0ea5e9;
+      --sky-dark:#0369a1;
+      --sky-soft:#e0f2fe;
+      --green:#16a34a;
+      --green-dark:#166534;
+      --green-soft:#dcfce7;
+      --orange:#f97316;
+      --orange-soft:#ffedd5;
+      --yellow:#facc15;
+      --yellow-soft:#fef9c3;
+      --purple:#7c3aed;
+      --purple-soft:#ede9fe;
+      --pink:#ec4899;
+      --pink-soft:#fce7f3;
+      --teal:#0f766e;
+      --teal-soft:#ccfbf1;
+      --ink:#102033;
+      --text:#334155;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --white:#ffffff;
+      --bg:#f7fcff;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
+      --radius:24px;
+      --max:1220px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      line-height:1.65;
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(14,165,233,.15), transparent 28%),
+        radial-gradient(circle at 90% 14%, rgba(22,163,74,.14), transparent 32%),
+        radial-gradient(circle at 75% 88%, rgba(249,115,22,.12), transparent 28%),
+        linear-gradient(180deg,#f7fcff 0%,#ffffff 48%,#f8fff8 100%);
+    }
+    a { color:inherit; text-decoration:none; }
+    button,input,select { font:inherit; }
+    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
+    .skip-link { position:absolute; top:-100px; left:16px; z-index:9999; background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900; }
+    .skip-link:focus { top:16px; }
+
+    .topbar {
+      position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
+    }
+    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark {
+      width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto;
+      background:linear-gradient(135deg,var(--sky),var(--green)); color:white; font-size:1.8rem; box-shadow:var(--soft-shadow);
+    }
+    .brand-text strong { display:block; color:var(--sky-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em; }
+    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .nav-actions a,.sound-btn {
+      min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px;
+      border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900; cursor:pointer;
+    }
+    .nav-actions a.primary { background:linear-gradient(135deg,var(--sky),var(--sky-dark)); color:white; border-color:transparent; }
+
+    .mini-nav { background:linear-gradient(90deg,#0369a1,#0ea5e9,#16a34a); color:white; box-shadow:0 10px 22px rgba(14,165,233,.22); }
+    .mini-nav-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
+    .mini-nav-inner::-webkit-scrollbar { display:none; }
+    .mini-nav a { white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px; border-radius:999px; font-weight:850; font-size:.92rem; }
+    .mini-nav a:hover,.mini-nav a:focus { background:rgba(255,255,255,.16); }
+
+    .hero { position:relative; overflow:hidden; padding:58px 0 36px; }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(250,204,21,.35) 0 45px, transparent 46px),
+        radial-gradient(circle at 86% 16%, rgba(34,197,94,.20) 0 72px, transparent 73px),
+        radial-gradient(circle at 78% 86%, rgba(14,165,233,.15) 0 95px, transparent 96px);
+      pointer-events:none;
+    }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1.02fr .98fr; gap:28px; align-items:center; }
+    .breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px; color:var(--muted); font-weight:850; font-size:.94rem; }
+    .breadcrumb a { color:var(--sky-dark); text-decoration:underline; text-underline-offset:5px; }
+    h1 {
+      color:var(--ink); font-size:clamp(2.65rem,6vw,5.8rem); line-height:.94; letter-spacing:-.07em;
+      font-weight:1000; margin-bottom:18px;
+    }
+    h1 span {
+      display:block; background:linear-gradient(90deg,var(--sky),var(--green),var(--orange),var(--purple));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-lead { max-width:690px; font-size:clamp(1.02rem,2vw,1.24rem); color:#27415e; font-weight:650; margin-bottom:20px; }
+    .hero-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:780px; margin:24px 0; }
+    .stat { background:white; border:1px solid var(--line); border-radius:18px; padding:14px 12px; box-shadow:var(--soft-shadow); text-align:center; }
+    .stat strong { display:block; color:var(--sky-dark); font-size:1.35rem; line-height:1; font-weight:1000; }
+    .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:800; margin-top:4px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow); transition:.2s ease; }
+    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
+    .btn-sky { background:linear-gradient(135deg,var(--sky),var(--sky-dark)); color:white; }
+    .btn-green { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; }
+    .btn-orange { background:linear-gradient(135deg,var(--orange),#c2410c); color:white; }
+    .btn-purple { background:linear-gradient(135deg,var(--purple),#5b21b6); color:white; }
+
+    .hero-visual {
+      position:relative; min-height:430px; border-radius:36px; overflow:hidden; padding:24px;
+      background:
+        radial-gradient(circle at 48% 16%, rgba(255,255,255,.78) 0 58px, transparent 59px),
+        linear-gradient(135deg,#dbeafe,#dcfce7 50%,#fef9c3);
+      box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.82);
+    }
+    .sun { position:absolute; right:40px; top:36px; width:90px; height:90px; border-radius:50%; background:#fde047; box-shadow:0 0 0 18px rgba(253,224,71,.28), 0 14px 28px rgba(15,23,42,.1); }
+    .hill { position:absolute; left:-10%; right:-10%; bottom:-50px; height:170px; border-radius:50% 50% 0 0; background:linear-gradient(135deg,#86efac,#22c55e); }
+    .tree { position:absolute; left:50px; bottom:100px; width:42px; height:120px; background:#92400e; border-radius:999px; }
+    .tree::before { content:""; position:absolute; left:50%; top:-72px; transform:translateX(-50%); width:140px; height:120px; border-radius:50%; background:#16a34a; box-shadow:45px 16px 0 #22c55e, -40px 22px 0 #15803d; }
+    .river { position:absolute; right:-20px; bottom:4px; width:285px; height:120px; background:linear-gradient(135deg,#38bdf8,#0284c7); border-radius:60% 0 0 0; opacity:.88; }
+    .animal-stage { position:absolute; left:20px; right:20px; bottom:36px; height:250px; }
+    .animal-icon { position:absolute; font-size:4.2rem; filter:drop-shadow(0 13px 12px rgba(15,23,42,.18)); animation:float 5.8s ease-in-out infinite; }
+    .a1 { left:36%; bottom:60px; font-size:5.8rem; }
+    .a2 { left:18%; bottom:30px; animation-delay:.5s; }
+    .a3 { right:18%; bottom:34px; animation-delay:1s; }
+    .a4 { right:34%; top:6px; font-size:3.4rem; animation-delay:1.6s; }
+    .cloud { position:absolute; font-size:2rem; filter:drop-shadow(0 8px 8px rgba(15,23,42,.12)); animation:float 6s ease-in-out infinite; }
+    .c1 { left:8%; top:13%; } .c2 { left:36%; top:8%; animation-delay:.5s; } .c3 { right:8%; bottom:40%; animation-delay:1s; }
+    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-12px) rotate(3deg); } }
+
+    .panel { background:white; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--soft-shadow); }
+    .toolbar-section { padding:22px 0; }
+    .toolbar { padding:18px; display:grid; grid-template-columns:1.25fr repeat(4,.65fr); gap:12px; align-items:center; position:sticky; top:124px; z-index:80; }
+    .field input,.field select { width:100%; min-height:48px; border:1px solid #cbd5e1; border-radius:16px; padding:0 14px; outline:0; color:var(--ink); background:#fbfdff; font-weight:750; }
+    .field input:focus,.field select:focus { border-color:var(--sky); box-shadow:0 0 0 4px rgba(14,165,233,.14); }
+
+    .section { padding:34px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
+    .section-title small { color:var(--orange); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
+    .section-title h2 { color:var(--ink); font-size:clamp(1.8rem,3vw,3rem); line-height:1.05; letter-spacing:-.05em; margin-top:4px; font-weight:1000; }
+    .section-title p { max-width:800px; color:var(--muted); font-weight:650; margin-top:8px; }
+    .pill { display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px; background:var(--sky-soft); color:var(--sky-dark); font-weight:1000; font-size:.84rem; }
+
+    .habitat-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+    .habitat-card { padding:18px; min-height:150px; position:relative; overflow:hidden; cursor:pointer; transition:.2s ease; }
+    .habitat-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .habitat-card .icon { font-size:2.2rem; }
+    .habitat-card h3 { color:var(--ink); font-size:1.08rem; font-weight:1000; margin:8px 0 4px; }
+    .habitat-card p { color:#475569; font-weight:650; font-size:.9rem; }
+    .habitat-card:nth-child(1) { background:linear-gradient(135deg,#fff,#fffbeb); }
+    .habitat-card:nth-child(2) { background:linear-gradient(135deg,#fff,#f0fdf4); }
+    .habitat-card:nth-child(3) { background:linear-gradient(135deg,#fff,#eff6ff); }
+    .habitat-card:nth-child(4) { background:linear-gradient(135deg,#fff,#fff7ed); }
+    .habitat-card:nth-child(5) { background:linear-gradient(135deg,#fff,#f5f3ff); }
+
+    .story-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .story-card { position:relative; overflow:hidden; min-height:395px; display:flex; flex-direction:column; transition:.2s ease; }
+    .story-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .story-top { padding:18px 18px 12px; display:flex; align-items:flex-start; justify-content:space-between; gap:10px; background:linear-gradient(135deg,#ffffff,#f8fafc); }
+    .story-emoji { width:58px; height:58px; display:grid; place-items:center; border-radius:18px; font-size:2.05rem; background:var(--yellow-soft); box-shadow:var(--soft-shadow); flex:0 0 auto; }
+    .story-meta { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+    .tag { min-height:26px; padding:0 9px; display:inline-flex; align-items:center; border-radius:999px; background:#f1f5f9; color:#334155; font-size:.75rem; font-weight:1000; }
+    .tag.level { background:var(--blue-soft); color:#1d4ed8; }
+    .tag.habitat { background:var(--green-soft); color:var(--green-dark); }
+    .tag.group { background:var(--purple-soft); color:var(--purple); }
+    .story-body { padding:0 18px 16px; flex:1; display:flex; flex-direction:column; }
+    .story-body h3 { color:var(--ink); line-height:1.12; letter-spacing:-.03em; font-size:1.24rem; margin:8px 0; font-weight:1000; }
+    .fact-line { color:var(--sky-dark); font-size:.84rem; font-weight:900; margin-bottom:9px; }
+    .story-text { color:#35465f; font-weight:600; font-size:.94rem; display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; overflow:hidden; }
+    .lesson-box { margin:12px 0; padding:12px; border-radius:16px; background:linear-gradient(135deg,var(--yellow-soft),#fff); border:1px solid #fde68a; color:#713f12; font-weight:850; font-size:.9rem; }
+    .card-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
+    .mini-btn { min-height:36px; border-radius:12px; border:1px solid var(--line); background:white; color:var(--ink); padding:0 10px; font-weight:950; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
+    .mini-btn.read { background:linear-gradient(135deg,var(--sky),var(--sky-dark)); color:white; border-color:transparent; }
+    .mini-btn.listen { background:var(--purple-soft); color:var(--purple); border-color:#ddd6fe; }
+    .mini-btn.done { background:var(--green-soft); color:var(--green-dark); border-color:#bbf7d0; }
+
+    .feature-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .feature-card { padding:18px; min-height:188px; overflow:hidden; position:relative; }
+    .feature-card h3 { color:var(--ink); font-size:1.15rem; font-weight:1000; margin:8px 0; }
+    .feature-card p { color:#475569; font-weight:650; font-size:.92rem; }
+    .feature-card .big { font-size:2.6rem; }
+
+    .progress-wrap { display:grid; grid-template-columns:1fr 320px; gap:18px; align-items:start; }
+    .progress-card,.mission-card { padding:22px; }
+    .progress-bar { height:18px; border-radius:999px; background:#e2e8f0; overflow:hidden; margin:14px 0; }
+    .progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--sky),var(--green),var(--orange)); transition:.4s ease; }
+    .badges { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px; }
+    .badge { min-height:74px; border-radius:16px; background:#f8fafc; border:1px dashed #cbd5e1; display:grid; place-items:center; text-align:center; padding:8px; color:#94a3b8; font-weight:1000; font-size:.82rem; }
+    .badge.active { background:var(--yellow-soft); color:#854d0e; border-color:#facc15; box-shadow:var(--soft-shadow); }
+    .mission-card { background:linear-gradient(135deg,#eff6ff,#fff); position:relative; overflow:hidden; }
+    .mission-card::after { content:"🐾"; position:absolute; right:12px; bottom:2px; font-size:6rem; opacity:.15; }
+    .mission-text { color:var(--ink); font-size:1.05rem; font-weight:850; margin:12px 0; position:relative; z-index:2; }
+
+    .source-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .source-card { padding:18px; background:#f8fafc; }
+    .source-card h3 { color:var(--ink); font-size:1.12rem; font-weight:1000; margin-bottom:8px; }
+    .source-card p,.source-card li { color:#475569; font-weight:650; }
+    .source-card ul { padding-left:20px; }
+    .source-card a { color:var(--sky-dark); font-weight:1000; text-decoration:underline; text-underline-offset:4px; }
+
+    .modal { position:fixed; inset:0; background:rgba(15,23,42,.62); z-index:1000; display:none; align-items:center; justify-content:center; padding:18px; }
+    .modal.open { display:flex; }
+    .modal-card { width:min(900px,100%); max-height:88vh; overflow:auto; background:white; border-radius:28px; box-shadow:0 30px 70px rgba(0,0,0,.28); border:1px solid rgba(255,255,255,.75); }
+    .modal-head { position:sticky; top:0; z-index:2; background:white; border-bottom:1px solid var(--line); padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .modal-head h2 { color:var(--ink); font-size:1.45rem; font-weight:1000; letter-spacing:-.03em; }
+    .close-btn { width:42px; height:42px; border-radius:50%; border:0; background:#f1f5f9; color:var(--ink); cursor:pointer; font-size:1.2rem; font-weight:1000; }
+    .modal-body { padding:20px; }
+    .modal-story { color:#263b55; font-size:1.08rem; font-weight:650; margin:10px 0 16px; }
+    .detail-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:16px; }
+    .detail-box { padding:14px; border-radius:18px; background:#f8fafc; border:1px solid var(--line); }
+    .detail-box h4 { color:var(--sky-dark); font-weight:1000; margin-bottom:8px; }
+    .detail-box ul { padding-left:18px; color:#475569; font-weight:650; }
+
+    .footer { margin-top:34px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:22px; }
+    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
+    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
+    .back-top { position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--sky); color:white; box-shadow:var(--shadow); font-weight:1000; }
+
+    @media (max-width:1080px) {
+      .hero-grid,.progress-wrap { grid-template-columns:1fr; }
+      .toolbar { position:static; grid-template-columns:1fr 1fr; }
+      .story-grid { grid-template-columns:repeat(2,1fr); }
+      .habitat-grid { grid-template-columns:repeat(3,1fr); }
+      .feature-grid,.source-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:680px) {
+      .container { width:min(100% - 24px,var(--max)); }
+      .toprow { min-height:70px; }
+      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-text strong { font-size:1.02rem; }
+      .brand-text span { font-size:.73rem; }
+      .nav-actions a { display:none; }
+      .hero { padding-top:36px; }
+      h1 { font-size:3rem; }
+      .hero-stats { grid-template-columns:repeat(2,1fr); }
+      .hero-visual { min-height:320px; border-radius:24px; }
+      .animal-stage { transform:scale(.78); transform-origin:center bottom; }
+      .toolbar,.story-grid,.habitat-grid,.feature-grid,.source-grid,.detail-grid,.badges,.footer-grid { grid-template-columns:1fr; }
+      .section-head { display:block; }
+      .section-head .pill { margin-top:10px; }
+      .btn { width:100%; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Animal Stories for Kids",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html",
+    "isPartOf":{"@type":"WebSite","name":"Al-Hayat Kids Learning Hub","url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"},
+    "about":["animal stories","wildlife facts","habitats","children's moral learning","nature care"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" id="top">
+    <div class="container toprow">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-text">
+          <strong>Al-Hayat Kids Learning Hub</strong>
+          <span>Animal stories • facts • nature care</span>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="Quick links">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Reading Library</a>
+        <a href="../subjects/science.html">Science</a>
+        <a class="primary" href="../activities/quizzes.html">Quizzes</a>
+      </nav>
+      <button class="sound-btn" id="soundToggle" type="button" aria-label="Toggle learning sounds">🔊</button>
+    </div>
+  </header>
+
+  <nav class="mini-nav" aria-label="Page navigation">
+    <div class="container mini-nav-inner">
+      <a href="../index.html">🏠 Home</a>
+      <a href="index.html">📖 Library</a>
+      <a href="moral-stories.html">🌟 Moral Stories</a>
+      <a href="islamic-stories.html">🕌 Islamic Stories</a>
+      <a href="prophet-stories.html">🌙 Prophet Stories</a>
+      <a href="animal-stories.html">🐾 Animal Stories</a>
+      <a href="../subjects/science.html">🔬 Science</a>
+      <a href="../activities/quizzes.html">🏆 Quizzes</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>›</span>
+            <a href="index.html">Reading Library</a> <span>›</span>
+            <span>Animal Stories</span>
+          </div>
+          <h1 id="page-title">Animal Stories <span>for Curious Kids</span></h1>
+          <p class="hero-lead">
+            A colorful animal story library where children read original stories, learn safe animal facts, explore habitats,
+            answer questions, complete nature-care missions, and build kindness, patience, teamwork, courage, and responsibility.
+          </p>
+
+          <div class="hero-stats" aria-label="Library summary">
+            <div class="stat"><strong id="totalStories">0</strong><span>Story Cards</span></div>
+            <div class="stat"><strong>5+</strong><span>Habitats</span></div>
+            <div class="stat"><strong>8</strong><span>Animal Groups</span></div>
+            <div class="stat"><strong>280+</strong><span>Questions & Tasks</span></div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-sky" href="#stories">Start Reading 🚀</a>
+            <a class="btn btn-green" href="#habitats">Explore Habitats 🌍</a>
+            <a class="btn btn-orange" href="#sources">Source Note 📚</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="sun"></div>
+          <span class="cloud c1">☁️</span>
+          <span class="cloud c2">🦋</span>
+          <span class="cloud c3">🌈</span>
+          <div class="tree"></div>
+          <div class="river"></div>
+          <div class="hill"></div>
+          <div class="animal-stage">
+            <span class="animal-icon a1">🐘</span>
+            <span class="animal-icon a2">🦁</span>
+            <span class="animal-icon a3">🐧</span>
+            <span class="animal-icon a4">🦜</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar-section" aria-label="Story search and filters">
+      <div class="container">
+        <div class="toolbar panel">
+          <div class="field">
+            <input id="searchInput" type="search" placeholder="Search animal, moral, habitat, fact..." aria-label="Search stories" />
+          </div>
+          <div class="field">
+            <select id="levelFilter" aria-label="Filter by level">
+              <option value="all">All Levels</option>
+              <option value="Level 1">Level 1: Little Explorers</option>
+              <option value="Level 2">Level 2: Growing Explorers</option>
+              <option value="Level 3">Level 3: Confident Explorers</option>
+              <option value="Level 4">Level 4: Wise Explorers</option>
+            </select>
+          </div>
+          <div class="field"><select id="habitatFilter" aria-label="Filter by habitat"><option value="all">All Habitats</option></select></div>
+          <div class="field"><select id="groupFilter" aria-label="Filter by animal group"><option value="all">All Groups</option></select></div>
+          <button class="btn btn-purple" type="button" id="surpriseBtn">Surprise Me 🎲</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habitats" aria-labelledby="habitats-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Explore by Habitat</small>
+            <h2 id="habitats-title">Where do animals live?</h2>
+            <p>Children can filter stories by habitat and connect reading with science, geography, nature care, and animal behavior.</p>
+          </div>
+          <span class="pill">Story + Fact + Moral + Activity</span>
+        </div>
+
+        <div class="habitat-grid">
+          <article class="habitat-card panel" data-habitat-jump="Savanna"><div class="icon">🌾</div><h3>Savanna</h3><p>Elephants, lions, zebras, giraffes, and more.</p></article>
+          <article class="habitat-card panel" data-habitat-jump="Forest"><div class="icon">🌳</div><h3>Forest</h3><p>Owls, bears, foxes, chameleons, and birds.</p></article>
+          <article class="habitat-card panel" data-habitat-jump="Ocean"><div class="icon">🌊</div><h3>Ocean</h3><p>Dolphins, whales, octopuses, sharks, and reef life.</p></article>
+          <article class="habitat-card panel" data-habitat-jump="Desert"><div class="icon">🏜️</div><h3>Desert</h3><p>Camels, meerkats, desert foxes, and survival lessons.</p></article>
+          <article class="habitat-card panel" data-habitat-jump="Garden"><div class="icon">🌼</div><h3>Garden</h3><p>Bees, ants, butterflies, frogs, and nature helpers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="learning-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Learning Strategy</small>
+            <h2 id="learning-title">How this page keeps kids engaged</h2>
+            <p>Every card combines a short story, a safe animal fact, a moral lesson, vocabulary, questions, and a hands-on task.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card panel"><div class="big">📖</div><h3>Read</h3><p>Children enjoy short animal stories with colorful cards and friendly characters.</p></article>
+          <article class="feature-card panel"><div class="big">🔬</div><h3>Learn Facts</h3><p>Each card includes one simple animal or habitat fact for science connection.</p></article>
+          <article class="feature-card panel"><div class="big">💚</div><h3>Build Values</h3><p>Stories teach kindness, patience, responsibility, teamwork, courage, and respect.</p></article>
+          <article class="feature-card panel"><div class="big">✅</div><h3>Practice</h3><p>Activities turn reading into drawing, writing, discussion, and nature-care missions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Interactive Animal Story Bank</small>
+            <h2 id="stories-title">Choose a story and start exploring</h2>
+            <p>Use search and filters to find stories by animal, habitat, group, level, fact, or moral lesson.</p>
+          </div>
+          <span class="pill" id="resultCount">0 stories showing</span>
+        </div>
+
+        <div class="story-grid" id="storyGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="progress-title">
+      <div class="container progress-wrap">
+        <article class="progress-card panel">
+          <div class="section-title">
+            <small>Animal Explorer Quest</small>
+            <h2 id="progress-title">Track progress and earn badges</h2>
+            <p>Click “Done” after reading a story and completing its activity. Progress is saved on the same device.</p>
+          </div>
+          <div class="progress-bar" aria-label="Reading progress"><div class="progress-fill" id="progressFill"></div></div>
+          <p><strong id="progressText">0 stories completed.</strong></p>
+          <div class="badges" id="badgeBox"></div>
+        </article>
+
+        <article class="mission-card panel">
+          <div class="section-title">
+            <small>Daily Nature Mission</small>
+            <h2>Care for Animals & Nature</h2>
+          </div>
+          <p class="mission-text" id="missionText">Click the button to get today’s animal-care mission.</p>
+          <button class="btn btn-orange" id="missionBtn" type="button">Give Me a Mission 🐾</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Authenticity and Safety Note</small>
+            <h2 id="sources-title">Original stories, safe facts, reliable learning direction</h2>
+            <p>The stories are original and child-friendly. Animal facts are simple, educational, and aligned with reliable child-safe animal learning sources.</p>
+          </div>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card panel">
+            <h3>Reliable animal learning sources</h3>
+            <ul>
+              <li><a href="https://kids.nationalgeographic.com/animals" target="_blank" rel="noopener">National Geographic Kids Animals</a></li>
+              <li><a href="https://kids.britannica.com/kids/browse/animals" target="_blank" rel="noopener">Britannica Kids Animal Kingdom</a></li>
+              <li><a href="https://sdzwildlifeexplorers.org/animals" target="_blank" rel="noopener">San Diego Zoo Wildlife Explorers</a></li>
+            </ul>
+          </article>
+          <article class="source-card panel">
+            <h3>Child safety rule</h3>
+            <p>Children should observe animals safely, never tease animals, never touch unknown animals, and always ask an adult before helping wildlife.</p>
+          </article>
+          <article class="source-card panel">
+            <h3>Nature-care rule</h3>
+            <p>Clean habitats, safe paths, careful water use, and gentle behavior teach children that Earth is a shared home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="storyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="modalTitle">Story Title</h2>
+        <button class="close-btn" id="closeModal" type="button" aria-label="Close story">×</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Al-Hayat Kids Learning Hub</h2>
+        <p>Colorful learning for children: stories, science facts, quizzes, worksheets, Islamic learning, and online classes.</p>
+      </div>
+      <div>
+        <h3>Reading</h3>
+        <a href="moral-stories.html">Moral Stories</a>
+        <a href="islamic-stories.html">Islamic Stories</a>
+        <a href="prophet-stories.html">Prophet Stories</a>
+        <a href="animal-stories.html">Animal Stories</a>
+      </div>
+      <div>
+        <h3>Subjects</h3>
+        <a href="../subjects/science.html">Science</a>
+        <a href="../subjects/general-knowledge.html">General Knowledge</a>
+        <a href="../subjects/english.html">English</a>
+      </div>
+      <div>
+        <h3>Activities</h3>
+        <a href="../activities/quizzes.html">Quizzes</a>
+        <a href="../activities/puzzles.html">Puzzles</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const STORIES = [{"title": "Ellie the Careful Elephant", "animal": "Elephant", "habitat": "Savanna", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐘", "fact": "Elephants are the largest land animals.", "story": "Ellie was a young elephant with a very long trunk. One sunny morning, she saw a little bird’s nest on a low branch. Ellie wanted to rush to the river, but she walked slowly and carefully so the branch would not shake. The birds stayed safe. Ellie learned that being big is not about pushing; it is about being gentle.", "lesson": "Use your strength to protect others, not to frighten them.", "words": ["gentle", "trunk", "protect"], "questions": ["Why did Ellie walk slowly?", "What did she protect?", "How can strong children be gentle?"], "activity": "Draw a big animal doing a gentle action."}, {"title": "Leo Shares the Shade", "animal": "Lion", "habitat": "Grassland", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🦁", "fact": "Lions are social cats that live in groups called prides.", "story": "Leo the lion cub found a cool patch of shade under a tree. He wanted to keep it all for himself, but his sister looked hot and tired. Leo moved over and made space. Soon three cubs were resting together. The shade did not become smaller when Leo shared it; the happiness became bigger.", "lesson": "Sharing comfort makes friendship stronger.", "words": ["shade", "pride", "share"], "questions": ["What did Leo find?", "Who needed shade?", "What can you share today?"], "activity": "Make a sharing chart with three things you can share."}, {"title": "Penny Penguin Takes Turns", "animal": "Penguin", "habitat": "Polar Coast", "group": "Bird", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐧", "fact": "Penguins are birds, but they cannot fly; they are excellent swimmers.", "story": "Penny Penguin loved sliding on the icy hill. She slid once, twice, and then wanted to slide again. A smaller penguin waited quietly. Penny remembered that games are more fun when everyone has a turn. She stepped aside and cheered for her friend. Waiting made Penny a kinder player.", "lesson": "Take turns so everyone can enjoy the game.", "words": ["penguin", "turn", "slide"], "questions": ["What game did Penny like?", "Who was waiting?", "Why are turns important?"], "activity": "Play a turn-taking game and say, “Your turn.”"}, {"title": "Buzzy Bee Finds Teamwork", "animal": "Bee", "habitat": "Garden", "group": "Insect", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐝", "fact": "Bees help pollinate many plants and live in organized colonies.", "story": "Buzzy Bee wanted to collect nectar alone and be the fastest bee in the garden. But the flowers were many, and Buzzy became tired. Then the worker bees made a plan: some searched, some carried, and some guided. Together they collected more nectar than one bee could alone. Buzzy learned that teamwork is not slow; it is smart.", "lesson": "A team can do more when everyone has a role.", "words": ["nectar", "pollinate", "colony"], "questions": ["Why did Buzzy get tired?", "How did the bees work together?", "What role can you play in a team?"], "activity": "Create a team plan for cleaning a classroom or room."}, {"title": "Tara Turtle Does Not Rush", "animal": "Turtle", "habitat": "Pond", "group": "Reptile", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐢", "fact": "Turtles have shells that help protect their bodies.", "story": "Tara Turtle moved slowly across the pond path. Rabbit teased her for being slow, but Tara did not become angry. She kept moving, step by step. By evening, Tara reached the sunny rock while Rabbit had become tired from rushing everywhere. Tara smiled because steady steps had taken her exactly where she needed to go.", "lesson": "Slow and steady effort can finish the task.", "words": ["turtle", "steady", "shell"], "questions": ["Who teased Tara?", "How did Tara respond?", "What task can you do step by step?"], "activity": "Write one big task and divide it into three small steps."}, {"title": "Rafi Rabbit Learns to Listen", "animal": "Rabbit", "habitat": "Meadow", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐇", "fact": "Rabbits have long ears that help them hear well.", "story": "Rafi Rabbit had long ears, but he did not always listen. When his mother said, “Stay near the burrow,” Rafi hopped too far. A loud sound scared him, and he rushed back. His mother hugged him and said, “Good ears are useful when we use them.” Rafi practiced listening with his ears and his heart.", "lesson": "Listening keeps us safe and shows respect.", "words": ["burrow", "listen", "safe"], "questions": ["What warning did Rafi hear?", "What happened when he went far?", "How can listening keep children safe?"], "activity": "Practice listening: repeat one instruction before doing it."}, {"title": "Ollie Owl Waits for Night", "animal": "Owl", "habitat": "Forest", "group": "Bird", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦉", "fact": "Many owls are active at night and have strong hearing.", "story": "Ollie Owl wanted to explore while the sun was still bright. His eyes felt uncomfortable, and the forest was noisy. His grandmother said, “Every creature has its best time.” Ollie waited until the moon rose. Then he could see and listen clearly. He learned that patience helps us use our abilities well.", "lesson": "Be patient and choose the right time for the right task.", "words": ["nocturnal", "moon", "patient"], "questions": ["When did Ollie explore best?", "Why did he wait?", "What is the right time for homework?"], "activity": "Make a daily routine wheel: study, play, rest, help."}, {"title": "Milo Monkey Returns the Mango", "animal": "Monkey", "habitat": "Rainforest", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐒", "fact": "Many monkeys are intelligent and live in social groups.", "story": "Milo Monkey found a mango basket near the village path. The mangoes smelled sweet, but the basket had a name tied to it. Milo carried it back to the old farmer. The farmer laughed kindly and gave Milo one mango as thanks. Milo learned that returned things taste sweeter than stolen things.", "lesson": "Honesty brings trust and a clean heart.", "words": ["mango", "basket", "honesty"], "questions": ["What did Milo find?", "Why did he return it?", "Why is honesty better than stealing?"], "activity": "Make a lost-and-found sign for your classroom."}, {"title": "Dina Dolphin Helps a Friend", "animal": "Dolphin", "habitat": "Ocean", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐬", "fact": "Dolphins are intelligent marine mammals and often communicate with sounds.", "story": "Dina Dolphin heard a young dolphin calling near the rocks. The water was rough, so Dina called two older dolphins. Together they guided the young one back to the group. Dina felt proud, not because she solved it alone, but because she asked for help at the right time.", "lesson": "Helping sometimes means calling trusted helpers.", "words": ["dolphin", "ocean", "guide"], "questions": ["Who was near the rocks?", "Why did Dina call others?", "When should children ask adults for help?"], "activity": "List three situations when you should ask a trusted adult."}, {"title": "Freddie Frog Cleans the Pond", "animal": "Frog", "habitat": "Wetland", "group": "Amphibian", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐸", "fact": "Amphibians such as frogs can live part of their lives in water and on land.", "story": "Freddie Frog loved his pond, but one morning he saw wrappers floating near the lily pads. He could not clean everything alone, so he called the pond animals. The duck pushed wrappers to the edge, the turtle guarded the small fish, and the children nearby picked up the litter safely. The pond sparkled again.", "lesson": "Caring for nature is everyone’s responsibility.", "words": ["pond", "amphibian", "litter"], "questions": ["What made the pond dirty?", "Who helped clean it?", "How can children protect nature safely?"], "activity": "Design a poster: Keep ponds, parks, and streets clean."}, {"title": "Zara Zebra’s Different Stripes", "animal": "Zebra", "habitat": "Savanna", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦓", "fact": "Zebras are known for their black-and-white stripes.", "story": "Zara Zebra worried that her stripes did not look exactly like her friend’s. Her mother smiled and said, “Every zebra has its own pattern.” Zara looked around and saw that no two friends were exactly the same. That day she stopped hiding and ran proudly with the herd.", "lesson": "Differences can be beautiful and special.", "words": ["stripe", "pattern", "different"], "questions": ["What worried Zara?", "What did her mother explain?", "What makes you special?"], "activity": "Draw a pattern that represents your personality."}, {"title": "Gigi Giraffe Sees Far", "animal": "Giraffe", "habitat": "Savanna", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦒", "fact": "Giraffes are very tall mammals with long necks.", "story": "Gigi Giraffe could see far across the grassland. One day she saw dark clouds and warned the smaller animals to move toward shelter. She did not boast about being tall. She used her height to help others prepare. The animals thanked her for looking ahead.", "lesson": "Use your special ability to help others.", "words": ["giraffe", "shelter", "ability"], "questions": ["What could Gigi see?", "How did she help?", "What ability can you use for good?"], "activity": "Write one talent you have and one way to use it kindly."}, {"title": "Sammy Squirrel Saves Wisely", "animal": "Squirrel", "habitat": "Woodland", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐿️", "fact": "Squirrels often store food such as nuts for later.", "story": "Sammy Squirrel found many nuts under the old oak tree. He wanted to eat them all at once, but winter was coming. He ate a few and stored the rest. When cold days arrived, Sammy had enough to share with a young squirrel who had forgotten to prepare.", "lesson": "Plan wisely and share when you can.", "words": ["squirrel", "store", "winter"], "questions": ["Why did Sammy save nuts?", "Who did he help later?", "What can children plan ahead for?"], "activity": "Make a weekly plan for homework, reading, and play."}, {"title": "Nora Nightingale Sings Kindly", "animal": "Nightingale", "habitat": "Forest", "group": "Bird", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐦", "fact": "Many birds use songs or calls to communicate.", "story": "Nora Nightingale had a beautiful song. At first, she sang loudly when the baby birds were sleeping. Then she noticed their tired eyes and changed to a soft song. The forest became peaceful. Nora learned that a gift becomes better when it is used with care.", "lesson": "Use your voice kindly and at the right time.", "words": ["song", "soft", "care"], "questions": ["What was Nora’s gift?", "Why did she sing softly?", "How can you use your voice kindly?"], "activity": "Practice three voices: whisper, classroom voice, playground voice."}, {"title": "Coco Cat Says Sorry", "animal": "Cat", "habitat": "Home", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐱", "fact": "Cats use whiskers, ears, tails, and sounds to communicate.", "story": "Coco Cat jumped onto the table and knocked over a cup of crayons. She wanted to run away, but the child looked sad. Coco rubbed gently against the child’s hand as if to say sorry. The child smiled and picked up the crayons. Coco learned that mistakes need repair.", "lesson": "When you make a mistake, say sorry and help fix it.", "words": ["cat", "sorry", "repair"], "questions": ["What did Coco knock over?", "How did she show sorry?", "How can children repair mistakes?"], "activity": "Practice saying: I am sorry. How can I help fix it?"}, {"title": "Dodo Dog Guards the Gate", "animal": "Dog", "habitat": "Home", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐶", "fact": "Dogs have a strong sense of smell and are often trained to help people.", "story": "Dodo Dog barked loudly at every sound. The family could not rest. His trainer taught him to listen first and bark only when needed. Dodo practiced every day. Soon he became a helpful guard, not a noisy one.", "lesson": "Good behavior means knowing when to speak and when to stay calm.", "words": ["guard", "listen", "calm"], "questions": ["What problem did Dodo have?", "What did he learn?", "When should children stay calm?"], "activity": "Make a calm-choice chart for noisy moments."}, {"title": "Fiona Fox Thinks First", "animal": "Fox", "habitat": "Woodland", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦊", "fact": "Foxes are adaptable mammals found in many habitats.", "story": "Fiona Fox found a shortcut through a farmer’s field. It looked easy, but she saw young plants growing there. Instead of trampling them, she chose the longer path around the fence. It took more time, but the plants stayed safe. Fiona learned that cleverness is not only finding shortcuts; it is choosing wisely.", "lesson": "Smart choices protect other people’s work.", "words": ["shortcut", "adaptable", "wise"], "questions": ["What shortcut did Fiona see?", "Why did she avoid it?", "How can shortcuts sometimes hurt others?"], "activity": "Write about one time when the right way was not the fastest way."}, {"title": "Benny Bear Controls His Temper", "animal": "Bear", "habitat": "Forest", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐻", "fact": "Bears are strong mammals, and different bear species live in different habitats.", "story": "Benny Bear was building a log tower when it fell. He raised his paw to smash the logs, but he stopped and breathed slowly. He counted five breaths, then rebuilt the tower with stronger support. Benny learned that anger can break things, but patience can build them again.", "lesson": "Control anger before it controls your actions.", "words": ["temper", "support", "patience"], "questions": ["Why did Benny become angry?", "How did he calm down?", "What can you do when anger rises?"], "activity": "Practice five slow breaths and name the feeling."}, {"title": "Cami Chameleon Blends In and Stands Out", "animal": "Chameleon", "habitat": "Forest", "group": "Reptile", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦎", "fact": "Chameleons are reptiles known for color changes and long sticky tongues.", "story": "Cami Chameleon could blend into leaves, bark, and flowers. At school in the forest, she copied everyone because she feared being different. One day the class needed an artist, and Cami painted the brightest leaf poster. She learned that blending in can be useful, but sharing your true colors can help the group.", "lesson": "Be confident enough to share your own talent.", "words": ["chameleon", "blend", "talent"], "questions": ["Why did Cami copy others?", "What talent did she share?", "When should you be brave to stand out?"], "activity": "Create a “true colors” drawing about your strengths."}, {"title": "Wally Whale Uses a Gentle Voice", "animal": "Whale", "habitat": "Ocean", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐋", "fact": "Whales are marine mammals; many communicate with sounds underwater.", "story": "Wally Whale had a deep voice that echoed through the sea. When he shouted, the little fish hid. His mother taught him to use softer calls near smaller creatures. Wally discovered that a powerful voice does not need to be harsh. The sea became friendlier when he spoke with care.", "lesson": "Speak with a voice that fits the place and people around you.", "words": ["whale", "echo", "communicate"], "questions": ["Why did fish hide?", "What did Wally learn?", "How can children use a gentle voice?"], "activity": "Practice turning a loud command into a polite request."}, {"title": "Tina Tiger Waits Her Turn", "animal": "Tiger", "habitat": "Forest", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐯", "fact": "Tigers are large cats with striped coats.", "story": "Tina Tiger wanted to drink first at the stream. She was strong and could push forward, but she saw deer, birds, and a porcupine already waiting. Tina stepped back and waited. The stream felt peaceful because everyone had space. Tina learned that patience is stronger than pushing.", "lesson": "Waiting your turn is a sign of respect.", "words": ["tiger", "stream", "patience"], "questions": ["Where did Tina want to drink?", "Who was waiting?", "Why is patience stronger than pushing?"], "activity": "Practice waiting quietly for your turn today."}, {"title": "Olive Octopus Solves the Puzzle", "animal": "Octopus", "habitat": "Ocean", "group": "Invertebrate", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🐙", "fact": "Octopuses are intelligent invertebrates with eight arms.", "story": "Olive Octopus found a shell stuck inside a narrow jar that had drifted into the reef. She pulled hard, but it did not move. Then she stopped, studied the shape, turned the jar, and gently slid the shell out. Olive learned that problem solving needs patience, observation, and trying a new method.", "lesson": "Think carefully before forcing a solution.", "words": ["octopus", "invertebrate", "solution"], "questions": ["What was stuck?", "Why did pulling not work?", "How did Olive solve the problem?"], "activity": "Solve a puzzle slowly and write the strategy you used."}, {"title": "Harper Hummingbird Saves Energy", "animal": "Hummingbird", "habitat": "Garden", "group": "Bird", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐦", "fact": "Hummingbirds are tiny birds known for fast wingbeats and feeding on nectar.", "story": "Harper Hummingbird flew from flower to flower without resting. She wanted to visit the whole garden in one morning. Soon her wings felt tired. An older hummingbird said, “Even fast wings need wise pauses.” Harper rested between flowers and finished the garden happily.", "lesson": "Energy lasts longer when work and rest are balanced.", "words": ["nectar", "energy", "balance"], "questions": ["Why did Harper get tired?", "What advice did she receive?", "How can children balance study and rest?"], "activity": "Make a study-rest schedule for one afternoon."}, {"title": "Cora Crab Walks Her Own Way", "animal": "Crab", "habitat": "Seashore", "group": "Crustacean", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦀", "fact": "Many crabs walk sideways and live near water.", "story": "Cora Crab walked sideways across the sand. Some gulls laughed and said, “Why not walk straight?” Cora smiled and kept going. Her sideways steps helped her move quickly into a safe rock pool. She learned that being different can be useful.", "lesson": "Do not be ashamed of the way you were made.", "words": ["crab", "sideways", "different"], "questions": ["How did Cora walk?", "Who laughed?", "Why was her way useful?"], "activity": "Name one difference that can be a strength."}, {"title": "Annie Ant Carries One Crumb", "animal": "Ant", "habitat": "Garden", "group": "Insect", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐜", "fact": "Ants often live in colonies and work together.", "story": "Annie Ant saw a crumb that looked too big. She pushed and pushed, but it barely moved. Then she called her ant friends. Each ant carried a tiny part, and soon the crumb was home. Annie learned that small helpers can do big things together.", "lesson": "Small efforts become powerful when we cooperate.", "words": ["ant", "crumb", "cooperate"], "questions": ["What did Annie find?", "Why did she need friends?", "What can a class do together?"], "activity": "Build a paper ant chain showing teamwork."}, {"title": "Polly Parrot Repeats Kind Words", "animal": "Parrot", "habitat": "Rainforest", "group": "Bird", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🦜", "fact": "Some parrots can imitate sounds and words.", "story": "Polly Parrot liked repeating everything she heard. One day she heard children arguing and copied their sharp words. Everyone became quiet. Then a child said, “Please,” “Thank you,” and “You are my friend.” Polly repeated those words instead. The room felt happy again.", "lesson": "Choose words that make hearts feel safe.", "words": ["parrot", "repeat", "kind"], "questions": ["What did Polly repeat first?", "Which words made the room happy?", "What words should you repeat often?"], "activity": "Make a good-words list for your room."}, {"title": "Kiki Kangaroo Keeps the Pouch Safe", "animal": "Kangaroo", "habitat": "Grassland", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦘", "fact": "Kangaroo mothers carry their young in a pouch.", "story": "Kiki Kangaroo loved hopping fast, but her little joey was resting in her pouch. She slowed down on rocky ground and chose a safer path. The joey stayed comfortable. Kiki learned that caring for someone younger sometimes means changing your own speed.", "lesson": "Responsible people think about those who depend on them.", "words": ["kangaroo", "pouch", "responsible"], "questions": ["Who was in Kiki’s pouch?", "Why did she slow down?", "Who depends on you for kindness?"], "activity": "Help a younger child with one safe task."}, {"title": "Rina Red Panda Keeps the Forest Tidy", "animal": "Red Panda", "habitat": "Mountain Forest", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐼", "fact": "Red pandas live in forests and are known for their reddish fur and long tails.", "story": "Rina Red Panda found snack wrappers near the bamboo. She knew litter could harm small animals, so she asked the forest rangers for help. Together they cleaned the path and placed a sign: “Take your litter home.” Rina learned that protecting a home begins with noticing what harms it.", "lesson": "Protect shared spaces by keeping them clean.", "words": ["red panda", "litter", "ranger"], "questions": ["What did Rina find?", "Who helped her?", "Why should habitats stay clean?"], "activity": "Create a clean-habitat poster."}, {"title": "Shiny Starfish Stays Humble", "animal": "Starfish", "habitat": "Ocean", "group": "Invertebrate", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "⭐", "fact": "Sea stars are marine animals; many have five arms.", "story": "Shiny Starfish loved her bright orange color. She wanted everyone to look only at her. Then a tiny shrimp cleaned the reef, a coral gave shelter, and fish carried seeds of life through the water. Shiny realized that the reef was beautiful because every creature had a role, not because one creature shone alone.", "lesson": "Humility helps us value everyone’s role.", "words": ["reef", "humility", "role"], "questions": ["Why did Shiny feel proud?", "What did she notice?", "How can we value others?"], "activity": "Write three roles people play in your classroom."}, {"title": "Maya Meerkat Keeps Watch", "animal": "Meerkat", "habitat": "Desert", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦫", "fact": "Meerkats live in groups and some keep watch while others search for food.", "story": "Maya Meerkat’s job was to watch while others searched for food. She became bored and wanted to play. Then she remembered that a watcher protects the whole group. She stood tall and stayed alert. When an eagle passed overhead, her warning helped everyone hide safely.", "lesson": "Responsibility matters even when the job feels boring.", "words": ["meerkat", "watch", "responsibility"], "questions": ["What was Maya’s job?", "Why was it important?", "What responsibility should you take seriously?"], "activity": "List one responsibility at home and one at school."}, {"title": "Arlo Arctic Fox Changes Wisely", "animal": "Arctic Fox", "habitat": "Arctic", "group": "Mammal", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦊", "fact": "Arctic foxes are adapted to cold environments.", "story": "Arlo Arctic Fox knew winter rules: stay warm, move carefully, and search wisely. When the season changed, he changed his habits too. He did not complain that the world was different. He adjusted with patience. Arlo learned that wise creatures notice change and respond thoughtfully.", "lesson": "Adapt to change with patience and good planning.", "words": ["arctic", "adapt", "planning"], "questions": ["What did Arlo notice?", "How did he adapt?", "How can students adapt to a new class or routine?"], "activity": "Write a plan for handling one new change in your life."}, {"title": "Sasha Shark Respects Space", "animal": "Shark", "habitat": "Ocean", "group": "Fish", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦈", "fact": "Sharks are fish, and many play important roles in ocean ecosystems.", "story": "Sasha Shark was curious about the reef fish and swam too close. The smaller fish scattered in fear. An old turtle explained, “Curiosity needs respect.” Sasha learned to watch from a safe distance. The reef fish slowly returned, and Sasha discovered that respect creates trust.", "lesson": "Respect other people’s space and boundaries.", "words": ["shark", "ecosystem", "boundary"], "questions": ["Why did the fish scatter?", "What did the turtle teach?", "What are personal boundaries?"], "activity": "Write three examples of respecting someone’s space."}, {"title": "Pippa Peacock Does Not Boast", "animal": "Peacock", "habitat": "Woodland", "group": "Bird", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦚", "fact": "Male peafowl are known for bright tail feathers.", "story": "Pippa Peacock admired her shining feathers and wanted everyone to clap. But when the garden gate broke, the quiet beaver fixed it while nobody noticed. Pippa thanked him and learned that beauty is nice, but useful kindness is better than showing off.", "lesson": "Do not boast; let good actions speak.", "words": ["peacock", "boast", "useful"], "questions": ["What did Pippa admire?", "Who helped quietly?", "Why is showing off not helpful?"], "activity": "Do one helpful deed without asking for praise."}, {"title": "Koala Lesson 1: Resting Wisely", "animal": "Koala", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐨", "fact": "Koalas are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young koala faces a simple problem about resting wisely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Rest is important when it helps us stay healthy.", "words": ["koala", "forest", "resting"], "questions": ["What problem did the koala face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a koala and write one sentence about rest is important when it helps us stay healthy."}, {"title": "Camel Lesson 2: Saving Energy", "animal": "Camel", "habitat": "Desert", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐪", "fact": "Camels are part of the mammal group and are connected to the desert habitat.", "story": "In this animal lesson, a young camel faces a simple problem about saving energy. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Prepare for difficult journeys with patience.", "words": ["camel", "desert", "saving"], "questions": ["What problem did the camel face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a camel and write one sentence about prepare for difficult journeys with patience."}, {"title": "Crocodile Lesson 3: Waiting Quietly", "animal": "Crocodile", "habitat": "River", "group": "Reptile", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐊", "fact": "Crocodiles are part of the reptile group and are connected to the river habitat.", "story": "In this animal lesson, a young crocodile faces a simple problem about waiting quietly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Patience is useful, but it must be used for good.", "words": ["crocodile", "river", "waiting"], "questions": ["What problem did the crocodile face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a crocodile and write one sentence about patience is useful, but it must be used for good."}, {"title": "Butterfly Lesson 4: Changing Slowly", "animal": "Butterfly", "habitat": "Garden", "group": "Insect", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦋", "fact": "Butterflys are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young butterfly faces a simple problem about changing slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Growth takes time and stages.", "words": ["butterfly", "garden", "changing"], "questions": ["What problem did the butterfly face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a butterfly and write one sentence about growth takes time and stages."}, {"title": "Horse Lesson 5: Helping With Work", "animal": "Horse", "habitat": "Farm", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐴", "fact": "Horses are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young horse faces a simple problem about helping with work. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use energy to serve and support others.", "words": ["horse", "farm", "helping"], "questions": ["What problem did the horse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a horse and write one sentence about use energy to serve and support others."}, {"title": "Duck Lesson 6: Following Safely", "animal": "Duck", "habitat": "Pond", "group": "Bird", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦆", "fact": "Ducks are part of the bird group and are connected to the pond habitat.", "story": "In this animal lesson, a young duck faces a simple problem about following safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay close to trusted guides.", "words": ["duck", "pond", "following"], "questions": ["What problem did the duck face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a duck and write one sentence about stay close to trusted guides."}, {"title": "Goat Lesson 7: Trying Again", "animal": "Goat", "habitat": "Farm", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐐", "fact": "Goats are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young goat faces a simple problem about trying again. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Keep trying after small mistakes.", "words": ["goat", "farm", "trying"], "questions": ["What problem did the goat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a goat and write one sentence about keep trying after small mistakes."}, {"title": "Sheep Lesson 8: Staying With The Flock", "animal": "Sheep", "habitat": "Farm", "group": "Mammal", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🐑", "fact": "Sheeps are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young sheep faces a simple problem about staying with the flock. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Good company keeps us safe.", "words": ["sheep", "farm", "staying"], "questions": ["What problem did the sheep face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a sheep and write one sentence about good company keeps us safe."}, {"title": "Mouse Lesson 9: Being Careful", "animal": "Mouse", "habitat": "Field", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐭", "fact": "Mouses are part of the mammal group and are connected to the field habitat.", "story": "In this animal lesson, a young mouse faces a simple problem about being careful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small people can make careful choices.", "words": ["mouse", "field", "being"], "questions": ["What problem did the mouse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a mouse and write one sentence about small people can make careful choices."}, {"title": "Hedgehog Lesson 10: Protecting Gently", "animal": "Hedgehog", "habitat": "Garden", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦔", "fact": "Hedgehogs are part of the mammal group and are connected to the garden habitat.", "story": "In this animal lesson, a young hedgehog faces a simple problem about protecting gently. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Protect yourself without hurting others.", "words": ["hedgehog", "garden", "protecting"], "questions": ["What problem did the hedgehog face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a hedgehog and write one sentence about protect yourself without hurting others."}, {"title": "Flamingo Lesson 11: Balancing", "animal": "Flamingo", "habitat": "Wetland", "group": "Bird", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦩", "fact": "Flamingos are part of the bird group and are connected to the wetland habitat.", "story": "In this animal lesson, a young flamingo faces a simple problem about balancing. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Balance work, rest, worship, and play.", "words": ["flamingo", "wetland", "balancing"], "questions": ["What problem did the flamingo face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a flamingo and write one sentence about balance work, rest, worship, and play."}, {"title": "Seahorse Lesson 12: Moving Slowly", "animal": "Seahorse", "habitat": "Ocean", "group": "Fish", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🌊", "fact": "Seahorses are part of the fish group and are connected to the ocean habitat.", "story": "In this animal lesson, a young seahorse faces a simple problem about moving slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Slow progress is still progress.", "words": ["seahorse", "ocean", "moving"], "questions": ["What problem did the seahorse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seahorse and write one sentence about slow progress is still progress."}, {"title": "Snail Lesson 13: Not Giving Up", "animal": "Snail", "habitat": "Garden", "group": "Mollusk", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐌", "fact": "Snails are part of the mollusk group and are connected to the garden habitat.", "story": "In this animal lesson, a young snail faces a simple problem about not giving up. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Persistence moves you forward.", "words": ["snail", "garden", "not"], "questions": ["What problem did the snail face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a snail and write one sentence about persistence moves you forward."}, {"title": "Ladybug Lesson 14: Being Helpful", "animal": "Ladybug", "habitat": "Garden", "group": "Insect", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐞", "fact": "Ladybugs are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young ladybug faces a simple problem about being helpful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small helpers can be very useful.", "words": ["ladybug", "garden", "being"], "questions": ["What problem did the ladybug face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a ladybug and write one sentence about small helpers can be very useful."}, {"title": "Bat Lesson 15: Using Senses", "animal": "Bat", "habitat": "Cave", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦇", "fact": "Bats are part of the mammal group and are connected to the cave habitat.", "story": "In this animal lesson, a young bat faces a simple problem about using senses. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use your abilities wisely.", "words": ["bat", "cave", "using"], "questions": ["What problem did the bat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a bat and write one sentence about use your abilities wisely."}, {"title": "Eagle Lesson 16: Seeing Clearly", "animal": "Eagle", "habitat": "Mountain", "group": "Bird", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦅", "fact": "Eagles are part of the bird group and are connected to the mountain habitat.", "story": "In this animal lesson, a young eagle faces a simple problem about seeing clearly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Look carefully before deciding.", "words": ["eagle", "mountain", "seeing"], "questions": ["What problem did the eagle face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a eagle and write one sentence about look carefully before deciding."}, {"title": "Wolf Lesson 17: Working In A Pack", "animal": "Wolf", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐺", "fact": "Wolfs are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young wolf faces a simple problem about working in a pack. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Teams need loyalty and rules.", "words": ["wolf", "forest", "working"], "questions": ["What problem did the wolf face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a wolf and write one sentence about teams need loyalty and rules."}, {"title": "Llama Lesson 18: Carrying Carefully", "animal": "Llama", "habitat": "Mountain", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦙", "fact": "Llamas are part of the mammal group and are connected to the mountain habitat.", "story": "In this animal lesson, a young llama faces a simple problem about carrying carefully. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Carry responsibilities without complaining.", "words": ["llama", "mountain", "carrying"], "questions": ["What problem did the llama face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a llama and write one sentence about carry responsibilities without complaining."}, {"title": "Seal Lesson 19: Playing Safely", "animal": "Seal", "habitat": "Coast", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦭", "fact": "Seals are part of the mammal group and are connected to the coast habitat.", "story": "In this animal lesson, a young seal faces a simple problem about playing safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Fun needs safe boundaries.", "words": ["seal", "coast", "playing"], "questions": ["What problem did the seal face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seal and write one sentence about fun needs safe boundaries."}, {"title": "Jellyfish Lesson 20: Floating Calmly", "animal": "Jellyfish", "habitat": "Ocean", "group": "Invertebrate", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🪼", "fact": "Jellyfishs are part of the invertebrate group and are connected to the ocean habitat.", "story": "In this animal lesson, a young jellyfish faces a simple problem about floating calmly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay calm when things move around you.", "words": ["jellyfish", "ocean", "floating"], "questions": ["What problem did the jellyfish face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a jellyfish and write one sentence about stay calm when things move around you."}, {"title": "Koala Lesson 21: Resting Wisely", "animal": "Koala", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐨", "fact": "Koalas are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young koala faces a simple problem about resting wisely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Rest is important when it helps us stay healthy.", "words": ["koala", "forest", "resting"], "questions": ["What problem did the koala face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a koala and write one sentence about rest is important when it helps us stay healthy."}, {"title": "Camel Lesson 22: Saving Energy", "animal": "Camel", "habitat": "Desert", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐪", "fact": "Camels are part of the mammal group and are connected to the desert habitat.", "story": "In this animal lesson, a young camel faces a simple problem about saving energy. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Prepare for difficult journeys with patience.", "words": ["camel", "desert", "saving"], "questions": ["What problem did the camel face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a camel and write one sentence about prepare for difficult journeys with patience."}, {"title": "Crocodile Lesson 23: Waiting Quietly", "animal": "Crocodile", "habitat": "River", "group": "Reptile", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐊", "fact": "Crocodiles are part of the reptile group and are connected to the river habitat.", "story": "In this animal lesson, a young crocodile faces a simple problem about waiting quietly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Patience is useful, but it must be used for good.", "words": ["crocodile", "river", "waiting"], "questions": ["What problem did the crocodile face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a crocodile and write one sentence about patience is useful, but it must be used for good."}, {"title": "Butterfly Lesson 24: Changing Slowly", "animal": "Butterfly", "habitat": "Garden", "group": "Insect", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦋", "fact": "Butterflys are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young butterfly faces a simple problem about changing slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Growth takes time and stages.", "words": ["butterfly", "garden", "changing"], "questions": ["What problem did the butterfly face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a butterfly and write one sentence about growth takes time and stages."}, {"title": "Horse Lesson 25: Helping With Work", "animal": "Horse", "habitat": "Farm", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐴", "fact": "Horses are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young horse faces a simple problem about helping with work. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use energy to serve and support others.", "words": ["horse", "farm", "helping"], "questions": ["What problem did the horse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a horse and write one sentence about use energy to serve and support others."}, {"title": "Duck Lesson 26: Following Safely", "animal": "Duck", "habitat": "Pond", "group": "Bird", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦆", "fact": "Ducks are part of the bird group and are connected to the pond habitat.", "story": "In this animal lesson, a young duck faces a simple problem about following safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay close to trusted guides.", "words": ["duck", "pond", "following"], "questions": ["What problem did the duck face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a duck and write one sentence about stay close to trusted guides."}, {"title": "Goat Lesson 27: Trying Again", "animal": "Goat", "habitat": "Farm", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐐", "fact": "Goats are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young goat faces a simple problem about trying again. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Keep trying after small mistakes.", "words": ["goat", "farm", "trying"], "questions": ["What problem did the goat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a goat and write one sentence about keep trying after small mistakes."}, {"title": "Sheep Lesson 28: Staying With The Flock", "animal": "Sheep", "habitat": "Farm", "group": "Mammal", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🐑", "fact": "Sheeps are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young sheep faces a simple problem about staying with the flock. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Good company keeps us safe.", "words": ["sheep", "farm", "staying"], "questions": ["What problem did the sheep face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a sheep and write one sentence about good company keeps us safe."}, {"title": "Mouse Lesson 29: Being Careful", "animal": "Mouse", "habitat": "Field", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐭", "fact": "Mouses are part of the mammal group and are connected to the field habitat.", "story": "In this animal lesson, a young mouse faces a simple problem about being careful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small people can make careful choices.", "words": ["mouse", "field", "being"], "questions": ["What problem did the mouse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a mouse and write one sentence about small people can make careful choices."}, {"title": "Hedgehog Lesson 30: Protecting Gently", "animal": "Hedgehog", "habitat": "Garden", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦔", "fact": "Hedgehogs are part of the mammal group and are connected to the garden habitat.", "story": "In this animal lesson, a young hedgehog faces a simple problem about protecting gently. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Protect yourself without hurting others.", "words": ["hedgehog", "garden", "protecting"], "questions": ["What problem did the hedgehog face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a hedgehog and write one sentence about protect yourself without hurting others."}, {"title": "Flamingo Lesson 31: Balancing", "animal": "Flamingo", "habitat": "Wetland", "group": "Bird", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦩", "fact": "Flamingos are part of the bird group and are connected to the wetland habitat.", "story": "In this animal lesson, a young flamingo faces a simple problem about balancing. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Balance work, rest, worship, and play.", "words": ["flamingo", "wetland", "balancing"], "questions": ["What problem did the flamingo face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a flamingo and write one sentence about balance work, rest, worship, and play."}, {"title": "Seahorse Lesson 32: Moving Slowly", "animal": "Seahorse", "habitat": "Ocean", "group": "Fish", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🌊", "fact": "Seahorses are part of the fish group and are connected to the ocean habitat.", "story": "In this animal lesson, a young seahorse faces a simple problem about moving slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Slow progress is still progress.", "words": ["seahorse", "ocean", "moving"], "questions": ["What problem did the seahorse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seahorse and write one sentence about slow progress is still progress."}, {"title": "Snail Lesson 33: Not Giving Up", "animal": "Snail", "habitat": "Garden", "group": "Mollusk", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐌", "fact": "Snails are part of the mollusk group and are connected to the garden habitat.", "story": "In this animal lesson, a young snail faces a simple problem about not giving up. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Persistence moves you forward.", "words": ["snail", "garden", "not"], "questions": ["What problem did the snail face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a snail and write one sentence about persistence moves you forward."}, {"title": "Ladybug Lesson 34: Being Helpful", "animal": "Ladybug", "habitat": "Garden", "group": "Insect", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐞", "fact": "Ladybugs are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young ladybug faces a simple problem about being helpful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small helpers can be very useful.", "words": ["ladybug", "garden", "being"], "questions": ["What problem did the ladybug face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a ladybug and write one sentence about small helpers can be very useful."}, {"title": "Bat Lesson 35: Using Senses", "animal": "Bat", "habitat": "Cave", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦇", "fact": "Bats are part of the mammal group and are connected to the cave habitat.", "story": "In this animal lesson, a young bat faces a simple problem about using senses. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use your abilities wisely.", "words": ["bat", "cave", "using"], "questions": ["What problem did the bat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a bat and write one sentence about use your abilities wisely."}, {"title": "Eagle Lesson 36: Seeing Clearly", "animal": "Eagle", "habitat": "Mountain", "group": "Bird", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦅", "fact": "Eagles are part of the bird group and are connected to the mountain habitat.", "story": "In this animal lesson, a young eagle faces a simple problem about seeing clearly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Look carefully before deciding.", "words": ["eagle", "mountain", "seeing"], "questions": ["What problem did the eagle face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a eagle and write one sentence about look carefully before deciding."}, {"title": "Wolf Lesson 37: Working In A Pack", "animal": "Wolf", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐺", "fact": "Wolfs are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young wolf faces a simple problem about working in a pack. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Teams need loyalty and rules.", "words": ["wolf", "forest", "working"], "questions": ["What problem did the wolf face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a wolf and write one sentence about teams need loyalty and rules."}, {"title": "Llama Lesson 38: Carrying Carefully", "animal": "Llama", "habitat": "Mountain", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦙", "fact": "Llamas are part of the mammal group and are connected to the mountain habitat.", "story": "In this animal lesson, a young llama faces a simple problem about carrying carefully. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Carry responsibilities without complaining.", "words": ["llama", "mountain", "carrying"], "questions": ["What problem did the llama face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a llama and write one sentence about carry responsibilities without complaining."}, {"title": "Seal Lesson 39: Playing Safely", "animal": "Seal", "habitat": "Coast", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦭", "fact": "Seals are part of the mammal group and are connected to the coast habitat.", "story": "In this animal lesson, a young seal faces a simple problem about playing safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Fun needs safe boundaries.", "words": ["seal", "coast", "playing"], "questions": ["What problem did the seal face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seal and write one sentence about fun needs safe boundaries."}, {"title": "Jellyfish Lesson 40: Floating Calmly", "animal": "Jellyfish", "habitat": "Ocean", "group": "Invertebrate", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🪼", "fact": "Jellyfishs are part of the invertebrate group and are connected to the ocean habitat.", "story": "In this animal lesson, a young jellyfish faces a simple problem about floating calmly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay calm when things move around you.", "words": ["jellyfish", "ocean", "floating"], "questions": ["What problem did the jellyfish face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a jellyfish and write one sentence about stay calm when things move around you."}, {"title": "Koala Lesson 41: Resting Wisely", "animal": "Koala", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐨", "fact": "Koalas are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young koala faces a simple problem about resting wisely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Rest is important when it helps us stay healthy.", "words": ["koala", "forest", "resting"], "questions": ["What problem did the koala face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a koala and write one sentence about rest is important when it helps us stay healthy."}, {"title": "Camel Lesson 42: Saving Energy", "animal": "Camel", "habitat": "Desert", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐪", "fact": "Camels are part of the mammal group and are connected to the desert habitat.", "story": "In this animal lesson, a young camel faces a simple problem about saving energy. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Prepare for difficult journeys with patience.", "words": ["camel", "desert", "saving"], "questions": ["What problem did the camel face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a camel and write one sentence about prepare for difficult journeys with patience."}, {"title": "Crocodile Lesson 43: Waiting Quietly", "animal": "Crocodile", "habitat": "River", "group": "Reptile", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐊", "fact": "Crocodiles are part of the reptile group and are connected to the river habitat.", "story": "In this animal lesson, a young crocodile faces a simple problem about waiting quietly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Patience is useful, but it must be used for good.", "words": ["crocodile", "river", "waiting"], "questions": ["What problem did the crocodile face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a crocodile and write one sentence about patience is useful, but it must be used for good."}, {"title": "Butterfly Lesson 44: Changing Slowly", "animal": "Butterfly", "habitat": "Garden", "group": "Insect", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦋", "fact": "Butterflys are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young butterfly faces a simple problem about changing slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Growth takes time and stages.", "words": ["butterfly", "garden", "changing"], "questions": ["What problem did the butterfly face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a butterfly and write one sentence about growth takes time and stages."}, {"title": "Horse Lesson 45: Helping With Work", "animal": "Horse", "habitat": "Farm", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐴", "fact": "Horses are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young horse faces a simple problem about helping with work. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use energy to serve and support others.", "words": ["horse", "farm", "helping"], "questions": ["What problem did the horse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a horse and write one sentence about use energy to serve and support others."}, {"title": "Duck Lesson 46: Following Safely", "animal": "Duck", "habitat": "Pond", "group": "Bird", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦆", "fact": "Ducks are part of the bird group and are connected to the pond habitat.", "story": "In this animal lesson, a young duck faces a simple problem about following safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay close to trusted guides.", "words": ["duck", "pond", "following"], "questions": ["What problem did the duck face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a duck and write one sentence about stay close to trusted guides."}, {"title": "Goat Lesson 47: Trying Again", "animal": "Goat", "habitat": "Farm", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🐐", "fact": "Goats are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young goat faces a simple problem about trying again. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Keep trying after small mistakes.", "words": ["goat", "farm", "trying"], "questions": ["What problem did the goat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a goat and write one sentence about keep trying after small mistakes."}, {"title": "Sheep Lesson 48: Staying With The Flock", "animal": "Sheep", "habitat": "Farm", "group": "Mammal", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🐑", "fact": "Sheeps are part of the mammal group and are connected to the farm habitat.", "story": "In this animal lesson, a young sheep faces a simple problem about staying with the flock. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Good company keeps us safe.", "words": ["sheep", "farm", "staying"], "questions": ["What problem did the sheep face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a sheep and write one sentence about good company keeps us safe."}, {"title": "Mouse Lesson 49: Being Careful", "animal": "Mouse", "habitat": "Field", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐭", "fact": "Mouses are part of the mammal group and are connected to the field habitat.", "story": "In this animal lesson, a young mouse faces a simple problem about being careful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small people can make careful choices.", "words": ["mouse", "field", "being"], "questions": ["What problem did the mouse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a mouse and write one sentence about small people can make careful choices."}, {"title": "Hedgehog Lesson 50: Protecting Gently", "animal": "Hedgehog", "habitat": "Garden", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦔", "fact": "Hedgehogs are part of the mammal group and are connected to the garden habitat.", "story": "In this animal lesson, a young hedgehog faces a simple problem about protecting gently. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Protect yourself without hurting others.", "words": ["hedgehog", "garden", "protecting"], "questions": ["What problem did the hedgehog face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a hedgehog and write one sentence about protect yourself without hurting others."}, {"title": "Flamingo Lesson 51: Balancing", "animal": "Flamingo", "habitat": "Wetland", "group": "Bird", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦩", "fact": "Flamingos are part of the bird group and are connected to the wetland habitat.", "story": "In this animal lesson, a young flamingo faces a simple problem about balancing. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Balance work, rest, worship, and play.", "words": ["flamingo", "wetland", "balancing"], "questions": ["What problem did the flamingo face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a flamingo and write one sentence about balance work, rest, worship, and play."}, {"title": "Seahorse Lesson 52: Moving Slowly", "animal": "Seahorse", "habitat": "Ocean", "group": "Fish", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🌊", "fact": "Seahorses are part of the fish group and are connected to the ocean habitat.", "story": "In this animal lesson, a young seahorse faces a simple problem about moving slowly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Slow progress is still progress.", "words": ["seahorse", "ocean", "moving"], "questions": ["What problem did the seahorse face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seahorse and write one sentence about slow progress is still progress."}, {"title": "Snail Lesson 53: Not Giving Up", "animal": "Snail", "habitat": "Garden", "group": "Mollusk", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐌", "fact": "Snails are part of the mollusk group and are connected to the garden habitat.", "story": "In this animal lesson, a young snail faces a simple problem about not giving up. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Persistence moves you forward.", "words": ["snail", "garden", "not"], "questions": ["What problem did the snail face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a snail and write one sentence about persistence moves you forward."}, {"title": "Ladybug Lesson 54: Being Helpful", "animal": "Ladybug", "habitat": "Garden", "group": "Insect", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🐞", "fact": "Ladybugs are part of the insect group and are connected to the garden habitat.", "story": "In this animal lesson, a young ladybug faces a simple problem about being helpful. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Small helpers can be very useful.", "words": ["ladybug", "garden", "being"], "questions": ["What problem did the ladybug face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a ladybug and write one sentence about small helpers can be very useful."}, {"title": "Bat Lesson 55: Using Senses", "animal": "Bat", "habitat": "Cave", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦇", "fact": "Bats are part of the mammal group and are connected to the cave habitat.", "story": "In this animal lesson, a young bat faces a simple problem about using senses. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Use your abilities wisely.", "words": ["bat", "cave", "using"], "questions": ["What problem did the bat face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a bat and write one sentence about use your abilities wisely."}, {"title": "Eagle Lesson 56: Seeing Clearly", "animal": "Eagle", "habitat": "Mountain", "group": "Bird", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🦅", "fact": "Eagles are part of the bird group and are connected to the mountain habitat.", "story": "In this animal lesson, a young eagle faces a simple problem about seeing clearly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Look carefully before deciding.", "words": ["eagle", "mountain", "seeing"], "questions": ["What problem did the eagle face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a eagle and write one sentence about look carefully before deciding."}, {"title": "Wolf Lesson 57: Working In A Pack", "animal": "Wolf", "habitat": "Forest", "group": "Mammal", "level": "Level 1", "age": "5–7", "minutes": 3, "emoji": "🐺", "fact": "Wolfs are part of the mammal group and are connected to the forest habitat.", "story": "In this animal lesson, a young wolf faces a simple problem about working in a pack. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Teams need loyalty and rules.", "words": ["wolf", "forest", "working"], "questions": ["What problem did the wolf face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a wolf and write one sentence about teams need loyalty and rules."}, {"title": "Llama Lesson 58: Carrying Carefully", "animal": "Llama", "habitat": "Mountain", "group": "Mammal", "level": "Level 2", "age": "7–9", "minutes": 4, "emoji": "🦙", "fact": "Llamas are part of the mammal group and are connected to the mountain habitat.", "story": "In this animal lesson, a young llama faces a simple problem about carrying carefully. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Carry responsibilities without complaining.", "words": ["llama", "mountain", "carrying"], "questions": ["What problem did the llama face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a llama and write one sentence about carry responsibilities without complaining."}, {"title": "Seal Lesson 59: Playing Safely", "animal": "Seal", "habitat": "Coast", "group": "Mammal", "level": "Level 3", "age": "9–11", "minutes": 5, "emoji": "🦭", "fact": "Seals are part of the mammal group and are connected to the coast habitat.", "story": "In this animal lesson, a young seal faces a simple problem about playing safely. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Fun needs safe boundaries.", "words": ["seal", "coast", "playing"], "questions": ["What problem did the seal face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a seal and write one sentence about fun needs safe boundaries."}, {"title": "Jellyfish Lesson 60: Floating Calmly", "animal": "Jellyfish", "habitat": "Ocean", "group": "Invertebrate", "level": "Level 4", "age": "10–12", "minutes": 6, "emoji": "🪼", "fact": "Jellyfishs are part of the invertebrate group and are connected to the ocean habitat.", "story": "In this animal lesson, a young jellyfish faces a simple problem about floating calmly. The animal pauses, notices what is happening, and chooses a better action. Children learn that animal stories can teach real-life habits such as kindness, patience, safety, responsibility, teamwork, and respect for nature.", "lesson": "Stay calm when things move around you.", "words": ["jellyfish", "ocean", "floating"], "questions": ["What problem did the jellyfish face?", "What better choice was made?", "How can children practice this lesson today?"], "activity": "Draw a jellyfish and write one sentence about stay calm when things move around you."}];
+
+    const grid = document.getElementById('storyGrid');
+    const searchInput = document.getElementById('searchInput');
+    const levelFilter = document.getElementById('levelFilter');
+    const habitatFilter = document.getElementById('habitatFilter');
+    const groupFilter = document.getElementById('groupFilter');
+    const resultCount = document.getElementById('resultCount');
+    const totalStories = document.getElementById('totalStories');
+    const modal = document.getElementById('storyModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const closeModal = document.getElementById('closeModal');
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const badgeBox = document.getElementById('badgeBox');
+    const missionBtn = document.getElementById('missionBtn');
+    const missionText = document.getElementById('missionText');
+    const soundToggle = document.getElementById('soundToggle');
+
+    let soundOn = true;
+    const storageKey = 'alhayat_animal_stories_done_v1';
+    let doneStories = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+    const missions = [
+      'Watch one bird or insect from a safe distance and describe what it does.',
+      'Draw one animal and label its habitat.',
+      'Pick up one safe piece of litter with adult permission.',
+      'Save water today because animals need clean water too.',
+      'Tell someone one new animal fact you learned.',
+      'Make a “Do not tease animals” safety poster.',
+      'Read one story and practice its moral before sunset.',
+      'Plant or water a plant with adult permission.',
+      'Use a gentle voice around animals and younger children.',
+      'List three ways to protect parks, ponds, or gardens.'
+    ];
+
+    const badges = [
+      [1, '🐾 First Story'],
+      [5, '📚 Animal Reader'],
+      [10, '🔬 Fact Finder'],
+      [20, '🌍 Habitat Explorer'],
+      [35, '💚 Nature Helper'],
+      [50, '🏆 Wildlife Learner'],
+      [70, '🌟 Story Champion'],
+      [90, '👑 Animal Scholar']
+    ];
+
+    function beep() {
+      if (!soundOn) return;
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = 680;
+        gain.gain.value = 0.05;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        setTimeout(() => {
+          osc.stop();
+          ctx.close();
+        }, 110);
+      } catch (e) {}
+    }
+
+    function speak(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 0.88;
+      utter.pitch = 1.04;
+      window.speechSynthesis.speak(utter);
+    }
+
+    function escapeHTML(str) {
+      return String(str).replace(/[&<>"']/g, function (m) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m];
+      });
+    }
+
+    function populateFilters() {
+      [...new Set(STORIES.map(s => s.habitat))].sort().forEach(habitat => {
+        const option = document.createElement('option');
+        option.value = habitat;
+        option.textContent = habitat;
+        habitatFilter.appendChild(option);
+      });
+      [...new Set(STORIES.map(s => s.group))].sort().forEach(group => {
+        const option = document.createElement('option');
+        option.value = group;
+        option.textContent = group;
+        groupFilter.appendChild(option);
+      });
+    }
+
+    function storyMatches(story) {
+      const q = searchInput.value.trim().toLowerCase();
+      const selectedLevel = levelFilter.value;
+      const selectedHabitat = habitatFilter.value;
+      const selectedGroup = groupFilter.value;
+      const haystack = [
+        story.title, story.animal, story.habitat, story.group, story.level, story.age,
+        story.fact, story.story, story.lesson, story.activity, ...(story.words || []), ...(story.questions || [])
+      ].join(' ').toLowerCase();
+
+      return (!q || haystack.includes(q)) &&
+             (selectedLevel === 'all' || story.level === selectedLevel) &&
+             (selectedHabitat === 'all' || story.habitat === selectedHabitat) &&
+             (selectedGroup === 'all' || story.group === selectedGroup);
+    }
+
+    function renderStories() {
+      const matches = STORIES.filter(storyMatches);
+      resultCount.textContent = `${matches.length} stories showing`;
+
+      grid.innerHTML = matches.map(story => {
+        const index = STORIES.indexOf(story);
+        const isDone = doneStories.includes(story.title);
+        return `
+          <article class="story-card panel">
+            <div class="story-top">
+              <div class="story-emoji" aria-hidden="true">${escapeHTML(story.emoji)}</div>
+              <div class="story-meta">
+                <span class="tag level">${escapeHTML(story.level)}</span>
+                <span class="tag habitat">${escapeHTML(story.habitat)}</span>
+                <span class="tag group">${escapeHTML(story.group)}</span>
+              </div>
+            </div>
+            <div class="story-body">
+              <h3>${escapeHTML(story.title)}</h3>
+              <div class="fact-line">Animal fact: ${escapeHTML(story.fact)} • ${escapeHTML(story.age)} • ${story.minutes} min</div>
+              <p class="story-text">${escapeHTML(story.story)}</p>
+              <div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(story.lesson)}</div>
+              <div class="card-actions">
+                <button class="mini-btn read" type="button" data-open="${index}">Read Full</button>
+                <button class="mini-btn listen" type="button" data-speak="${index}">🔊 Listen</button>
+                <button class="mini-btn done" type="button" data-done="${index}">${isDone ? '✓ Done' : 'Mark Done'}</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      if (!matches.length) {
+        grid.innerHTML = `<article class="panel" style="padding:24px;grid-column:1/-1;"><h3 style="color:var(--ink);font-size:1.4rem;">No stories found</h3><p>Try another search word, level, habitat, or animal group.</p></article>`;
+      }
+      attachCardEvents();
+    }
+
+    function attachCardEvents() {
+      document.querySelectorAll('[data-open]').forEach(btn => btn.addEventListener('click', () => openStory(Number(btn.dataset.open))));
+      document.querySelectorAll('[data-speak]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const s = STORIES[Number(btn.dataset.speak)];
+          beep();
+          speak(`${s.title}. Animal fact: ${s.fact}. ${s.story} Lesson: ${s.lesson} Activity: ${s.activity}`);
+        });
+      });
+      document.querySelectorAll('[data-done]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const s = STORIES[Number(btn.dataset.done)];
+          if (!doneStories.includes(s.title)) {
+            doneStories.push(s.title);
+            localStorage.setItem(storageKey, JSON.stringify(doneStories));
+            beep();
+            updateProgress();
+            renderStories();
+          }
+        });
+      });
+    }
+
+    function openStory(index) {
+      const s = STORIES[index];
+      modalTitle.textContent = `${s.emoji} ${s.title}`;
+      modalBody.innerHTML = `
+        <div class="story-meta" style="justify-content:flex-start;margin-bottom:10px;">
+          <span class="tag level">${escapeHTML(s.level)}</span>
+          <span class="tag habitat">${escapeHTML(s.habitat)}</span>
+          <span class="tag group">${escapeHTML(s.group)}</span>
+          <span class="tag">${escapeHTML(s.age)}</span>
+          <span class="tag">${s.minutes} min read</span>
+        </div>
+        <p class="fact-line"><strong>Animal fact:</strong> ${escapeHTML(s.fact)}</p>
+        <p class="modal-story">${escapeHTML(s.story)}</p>
+        <div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(s.lesson)}</div>
+        <div class="card-actions" style="margin:14px 0;">
+          <button class="mini-btn read" type="button" id="modalListen">🔊 Read Aloud</button>
+          <button class="mini-btn done" type="button" id="modalDone">✓ Mark Done</button>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-box">
+            <h4>New Words</h4>
+            <ul>${(s.words || []).map(v => `<li>${escapeHTML(v)}</li>`).join('')}</ul>
+          </div>
+          <div class="detail-box">
+            <h4>Think & Answer</h4>
+            <ul>${(s.questions || []).map(q => `<li>${escapeHTML(q)}</li>`).join('')}</ul>
+          </div>
+          <div class="detail-box">
+            <h4>Activity</h4>
+            <p>${escapeHTML(s.activity)}</p>
+          </div>
+        </div>
+      `;
+      modal.classList.add('open');
+      beep();
+
+      document.getElementById('modalListen').addEventListener('click', () => speak(`${s.title}. Animal fact: ${s.fact}. ${s.story} Lesson: ${s.lesson} Activity: ${s.activity}`));
+      document.getElementById('modalDone').addEventListener('click', () => {
+        if (!doneStories.includes(s.title)) {
+          doneStories.push(s.title);
+          localStorage.setItem(storageKey, JSON.stringify(doneStories));
+          updateProgress();
+          renderStories();
+          beep();
+        }
+      });
+    }
+
+    function updateProgress() {
+      const uniqueDone = [...new Set(doneStories)].filter(title => STORIES.some(s => s.title === title));
+      doneStories = uniqueDone;
+      localStorage.setItem(storageKey, JSON.stringify(doneStories));
+      const percent = Math.min(100, Math.round((doneStories.length / STORIES.length) * 100));
+      progressFill.style.width = `${percent}%`;
+      progressText.textContent = `${doneStories.length} of ${STORIES.length} stories completed (${percent}%).`;
+      badgeBox.innerHTML = badges.map(([need, label]) => {
+        const active = doneStories.length >= need;
+        return `<div class="badge ${active ? 'active' : ''}">${active ? label : '🔒 ' + need + ' stories'}</div>`;
+      }).join('');
+    }
+
+    function randomStory() {
+      const visible = STORIES.filter(storyMatches);
+      const pool = visible.length ? visible : STORIES;
+      openStory(STORIES.indexOf(pool[Math.floor(Math.random() * pool.length)]));
+    }
+
+    searchInput.addEventListener('input', renderStories);
+    levelFilter.addEventListener('change', renderStories);
+    habitatFilter.addEventListener('change', renderStories);
+    groupFilter.addEventListener('change', renderStories);
+    surpriseBtn.addEventListener('click', randomStory);
+
+    document.querySelectorAll('[data-habitat-jump]').forEach(card => {
+      card.addEventListener('click', () => {
+        const habitat = card.dataset.habitatJump;
+        habitatFilter.value = habitat;
+        document.getElementById('stories').scrollIntoView({ behavior: 'smooth' });
+        renderStories();
+      });
+    });
+
+    missionBtn.addEventListener('click', () => {
+      missionText.textContent = missions[Math.floor(Math.random() * missions.length)];
+      beep();
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('open');
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    });
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        modal.classList.remove('open');
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+    });
+
+    soundToggle.addEventListener('click', () => {
+      soundOn = !soundOn;
+      soundToggle.textContent = soundOn ? '🔊' : '🔇';
+      soundToggle.setAttribute('aria-label', soundOn ? 'Turn learning sounds off' : 'Turn learning sounds on');
+      if (soundOn) beep();
+    });
+
+    totalStories.textContent = STORIES.length;
+    populateFilters();
+    renderStories();
+    updateProgress();
+  </script>
+</body>
+</html>
