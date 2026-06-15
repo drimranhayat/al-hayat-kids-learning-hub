@@ -542,6 +542,323 @@
       .resource-band { border-radius:24px; }
       .footer-bottom { display:block; }
     }
+  
+/* =========================================================
+   FINAL DESKTOP VISIBILITY PATCH
+   Fixes 100% zoom layout:
+   - compact single-line brand area
+   - fully visible hero section
+   - right brand panel stays inside viewport
+   - desktop menu remains visible
+   - prevents horizontal clipping
+   ========================================================= */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.toprow {
+  min-height: 76px !important;
+  grid-template-columns: minmax(320px, 390px) minmax(360px, 1fr) auto !important;
+  gap: 18px !important;
+}
+
+.brand {
+  min-width: 320px !important;
+  max-width: 390px !important;
+}
+
+.brand-mark {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 18px !important;
+}
+
+.brand-text strong {
+  white-space: nowrap !important;
+  font-size: 1.18rem !important;
+  line-height: 1.08 !important;
+  padding-bottom: 1px !important;
+}
+
+.brand-text span {
+  white-space: nowrap !important;
+  font-size: .78rem !important;
+}
+
+.search-box input {
+  height: 46px !important;
+}
+
+.search-box button {
+  height: 46px !important;
+}
+
+.nav-actions {
+  gap: 8px !important;
+}
+
+.nav-actions a {
+  min-height: 40px !important;
+  padding: 0 13px !important;
+  font-size: .92rem !important;
+}
+
+.dropdown-nav-wrap {
+  top: 76px !important;
+}
+
+.dropdown-nav {
+  min-height: 50px !important;
+}
+
+.nav-link {
+  min-height: 50px !important;
+  padding: 0 9px !important;
+  font-size: .88rem !important;
+}
+
+.class-chip {
+  min-height: 40px !important;
+  padding: 0 12px !important;
+  font-size: .9rem !important;
+}
+
+.hero {
+  padding: 36px 0 36px !important;
+}
+
+.hero-copy {
+  grid-template-columns: minmax(0, .98fr) minmax(320px, .82fr) !important;
+  gap: 22px !important;
+  align-items: center !important;
+}
+
+.hero-copy > div:first-child {
+  min-width: 0 !important;
+}
+
+h1 {
+  font-size: clamp(2.65rem, 4.6vw, 5.15rem) !important;
+  line-height: 1.03 !important;
+  margin-bottom: 12px !important;
+  padding-bottom: 6px !important;
+}
+
+h1 span {
+  line-height: 1.16 !important;
+  padding-bottom: 8px !important;
+}
+
+.hero-lead {
+  font-size: clamp(1rem, 1.55vw, 1.15rem) !important;
+  max-width: 760px !important;
+  margin-bottom: 18px !important;
+}
+
+.hero-actions {
+  gap: 10px !important;
+}
+
+.btn {
+  min-height: 46px !important;
+  padding: 0 16px !important;
+}
+
+.stats {
+  margin-top: 18px !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.stat {
+  padding: 11px 10px !important;
+}
+
+.hero-visual {
+  min-height: 300px !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  justify-self: end !important;
+  border-radius: 30px !important;
+  padding: 14px !important;
+}
+
+.brand-showcase {
+  min-height: 270px !important;
+  grid-template-columns: 92px minmax(0, 1fr) !important;
+  padding: 16px !important;
+  gap: 14px !important;
+}
+
+.brand-badge-big {
+  width: 82px !important;
+  height: 82px !important;
+}
+
+.brand-showcase h2 {
+  font-size: 1.55rem !important;
+  line-height: 1.08 !important;
+}
+
+.brand-showcase p {
+  font-size: .92rem !important;
+  line-height: 1.5 !important;
+}
+
+.badge-points {
+  gap: 6px !important;
+  margin-top: 10px !important;
+}
+
+.badge-points span {
+  padding: 6px 9px !important;
+  font-size: .76rem !important;
+}
+
+.showcase-panel {
+  margin-top: 18px !important;
+}
+
+.showcase-top {
+  align-items: flex-start !important;
+}
+
+.showcase-top h2 {
+  font-size: clamp(1.75rem, 2.5vw, 2.6rem) !important;
+}
+
+.preview-frame {
+  height: 230px !important;
+}
+
+.preview-frame iframe {
+  width: 1280px !important;
+  height: 860px !important;
+  transform: scale(.265) !important;
+  transform-origin: top left !important;
+}
+
+/* Large laptops and standard 100% zoom screens */
+@media (max-width: 1400px) {
+  .toprow {
+    grid-template-columns: minmax(300px, 350px) minmax(320px, 1fr) auto !important;
+    gap: 14px !important;
+  }
+
+  .brand {
+    min-width: 300px !important;
+    max-width: 350px !important;
+  }
+
+  .brand-text strong {
+    font-size: 1.08rem !important;
+  }
+
+  .brand-text span {
+    font-size: .73rem !important;
+  }
+
+  .nav-actions a:not(.primary) {
+    display: none !important;
+  }
+
+  .hero-copy {
+    grid-template-columns: minmax(0, 1fr) 430px !important;
+  }
+
+  .hero-visual {
+    max-width: 430px !important;
+  }
+
+  h1 {
+    font-size: clamp(2.55rem, 4.2vw, 4.7rem) !important;
+  }
+
+  .brand-showcase {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+
+  .brand-badge-big {
+    width: 78px !important;
+    height: 78px !important;
+  }
+
+  .badge-points {
+    justify-content: center !important;
+  }
+}
+
+/* Tablets and narrower laptops */
+@media (max-width: 1120px) {
+  .toprow {
+    display: flex !important;
+    min-height: 70px !important;
+  }
+
+  .brand {
+    min-width: auto !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+  }
+
+  .brand-text strong,
+  .brand-text span {
+    white-space: normal !important;
+  }
+
+  .search-wrap {
+    display: none !important;
+  }
+
+  .dropdown-nav-wrap {
+    display: none !important;
+  }
+
+  .menu-btn {
+    display: inline-flex !important;
+  }
+
+  .hero-copy {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-visual {
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+}
+
+/* Phones */
+@media (max-width: 760px) {
+  .brand-text strong {
+    font-size: 1rem !important;
+    line-height: 1.16 !important;
+  }
+
+  .brand-mark {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  h1 {
+    font-size: clamp(2.65rem, 14vw, 3.45rem) !important;
+  }
+
+  .hero {
+    padding-top: 28px !important;
+  }
+
+  .brand-showcase {
+    grid-template-columns: 1fr !important;
+  }
+
+  .preview-frame iframe {
+    transform: scale(.245) !important;
+  }
+}
+
   </style>
 
   <script type="application/ld+json">
