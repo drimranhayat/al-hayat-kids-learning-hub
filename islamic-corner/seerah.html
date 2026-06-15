@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Seerah for Kids | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="A child-friendly Seerah learning page about Prophet Muhammad ﷺ with authentic source-aware lessons, timeline, values, questions, activities, read-aloud, filters, badges, and colorful Islamic UI." />
+  <meta name="keywords" content="Seerah for kids, Prophet Muhammad for children, Islamic studies for kids, Prophet stories, Islamic manners, Al-Hayat Kids Learning Hub" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/islamic-corner/seerah.html" />
+
+  <meta property="og:title" content="Seerah for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="Source-aware, child-friendly Seerah lessons with timeline, values, read-aloud, questions, activities, and progress badges." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/islamic-corner/seerah.html" />
+
+  <style>
+    :root {
+      --teal:#0f766e;
+      --teal-dark:#115e59;
+      --teal-soft:#ccfbf1;
+      --green:#16a34a;
+      --green-dark:#166534;
+      --green-soft:#dcfce7;
+      --emerald:#059669;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --blue-soft:#dbeafe;
+      --purple:#7c3aed;
+      --purple-soft:#ede9fe;
+      --gold:#d97706;
+      --gold-soft:#fef3c7;
+      --orange:#f97316;
+      --orange-soft:#ffedd5;
+      --rose:#e11d48;
+      --rose-soft:#ffe4e6;
+      --ink:#102033;
+      --text:#334155;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
+      --radius:24px;
+      --max:1220px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      line-height:1.65;
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(15,118,110,.15), transparent 28%),
+        radial-gradient(circle at 92% 14%, rgba(217,119,6,.15), transparent 32%),
+        radial-gradient(circle at 74% 88%, rgba(22,163,74,.13), transparent 30%),
+        linear-gradient(180deg,#f4fffb 0%,#ffffff 46%,#f8fbff 100%);
+    }
+    a { color:inherit; text-decoration:none; }
+    button,input,select { font:inherit; }
+    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
+    .skip-link { position:absolute; top:-100px; left:16px; z-index:9999; background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900; }
+    .skip-link:focus { top:16px; }
+
+    .topbar {
+      position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
+    }
+    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark {
+      width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto;
+      background:linear-gradient(135deg,var(--teal),var(--green)); color:white; font-size:1.8rem; box-shadow:var(--soft-shadow);
+    }
+    .brand-text strong { display:block; color:var(--teal-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em; }
+    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .nav-actions a,.sound-btn {
+      min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px;
+      border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900; cursor:pointer;
+    }
+    .nav-actions a.primary { background:linear-gradient(135deg,var(--teal),var(--teal-dark)); color:white; border-color:transparent; }
+
+    .mini-nav {
+      background:linear-gradient(90deg,#115e59,#0f766e,#16a34a,#d97706);
+      color:white; box-shadow:0 10px 22px rgba(15,118,110,.22);
+    }
+    .mini-nav-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
+    .mini-nav-inner::-webkit-scrollbar { display:none; }
+    .mini-nav a { white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px; border-radius:999px; font-weight:850; font-size:.92rem; }
+    .mini-nav a:hover,.mini-nav a:focus { background:rgba(255,255,255,.16); }
+
+    .hero { position:relative; overflow:hidden; padding:58px 0 36px; }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(254,243,199,.70) 0 48px, transparent 49px),
+        radial-gradient(circle at 87% 18%, rgba(15,118,110,.18) 0 74px, transparent 75px),
+        radial-gradient(circle at 78% 86%, rgba(22,163,74,.14) 0 95px, transparent 96px);
+      pointer-events:none;
+    }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1.02fr .98fr; gap:28px; align-items:center; }
+    .breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px; color:var(--muted); font-weight:850; font-size:.94rem; }
+    .breadcrumb a { color:var(--teal-dark); text-decoration:underline; text-underline-offset:5px; }
+    h1 {
+      color:var(--ink); font-size:clamp(2.65rem,6vw,5.8rem); line-height:.94; letter-spacing:-.07em;
+      font-weight:1000; margin-bottom:18px;
+    }
+    h1 span {
+      display:block; background:linear-gradient(90deg,var(--teal),var(--green),var(--gold),var(--blue));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-lead { max-width:730px; font-size:clamp(1.02rem,2vw,1.24rem); color:#27415e; font-weight:650; margin-bottom:20px; }
+    .hero-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:830px; margin:24px 0; }
+    .stat { background:white; border:1px solid var(--line); border-radius:18px; padding:14px 12px; box-shadow:var(--soft-shadow); text-align:center; }
+    .stat strong { display:block; color:var(--teal-dark); font-size:1.35rem; line-height:1; font-weight:1000; }
+    .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:800; margin-top:4px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow); transition:.2s ease; }
+    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
+    .btn-teal { background:linear-gradient(135deg,var(--teal),var(--teal-dark)); color:white; }
+    .btn-green { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; }
+    .btn-gold { background:linear-gradient(135deg,var(--gold),#92400e); color:white; }
+    .btn-blue { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; }
+    .btn-white { background:white; color:var(--ink); border:1px solid var(--line); }
+
+    .hero-visual {
+      position:relative; min-height:430px; border-radius:36px; overflow:hidden; padding:24px;
+      background:
+        radial-gradient(circle at 45% 16%, rgba(255,255,255,.82) 0 58px, transparent 59px),
+        linear-gradient(135deg,#ccfbf1,#dcfce7 52%,#fef3c7);
+      box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.82);
+      display:grid; place-items:center;
+    }
+    .moon { position:absolute; right:42px; top:36px; width:90px; height:90px; border-radius:50%; background:#fde68a; box-shadow:0 0 0 16px rgba(253,230,138,.28); }
+    .moon::after { content:""; position:absolute; width:70px; height:70px; border-radius:50%; background:#dcfce7; right:-4px; top:0; }
+    .kaaba-scene { width:min(430px,100%); height:320px; position:relative; display:grid; place-items:end center; }
+    .kaaba {
+      width:190px; height:165px; background:#111827; border-radius:18px 18px 10px 10px; position:relative;
+      box-shadow:0 24px 45px rgba(15,23,42,.22); z-index:2;
+    }
+    .kaaba::before { content:""; position:absolute; left:0; right:0; top:48px; height:24px; background:linear-gradient(90deg,#b45309,#fcd34d,#b45309); }
+    .kaaba::after { content:""; position:absolute; width:46px; height:70px; left:72px; bottom:0; border-radius:10px 10px 0 0; background:#1f2937; border:3px solid #f59e0b; }
+    .dome { position:absolute; bottom:135px; left:72px; width:95px; height:55px; background:var(--teal); border-radius:80px 80px 8px 8px; box-shadow:var(--soft-shadow); }
+    .minaret { position:absolute; bottom:74px; right:82px; width:34px; height:170px; border-radius:999px 999px 12px 12px; background:#f8fafc; border:1px solid #cbd5e1; box-shadow:var(--soft-shadow); }
+    .minaret::before { content:""; position:absolute; top:-22px; left:50%; transform:translateX(-50%); width:48px; height:30px; border-radius:50% 50% 4px 4px; background:var(--gold); }
+    .star { position:absolute; font-size:2rem; animation:float 5.5s ease-in-out infinite; filter:drop-shadow(0 8px 8px rgba(15,23,42,.12)); }
+    .s1 { left:12%; top:18%; } .s2 { right:12%; bottom:26%; animation-delay:.5s; } .s3 { left:22%; bottom:18%; animation-delay:1s; }
+    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-12px) rotate(3deg); } }
+
+    .panel { background:white; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--soft-shadow); }
+    .toolbar-section { padding:22px 0; }
+    .toolbar { padding:18px; display:grid; grid-template-columns:1.2fr repeat(3,.7fr) auto; gap:12px; align-items:center; position:sticky; top:124px; z-index:80; }
+    .field input,.field select { width:100%; min-height:48px; border:1px solid #cbd5e1; border-radius:16px; padding:0 14px; outline:0; color:var(--ink); background:#fbfdff; font-weight:750; }
+    .field input:focus,.field select:focus { border-color:var(--teal); box-shadow:0 0 0 4px rgba(15,118,110,.14); }
+
+    .section { padding:34px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
+    .section-title small { color:var(--gold); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
+    .section-title h2 { color:var(--ink); font-size:clamp(1.8rem,3vw,3rem); line-height:1.05; letter-spacing:-.05em; margin-top:4px; font-weight:1000; }
+    .section-title p { max-width:850px; color:var(--muted); font-weight:650; margin-top:8px; }
+    .pill { display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px; background:var(--teal-soft); color:var(--teal-dark); font-weight:1000; font-size:.84rem; }
+
+    .timeline { display:grid; grid-template-columns:repeat(6,1fr); gap:14px; }
+    .time-card { padding:18px; min-height:160px; position:relative; overflow:hidden; cursor:pointer; transition:.2s ease; }
+    .time-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .time-card .icon { font-size:2.3rem; }
+    .time-card h3 { color:var(--ink); font-size:1.06rem; font-weight:1000; margin:8px 0 4px; }
+    .time-card p { color:#475569; font-weight:650; font-size:.88rem; }
+    .time-card:nth-child(1){background:linear-gradient(135deg,#fff,#fef3c7);}
+    .time-card:nth-child(2){background:linear-gradient(135deg,#fff,#ccfbf1);}
+    .time-card:nth-child(3){background:linear-gradient(135deg,#fff,#dcfce7);}
+    .time-card:nth-child(4){background:linear-gradient(135deg,#fff,#dbeafe);}
+    .time-card:nth-child(5){background:linear-gradient(135deg,#fff,#ede9fe);}
+    .time-card:nth-child(6){background:linear-gradient(135deg,#fff,#ffe4e6);}
+
+    .value-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .value-card { padding:18px; min-height:182px; overflow:hidden; position:relative; }
+    .value-card .big { font-size:2.5rem; }
+    .value-card h3 { color:var(--ink); font-size:1.1rem; font-weight:1000; margin:8px 0; }
+    .value-card p { color:#475569; font-weight:650; font-size:.92rem; }
+
+    .card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .seerah-card { position:relative; overflow:hidden; min-height:392px; display:flex; flex-direction:column; transition:.2s ease; }
+    .seerah-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .card-top { padding:18px 18px 12px; display:flex; align-items:flex-start; justify-content:space-between; gap:10px; background:linear-gradient(135deg,#ffffff,#f8fafc); }
+    .card-emoji { width:58px; height:58px; display:grid; place-items:center; border-radius:18px; font-size:2.05rem; background:var(--gold-soft); box-shadow:var(--soft-shadow); flex:0 0 auto; }
+    .card-meta { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+    .tag { min-height:26px; padding:0 9px; display:inline-flex; align-items:center; border-radius:999px; background:#f1f5f9; color:#334155; font-size:.75rem; font-weight:1000; }
+    .tag.level { background:var(--blue-soft); color:var(--blue-dark); }
+    .tag.phase { background:var(--teal-soft); color:var(--teal-dark); }
+    .tag.theme { background:var(--green-soft); color:var(--green-dark); }
+    .card-body { padding:0 18px 16px; flex:1; display:flex; flex-direction:column; }
+    .card-body h3 { color:var(--ink); line-height:1.12; letter-spacing:-.03em; font-size:1.22rem; margin:8px 0; font-weight:1000; }
+    .summary { color:#35465f; font-weight:650; font-size:.94rem; display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; overflow:hidden; }
+    .lesson-box { margin:12px 0; padding:12px; border-radius:16px; background:linear-gradient(135deg,var(--gold-soft),#fff); border:1px solid #fde68a; color:#713f12; font-weight:850; font-size:.9rem; }
+    .reference { color:var(--teal-dark); font-size:.82rem; font-weight:850; margin-bottom:10px; }
+    .card-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
+    .mini-btn { min-height:36px; border-radius:12px; border:1px solid var(--line); background:white; color:var(--ink); padding:0 10px; font-weight:950; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
+    .mini-btn.open { background:linear-gradient(135deg,var(--teal),var(--teal-dark)); color:white; border-color:transparent; }
+    .mini-btn.listen { background:var(--purple-soft); color:var(--purple); border-color:#ddd6fe; }
+    .mini-btn.done { background:var(--green-soft); color:var(--green-dark); border-color:#bbf7d0; }
+
+    .progress-wrap { display:grid; grid-template-columns:1fr 330px; gap:18px; align-items:start; }
+    .progress-card,.mission-card { padding:22px; }
+    .progress-bar { height:18px; border-radius:999px; background:#e2e8f0; overflow:hidden; margin:12px 0; }
+    .progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--teal),var(--green),var(--gold)); transition:.4s ease; }
+    .badges { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:12px; }
+    .badge { min-height:68px; border-radius:16px; background:#f8fafc; border:1px dashed #cbd5e1; display:grid; place-items:center; text-align:center; padding:8px; color:#94a3b8; font-weight:1000; font-size:.8rem; }
+    .badge.active { background:var(--gold-soft); color:#854d0e; border-color:#fcd34d; box-shadow:var(--soft-shadow); }
+    .mission-card { background:linear-gradient(135deg,#ecfdf5,#fff); position:relative; overflow:hidden; }
+    .mission-card::after { content:"ﷺ"; position:absolute; right:12px; bottom:-12px; font-size:6rem; opacity:.12; color:var(--teal-dark); font-family:serif; }
+    .mission-text { color:var(--ink); font-size:1.05rem; font-weight:850; margin:12px 0; position:relative; z-index:2; }
+
+    .source-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .source-card { padding:18px; background:#f8fafc; }
+    .source-card h3 { color:var(--ink); font-size:1.12rem; font-weight:1000; margin-bottom:8px; }
+    .source-card p,.source-card li { color:#475569; font-weight:650; }
+    .source-card ul { padding-left:20px; }
+    .source-card a { color:var(--teal-dark); font-weight:1000; text-decoration:underline; text-underline-offset:4px; }
+
+    .modal { position:fixed; inset:0; background:rgba(15,23,42,.62); z-index:1000; display:none; align-items:center; justify-content:center; padding:18px; }
+    .modal.open { display:flex; }
+    .modal-card { width:min(920px,100%); max-height:88vh; overflow:auto; background:white; border-radius:28px; box-shadow:0 30px 70px rgba(0,0,0,.28); border:1px solid rgba(255,255,255,.75); }
+    .modal-head { position:sticky; top:0; z-index:2; background:white; border-bottom:1px solid var(--line); padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .modal-head h2 { color:var(--ink); font-size:1.45rem; font-weight:1000; letter-spacing:-.03em; }
+    .close-btn { width:42px; height:42px; border-radius:50%; border:0; background:#f1f5f9; color:var(--ink); cursor:pointer; font-size:1.2rem; font-weight:1000; }
+    .modal-body { padding:20px; }
+    .modal-summary { color:#263b55; font-size:1.08rem; font-weight:650; margin:10px 0 16px; }
+    .detail-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:16px; }
+    .detail-box { padding:14px; border-radius:18px; background:#f8fafc; border:1px solid var(--line); }
+    .detail-box h4 { color:var(--teal-dark); font-weight:1000; margin-bottom:8px; }
+    .detail-box ul { padding-left:18px; color:#475569; font-weight:650; }
+
+    .footer { margin-top:34px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:22px; }
+    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
+    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
+    .back-top { position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--teal); color:white; box-shadow:var(--shadow); font-weight:1000; }
+
+    @media (max-width:1100px) {
+      .hero-grid,.progress-wrap { grid-template-columns:1fr; }
+      .toolbar { position:static; grid-template-columns:1fr 1fr; }
+      .timeline { grid-template-columns:repeat(3,1fr); }
+      .value-grid,.source-grid { grid-template-columns:repeat(2,1fr); }
+      .card-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:680px) {
+      .container { width:min(100% - 24px,var(--max)); }
+      .toprow { min-height:70px; }
+      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-text strong { font-size:1.02rem; }
+      .brand-text span { font-size:.73rem; }
+      .nav-actions a { display:none; }
+      .hero { padding-top:36px; }
+      h1 { font-size:3rem; }
+      .hero-stats { grid-template-columns:repeat(2,1fr); }
+      .hero-visual { min-height:320px; border-radius:24px; }
+      .kaaba-scene { transform:scale(.78); }
+      .toolbar,.timeline,.value-grid,.card-grid,.badges,.source-grid,.detail-grid,.footer-grid { grid-template-columns:1fr; }
+      .section-head { display:block; }
+      .section-head .pill { margin-top:10px; }
+      .btn { width:100%; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Seerah for Kids",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/islamic-corner/seerah.html",
+    "isPartOf":{"@type":"WebSite","name":"Al-Hayat Kids Learning Hub","url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"},
+    "about":["Seerah","Prophet Muhammad","Islamic studies for kids","Islamic manners","Prophetic character"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" id="top">
+    <div class="container toprow">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true">🌙</span>
+        <span class="brand-text">
+          <strong>Al-Hayat Kids Learning Hub</strong>
+          <span>Seerah • character • mercy • guidance</span>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="Quick links">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Islamic Corner</a>
+        <a href="good-manners.html">Good Manners</a>
+        <a class="primary" href="daily-duas.html">Daily Duas</a>
+      </nav>
+      <button class="sound-btn" id="soundToggle" type="button" aria-label="Toggle learning sounds">🔊</button>
+    </div>
+  </header>
+
+  <nav class="mini-nav" aria-label="Page navigation">
+    <div class="container mini-nav-inner">
+      <a href="../index.html">🏠 Home</a>
+      <a href="index.html">🕌 Islamic Corner</a>
+      <a href="good-manners.html">🌸 Good Manners</a>
+      <a href="daily-duas.html">🤲 Daily Duas</a>
+      <a href="seerah.html">🌙 Seerah</a>
+      <a href="prophets.html">⭐ Prophets</a>
+      <a href="asma-ul-husna.html">💚 Asma ul Husna</a>
+      <a href="../reading-library/prophet-stories.html">📖 Prophet Stories</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>›</span>
+            <a href="index.html">Islamic Corner</a> <span>›</span>
+            <span>Seerah</span>
+          </div>
+          <h1 id="page-title">Seerah for Kids <span>Prophet Muhammad ﷺ</span></h1>
+          <p class="hero-lead">
+            A child-friendly, source-aware Seerah page that teaches the life, character, mercy, patience,
+            truthfulness, worship, family manners, and community leadership of Prophet Muhammad ﷺ through
+            short lessons, questions, activities, timeline cards, read-aloud support, and progress badges.
+          </p>
+
+          <div class="hero-stats" aria-label="Seerah library summary">
+            <div class="stat"><strong id="totalCards">0</strong><span>Seerah Cards</span></div>
+            <div class="stat"><strong>6</strong><span>Life Phases</span></div>
+            <div class="stat"><strong>25+</strong><span>Character Values</span></div>
+            <div class="stat"><strong>250+</strong><span>Questions & Tasks</span></div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-teal" href="#cards">Start Learning 🚀</a>
+            <a class="btn btn-green" href="#timeline">Open Timeline 🧭</a>
+            <a class="btn btn-gold" href="#sources">Source Note 📚</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="moon"></div>
+          <span class="star s1">✦</span>
+          <span class="star s2">✧</span>
+          <span class="star s3">✦</span>
+          <div class="kaaba-scene">
+            <div class="dome"></div>
+            <div class="minaret"></div>
+            <div class="kaaba"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar-section" aria-label="Seerah search and filters">
+      <div class="container">
+        <div class="toolbar panel">
+          <div class="field"><input id="searchInput" type="search" placeholder="Search Seerah value, phase, event, reference..." aria-label="Search Seerah cards" /></div>
+          <div class="field"><select id="phaseFilter" aria-label="Filter by phase"><option value="all">All Phases</option></select></div>
+          <div class="field"><select id="themeFilter" aria-label="Filter by theme"><option value="all">All Themes</option></select></div>
+          <div class="field"><select id="levelFilter" aria-label="Filter by level"><option value="all">All Levels</option><option value="Level 1">Level 1</option><option value="Level 2">Level 2</option><option value="Level 3">Level 3</option><option value="Level 4">Level 4</option></select></div>
+          <button class="btn btn-blue" type="button" id="randomBtn">Surprise Lesson 🎲</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Seerah Journey Map</small>
+            <h2 id="timeline-title">Learn the life journey in order</h2>
+            <p>This timeline keeps children focused on the main sequence without unsupported details or confusing exaggeration.</p>
+          </div>
+          <span class="pill">Early Life → Revelation → Makkah → Hijrah → Madinah → Farewell</span>
+        </div>
+
+        <div class="timeline">
+          <article class="time-card panel" data-phase-jump="Early Life"><div class="icon">🌱</div><h3>Early Life</h3><p>Family, trustworthiness, wisdom, work, and noble character before prophethood.</p></article>
+          <article class="time-card panel" data-phase-jump="Before Revelation"><div class="icon">🏔️</div><h3>Before Revelation</h3><p>Reflection, worship, and turning away from wrong practices.</p></article>
+          <article class="time-card panel" data-phase-jump="Makkah"><div class="icon">🕋</div><h3>Makkah</h3><p>First revelation, Tawḥīd, patience, early Muslims, mercy, and trials.</p></article>
+          <article class="time-card panel" data-phase-jump="Hijrah"><div class="icon">🗺️</div><h3>Hijrah</h3><p>Trust in Allah, wise planning, safety, and migration to Madinah.</p></article>
+          <article class="time-card panel" data-phase-jump="Madinah"><div class="icon">🌴</div><h3>Madinah</h3><p>Masjid, brotherhood, community, learning, worship, and justice.</p></article>
+          <article class="time-card panel" data-phase-jump="Farewell"><div class="icon">🌅</div><h3>Farewell</h3><p>Final guidance, rights, dignity, gratitude, and following the Prophet ﷺ.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Character Outcomes</small>
+            <h2 id="values-title">What children should learn from Seerah</h2>
+            <p>The purpose is not only memorizing incidents. The aim is to build love, manners, worship, responsibility, and daily practice.</p>
+          </div>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card panel"><div class="big">💬</div><h3>Truthful Speech</h3><p>Speak truth, avoid fake stories, and use gentle words.</p></article>
+          <article class="value-card panel"><div class="big">💚</div><h3>Mercy</h3><p>Care for children, elders, animals, neighbors, and the weak.</p></article>
+          <article class="value-card panel"><div class="big">⛰️</div><h3>Patience</h3><p>Stay firm on good actions even when life is difficult.</p></article>
+          <article class="value-card panel"><div class="big">⚖️</div><h3>Justice</h3><p>Respect rights, duties, promises, and fair treatment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cards" aria-labelledby="cards-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Interactive Seerah Card Library</small>
+            <h2 id="cards-title">Open a lesson and practice the value</h2>
+            <p>Each card includes a child-friendly summary, source note, lesson, questions, vocabulary, and a real-life activity.</p>
+          </div>
+          <span class="pill" id="resultCount">0 cards showing</span>
+        </div>
+
+        <div class="card-grid" id="cardGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="progress" aria-labelledby="progress-title">
+      <div class="container progress-wrap">
+        <article class="progress-card panel">
+          <div class="section-title">
+            <small>Seerah Progress</small>
+            <h2 id="progress-title">Track completed lessons</h2>
+            <p>Click “Done” after learning a card and practicing its activity. Progress is saved on this device.</p>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <p><strong id="progressText">0 cards completed.</strong></p>
+          <div class="badges" id="badgeBox"></div>
+        </article>
+
+        <article class="mission-card panel">
+          <div class="section-title">
+            <small>Daily Seerah Mission</small>
+            <h2>Practice one Prophetic value</h2>
+          </div>
+          <p class="mission-text" id="missionText">Click the button to get today’s Seerah practice mission.</p>
+          <button class="btn btn-gold" id="missionBtn" type="button">Give Me a Mission 🌙</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Authenticity Note</small>
+            <h2 id="sources-title">Source-aware, child-friendly, and careful</h2>
+            <p>This page avoids invented stories and exaggerated details. It summarizes widely taught Seerah themes and marks Qur’an references where appropriate.</p>
+          </div>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card panel">
+            <h3>Qur’an references used</h3>
+            <ul>
+              <li><a href="https://quran.com/33/21" target="_blank" rel="noopener">Qur’an 33:21 — excellent example</a></li>
+              <li><a href="https://quran.com/68/4" target="_blank" rel="noopener">Qur’an 68:4 — noble character</a></li>
+              <li><a href="https://quran.com/21/107" target="_blank" rel="noopener">Qur’an 21:107 — mercy</a></li>
+              <li><a href="https://quran.com/96/1-5" target="_blank" rel="noopener">Qur’an 96:1–5 — first revelation</a></li>
+              <li><a href="https://quran.com/9/40" target="_blank" rel="noopener">Qur’an 9:40 — cave during Hijrah</a></li>
+            </ul>
+          </article>
+          <article class="source-card panel">
+            <h3>Teaching caution</h3>
+            <p>For classroom teaching, parents and teachers should use reliable Seerah books and authentic hadith collections. This page is a simplified children’s learning aid, not a replacement for scholarship.</p>
+          </article>
+          <article class="source-card panel">
+            <h3>No fabrication rule</h3>
+            <p>Children should learn that loving the Prophet ﷺ includes honesty: do not invent stories, fake miracles, exact conversations, or unsupported details.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="seerahModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="modalTitle">Seerah Lesson</h2>
+        <button class="close-btn" id="closeModal" type="button" aria-label="Close lesson">×</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Al-Hayat Kids Learning Hub</h2>
+        <p>Colorful Islamic and academic learning for children: Seerah, duas, manners, stories, activities, worksheets, and online classes.</p>
+      </div>
+      <div>
+        <h3>Islamic Corner</h3>
+        <a href="good-manners.html">Good Manners</a>
+        <a href="daily-duas.html">Daily Duas</a>
+        <a href="seerah.html">Seerah</a>
+        <a href="asma-ul-husna.html">Asma ul Husna</a>
+      </div>
+      <div>
+        <h3>Reading</h3>
+        <a href="../reading-library/islamic-stories.html">Islamic Stories</a>
+        <a href="../reading-library/prophet-stories.html">Prophet Stories</a>
+        <a href="../reading-library/moral-stories.html">Moral Stories</a>
+      </div>
+      <div>
+        <h3>Activities</h3>
+        <a href="../activities/quizzes.html">Quizzes</a>
+        <a href="../activities/puzzles.html">Puzzles</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const SEERAH_CARDS = [{"title": "The Best Example", "phase": "Whole Life", "theme": "Character", "level": "Level 1", "age": "5–7", "emoji": "🌟", "summary": "The life of Prophet Muhammad ﷺ teaches Muslims how to worship Allah, speak truthfully, show mercy, forgive, serve family, and build a fair community.", "lesson": "A good Muslim learns Seerah to copy noble character, not only to memorize dates.", "reference": "Qur’an 33:21 describes the Messenger of Allah ﷺ as an excellent example.", "questions": ["Why do Muslims study Seerah?", "What does it mean to follow a good example?", "Name one character quality you can practice today."], "activity": "Write one sentence: Today I will follow the Prophet’s ﷺ example by ____.", "vocab": ["Seerah", "example", "character"]}, {"title": "Mercy for the Worlds", "phase": "Whole Life", "theme": "Mercy", "level": "Level 2", "age": "7–9", "emoji": "💚", "summary": "The Prophet ﷺ was sent with mercy. His mercy appeared in his care for children, the weak, animals, neighbors, family, and even people who treated him badly.", "lesson": "True strength includes mercy, patience, and kindness.", "reference": "Qur’an 21:107 describes the Messenger ﷺ as mercy for the worlds.", "questions": ["What is mercy?", "Who needs mercy from us?", "How can children show mercy at home?"], "activity": "Make a mercy list: one mercy action for family, one for friends, one for animals.", "vocab": ["mercy", "kindness", "worlds"]}, {"title": "A Noble Character", "phase": "Whole Life", "theme": "Character", "level": "Level 3", "age": "9–11", "emoji": "🌙", "summary": "The Qur’an praises the Prophet’s ﷺ great character. This means his manners were beautiful in speech, honesty, patience, forgiveness, worship, and dealings with people.", "lesson": "Good manners are not small; they are central to faith and daily life.", "reference": "Qur’an 68:4 praises the Prophet’s ﷺ tremendous character.", "questions": ["What is noble character?", "Why do manners matter?", "Which manner is hardest to practice?"], "activity": "Choose one manner and track it for one day.", "vocab": ["noble", "manners", "praise"]}, {"title": "Born in Makkah", "phase": "Early Life", "theme": "Family", "level": "Level 4", "age": "10–12", "emoji": "🕋", "summary": "Prophet Muhammad ﷺ was born in Makkah into the Quraysh tribe. Seerah books connect his birth with the period known as the Year of the Elephant.", "lesson": "Allah can raise a great guide from a simple beginning.", "reference": "Seerah literature; Surah Al-Fil 105 mentions the event of the Elephant.", "questions": ["Where was the Prophet ﷺ born?", "What city is important in his early life?", "Why should we avoid adding unsupported details?"], "activity": "Draw a simple map label: Makkah, Ka‘bah, family, childhood.", "vocab": ["Makkah", "Quraysh", "Ka‘bah"]}, {"title": "An Orphan Cared For", "phase": "Early Life", "theme": "Family", "level": "Level 1", "age": "5–7", "emoji": "🤲", "summary": "The Prophet ﷺ lost his father before birth and his mother in childhood. Allah cared for him through family support, including his grandfather and uncle.", "lesson": "Children who face sadness still deserve love, care, and hope.", "reference": "Qur’an 93:6 reminds the Prophet ﷺ that Allah found him an orphan and gave shelter.", "questions": ["What does orphan mean?", "How did Allah care for the Prophet ﷺ?", "How can we care for children who feel lonely?"], "activity": "Write a kindness card for someone who may need comfort.", "vocab": ["orphan", "care", "shelter"]}, {"title": "Al-Amīn: The Trustworthy", "phase": "Early Life", "theme": "Honesty", "level": "Level 2", "age": "7–9", "emoji": "🤝", "summary": "Before prophethood, people of Makkah knew Muhammad ﷺ for truthfulness and trustworthiness. He was called Al-Amīn, the trustworthy.", "lesson": "Trust is built through honest words and reliable actions.", "reference": "Well-known Seerah report about his reputation before prophethood.", "questions": ["What does Al-Amīn mean?", "How does a person become trusted?", "What should you do with something borrowed?"], "activity": "Make a trust pledge: I return things, speak truth, and keep promises.", "vocab": ["trustworthy", "honesty", "promise"]}, {"title": "The Black Stone Wisdom", "phase": "Early Life", "theme": "Wisdom", "level": "Level 3", "age": "9–11", "emoji": "🧠", "summary": "Seerah books report that when Quraysh differed about placing the Black Stone, Muhammad ﷺ helped them share the honor peacefully by using a wise solution.", "lesson": "Wise people reduce conflict and help others act fairly.", "reference": "Classical Seerah report; teach as a simplified Seerah incident.", "questions": ["What problem needed a wise solution?", "How can fairness reduce arguments?", "What should children do during disagreement?"], "activity": "Role-play a fair way to share one classroom responsibility.", "vocab": ["wisdom", "fairness", "conflict"]}, {"title": "A Shepherd Learns Care", "phase": "Early Life", "theme": "Responsibility", "level": "Level 4", "age": "10–12", "emoji": "🐑", "summary": "The Prophet ﷺ worked as a shepherd in his youth. Caring for animals teaches patience, attention, gentleness, and responsibility.", "lesson": "Small responsibilities train the heart for bigger responsibilities.", "reference": "Seerah and hadith reports mention the work of prophets as shepherds.", "questions": ["What does a shepherd do?", "What qualities does this work teach?", "What responsibility can you take at home?"], "activity": "List three small responsibilities you can do every day.", "vocab": ["shepherd", "responsibility", "patience"]}, {"title": "Honest Trade", "phase": "Early Life", "theme": "Honesty", "level": "Level 1", "age": "5–7", "emoji": "⚖️", "summary": "The Prophet ﷺ was known for honesty in trade. He did not cheat people, hide faults, or use lies to gain benefit.", "lesson": "Earning and dealing with people must be based on truth.", "reference": "Seerah reports of his honest trade before prophethood.", "questions": ["Why is honesty important in buying and selling?", "What is cheating?", "How can children be honest in schoolwork?"], "activity": "Create a small poster: Honest work brings trust.", "vocab": ["trade", "cheat", "truth"]}, {"title": "Marriage to Khadijah رضي الله عنها", "phase": "Early Life", "theme": "Family", "level": "Level 2", "age": "7–9", "emoji": "🌹", "summary": "Khadijah رضي الله عنها admired the Prophet’s ﷺ trustworthiness and noble character. She became his wife and later gave him strong support when revelation began.", "lesson": "A good family supports truth, worship, and good character.", "reference": "Seerah reports about Khadijah رضي الله عنها and early support.", "questions": ["Who was Khadijah رضي الله عنها?", "What qualities did she admire?", "How can family members support each other?"], "activity": "Write three supportive family sentences: I can help by ____.", "vocab": ["Khadijah", "support", "family"]}, {"title": "Love of Reflection", "phase": "Before Revelation", "theme": "Worship", "level": "Level 3", "age": "9–11", "emoji": "🏔️", "summary": "Before revelation, the Prophet ﷺ loved quiet reflection and worship away from the wrong practices around him. He spent time in the cave of Ḥirā’ thinking about truth.", "lesson": "Quiet reflection helps the heart turn away from wrong and toward Allah.", "reference": "Seerah reports about worship in Ḥirā’.", "questions": ["Why is quiet thinking useful?", "What wrong habits should children avoid?", "How can we make quiet time for Allah?"], "activity": "Spend two quiet minutes thinking of Allah’s blessings.", "vocab": ["reflection", "Ḥirā’", "truth"]}, {"title": "The First Revelation", "phase": "Makkah", "theme": "Revelation", "level": "Level 4", "age": "10–12", "emoji": "📖", "summary": "The first revelation began with the command to read. The opening verses taught that knowledge, reading, and learning are connected to Allah’s name.", "lesson": "Learning is sacred when it begins with Allah’s name.", "reference": "Qur’an 96:1–5 is commonly taught as the first revealed passage.", "questions": ["What was the first command?", "Why is reading important?", "How should a Muslim begin learning?"], "activity": "Trace and decorate the word: Read. Then write: I learn in Allah’s name.", "vocab": ["revelation", "read", "knowledge"]}, {"title": "Khadijah’s Comfort", "phase": "Makkah", "theme": "Support", "level": "Level 1", "age": "5–7", "emoji": "🤍", "summary": "After the first revelation, Khadijah رضي الله عنها comforted the Prophet ﷺ. She reminded him of his good qualities, such as helping others and honoring guests.", "lesson": "When someone is afraid, kind words and support can strengthen them.", "reference": "Seerah reports preserved in major hadith collections about the beginning of revelation.", "questions": ["How did Khadijah رضي الله عنها help?", "Why do comforting words matter?", "Who can you comfort kindly?"], "activity": "Practice saying: I am here to help. You are not alone.", "vocab": ["comfort", "support", "kind words"]}, {"title": "The First Believers", "phase": "Makkah", "theme": "Faith", "level": "Level 2", "age": "7–9", "emoji": "🌱", "summary": "The earliest believers accepted Islam with sincerity. They included members of the Prophet’s ﷺ household and close companions.", "lesson": "Truth often begins with a small sincere group.", "reference": "Seerah accounts of the earliest Muslims.", "questions": ["What does sincere mean?", "Why were the first believers brave?", "How can children stand for truth kindly?"], "activity": "Draw a small seed growing into a strong tree of faith.", "vocab": ["believers", "sincerity", "faith"]}, {"title": "Calling to One Allah", "phase": "Makkah", "theme": "Tawhid", "level": "Level 3", "age": "9–11", "emoji": "☝️", "summary": "The Prophet ﷺ called people to worship Allah alone and leave idols, injustice, pride, and harmful customs.", "lesson": "Tawḥīd teaches that Allah alone deserves worship and obedience.", "reference": "Core message of the Qur’an and Seerah; Qur’an repeatedly teaches worship of Allah alone.", "questions": ["What is Tawḥīd?", "What wrong practices did Islam correct?", "How can children obey Allah daily?"], "activity": "Write: Allah alone is my Lord, Creator, and Provider.", "vocab": ["Tawḥīd", "worship", "obedience"]}, {"title": "Patience in Makkah", "phase": "Makkah", "theme": "Patience", "level": "Level 4", "age": "10–12", "emoji": "⛰️", "summary": "Many early Muslims faced hardship in Makkah. The Prophet ﷺ remained patient, continued teaching, and did not give up the message.", "lesson": "Patience means staying firm on goodness without becoming cruel.", "reference": "Seerah accounts of Makkan hardship.", "questions": ["Why did the early Muslims need patience?", "What is the difference between patience and weakness?", "When do students need patience?"], "activity": "Make a patience ladder: one hard task, three small steps.", "vocab": ["patience", "hardship", "firmness"]}, {"title": "Care for the Weak", "phase": "Makkah", "theme": "Justice", "level": "Level 1", "age": "5–7", "emoji": "👐", "summary": "Islam gave honor to people whom society often ignored: the poor, enslaved, weak, women, orphans, and strangers.", "lesson": "A fair heart protects people who are easily hurt.", "reference": "Qur’anic and Seerah emphasis on justice, mercy, and care for the vulnerable.", "questions": ["Who are vulnerable people?", "Why should strong people protect weak people?", "How can children include someone left out?"], "activity": "Invite someone lonely to join a safe activity.", "vocab": ["weak", "justice", "include"]}, {"title": "Migration to Abyssinia", "phase": "Makkah", "theme": "Safety", "level": "Level 2", "age": "7–9", "emoji": "🌍", "summary": "Some companions migrated to Abyssinia to find safety under a just ruler. This shows that Islam values protection of faith and life.", "lesson": "Seeking safety with wisdom is better than staying in harm without need.", "reference": "Seerah reports about the migration to Abyssinia.", "questions": ["Why did some companions migrate?", "What is a just ruler?", "Why is safety important?"], "activity": "Draw a safe-place map: home, school, trusted adult.", "vocab": ["migration", "Abyssinia", "safety"]}, {"title": "The Year of Sadness", "phase": "Makkah", "theme": "Resilience", "level": "Level 3", "age": "9–11", "emoji": "💧", "summary": "The Prophet ﷺ experienced deep sadness after losing important support. Yet he continued trusting Allah and carrying the message.", "lesson": "Sadness is real, but faith gives strength to continue good work.", "reference": "Seerah literature mentions the year in which Khadijah رضي الله عنها and Abu Talib died.", "questions": ["Why did the Prophet ﷺ feel sadness?", "Can good people feel sad?", "What helps a sad heart?"], "activity": "Write or draw three halal ways to seek comfort: dua, family, good action.", "vocab": ["sadness", "resilience", "trust"]}, {"title": "Ta’if and Mercy", "phase": "Makkah", "theme": "Forgiveness", "level": "Level 4", "age": "10–12", "emoji": "🌧️", "summary": "When the people of Ṭā’if rejected and hurt the Prophet ﷺ, he still showed mercy and did not respond with revenge.", "lesson": "The strongest person controls anger and chooses mercy.", "reference": "Seerah reports about the journey to Ṭā’if.", "questions": ["What happened in Ṭā’if?", "Why is mercy difficult when hurt?", "How can children avoid revenge?"], "activity": "Practice the mercy pause: stop, breathe, make dua, choose kind action.", "vocab": ["Ṭā’if", "mercy", "revenge"]}, {"title": "Night Journey Reminder", "phase": "Makkah", "theme": "Worship", "level": "Level 1", "age": "5–7", "emoji": "✨", "summary": "The Qur’an mentions the Night Journey. Muslims learn that Allah honored His Messenger ﷺ and that prayer has a special place in Muslim life.", "lesson": "Salah is a gift and a daily connection with Allah.", "reference": "Qur’an 17:1 mentions the Night Journey.", "questions": ["What does the Night Journey remind Muslims about?", "Why is prayer important?", "How can children respect salah time?"], "activity": "Make a respectful prayer-time reminder card.", "vocab": ["Night Journey", "salah", "honor"]}, {"title": "The Pledges of Support", "phase": "Makkah", "theme": "Courage", "level": "Level 2", "age": "7–9", "emoji": "🤝", "summary": "People from Yathrib accepted Islam and promised support. These pledges prepared the way for the Hijrah and a new Muslim community.", "lesson": "Good promises should be made sincerely and kept faithfully.", "reference": "Seerah accounts of the pledges before Hijrah.", "questions": ["What is a pledge?", "Why must promises be sincere?", "What promise can a child keep today?"], "activity": "Write one good promise and one action to keep it.", "vocab": ["pledge", "support", "sincere"]}, {"title": "Hijrah Planning", "phase": "Hijrah", "theme": "Planning", "level": "Level 3", "age": "9–11", "emoji": "🗺️", "summary": "The Hijrah was not careless escape. It involved trust in Allah, careful planning, secrecy, timing, and reliable helpers.", "lesson": "Trust in Allah goes together with wise effort.", "reference": "Seerah reports about the Hijrah; Qur’an 9:40 refers to the cave.", "questions": ["Why was planning important?", "Does trust in Allah mean no effort?", "What task needs your plan today?"], "activity": "Make a three-step plan for homework, room cleaning, or revision.", "vocab": ["Hijrah", "planning", "trust"]}, {"title": "The Cave Companion", "phase": "Hijrah", "theme": "Trust", "level": "Level 4", "age": "10–12", "emoji": "🕊️", "summary": "During the Hijrah, the Prophet ﷺ and Abu Bakr رضي الله عنه took shelter in a cave. The Qur’an reminds believers that Allah was with them.", "lesson": "A believer is never alone when Allah gives help and protection.", "reference": "Qur’an 9:40 mentions the cave and Allah’s support.", "questions": ["Who was with the Prophet ﷺ during Hijrah?", "What does Allah’s help mean?", "When should we remember Allah is near?"], "activity": "Write: Allah sees me, hears me, and helps those who trust Him.", "vocab": ["cave", "Abu Bakr", "support"]}, {"title": "Arrival in Madinah", "phase": "Madinah", "theme": "Community", "level": "Level 1", "age": "5–7", "emoji": "🌴", "summary": "The Prophet ﷺ arrived in Madinah and began building a community of worship, learning, brotherhood, safety, and responsibility.", "lesson": "A good community needs worship, knowledge, kindness, and rules.", "reference": "Seerah accounts of the Prophet’s ﷺ arrival in Madinah.", "questions": ["What changed after Hijrah?", "What makes a strong community?", "How can a class become a better community?"], "activity": "Create a classroom community pledge.", "vocab": ["Madinah", "community", "brotherhood"]}, {"title": "The Masjid as a Center", "phase": "Madinah", "theme": "Worship", "level": "Level 2", "age": "7–9", "emoji": "🕌", "summary": "In Madinah, the masjid was a center for prayer, learning, meeting, helping, and building unity.", "lesson": "A masjid is not only a building; it is a place of worship, learning, and good character.", "reference": "Seerah accounts of Madinan community life.", "questions": ["What happens in a masjid?", "How should children behave in a masjid?", "Why is learning connected to worship?"], "activity": "Design a masjid manners poster.", "vocab": ["masjid", "learning", "unity"]}, {"title": "Brotherhood of Muhājirūn and Anṣār", "phase": "Madinah", "theme": "Brotherhood", "level": "Level 3", "age": "9–11", "emoji": "🤲", "summary": "The Prophet ﷺ created brotherhood between the migrants from Makkah and the helpers of Madinah. They shared, supported, and cared for each other.", "lesson": "Real brotherhood means helping others, not only saying kind words.", "reference": "Seerah accounts of Muhājirūn and Anṣār.", "questions": ["Who were the Muhājirūn?", "Who were the Anṣār?", "What does brotherhood require?"], "activity": "Share something useful today: time, help, kind words, or knowledge.", "vocab": ["Muhājirūn", "Anṣār", "brotherhood"]}, {"title": "Building a Fair Community", "phase": "Madinah", "theme": "Justice", "level": "Level 4", "age": "10–12", "emoji": "⚖️", "summary": "In Madinah, the Prophet ﷺ guided people to live with duties, rights, agreements, and responsibility between different groups.", "lesson": "A fair society needs rights, duties, honesty, and respect for agreements.", "reference": "Seerah accounts of community organization in Madinah.", "questions": ["Why do communities need rules?", "What is a right?", "What is a duty?"], "activity": "Make two class rights and two class duties.", "vocab": ["rights", "duties", "agreement"]}, {"title": "The Adhān Calls to Prayer", "phase": "Madinah", "theme": "Worship", "level": "Level 1", "age": "5–7", "emoji": "📣", "summary": "The call to prayer became a beautiful public reminder of worship and unity. Muslims stop daily life and turn toward Allah.", "lesson": "A Muslim’s day should be organized around remembering Allah.", "reference": "Seerah and hadith reports about the institution of the adhān.", "questions": ["What is the adhān?", "Why is prayer repeated daily?", "How can children respond respectfully to prayer time?"], "activity": "Create a prayer-time routine card.", "vocab": ["adhān", "prayer", "reminder"]}, {"title": "Learning with the Prophet ﷺ", "phase": "Madinah", "theme": "Knowledge", "level": "Level 2", "age": "7–9", "emoji": "📚", "summary": "The companions learned Qur’an, worship, manners, justice, family life, and community responsibility from the Prophet ﷺ.", "lesson": "Learning should change behavior, not only fill notebooks.", "reference": "Seerah and hadith collections preserve the Prophet’s ﷺ teaching.", "questions": ["What did companions learn?", "Why must knowledge affect behavior?", "What lesson changed your behavior?"], "activity": "Write one knowledge-to-action sentence: I learned ____ so I will ____.", "vocab": ["companions", "knowledge", "action"]}, {"title": "Kindness to Children", "phase": "Madinah", "theme": "Mercy", "level": "Level 3", "age": "9–11", "emoji": "🧒", "summary": "The Prophet ﷺ showed gentleness to children. He noticed their feelings, greeted them, and taught with care.", "lesson": "Children learn best through love, respect, and gentle guidance.", "reference": "Many authentic hadith reports describe the Prophet’s ﷺ kindness to children.", "questions": ["How should adults teach children?", "How can older children be kind to younger children?", "What makes a child feel respected?"], "activity": "Help a younger child learn one safe, simple skill.", "vocab": ["children", "gentleness", "teaching"]}, {"title": "Mercy to Animals", "phase": "Whole Life", "theme": "Mercy", "level": "Level 4", "age": "10–12", "emoji": "🐾", "summary": "The Prophet ﷺ taught kindness to animals and warned against cruelty. Animals are part of Allah’s creation and must not be harmed for fun.", "lesson": "Mercy includes animals, birds, and every living creature.", "reference": "Authentic hadith teachings emphasize kindness to animals.", "questions": ["Why must animals be treated kindly?", "What is animal cruelty?", "How can children care for animals safely?"], "activity": "Make a safe animal-care rule poster.", "vocab": ["animals", "cruelty", "creation"]}, {"title": "Simple Living", "phase": "Whole Life", "theme": "Humility", "level": "Level 1", "age": "5–7", "emoji": "🍞", "summary": "The Prophet ﷺ lived simply. He did not make worldly luxury the goal of life. His heart was attached to Allah and the Hereafter.", "lesson": "A rich heart is better than showing off with things.", "reference": "Seerah and hadith reports describe his simple life.", "questions": ["What is simple living?", "Why is showing off harmful?", "How can children avoid waste?"], "activity": "Choose one thing not to waste today: food, water, time, or money.", "vocab": ["simple", "humility", "waste"]}, {"title": "Helping at Home", "phase": "Whole Life", "theme": "Family", "level": "Level 2", "age": "7–9", "emoji": "🏠", "summary": "The Prophet ﷺ helped his family and was not arrogant at home. Good character begins with the people closest to us.", "lesson": "A helpful child is strong, not weak.", "reference": "Authentic reports describe the Prophet’s ﷺ service in the household.", "questions": ["Why should we help at home?", "What is arrogance?", "What job can you do today?"], "activity": "Do one safe household task without being asked twice.", "vocab": ["home", "service", "family"]}, {"title": "Good Speech", "phase": "Whole Life", "theme": "Speech", "level": "Level 3", "age": "9–11", "emoji": "💬", "summary": "The Prophet ﷺ taught believers to speak good words or remain silent. Good speech includes truth, kindness, wisdom, and avoiding harm.", "lesson": "Words can heal or hurt; choose them carefully.", "reference": "Authentic hadith teaching: speak good or remain silent.", "questions": ["What is good speech?", "When is silence better?", "How can you fix a hurtful word?"], "activity": "Rewrite three rude sentences into gentle sentences.", "vocab": ["speech", "silence", "wisdom"]}, {"title": "Forgiving at Makkah", "phase": "Makkah Victory", "theme": "Forgiveness", "level": "Level 4", "age": "10–12", "emoji": "🕊️", "summary": "When the Prophet ﷺ returned to Makkah with strength, he showed great forgiveness instead of revenge.", "lesson": "Victory is most beautiful when joined with humility and forgiveness.", "reference": "Seerah accounts of the conquest/opening of Makkah.", "questions": ["Why is forgiveness powerful?", "What is the difference between justice and revenge?", "How can children forgive wisely?"], "activity": "Write: I can forgive by ____ while still choosing safety.", "vocab": ["forgiveness", "victory", "humility"]}, {"title": "Breaking Idols", "phase": "Makkah Victory", "theme": "Tawhid", "level": "Level 1", "age": "5–7", "emoji": "☝️", "summary": "The Prophet ﷺ cleansed the Ka‘bah from idols and restored worship of Allah alone.", "lesson": "The heart should be cleansed from anything that competes with obedience to Allah.", "reference": "Seerah accounts of the opening of Makkah and Qur’anic message of Tawḥīd.", "questions": ["Why was the Ka‘bah cleansed?", "What does worship Allah alone mean?", "What can distract hearts today?"], "activity": "Make a heart-cleaning list: pride, lying, laziness, jealousy.", "vocab": ["idols", "Ka‘bah", "Tawḥīd"]}, {"title": "The Farewell Pilgrimage", "phase": "Farewell", "theme": "Guidance", "level": "Level 2", "age": "7–9", "emoji": "🕋", "summary": "Near the end of his life, the Prophet ﷺ taught Muslims important guidance about worship, rights, dignity, family responsibility, and holding firmly to revelation.", "lesson": "A Muslim life needs worship, justice, responsibility, and guidance from Allah.", "reference": "Seerah and hadith reports about the Farewell Pilgrimage and sermon.", "questions": ["What is a farewell message?", "Why are rights important?", "What guidance should Muslims hold firmly?"], "activity": "Create a mini farewell advice card: worship Allah, be fair, speak truth.", "vocab": ["farewell", "rights", "guidance"]}, {"title": "Completion and Gratitude", "phase": "Farewell", "theme": "Gratitude", "level": "Level 3", "age": "9–11", "emoji": "🌅", "summary": "The Prophet’s ﷺ mission completed the message of Islam. Muslims remember his effort with love, gratitude, and obedience to Allah.", "lesson": "Loving the Prophet ﷺ means learning from him and following his guidance.", "reference": "Qur’an 5:3 is connected in Islamic learning with the completion of religion.", "questions": ["How do Muslims show love for the Prophet ﷺ?", "Why is gratitude important?", "What is one Sunnah value you can practice?"], "activity": "Write: I love the Prophet ﷺ, so I will practice ____.", "vocab": ["gratitude", "mission", "guidance"]}, {"title": "Truthful Tongue", "phase": "Whole Life", "theme": "Honesty", "level": "Level 3", "age": "9–11", "emoji": "💬", "summary": "The Prophet ﷺ was known for truth. A Muslim child should avoid lies, cheating, false excuses, and fake stories.", "lesson": "Truth makes the heart clean and relationships strong.", "reference": "Qur’anic and Prophetic teaching on truthfulness.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced honesty by ____.", "vocab": ["honesty", "Seerah value", "practice"]}, {"title": "Promise Keeper", "phase": "Whole Life", "theme": "Trust", "level": "Level 4", "age": "10–12", "emoji": "🤝", "summary": "The Prophet ﷺ taught trustworthiness. A promise should not be made carelessly and should be kept when it is good and possible.", "lesson": "Promises are responsibilities.", "reference": "General Prophetic teaching on trust and keeping promises.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced trust by ____.", "vocab": ["trust", "Seerah value", "practice"]}, {"title": "Gentle Correction", "phase": "Whole Life", "theme": "Teaching", "level": "Level 1", "age": "5–7", "emoji": "🌷", "summary": "The Prophet ﷺ corrected mistakes with wisdom and gentleness. He taught people without humiliating them.", "lesson": "Correction works best with mercy and clarity.", "reference": "Authentic hadith reports show gentle teaching methods.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced teaching by ____.", "vocab": ["teaching", "Seerah value", "practice"]}, {"title": "Respect for Neighbors", "phase": "Madinah", "theme": "Community", "level": "Level 2", "age": "7–9", "emoji": "🏘️", "summary": "The Prophet ﷺ taught strong care for neighbors. Good neighbors do not disturb, mock, harm, or ignore each other.", "lesson": "A good Muslim is a source of safety for neighbors.", "reference": "Prophetic teachings emphasize neighbor rights.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced community by ____.", "vocab": ["community", "Seerah value", "practice"]}, {"title": "Care for Guests", "phase": "Whole Life", "theme": "Hospitality", "level": "Level 3", "age": "9–11", "emoji": "🍽️", "summary": "The Prophet ﷺ valued honoring guests. Hospitality can be simple: a smile, clean space, kind words, and sharing what is available.", "lesson": "Hospitality is kindness in action.", "reference": "Prophetic teachings on honoring guests.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced hospitality by ____.", "vocab": ["hospitality", "Seerah value", "practice"]}, {"title": "Clean and Neat", "phase": "Whole Life", "theme": "Cleanliness", "level": "Level 4", "age": "10–12", "emoji": "🧼", "summary": "The Prophet ﷺ taught cleanliness in worship and daily life. Clean hands, clean clothes, clean places, and clean habits matter.", "lesson": "Cleanliness supports worship, health, and dignity.", "reference": "Islamic teachings emphasize purification and cleanliness.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced cleanliness by ____.", "vocab": ["cleanliness", "Seerah value", "practice"]}, {"title": "Balanced Worship", "phase": "Whole Life", "theme": "Worship", "level": "Level 1", "age": "5–7", "emoji": "⚖️", "summary": "The Prophet ﷺ taught balanced worship: pray, rest, work, learn, help family, and care for the body without extremes.", "lesson": "Islam teaches balance and consistency.", "reference": "Authentic hadith teachings emphasize moderation.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced worship by ____.", "vocab": ["worship", "Seerah value", "practice"]}, {"title": "Respectful Disagreement", "phase": "Whole Life", "theme": "Speech", "level": "Level 2", "age": "7–9", "emoji": "🗣️", "summary": "The Prophet ﷺ taught wisdom in speech. A Muslim should disagree without insults, shouting, or arrogance.", "lesson": "Respectful words protect brotherhood.", "reference": "General Prophetic manners of speech.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced speech by ____.", "vocab": ["speech", "Seerah value", "practice"]}, {"title": "Forgive but Stay Wise", "phase": "Whole Life", "theme": "Forgiveness", "level": "Level 3", "age": "9–11", "emoji": "🛡️", "summary": "The Prophet ﷺ forgave greatly, but he also taught wisdom, justice, and safety. Forgiveness does not mean allowing harm to continue.", "lesson": "Mercy and wisdom belong together.", "reference": "Seerah patterns of mercy, justice, and wise leadership.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced forgiveness by ____.", "vocab": ["forgiveness", "Seerah value", "practice"]}, {"title": "Love of Learning", "phase": "Whole Life", "theme": "Knowledge", "level": "Level 4", "age": "10–12", "emoji": "📚", "summary": "The Prophet ﷺ encouraged learning and teaching beneficial knowledge. Children should love reading, asking good questions, and practicing what they learn.", "lesson": "Knowledge becomes light when used for good.", "reference": "Qur’an 96:1–5 and Prophetic emphasis on knowledge.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced knowledge by ____.", "vocab": ["knowledge", "Seerah value", "practice"]}, {"title": "Courage with Patience", "phase": "Makkah", "theme": "Courage", "level": "Level 1", "age": "5–7", "emoji": "🦁", "summary": "The Prophet ﷺ faced hardship with patience and courage. He did not abandon truth because of pressure.", "lesson": "Courage means doing right with patience.", "reference": "Makkan Seerah themes.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced courage by ____.", "vocab": ["courage", "Seerah value", "practice"]}, {"title": "Fairness in Leadership", "phase": "Madinah", "theme": "Justice", "level": "Level 2", "age": "7–9", "emoji": "⚖️", "summary": "The Prophet ﷺ led with justice, consultation, mercy, and responsibility. Leadership was service, not pride.", "lesson": "A leader serves others and answers to Allah.", "reference": "Madinan Seerah themes of leadership.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced justice by ____.", "vocab": ["justice", "Seerah value", "practice"]}, {"title": "Consultation", "phase": "Madinah", "theme": "Leadership", "level": "Level 3", "age": "9–11", "emoji": "🧭", "summary": "The Prophet ﷺ valued consultation. Wise people listen before decisions and do not act with stubborn pride.", "lesson": "Listening can make decisions better.", "reference": "Qur’anic and Seerah guidance on consultation.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced leadership by ____.", "vocab": ["leadership", "Seerah value", "practice"]}, {"title": "Gratitude in Difficulty", "phase": "Whole Life", "theme": "Gratitude", "level": "Level 4", "age": "10–12", "emoji": "🌤️", "summary": "The Prophet ﷺ remembered Allah in ease and hardship. Gratitude is not only for perfect days.", "lesson": "A grateful heart sees blessings even during tests.", "reference": "Qur’anic and Prophetic teachings on gratitude.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced gratitude by ____.", "vocab": ["gratitude", "Seerah value", "practice"]}, {"title": "No Waste", "phase": "Whole Life", "theme": "Responsibility", "level": "Level 1", "age": "5–7", "emoji": "💧", "summary": "The Prophet ﷺ taught careful use of blessings. Food, water, time, and money should not be wasted.", "lesson": "Wasting blessings shows forgetfulness of Allah’s gifts.", "reference": "Islamic teachings discourage waste.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced responsibility by ____.", "vocab": ["responsibility", "Seerah value", "practice"]}, {"title": "Smiling Kindness", "phase": "Whole Life", "theme": "Mercy", "level": "Level 2", "age": "7–9", "emoji": "😊", "summary": "A warm smile and gentle face can comfort people. The Prophet’s ﷺ manners show that small kindness can carry big reward.", "lesson": "Small kindness is still kindness.", "reference": "Prophetic teachings encourage cheerful good manners.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced mercy by ____.", "vocab": ["mercy", "Seerah value", "practice"]}, {"title": "Respect for Elders", "phase": "Whole Life", "theme": "Manners", "level": "Level 3", "age": "9–11", "emoji": "👴", "summary": "The Prophet ﷺ taught respect for elders and mercy for the young. A Muslim community needs both respect and compassion.", "lesson": "Respect and mercy keep families strong.", "reference": "Prophetic teachings about elders and young people.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced manners by ____.", "vocab": ["manners", "Seerah value", "practice"]}, {"title": "Mercy for Young Ones", "phase": "Whole Life", "theme": "Mercy", "level": "Level 4", "age": "10–12", "emoji": "🧒", "summary": "Young children need patience, gentle words, and safe teaching. The Prophet’s ﷺ example encourages tenderness with children.", "lesson": "Gentleness helps children grow well.", "reference": "Authentic reports of Prophetic kindness to children.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced mercy by ____.", "vocab": ["mercy", "Seerah value", "practice"]}, {"title": "Bravery Without Bullying", "phase": "Whole Life", "theme": "Courage", "level": "Level 1", "age": "5–7", "emoji": "🦁", "summary": "The Prophet ﷺ was brave, but never a bully. True bravery protects truth and people; it does not hurt the weak.", "lesson": "Power should protect, not oppress.", "reference": "Seerah themes of courage and mercy.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced courage by ____.", "vocab": ["courage", "Seerah value", "practice"]}, {"title": "Speak the Truth Kindly", "phase": "Whole Life", "theme": "Speech", "level": "Level 2", "age": "7–9", "emoji": "🪶", "summary": "A Muslim should tell the truth with wisdom. Truth should not become an excuse for cruelty.", "lesson": "The best speech is truthful and wise.", "reference": "Qur’anic and Prophetic guidance on truthful speech.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced speech by ____.", "vocab": ["speech", "Seerah value", "practice"]}, {"title": "Repair After Mistakes", "phase": "Whole Life", "theme": "Self-Improvement", "level": "Level 3", "age": "9–11", "emoji": "🧩", "summary": "The Prophet ﷺ taught repentance and improvement. When we make mistakes, we should admit, apologize, repair, and learn.", "lesson": "Good people correct themselves.", "reference": "Islamic teachings on repentance and good character.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced self-improvement by ____.", "vocab": ["self-improvement", "Seerah value", "practice"]}, {"title": "Respect for Agreements", "phase": "Madinah", "theme": "Trust", "level": "Level 4", "age": "10–12", "emoji": "📜", "summary": "The Prophet ﷺ honored agreements. Communities become unsafe when people break promises and contracts.", "lesson": "Agreements must be respected.", "reference": "Seerah themes of treaties and agreements.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced trust by ____.", "vocab": ["trust", "Seerah value", "practice"]}, {"title": "Peace Before Pride", "phase": "Whole Life", "theme": "Peace", "level": "Level 1", "age": "5–7", "emoji": "🕊️", "summary": "The Prophet ﷺ preferred guidance, mercy, and peace over pride and revenge. A Muslim should not love conflict.", "lesson": "Peace is stronger than ego.", "reference": "Seerah themes of mercy and reconciliation.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced peace by ____.", "vocab": ["peace", "Seerah value", "practice"]}, {"title": "Serve Without Showing Off", "phase": "Whole Life", "theme": "Humility", "level": "Level 2", "age": "7–9", "emoji": "🤲", "summary": "The Prophet ﷺ served others without arrogance. Good deeds should be done for Allah, not only for praise.", "lesson": "Hidden service builds sincerity.", "reference": "Prophetic teachings on sincerity and humility.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced humility by ____.", "vocab": ["humility", "Seerah value", "practice"]}, {"title": "Time Has Value", "phase": "Whole Life", "theme": "Discipline", "level": "Level 3", "age": "9–11", "emoji": "⏰", "summary": "The Prophet’s ﷺ life teaches discipline in worship, family duties, community work, and learning.", "lesson": "Time is a trust from Allah.", "reference": "General Seerah lesson on disciplined life.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced discipline by ____.", "vocab": ["discipline", "Seerah value", "practice"]}, {"title": "Dua in Every Situation", "phase": "Whole Life", "theme": "Worship", "level": "Level 4", "age": "10–12", "emoji": "🤲", "summary": "The Prophet ﷺ remembered Allah in many situations. Dua teaches children to depend on Allah while making effort.", "lesson": "Dua and effort go together.", "reference": "Prophetic teaching on remembrance and dua.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced worship by ____.", "vocab": ["worship", "Seerah value", "practice"]}, {"title": "Helping the Poor", "phase": "Madinah", "theme": "Charity", "level": "Level 1", "age": "5–7", "emoji": "🍞", "summary": "The Prophet ﷺ taught care for the poor and needy. A Muslim should not ignore hunger, loneliness, or hardship around them.", "lesson": "Charity begins with noticing need.", "reference": "Qur’anic and Prophetic teachings on charity.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced charity by ____.", "vocab": ["charity", "Seerah value", "practice"]}, {"title": "Respect for Knowledge", "phase": "Whole Life", "theme": "Knowledge", "level": "Level 2", "age": "7–9", "emoji": "📝", "summary": "The Prophet ﷺ taught that beneficial knowledge should be learned, remembered, practiced, and shared carefully.", "lesson": "Knowledge is an amanah.", "reference": "Prophetic emphasis on teaching and learning.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced knowledge by ____.", "vocab": ["knowledge", "Seerah value", "practice"]}, {"title": "Careful with Reports", "phase": "Whole Life", "theme": "Truth", "level": "Level 3", "age": "9–11", "emoji": "🔍", "summary": "Learning Seerah requires care. Muslims should avoid spreading weak, invented, or exaggerated stories without checking reliable sources.", "lesson": "Love for the Prophet ﷺ includes honesty about his life.", "reference": "Islamic scholarly principle: verify reports.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced truth by ____.", "vocab": ["truth", "Seerah value", "practice"]}, {"title": "Love Through Obedience", "phase": "Whole Life", "theme": "Love", "level": "Level 4", "age": "10–12", "emoji": "❤️", "summary": "Muslims love the Prophet ﷺ by respecting him, learning his guidance, sending ṣalawāt, and obeying Allah through his example.", "lesson": "Love is shown through respectful action.", "reference": "Qur’anic and Islamic teaching on following the Messenger ﷺ.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced love by ____.", "vocab": ["love", "Seerah value", "practice"]}, {"title": "Truthful Tongue 31", "phase": "Whole Life", "theme": "Honesty", "level": "Level 1", "age": "5–7", "emoji": "💬", "summary": "The Prophet ﷺ was known for truth. A Muslim child should avoid lies, cheating, false excuses, and fake stories.", "lesson": "Truth makes the heart clean and relationships strong.", "reference": "Qur’anic and Prophetic teaching on truthfulness.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced honesty by ____.", "vocab": ["honesty", "Seerah value", "practice"]}, {"title": "Promise Keeper 32", "phase": "Whole Life", "theme": "Trust", "level": "Level 2", "age": "7–9", "emoji": "🤝", "summary": "The Prophet ﷺ taught trustworthiness. A promise should not be made carelessly and should be kept when it is good and possible.", "lesson": "Promises are responsibilities.", "reference": "General Prophetic teaching on trust and keeping promises.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced trust by ____.", "vocab": ["trust", "Seerah value", "practice"]}, {"title": "Gentle Correction 33", "phase": "Whole Life", "theme": "Teaching", "level": "Level 3", "age": "9–11", "emoji": "🌷", "summary": "The Prophet ﷺ corrected mistakes with wisdom and gentleness. He taught people without humiliating them.", "lesson": "Correction works best with mercy and clarity.", "reference": "Authentic hadith reports show gentle teaching methods.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced teaching by ____.", "vocab": ["teaching", "Seerah value", "practice"]}, {"title": "Respect for Neighbors 34", "phase": "Madinah", "theme": "Community", "level": "Level 4", "age": "10–12", "emoji": "🏘️", "summary": "The Prophet ﷺ taught strong care for neighbors. Good neighbors do not disturb, mock, harm, or ignore each other.", "lesson": "A good Muslim is a source of safety for neighbors.", "reference": "Prophetic teachings emphasize neighbor rights.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced community by ____.", "vocab": ["community", "Seerah value", "practice"]}, {"title": "Care for Guests 35", "phase": "Whole Life", "theme": "Hospitality", "level": "Level 1", "age": "5–7", "emoji": "🍽️", "summary": "The Prophet ﷺ valued honoring guests. Hospitality can be simple: a smile, clean space, kind words, and sharing what is available.", "lesson": "Hospitality is kindness in action.", "reference": "Prophetic teachings on honoring guests.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced hospitality by ____.", "vocab": ["hospitality", "Seerah value", "practice"]}, {"title": "Clean and Neat 36", "phase": "Whole Life", "theme": "Cleanliness", "level": "Level 2", "age": "7–9", "emoji": "🧼", "summary": "The Prophet ﷺ taught cleanliness in worship and daily life. Clean hands, clean clothes, clean places, and clean habits matter.", "lesson": "Cleanliness supports worship, health, and dignity.", "reference": "Islamic teachings emphasize purification and cleanliness.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced cleanliness by ____.", "vocab": ["cleanliness", "Seerah value", "practice"]}, {"title": "Balanced Worship 37", "phase": "Whole Life", "theme": "Worship", "level": "Level 3", "age": "9–11", "emoji": "⚖️", "summary": "The Prophet ﷺ taught balanced worship: pray, rest, work, learn, help family, and care for the body without extremes.", "lesson": "Islam teaches balance and consistency.", "reference": "Authentic hadith teachings emphasize moderation.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced worship by ____.", "vocab": ["worship", "Seerah value", "practice"]}, {"title": "Respectful Disagreement 38", "phase": "Whole Life", "theme": "Speech", "level": "Level 4", "age": "10–12", "emoji": "🗣️", "summary": "The Prophet ﷺ taught wisdom in speech. A Muslim should disagree without insults, shouting, or arrogance.", "lesson": "Respectful words protect brotherhood.", "reference": "General Prophetic manners of speech.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced speech by ____.", "vocab": ["speech", "Seerah value", "practice"]}, {"title": "Forgive but Stay Wise 39", "phase": "Whole Life", "theme": "Forgiveness", "level": "Level 1", "age": "5–7", "emoji": "🛡️", "summary": "The Prophet ﷺ forgave greatly, but he also taught wisdom, justice, and safety. Forgiveness does not mean allowing harm to continue.", "lesson": "Mercy and wisdom belong together.", "reference": "Seerah patterns of mercy, justice, and wise leadership.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced forgiveness by ____.", "vocab": ["forgiveness", "Seerah value", "practice"]}, {"title": "Love of Learning 40", "phase": "Whole Life", "theme": "Knowledge", "level": "Level 2", "age": "7–9", "emoji": "📚", "summary": "The Prophet ﷺ encouraged learning and teaching beneficial knowledge. Children should love reading, asking good questions, and practicing what they learn.", "lesson": "Knowledge becomes light when used for good.", "reference": "Qur’an 96:1–5 and Prophetic emphasis on knowledge.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced knowledge by ____.", "vocab": ["knowledge", "Seerah value", "practice"]}, {"title": "Courage with Patience 41", "phase": "Makkah", "theme": "Courage", "level": "Level 3", "age": "9–11", "emoji": "🦁", "summary": "The Prophet ﷺ faced hardship with patience and courage. He did not abandon truth because of pressure.", "lesson": "Courage means doing right with patience.", "reference": "Makkan Seerah themes.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced courage by ____.", "vocab": ["courage", "Seerah value", "practice"]}, {"title": "Fairness in Leadership 42", "phase": "Madinah", "theme": "Justice", "level": "Level 4", "age": "10–12", "emoji": "⚖️", "summary": "The Prophet ﷺ led with justice, consultation, mercy, and responsibility. Leadership was service, not pride.", "lesson": "A leader serves others and answers to Allah.", "reference": "Madinan Seerah themes of leadership.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced justice by ____.", "vocab": ["justice", "Seerah value", "practice"]}, {"title": "Consultation 43", "phase": "Madinah", "theme": "Leadership", "level": "Level 1", "age": "5–7", "emoji": "🧭", "summary": "The Prophet ﷺ valued consultation. Wise people listen before decisions and do not act with stubborn pride.", "lesson": "Listening can make decisions better.", "reference": "Qur’anic and Seerah guidance on consultation.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced leadership by ____.", "vocab": ["leadership", "Seerah value", "practice"]}, {"title": "Gratitude in Difficulty 44", "phase": "Whole Life", "theme": "Gratitude", "level": "Level 2", "age": "7–9", "emoji": "🌤️", "summary": "The Prophet ﷺ remembered Allah in ease and hardship. Gratitude is not only for perfect days.", "lesson": "A grateful heart sees blessings even during tests.", "reference": "Qur’anic and Prophetic teachings on gratitude.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced gratitude by ____.", "vocab": ["gratitude", "Seerah value", "practice"]}, {"title": "No Waste 45", "phase": "Whole Life", "theme": "Responsibility", "level": "Level 3", "age": "9–11", "emoji": "💧", "summary": "The Prophet ﷺ taught careful use of blessings. Food, water, time, and money should not be wasted.", "lesson": "Wasting blessings shows forgetfulness of Allah’s gifts.", "reference": "Islamic teachings discourage waste.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced responsibility by ____.", "vocab": ["responsibility", "Seerah value", "practice"]}, {"title": "Smiling Kindness 46", "phase": "Whole Life", "theme": "Mercy", "level": "Level 4", "age": "10–12", "emoji": "😊", "summary": "A warm smile and gentle face can comfort people. The Prophet’s ﷺ manners show that small kindness can carry big reward.", "lesson": "Small kindness is still kindness.", "reference": "Prophetic teachings encourage cheerful good manners.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced mercy by ____.", "vocab": ["mercy", "Seerah value", "practice"]}, {"title": "Respect for Elders 47", "phase": "Whole Life", "theme": "Manners", "level": "Level 1", "age": "5–7", "emoji": "👴", "summary": "The Prophet ﷺ taught respect for elders and mercy for the young. A Muslim community needs both respect and compassion.", "lesson": "Respect and mercy keep families strong.", "reference": "Prophetic teachings about elders and young people.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced manners by ____.", "vocab": ["manners", "Seerah value", "practice"]}, {"title": "Mercy for Young Ones 48", "phase": "Whole Life", "theme": "Mercy", "level": "Level 2", "age": "7–9", "emoji": "🧒", "summary": "Young children need patience, gentle words, and safe teaching. The Prophet’s ﷺ example encourages tenderness with children.", "lesson": "Gentleness helps children grow well.", "reference": "Authentic reports of Prophetic kindness to children.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced mercy by ____.", "vocab": ["mercy", "Seerah value", "practice"]}, {"title": "Bravery Without Bullying 49", "phase": "Whole Life", "theme": "Courage", "level": "Level 3", "age": "9–11", "emoji": "🦁", "summary": "The Prophet ﷺ was brave, but never a bully. True bravery protects truth and people; it does not hurt the weak.", "lesson": "Power should protect, not oppress.", "reference": "Seerah themes of courage and mercy.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced courage by ____.", "vocab": ["courage", "Seerah value", "practice"]}, {"title": "Speak the Truth Kindly 50", "phase": "Whole Life", "theme": "Speech", "level": "Level 4", "age": "10–12", "emoji": "🪶", "summary": "A Muslim should tell the truth with wisdom. Truth should not become an excuse for cruelty.", "lesson": "The best speech is truthful and wise.", "reference": "Qur’anic and Prophetic guidance on truthful speech.", "questions": ["What does this Seerah value teach?", "Where can children practice it today?", "How does this value improve family, school, or community life?"], "activity": "Practice this value today and write one sentence: I practiced speech by ____.", "vocab": ["speech", "Seerah value", "practice"]}];
+
+    const cardGrid = document.getElementById('cardGrid');
+    const searchInput = document.getElementById('searchInput');
+    const phaseFilter = document.getElementById('phaseFilter');
+    const themeFilter = document.getElementById('themeFilter');
+    const levelFilter = document.getElementById('levelFilter');
+    const randomBtn = document.getElementById('randomBtn');
+    const resultCount = document.getElementById('resultCount');
+    const totalCards = document.getElementById('totalCards');
+
+    const modal = document.getElementById('seerahModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const closeModal = document.getElementById('closeModal');
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const badgeBox = document.getElementById('badgeBox');
+    const missionBtn = document.getElementById('missionBtn');
+    const missionText = document.getElementById('missionText');
+    const soundToggle = document.getElementById('soundToggle');
+
+    let soundOn = true;
+    const storageKey = 'alhayat_seerah_done_v1';
+    let completed = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+    const missions = [
+      'Speak only truthful words today, even in small matters.',
+      'Say salam first to three people at home or school.',
+      'Help your family with one safe household task.',
+      'Use gentle words when correcting someone.',
+      'Avoid wasting water, food, or time today.',
+      'Make dua for the Ummah and for your family.',
+      'Forgive a small mistake and do not keep repeating it.',
+      'Read one Qur’an verse with translation under adult guidance.',
+      'Give one smile and one kind sentence to someone younger.',
+      'Return something borrowed or put one item back in its proper place.',
+      'Practice the mercy pause: stop, breathe, choose a better response.',
+      'Write one thing you love about the Prophet’s ﷺ character.'
+    ];
+
+    const badges = [
+      [1, '🌙 First Lesson'],
+      [5, '💚 Mercy Starter'],
+      [10, '📖 Seerah Reader'],
+      [20, '⭐ Character Builder'],
+      [35, '🕌 Madinah Learner'],
+      [50, '🏆 Seerah Hero'],
+      [75, '👑 Sunnah Champion']
+    ];
+
+    function escapeHTML(str) {
+      return String(str).replace(/[&<>"']/g, function (m) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m];
+      });
+    }
+
+    function beep() {
+      if (!soundOn) return;
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = 640;
+        gain.gain.value = 0.045;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        setTimeout(() => {
+          osc.stop();
+          ctx.close();
+        }, 110);
+      } catch (e) {}
+    }
+
+    function speak(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 0.86;
+      utter.pitch = 1.02;
+      window.speechSynthesis.speak(utter);
+    }
+
+    function populateFilters() {
+      [...new Set(SEERAH_CARDS.map(c => c.phase))].sort().forEach(phase => {
+        const option = document.createElement('option');
+        option.value = phase;
+        option.textContent = phase;
+        phaseFilter.appendChild(option);
+      });
+
+      [...new Set(SEERAH_CARDS.map(c => c.theme))].sort().forEach(theme => {
+        const option = document.createElement('option');
+        option.value = theme;
+        option.textContent = theme;
+        themeFilter.appendChild(option);
+      });
+    }
+
+    function filteredCards() {
+      const q = searchInput.value.trim().toLowerCase();
+      const selectedPhase = phaseFilter.value;
+      const selectedTheme = themeFilter.value;
+      const selectedLevel = levelFilter.value;
+
+      return SEERAH_CARDS.filter(card => {
+        const haystack = [
+          card.title, card.phase, card.theme, card.level, card.age,
+          card.summary, card.lesson, card.reference, card.activity,
+          ...card.questions, ...card.vocab
+        ].join(' ').toLowerCase();
+
+        return (!q || haystack.includes(q)) &&
+          (selectedPhase === 'all' || card.phase === selectedPhase) &&
+          (selectedTheme === 'all' || card.theme === selectedTheme) &&
+          (selectedLevel === 'all' || card.level === selectedLevel);
+      });
+    }
+
+    function renderCards() {
+      const matches = filteredCards();
+      resultCount.textContent = `${matches.length} cards showing`;
+
+      cardGrid.innerHTML = matches.map(card => {
+        const index = SEERAH_CARDS.indexOf(card);
+        const done = completed.includes(card.title);
+        return `
+          <article class="seerah-card panel">
+            <div class="card-top">
+              <div class="card-emoji" aria-hidden="true">${escapeHTML(card.emoji)}</div>
+              <div class="card-meta">
+                <span class="tag level">${escapeHTML(card.level)}</span>
+                <span class="tag phase">${escapeHTML(card.phase)}</span>
+                <span class="tag theme">${escapeHTML(card.theme)}</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>${escapeHTML(card.title)}</h3>
+              <p class="summary">${escapeHTML(card.summary)}</p>
+              <div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(card.lesson)}</div>
+              <p class="reference"><strong>Source note:</strong> ${escapeHTML(card.reference)}</p>
+              <div class="card-actions">
+                <button class="mini-btn open" type="button" data-open="${index}">Open</button>
+                <button class="mini-btn listen" type="button" data-speak="${index}">🔊 Listen</button>
+                <button class="mini-btn done" type="button" data-done="${index}">${done ? '✓ Done' : 'Mark Done'}</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      if (!matches.length) {
+        cardGrid.innerHTML = `<article class="panel" style="padding:24px;grid-column:1/-1;"><h3 style="color:var(--ink);font-size:1.4rem;">No Seerah cards found</h3><p>Try another search word, phase, theme, or level.</p></article>`;
+      }
+
+      document.querySelectorAll('[data-open]').forEach(btn => btn.addEventListener('click', () => openCard(Number(btn.dataset.open))));
+      document.querySelectorAll('[data-speak]').forEach(btn => btn.addEventListener('click', () => {
+        const card = SEERAH_CARDS[Number(btn.dataset.speak)];
+        beep();
+        speak(`${card.title}. ${card.summary}. Lesson: ${card.lesson}. Source note: ${card.reference}. Activity: ${card.activity}`);
+      }));
+      document.querySelectorAll('[data-done]').forEach(btn => btn.addEventListener('click', () => markDone(SEERAH_CARDS[Number(btn.dataset.done)])));
+    }
+
+    function openCard(index) {
+      const card = SEERAH_CARDS[index];
+      modalTitle.textContent = `${card.emoji} ${card.title}`;
+      modalBody.innerHTML = `
+        <div class="card-meta" style="justify-content:flex-start;margin-bottom:10px;">
+          <span class="tag level">${escapeHTML(card.level)}</span>
+          <span class="tag phase">${escapeHTML(card.phase)}</span>
+          <span class="tag theme">${escapeHTML(card.theme)}</span>
+          <span class="tag">${escapeHTML(card.age)}</span>
+        </div>
+        <p class="modal-summary">${escapeHTML(card.summary)}</p>
+        <div class="lesson-box"><strong>Lesson:</strong> ${escapeHTML(card.lesson)}</div>
+        <p class="reference"><strong>Source note:</strong> ${escapeHTML(card.reference)}</p>
+        <div class="card-actions" style="margin:14px 0;">
+          <button class="mini-btn open" type="button" id="modalListen">🔊 Read Aloud</button>
+          <button class="mini-btn done" type="button" id="modalDone">✓ Mark Done</button>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-box">
+            <h4>Think & Answer</h4>
+            <ul>${card.questions.map(q => `<li>${escapeHTML(q)}</li>`).join('')}</ul>
+          </div>
+          <div class="detail-box">
+            <h4>Vocabulary</h4>
+            <ul>${card.vocab.map(v => `<li>${escapeHTML(v)}</li>`).join('')}</ul>
+          </div>
+          <div class="detail-box">
+            <h4>Practice Activity</h4>
+            <p>${escapeHTML(card.activity)}</p>
+          </div>
+        </div>
+      `;
+      modal.classList.add('open');
+      beep();
+
+      document.getElementById('modalListen').addEventListener('click', () => {
+        speak(`${card.title}. ${card.summary}. Lesson: ${card.lesson}. Source note: ${card.reference}. Activity: ${card.activity}`);
+      });
+      document.getElementById('modalDone').addEventListener('click', () => markDone(card));
+    }
+
+    function markDone(card) {
+      if (!completed.includes(card.title)) {
+        completed.push(card.title);
+        localStorage.setItem(storageKey, JSON.stringify(completed));
+        beep();
+      }
+      updateProgress();
+      renderCards();
+    }
+
+    function updateProgress() {
+      completed = [...new Set(completed)].filter(title => SEERAH_CARDS.some(c => c.title === title));
+      localStorage.setItem(storageKey, JSON.stringify(completed));
+      const percent = Math.min(100, Math.round((completed.length / SEERAH_CARDS.length) * 100));
+      progressFill.style.width = percent + '%';
+      progressText.textContent = `${completed.length} of ${SEERAH_CARDS.length} Seerah cards completed (${percent}%).`;
+      badgeBox.innerHTML = badges.map(([need,label]) => {
+        const active = completed.length >= need;
+        return `<div class="badge ${active ? 'active' : ''}">${active ? label : '🔒 ' + need + ' cards'}</div>`;
+      }).join('');
+    }
+
+    function randomCard() {
+      const pool = filteredCards();
+      const list = pool.length ? pool : SEERAH_CARDS;
+      const card = list[Math.floor(Math.random() * list.length)];
+      openCard(SEERAH_CARDS.indexOf(card));
+    }
+
+    document.querySelectorAll('[data-phase-jump]').forEach(card => {
+      card.addEventListener('click', () => {
+        phaseFilter.value = card.dataset.phaseJump;
+        document.getElementById('cards').scrollIntoView({ behavior: 'smooth' });
+        renderCards();
+      });
+    });
+
+    missionBtn.addEventListener('click', () => {
+      missionText.textContent = missions[Math.floor(Math.random() * missions.length)];
+      beep();
+    });
+
+    searchInput.addEventListener('input', renderCards);
+    phaseFilter.addEventListener('change', renderCards);
+    themeFilter.addEventListener('change', renderCards);
+    levelFilter.addEventListener('change', renderCards);
+    randomBtn.addEventListener('click', randomCard);
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('open');
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    });
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        modal.classList.remove('open');
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+    });
+
+    soundToggle.addEventListener('click', () => {
+      soundOn = !soundOn;
+      soundToggle.textContent = soundOn ? '🔊' : '🔇';
+      soundToggle.setAttribute('aria-label', soundOn ? 'Turn learning sounds off' : 'Turn learning sounds on');
+      if (soundOn) beep();
+    });
+
+    totalCards.textContent = SEERAH_CARDS.length;
+    populateFilters();
+    renderCards();
+    updateProgress();
+  </script>
+</body>
+</html>
