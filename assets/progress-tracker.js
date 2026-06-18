@@ -1,0 +1,1 @@
+window.alHayatProgressTracker = window.alHayatProgressTracker || {};

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activities Quizzes Ages 3-8 | Al-Hayat Kids Learning Hub</title>
+    <meta name="description" content="Child-friendly quiz activity page for ages 3-8 with visible fallback questions, subject filters, difficulty filters, and start buttons.">
+    <meta property="og:title" content="Activities Quizzes Ages 3-8">
+    <meta property="og:description" content="Static sample questions remain visible even if JavaScript is unavailable.">
+    <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/activities/quizzes.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><nav class="nav"><a class="brand" href="../index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><div class="nav-links" data-nav-links><a href="../index.html">Home</a><a href="../subjects/index.html">Learn</a><a href="../reading-library/index.html">Stories</a><a href="../quiz.html">Quiz</a><a href="../parents-corner/index.html">Parent</a></div></nav></header>
+    <main id="main">
+      <section class="page-hero"><div class="page-hero-content"><div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Activities</a><span>/</span><span>Quizzes</span></div><p class="eyebrow">Quiz activity • Ages 3-8</p><h1>Start with a small quiz.</h1><p>There are visible sample questions in the page itself. JavaScript only filters and enhances them.</p></div></section>
+      <section class="section">
+        <div class="section-heading"><p class="eyebrow">Quiz controls</p><h2>Choose subject and difficulty.</h2><p>The sample set below includes 6 questions. No inflated question count is shown.</p></div>
+        <div class="filter-panel" data-activity-quiz-controls>
+          <label>Subject
+            <select data-activity-subject>
+              <option value="all">All subjects</option>
+              <option value="English">English</option>
+              <option value="Math">Math</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Islamic">Islamic</option>
+              <option value="Science">Science</option>
+              <option value="Computer">Computer</option>
+            </select>
+          </label>
+          <label>Difficulty
+            <select data-activity-difficulty>
+              <option value="all">All levels</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="button" data-start-activity-quiz>Start quiz</button>
+        </div>
+        <p class="source-note" data-activity-quiz-status aria-live="polite">Showing 6 sample questions.</p>
+      </section>
+      <section class="section muted">
+        <div class="lesson-grid" data-activity-quiz-list>
+          <article class="quiz-card" data-subject="English" data-difficulty="easy" data-age="3-4"><span class="age-pill">Ages 3-4</span><span class="skill-pill">English • Easy</span><h3>Which word starts with A?</h3><div class="quiz-options"><button type="button" data-answer="Apple" data-correct="Apple">Apple</button><button type="button" data-answer="Sun" data-correct="Apple">Sun</button><button type="button" data-answer="Ball" data-correct="Apple">Ball</button></div><p class="feedback" aria-live="polite"></p></article>
+          <article class="quiz-card" data-subject="Math" data-difficulty="easy" data-age="3-4"><span class="age-pill">Ages 3-4</span><span class="skill-pill">Math • Easy</span><h3>How many stars: ★ ★?</h3><div class="quiz-options"><button type="button" data-answer="1" data-correct="2">1</button><button type="button" data-answer="2" data-correct="2">2</button><button type="button" data-answer="3" data-correct="2">3</button></div><p class="feedback" aria-live="polite"></p></article>
+          <article class="quiz-card" data-subject="Arabic" data-difficulty="easy" data-age="5-6"><span class="age-pill">Ages 5-6</span><span class="skill-pill">Arabic • Easy</span><h3>Which letter is ب?</h3><div class="quiz-options"><button type="button" data-answer="ب" data-correct="ب">ب</button><button type="button" data-answer="ت" data-correct="ب">ت</button><button type="button" data-answer="ن" data-correct="ب">ن</button></div><p class="feedback" aria-live="polite"></p></article>
+          <article class="quiz-card" data-subject="Islamic" data-difficulty="easy" data-age="5-6"><span class="age-pill">Ages 5-6</span><span class="skill-pill">Islamic • Easy</span><h3>What should we say before eating?</h3><div class="quiz-options"><button type="button" data-answer="Bismillah" data-correct="Bismillah">Bismillah</button><button type="button" data-answer="Good night" data-correct="Bismillah">Good night</button><button type="button" data-answer="Hello" data-correct="Bismillah">Hello</button></div><p class="feedback" aria-live="polite"></p></article>
+          <article class="quiz-card" data-subject="Science" data-difficulty="medium" data-age="7-8"><span class="age-pill">Ages 7-8</span><span class="skill-pill">Science • Medium</span><h3>Plants need water and what else?</h3><div class="quiz-options"><button type="button" data-answer="Sunlight" data-correct="Sunlight">Sunlight</button><button type="button" data-answer="Shoes" data-correct="Sunlight">Shoes</button><button type="button" data-answer="Toys" data-correct="Sunlight">Toys</button></div><p class="feedback" aria-live="polite"></p></article>
+          <article class="quiz-card" data-subject="Computer" data-difficulty="medium" data-age="7-8"><span class="age-pill">Ages 7-8</span><span class="skill-pill">Computer • Medium</span><h3>Which part helps us type?</h3><div class="quiz-options"><button type="button" data-answer="Keyboard" data-correct="Keyboard">Keyboard</button><button type="button" data-answer="Plate" data-correct="Keyboard">Plate</button><button type="button" data-answer="Book" data-correct="Keyboard">Book</button></div><p class="feedback" aria-live="polite"></p></article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-wrap"><div class="site-footer"><div><a class="brand" href="../index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a></div><div><h2>Practice</h2><a href="../quiz.html">Main Quiz</a><a href="../worksheets/index.html">Worksheets</a></div><div><h2>Learn</h2><a href="../subjects/index.html">Subjects</a><a href="../parents-corner/index.html">Parent Corner</a></div></div></footer>
+    <nav class="bottom-nav"><a href="../index.html"><span>🏠</span>Home</a><a href="../subjects/index.html"><span>📚</span>Learn</a><a href="../reading-library/index.html"><span>📖</span>Stories</a><a href="../quiz.html"><span>⭐</span>Quiz</a><a href="../parents-corner/index.html"><span>👪</span>Parent</a></nav>
+    <script src="../script.js"></script>
+  </body>
+</html>

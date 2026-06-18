@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reading Habits for Kids | Parent Guide | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="A parent-friendly reading habits guide for children with daily routines, read-aloud tips, comprehension questions, vocabulary notebook, Islamic story values, 30-day tracker, and reading habit quiz." />
+  <meta name="keywords" content="reading habits for kids, parent reading guide, read aloud routine, reading corner, story comprehension, kids reading practice, Al-Hayat Kids Learning Hub" />
+  <meta name="author" content="Dr. Imran Hayat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/parents-corner/reading-habits.html" />
+
+  <meta property="og:title" content="Reading Habits for Kids | Parent Guide" />
+  <meta property="og:description" content="Build strong reading habits through daily read-aloud, picture talk, retelling, vocabulary, story questions, and parent-guided routines." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/parents-corner/reading-habits.html" />
+
+  <style>
+    :root {
+      --purple:#7c3aed; --purple-dark:#5b21b6; --purple-soft:#ede9fe;
+      --blue:#2563eb; --blue-dark:#1d4ed8; --blue-soft:#dbeafe;
+      --green:#16a34a; --green-dark:#166534; --green-soft:#dcfce7;
+      --teal:#0f766e; --teal-dark:#115e59; --teal-soft:#ccfbf1;
+      --gold:#d97706; --gold-dark:#92400e; --gold-soft:#fef3c7;
+      --orange:#f97316; --orange-soft:#ffedd5;
+      --pink:#ec4899; --pink-dark:#be185d; --pink-soft:#fce7f3;
+      --rose:#e11d48; --rose-soft:#ffe4e6;
+      --ink:#102033; --text:#334155; --muted:#64748b; --line:#e2e8f0; --white:#ffffff;
+      --shadow:0 18px 45px rgba(15,23,42,.12);
+      --soft-shadow:0 10px 26px rgba(15,23,42,.08);
+      --radius:24px; --max:1240px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(124,58,237,.16), transparent 28%),
+        radial-gradient(circle at 92% 14%, rgba(236,72,153,.14), transparent 32%),
+        radial-gradient(circle at 74% 88%, rgba(22,163,74,.13), transparent 30%),
+        linear-gradient(180deg,#fbf8ff 0%,#ffffff 42%,#f7fff9 100%);
+    }
+    a { color:inherit; text-decoration:none; }
+    button,input,select { font:inherit; }
+    .container { width:min(100% - 34px,var(--max)); margin-inline:auto; }
+    .skip-link {
+      position:absolute; top:-100px; left:16px; z-index:9999;
+      background:var(--ink); color:white; padding:10px 14px; border-radius:12px; font-weight:900;
+    }
+    .skip-link:focus { top:16px; }
+
+    .topbar {
+      position:sticky; top:0; z-index:500; background:rgba(255,255,255,.96);
+      border-bottom:1px solid rgba(226,232,240,.9); backdrop-filter:blur(16px);
+    }
+    .toprow { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark {
+      width:54px; height:54px; border-radius:18px; display:grid; place-items:center; flex:0 0 auto;
+      background:linear-gradient(135deg,var(--purple),var(--pink),var(--green)); color:white; font-size:1.8rem; box-shadow:var(--soft-shadow);
+    }
+    .brand-text strong { display:block; color:var(--purple-dark); font-size:1.22rem; line-height:1.15; font-weight:1000; letter-spacing:-.03em; }
+    .brand-text span { display:block; color:var(--muted); font-size:.82rem; font-weight:750; }
+
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .nav-actions a,.menu-btn {
+      min-height:42px; display:inline-flex; align-items:center; justify-content:center; padding:0 14px;
+      border-radius:14px; border:1px solid var(--line); background:white; color:var(--ink); font-weight:900; cursor:pointer;
+    }
+    .nav-actions a.primary { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; border-color:transparent; }
+    .menu-btn { display:none; }
+
+    .mini-nav {
+      background:linear-gradient(90deg,#5b21b6,#7c3aed,#ec4899,#2563eb,#16a34a);
+      color:white; box-shadow:0 10px 22px rgba(124,58,237,.22);
+    }
+    .mini-inner { min-height:48px; display:flex; gap:8px; align-items:center; overflow:auto; scrollbar-width:none; }
+    .mini-inner::-webkit-scrollbar { display:none; }
+    .mini-inner a { white-space:nowrap; min-height:36px; display:inline-flex; align-items:center; padding:0 12px; border-radius:999px; font-weight:850; font-size:.92rem; }
+    .mini-inner a:hover,.mini-inner a:focus { background:rgba(255,255,255,.16); }
+
+    .mobile-menu { display:none; background:white; border-bottom:1px solid var(--line); }
+    .mobile-menu.open { display:block; }
+    .mobile-grid { padding:14px 0; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+    .mobile-grid a { padding:12px; border-radius:14px; background:#f8fafc; border:1px solid var(--line); font-weight:900; }
+
+    .hero { position:relative; overflow:hidden; padding:58px 0 42px; }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(254,243,199,.82) 0 48px, transparent 49px),
+        radial-gradient(circle at 87% 18%, rgba(124,58,237,.16) 0 76px, transparent 77px),
+        radial-gradient(circle at 78% 86%, rgba(219,234,254,.70) 0 98px, transparent 99px);
+      pointer-events:none;
+    }
+    .hero-grid { position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:34px; align-items:center; }
+    .breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:18px; color:var(--muted); font-weight:850; font-size:.94rem; }
+    .breadcrumb a { color:var(--purple-dark); text-decoration:underline; text-underline-offset:5px; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:8px; min-height:34px; padding:0 12px; border-radius:999px;
+      background:white; border:1px solid var(--line); color:var(--purple-dark); font-weight:1000; box-shadow:var(--soft-shadow);
+      margin-bottom:16px;
+    }
+    h1 {
+      color:var(--ink); font-size:clamp(2.72rem,6.2vw,6rem); line-height:.92;
+      letter-spacing:-.075em; font-weight:1000; margin-bottom:18px;
+    }
+    h1 span {
+      display:block; background:linear-gradient(90deg,var(--purple),var(--pink),var(--blue),var(--green),var(--gold));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-lead { max-width:790px; font-size:clamp(1.03rem,2vw,1.25rem); color:#27415e; font-weight:650; margin-bottom:22px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn {
+      min-height:50px; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:0; border-radius:15px; padding:0 18px; font-weight:1000; cursor:pointer; box-shadow:var(--soft-shadow);
+      transition:.2s ease;
+    }
+    .btn:hover,.btn:focus { transform:translateY(-2px); filter:saturate(1.08); }
+    .btn-purple { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; }
+    .btn-pink { background:linear-gradient(135deg,var(--pink),var(--pink-dark)); color:white; }
+    .btn-blue { background:linear-gradient(135deg,var(--blue),var(--blue-dark)); color:white; }
+    .btn-green { background:linear-gradient(135deg,var(--green),var(--green-dark)); color:white; }
+    .btn-gold { background:linear-gradient(135deg,var(--gold),var(--gold-dark)); color:white; }
+    .btn-white { background:white; color:var(--ink); border:1px solid var(--line); }
+
+    .stats { margin-top:24px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:880px; }
+    .stat { background:white; border:1px solid var(--line); border-radius:18px; padding:14px 12px; box-shadow:var(--soft-shadow); text-align:center; }
+    .stat strong { display:block; color:var(--purple-dark); font-size:1.35rem; line-height:1; font-weight:1000; }
+    .stat span { display:block; color:var(--muted); font-size:.8rem; font-weight:800; margin-top:4px; }
+
+    .hero-visual {
+      position:relative; min-height:456px; border-radius:38px; overflow:hidden; padding:26px;
+      background:
+        radial-gradient(circle at 45% 16%, rgba(255,255,255,.82) 0 58px, transparent 59px),
+        linear-gradient(135deg,#ede9fe,#fce7f3 42%,#dbeafe 72%,#dcfce7);
+      box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.82);
+      display:grid; place-items:center;
+    }
+    .book {
+      width:min(460px,100%); min-height:350px; border-radius:36px; background:rgba(255,255,255,.95);
+      border:1px solid rgba(226,232,240,.92); box-shadow:0 26px 52px rgba(15,23,42,.16);
+      padding:22px; transform:rotate(-2deg);
+    }
+    .book-top {
+      display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border-radius:20px;
+      background:linear-gradient(135deg,var(--purple),var(--pink)); color:white; font-weight:1000;
+      margin-bottom:16px;
+    }
+    .book-lines { display:grid; gap:12px; }
+    .line {
+      min-height:58px; border-radius:18px; padding:12px; display:flex; gap:10px; align-items:center;
+      color:#334155; font-weight:850; box-shadow:var(--soft-shadow); border:1px solid var(--line);
+      background:linear-gradient(135deg,#fff,#f8fafc);
+      animation:float 5.5s ease-in-out infinite;
+    }
+    .line:nth-child(2){animation-delay:.3s;}
+    .line:nth-child(3){animation-delay:.6s;}
+    .line:nth-child(4){animation-delay:.9s;}
+    .line span { width:40px; height:40px; border-radius:14px; display:grid; place-items:center; background:var(--purple-soft); color:var(--purple-dark); font-weight:1000; }
+    @keyframes float { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-8px) rotate(1deg); } }
+
+    .section { padding:38px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px; }
+    .section-head small { color:var(--gold); font-weight:1000; text-transform:uppercase; letter-spacing:.04em; }
+    .section-head h2 {
+      color:var(--ink); font-size:clamp(1.8rem,3vw,3.1rem); line-height:1.05;
+      letter-spacing:-.05em; margin-top:4px; font-weight:1000;
+    }
+    .section-head p { max-width:880px; color:var(--muted); font-weight:650; margin-top:8px; }
+    .pill { display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px; background:var(--purple-soft); color:var(--purple-dark); font-weight:1000; font-size:.84rem; }
+
+    .quick-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .quick-card {
+      background:white; border:1px solid var(--line); border-radius:24px; padding:20px; box-shadow:var(--soft-shadow);
+      min-height:190px; transition:.2s ease;
+    }
+    .quick-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .quick-card .icon { font-size:2.25rem; margin-bottom:8px; }
+    .quick-card h3 { color:var(--ink); font-size:1.12rem; font-weight:1000; margin-bottom:7px; }
+    .quick-card p { color:#475569; font-weight:650; font-size:.92rem; }
+
+    .toolbar {
+      padding:18px; margin-bottom:18px; display:grid; grid-template-columns:1.2fr .8fr .8fr auto; gap:12px; align-items:center;
+      background:white; border:1px solid var(--line); border-radius:24px; box-shadow:var(--soft-shadow);
+    }
+    .field input,.field select {
+      width:100%; border:1px solid #cbd5e1; border-radius:16px; padding:12px 14px; outline:0;
+      color:var(--ink); background:#fbfdff; font-weight:700;
+    }
+    .field input:focus,.field select:focus { border-color:var(--purple); box-shadow:0 0 0 4px rgba(124,58,237,.14); }
+
+    .habit-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .habit-card {
+      min-height:430px; display:flex; flex-direction:column; background:white; border:1px solid var(--line);
+      border-radius:28px; overflow:hidden; box-shadow:var(--soft-shadow); transition:.2s ease;
+    }
+    .habit-card:hover { transform:translateY(-5px); box-shadow:var(--shadow); }
+    .card-top { padding:20px; display:flex; justify-content:space-between; gap:12px; align-items:flex-start; background:linear-gradient(135deg,#fff,#f8fafc); }
+    .card-icon {
+      width:66px; height:66px; border-radius:22px; display:grid; place-items:center; font-size:2.4rem; box-shadow:var(--soft-shadow); background:var(--gold-soft);
+    }
+    .card-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+    .tag { min-height:26px; padding:0 9px; border-radius:999px; background:#f1f5f9; color:#334155; font-size:.75rem; font-weight:1000; display:inline-flex; align-items:center; }
+    .tag.category { background:var(--purple-soft); color:var(--purple-dark); }
+    .tag.age { background:var(--blue-soft); color:var(--blue-dark); }
+    .tag.time { background:var(--green-soft); color:var(--green-dark); }
+    .card-body { padding:0 20px 20px; flex:1; display:flex; flex-direction:column; }
+    .card-body h3 { color:var(--ink); font-size:1.35rem; line-height:1.13; font-weight:1000; letter-spacing:-.03em; margin:10px 0 6px; }
+    .card-body p { color:#475569; font-weight:650; font-size:.95rem; }
+    .step-list { padding-left:20px; margin:12px 0; color:#475569; font-weight:650; }
+    .step-list li { margin:6px 0; }
+    .tip-box {
+      padding:12px; border-radius:16px; background:linear-gradient(135deg,var(--gold-soft),#fff);
+      border:1px solid #fde68a; color:#713f12; font-weight:850; font-size:.9rem; margin:10px 0 12px;
+    }
+    .card-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
+    .mini-btn {
+      min-height:38px; border-radius:12px; border:1px solid var(--line); background:white; color:var(--ink);
+      padding:0 12px; font-weight:950; cursor:pointer; display:inline-flex; align-items:center; gap:6px;
+    }
+    .mini-btn.primary { background:linear-gradient(135deg,var(--purple),var(--purple-dark)); color:white; border-color:transparent; }
+    .mini-btn.done { background:var(--green-soft); color:var(--green-dark); border-color:#bbf7d0; }
+
+    .tracker-layout { display:grid; grid-template-columns:1fr 360px; gap:22px; align-items:start; }
+    .tracker-card,.quiz-card,.routine-card {
+      background:white; border:1px solid var(--line); border-radius:28px; padding:24px; box-shadow:var(--soft-shadow);
+    }
+    .tracker-card h3,.quiz-card h3,.routine-card h3 { color:var(--ink); font-size:1.45rem; font-weight:1000; letter-spacing:-.03em; margin-bottom:10px; }
+    .tracker-grid { display:grid; grid-template-columns:repeat(10,1fr); gap:8px; margin:16px 0; }
+    .day {
+      aspect-ratio:1; min-height:42px; border-radius:12px; border:1px solid var(--line); background:#f8fafc;
+      display:grid; place-items:center; font-weight:1000; color:#64748b; cursor:pointer;
+    }
+    .day.done { background:var(--green-soft); color:var(--green-dark); border-color:#86efac; box-shadow:var(--soft-shadow); }
+    .progress-bar { height:16px; border-radius:999px; background:#e2e8f0; overflow:hidden; margin:12px 0; }
+    .progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--purple),var(--pink),var(--green)); transition:.35s ease; }
+
+    .quiz-card { position:sticky; top:132px; background:linear-gradient(135deg,#fbf8ff,#fff); }
+    .quiz-question { color:var(--ink); font-size:1.05rem; font-weight:1000; margin:10px 0; }
+    .option-grid { display:grid; gap:8px; margin-top:10px; }
+    .option-btn {
+      min-height:44px; border-radius:14px; border:1px solid #cbd5e1; background:white;
+      padding:8px 10px; text-align:left; cursor:pointer; font-weight:850;
+    }
+    .option-btn:hover { border-color:var(--purple); box-shadow:var(--soft-shadow); }
+    .option-btn.correct { background:var(--green-soft); border-color:#86efac; color:var(--green-dark); }
+    .option-btn.wrong { background:var(--rose-soft); border-color:#fecdd3; color:#9f1239; }
+    .quiz-feedback { min-height:44px; margin-top:10px; padding:10px; border-radius:14px; background:#f8fafc; border:1px solid var(--line); font-weight:800; }
+
+    .routine-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-top:16px; }
+    .routine-day { padding:16px; border-radius:20px; background:#f8fafc; border:1px solid var(--line); }
+    .routine-day strong { display:block; color:var(--purple-dark); margin-bottom:6px; }
+    .routine-day span { color:#475569; font-weight:650; font-size:.92rem; }
+
+    .print-box {
+      background:linear-gradient(135deg,#ecfdf5,#ffffff); border:1px solid #bbf7d0; border-radius:32px;
+      padding:26px; box-shadow:var(--soft-shadow); display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center;
+    }
+    .print-box h2 { color:var(--green-dark); font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.08; letter-spacing:-.04em; font-weight:1000; }
+    .print-box p { color:#475569; font-weight:650; margin-top:6px; }
+
+    .footer { margin-top:38px; padding:30px 0; background:#0f172a; color:#cbd5e1; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:22px; }
+    .footer h2,.footer h3 { color:white; margin-bottom:8px; }
+    .footer a { display:block; margin:5px 0; color:#dbeafe; font-weight:750; }
+    .back-top {
+      position:fixed; right:16px; bottom:16px; z-index:400; width:42px; height:42px; border-radius:50%;
+      display:grid; place-items:center; background:var(--purple); color:white; box-shadow:var(--shadow); font-weight:1000;
+    }
+
+    @media print {
+      .topbar,.mini-nav,.hero-actions,.toolbar,.quiz-card,.footer,.back-top,.mobile-menu { display:none !important; }
+      body { background:white; color:black; }
+      .hero,.section { padding:18px 0; }
+      .habit-card,.tracker-card,.routine-card,.print-box { box-shadow:none; border:1px solid #ddd; break-inside:avoid; }
+    }
+
+    @media (max-width:1120px) {
+      .hero-grid,.tracker-layout,.print-box { grid-template-columns:1fr; }
+      .stats,.quick-grid { grid-template-columns:repeat(2,1fr); }
+      .habit-grid { grid-template-columns:repeat(2,1fr); }
+      .routine-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:repeat(2,1fr); }
+      .quiz-card { position:static; }
+    }
+    @media (max-width:760px) {
+      .container { width:min(100% - 24px,var(--max)); }
+      .toprow { min-height:70px; }
+      .brand-mark { width:46px; height:46px; border-radius:14px; font-size:1.5rem; }
+      .brand-text strong { font-size:1.02rem; }
+      .brand-text span { font-size:.73rem; }
+      .nav-actions a { display:none; }
+      .menu-btn { display:inline-flex; }
+      .mini-nav { display:none; }
+      .hero { padding-top:38px; }
+      h1 { font-size:3.1rem; }
+      .hero-visual { min-height:330px; border-radius:26px; }
+      .book { transform:scale(.88) rotate(-2deg); }
+      .stats,.toolbar,.quick-grid,.habit-grid,.routine-grid,.footer-grid,.mobile-grid { grid-template-columns:1fr; }
+      .tracker-grid { grid-template-columns:repeat(5,1fr); }
+      .section-head { display:block; }
+      .section-head .pill { margin-top:10px; }
+      .btn { width:100%; }
+      .habit-card { min-height:auto; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Reading Habits for Kids | Parent Guide",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/parents-corner/reading-habits.html",
+    "author":{"@type":"Person","name":"Dr. Imran Hayat"},
+    "publisher":{"@type":"Organization","name":"Al-Hayat Kids Learning Hub"},
+    "about":["reading habits for children","parent reading guide","read aloud routine","children's literacy"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" id="top">
+    <div class="container toprow">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true">📖</span>
+        <span class="brand-text">
+          <strong>Al-Hayat Kids Learning Hub</strong>
+          <span>Parents Corner • Reading Habits</span>
+        </span>
+      </a>
+
+      <nav class="nav-actions" aria-label="Top navigation">
+        <a href="index.html">Parents</a>
+        <a href="../reading-library/index.html">Stories</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="../activities/quizzes.html">Quizzes</a>
+        <a class="primary" href="../online-classes.html">Online Classes</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+      </nav>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container mobile-grid">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Parents Corner</a>
+        <a href="../reading-library/index.html">Reading Library</a>
+        <a href="../reading-library/moral-stories.html">Moral Stories</a>
+        <a href="../reading-library/islamic-stories.html">Islamic Stories</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="../activities/quizzes.html">Quizzes</a>
+        <a href="../online-classes.html">Online Classes</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mini-nav" aria-label="Reading habits navigation">
+    <div class="container mini-inner">
+      <a href="../index.html">🏠 Home</a>
+      <a href="index.html">👨‍👩‍👧 Parents Corner</a>
+      <a href="reading-habits.html">📖 Reading Habits</a>
+      <a href="../reading-library/index.html">📚 Reading Library</a>
+      <a href="../reading-library/moral-stories.html">🌟 Moral Stories</a>
+      <a href="../reading-library/islamic-stories.html">🕌 Islamic Stories</a>
+      <a href="../worksheets/index.html">📝 Worksheets</a>
+      <a href="../online-classes.html">🎓 Online Classes</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>›</span>
+            <a href="index.html">Parents Corner</a> <span>›</span>
+            <span>Reading Habits</span>
+          </div>
+          <div class="eyebrow">💜 Parent guide for joyful reading at home</div>
+          <h1 id="page-title">Reading Habits <span>for Kids</span></h1>
+          <p class="hero-lead">
+            A practical parent guide to build children’s love for reading through daily read-aloud,
+            picture talk, story questions, retelling, vocabulary notebooks, Islamic stories, bedtime reading,
+            and a 30-day reading tracker.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-purple" href="#habits">Open Habit Library</a>
+            <a class="btn btn-pink" href="#tracker">Start 30-Day Tracker</a>
+            <button class="btn btn-white" type="button" onclick="window.print()">Print Guide</button>
+          </div>
+
+          <div class="stats" aria-label="Reading habits guide summary">
+            <div class="stat"><strong>12</strong><span>Reading Habits</span></div>
+            <div class="stat"><strong>30</strong><span>Day Tracker</span></div>
+            <div class="stat"><strong>6</strong><span>Quiz Questions</span></div>
+            <div class="stat"><strong>10 min</strong><span>Daily Start</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="book">
+            <div class="book-top"><span>Today’s Reading Plan</span><span>✨</span></div>
+            <div class="book-lines">
+              <div class="line"><span>1</span>Choose a short story</div>
+              <div class="line"><span>2</span>Talk about pictures</div>
+              <div class="line"><span>3</span>Read aloud with love</div>
+              <div class="line"><span>4</span>Ask one gentle question</div>
+              <div class="line"><span>5</span>Mark today’s tracker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quick-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <small>Quick Principles</small>
+            <h2 id="quick-title">What matters most in early reading</h2>
+            <p>Children become readers when books feel warm, meaningful, and part of everyday life.</p>
+          </div>
+          <span class="pill">Love first, pressure later never</span>
+        </div>
+
+        <div class="quick-grid">
+          <article class="quick-card">
+            <div class="icon">💬</div>
+            <h3>Talk before reading</h3>
+            <p>Picture talk and prediction prepare the child’s mind for vocabulary and meaning.</p>
+          </article>
+          <article class="quick-card">
+            <div class="icon">🌙</div>
+            <h3>Use short routines</h3>
+            <p>Ten minutes daily is more useful than one long forced session.</p>
+          </article>
+          <article class="quick-card">
+            <div class="icon">⭐</div>
+            <h3>Praise effort</h3>
+            <p>Praise attention, trying, listening, and retelling, not only perfect reading.</p>
+          </article>
+          <article class="quick-card">
+            <div class="icon">🏡</div>
+            <h3>Make books visible</h3>
+            <p>A small reading corner makes stories part of the child’s home environment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habits" aria-labelledby="habits-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <small>Habit Library</small>
+            <h2 id="habits-title">Choose one reading habit today</h2>
+            <p>Use these cards as a parent training guide. Start small and repeat the same habit for a week.</p>
+          </div>
+          <span class="pill" id="resultCount">0 habits showing</span>
+        </div>
+
+        <div class="toolbar" aria-label="Reading habits filters">
+          <div class="field"><input id="searchInput" type="search" placeholder="Search habit, age, category, parent tip..." /></div>
+          <div class="field"><select id="categoryFilter"><option value="all">All Categories</option></select></div>
+          <div class="field"><select id="ageFilter"><option value="all">All Ages</option></select></div>
+          <button class="btn btn-blue" type="button" id="resetFilters">Reset</button>
+        </div>
+
+        <div class="habit-grid" id="habitGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="tracker" aria-labelledby="tracker-title">
+      <div class="container tracker-layout">
+        <article class="tracker-card">
+          <h3 id="tracker-title">30-Day Reading Habit Tracker</h3>
+          <p>Click a day after your child completes a short reading routine. Progress is saved on the same browser.</p>
+          <div class="tracker-grid" id="trackerGrid"></div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <p><strong id="progressText">0 of 30 days completed.</strong></p>
+          <div class="hero-actions" style="margin-top:12px;">
+            <button class="btn btn-green" type="button" id="markToday">Mark Today</button>
+            <button class="btn btn-white" type="button" id="clearTracker">Clear Tracker</button>
+          </div>
+        </article>
+
+        <aside class="quiz-card">
+          <h3>Parent Reading Quiz</h3>
+          <p class="quiz-question" id="quizQuestion">Click “New Question” to begin.</p>
+          <div class="option-grid" id="quizOptions"></div>
+          <div class="quiz-feedback" id="quizFeedback">Ready.</div>
+          <div class="hero-actions" style="margin-top:12px;">
+            <button class="btn btn-purple" type="button" id="newQuizBtn">New Question</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="routine-title">
+      <div class="container">
+        <article class="routine-card">
+          <div class="section-head" style="display:block;margin-bottom:12px;">
+            <small>Weekly Reading Routine</small>
+            <h2 id="routine-title">A simple weekly plan for parents</h2>
+            <p>Use this routine with stories from the Reading Library, Islamic stories, worksheets, and oral discussion.</p>
+          </div>
+
+          <div class="routine-grid">
+            <div class="routine-day"><strong>Monday</strong><span>Read aloud + picture walk.</span></div>
+            <div class="routine-day"><strong>Tuesday</strong><span>Child repeats lines + one new word.</span></div>
+            <div class="routine-day"><strong>Wednesday</strong><span>Read Islamic or moral story + discuss value.</span></div>
+            <div class="routine-day"><strong>Thursday</strong><span>Retell in three sentences + draw scene.</span></div>
+            <div class="routine-day"><strong>Friday</strong><span>Review favourite story + celebrate progress.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="print-title">
+      <div class="container">
+        <div class="print-box">
+          <div>
+            <h2 id="print-title">Turn reading into a family habit</h2>
+            <p>Use this guide with the Reading Library, Moral Stories, Islamic Stories, worksheets, and online classes support.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="../reading-library/index.html">Open Reading Library</a>
+            <a class="btn btn-white" href="../online-classes.html">Get Reading Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Al-Hayat Kids Learning Hub</h2>
+        <p>Parent-guided Islamic and academic learning for children through stories, worksheets, quizzes, activities, and online support.</p>
+      </div>
+      <div>
+        <h3>Parents Corner</h3>
+        <a href="index.html">Parents Home</a>
+        <a href="reading-habits.html">Reading Habits</a>
+        <a href="../online-classes.html">Online Classes</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Reading</h3>
+        <a href="../reading-library/index.html">Reading Library</a>
+        <a href="../reading-library/moral-stories.html">Moral Stories</a>
+        <a href="../reading-library/islamic-stories.html">Islamic Stories</a>
+        <a href="../reading-library/prophet-stories.html">Prophet Stories</a>
+      </div>
+      <div>
+        <h3>Practice</h3>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="../activities/quizzes.html">Quizzes</a>
+        <a href="../activities/puzzles.html">Puzzles</a>
+        <a href="../activities/brain-games.html">Brain Games</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../recommended-resources.html">Resources</a>
+        <a href="../sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const HABITS = [{"title": "Read aloud every day", "category": "Daily Routine", "age": "3–7", "time": "10–15 minutes", "icon": "📖", "summary": "A parent reads with expression while the child listens, points, predicts, and talks about the story.", "steps": ["Choose a short book or story page", "Read with clear voice and expression", "Pause to ask: What do you think happens next?", "Let the child repeat favourite words"], "parent_tip": "Do not rush correction. First build love for books, stories, and listening."}, {"title": "Picture walk before reading", "category": "Before Reading", "age": "3–7", "time": "3–5 minutes", "icon": "🖼️", "summary": "Before reading, look at pictures and discuss characters, setting, objects, colours, feelings, and possible events.", "steps": ["Open the page before reading words", "Ask: What do you see?", "Ask: Who is here?", "Ask: What might happen?"], "parent_tip": "Picture talk prepares vocabulary and makes reading easier."}, {"title": "Ask three simple questions", "category": "Comprehension", "age": "4–8", "time": "3 minutes", "icon": "❓", "summary": "After reading, ask one question about who, one about what happened, and one about the lesson.", "steps": ["Who was in the story?", "What happened first or next?", "What did we learn from it?", "Praise any clear answer"], "parent_tip": "Keep questions friendly. Reading should feel like conversation, not an exam."}, {"title": "Retell in three sentences", "category": "Speaking", "age": "5–9", "time": "5 minutes", "icon": "💬", "summary": "The child retells the story simply: beginning, middle, and end.", "steps": ["First, the story started with...", "Next, something happened...", "In the end...", "Help with prompts, not full answers"], "parent_tip": "Retelling builds memory, sequencing, speaking, and writing readiness."}, {"title": "Make a reading corner", "category": "Environment", "age": "3–10", "time": "One-time setup", "icon": "🏡", "summary": "Create a small attractive space where books, stories, worksheets, pencils, and colours are easy to reach.", "steps": ["Choose a quiet corner", "Place 5–10 books or printed stories", "Add a small notebook and colours", "Keep it clean and inviting"], "parent_tip": "A visible book corner reminds children that reading is part of family life."}, {"title": "Use finger tracking", "category": "Reading Skill", "age": "4–7", "time": "During reading", "icon": "👆", "summary": "The child follows words with a finger from left to right while listening or reading simple text.", "steps": ["Point to each word slowly", "Move left to right", "Let the child point while you read", "Do not force speed"], "parent_tip": "Finger tracking improves directionality, attention, and word awareness."}, {"title": "One new word notebook", "category": "Vocabulary", "age": "5–10", "time": "3 minutes", "icon": "📒", "summary": "After reading, choose one useful word and write or draw it in a small vocabulary notebook.", "steps": ["Choose one word", "Say its meaning simply", "Use it in a sentence", "Draw a small picture"], "parent_tip": "One word daily is better than ten words forgotten quickly."}, {"title": "Read Islamic stories with values", "category": "Islamic Values", "age": "5–12", "time": "10 minutes", "icon": "🕌", "summary": "Use Islamic stories to discuss honesty, kindness, patience, respect, gratitude, and trust in Allah.", "steps": ["Read one short story", "Ask: Which good value is here?", "Connect it with daily life", "Choose one action for today"], "parent_tip": "Do not only say the moral. Ask the child how to practise it."}, {"title": "Shared reading: parent and child", "category": "Fluency", "age": "5–9", "time": "10 minutes", "icon": "🤝", "summary": "Parent reads a line, then the child reads or repeats a line. This builds confidence without pressure.", "steps": ["Parent reads first", "Child repeats or reads next", "Help with hard words", "Praise effort and expression"], "parent_tip": "This works well for shy readers who fear mistakes."}, {"title": "Reading reward chart", "category": "Motivation", "age": "4–10", "time": "Daily", "icon": "⭐", "summary": "Use a simple chart to celebrate reading days, not marks or competition.", "steps": ["Mark one star after reading", "Celebrate 5-day streak", "Reward with family praise", "Avoid expensive rewards"], "parent_tip": "Celebrate consistency, curiosity, and effort."}, {"title": "Bedtime story routine", "category": "Daily Routine", "age": "3–9", "time": "10 minutes", "icon": "🌙", "summary": "End the day with a calm story, gentle voice, and short discussion.", "steps": ["Choose a peaceful story", "Read slowly", "Ask one simple question", "End with dua or gratitude"], "parent_tip": "Bedtime reading builds emotional security and love for books."}, {"title": "Library day at home", "category": "Family Culture", "age": "4–12", "time": "Weekly", "icon": "📚", "summary": "Once a week, let the child choose books or website stories for the coming week.", "steps": ["Show 5–8 options", "Let the child choose 2", "Plan reading days", "Keep selected stories visible"], "parent_tip": "Choice increases ownership and motivation."}];
+    const QUESTIONS = [{"q": "What should parents build first in young children?", "a": "Love for reading", "options": ["Fear of mistakes", "Love for reading", "Long tests", "Fast spelling"]}, {"q": "What is a picture walk?", "a": "Talking about pictures before reading", "options": ["Walking with a book outside", "Talking about pictures before reading", "Skipping difficult pages", "Writing a full summary"]}, {"q": "How many new words are enough for a daily notebook?", "a": "One useful word", "options": ["Twenty words", "One useful word", "A whole dictionary", "No words"]}, {"q": "What is the best style for reading questions?", "a": "Friendly conversation", "options": ["Strict exam style", "Friendly conversation", "Silent marking", "Long lectures"]}, {"q": "What does retelling improve?", "a": "Memory and sequencing", "options": ["Only handwriting", "Memory and sequencing", "Only speed", "Only spelling"]}, {"q": "What should parents praise?", "a": "Effort and consistency", "options": ["Only perfect answers", "Effort and consistency", "Only marks", "Only speed"]}];
+
+    const habitGrid = document.getElementById("habitGrid");
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const ageFilter = document.getElementById("ageFilter");
+    const resetFilters = document.getElementById("resetFilters");
+    const resultCount = document.getElementById("resultCount");
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    const trackerGrid = document.getElementById("trackerGrid");
+    const progressFill = document.getElementById("progressFill");
+    const progressText = document.getElementById("progressText");
+    const markToday = document.getElementById("markToday");
+    const clearTracker = document.getElementById("clearTracker");
+
+    const quizQuestion = document.getElementById("quizQuestion");
+    const quizOptions = document.getElementById("quizOptions");
+    const quizFeedback = document.getElementById("quizFeedback");
+    const newQuizBtn = document.getElementById("newQuizBtn");
+
+    const storageKey = "alhayat_reading_habits_tracker_v1";
+    let completedDays = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+    function escapeHTML(str) {
+      return String(str).replace(/[&<>"']/g, function (m) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m];
+      });
+    }
+
+    function populateFilters() {
+      const categories = [...new Set(HABITS.map(h => h.category))].sort();
+      const ages = [...new Set(HABITS.map(h => h.age))].sort();
+
+      categories.forEach(category => {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent = category;
+        categoryFilter.appendChild(option);
+      });
+
+      ages.forEach(age => {
+        const option = document.createElement("option");
+        option.value = age;
+        option.textContent = age;
+        ageFilter.appendChild(option);
+      });
+    }
+
+    function filteredHabits() {
+      const q = searchInput.value.trim().toLowerCase();
+      const category = categoryFilter.value;
+      const age = ageFilter.value;
+
+      return HABITS.filter(habit => {
+        const haystack = [
+          habit.title, habit.category, habit.age, habit.time, habit.summary, habit.parent_tip, ...habit.steps
+        ].join(" ").toLowerCase();
+
+        return (!q || haystack.includes(q)) &&
+          (category === "all" || habit.category === category) &&
+          (age === "all" || habit.age === age);
+      });
+    }
+
+    function renderHabits() {
+      const list = filteredHabits();
+      resultCount.textContent = `${list.length} habits showing`;
+
+      habitGrid.innerHTML = list.map(habit => `
+        <article class="habit-card">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">${escapeHTML(habit.icon)}</div>
+            <div class="card-tags">
+              <span class="tag category">${escapeHTML(habit.category)}</span>
+              <span class="tag age">${escapeHTML(habit.age)}</span>
+              <span class="tag time">${escapeHTML(habit.time)}</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>${escapeHTML(habit.title)}</h3>
+            <p>${escapeHTML(habit.summary)}</p>
+            <ol class="step-list">
+              ${habit.steps.map(step => `<li>${escapeHTML(step)}</li>`).join("")}
+            </ol>
+            <div class="tip-box"><strong>Parent tip:</strong> ${escapeHTML(habit.parent_tip)}</div>
+            <div class="card-actions">
+              <button class="mini-btn primary" type="button" data-read="${escapeHTML(habit.title + '. ' + habit.summary + '. Parent tip: ' + habit.parent_tip)}">Read Tip</button>
+              <button class="mini-btn done" type="button" onclick="document.getElementById('tracker').scrollIntoView({behavior:'smooth'})">Use Tracker</button>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      if (!list.length) {
+        habitGrid.innerHTML = `<article class="habit-card" style="grid-column:1/-1;min-height:auto;padding:24px;"><h3>No habit found</h3><p>Try another search word, category, or age filter.</p></article>`;
+      }
+
+      document.querySelectorAll("[data-read]").forEach(button => {
+        button.addEventListener("click", () => {
+          if (!("speechSynthesis" in window)) return;
+          window.speechSynthesis.cancel();
+          const utter = new SpeechSynthesisUtterance(button.dataset.read);
+          utter.rate = 0.86;
+          window.speechSynthesis.speak(utter);
+        });
+      });
+    }
+
+    function saveTracker() {
+      completedDays = [...new Set(completedDays)].filter(day => day >= 1 && day <= 30).sort((a,b) => a-b);
+      localStorage.setItem(storageKey, JSON.stringify(completedDays));
+    }
+
+    function renderTracker() {
+      trackerGrid.innerHTML = "";
+      for (let i = 1; i <= 30; i++) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "day" + (completedDays.includes(i) ? " done" : "");
+        button.textContent = i;
+        button.setAttribute("aria-label", "Reading day " + i);
+        button.addEventListener("click", () => {
+          if (completedDays.includes(i)) {
+            completedDays = completedDays.filter(day => day !== i);
+          } else {
+            completedDays.push(i);
+          }
+          saveTracker();
+          renderTracker();
+        });
+        trackerGrid.appendChild(button);
+      }
+      const percent = Math.round((completedDays.length / 30) * 100);
+      progressFill.style.width = percent + "%";
+      progressText.textContent = `${completedDays.length} of 30 days completed (${percent}%).`;
+    }
+
+    markToday.addEventListener("click", () => {
+      for (let i = 1; i <= 30; i++) {
+        if (!completedDays.includes(i)) {
+          completedDays.push(i);
+          break;
+        }
+      }
+      saveTracker();
+      renderTracker();
+    });
+
+    clearTracker.addEventListener("click", () => {
+      completedDays = [];
+      saveTracker();
+      renderTracker();
+    });
+
+    function newQuestion() {
+      const item = QUESTIONS[Math.floor(Math.random() * QUESTIONS.length)];
+      quizQuestion.textContent = item.q;
+      quizOptions.innerHTML = item.options.sort(() => Math.random() - 0.5).map(option => `
+        <button class="option-btn" type="button" data-correct="${option === item.a}">${escapeHTML(option)}</button>
+      `).join("");
+      quizFeedback.textContent = "Choose an answer.";
+      quizFeedback.style.background = "#f8fafc";
+
+      document.querySelectorAll(".option-btn").forEach(button => {
+        button.addEventListener("click", () => {
+          const correct = button.dataset.correct === "true";
+          document.querySelectorAll(".option-btn").forEach(btn => {
+            if (btn.dataset.correct === "true") btn.classList.add("correct");
+          });
+          if (correct) {
+            button.classList.add("correct");
+            quizFeedback.textContent = "Excellent! This is a healthy reading habit.";
+            quizFeedback.style.background = "var(--green-soft)";
+          } else {
+            button.classList.add("wrong");
+            quizFeedback.textContent = "Good try. Correct answer: " + item.a + ".";
+            quizFeedback.style.background = "var(--rose-soft)";
+          }
+        });
+      });
+    }
+
+    resetFilters.addEventListener("click", () => {
+      searchInput.value = "";
+      categoryFilter.value = "all";
+      ageFilter.value = "all";
+      renderHabits();
+    });
+
+    searchInput.addEventListener("input", renderHabits);
+    categoryFilter.addEventListener("change", renderHabits);
+    ageFilter.addEventListener("change", renderHabits);
+    newQuizBtn.addEventListener("click", newQuestion);
+
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("open"));
+    }
+
+    populateFilters();
+    renderHabits();
+    renderTracker();
+    newQuestion();
+  </script>
+</body>
+</html>

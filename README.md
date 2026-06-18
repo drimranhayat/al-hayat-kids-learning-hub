@@ -1,4 +1,4 @@
-# Al-Hayat Kids Learning Hub
+﻿# Al-Hayat Kids Learning Hub
 
 Static GitHub Pages website for Islamic and academic learning for children ages 3-8.
 

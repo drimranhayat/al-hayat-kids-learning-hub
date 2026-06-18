@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Animal Stories for Kids | Kindness, Nature & Moral Reading | Al-Hayat Kids</title>
+  <meta name="description" content="A colorful animal stories library for kids with moral lessons, kindness to animals, nature care, vocabulary, read-aloud buttons, age filters, reflection questions and parent-guided learning." />
+  <meta name="keywords" content="animal stories for kids, moral animal stories, kindness to animals for children, kids reading library, animal fables for kids, nature stories for children, Islamic kindness to animals kids" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html" />
+
+  <meta property="og:title" content="Animal Stories for Kids | Al-Hayat Kids Learning Hub" />
+  <meta property="og:description" content="A colorful animal story library for children with moral lessons, kindness missions, read-aloud buttons, vocabulary and parent-guided reading." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html" />
+
+  <style>
+    :root{
+      --green:#047857;
+      --green2:#10b981;
+      --leaf:#65a30d;
+      --blue:#2563eb;
+      --sky:#0284c7;
+      --purple:#7c3aed;
+      --pink:#db2777;
+      --orange:#f97316;
+      --amber:#f59e0b;
+      --brown:#92400e;
+      --ink:#102033;
+      --text:#27445a;
+      --muted:#64748b;
+      --card:#ffffff;
+      --soft:#f8fafc;
+      --mint:#ecfdf5;
+      --cream:#fff7ed;
+      --line:rgba(15,23,42,.12);
+      --shadow:0 22px 60px rgba(15,23,42,.13);
+      --soft-shadow:0 12px 30px rgba(15,23,42,.09);
+      --radius:30px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 7% 0%,rgba(132,204,22,.23) 0 17%,transparent 34%),
+        radial-gradient(circle at 94% 6%,rgba(14,165,233,.20) 0 18%,transparent 34%),
+        radial-gradient(circle at 50% 100%,rgba(245,158,11,.18) 0 18%,transparent 36%),
+        linear-gradient(180deg,#f8fbff 0%,#f0fdf4 44%,#fff7ed 100%);
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:-1;
+      background-image:
+        radial-gradient(circle,rgba(4,120,87,.08) 1px,transparent 1px),
+        radial-gradient(circle,rgba(37,99,235,.06) 1px,transparent 1px);
+      background-size:30px 30px,46px 46px;
+      background-position:0 0,14px 18px;
+    }
+
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    img{max-width:100%;display:block}
+
+    .skip{
+      position:absolute;left:-999px;
+      background:white;color:#063b2e;
+      padding:10px 14px;border-radius:14px;z-index:999;
+    }
+    .skip:focus{left:12px;top:12px}
+
+    .topbar{
+      background:#244212;
+      color:#f0ffe6;
+      padding:8px 16px;
+      text-align:center;
+      font-weight:900;
+      font-size:.92rem;
+    }
+
+    .header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(15,23,42,.08);
+    }
+    .nav{
+      width:min(var(--max),94%);
+      margin:auto;
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;
+      font-weight:1000;letter-spacing:-.02em;
+    }
+    .brand-mark{
+      width:56px;height:56px;border-radius:20px;
+      background:
+        radial-gradient(circle at 31% 25%,#fef3c7 0 12%,transparent 13%),
+        linear-gradient(135deg,var(--leaf),var(--blue));
+      display:grid;place-items:center;
+      box-shadow:0 18px 35px rgba(101,163,13,.22);
+      color:white;overflow:hidden;
+    }
+    .brand-mark::after{content:"🐾";font-size:1.65rem}
+    .brand small{
+      display:block;color:var(--muted);
+      font-size:.75rem;font-weight:800;letter-spacing:0;
+    }
+    .links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+    .links a{
+      padding:9px 12px;border-radius:999px;
+      color:#164152;font-weight:900;font-size:.91rem;
+      transition:.2s ease;
+    }
+    .links a:hover,.links a.active{
+      background:#ecfccb;color:#3f6212;transform:translateY(-1px);
+    }
+    .mobile-toggle{
+      display:none;border:0;background:#ecfccb;border-radius:14px;
+      padding:10px 12px;cursor:pointer;font-size:1.2rem;
+    }
+    .mobile-menu{
+      display:none;width:min(var(--max),94%);
+      margin:0 auto 12px;padding:12px;
+      background:white;border:1px solid #e2e8f0;
+      border-radius:20px;box-shadow:var(--soft-shadow);
+    }
+    .mobile-menu a{
+      display:block;padding:12px;border-radius:14px;font-weight:900;
+    }
+    .mobile-menu a:hover{background:#ecfccb;color:#3f6212}
+
+    .hero{
+      width:min(var(--max),94%);
+      margin:34px auto 22px;
+      display:grid;
+      grid-template-columns:1.12fr .88fr;
+      gap:26px;
+      align-items:stretch;
+    }
+    .panel,.card,.animal-card,.guide-card,.mini-card,.step-card{
+      background:rgba(255,255,255,.94);
+      border:1px solid rgba(148,163,184,.24);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-text{
+      padding:38px;position:relative;overflow:hidden;
+    }
+    .hero-text::after{
+      content:"";
+      position:absolute;width:190px;height:190px;border-radius:50%;
+      background:rgba(132,204,22,.12);
+      right:-50px;bottom:-46px;
+    }
+    .kicker{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 13px;border-radius:999px;
+      background:#ecfccb;color:#3f6212;
+      font-size:.92rem;font-weight:1000;
+    }
+    h1{
+      margin:14px 0;
+      font-size:clamp(2.25rem,5.2vw,4.8rem);
+      line-height:1.02;
+      letter-spacing:-.055em;
+    }
+    h2{
+      margin:0 0 12px;
+      font-size:clamp(1.65rem,3vw,2.55rem);
+      line-height:1.15;
+      letter-spacing:-.035em;
+    }
+    h3{margin:0 0 8px;font-size:1.22rem;line-height:1.2}
+    p{margin:0 0 12px;color:var(--text)}
+    .lead{font-size:1.13rem;color:#334155}
+    .small{font-size:.92rem;color:var(--muted)}
+    .gradient-text{
+      background:linear-gradient(135deg,#65a30d,#047857,#2563eb);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+    }
+
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{
+      border:0;cursor:pointer;
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:13px 18px;border-radius:16px;
+      background:linear-gradient(135deg,var(--leaf),var(--green));
+      color:white;font-weight:1000;
+      box-shadow:0 14px 26px rgba(101,163,13,.18);
+      transition:.2s ease;text-align:center;
+    }
+    .btn:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.06)}
+    .btn.alt{background:white;color:#3f6212;border:2px solid #bef264;box-shadow:none}
+    .btn.orange{background:linear-gradient(135deg,#fb923c,#ef4444)}
+    .btn.blue{background:linear-gradient(135deg,#0ea5e9,#2563eb)}
+    .btn.dark{background:#244212}
+
+    .visual{
+      min-height:430px;
+      position:relative;overflow:hidden;padding:26px;
+      display:grid;place-items:center;
+    }
+    .visual::before{
+      content:"";position:absolute;inset:20px;border-radius:38px;
+      background:
+        linear-gradient(135deg,rgba(240,253,244,.92),rgba(219,234,254,.78)),
+        repeating-linear-gradient(45deg,rgba(255,255,255,.45) 0 8px,transparent 8px 16px);
+    }
+    .animal-world{
+      position:relative;z-index:1;
+      width:min(370px,100%);
+      aspect-ratio:1/1;
+      border-radius:45px;
+      background:
+        radial-gradient(circle at center,#fff 0 28%,transparent 29%),
+        conic-gradient(from 180deg,#dcfce7,#dbeafe,#fef3c7,#ffedd5,#ede9fe,#dcfce7);
+      box-shadow:inset 0 0 0 16px rgba(255,255,255,.55),0 30px 80px rgba(15,23,42,.18);
+      display:grid;place-items:center;
+    }
+    .world-center{
+      width:170px;height:170px;border-radius:50%;
+      background:white;display:grid;place-items:center;text-align:center;
+      padding:18px;box-shadow:0 14px 35px rgba(15,23,42,.12);
+      font-weight:1000;color:#365314;
+    }
+    .orbit{
+      position:absolute;width:68px;height:68px;border-radius:24px;
+      background:white;display:grid;place-items:center;
+      font-size:1.9rem;box-shadow:0 12px 25px rgba(15,23,42,.12);
+    }
+    .o1{top:18px;left:50%;transform:translateX(-50%)}
+    .o2{right:18px;top:50%;transform:translateY(-50%)}
+    .o3{bottom:18px;left:50%;transform:translateX(-50%)}
+    .o4{left:18px;top:50%;transform:translateY(-50%)}
+
+    .section{
+      width:min(var(--max),94%);
+      margin:46px auto;
+    }
+    .section-head{
+      display:flex;align-items:flex-end;justify-content:space-between;
+      gap:18px;margin-bottom:18px;
+    }
+    .section-head p{max-width:720px}
+
+    .stats{
+      width:min(var(--max),94%);
+      margin:18px auto 28px;
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+    }
+    .stat{
+      padding:18px;text-align:center;border-radius:22px;
+      box-shadow:var(--soft-shadow);
+    }
+    .stat b{
+      display:block;font-size:1.75rem;color:#4d7c0f;line-height:1.1;
+    }
+    .stat span{font-weight:900;color:#53657a;font-size:.92rem}
+
+    .grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    }
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .mini-card,.guide-card,.step-card{
+      padding:22px;box-shadow:var(--soft-shadow);transition:.22s ease;
+    }
+    .mini-card:hover,.guide-card:hover,.step-card:hover,.animal-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 22px 55px rgba(15,23,42,.14);
+    }
+    .icon{
+      width:58px;height:58px;border-radius:20px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,#ecfccb,#dbeafe);
+      font-size:1.8rem;margin-bottom:13px;
+    }
+
+    .note{
+      border-left:7px solid #65a30d;
+      background:#f7fee7;
+      border-radius:20px;
+      padding:18px;
+      box-shadow:var(--soft-shadow);
+      margin:18px 0;
+    }
+    .note.blue{background:#eff6ff;border-color:#2563eb}
+    .note.orange{background:#fff7ed;border-color:#f97316}
+
+    .controls{
+      display:flex;flex-wrap:wrap;gap:12px;
+      padding:16px;border-radius:24px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(148,163,184,.26);
+      box-shadow:var(--soft-shadow);
+      margin:16px 0 22px;
+      align-items:center;
+    }
+    .controls input,.controls select{
+      min-height:48px;border:2px solid #dbeafe;
+      border-radius:16px;padding:10px 13px;
+      background:white;color:#102033;
+      min-width:210px;outline:none;
+    }
+    .controls input:focus,.controls select:focus{
+      border-color:#84cc16;box-shadow:0 0 0 4px rgba(132,204,22,.16);
+    }
+    .counter{
+      margin-left:auto;padding:10px 13px;border-radius:999px;
+      background:#244212;color:white;font-weight:1000;white-space:nowrap;
+    }
+
+    .animal-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    }
+    .animal-card{
+      padding:0;overflow:hidden;display:flex;flex-direction:column;
+      min-height:100%;transition:.22s ease;
+    }
+    .card-top{
+      min-height:132px;padding:22px;
+      background:linear-gradient(135deg,#dcfce7,#dbeafe);
+      position:relative;overflow:hidden;
+    }
+    .card-top::after{
+      content:"";position:absolute;width:120px;height:120px;border-radius:50%;
+      background:rgba(255,255,255,.50);
+      right:-30px;bottom:-34px;
+    }
+    .animal-emoji{
+      position:relative;z-index:1;
+      width:70px;height:70px;border-radius:25px;
+      background:white;display:grid;place-items:center;
+      font-size:2.1rem;box-shadow:0 12px 26px rgba(15,23,42,.10);
+    }
+    .card-body{
+      padding:20px;display:flex;flex-direction:column;flex:1;
+    }
+    .title-row{
+      display:flex;justify-content:space-between;gap:10px;align-items:flex-start;
+    }
+    .age{
+      flex:0 0 auto;padding:5px 8px;border-radius:999px;
+      background:#f1f5f9;color:#475569;font-size:.78rem;font-weight:1000;
+    }
+    .badges{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 12px}
+    .badge{
+      display:inline-flex;align-items:center;gap:5px;
+      padding:6px 9px;border-radius:999px;
+      background:#f1f5f9;color:#365266;
+      font-size:.78rem;font-weight:1000;
+    }
+    .badge.green{background:#dcfce7;color:#166534}
+    .badge.blue{background:#dbeafe;color:#1d4ed8}
+    .badge.amber{background:#fef3c7;color:#92400e}
+    .badge.pink{background:#fce7f3;color:#9d174d}
+    .badge.purple{background:#ede9fe;color:#5b21b6}
+
+    details{
+      margin-top:12px;border-radius:16px;
+      border:1px solid #e2e8f0;padding:10px 12px;
+      background:#fbfdff;
+    }
+    summary{cursor:pointer;font-weight:1000;color:#365314}
+    .deeper{margin-top:10px;font-size:.96rem}
+    .story-actions{
+      display:flex;flex-wrap:wrap;gap:8px;
+      margin-top:auto;padding-top:12px;
+    }
+    .small-btn{
+      border:0;border-radius:13px;
+      padding:9px 11px;font-size:.86rem;font-weight:1000;
+      cursor:pointer;background:#f7fee7;color:#3f6212;
+      transition:.18s ease;
+    }
+    .small-btn:hover{transform:translateY(-1px);background:#ecfccb}
+    .small-btn.primary{background:#4d7c0f;color:white}
+    .small-btn.done{background:#dbeafe;color:#1d4ed8}
+    .small-btn.warn{background:#fff7ed;color:#c2410c}
+
+    .empty{
+      display:none;text-align:center;padding:30px;
+      border:2px dashed #bef264;border-radius:24px;
+      background:#f7fee7;color:#3f6212;font-weight:1000;
+    }
+
+    .steps{
+      display:grid;grid-template-columns:repeat(5,1fr);gap:14px;
+      counter-reset:steps;
+    }
+    .step-card{
+      position:relative;border-radius:24px;background:white;
+    }
+    .step-card::before{
+      counter-increment:steps;content:counter(steps);
+      width:34px;height:34px;border-radius:12px;
+      display:grid;place-items:center;
+      background:#244212;color:white;font-weight:1000;margin-bottom:10px;
+    }
+
+    .reflection-box{
+      display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;
+      padding:24px;border-radius:28px;
+      background:
+        radial-gradient(circle at right top,rgba(255,255,255,.42),transparent 36%),
+        linear-gradient(135deg,#244212,#4d7c0f);
+      color:white;box-shadow:var(--shadow);
+    }
+    .reflection-box p,.reflection-box h2{color:white}
+    .reflection-question{
+      min-height:74px;padding:16px;border-radius:20px;
+      background:rgba(255,255,255,.12);color:#f0ffe6;font-weight:900;
+    }
+
+    .poster{
+      padding:28px;border-radius:30px;
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.92),rgba(247,254,231,.92)),
+        repeating-linear-gradient(45deg,rgba(132,204,22,.08) 0 12px,transparent 12px 24px);
+      border:1px solid rgba(132,204,22,.25);
+      box-shadow:var(--shadow);
+    }
+    .poster ul{margin:12px 0 0;padding-left:22px;color:var(--text)}
+    .poster li{margin:6px 0}
+
+    .footer{
+      margin-top:60px;background:#244212;color:white;padding:42px 0 24px;
+    }
+    .footer-inner{
+      width:min(var(--max),94%);
+      margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:22px;
+    }
+    .footer p,.footer a{color:#f0ffe6}
+    .footer h3{color:white}
+    .footer-bottom{
+      width:min(var(--max),94%);margin:28px auto 0;padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.14);
+      color:#d9f99d;font-size:.92rem;
+    }
+    .fab{
+      position:fixed;right:18px;bottom:18px;z-index:60;
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .fab button{
+      width:50px;height:50px;border-radius:18px;border:0;
+      display:grid;place-items:center;background:#244212;color:white;
+      box-shadow:0 14px 32px rgba(15,23,42,.22);
+      cursor:pointer;font-size:1.2rem;
+    }
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .visual{min-height:330px}
+      .grid,.animal-grid{grid-template-columns:repeat(2,1fr)}
+      .grid.four,.stats,.steps{grid-template-columns:repeat(2,1fr)}
+      .footer-inner{grid-template-columns:1fr 1fr}
+      .reflection-box{grid-template-columns:1fr}
+    }
+    @media(max-width:760px){
+      .links{display:none}
+      .mobile-toggle{display:inline-grid}
+      .mobile-menu.show{display:block}
+      .hero-text{padding:26px}
+      .grid,.grid.two,.grid.four,.animal-grid,.stats,.steps,.footer-inner{grid-template-columns:1fr}
+      .section-head{display:block}
+      .controls input,.controls select{width:100%;min-width:0}
+      .counter{margin-left:0;width:100%;text-align:center}
+      .brand span:last-child{font-size:.94rem}
+      .brand small{font-size:.68rem}
+      .fab{right:12px;bottom:12px}
+    }
+    @media print{
+      .topbar,.header,.fab,.controls,.story-actions,.footer{display:none!important}
+      body{background:white}
+      .panel,.card,.animal-card,.guide-card,.mini-card,.step-card{box-shadow:none;border:1px solid #ddd}
+      .animal-grid,.grid,.steps{grid-template-columns:1fr 1fr}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Animal Stories for Kids",
+    "description":"A colorful child-friendly animal stories library with moral lessons, kindness to animals, nature care, vocabulary, reflection questions and parent-guided activities.",
+    "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/reading-library/animal-stories.html",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"Al-Hayat Kids Learning Hub",
+      "url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <div class="topbar">🐾 Animal stories for children • Kindness to creatures • Nature care • Reading, vocabulary and moral reflection</div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Al-Hayat Kids Learning Hub <small>Animal stories • kindness • nature • reading</small></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+
+      <div class="links" aria-label="Primary links">
+        <a href="../index.html">Home</a>
+        <a href="../subjects/index.html">Subjects</a>
+        <a class="active" href="index.html">Reading</a>
+        <a href="../activities/index.html">Activities</a>
+        <a href="../worksheets/index.html">Worksheets</a>
+        <a href="../islamic-corner/index.html">Islamic</a>
+        <a href="../parents-corner/index.html">Parents</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">Home</a>
+      <a href="../subjects/index.html">Subjects</a>
+      <a href="index.html">Reading Library</a>
+      <a href="islamic-stories.html">Islamic Stories</a>
+      <a href="prophet-stories.html">Prophet Stories</a>
+      <a href="moral-stories.html">Moral Stories</a>
+      <a href="../activities/index.html">Activities</a>
+      <a href="../parents-corner/index.html">Parents Corner</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-text panel">
+        <span class="kicker">🐾 Reading Library • Animal Stories</span>
+        <h1>Animal Stories for <span class="gradient-text">Kind Little Readers</span></h1>
+        <p class="lead">
+          A colorful, child-friendly animal story library that builds reading fluency, vocabulary, curiosity, kindness, responsibility and care for Allah’s creation.
+        </p>
+        <p>
+          Children love animals. This page turns that love into meaningful learning through short story cards, moral lessons, vocabulary, reflection questions, kindness missions, read-aloud support and parent-guided discussion.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#animal-library">Explore Animal Stories</a>
+          <a class="btn alt" href="#reading-method">Reading Method</a>
+          <button class="btn blue" data-say="Welcome to Animal Stories for Kids. Read gently, learn new words, and practise kindness to animals and nature.">🔊 Listen</button>
+        </div>
+      </div>
+
+      <div class="visual panel" aria-label="Animal story visual">
+        <div class="animal-world">
+          <div class="orbit o1">🦁</div>
+          <div class="orbit o2">🐝</div>
+          <div class="orbit o3">🐢</div>
+          <div class="orbit o4">🐦</div>
+          <div class="world-center">Stories that teach kindness, care and wise choices</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Page highlights">
+      <div class="stat panel"><b>40</b><span>Animal Story Cards</span></div>
+      <div class="stat panel"><b>8</b><span>Animal Groups</span></div>
+      <div class="stat panel"><b>12</b><span>Kindness Missions</span></div>
+      <div class="stat panel"><b>0</b><span>Empty Counter Issue</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🌱 Why this page matters</span>
+          <h2>Animal stories build reading, empathy and responsibility</h2>
+        </div>
+        <p class="lead">A good animal story should not only entertain. It should help children notice feelings, solve problems, care for living things and speak about nature with respect.</p>
+      </div>
+
+      <div class="grid four">
+        <article class="mini-card">
+          <div class="icon">📖</div>
+          <h3>Reading fluency</h3>
+          <p>Short story cards help children read, listen, retell and speak confidently.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">💚</div>
+          <h3>Kindness</h3>
+          <p>Children learn gentleness towards pets, birds, insects and all living things.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">🌍</div>
+          <h3>Nature care</h3>
+          <p>Stories promote clean spaces, water care, tree care and responsible habits.</p>
+        </article>
+        <article class="mini-card">
+          <div class="icon">🧠</div>
+          <h3>Vocabulary</h3>
+          <p>Each card gives useful words for speaking, writing and comprehension.</p>
+        </article>
+      </div>
+
+      <div class="note blue">
+        <strong>Parent note:</strong> Animal stories are best when they create compassion. Teach children never to harm animals for fun, never to throw stones, never to tease pets, and always to ask an adult before touching unknown animals.
+      </div>
+    </section>
+
+    <section class="section" id="animal-library">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🐾 Story Library</span>
+          <h2>Search by animal, value, age or habitat</h2>
+        </div>
+        <p class="lead">All cards appear properly with a real counter. Children can filter stories by animal group and practise one kindness mission after reading.</p>
+      </div>
+
+      <div class="controls" aria-label="Animal story filters">
+        <input id="searchInput" type="search" placeholder="Search: lion, bee, kindness, courage, forest..." aria-label="Search animal stories" />
+        <select id="groupFilter" aria-label="Filter by animal group">
+          <option value="all">All animal groups</option>
+          <option value="pets">Pets</option>
+          <option value="farm">Farm Animals</option>
+          <option value="wild">Wild Animals</option>
+          <option value="birds">Birds</option>
+          <option value="ocean">Ocean Animals</option>
+          <option value="insects">Insects & Tiny Creatures</option>
+          <option value="forest">Forest & Jungle</option>
+          <option value="nature">Nature Care</option>
+        </select>
+        <select id="ageFilter" aria-label="Filter by age">
+          <option value="all">All ages</option>
+          <option value="4-6">Ages 4–6</option>
+          <option value="7-9">Ages 7–9</option>
+          <option value="10-12">Ages 10–12</option>
+        </select>
+        <select id="valueFilter" aria-label="Filter by value">
+          <option value="all">All values</option>
+          <option value="kindness">Kindness</option>
+          <option value="patience">Patience</option>
+          <option value="courage">Courage</option>
+          <option value="honesty">Honesty</option>
+          <option value="teamwork">Teamwork</option>
+          <option value="gratitude">Gratitude</option>
+          <option value="responsibility">Responsibility</option>
+          <option value="respect">Respect</option>
+        </select>
+        <span class="counter" id="storyCounter">40 stories showing</span>
+      </div>
+
+      <div class="animal-grid" id="storyGrid"></div>
+      <div class="empty" id="emptyState">No animal story matched your search. Try “cat”, “bee”, “lion”, “kindness”, “teamwork”, “water” or “forest”.</div>
+    </section>
+
+    <section class="section" id="reading-method">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🧑‍🏫 Reading Method</span>
+          <h2>Five-step animal story routine</h2>
+        </div>
+        <p class="lead">Use this method to build reading skill, vocabulary and kind behaviour through every story.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <h3>Look and predict</h3>
+          <p>Ask: “What animal is this? What problem may happen?”</p>
+        </article>
+        <article class="step-card">
+          <h3>Read slowly</h3>
+          <p>Let the child read one line and the parent read the next line.</p>
+        </article>
+        <article class="step-card">
+          <h3>Find the value</h3>
+          <p>Ask: “Was the animal kind, brave, patient, honest or careful?”</p>
+        </article>
+        <article class="step-card">
+          <h3>Learn words</h3>
+          <p>Choose two vocabulary words and use them in new sentences.</p>
+        </article>
+        <article class="step-card">
+          <h3>Do a mission</h3>
+          <p>Practise care: refill water, clean space, speak gently or protect nature.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="reflection-box">
+        <div>
+          <span class="kicker" style="background:rgba(255,255,255,.16);color:white;">🎲 Reflection Game</span>
+          <h2>Ask a story question</h2>
+          <p>Use these questions after any animal story for speaking, thinking and moral learning.</p>
+          <div class="reflection-question" id="reflectionQuestion">Click the button to get a reflection question.</div>
+        </div>
+        <button class="btn orange" id="newQuestion">New Question</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🏠 Parent & Teacher Use</span>
+          <h2>Turn animal stories into real learning</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="guide-card">
+          <div class="icon">🌙</div>
+          <h3>Bedtime Reading</h3>
+          <p>Read one animal story, ask one question, and end with one kindness promise.</p>
+        </article>
+        <article class="guide-card">
+          <div class="icon">✍️</div>
+          <h3>Writing Task</h3>
+          <p>Ask children to write: “The animal learned…” and “I will practise this by…”.</p>
+        </article>
+        <article class="guide-card">
+          <div class="icon">🌱</div>
+          <h3>Nature Activity</h3>
+          <p>Let children draw a habitat, plant a seed, refill bird water, or clean a small safe area.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="poster">
+        <span class="kicker">💚 Kindness Promise</span>
+        <h2>Teach children to care for living things</h2>
+        <p class="lead">Animal stories should create gentle hands, careful words and responsible hearts.</p>
+        <ul>
+          <li>Never hurt animals for fun.</li>
+          <li>Never throw stones at birds or stray animals.</li>
+          <li>Ask an adult before touching an unknown animal.</li>
+          <li>Give pets food, water and rest with adult guidance.</li>
+          <li>Keep gardens, streets and parks clean.</li>
+          <li>Use stories to teach mercy, patience, responsibility and gratitude.</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="islamic-stories.html">Islamic Stories</a>
+          <a class="btn alt" href="moral-stories.html">Moral Stories</a>
+          <a class="btn alt" href="../worksheets/index.html">Worksheets</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">🔗 Continue Learning</span>
+          <h2>Related Al-Hayat pages</h2>
+        </div>
+      </div>
+
+      <div class="grid four">
+        <a class="guide-card" href="moral-stories.html">
+          <div class="icon">💎</div>
+          <h3>Moral Stories</h3>
+          <p>Kindness, honesty, courage, patience and wise choices.</p>
+        </a>
+        <a class="guide-card" href="islamic-stories.html">
+          <div class="icon">🌙</div>
+          <h3>Islamic Stories</h3>
+          <p>Islamic values, manners, Seerah lessons and reflection.</p>
+        </a>
+        <a class="guide-card" href="../subjects/science.html">
+          <div class="icon">🔬</div>
+          <h3>Science</h3>
+          <p>Connect animals with habitats, food chains, senses and nature.</p>
+        </a>
+        <a class="guide-card" href="../activities/puzzles.html">
+          <div class="icon">🧩</div>
+          <h3>Puzzles</h3>
+          <p>Build thinking through animal puzzles, matching and memory tasks.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="fab" aria-label="Quick actions">
+    <button id="topBtn" title="Back to top">↑</button>
+    <button id="printBtn" title="Print page">🖨️</button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Al-Hayat Kids Learning Hub</h3>
+        <p>Islamic and academic learning for children through stories, worksheets, quizzes, duas, manners, reading habits and parent-guided routines.</p>
+      </div>
+      <div>
+        <h3>Reading</h3>
+        <p><a href="index.html">Reading Library</a></p>
+        <p><a href="islamic-stories.html">Islamic Stories</a></p>
+        <p><a href="prophet-stories.html">Prophet Stories</a></p>
+        <p><a href="moral-stories.html">Moral Stories</a></p>
+      </div>
+      <div>
+        <h3>Learning</h3>
+        <p><a href="../subjects/science.html">Science</a></p>
+        <p><a href="../activities/index.html">Activities</a></p>
+        <p><a href="../worksheets/index.html">Worksheets</a></p>
+        <p><a href="../videos/index.html">Videos</a></p>
+      </div>
+      <div>
+        <h3>Parents</h3>
+        <p><a href="../parents-corner/index.html">Parents Corner</a></p>
+        <p><a href="../privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../online-classes.html">Online Classes</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Al-Hayat Kids Learning Hub. Child-safe learning. Parent supervision recommended.
+    </div>
+  </footer>
+
+  <script>
+    const stories = [
+      {animal:"Cat", group:"pets", title:"The Thirsty Cat", age:"4-6", value:"kindness", emoji:"🐱", words:"thirsty, gentle, bowl", summary:"A child notices a thirsty cat near the gate and asks an adult to place clean water safely outside.", moral:"Kindness begins when we notice a need.", question:"How can we help animals safely?", mission:"Ask an adult to place clean water for birds or animals.", deeper:"This story teaches safe compassion. Children should not run after unknown animals, but they can help with adult guidance."},
+      {animal:"Dog", group:"pets", title:"The Barking Dog and the Calm Child", age:"7-9", value:"patience", emoji:"🐶", words:"calm, distance, safe", summary:"A child learns not to tease a barking dog and walks away calmly with an adult.", moral:"Patience and safety are better than teasing.", question:"Why should we avoid teasing animals?", mission:"Use a calm voice around animals today.", deeper:"Children learn that animals also feel fear. Respect includes giving animals space and not provoking them."},
+      {animal:"Rabbit", group:"pets", title:"The Rabbit’s Quiet Corner", age:"4-6", value:"respect", emoji:"🐰", words:"quiet, soft, rest", summary:"A child wants to hold a rabbit all day, but learns that animals need rest and gentle care.", moral:"Love means caring for what another creature needs.", question:"Why do pets need rest?", mission:"Let a pet or toy rest instead of pulling it roughly.", deeper:"This story helps younger children understand boundaries, gentle hands and respect for living things."},
+      {animal:"Parrot", group:"birds", title:"The Parrot Who Copied Kind Words", age:"4-6", value:"kindness", emoji:"🦜", words:"copy, repeat, kind", summary:"A parrot repeats the words it hears, so the family chooses kind words at home.", moral:"Children and animals learn from the words around them.", question:"What kind word can you repeat today?", mission:"Say three kind words at home.", deeper:"The story teaches language awareness: homes should be full of gentle, respectful speech."},
+      {animal:"Hen", group:"farm", title:"The Hen and the Shared Grain", age:"4-6", value:"gratitude", emoji:"🐔", words:"grain, share, thankful", summary:"A hen finds grain and the children learn to feed farm animals carefully without wasting food.", moral:"Food is a blessing, so we should not waste it.", question:"How can we avoid wasting food?", mission:"Finish your food neatly and say Alhamdulillah.", deeper:"Children connect animal care with gratitude for food and responsible habits."},
+      {animal:"Cow", group:"farm", title:"The Patient Cow", age:"7-9", value:"patience", emoji:"🐄", words:"patient, milk, care", summary:"A farmer teaches children that cows need calm care, regular food and patient handling.", moral:"Useful animals deserve gentle treatment.", question:"Why should we be gentle with animals that help us?", mission:"Name three animal blessings people benefit from.", deeper:"This story supports science and gratitude: animals provide many benefits and should not be treated cruelly."},
+      {animal:"Goat", group:"farm", title:"The Goat Who Loved the Garden", age:"7-9", value:"responsibility", emoji:"🐐", words:"garden, fence, responsibility", summary:"A goat enters a garden because the gate was left open, and a child learns to close it responsibly.", moral:"Small responsibilities protect people, animals and plants.", question:"What small duty do you need to remember?", mission:"Close or tidy one thing responsibly today.", deeper:"The lesson is not to blame the animal but to teach children responsibility and prevention."},
+      {animal:"Horse", group:"farm", title:"The Horse and the Heavy Load", age:"10-12", value:"kindness", emoji:"🐴", words:"load, strength, mercy", summary:"A child sees a horse carrying too much and learns that strength should not be abused.", moral:"Strong animals and strong people both deserve fair treatment.", question:"Why is overburdening wrong?", mission:"Do not put unfair pressure on someone today.", deeper:"Older children can discuss mercy, fair work and the difference between use and abuse."},
+      {animal:"Lion", group:"wild", title:"The Lion Who Learned to Listen", age:"7-9", value:"respect", emoji:"🦁", words:"listen, leader, respect", summary:"A young lion thinks roaring solves everything, but learns that a wise leader listens first.", moral:"Real strength listens before acting.", question:"Why should strong people listen?", mission:"Listen fully before replying today.", deeper:"The lion becomes a symbol of leadership with respect rather than noise or bullying."},
+      {animal:"Elephant", group:"wild", title:"The Elephant’s Careful Steps", age:"4-6", value:"responsibility", emoji:"🐘", words:"careful, tiny, path", summary:"A big elephant walks carefully so it does not crush tiny flowers and insects.", moral:"Big or small, everyone should be careful.", question:"How can you be careful around small things?", mission:"Walk carefully around plants or toys today.", deeper:"Young children learn body awareness, gentleness and care for small creatures."},
+      {animal:"Monkey", group:"forest", title:"The Monkey Who Shared Bananas", age:"4-6", value:"kindness", emoji:"🐒", words:"share, hungry, friend", summary:"A monkey has many bananas and learns to share with a hungry friend.", moral:"Sharing makes happiness grow.", question:"What can you share today?", mission:"Share one thing fairly with someone.", deeper:"This simple story supports early social skills: sharing, fairness and caring for others."},
+      {animal:"Tiger", group:"forest", title:"The Tiger and the Quiet Forest", age:"7-9", value:"respect", emoji:"🐯", words:"forest, quiet, respect", summary:"A tiger learns that every animal in the forest needs peace, space and safety.", moral:"Respect means caring about others’ peace.", question:"Where should we use a quiet voice?", mission:"Use a quiet voice in one shared space.", deeper:"The story connects nature with classroom and home manners."},
+      {animal:"Giraffe", group:"wild", title:"The Giraffe Who Saw Far", age:"7-9", value:"responsibility", emoji:"🦒", words:"far, warn, help", summary:"A tall giraffe sees danger from far away and warns the smaller animals kindly.", moral:"Use your ability to help others.", question:"What ability can you use for good?", mission:"Use one skill today to help someone.", deeper:"Children learn that talents should lead to service, not pride."},
+      {animal:"Zebra", group:"wild", title:"The Zebra with Different Stripes", age:"7-9", value:"respect", emoji:"🦓", words:"stripes, different, special", summary:"A zebra feels shy about its stripes until the herd shows that difference can be beautiful.", moral:"Allah’s creation is full of variety and beauty.", question:"Why should we not mock someone’s appearance?", mission:"Say something respectful about someone’s good quality.", deeper:"The story teaches respect, anti-bullying and appreciation of differences."},
+      {animal:"Camel", group:"wild", title:"The Camel’s Long Journey", age:"10-12", value:"patience", emoji:"🐪", words:"journey, desert, endurance", summary:"A camel crosses a long desert journey slowly and steadily without giving up.", moral:"Great journeys need patience and steady effort.", question:"What long goal are you working on?", mission:"Work on one task for ten focused minutes.", deeper:"Older children connect the story to studies, revision, discipline and long-term effort."},
+      {animal:"Deer", group:"forest", title:"The Deer Who Chose Safety", age:"4-6", value:"responsibility", emoji:"🦌", words:"safe, path, careful", summary:"A deer wants to run everywhere but learns to follow the safe path with the herd.", moral:"Safe choices protect us.", question:"Why should children stay near trusted adults?", mission:"Follow one safety rule today.", deeper:"The story teaches safety without fear: children should stay near trusted adults and avoid risky places."},
+      {animal:"Bear", group:"forest", title:"The Bear and the Honey Tree", age:"7-9", value:"honesty", emoji:"🐻", words:"honey, ask, honest", summary:"A bear wants honey but learns not to take everything without care for the bees and tree.", moral:"Taking without care causes harm.", question:"Why should we ask before taking something?", mission:"Ask permission before using someone’s item.", deeper:"The story links honesty, permission and environmental care."},
+      {animal:"Fox", group:"forest", title:"The Fox Who Told the Truth", age:"7-9", value:"honesty", emoji:"🦊", words:"truth, excuse, trust", summary:"A fox breaks a basket and wants to hide it, but chooses to tell the truth.", moral:"Truth repairs trust better than excuses.", question:"Why is truth better than hiding mistakes?", mission:"Tell the truth about one small mistake.", deeper:"Children learn that honesty may feel hard at first but builds long-term trust."},
+      {animal:"Wolf", group:"forest", title:"The Wolf Who Stopped Scaring Others", age:"10-12", value:"respect", emoji:"🐺", words:"fear, respect, change", summary:"A wolf learns that making others afraid does not make him respected.", moral:"Fear is not the same as respect.", question:"What is the difference between respect and fear?", mission:"Use polite words instead of bossy words.", deeper:"Older children can discuss bullying, leadership and emotional self-control."},
+      {animal:"Owl", group:"birds", title:"The Wise Owl’s Question", age:"7-9", value:"patience", emoji:"🦉", words:"wise, question, think", summary:"An owl teaches young birds to think before answering quickly.", moral:"Wise answers need careful thinking.", question:"Why should we think before speaking?", mission:"Pause before answering one question today.", deeper:"This story develops speaking discipline and reflective thinking."},
+      {animal:"Sparrow", group:"birds", title:"The Sparrow’s Small Nest", age:"4-6", value:"gratitude", emoji:"🐦", words:"nest, small, thankful", summary:"A sparrow is thankful for its small nest because it is safe and warm.", moral:"A thankful heart sees blessings in simple things.", question:"What small blessing are you thankful for?", mission:"Say thank you for one simple blessing.", deeper:"Children learn contentment and gratitude through a simple bird story."},
+      {animal:"Eagle", group:"birds", title:"The Eagle Who Practised Flying", age:"10-12", value:"courage", emoji:"🦅", words:"practice, courage, wings", summary:"A young eagle is afraid to fly but practises step by step with guidance.", moral:"Courage grows through practice.", question:"What skill are you afraid to practise?", mission:"Practise one difficult skill for five minutes.", deeper:"Older children learn that courage is built gradually, not magically."},
+      {animal:"Peacock", group:"birds", title:"The Peacock and Humble Beauty", age:"7-9", value:"gratitude", emoji:"🦚", words:"beauty, humble, thankful", summary:"A peacock learns that beauty should make it thankful, not proud.", moral:"Blessings should create gratitude, not arrogance.", question:"How can we be thankful without showing off?", mission:"Praise someone else’s good quality today.", deeper:"This story addresses pride, comparison and humility in a child-friendly way."},
+      {animal:"Penguin", group:"birds", title:"The Penguin Team Walk", age:"4-6", value:"teamwork", emoji:"🐧", words:"team, cold, together", summary:"Penguins walk together and help one another stay safe in the cold.", moral:"Teamwork keeps everyone stronger.", question:"How can your class or family work as a team?", mission:"Help with one group task today.", deeper:"Children connect animal behaviour to cooperation and family/classroom responsibility."},
+      {animal:"Dolphin", group:"ocean", title:"The Dolphin Who Helped a Friend", age:"7-9", value:"kindness", emoji:"🐬", words:"ocean, friend, help", summary:"A dolphin notices a tired friend and swims nearby for support.", moral:"A kind friend does not leave others alone.", question:"How can you support a tired friend?", mission:"Encourage someone who is struggling.", deeper:"The story teaches friendship, emotional care and support."},
+      {animal:"Whale", group:"ocean", title:"The Whale’s Deep Song", age:"7-9", value:"respect", emoji:"🐋", words:"deep, sound, listen", summary:"A whale’s song teaches children that every creature has its own way to communicate.", moral:"Respect different ways of speaking and expressing feelings.", question:"Why should we listen carefully to others?", mission:"Listen to someone without interrupting.", deeper:"Children learn communication respect and empathy."},
+      {animal:"Turtle", group:"ocean", title:"The Turtle Who Moved Slowly", age:"4-6", value:"patience", emoji:"🐢", words:"slowly, steady, finish", summary:"A turtle moves slowly but reaches the pond because it does not stop trying.", moral:"Slow effort can still reach the goal.", question:"What should we do when work feels slow?", mission:"Finish one small task without rushing.", deeper:"The story helps children who feel slow or behind; steady effort matters."},
+      {animal:"Fish", group:"ocean", title:"The Fish and the Clean River", age:"7-9", value:"responsibility", emoji:"🐟", words:"river, clean, plastic", summary:"Fish become safer when children keep plastic and rubbish away from water.", moral:"Clean water protects living things.", question:"Why should we keep rivers and drains clean?", mission:"Put rubbish in the bin today.", deeper:"This story supports environmental awareness and local cleanliness."},
+      {animal:"Crab", group:"ocean", title:"The Crab Who Walked Sideways", age:"4-6", value:"respect", emoji:"🦀", words:"sideways, different, okay", summary:"A crab walks differently, and the other animals learn not to laugh.", moral:"Different does not mean wrong.", question:"Why should we not laugh at differences?", mission:"Use respectful words about differences.", deeper:"Children learn inclusion and anti-mocking behaviour."},
+      {animal:"Bee", group:"insects", title:"The Busy Bee Team", age:"7-9", value:"teamwork", emoji:"🐝", words:"busy, hive, teamwork", summary:"Bees work together carefully, showing that small workers can achieve big things.", moral:"Teamwork makes difficult work easier.", question:"How can you help your team today?", mission:"Do one helpful task without waiting for praise.", deeper:"The story builds appreciation of small creatures and cooperative effort."},
+      {animal:"Ant", group:"insects", title:"The Ants and the Crumb", age:"4-6", value:"teamwork", emoji:"🐜", words:"tiny, crumb, together", summary:"Tiny ants carry a big crumb together and teach children cooperation.", moral:"Small helpers become strong together.", question:"What job is easier with help?", mission:"Help someone carry or tidy something safely.", deeper:"Young children learn that even small people can help."},
+      {animal:"Butterfly", group:"insects", title:"The Butterfly’s Change", age:"7-9", value:"patience", emoji:"🦋", words:"change, cocoon, patient", summary:"A caterpillar becomes a butterfly after waiting and growing step by step.", moral:"Beautiful growth takes time.", question:"What are you slowly improving?", mission:"Practise one skill patiently today.", deeper:"The story teaches growth mindset, patience and self-improvement."},
+      {animal:"Ladybird", group:"insects", title:"The Ladybird on the Leaf", age:"4-6", value:"kindness", emoji:"🐞", words:"leaf, tiny, gentle", summary:"A child learns to look at a ladybird gently without squeezing or frightening it.", moral:"Tiny creatures need gentle care too.", question:"How should we touch tiny creatures?", mission:"Look at an insect without harming it.", deeper:"Children learn observation instead of rough handling."},
+      {animal:"Spider", group:"insects", title:"The Spider’s Careful Web", age:"10-12", value:"patience", emoji:"🕷️", words:"web, careful, rebuild", summary:"A spider rebuilds its web after wind breaks it, teaching effort after setbacks.", moral:"Do not give up after one failure.", question:"What should you rebuild after a mistake?", mission:"Correct one piece of work instead of quitting.", deeper:"Older children connect the story to revision, resilience and problem-solving."},
+      {animal:"Frog", group:"nature", title:"The Frog and the Rainy Pond", age:"4-6", value:"gratitude", emoji:"🐸", words:"rain, pond, jump", summary:"A frog enjoys the rain and children learn that rain is a blessing for many creatures.", moral:"Rain helps plants, animals and people.", question:"Why is rain important?", mission:"Say Alhamdulillah when you notice water today.", deeper:"This story connects science, weather and gratitude."},
+      {animal:"Squirrel", group:"forest", title:"The Squirrel Who Saved Seeds", age:"7-9", value:"responsibility", emoji:"🐿️", words:"seeds, save, winter", summary:"A squirrel saves seeds for winter and teaches planning ahead.", moral:"Responsible people prepare before difficulty.", question:"How can you prepare for school tomorrow?", mission:"Pack one school item before bedtime.", deeper:"Children learn planning, preparation and delayed reward."},
+      {animal:"Duck", group:"birds", title:"The Ducklings Followed Safely", age:"4-6", value:"responsibility", emoji:"🦆", words:"follow, line, safe", summary:"Ducklings follow their mother near the pond and learn to stay together safely.", moral:"Following safety guidance protects children.", question:"Why should children stay close to trusted adults?", mission:"Follow one safety instruction today.", deeper:"This simple story teaches safety through a gentle animal example."},
+      {animal:"Sheep", group:"farm", title:"The Lost Lamb", age:"7-9", value:"kindness", emoji:"🐑", words:"lost, guide, gentle", summary:"A lost lamb is guided back calmly, not shouted at or chased roughly.", moral:"Gentleness helps the lost feel safe.", question:"How can we help someone who feels lost?", mission:"Guide someone kindly instead of laughing.", deeper:"Children learn empathy for confused classmates, younger siblings and animals."},
+      {animal:"Mouse", group:"pets", title:"The Little Mouse and the Big Fear", age:"7-9", value:"courage", emoji:"🐭", words:"small, brave, safe", summary:"A small mouse learns courage by asking for help and moving to a safer place.", moral:"Being small does not mean being helpless.", question:"When should we ask for help?", mission:"Ask a trusted adult for help with one problem.", deeper:"This story teaches healthy courage: asking for help is wise, not weak."},
+      {animal:"Koala", group:"wild", title:"The Koala’s Tree Home", age:"7-9", value:"responsibility", emoji:"🐨", words:"tree, home, protect", summary:"A koala depends on trees, so children learn why trees and habitats matter.", moral:"Protecting nature protects homes for animals.", question:"Why are trees important for animals?", mission:"Water a plant or protect a small green space.", deeper:"The story links habitat, environmental science and responsibility."},
+      {animal:"Polar Bear", group:"wild", title:"The Polar Bear and the Melting Ice", age:"10-12", value:"responsibility", emoji:"🐻‍❄️", words:"ice, climate, care", summary:"A polar bear story helps older children think about earth care, waste reduction and responsible habits.", moral:"Small responsible habits help protect the planet.", question:"What wasteful habit can we reduce?", mission:"Save water or electricity once today.", deeper:"Older children can discuss environmental care without fear: reduce waste, save resources and respect creation."}
+    ];
+
+    const questions = [
+      "What problem did the animal face?",
+      "Which value did this story teach?",
+      "What would you do if you saw this animal?",
+      "Which two new words did you learn?",
+      "How can children show kindness to animals safely?",
+      "What should we never do to animals?",
+      "How does this story connect to home or school manners?",
+      "How can this story help us care for nature?",
+      "Retell the story in three sentences.",
+      "What is one kindness mission you can do today?",
+      "Which character made the wisest choice?",
+      "What would be a better ending for the story?"
+    ];
+
+    const groupNames = {
+      pets:"Pets",
+      farm:"Farm Animals",
+      wild:"Wild Animals",
+      birds:"Birds",
+      ocean:"Ocean Animals",
+      insects:"Tiny Creatures",
+      forest:"Forest & Jungle",
+      nature:"Nature Care"
+    };
+
+    const valueNames = {
+      kindness:"Kindness",
+      patience:"Patience",
+      courage:"Courage",
+      honesty:"Honesty",
+      teamwork:"Teamwork",
+      gratitude:"Gratitude",
+      responsibility:"Responsibility",
+      respect:"Respect"
+    };
+
+    const grid = document.getElementById("storyGrid");
+    const emptyState = document.getElementById("emptyState");
+    const storyCounter = document.getElementById("storyCounter");
+    const searchInput = document.getElementById("searchInput");
+    const groupFilter = document.getElementById("groupFilter");
+    const ageFilter = document.getElementById("ageFilter");
+    const valueFilter = document.getElementById("valueFilter");
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    let completed = JSON.parse(localStorage.getItem("ah_completed_animal_stories") || "{}");
+
+    function speakText(text){
+      if(!("speechSynthesis" in window)){
+        alert("Read-aloud is not supported on this browser.");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.9;
+      utterance.pitch = 1.05;
+      utterance.volume = 1;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function storySpeak(story){
+      return `${story.title}. ${story.summary} Moral lesson: ${story.moral} Reflection question: ${story.question} Mission: ${story.mission}. Vocabulary words: ${story.words}.`;
+    }
+
+    function renderStories(){
+      const query = searchInput.value.trim().toLowerCase();
+      const group = groupFilter.value;
+      const age = ageFilter.value;
+      const value = valueFilter.value;
+
+      const filtered = stories.filter(story => {
+        const text = `${story.animal} ${story.group} ${story.title} ${story.age} ${story.value} ${story.words} ${story.summary} ${story.moral} ${story.question} ${story.mission} ${story.deeper}`.toLowerCase();
+        const matchesQuery = !query || text.includes(query);
+        const matchesGroup = group === "all" || story.group === group;
+        const matchesAge = age === "all" || story.age === age;
+        const matchesValue = value === "all" || story.value === value;
+        return matchesQuery && matchesGroup && matchesAge && matchesValue;
+      });
+
+      grid.innerHTML = "";
+      filtered.forEach(story => {
+        const originalIndex = stories.indexOf(story);
+        const isDone = completed[story.title];
+        const card = document.createElement("article");
+        card.className = "animal-card";
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="animal-emoji">${story.emoji}</div>
+          </div>
+          <div class="card-body">
+            <div class="title-row">
+              <h3>${story.title}</h3>
+              <span class="age">${story.age}</span>
+            </div>
+            <div class="badges">
+              <span class="badge green">${story.animal}</span>
+              <span class="badge blue">${groupNames[story.group]}</span>
+              <span class="badge amber">${valueNames[story.value]}</span>
+              ${isDone ? '<span class="badge pink">Completed</span>' : ''}
+            </div>
+            <p>${story.summary}</p>
+            <p><strong>Moral:</strong> ${story.moral}</p>
+            <p><strong>Words:</strong> ${story.words}</p>
+            <p><strong>Ask:</strong> ${story.question}</p>
+            <p><strong>Mission:</strong> ${story.mission}</p>
+            <details>
+              <summary>Read deeper note</summary>
+              <div class="deeper">
+                <p>${story.deeper}</p>
+                <p><strong>Retelling task:</strong> Name the animal, describe the problem, and explain the value.</p>
+              </div>
+            </details>
+            <div class="story-actions">
+              <button class="small-btn primary" data-speak="${originalIndex}">🔊 Read</button>
+              <button class="small-btn done" data-complete="${originalIndex}">${isDone ? "✓ Done" : "Mark Done"}</button>
+              <button class="small-btn warn" data-mission="${originalIndex}">⭐ Mission</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      storyCounter.textContent = `${filtered.length} ${filtered.length === 1 ? "story" : "stories"} showing`;
+      emptyState.style.display = filtered.length ? "none" : "block";
+    }
+
+    document.addEventListener("click", event => {
+      const speakIndex = event.target.getAttribute("data-speak");
+      const completeIndex = event.target.getAttribute("data-complete");
+      const missionIndex = event.target.getAttribute("data-mission");
+
+      if(speakIndex !== null){
+        speakText(storySpeak(stories[Number(speakIndex)]));
+      }
+
+      if(completeIndex !== null){
+        const story = stories[Number(completeIndex)];
+        completed[story.title] = !completed[story.title];
+        if(!completed[story.title]) delete completed[story.title];
+        localStorage.setItem("ah_completed_animal_stories", JSON.stringify(completed));
+        renderStories();
+      }
+
+      if(missionIndex !== null){
+        const story = stories[Number(missionIndex)];
+        speakText(`Mission for ${story.title}. ${story.mission}`);
+      }
+
+      if(event.target.matches("[data-say]")){
+        speakText(event.target.getAttribute("data-say"));
+      }
+    });
+
+    [searchInput, groupFilter, ageFilter, valueFilter].forEach(el => {
+      el.addEventListener("input", renderStories);
+      el.addEventListener("change", renderStories);
+    });
+
+    document.getElementById("newQuestion").addEventListener("click", () => {
+      const q = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("reflectionQuestion").textContent = q;
+      speakText(q);
+    });
+
+    document.getElementById("topBtn").addEventListener("click", () => {
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+
+    document.getElementById("printBtn").addEventListener("click", () => {
+      window.print();
+    });
+
+    mobileToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+
+    renderStories();
+  </script>
+</body>
+</html>

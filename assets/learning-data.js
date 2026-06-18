@@ -1,0 +1,1 @@
+window.alHayatLearningData = window.alHayatLearningData || {};

@@ -117,6 +117,32 @@ document.querySelector("[data-subject-filter]")?.addEventListener("change", rend
 document.querySelectorAll("[data-age-option]").forEach((button) => button.addEventListener("click", renderQuiz));
 renderQuiz();
 
+const activitySubject = document.querySelector("[data-activity-subject]");
+const activityDifficulty = document.querySelector("[data-activity-difficulty]");
+const activityStart = document.querySelector("[data-start-activity-quiz]");
+const activityStatus = document.querySelector("[data-activity-quiz-status]");
+
+function filterActivityQuiz() {
+  const subject = activitySubject?.value || "all";
+  const difficulty = activityDifficulty?.value || "all";
+  const cards = Array.from(document.querySelectorAll("[data-activity-quiz-list] .quiz-card"));
+  let visible = 0;
+  cards.forEach((card) => {
+    const show = (subject === "all" || card.dataset.subject === subject) && (difficulty === "all" || card.dataset.difficulty === difficulty);
+    card.classList.toggle("hidden-by-age", !show);
+    if (show) visible += 1;
+  });
+  if (activityStatus) activityStatus.textContent = `Showing ${visible} sample question${visible === 1 ? "" : "s"}.`;
+}
+
+activitySubject?.addEventListener("change", filterActivityQuiz);
+activityDifficulty?.addEventListener("change", filterActivityQuiz);
+activityStart?.addEventListener("click", () => {
+  filterActivityQuiz();
+  document.querySelector("[data-activity-quiz-list]")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+filterActivityQuiz();
+
 document.querySelectorAll("[data-print]").forEach((button) => {
   button.addEventListener("click", () => window.print());
 });
