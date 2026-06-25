@@ -1,44 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kids Quiz Ages 3-8 | Al-Hayat Kids Learning Hub</title>
-    <meta name="description" content="Short child-friendly quizzes for ages 3-8 with static fallback questions, age filter, subject filter, instant feedback, stars, and badges.">
-    <meta property="og:title" content="Kids Quiz Ages 3-8">
-    <meta property="og:description" content="Short quizzes with instant feedback and local stars.">
-    <meta property="og:image" content="assets/hero-learning-hub.png">
-    <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/quiz.html">
-    <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Quiz","name":"Kids Quiz Ages 3-8","educationalLevel":"Ages 3-8"}</script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><div class="nav-links" data-nav-links><a href="index.html">Home</a><a href="subjects/english.html">Learn</a><a href="reading-library/index.html">Stories</a><a href="quiz.html" aria-current="page">Quiz</a><a href="parents-corner/index.html">Parent</a></div><a class="nav-cta" href="index.html#start">Start</a></nav></header>
-    <main id="main">
-      <section class="page-hero"><div class="page-hero-content"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Quiz</span></div><p class="eyebrow">Quiz • Ages 3-8</p><h1>Answer one short question and earn a star.</h1><p>Static sample questions are visible first. JavaScript adds more questions as an enhancement, with fallback content if loading fails.</p></div></section>
-      <section class="section">
-        <div class="section-heading"><p class="eyebrow">Filters</p><h2>Choose age and subject.</h2><p>No page should show “0 questions loaded.” Useful questions stay visible in HTML.</p></div>
-        <div class="age-filter"><button data-age-option="all">All</button><button data-age-option="3-4">Ages 3-4</button><button data-age-option="5-6">Ages 5-6</button><button data-age-option="7-8">Ages 7-8</button></div>
-        <label class="parent-box" style="display:block;max-width:520px;margin:0 auto 1.5rem">Subject filter
-          <select data-subject-filter aria-label="Choose quiz subject">
-            <option value="all">All subjects</option><option>English</option><option>Math</option><option>Science</option><option>Arabic</option><option>Islamic</option><option>Computer</option>
-          </select>
-        </label>
-        <div class="progress-strip"><div class="progress-item"><strong data-stars>0</strong>Stars</div><div class="progress-item"><strong data-today>0</strong>Done today</div><div class="progress-item"><strong data-badges>0</strong>Badges</div><div class="progress-item"><strong>Local</strong>No login</div></div>
-      </section>
-      <section class="section muted" aria-labelledby="sample-title">
-        <div class="section-heading"><p class="eyebrow">Static sample questions</p><h2 id="sample-title">Questions visible even if JavaScript fails.</h2></div>
-        <div class="lesson-grid">
-          <article class="quiz-card" data-age="3-4"><span class="age-pill">Ages 3-4</span><h3>Which one is a shape?</h3><div class="quiz-options"><button type="button" data-answer="Circle" data-correct="Circle">Circle</button><button type="button" data-answer="Run" data-correct="Circle">Run</button><button type="button" data-answer="Eat" data-correct="Circle">Eat</button></div><p class="feedback" aria-live="polite"></p></article>
-          <article class="quiz-card" data-age="5-6"><span class="age-pill">Ages 5-6</span><h3>What do we say before eating?</h3><div class="quiz-options"><button type="button" data-answer="Bismillah" data-correct="Bismillah">Bismillah</button><button type="button" data-answer="Bye" data-correct="Bismillah">Bye</button><button type="button" data-answer="Sleep" data-correct="Bismillah">Sleep</button></div><p class="feedback" aria-live="polite"></p></article>
-          <article class="quiz-card" data-age="7-8"><span class="age-pill">Ages 7-8</span><h3>Which tool helps us type?</h3><div class="quiz-options"><button type="button" data-answer="Keyboard" data-correct="Keyboard">Keyboard</button><button type="button" data-answer="Cup" data-correct="Keyboard">Cup</button><button type="button" data-answer="Spoon" data-correct="Keyboard">Spoon</button></div><p class="feedback" aria-live="polite"></p></article>
-        </div>
-      </section>
-      <section class="section"><div class="section-heading"><p class="eyebrow">Enhanced quiz bank</p><h2>More questions appear here when JavaScript loads.</h2></div><div class="lesson-grid" data-quiz-enhanced></div></section>
-    </main>
-    <footer class="footer-wrap"><div class="site-footer"><div><a class="brand" href="index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a></div><div><h2>Learn</h2><a href="subjects/english.html">English</a><a href="subjects/mathematics.html">Math</a><a href="subjects/islamic-studies.html">Islamic</a></div><div><h2>Practice</h2><a href="worksheets/index.html">Worksheets</a><a href="activities/index.html">Activities</a></div><div><h2>Parents</h2><a href="parents-corner/index.html">Parent Corner</a><a href="privacy.html">Privacy</a></div></div></footer>
-    <nav class="bottom-nav"><a href="index.html"><span>🏠</span>Home</a><a href="subjects/english.html"><span>📚</span>Learn</a><a href="reading-library/index.html"><span>📖</span>Stories</a><a href="quiz.html"><span>⭐</span>Quiz</a><a href="parents-corner/index.html"><span>👪</span>Parent</a></nav>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Quiz | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="Short questions with instant feedback.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">AH</span><span>Al-Hayat Kids Learning Hub</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="game.html">Play</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Ages 3-8</span>
+      <h1><span aria-hidden="true">❓</span> Mini Quiz</h1>
+      <p>Short questions with instant feedback.</p>
+    </section>
+    <section class="section"><div class="grid"><article class="card"><span class="icon" aria-hidden="true">❓</span><h2>Quick Question</h2><p id="quiz-question">What should we say before eating?</p><button class="button" onclick="document.getElementById('quiz-answer').textContent='Bismillah. Well done!'">Show Answer</button><p id="quiz-answer" style="margin-top:12px;color:#0c5d56;font-weight:800"></p></article></div></section>
+  </main>
+  <footer class="footer"><a href="index.html">Back to Home</a> · Safe · Ad-free · Parent-guided</footer>
+</body>
 </html>
