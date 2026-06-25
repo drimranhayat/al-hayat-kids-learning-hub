@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mini Quiz | Al-Hayat Kids Learning Hub</title>
-  <meta name="description" content="Short questions with instant feedback.">
+  <meta name="description" content="Interactive quiz from a 3000-question child-friendly question bank for ages 3-8.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,19 +13,80 @@
       <a class="brand" href="index.html"><span class="brand-mark">AH</span><span>Al-Hayat Kids Learning Hub</span></a>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="quiz.html">Quiz</a>
+        <a href="subjects/index.html">Learn</a>
+        <a href="question-bank/index.html">Question Bank</a>
         <a href="game.html">Play</a>
+        <a href="parents-corner/index.html">Parent</a>
       </div>
     </nav>
   </header>
   <main class="wrap">
     <section class="hero">
-      <span class="eyebrow">Ages 3-8</span>
+      <span class="eyebrow">3000 Questions • Ages 3-8</span>
       <h1><span aria-hidden="true">❓</span> Mini Quiz</h1>
-      <p>Short questions with instant feedback.</p>
+      <p>Choose a subject and age, then practise one question at a time with instant feedback.</p>
     </section>
-    <section class="section"><div class="grid"><article class="card"><span class="icon" aria-hidden="true">❓</span><h2>Quick Question</h2><p id="quiz-question">What should we say before eating?</p><button class="button" onclick="document.getElementById('quiz-answer').textContent='Bismillah. Well done!'">Show Answer</button><p id="quiz-answer" style="margin-top:12px;color:#0c5d56;font-weight:800"></p></article></div></section>
+    <section class="section">
+      <div class="quiz-panel">
+        <div class="filters">
+          <label>Subject <select id="subjectFilter"><option value="">All Subjects</option></select></label>
+          <label>Age <select id="ageFilter"><option value="">All Ages</option><option>3-4</option><option>5-6</option><option>7-8</option></select></label>
+          <label>Search <input id="searchBox" type="search" placeholder="word, skill, topic"></label>
+          <button class="button" id="newQuestion">New Question</button>
+        </div>
+        <article class="card quiz-card">
+          <p class="eyebrow" id="quizMeta">Loading question bank...</p>
+          <h2 id="quizQuestion">Please wait.</h2>
+          <div class="options" id="quizOptions"></div>
+          <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><a href="index.html">Back to Home</a> · Safe · Ad-free · Parent-guided</footer>
+  <footer class="footer"><a href="index.html">Back to Home</a> · <a href="question-bank/index.html">Open Full Question Bank</a></footer>
+  <script>
+  const subjectNames = {"english":"English","mathematics":"Mathematics","science":"Science","arabic":"Arabic","islamic":"Islamic Studies","gk":"General Knowledge","computer":"Computer Skills"};
+  let allQuestions = [], current = null;
+  const subjectFilter = document.getElementById('subjectFilter');
+  const ageFilter = document.getElementById('ageFilter');
+  const searchBox = document.getElementById('searchBox');
+  const quizMeta = document.getElementById('quizMeta');
+  const quizQuestion = document.getElementById('quizQuestion');
+  const quizOptions = document.getElementById('quizOptions');
+  const quizFeedback = document.getElementById('quizFeedback');
+  Object.entries(subjectNames).forEach(([key, name]) => subjectFilter.add(new Option(name, key)));
+  const params = new URLSearchParams(location.search);
+  if (params.get('subject')) subjectFilter.value = params.get('subject');
+  if (params.get('age')) ageFilter.value = params.get('age');
+  function filtered(){
+    const s = subjectFilter.value, a = ageFilter.value, q = searchBox.value.trim().toLowerCase();
+    return allQuestions.filter(item => (!s || item.subject === s) && (!a || item.age === a) && (!q || JSON.stringify(item).toLowerCase().includes(q)));
+  }
+  function showQuestion(){
+    const list = filtered();
+    if (!list.length){ quizMeta.textContent = 'No question found'; quizQuestion.textContent = 'Try another subject, age, or search word.'; quizOptions.innerHTML = ''; quizFeedback.textContent = ''; return; }
+    current = list[Math.floor(Math.random() * list.length)];
+    quizMeta.textContent = current.id + ' • ' + current.subjectName + ' • ' + current.head + ' • Ages ' + current.age;
+    quizQuestion.textContent = current.question;
+    quizOptions.innerHTML = '';
+    quizFeedback.textContent = '';
+    current.options.forEach((option, index) => {
+      const btn = document.createElement('button');
+      btn.className = 'option-button';
+      btn.textContent = option;
+      btn.addEventListener('click', () => {
+        const ok = index === current.answerIndex;
+        quizFeedback.textContent = (ok ? 'Correct. ' : 'Good try. Correct answer: ' + current.answer + '. ') + current.explanation;
+        quizFeedback.className = 'feedback ' + (ok ? 'correct' : 'wrong');
+      });
+      quizOptions.appendChild(btn);
+    });
+  }
+  fetch('data/questions.json').then(r => r.json()).then(data => { allQuestions = data; showQuestion(); }).catch(() => { quizMeta.textContent = 'Question bank could not load'; quizQuestion.textContent = 'Check that data/questions.json is uploaded.'; });
+  document.getElementById('newQuestion').addEventListener('click', showQuestion);
+  subjectFilter.addEventListener('change', showQuestion);
+  ageFilter.addEventListener('change', showQuestion);
+  searchBox.addEventListener('input', showQuestion);
+  </script>
 </body>
 </html>

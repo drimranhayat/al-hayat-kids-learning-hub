@@ -8,6 +8,14 @@
 - Added `assets/hero-learning-hub.png` for the Open Graph preview image.
 - Added shared styling for the supporting pages in `styles.css`.
 - Added simple starter versions of quiz, game, subject, library, worksheet, activity, practice, Islamic corner, parent corner, contact, privacy, about, and online class pages.
+- Added `videos/index.html` with safe screen-time guidance and connected it from the homepage navigation, activities section, footer, and mobile bottom navigation.
+- Added `subjects/index.html` so older Learn links and folder-level subject navigation work.
+- Added `parents-corner/screen-time.html` so screen-time guidance links work cleanly.
+- Added `data/questions.json` with 3000 structured MCQs across English, Mathematics, Science, Arabic, Islamic Studies, General Knowledge, and Computer Skills.
+- Added `data/lessons.json` with 105 age-wise starter lesson records.
+- Added `data/worksheets.json` with 105 worksheet/task records.
+- Upgraded `quiz.html` into an interactive filtered quiz that reads from the 3000-question bank.
+- Added `question-bank/index.html` to search and filter the full question bank.
 
 ## Files To Upload
 
@@ -25,4 +33,5 @@ Upload or replace the full contents of this folder into the GitHub repository:
 ## Verification Performed
 
 - Checked all internal HTML `href` and `src` paths.
-- Result: `20 HTML files checked, no missing internal href/src targets.`
+- Result: `24 HTML files checked, no missing internal href/src targets.`
+- Data result: `3000 questions`, `105 lessons`, `105 worksheets`.
