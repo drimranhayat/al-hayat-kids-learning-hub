@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3000 Question Bank | Al-Hayat Kids Learning Hub</title>
+  <meta name="description" content="Search and filter the 3000-question bank for English, Mathematics, Science, Arabic, Islamic Studies, General Knowledge, and Computer Skills.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html"><span class="brand-mark">AH</span><span>Al-Hayat Kids Learning Hub</span></a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../subjects/index.html">Learn</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="../parents-corner/index.html">Parent</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Full Resource</span>
+      <h1>3000 Question Bank</h1>
+      <p>Filter by subject, age, topic, difficulty, or keyword. This bank is stored in <code>data/questions.json</code>.</p>
+    </section>
+    <section class="section">
+      <div class="filters">
+        <label>Subject <select id="subjectFilter"><option value="">All Subjects</option></select></label>
+        <label>Age <select id="ageFilter"><option value="">All Ages</option><option>3-4</option><option>5-6</option><option>7-8</option></select></label>
+        <label>Keyword <input id="searchBox" type="search" placeholder="topic, word, skill"></label>
+      </div>
+      <p class="bank-count" id="countBox">Loading...</p>
+      <div class="question-list" id="questionList"></div>
+    </section>
+  </main>
+  <footer class="footer"><a href="../index.html">Back to Home</a> · <a href="../quiz.html">Practise Quiz</a></footer>
+  <script>
+  const subjectNames = {"english":"English","mathematics":"Mathematics","science":"Science","arabic":"Arabic","islamic":"Islamic Studies","gk":"General Knowledge","computer":"Computer Skills"};
+  let allQuestions = [];
+  const subjectFilter = document.getElementById('subjectFilter');
+  const ageFilter = document.getElementById('ageFilter');
+  const searchBox = document.getElementById('searchBox');
+  const list = document.getElementById('questionList');
+  const countBox = document.getElementById('countBox');
+  Object.entries(subjectNames).forEach(([key, name]) => subjectFilter.add(new Option(name, key)));
+  function paint(){
+    const s = subjectFilter.value, a = ageFilter.value, q = searchBox.value.trim().toLowerCase();
+    const result = allQuestions.filter(item => (!s || item.subject === s) && (!a || item.age === a) && (!q || JSON.stringify(item).toLowerCase().includes(q)));
+    countBox.textContent = result.length + ' questions shown out of ' + allQuestions.length;
+    list.innerHTML = result.slice(0, 120).map(item => '<article class="question-row"><strong>' + item.id + ' • ' + item.subjectName + ' • Ages ' + item.age + '</strong><h3>' + item.question + '</h3><p><b>Answer:</b> ' + item.answer + '</p><p>' + item.explanation + '</p></article>').join('');
+    if (result.length > 120) list.insertAdjacentHTML('beforeend', '<p class="bank-count">Showing first 120 results. Use filters to narrow the list.</p>');
+  }
+  fetch('../data/questions.json').then(r => r.json()).then(data => { allQuestions = data; paint(); }).catch(() => { countBox.textContent = 'Question bank could not load. Check data/questions.json.'; });
+  subjectFilter.addEventListener('change', paint);
+  ageFilter.addEventListener('change', paint);
+  searchBox.addEventListener('input', paint);
+  </script>
+</body>
+</html>
