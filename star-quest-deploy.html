@@ -1,0 +1,393 @@
+<!-- Al-Hayat Star Quest — standalone single-file game.
+     Drop this file into your repo (e.g. as game.html or in a /game/ folder),
+     optionally add a questions.json next to it, and it just works on any static host. -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Al-Hayat Star Quest</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  @keyframes fall { to { transform: translateY(110vh) rotate(360deg); opacity: .2; } }
+  @keyframes bob  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  @keyframes pop  { 0%{transform:scale(0)} 70%{transform:scale(1.3)} 100%{transform:scale(1)} }
+</style>
+
+<!-- safelist: keeps dynamically-built colour classes available -->
+<div class="hidden
+  from-rose-400 to-pink-500 bg-rose-50
+  from-sky-400 to-blue-500 bg-sky-50
+  from-emerald-400 to-green-500 bg-emerald-50
+  from-amber-400 to-orange-500 bg-amber-50
+  from-teal-400 to-cyan-600 bg-teal-50
+  from-violet-400 to-purple-500 bg-violet-50
+  from-fuchsia-400 to-pink-600 bg-fuchsia-50
+  from-slate-400 to-slate-500 bg-slate-50"></div>
+
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useRef } = React;
+
+const ROUND_SIZE = 8;
+
+/* ---------- ICONS (inline, no dependency) ---------- */
+const S = ({ size = 24, className = "", fill = "none", children }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke={fill === "none" ? "currentColor" : "none"}
+       strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>{children}</svg>
+);
+const IStar = (p) => <S {...p} fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></S>;
+const IHeart = (p) => <S {...p} fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></S>;
+const ISparkle = (p) => <S {...p} fill="currentColor"><path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"/></S>;
+const IHome = (p) => <S {...p}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></S>;
+const IChev = (p) => <S {...p}><polyline points="9 18 15 12 9 6"/></S>;
+const IRefresh = (p) => <S {...p}><path d="M3 3v5h5"/><path d="M3.05 13a9 9 0 1 0 .5-4.5L3 8"/></S>;
+const ICheck = (p) => <S {...p}><polyline points="20 6 9 17 4 12"/></S>;
+const IX = (p) => <S {...p}><path d="M18 6 6 18"/><path d="M6 6l12 12"/></S>;
+const IVol = (p) => <S {...p}><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></S>;
+const IMute = (p) => <S {...p}><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M23 9l-6 6"/><path d="M17 9l6 6"/></S>;
+const ITrophy = (p) => <S {...p}><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M5 4H3v2a3 3 0 0 0 3 3"/><path d="M19 4h2v2a3 3 0 0 1-3 3"/></S>;
+const IAward = (p) => <S {...p}><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9 7 23l5-3 5 3-1.2-9.1"/></S>;
+
+/* ---------- QUESTION BANK ---------- */
+const BUILTIN = [
+  { id:"english", name:"English", emoji:"🔤", color:"from-rose-400 to-pink-500", soft:"bg-rose-50", questions:[
+    {type:"mcq",q:"Which letter does 🍎 Apple start with?",options:["A","B","C","P"],answer:0,why:"Apple starts with the letter A — A is for Apple!"},
+    {type:"mcq",q:"What is the opposite of BIG?",options:["Tall","Small","Fast","Happy"],answer:1,why:"Small is the opposite of big."},
+    {type:"tf",q:"The word 'CAT' has 3 letters. 🐱",answer:true,why:"Yes! C-A-T has three letters."},
+    {type:"mcq",q:"Which one is a colour? 🌈",options:["Run","Blue","Jump","Eat"],answer:1,why:"Blue is a colour, like the sky! The others are actions."},
+    {type:"mcq",q:"Which word starts with 'S'? 🐍",options:["Dog","Sun","Cup","Hat"],answer:1,why:"Sun starts with S — S is for Sun!"},
+    {type:"tf",q:"We read English from right to left. 📖",answer:false,why:"English is read left to right. (Arabic is read right to left!)"},
+    {type:"mcq",q:"What is the opposite of HOT?",options:["Cold","Warm","Big","Loud"],answer:0,why:"Cold is the opposite of hot."},
+    {type:"mcq",q:"Which word rhymes with CAT?",options:["Dog","Hat","Sun","Pen"],answer:1,why:"Hat rhymes with cat — they both end in 'at'."},
+    {type:"mcq",q:"One dog, two ____?",options:["Dog","Dogs","Doges","Doggy"],answer:1,why:"More than one dog is 'dogs'. We add an 's'."},
+    {type:"mcq",q:"Which one is a fruit word? 🍌",options:["Chair","Banana","Table","Door"],answer:1,why:"Banana is a fruit. The others are things in a room."},
+    {type:"tf",q:"The letter 'B' comes after 'A'. 🔤",answer:true,why:"Yes! The alphabet starts A, B, C..."},
+    {type:"mcq",q:"What is the opposite of UP?",options:["Over","Down","Side","Near"],answer:1,why:"Down is the opposite of up."},
+    {type:"mcq",q:"Which letter does 🐘 Elephant start with?",options:["A","E","I","L"],answer:1,why:"Elephant starts with E — E is for Elephant!"},
+    {type:"tf",q:"We put a full stop (.) at the end of a sentence.",answer:true,why:"Yes! A full stop tells us the sentence has ended."},
+    {type:"mcq",q:"Which word means more than one star?",options:["Star","Stars","Starz","Staring"],answer:1,why:"Many stars are 'stars' — we add an 's'."},
+  ]},
+  { id:"math", name:"Maths", emoji:"🔢", color:"from-sky-400 to-blue-500", soft:"bg-sky-50", questions:[
+    {type:"mcq",q:"How many apples? 🍎🍎🍎",options:["2","3","4","5"],answer:1,why:"There are 3 apples. 1, 2, 3!"},
+    {type:"mcq",q:"What is 2 + 2?",options:["3","4","5","6"],answer:1,why:"2 + 2 = 4."},
+    {type:"tf",q:"A triangle has 3 sides. 🔺",answer:true,why:"Yes! A triangle always has 3 sides."},
+    {type:"mcq",q:"Which number comes after 5?",options:["4","6","7","10"],answer:1,why:"After 5 comes 6. 4, 5, 6!"},
+    {type:"mcq",q:"What shape is a ball? ⚽",options:["Square","Circle","Triangle","Star"],answer:1,why:"A ball is round, like a circle."},
+    {type:"tf",q:"10 is bigger than 7.",answer:true,why:"Yes, 10 is bigger than 7."},
+    {type:"mcq",q:"What is 5 − 2?",options:["2","3","4","7"],answer:1,why:"5 take away 2 leaves 3."},
+    {type:"mcq",q:"How many sides does a square have? ⬜",options:["3","4","5","6"],answer:1,why:"A square has 4 equal sides."},
+    {type:"mcq",q:"Count the stars: 🌟🌟🌟🌟",options:["3","4","5","6"],answer:1,why:"There are 4 stars."},
+    {type:"mcq",q:"What is 3 + 1?",options:["3","4","5","2"],answer:1,why:"3 + 1 = 4."},
+    {type:"tf",q:"Zero (0) means none — nothing at all.",answer:true,why:"Yes! Zero means there is nothing there."},
+    {type:"mcq",q:"Which is bigger: 8 or 4?",options:["4","8","Same","0"],answer:1,why:"8 is bigger than 4."},
+    {type:"mcq",q:"How many fingers are on one hand? ✋",options:["4","5","6","10"],answer:1,why:"One hand has 5 fingers."},
+    {type:"tf",q:"A circle has corners.",answer:false,why:"A circle is round and smooth — it has no corners."},
+    {type:"mcq",q:"What is 1 + 1 + 1?",options:["2","3","4","1"],answer:1,why:"1 + 1 + 1 = 3."},
+  ]},
+  { id:"science", name:"Science", emoji:"🔬", color:"from-emerald-400 to-green-500", soft:"bg-emerald-50", questions:[
+    {type:"mcq",q:"Which animal says 'Moo'? 🐄",options:["Cat","Cow","Dog","Duck"],answer:1,why:"A cow says 'Moo'!"},
+    {type:"tf",q:"Plants need water and sunlight to grow. 🌱",answer:true,why:"Yes! Plants need water, sunlight and air to grow."},
+    {type:"mcq",q:"What do we use to see? 👀",options:["Ears","Eyes","Nose","Hands"],answer:1,why:"We see with our eyes."},
+    {type:"mcq",q:"Which one lives in water? 🌊",options:["Fish","Lion","Camel","Goat"],answer:0,why:"A fish lives in water."},
+    {type:"tf",q:"The Sun comes out at night. 🌙",answer:false,why:"The Sun comes out in the day. The Moon and stars come at night."},
+    {type:"mcq",q:"How many legs does a spider have? 🕷️",options:["4","6","8","10"],answer:2,why:"A spider has 8 legs."},
+    {type:"mcq",q:"What do bees make? 🐝",options:["Milk","Honey","Bread","Juice"],answer:1,why:"Bees make honey."},
+    {type:"tf",q:"We need air to breathe. 💨",answer:true,why:"Yes! People and animals breathe air to live."},
+    {type:"mcq",q:"A baby dog is called a...? 🐶",options:["Kitten","Puppy","Calf","Chick"],answer:1,why:"A baby dog is a puppy."},
+    {type:"mcq",q:"Which part do we use to smell? 👃",options:["Eyes","Nose","Ears","Feet"],answer:1,why:"We smell with our nose."},
+    {type:"tf",q:"Ice is frozen water. 🧊",answer:true,why:"Yes! When water gets very cold it freezes into ice."},
+    {type:"mcq",q:"Trees give us fresh ____ to breathe. 🌳",options:["Water","Air","Fire","Sand"],answer:1,why:"Trees give us clean air to breathe."},
+    {type:"mcq",q:"How many legs does a cow have? 🐄",options:["2","4","6","8"],answer:1,why:"A cow has 4 legs."},
+    {type:"tf",q:"Fish can fly in the sky. 🐟",answer:false,why:"Fish swim in water — they cannot fly like birds."},
+    {type:"mcq",q:"What is white, cold and falls in winter? ❄️",options:["Sand","Snow","Smoke","Leaves"],answer:1,why:"Snow is white and cold and falls in winter."},
+  ]},
+  { id:"arabic", name:"Arabic", emoji:"🕌", color:"from-amber-400 to-orange-500", soft:"bg-amber-50", questions:[
+    {type:"mcq",q:"Which is the first letter of the Arabic alphabet?",options:["ب (Ba)","ا (Alif)","ت (Ta)","ج (Jeem)"],answer:1,why:"Alif (ا) is the first letter of the Arabic alphabet."},
+    {type:"mcq",q:"What does 'كِتَاب' (Kitaab) mean?",options:["Pen","Book","Door","Water"],answer:1,why:"'Kitaab' (كتاب) means Book."},
+    {type:"tf",q:"Arabic is read from right to left. ➡️",answer:true,why:"Yes! Arabic is read from right to left."},
+    {type:"mcq",q:"What does 'ماء' (Maa') mean? 💧",options:["Fire","Water","Tree","Sky"],answer:1,why:"'Maa'' (ماء) means Water."},
+    {type:"mcq",q:"How do we greet someone with 'Peace' in Arabic?",options:["Shukran","Salaam","Yalla","Habibi"],answer:1,why:"'Salaam' means Peace — we say 'As-salaamu alaikum'."},
+    {type:"tf",q:"'Shukran' (شكراً) means Thank you. 🙏",answer:true,why:"Yes! 'Shukran' means Thank you."},
+    {type:"mcq",q:"How many letters are in the Arabic alphabet?",options:["24","26","28","30"],answer:2,why:"The Arabic alphabet has 28 letters."},
+    {type:"mcq",q:"What does 'باب' (Baab) mean?",options:["Door","Window","Roof","Floor"],answer:0,why:"'Baab' (باب) means Door."},
+    {type:"mcq",q:"What does 'قمر' (Qamar) mean? 🌙",options:["Sun","Moon","Star","Cloud"],answer:1,why:"'Qamar' (قمر) means Moon."},
+    {type:"mcq",q:"What does 'شمس' (Shams) mean? ☀️",options:["Moon","Sun","Rain","Wind"],answer:1,why:"'Shams' (شمس) means Sun."},
+    {type:"mcq",q:"How do we say 'Yes' in Arabic?",options:["La","Na'am","Yalla","Shukran"],answer:1,why:"'Na'am' (نعم) means Yes. 'La' (لا) means No."},
+    {type:"tf",q:"'Walad' (ولد) means boy. 👦",answer:true,why:"Yes! 'Walad' means boy. 'Bint' means girl."},
+    {type:"mcq",q:"What does 'بنت' (Bint) mean? 👧",options:["Boy","Girl","Man","Baby"],answer:1,why:"'Bint' (بنت) means Girl."},
+    {type:"mcq",q:"What is the last letter of the Arabic alphabet?",options:["Alif","Lam","Ya (ي)","Meem"],answer:2,why:"Ya (ي) is the last letter of the Arabic alphabet."},
+    {type:"tf",q:"Arabic letters can change shape depending on where they are in a word.",answer:true,why:"Yes! Many Arabic letters look a little different at the start, middle or end of a word."},
+  ]},
+  { id:"islamic", name:"Islamic Studies", emoji:"☪️", color:"from-teal-400 to-cyan-600", soft:"bg-teal-50", questions:[
+    {type:"mcq",q:"How many times do Muslims pray each day?",options:["3","5","7","2"],answer:1,why:"Muslims pray five times a day. These are the daily prayers (Salah)."},
+    {type:"mcq",q:"What do we say before we eat? 🍽️",options:["Ameen","Bismillah","Salaam","Mashallah"],answer:1,why:"We say 'Bismillah' (In the name of Allah) before we eat."},
+    {type:"tf",q:"The Qur'an is the holy book of Muslims. 📗",answer:true,why:"Yes! The Qur'an is the holy book that Allah revealed."},
+    {type:"mcq",q:"In which holy city is the Ka'bah? 🕋",options:["Madinah","Makkah","Cairo","Istanbul"],answer:1,why:"The Ka'bah is in Makkah. Muslims face it when they pray."},
+    {type:"mcq",q:"Who was the last Prophet of Islam? ﷺ",options:["Prophet Musa","Prophet Isa","Prophet Muhammad","Prophet Nuh"],answer:2,why:"Prophet Muhammad ﷺ is the last and final Prophet."},
+    {type:"tf",q:"Being kind to your parents is a good deed. 💚",answer:true,why:"Yes! Islam teaches us to be kind and respectful to our parents."},
+    {type:"mcq",q:"What do we say when something good happens? 😊",options:["Astaghfirullah","Alhamdulillah","Inshallah","Tawbah"],answer:1,why:"We say 'Alhamdulillah' (All praise is for Allah) to give thanks."},
+    {type:"mcq",q:"In which month do Muslims fast? 🌙",options:["Rajab","Ramadan","Shawwal","Muharram"],answer:1,why:"Muslims fast in the month of Ramadan."},
+    {type:"mcq",q:"How many Pillars of Islam are there?",options:["3","4","5","6"],answer:2,why:"There are 5 Pillars of Islam."},
+    {type:"mcq",q:"Travelling to Makkah for pilgrimage is called...?",options:["Salah","Hajj","Zakat","Sawm"],answer:1,why:"The pilgrimage to Makkah is called Hajj."},
+    {type:"mcq",q:"Giving charity to people in need is called...?",options:["Zakat","Hajj","Salah","Shahada"],answer:0,why:"Giving charity to the poor is called Zakat."},
+    {type:"tf",q:"Muslims face the Ka'bah when they pray. 🕋",answer:true,why:"Yes! Muslims all over the world face the Ka'bah in Makkah during prayer."},
+    {type:"mcq",q:"What do we say when we plan to do something later?",options:["Mashallah","Inshallah","Subhanallah","Astaghfirullah"],answer:1,why:"We say 'Inshallah' (If Allah wills) for things we plan to do."},
+    {type:"mcq",q:"Which Prophet built the Ka'bah with his son Ismail?",options:["Prophet Musa","Prophet Ibrahim","Prophet Nuh","Prophet Yusuf"],answer:1,why:"Prophet Ibrahim built the Ka'bah with his son Ismail (peace be upon them)."},
+    {type:"tf",q:"We should always tell the truth. ✨",answer:true,why:"Yes! Islam teaches us to be honest and always tell the truth."},
+    {type:"mcq",q:"What is the happy day after Ramadan called? 🎉",options:["Hajj","Eid","Jumu'ah","Iftar"],answer:1,why:"The celebration after Ramadan is called Eid (Eid-ul-Fitr)."},
+    {type:"tf",q:"Friday (Jumu'ah) is a special day for Muslims. 🕌",answer:true,why:"Yes! Friday is a blessed day with a special congregational prayer."},
+    {type:"mcq",q:"How do Muslims greet each other?",options:["Good night","Assalamu alaikum","See you","Hi there"],answer:1,why:"Muslims greet with 'Assalamu alaikum' — Peace be upon you."},
+  ]},
+  { id:"gk", name:"General Knowledge", emoji:"🌍", color:"from-violet-400 to-purple-500", soft:"bg-violet-50", questions:[
+    {type:"mcq",q:"How many days are in a week? 📅",options:["5","6","7","10"],answer:2,why:"There are 7 days in a week."},
+    {type:"mcq",q:"What colour is the sky on a clear day? ☀️",options:["Green","Blue","Red","Brown"],answer:1,why:"The sky is blue on a clear, sunny day."},
+    {type:"tf",q:"An elephant is bigger than a mouse. 🐘",answer:true,why:"Yes! An elephant is much bigger than a mouse."},
+    {type:"mcq",q:"Which one do we use to tell the time? ⏰",options:["Spoon","Clock","Cup","Shoe"],answer:1,why:"We use a clock to tell the time."},
+    {type:"mcq",q:"Which season is usually the coldest? ❄️",options:["Summer","Winter","Spring","Autumn"],answer:1,why:"Winter is usually the coldest season."},
+    {type:"tf",q:"We wear shoes on our hands. 🧤",answer:false,why:"We wear shoes on our feet! Gloves go on our hands."},
+    {type:"mcq",q:"How many months are in a year?",options:["10","11","12","7"],answer:2,why:"There are 12 months in a year."},
+    {type:"mcq",q:"Which animal is called the king of the jungle? 🦁",options:["Lion","Tiger","Bear","Wolf"],answer:0,why:"The lion is called the king of the jungle."},
+    {type:"mcq",q:"What colour is grass? 🌿",options:["Blue","Green","Red","Purple"],answer:1,why:"Grass is green."},
+    {type:"mcq",q:"How many colours are in a rainbow? 🌈",options:["5","6","7","9"],answer:2,why:"A rainbow has 7 colours."},
+    {type:"tf",q:"Saturday and Sunday are part of the weekend.",answer:true,why:"Yes! For many people the weekend is Saturday and Sunday."},
+    {type:"mcq",q:"What do we call the first meal of the day? 🍳",options:["Lunch","Dinner","Breakfast","Snack"],answer:2,why:"The first meal of the day is breakfast."},
+    {type:"mcq",q:"How many wheels does a car have? 🚗",options:["2","3","4","6"],answer:2,why:"A normal car has 4 wheels."},
+    {type:"tf",q:"There are 4 seasons in a year. 🍂",answer:true,why:"Yes! Spring, Summer, Autumn and Winter."},
+    {type:"mcq",q:"What do we use to write? ✏️",options:["Spoon","Pencil","Cup","Plate"],answer:1,why:"We use a pencil or pen to write."},
+  ]},
+  { id:"computer", name:"Computer Skills", emoji:"💻", color:"from-fuchsia-400 to-pink-600", soft:"bg-fuchsia-50", questions:[
+    {type:"mcq",q:"What do we use to type letters? ⌨️",options:["Mouse","Keyboard","Screen","Speaker"],answer:1,why:"We use a keyboard to type letters and numbers."},
+    {type:"mcq",q:"What do we use to click and move the pointer? 🖱️",options:["Mouse","Printer","Camera","Cable"],answer:0,why:"We use a mouse to click and move the pointer."},
+    {type:"tf",q:"A computer screen shows us pictures and words. 🖥️",answer:true,why:"Yes! The screen (monitor) shows us everything."},
+    {type:"mcq",q:"What does a printer do? 🖨️",options:["Plays music","Makes paper copies","Cooks food","Tells time"],answer:1,why:"A printer makes paper copies of our work."},
+    {type:"tf",q:"We should ask a grown-up before using the internet. 🧑‍🏫",answer:true,why:"Yes! Always ask a grown-up to stay safe online."},
+    {type:"mcq",q:"Which one is used to hear sound? 🔊",options:["Speaker","Mouse","Keyboard","Paper"],answer:0,why:"Speakers let us hear sound from the computer."},
+    {type:"tf",q:"A computer needs electricity to work. 🔌",answer:true,why:"Yes! Computers need power to switch on and work."},
+    {type:"mcq",q:"The small pictures we tap on a screen are called...?",options:["Icons","Shoes","Cups","Books"],answer:0,why:"The little pictures we click are called icons."},
+    {type:"mcq",q:"Which key makes a space between words?",options:["Enter","Spacebar","Shift","Esc"],answer:1,why:"The spacebar makes a space between words."},
+    {type:"tf",q:"We should keep our password a secret. 🔒",answer:true,why:"Yes! Never share your password with strangers."},
+    {type:"mcq",q:"Which part shows the picture? 🖥️",options:["Mouse","Monitor","Keyboard","Cable"],answer:1,why:"The monitor (screen) shows the picture."},
+    {type:"tf",q:"Taking breaks helps rest our eyes. 👀",answer:true,why:"Yes! Looking away from the screen helps rest our eyes."},
+    {type:"tf",q:"A tablet is a computer you can touch with your finger. 📱",answer:true,why:"Yes! A tablet has a touch screen you can tap."},
+    {type:"mcq",q:"Which key starts a new line?",options:["Enter","Space","Tab","Caps"],answer:0,why:"The Enter key starts a new line."},
+    {type:"tf",q:"We should be kind to others online too. 💚",answer:true,why:"Yes! Always be kind and polite, online and offline."},
+  ]},
+];
+
+const BADGES = [
+  { id:"first", name:"First Star", emoji:"⭐", need:(s)=>s.totalStars>=1, desc:"Earn your first star" },
+  { id:"ten", name:"Star Collector", emoji:"🌟", need:(s)=>s.totalStars>=10, desc:"Collect 10 stars" },
+  { id:"perfect", name:"Perfect Round", emoji:"🏆", need:(s)=>s.perfects>=1, desc:"Get a full-score round" },
+  { id:"islamic", name:"Little Muslim", emoji:"☪️", need:(s)=>(s.completed.islamic||0)>=3, desc:"Play Islamic Studies 3 times" },
+  { id:"explorer", name:"Explorer", emoji:"🌍", need:(s)=>Object.keys(s.completed).length>=4, desc:"Try 4 subjects" },
+  { id:"master", name:"Star Master", emoji:"👑", need:(s)=>s.totalStars>=30, desc:"Collect 30 stars" },
+];
+
+const PRAISE = ["Mashallah! 🎉","Great job! 🌟","Well done! 👏","Amazing! ✨","You got it! 💚","Brilliant! 🎊"];
+const TRY_AGAIN = ["Good try! 💪","Almost! 🌱","Keep going! 😊","Nice effort! 🤗"];
+
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function prepareQuestion(q){if(q.type!=="mcq"||!Array.isArray(q.options))return q;const o=shuffle(q.options.map((_,i)=>i));return{...q,options:o.map(i=>q.options[i]),answer:o.indexOf(q.answer)};}
+function mergeBank(base,ext){const map={},order=[];base.forEach(s=>{map[s.id]={...s,questions:[...s.questions]};order.push(s.id);});
+  if(ext&&Array.isArray(ext.subjects)){ext.subjects.forEach(es=>{if(!es||!es.id)return;const qs=Array.isArray(es.questions)?es.questions:[];
+    if(map[es.id]){map[es.id].questions=[...map[es.id].questions,...qs];if(es.name)map[es.id].name=es.name;if(es.emoji)map[es.id].emoji=es.emoji;if(es.color)map[es.id].color=es.color;}
+    else{map[es.id]={id:es.id,name:es.name||es.id,emoji:es.emoji||"📚",color:es.color||"from-slate-400 to-slate-500",soft:es.soft||"bg-slate-50",questions:qs};order.push(es.id);}});}
+  return order.map(id=>map[id]);}
+
+function useSound(enabled){const ref=useRef(null);
+  const beep=(f,d=0.12,t="sine",w=0)=>{if(!enabled)return;try{if(!ref.current)ref.current=new(window.AudioContext||window.webkitAudioContext)();const c=ref.current;const o=c.createOscillator(),g=c.createGain();o.type=t;o.frequency.value=f;o.connect(g);g.connect(c.destination);const s=c.currentTime+w;g.gain.setValueAtTime(0.0001,s);g.gain.exponentialRampToValueAtTime(0.18,s+0.02);g.gain.exponentialRampToValueAtTime(0.0001,s+d);o.start(s);o.stop(s+d);}catch(e){}};
+  return{correct:()=>{beep(523,.12);beep(659,.12,"sine",.1);beep(784,.18,"sine",.2);},wrong:()=>{beep(330,.18,"triangle");beep(247,.22,"triangle",.12);},tap:()=>beep(440,.06,"sine"),win:()=>{[523,587,659,784,880].forEach((f,i)=>beep(f,.16,"sine",i*.11));}};}
+
+function Confetti({show}){if(!show)return null;const e=["🌟","✨","🎉","⭐","💫","🎊"];
+  return <div className="pointer-events-none fixed inset-0 overflow-hidden z-50">{Array.from({length:30}).map((_,i)=>(
+    <div key={i} className="absolute text-2xl" style={{left:(Math.random()*100)+"%",top:"-10%",animation:`fall ${1.5+Math.random()*1.5}s linear ${Math.random()*0.5}s forwards`}}>{e[i%e.length]}</div>))}</div>;}
+
+function Mascot({mood="happy",size="text-6xl"}){const f=mood==="cheer"?"🌟":mood==="think"?"🌜":"🌙";
+  return <div className={size+" inline-block"} style={{animation:"bob 2.5s ease-in-out infinite"}}>{f}</div>;}
+
+const DEFAULT_PROGRESS={totalStars:0,points:0,perfects:0,completed:{},best:{}};
+const STORE_KEY="alhayat_starquest_progress";
+
+function App(){
+  const [screen,setScreen]=useState("home");
+  const [progress,setProgress]=useState(DEFAULT_PROGRESS);
+  const [sound,setSound]=useState(true);
+  const sfx=useSound(sound);
+  const [subjects,setSubjects]=useState(BUILTIN);
+  const [subject,setSubject]=useState(null);
+  const [activeQ,setActiveQ]=useState([]);
+  const [qIndex,setQIndex]=useState(0);
+  const [selected,setSelected]=useState(null);
+  const [locked,setLocked]=useState(false);
+  const [roundScore,setRoundScore]=useState(0);
+  const [feedback,setFeedback]=useState(null);
+  const [confetti,setConfetti]=useState(false);
+  const [resultData,setResultData]=useState(null);
+  const [newBadges,setNewBadges]=useState([]);
+
+  useEffect(()=>{try{const r=localStorage.getItem(STORE_KEY);if(r)setProgress({...DEFAULT_PROGRESS,...JSON.parse(r)});}catch(e){}},[]);
+  useEffect(()=>{(async()=>{try{const res=await fetch("questions.json",{cache:"no-store"});if(res.ok){const data=await res.json();setSubjects(mergeBank(BUILTIN,data));}}catch(e){}})();},[]);
+
+  const save=(next)=>{setProgress(next);try{localStorage.setItem(STORE_KEY,JSON.stringify(next));}catch(e){}};
+  const totalQuestions=subjects.reduce((n,s)=>n+s.questions.length,0);
+  const earnedBadges=BADGES.filter(b=>b.need(progress));
+
+  const startSubject=(subj)=>{sfx.tap();const pool=shuffle(subj.questions).slice(0,Math.min(ROUND_SIZE,subj.questions.length)).map(prepareQuestion);
+    setSubject(subj);setActiveQ(pool);setQIndex(0);setSelected(null);setLocked(false);setRoundScore(0);setFeedback(null);setScreen("play");};
+
+  const answer=(choice)=>{if(locked)return;const q=activeQ[qIndex];const correct=choice===q.answer;setSelected(choice);setLocked(true);
+    if(correct){setRoundScore(s=>s+1);setFeedback({correct:true,text:PRAISE[Math.floor(Math.random()*PRAISE.length)],why:q.why});sfx.correct();setConfetti(true);setTimeout(()=>setConfetti(false),1400);}
+    else{setFeedback({correct:false,text:TRY_AGAIN[Math.floor(Math.random()*TRY_AGAIN.length)],why:q.why});sfx.wrong();}};
+
+  const next=()=>{if(qIndex+1<activeQ.length){setQIndex(i=>i+1);setSelected(null);setLocked(false);setFeedback(null);}else{finishRound();}};
+
+  const finishRound=()=>{const total=activeQ.length,score=roundScore;
+    const stars=score===total?3:score>=Math.ceil(total*0.6)?2:score>=Math.ceil(total*0.3)?1:0;
+    const pts=score*10+(score===total?20:0);const prevBest=progress.best[subject.id]||0;const isNewBest=stars>prevBest;
+    const np={...progress,totalStars:progress.totalStars+(isNewBest?stars-prevBest:0),points:progress.points+pts,perfects:progress.perfects+(score===total?1:0),
+      completed:{...progress.completed,[subject.id]:(progress.completed[subject.id]||0)+1},best:{...progress.best,[subject.id]:Math.max(prevBest,stars)}};
+    const before=BADGES.filter(b=>b.need(progress)).map(b=>b.id);const fresh=BADGES.filter(b=>b.need(np)).filter(b=>!before.includes(b.id));
+    save(np);setResultData({score,total,stars,pts});setNewBadges(fresh);if(stars>=2)sfx.win();setScreen("result");};
+
+  const TopBar=({showHome=true})=>(
+    <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center gap-2">
+        {showHome&&<button onClick={()=>{sfx.tap();setScreen("home");}} className="w-11 h-11 rounded-2xl bg-white shadow-sm flex items-center justify-center text-teal-600 active:scale-90 transition"><IHome size={22}/></button>}
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 bg-white rounded-2xl px-3 py-2 shadow-sm"><IStar size={18} className="text-amber-400"/><span className="font-bold text-slate-700">{progress.totalStars}</span></div>
+        <div className="flex items-center gap-1 bg-white rounded-2xl px-3 py-2 shadow-sm"><ISparkle size={18} className="text-violet-500"/><span className="font-bold text-slate-700">{progress.points}</span></div>
+        <button onClick={()=>setSound(s=>!s)} className="w-11 h-11 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-500 active:scale-90 transition">{sound?<IVol size={20}/>:<IMute size={20}/>}</button>
+      </div>
+    </div>
+  );
+
+  if(screen==="home")return(
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-sky-50 to-violet-50 p-4 sm:p-6">
+      <div className="max-w-md mx-auto">
+        <TopBar showHome={false}/>
+        <div className="text-center mt-6 mb-8">
+          <Mascot mood="cheer" size="text-7xl"/>
+          <h1 className="text-3xl sm:text-4xl font-extrabold mt-3 bg-gradient-to-r from-teal-600 to-violet-600 bg-clip-text text-transparent">Al-Hayat Star Quest</h1>
+          <p className="text-slate-500 mt-2 font-medium">Learn, play and collect stars! ⭐</p>
+        </div>
+        <button onClick={()=>{sfx.tap();setScreen("subjects");}} className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white text-xl font-bold py-5 rounded-3xl shadow-lg active:scale-95 transition flex items-center justify-center gap-2 mb-4"><span>Start Learning</span><IChev size={24}/></button>
+        <div className="grid grid-cols-2 gap-3 mb-4">
+          <button onClick={()=>{sfx.tap();setScreen("badges");}} className="bg-white rounded-3xl p-4 shadow-sm active:scale-95 transition text-left"><IAward size={26} className="text-amber-400 mb-1"/><div className="font-bold text-slate-700">My Badges</div><div className="text-sm text-slate-400">{earnedBadges.length} of {BADGES.length}</div></button>
+          <div className="bg-white rounded-3xl p-4 shadow-sm"><ITrophy size={26} className="text-violet-500 mb-1"/><div className="font-bold text-slate-700">{progress.points} points</div><div className="text-sm text-slate-400">{progress.totalStars} stars earned</div></div>
+        </div>
+        <div className="bg-white/70 rounded-3xl p-4 text-center text-sm text-slate-500 leading-relaxed">🕌 {subjects.length} subjects · {totalQuestions} questions · No login needed</div>
+        {progress.totalStars>0&&<button onClick={()=>{sfx.tap();save(DEFAULT_PROGRESS);}} className="w-full mt-4 text-slate-400 text-sm font-medium flex items-center justify-center gap-1 active:scale-95 transition"><IRefresh size={14}/> Reset progress</button>}
+      </div>
+    </div>
+  );
+
+  if(screen==="subjects")return(
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-sky-50 to-violet-50 p-4 sm:p-6">
+      <div className="max-w-md mx-auto">
+        <TopBar/>
+        <h2 className="text-2xl font-extrabold text-slate-700 mb-1">Choose a Subject 🎒</h2>
+        <p className="text-slate-400 mb-5 font-medium">Tap a card to start playing!</p>
+        <div className="grid grid-cols-2 gap-3">
+          {subjects.map(s=>{const best=progress.best[s.id]||0;return(
+            <button key={s.id} onClick={()=>startSubject(s)} className={"relative bg-gradient-to-br "+s.color+" rounded-3xl p-4 text-white shadow-md active:scale-95 transition text-left overflow-hidden"}>
+              <div className="text-4xl mb-2">{s.emoji}</div>
+              <div className="font-bold leading-tight">{s.name}</div>
+              <div className="text-xs text-white/80 mt-1">{s.questions.length} questions</div>
+              <div className="flex gap-0.5 mt-2">{[0,1,2].map(i=><IStar key={i} size={16} className={i<best?"text-white":"text-white/40"}/>)}</div>
+            </button>);})}
+        </div>
+      </div>
+    </div>
+  );
+
+  if(screen==="play"&&subject&&activeQ.length){const q=activeQ[qIndex];const pct=(qIndex/activeQ.length)*100;return(
+    <div className={"min-h-screen bg-gradient-to-br "+(subject.soft||"bg-slate-50")+" to-white p-4 sm:p-6"}>
+      <Confetti show={confetti}/>
+      <div className="max-w-md mx-auto">
+        <TopBar/>
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-3xl">{subject.emoji}</span>
+          <div className="flex-1">
+            <div className="flex justify-between text-xs font-bold text-slate-400 mb-1"><span>{subject.name}</span><span>{qIndex+1} / {activeQ.length}</span></div>
+            <div className="h-3 bg-white rounded-full overflow-hidden shadow-inner"><div className={"h-full bg-gradient-to-r "+subject.color+" transition-all duration-500"} style={{width:pct+"%"}}/></div>
+          </div>
+        </div>
+        <div className="bg-white rounded-3xl p-5 shadow-sm mt-5 mb-4">
+          <div className="text-xs font-bold uppercase tracking-wide text-slate-300 mb-2">{q.type==="tf"?"True or False":"Pick the answer"}</div>
+          <p className="text-xl font-bold text-slate-700 leading-snug">{q.q}</p>
+        </div>
+        {q.type==="tf"?(
+          <div className="grid grid-cols-2 gap-3">
+            {[{t:"True",v:true,e:"✅"},{t:"False",v:false,e:"❌"}].map(opt=>{const isSel=selected===opt.v;const show=locked&&(opt.v===q.answer||isSel);const right=opt.v===q.answer;
+              return <button key={opt.t} disabled={locked} onClick={()=>answer(opt.v)} className={"py-6 rounded-3xl font-bold text-lg shadow-sm transition active:scale-95 "+(!locked?"bg-white text-slate-700 hover:shadow-md":show?(right?"bg-emerald-500 text-white":"bg-rose-400 text-white"):"bg-white text-slate-300")}><div className="text-2xl mb-1">{opt.e}</div>{opt.t}</button>;})}
+          </div>
+        ):(
+          <div className="grid grid-cols-1 gap-3">
+            {q.options.map((opt,i)=>{const isSel=selected===i;const show=locked&&(i===q.answer||isSel);const right=i===q.answer;
+              return <button key={i} disabled={locked} onClick={()=>answer(i)} className={"w-full text-left px-5 py-4 rounded-3xl font-bold text-lg shadow-sm transition active:scale-95 flex items-center justify-between "+(!locked?"bg-white text-slate-700 hover:shadow-md":show?(right?"bg-emerald-500 text-white":"bg-rose-400 text-white"):"bg-white text-slate-300")}><span>{opt}</span>{locked&&show&&(right?<ICheck size={22}/>:<IX size={22}/>)}</button>;})}
+          </div>
+        )}
+        {feedback&&(
+          <div className={"mt-4 rounded-3xl p-4 "+(feedback.correct?"bg-emerald-50":"bg-amber-50")}>
+            <div className="flex items-center gap-2 mb-1"><Mascot mood={feedback.correct?"cheer":"think"} size="text-3xl"/><span className={"font-extrabold text-lg "+(feedback.correct?"text-emerald-600":"text-amber-600")}>{feedback.text}</span></div>
+            <p className="text-slate-600 font-medium leading-snug">{feedback.why}</p>
+            <button onClick={()=>{sfx.tap();next();}} className={"w-full mt-3 py-4 rounded-2xl text-white font-bold shadow-md active:scale-95 transition flex items-center justify-center gap-1 "+(feedback.correct?"bg-emerald-500":"bg-amber-500")}>{qIndex+1<activeQ.length?"Next":"Finish"}<IChev size={20}/></button>
+          </div>
+        )}
+      </div>
+    </div>
+  );}
+
+  if(screen==="result"&&resultData){const{score,total,stars,pts}=resultData;return(
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-sky-50 to-violet-50 p-4 sm:p-6 flex items-center">
+      <Confetti show={stars>=2}/>
+      <div className="max-w-md mx-auto w-full">
+        <div className="bg-white rounded-3xl p-6 shadow-lg text-center">
+          <Mascot mood="cheer" size="text-6xl"/>
+          <h2 className="text-2xl font-extrabold text-slate-700 mt-2">{stars===3?"Perfect! Mashallah! 🎉":stars>=1?"Well done! 🌟":"Good try! 💪"}</h2>
+          <div className="flex justify-center gap-2 my-4">{[0,1,2].map(i=><IStar key={i} size={44} className={i<stars?"text-amber-400":"text-slate-200"}/>)}</div>
+          <p className="text-slate-500 font-medium">You got <b className="text-slate-700">{score} of {total}</b> right</p>
+          <div className="inline-flex items-center gap-1 bg-violet-50 text-violet-600 font-bold rounded-2xl px-4 py-2 mt-3"><ISparkle size={18}/> +{pts} points</div>
+          {newBadges.length>0&&(
+            <div className="mt-5 bg-amber-50 rounded-2xl p-4">
+              <div className="font-bold text-amber-600 mb-2 flex items-center justify-center gap-1"><IAward size={18}/> New badge{newBadges.length>1?"s":""}!</div>
+              <div className="flex justify-center gap-3 flex-wrap">{newBadges.map(b=><div key={b.id} className="text-center"><div className="text-4xl">{b.emoji}</div><div className="text-xs font-bold text-slate-600 mt-1">{b.name}</div></div>)}</div>
+            </div>
+          )}
+          <div className="grid grid-cols-2 gap-3 mt-6">
+            <button onClick={()=>startSubject(subject)} className="py-4 rounded-2xl bg-slate-100 text-slate-600 font-bold active:scale-95 transition flex items-center justify-center gap-1"><IRefresh size={18}/> Replay</button>
+            <button onClick={()=>{sfx.tap();setScreen("subjects");}} className="py-4 rounded-2xl bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold active:scale-95 transition flex items-center justify-center gap-1">More <IChev size={18}/></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );}
+
+  if(screen==="badges")return(
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-sky-50 to-violet-50 p-4 sm:p-6">
+      <div className="max-w-md mx-auto">
+        <TopBar/>
+        <h2 className="text-2xl font-extrabold text-slate-700 mb-1 flex items-center gap-2"><IAward className="text-amber-400"/> My Badges</h2>
+        <p className="text-slate-400 mb-5 font-medium">Earn them all by learning! 🌟</p>
+        <div className="grid grid-cols-1 gap-3">
+          {BADGES.map(b=>{const got=b.need(progress);return(
+            <div key={b.id} className={"flex items-center gap-4 rounded-3xl p-4 shadow-sm "+(got?"bg-white":"bg-white/50")}>
+              <div className={"text-4xl "+(got?"":"grayscale opacity-40")}>{got?b.emoji:"🔒"}</div>
+              <div className="flex-1"><div className={"font-bold "+(got?"text-slate-700":"text-slate-400")}>{b.name}</div><div className="text-sm text-slate-400">{b.desc}</div></div>
+              {got&&<ICheck className="text-emerald-500" size={22}/>}
+            </div>);})}
+        </div>
+        <div className="mt-6 bg-white rounded-3xl p-4 text-center"><div className="flex items-center justify-center gap-2 text-slate-600 font-bold"><IHeart className="text-rose-400" size={18}/> {earnedBadges.length} of {BADGES.length} badges earned</div></div>
+      </div>
+    </div>
+  );
+
+  return null;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
