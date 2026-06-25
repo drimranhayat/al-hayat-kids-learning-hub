@@ -1,0 +1,43 @@
+{
+  "totalQuestions": 3000,
+  "subjects": {
+    "english": {
+      "name": "English",
+      "count": 500
+    },
+    "mathematics": {
+      "name": "Mathematics",
+      "count": 500
+    },
+    "science": {
+      "name": "Science",
+      "count": 400
+    },
+    "arabic": {
+      "name": "Arabic",
+      "count": 400
+    },
+    "islamic": {
+      "name": "Islamic Studies",
+      "count": 500
+    },
+    "gk": {
+      "name": "General Knowledge",
+      "count": 400
+    },
+    "computer": {
+      "name": "Computer Skills",
+      "count": 300
+    }
+  },
+  "ages": [
+    "3-4",
+    "5-6",
+    "7-8"
+  ],
+  "files": [
+    "questions.json",
+    "lessons.json",
+    "worksheets.json"
+  ]
+}
