@@ -1,235 +1,423 @@
-?<!doctype html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Al-Hayat Kids Learning Hub | Learn, Read, Play & Grow Ages 3-8</title>
-    <meta name="description" content="Child-friendly Islamic and academic learning for ages 3-8 with English, math, science, Arabic, Islamic studies, quizzes, worksheets, stories, rewards, and parent guidance.">
-    <meta name="theme-color" content="#0f766e">
-    <meta property="og:title" content="Al-Hayat Kids Learning Hub">
-    <meta property="og:description" content="Learn, read, play, and grow with safe Islamic and academic learning for ages 3-8.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/hero-learning-hub.png">
-    <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Al-Hayat Kids Learning Hub",
-        "url": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/",
-        "description": "Islamic and academic learning for children ages 3-8.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://drimranhayat.github.io/al-hayat-kids-learning-hub/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
-          <span class="brand-mark">AH</span>
-          <span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
-        <div class="nav-links" data-nav-links>
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="subjects/english.html">Learn</a>
-          <a href="reading-library/index.html">Stories</a>
-          <a href="quiz.html">Quiz</a>
-          <a href="parents-corner/index.html">Parent</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <a class="nav-cta" href="#start">Start Today</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Al-Hayat Kids Learning Hub | Learn, Read, Play &amp; Grow — Ages 3-8</title>
+  <meta name="description" content="Child-friendly Islamic and academic learning for ages 3-8: English, math, science, Arabic, Islamic studies, quizzes, worksheets, stories, rewards, and parent guidance.">
+  <meta name="theme-color" content="#0f766e">
+  <meta property="og:title" content="Al-Hayat Kids Learning Hub">
+  <meta property="og:description" content="Learn, read, play, and grow with safe Islamic and academic learning for ages 3-8.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-learning-hub.png">
+  <link rel="canonical" href="https://drimranhayat.github.io/al-hayat-kids-learning-hub/">
+  <link rel="manifest" href="site.webmanifest">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Al-Hayat Kids Learning Hub","url":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/","description":"Islamic and academic learning for children ages 3-8.","potentialAction":{"@type":"SearchAction","target":"https://drimranhayat.github.io/al-hayat-kids-learning-hub/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
 
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Ages 3-8 • Safe • Parent-guided</p>
-          <h1 id="hero-title">Learn • Read • Play • Grow</h1>
-          <p class="hero-copy">Islamic and academic learning for ages 3-8 with one clear child task at a time, big buttons, printable practice, quizzes, stories, and rewards.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#start">Start Today</a>
-            <a class="button button-ghost" href="#daily" data-continue hidden>Continue Learning</a>
-          </div>
-          <div class="hero-icons" aria-label="Learning icons">
-            <div class="icon-tile"><span><span class="big-icon" aria-hidden="true">Read</span><span class="icon-label">Read</span></span></div>
-            <div class="icon-tile"><span><span class="big-icon" aria-hidden="true">Write</span><span class="icon-label">Practice</span></span></div>
-            <div class="icon-tile"><span><span class="big-icon" aria-hidden="true">Star</span><span class="icon-label">Earn Stars</span></span></div>
-            <div class="icon-tile"><span><span class="big-icon" aria-hidden="true">Play</span><span class="icon-label">Play</span></span></div>
-          </div>
-          <div class="progress-strip" aria-label="Local learning progress">
-            <div class="progress-item"><strong data-stars>0</strong>Stars</div>
-            <div class="progress-item"><strong data-today>0</strong>Today</div>
-            <div class="progress-item"><strong data-badges>0</strong>Badges</div>
-            <div class="progress-item"><strong>Local</strong>No login</div>
-          </div>
-        </div>
-      </section>
+  <style>
+  :root{
+    --teal:#0f766e; --teal-d:#0c5d56; --teal-l:#14b8a6;
+    --amber:#f59e0b; --amber-d:#d97706; --gold:#fbbf24;
+    --sky:#3b82f6; --pink:#ec4899; --violet:#8b5cf6; --green:#16a34a;
+    --ink:#1f2937; --muted:#64748b; --line:#e6efed;
+    --bg:#f3fbf9; --card:#ffffff; --r:22px;
+    --shadow:0 8px 24px rgba(15,118,110,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);line-height:1.55;
+    background:linear-gradient(180deg,#d7f3ee 0%,#f3fbf9 26%,#fffaf0 100%);min-height:100vh;padding-bottom:74px}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%}
+  .wrap,.section,.hero,.cta-panel,.site-footer{max-width:1040px;margin:0 auto;padding-left:18px;padding-right:18px}
+  .skip-link{position:absolute;left:-999px;top:0;background:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:200}
+  .skip-link:focus{left:0}
 
-      <section class="section" id="start" aria-labelledby="age-title">
-        <div class="section-heading">
-          <p class="eyebrow">Choose age</p>
-          <h2 id="age-title">Pick the right learning path.</h2>
-          <p>Each age group uses shorter tasks, age-wise lessons, and parent-guided follow-up.</p>
-        </div>
-        <div class="age-grid">
-          <article class="age-card" data-age="3-4">
-            <span class="big-icon" aria-hidden="true">🌱</span>
-            <h3>Ages 3-4</h3>
-            <p>Picture words, colors, shapes, tracing, manners, short duas, and listening stories.</p>
-            <a class="button button-secondary" href="subjects/english.html">Begin gently</a>
-          </article>
-          <article class="age-card" data-age="5-6">
-            <span class="big-icon" aria-hidden="true">🌟</span>
-            <h3>Ages 5-6</h3>
-            <p>Alphabet, phonics, counting, Arabic letters, daily manners, stories, and mini quizzes.</p>
-            <a class="button button-secondary" href="quiz.html">Start practice</a>
-          </article>
-          <article class="age-card" data-age="7-8">
-            <span class="big-icon" aria-hidden="true">🚀</span>
-            <h3>Ages 7-8</h3>
-            <p>Reading, writing, math problems, science ideas, Islamic values, computer basics, and rewards.</p>
-            <a class="button button-secondary" href="worksheets/index.html">Practice now</a>
-          </article>
-        </div>
-      </section>
+  /* HEADER */
+  .site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+    box-shadow:0 2px 14px rgba(0,0,0,.05)}
+  .nav{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:11px 18px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--teal),var(--teal-l));
+    color:#fff;font-weight:800;display:grid;place-items:center;font-size:1rem;box-shadow:var(--shadow)}
+  .brand strong{display:block;color:var(--teal-d);font-size:1.05rem;line-height:1.1}
+  .brand small{color:var(--muted);font-size:.72rem}
+  .nav-links{display:flex;gap:4px;margin-left:auto}
+  .nav-links a{padding:8px 13px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--muted);transition:.18s}
+  .nav-links a:hover,.nav-links a[aria-current="page"]{background:#e3f6f1;color:var(--teal-d)}
+  .nav-cta{background:linear-gradient(90deg,var(--amber),var(--amber-d));color:#fff;font-weight:800;
+    padding:9px 18px;border-radius:999px;font-size:.9rem;box-shadow:0 6px 14px rgba(245,158,11,.3)}
+  .menu-toggle{display:none;flex-direction:column;gap:5px;background:#e3f6f1;border:none;border-radius:11px;
+    padding:11px 10px;cursor:pointer;margin-left:auto}
+  .menu-toggle span{width:20px;height:2.5px;background:var(--teal-d);border-radius:2px}
+  @media(max-width:820px){
+    .nav-cta{display:none}
+    .menu-toggle{display:flex}
+    .nav-links{position:absolute;top:64px;right:14px;left:14px;flex-direction:column;background:#fff;border-radius:18px;
+      padding:10px;box-shadow:0 14px 34px rgba(0,0,0,.14);display:none}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:12px 14px}
+  }
 
-      <section class="section muted" id="daily" aria-labelledby="daily-title">
-        <div class="section-heading">
-          <p class="eyebrow">Today's learning path</p>
-          <h2 id="daily-title">Five small tasks for today.</h2>
-          <p>One screen = one child task. Complete a card to earn a local star in this browser.</p>
-        </div>
-        <div class="task-grid">
-          <article class="task-card"><span class="big-icon">ABC</span><h3>Word of the Day</h3><p>Apple: a red or green fruit.</p><button class="button button-gold" data-complete-task>Done</button></article>
-          J3</span><h3>Number Task</h3><p>Count 5 stars: ★ ★ ★ ★ ★</p><button class="button button-gold" data-complete-task>Done</button></article>
-          <article class="task-card"><span class="big-icon">Book</span><h3>Story Time</h3><p>Read one short moral story.</p><a class="button button-gold" href="reading-library/index.html">Read</a></article>
-          <article class="task-card"><span class="big-icon">Dua</span><h3>Dua or Manner</h3><p>Say Bismillah before eating.</p><a class="button button-gold" href="islamic-corner/index.html">Learn</a></article>
-          <article class="task-card"><span class="big-icon">Quiz</span><h3>Mini Quiz</h3><p>Answer one easy question.</p><a class="button button-gold" href="quiz.html">Quiz</a></article>
-        </div>
-      </section>
+  /* BUTTONS */
+  .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:800;border:none;cursor:pointer;
+    padding:13px 24px;border-radius:999px;font-size:1rem;transition:.18s;text-align:center}
+  .button:active{transform:scale(.97)}
+  .button-primary{background:linear-gradient(90deg,var(--teal),var(--teal-d));color:#fff;box-shadow:0 8px 20px rgba(15,118,110,.32)}
+  .button-primary:hover{transform:translateY(-2px)}
+  .button-secondary{background:#fff;color:var(--teal-d);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .button-secondary:hover{background:#f0faf8}
+  .button-ghost{background:rgba(255,255,255,.6);color:var(--teal-d);border:2px solid var(--teal-l)}
+  .button-gold{background:linear-gradient(90deg,var(--gold),var(--amber-d));color:#fff;padding:9px 18px;font-size:.92rem;
+    box-shadow:0 5px 14px rgba(245,158,11,.3)}
+  .button-gold.done{background:var(--green);pointer-events:none}
 
-      <section class="section" aria-labelledby="subjects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Main subjects</p>
-          <h2 id="subjects-title">Choose a subject.</h2>
-        </div>
-        <div class="subject-grid">
-          <a class="subject-card" href="subjects/english.html"><span class="big-icon">ABC</span><h3>English</h3><p>Alphabet, phonics, sight words, reading, writing, and speaking.</p></a>
-          J3</span><h3>Mathematics</h3><p>Counting, shapes, patterns, addition, subtraction, and simple problems.</p></a>
-          <a class="subject-card" href="subjects/science.html"><span class="big-icon">Sci</span><h3>Science</h3><p>Animals, plants, body parts, weather, water, and healthy habits.</p></a>
-          <a class="subject-card" href="subjects/arabic.html"><span class="big-icon">?</span><h3>Arabic</h3><p>Arabic letters, simple words, recognition, tracing, and matching.</p></a>
-          <a class="subject-card" href="subjects/islamic-studies.html"><span class="big-icon">Dua</span><h3>Islamic Studies</h3><p>Duas, good manners, prophets, Seerah, prayer basics, and kindness.</p></a>
-          <a class="subject-card" href="subjects/general-knowledge.html"><span class="big-icon">GK</span><h3>General Knowledge</h3><p>Myself, family, home, school, country, world, animals, and transport.</p></a>
-          <a class="subject-card" href="subjects/computer-skills.html"><span class="big-icon">PC</span><h3>Computer Skills</h3><p>Computer parts, mouse, keyboard, safe use, typing, and digital manners.</p></a>
-        </div>
-      </section>
+  /* HERO */
+  .hero{text-align:center;padding-top:40px;padding-bottom:28px}
+  .eyebrow{display:inline-block;background:#e3f6f1;color:var(--teal-d);font-weight:700;font-size:.78rem;
+    padding:5px 14px;border-radius:999px;letter-spacing:.3px}
+  .hero h1{font-size:2.6rem;color:var(--teal-d);margin:14px 0 8px;line-height:1.1}
+  .hero-copy{color:var(--muted);font-size:1.12rem;max-width:600px;margin:0 auto 22px}
+  .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .hero-icons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .icon-tile{background:#fff;border-radius:18px;padding:16px 18px;min-width:96px;box-shadow:var(--shadow);transition:.18s}
+  .icon-tile:hover{transform:translateY(-4px)}
+  .icon-tile .big-icon{font-size:2rem;display:block}
+  .icon-label{font-size:.82rem;font-weight:700;color:var(--ink);margin-top:4px;display:block}
+  .progress-strip{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  .progress-item{background:#fff;border-radius:16px;padding:12px 20px;box-shadow:var(--shadow);min-width:84px;font-size:.8rem;color:var(--muted);font-weight:600}
+  .progress-item strong{display:block;font-size:1.5rem;color:var(--teal-d)}
 
-      <section class="section muted" aria-labelledby="activities-title">
-        <div class="section-heading">
-          <p class="eyebrow">Activities</p>
-          <h2 id="activities-title">Practice by playing.</h2>
-        </div>
-        <div class="activity-grid">
-          <a class="activity-card" href="quiz.html"><span class="big-icon">Quiz</span><h3>Quizzes</h3><p>Short questions with instant feedback.</p></a>
-          <a class="activity-card" href="worksheets/index.html"><span class="big-icon">Print</span><h3>Worksheets</h3><p>Printable tracing and practice tasks.</p></a>
-          <a class="activity-card" href="activities/index.html"><span class="big-icon">Play</span><h3>Puzzles</h3><p>Matching, sorting, and tap activities.</p></a>
-          <a class="activity-card" href="practice/index.html"><span class="big-icon">Write</span><h3>Practice</h3><p>Typing, tracing, and whiteboard-style tasks.</p></a>
-        </div>
-      </section>
+  /* SECTIONS */
+  .section{padding:38px 18px}
+  .section.muted{background:rgba(255,255,255,.55);border-radius:30px;margin-top:8px;margin-bottom:8px;max-width:1004px}
+  .section-heading{text-align:center;max-width:600px;margin:0 auto 26px}
+  .section-heading h2{font-size:1.85rem;color:var(--teal-d);margin:4px 0 6px}
+  .section-heading p{color:var(--muted)}
+  .big-icon{font-size:2.4rem;display:inline-block;line-height:1}
 
-      <section class="section" aria-labelledby="stories-title">
-        <div class="section-heading">
-          <p class="eyebrow">Reading library</p>
-          <h2 id="stories-title">Short stories with questions.</h2>
-        </div>
-        <div class="story-grid">
-          <a class="story-card" href="reading-library/index.html#moral"><span class="big-icon">Kind</span><h3>Moral Stories</h3><p>Kindness, truth, gratitude, and helping others.</p></a>
-          <a class="story-card" href="reading-library/index.html#islamic"><span class="big-icon">Moon</span><h3>Islamic Stories</h3><p>Respectful stories with simple morals.</p></a>
-          <a class="story-card" href="reading-library/index.html#bedtime"><span class="big-icon">Moon</span><h3>Bedtime Stories</h3><p>Short calm stories with parent follow-up.</p></a>
-        </div>
-      </section>
+  /* CARD GRIDS */
+  .age-grid,.subject-grid,.activity-grid,.task-grid,.story-grid,.reward-grid{
+    display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+  .task-grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+  .age-card,.subject-card,.activity-card,.task-card,.story-card,.reward-card{
+    background:var(--card);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);transition:.18s;
+    border:2px solid transparent;display:flex;flex-direction:column;gap:8px}
+  .age-card{text-align:center;align-items:center}
+  .subject-card:hover,.activity-card:hover,.story-card:hover,.age-card:hover{transform:translateY(-5px);border-color:#bfe9e1}
+  .age-card h3,.subject-card h3,.activity-card h3,.task-card h3,.story-card h3,.reward-card h3{font-size:1.15rem;color:var(--teal-d)}
+  .age-card p,.subject-card p,.activity-card p,.task-card p,.story-card p,.reward-card p{color:var(--muted);font-size:.92rem;flex:1}
+  .age-card .button{margin-top:6px}
+  .task-card{align-items:flex-start}
+  .task-card .button{margin-top:auto}
+  .text-link{color:var(--teal);font-weight:700;text-decoration:underline}
 
-      <section class="section muted" aria-labelledby="islamic-title">
-        <div class="section-heading">
-          <p class="eyebrow">Islamic learning</p>
-          <h2 id="islamic-title">Faith, manners, and daily habits.</h2>
-        </div>
-        <div class="activity-grid">
-          <a class="activity-card" href="islamic-corner/index.html#duas"><span class="big-icon">Dua</span><h3>Daily Duas</h3><p>Common duas with Arabic and simple meanings.</p></a>
-          <a class="activity-card" href="islamic-corner/index.html#manners"><span class="big-icon">Manners</span><h3>Good Manners</h3><p>Truthfulness, kindness, respect, and cleanliness.</p></a>
-          <a class="activity-card" href="islamic-corner/index.html#prophets"><span class="big-icon">Book</span><h3>Prophets</h3><p>Respectful age-wise stories and lessons.</p></a>
-          <a class="activity-card" href="islamic-corner/index.html#names"><span class="big-icon">Names</span><h3>Asma ul Husna</h3><p>Beautiful names introduced gently for children.</p></a>
-        </div>
-      </section>
+  /* coloured top accents */
+  .subject-card:nth-child(1){border-top:5px solid var(--sky)}
+  .subject-card:nth-child(2){border-top:5px solid var(--amber)}
+  .subject-card:nth-child(3){border-top:5px solid var(--green)}
+  .subject-card:nth-child(4){border-top:5px solid var(--teal-l)}
+  .subject-card:nth-child(5){border-top:5px solid var(--violet)}
+  .subject-card:nth-child(6){border-top:5px solid var(--pink)}
+  .subject-card:nth-child(7){border-top:5px solid #f97316}
 
-      <section class="section" aria-labelledby="rewards-title">
-        <div class="section-heading">
-          <p class="eyebrow">Rewards</p>
-          <h2 id="rewards-title">Celebrate small wins.</h2>
-        </div>
-        <div class="reward-grid">
-          <article class="reward-card"><span class="big-icon">Star</span><h3>Stars</h3><p><strong data-stars>0</strong> stars saved locally.</p></article>
-          <article class="reward-card"><span class="big-icon">Badge</span><h3>Badges</h3><p><strong data-badges>0</strong> badges earned in this browser.</p></article>
-          <article class="reward-card"><span class="big-icon">Week</span><h3>Weekly Progress</h3><p>Use the parent corner to review simple progress.</p></article>
-          <article class="reward-card"><span class="big-icon">Cert</span><h3>Certificate</h3><p><a class="text-link" href="parents-corner/index.html#certificate">Print a certificate</a></p></article>
-        </div>
-      </section>
+  /* SAFETY + CTA */
+  .safety-badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
+  .safety-badges span{background:#fff;border-radius:999px;padding:9px 16px;font-size:.85rem;font-weight:700;
+    color:var(--teal-d);box-shadow:0 3px 10px rgba(0,0,0,.05)}
+  .safety-badges span::before{content:"✓ ";color:var(--green);font-weight:900}
+  .section-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .cta-panel{margin:24px auto;background:linear-gradient(120deg,var(--teal),var(--teal-d));color:#fff;
+    border-radius:30px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;text-align:left}
+  .cta-panel h2{font-size:1.6rem}
+  .cta-panel p{opacity:.9;margin-top:4px}
+  .cta-panel .button-primary{background:#fff;color:var(--teal-d)}
 
-      <section class="section muted" aria-labelledby="parents-title">
-        <div class="section-heading">
-          <p class="eyebrow">Parents corner</p>
-          <h2 id="parents-title">Safe, simple, parent-guided learning.</h2>
-        </div>
-        <div class="safety-badges">
-          <span>No child login required</span>
-          <span>No personal data required</span>
-          <span>Parent-guided learning</span>
-          <span>Safe Islamic content</span>
-          <span>Works on mobile</span>
-          <span>Printable practice</span>
-        </div>
-        <div class="section-actions" style="justify-content:center">
-          <a class="button button-primary" href="parents-corner/index.html">Parent Guide</a>
-          <a class="button button-secondary" href="online-classes.html">Online Classes</a>
-          <a class="button button-secondary" href="contact.html">Contact</a>
-        </div>
-      </section>
+  /* FOOTER */
+  .footer-wrap{background:var(--teal-d);color:#cdeee8;margin-top:18px;padding:34px 0 10px}
+  .site-footer{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  .site-footer .brand strong{color:#fff}
+  .site-footer .brand small{color:#9fd9d0}
+  .site-footer p{color:#9fd9d0;font-size:.88rem;margin-top:10px;max-width:240px}
+  .site-footer h2{font-size:.95rem;color:#fff;margin-bottom:10px}
+  .site-footer a{display:block;color:#cdeee8;font-size:.9rem;padding:4px 0}
+  .site-footer a:hover{color:#fff}
+  .footer-base{text-align:center;color:#8fcfc6;font-size:.78rem;padding:16px;margin-top:18px;border-top:1px solid rgba(255,255,255,.12)}
 
-      <section class="cta-panel">
-        <div>
-          <h2>Ready for today’s learning?</h2>
-          <p>Choose an age, complete one small task, and celebrate progress with your child.</p>
-        </div>
-        <a class="button button-primary" href="#start">Start Today</a>
-      </section>
-    </main>
+  /* BOTTOM NAV (mobile) */
+  .bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;display:none;
+    box-shadow:0 -4px 18px rgba(0,0,0,.08);padding:6px 4px}
+  .bottom-nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.68rem;
+    font-weight:700;color:var(--muted);padding:6px 0}
+  .bottom-nav a span{font-size:1.3rem}
+  .bottom-nav a:hover{color:var(--teal-d)}
+  @media(max-width:820px){.bottom-nav{display:flex}}
+  @media(min-width:821px){body{padding-bottom:0}}
 
-    <footer class="footer-wrap">
-      <div class="site-footer">
-        <div><a class="brand" href="index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a><p>Child-friendly Islamic and academic learning for ages 3-8.</p></div>
-        <div><h2>Learn</h2><a href="subjects/english.html">English</a><a href="subjects/mathematics.html">Mathematics</a><a href="subjects/islamic-studies.html">Islamic Studies</a><a href="quiz.html">Quiz</a></div>
-        <div><h2>Explore</h2><a href="reading-library/index.html">Reading Library</a><a href="worksheets/index.html">Worksheets</a><a href="activities/index.html">Activities</a><a href="islamic-corner/index.html">Islamic Corner</a></div>
-        <div><h2>Parents</h2><a href="parents-corner/index.html">Parent Corner</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+  @media(max-width:560px){.hero h1{font-size:2.05rem}.cta-panel{padding:26px}.section-heading h2{font-size:1.5rem}}
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Al-Hayat Kids Learning Hub home">
+        <span class="brand-mark">AH</span>
+        <span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="subjects/english.html">Learn</a>
+        <a href="reading-library/index.html">Stories</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="game.html">Play</a>
+        <a href="parents-corner/index.html">Parent</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </footer>
-
-    <nav class="bottom-nav" aria-label="Child quick navigation">
-      <a href="index.html"><span>Home</span>Home</a>
-      <a href="subjects/english.html"><span>Learn</span>Learn</a>
-      <a href="reading-library/index.html"><span>Story</span>Stories</a>
-      <a href="quiz.html"><span>Quiz</span>Quiz</a>
-      <a href="parents-corner/index.html"><span>Parent</span>Parent</a>
+      <a class="nav-cta" href="#start">Start Today</a>
     </nav>
-    <script src="script.js"></script>
-  </body>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Ages 3-8 • Safe • Parent-guided</p>
+      <h1 id="hero-title">Learn • Read • Play • Grow</h1>
+      <p class="hero-copy">Islamic and academic learning for ages 3-8 — one clear task at a time, big friendly buttons, printable practice, quizzes, stories, and rewards.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#start">Start Today</a>
+        <a class="button button-gold" href="game.html">🌟 Play Star Quest</a>
+        <a class="button button-ghost" href="#daily" data-continue hidden>Continue Learning</a>
+      </div>
+      <div class="hero-icons" aria-label="Learning icons">
+        <div class="icon-tile"><span class="big-icon" aria-hidden="true">📖</span><span class="icon-label">Read</span></div>
+        <div class="icon-tile"><span class="big-icon" aria-hidden="true">✏️</span><span class="icon-label">Practice</span></div>
+        <div class="icon-tile"><span class="big-icon" aria-hidden="true">⭐</span><span class="icon-label">Earn Stars</span></div>
+        <div class="icon-tile"><span class="big-icon" aria-hidden="true">🎮</span><span class="icon-label">Play</span></div>
+      </div>
+      <div class="progress-strip" aria-label="Local learning progress">
+        <div class="progress-item"><strong data-stars>0</strong>Stars</div>
+        <div class="progress-item"><strong data-today>0</strong>Today</div>
+        <div class="progress-item"><strong data-badges>0</strong>Badges</div>
+        <div class="progress-item"><strong>🔒</strong>No login</div>
+      </div>
+    </section>
+
+    <!-- AGE -->
+    <section class="section" id="start" aria-labelledby="age-title">
+      <div class="section-heading">
+        <p class="eyebrow">Choose age</p>
+        <h2 id="age-title">Pick the right learning path</h2>
+        <p>Each age group uses shorter tasks, age-wise lessons, and parent-guided follow-up.</p>
+      </div>
+      <div class="age-grid">
+        <article class="age-card" data-age="3-4">
+          <span class="big-icon" aria-hidden="true">🌱</span>
+          <h3>Ages 3-4</h3>
+          <p>Picture words, colors, shapes, tracing, manners, short duas, and listening stories.</p>
+          <a class="button button-secondary" href="subjects/english.html">Begin gently</a>
+        </article>
+        <article class="age-card" data-age="5-6">
+          <span class="big-icon" aria-hidden="true">🌟</span>
+          <h3>Ages 5-6</h3>
+          <p>Alphabet, phonics, counting, Arabic letters, daily manners, stories, and mini quizzes.</p>
+          <a class="button button-secondary" href="quiz.html">Start practice</a>
+        </article>
+        <article class="age-card" data-age="7-8">
+          <span class="big-icon" aria-hidden="true">🚀</span>
+          <h3>Ages 7-8</h3>
+          <p>Reading, writing, math problems, science ideas, Islamic values, computer basics, and rewards.</p>
+          <a class="button button-secondary" href="worksheets/index.html">Practice now</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- DAILY TASKS -->
+    <section class="section muted" id="daily" aria-labelledby="daily-title">
+      <div class="section-heading">
+        <p class="eyebrow">Today's learning path</p>
+        <h2 id="daily-title">Five small tasks for today</h2>
+        <p>One screen = one child task. Complete a card to earn a star — saved in this browser.</p>
+      </div>
+      <div class="task-grid">
+        <article class="task-card"><span class="big-icon">🔤</span><h3>Word of the Day</h3><p>Apple — a red or green fruit.</p><button class="button button-gold" data-complete-task>Done</button></article>
+        <article class="task-card"><span class="big-icon">🔢</span><h3>Number Task</h3><p>Count 5 stars: ★ ★ ★ ★ ★</p><button class="button button-gold" data-complete-task>Done</button></article>
+        <article class="task-card"><span class="big-icon">📖</span><h3>Story Time</h3><p>Read one short moral story.</p><a class="button button-gold" href="reading-library/index.html">Read</a></article>
+        <article class="task-card"><span class="big-icon">🤲</span><h3>Dua or Manner</h3><p>Say Bismillah before eating.</p><a class="button button-gold" href="islamic-corner/index.html">Learn</a></article>
+        <article class="task-card"><span class="big-icon">❓</span><h3>Mini Quiz</h3><p>Answer one easy question.</p><a class="button button-gold" href="quiz.html">Quiz</a></article>
+      </div>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section class="section" aria-labelledby="subjects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Main subjects</p>
+        <h2 id="subjects-title">Choose a subject</h2>
+        <p>Seven core subjects, each kept simple, colorful, and age-appropriate.</p>
+      </div>
+      <div class="subject-grid">
+        <a class="subject-card" href="subjects/english.html"><span class="big-icon">🔤</span><h3>English</h3><p>Alphabet, phonics, sight words, reading, writing, and speaking.</p></a>
+        <a class="subject-card" href="subjects/mathematics.html"><span class="big-icon">🔢</span><h3>Mathematics</h3><p>Counting, shapes, patterns, addition, subtraction, and simple problems.</p></a>
+        <a class="subject-card" href="subjects/science.html"><span class="big-icon">🔬</span><h3>Science</h3><p>Animals, plants, body parts, weather, water, and healthy habits.</p></a>
+        <a class="subject-card" href="subjects/arabic.html"><span class="big-icon">أ ب</span><h3>Arabic</h3><p>Arabic letters, simple words, recognition, tracing, and matching.</p></a>
+        <a class="subject-card" href="subjects/islamic-studies.html"><span class="big-icon">🕌</span><h3>Islamic Studies</h3><p>Duas, good manners, prophets, Seerah, prayer basics, and kindness.</p></a>
+        <a class="subject-card" href="subjects/general-knowledge.html"><span class="big-icon">🌍</span><h3>General Knowledge</h3><p>Myself, family, home, school, country, world, animals, and transport.</p></a>
+        <a class="subject-card" href="subjects/computer-skills.html"><span class="big-icon">💻</span><h3>Computer Skills</h3><p>Computer parts, mouse, keyboard, safe use, typing, and digital manners.</p></a>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="section muted" aria-labelledby="activities-title">
+      <div class="section-heading">
+        <p class="eyebrow">Activities</p>
+        <h2 id="activities-title">Practice by playing</h2>
+      </div>
+      <div class="activity-grid">
+        <a class="activity-card" href="quiz.html"><span class="big-icon">❓</span><h3>Quizzes</h3><p>Short questions with instant feedback.</p></a>
+        <a class="activity-card" href="game.html"><span class="big-icon">🌟</span><h3>Star Quest</h3><p>Our Islamic quiz adventure game.</p></a>
+        <a class="activity-card" href="worksheets/index.html"><span class="big-icon">🖨️</span><h3>Worksheets</h3><p>Printable tracing and practice tasks.</p></a>
+        <a class="activity-card" href="activities/index.html"><span class="big-icon">🧩</span><h3>Puzzles</h3><p>Matching, sorting, and tap activities.</p></a>
+        <a class="activity-card" href="practice/index.html"><span class="big-icon">✍️</span><h3>Practice</h3><p>Typing, tracing, and whiteboard-style tasks.</p></a>
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section class="section" aria-labelledby="stories-title">
+      <div class="section-heading">
+        <p class="eyebrow">Reading library</p>
+        <h2 id="stories-title">Short stories with questions</h2>
+      </div>
+      <div class="story-grid">
+        <a class="story-card" href="reading-library/index.html#moral"><span class="big-icon">💗</span><h3>Moral Stories</h3><p>Kindness, truth, gratitude, and helping others.</p></a>
+        <a class="story-card" href="reading-library/index.html#islamic"><span class="big-icon">🌙</span><h3>Islamic Stories</h3><p>Respectful stories with simple morals.</p></a>
+        <a class="story-card" href="reading-library/index.html#bedtime"><span class="big-icon">🌛</span><h3>Bedtime Stories</h3><p>Short calm stories with parent follow-up.</p></a>
+      </div>
+    </section>
+
+    <!-- ISLAMIC CORNER -->
+    <section class="section muted" aria-labelledby="islamic-title">
+      <div class="section-heading">
+        <p class="eyebrow">Islamic learning</p>
+        <h2 id="islamic-title">Faith, manners, and daily habits</h2>
+      </div>
+      <div class="activity-grid">
+        <a class="activity-card" href="islamic-corner/index.html#duas"><span class="big-icon">🤲</span><h3>Daily Duas</h3><p>Common duas with Arabic and simple meanings.</p></a>
+        <a class="activity-card" href="islamic-corner/index.html#manners"><span class="big-icon">🤝</span><h3>Good Manners</h3><p>Truthfulness, kindness, respect, and cleanliness.</p></a>
+        <a class="activity-card" href="islamic-corner/index.html#prophets"><span class="big-icon">📖</span><h3>Prophets</h3><p>Respectful, age-wise stories and lessons.</p></a>
+        <a class="activity-card" href="islamic-corner/index.html#names"><span class="big-icon">✨</span><h3>Asma ul Husna</h3><p>Beautiful names introduced gently for children.</p></a>
+      </div>
+    </section>
+
+    <!-- REWARDS -->
+    <section class="section" aria-labelledby="rewards-title">
+      <div class="section-heading">
+        <p class="eyebrow">Rewards</p>
+        <h2 id="rewards-title">Celebrate small wins</h2>
+      </div>
+      <div class="reward-grid">
+        <article class="reward-card"><span class="big-icon">⭐</span><h3>Stars</h3><p><strong data-stars>0</strong> stars saved locally.</p></article>
+        <article class="reward-card"><span class="big-icon">🏅</span><h3>Badges</h3><p><strong data-badges>0</strong> badges earned in this browser.</p></article>
+        <article class="reward-card"><span class="big-icon">📅</span><h3>Weekly Progress</h3><p>Use the parent corner to review simple progress.</p></article>
+        <article class="reward-card"><span class="big-icon">🏆</span><h3>Certificate</h3><p><a class="text-link" href="parents-corner/index.html#certificate">Print a certificate</a></p></article>
+      </div>
+    </section>
+
+    <!-- PARENTS -->
+    <section class="section muted" aria-labelledby="parents-title">
+      <div class="section-heading">
+        <p class="eyebrow">Parents corner</p>
+        <h2 id="parents-title">Safe, simple, parent-guided learning</h2>
+      </div>
+      <div class="safety-badges">
+        <span>No child login required</span>
+        <span>No personal data required</span>
+        <span>Parent-guided learning</span>
+        <span>Safe Islamic content</span>
+        <span>Works on mobile</span>
+        <span>Printable practice</span>
+      </div>
+      <div class="section-actions">
+        <a class="button button-primary" href="parents-corner/index.html">Parent Guide</a>
+        <a class="button button-secondary" href="online-classes.html">Online Classes</a>
+        <a class="button button-secondary" href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-panel">
+      <div>
+        <h2>Ready for today's learning?</h2>
+        <p>Choose an age, complete one small task, and celebrate progress with your child.</p>
+      </div>
+      <a class="button button-primary" href="#start">Start Today</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrap">
+    <div class="site-footer">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark">AH</span><span><strong>Al-Hayat</strong><small>Kids Learning Hub</small></span></a>
+        <p>Child-friendly Islamic and academic learning for ages 3-8.</p>
+      </div>
+      <div><h2>Learn</h2><a href="subjects/english.html">English</a><a href="subjects/mathematics.html">Mathematics</a><a href="subjects/islamic-studies.html">Islamic Studies</a><a href="quiz.html">Quiz</a></div>
+      <div><h2>Explore</h2><a href="reading-library/index.html">Reading Library</a><a href="worksheets/index.html">Worksheets</a><a href="activities/index.html">Activities</a><a href="islamic-corner/index.html">Islamic Corner</a></div>
+      <div><h2>Parents</h2><a href="parents-corner/index.html">Parent Corner</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p class="footer-base">© 2026 Al-Hayat Kids Learning Hub • Safe • Ad-free • Authentic content</p>
+  </footer>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav" aria-label="Child quick navigation">
+    <a href="index.html"><span>🏠</span>Home</a>
+    <a href="subjects/english.html"><span>📚</span>Learn</a>
+    <a href="reading-library/index.html"><span>📖</span>Stories</a>
+    <a href="quiz.html"><span>❓</span>Quiz</a>
+    <a href="parents-corner/index.html"><span>👪</span>Parent</a>
+  </nav>
+
+  <script>
+  /* ---- mobile menu ---- */
+  (function(){
+    var t=document.querySelector('[data-menu-toggle]'),l=document.querySelector('[data-nav-links]');
+    if(t&&l)t.addEventListener('click',function(){
+      var open=l.classList.toggle('open');t.setAttribute('aria-expanded',open);
+    });
+  })();
+
+  /* ---- local progress (safe, no login, no data sent) ---- */
+  (function(){
+    var KEY='alhayat', today=new Date().toISOString().slice(0,10);
+    var S={stars:0,badges:0,doneToday:0,day:today,tasks:[]};
+    try{var sv=localStorage.getItem(KEY);if(sv){S=Object.assign(S,JSON.parse(sv));}}catch(e){}
+    if(S.day!==today){S.day=today;S.doneToday=0;S.tasks=[];} // reset daily count
+    function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+    function paint(){
+      document.querySelectorAll('[data-stars]').forEach(function(n){n.textContent=S.stars;});
+      document.querySelectorAll('[data-badges]').forEach(function(n){n.textContent=S.badges;});
+      document.querySelectorAll('[data-today]').forEach(function(n){n.textContent=S.doneToday;});
+      var cont=document.querySelector('[data-continue]');
+      if(cont&&(S.stars>0||S.doneToday>0))cont.hidden=false;
+    }
+    // award a badge every 5 stars
+    function checkBadge(){var b=Math.floor(S.stars/5);if(b>S.badges){S.badges=b;}}
+    document.querySelectorAll('[data-complete-task]').forEach(function(btn,i){
+      if(S.tasks&&S.tasks.indexOf(i)>-1){btn.classList.add('done');btn.textContent='✓ Done';}
+      btn.addEventListener('click',function(){
+        if(btn.classList.contains('done'))return;
+        btn.classList.add('done');btn.textContent='✓ Done';
+        S.stars++;S.doneToday++;(S.tasks=S.tasks||[]).push(i);checkBadge();save();paint();
+      });
+    });
+    paint();
+  })();
+  </script>
+</body>
 </html>
-<a href="game.html" class="btn">🌟 Play Star Quest</a>
