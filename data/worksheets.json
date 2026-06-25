@@ -1,0 +1,947 @@
+[
+  {
+    "id": "WS-english-3-4-1",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "3-4",
+    "title": "Alphabet Practice Sheet",
+    "task": "Print or copy one alphabet activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-3-4-2",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "3-4",
+    "title": "Phonics Practice Sheet",
+    "task": "Print or copy one phonics activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-3-4-3",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "3-4",
+    "title": "Vocabulary Practice Sheet",
+    "task": "Print or copy one vocabulary activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-3-4-4",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "3-4",
+    "title": "Reading Practice Sheet",
+    "task": "Print or copy one reading activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-3-4-5",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "3-4",
+    "title": "Writing Practice Sheet",
+    "task": "Print or copy one writing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-5-6-1",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "5-6",
+    "title": "Alphabet Practice Sheet",
+    "task": "Print or copy one alphabet activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-5-6-2",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "5-6",
+    "title": "Phonics Practice Sheet",
+    "task": "Print or copy one phonics activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-5-6-3",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "5-6",
+    "title": "Vocabulary Practice Sheet",
+    "task": "Print or copy one vocabulary activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-5-6-4",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "5-6",
+    "title": "Reading Practice Sheet",
+    "task": "Print or copy one reading activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-5-6-5",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "5-6",
+    "title": "Writing Practice Sheet",
+    "task": "Print or copy one writing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-7-8-1",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "7-8",
+    "title": "Alphabet Practice Sheet",
+    "task": "Print or copy one alphabet activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-7-8-2",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "7-8",
+    "title": "Phonics Practice Sheet",
+    "task": "Print or copy one phonics activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-7-8-3",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "7-8",
+    "title": "Vocabulary Practice Sheet",
+    "task": "Print or copy one vocabulary activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-7-8-4",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "7-8",
+    "title": "Reading Practice Sheet",
+    "task": "Print or copy one reading activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-english-7-8-5",
+    "subject": "english",
+    "subjectName": "English",
+    "age": "7-8",
+    "title": "Writing Practice Sheet",
+    "task": "Print or copy one writing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-3-4-1",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "3-4",
+    "title": "Counting Practice Sheet",
+    "task": "Print or copy one counting activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-3-4-2",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "3-4",
+    "title": "Shapes Practice Sheet",
+    "task": "Print or copy one shapes activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-3-4-3",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "3-4",
+    "title": "Addition Practice Sheet",
+    "task": "Print or copy one addition activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-3-4-4",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "3-4",
+    "title": "Subtraction Practice Sheet",
+    "task": "Print or copy one subtraction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-3-4-5",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "3-4",
+    "title": "Patterns Practice Sheet",
+    "task": "Print or copy one patterns activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-5-6-1",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "5-6",
+    "title": "Counting Practice Sheet",
+    "task": "Print or copy one counting activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-5-6-2",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "5-6",
+    "title": "Shapes Practice Sheet",
+    "task": "Print or copy one shapes activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-5-6-3",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "5-6",
+    "title": "Addition Practice Sheet",
+    "task": "Print or copy one addition activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-5-6-4",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "5-6",
+    "title": "Subtraction Practice Sheet",
+    "task": "Print or copy one subtraction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-5-6-5",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "5-6",
+    "title": "Patterns Practice Sheet",
+    "task": "Print or copy one patterns activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-7-8-1",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "7-8",
+    "title": "Counting Practice Sheet",
+    "task": "Print or copy one counting activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-7-8-2",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "7-8",
+    "title": "Shapes Practice Sheet",
+    "task": "Print or copy one shapes activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-7-8-3",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "7-8",
+    "title": "Addition Practice Sheet",
+    "task": "Print or copy one addition activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-7-8-4",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "7-8",
+    "title": "Subtraction Practice Sheet",
+    "task": "Print or copy one subtraction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-mathematics-7-8-5",
+    "subject": "mathematics",
+    "subjectName": "Mathematics",
+    "age": "7-8",
+    "title": "Patterns Practice Sheet",
+    "task": "Print or copy one patterns activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-3-4-1",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "3-4",
+    "title": "Animals Practice Sheet",
+    "task": "Print or copy one animals activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-3-4-2",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "3-4",
+    "title": "Plants Practice Sheet",
+    "task": "Print or copy one plants activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-3-4-3",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "3-4",
+    "title": "Body Practice Sheet",
+    "task": "Print or copy one body activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-3-4-4",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "3-4",
+    "title": "Weather Practice Sheet",
+    "task": "Print or copy one weather activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-3-4-5",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "3-4",
+    "title": "Health Practice Sheet",
+    "task": "Print or copy one health activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-5-6-1",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "5-6",
+    "title": "Animals Practice Sheet",
+    "task": "Print or copy one animals activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-5-6-2",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "5-6",
+    "title": "Plants Practice Sheet",
+    "task": "Print or copy one plants activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-5-6-3",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "5-6",
+    "title": "Body Practice Sheet",
+    "task": "Print or copy one body activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-5-6-4",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "5-6",
+    "title": "Weather Practice Sheet",
+    "task": "Print or copy one weather activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-5-6-5",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "5-6",
+    "title": "Health Practice Sheet",
+    "task": "Print or copy one health activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-7-8-1",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "7-8",
+    "title": "Animals Practice Sheet",
+    "task": "Print or copy one animals activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-7-8-2",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "7-8",
+    "title": "Plants Practice Sheet",
+    "task": "Print or copy one plants activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-7-8-3",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "7-8",
+    "title": "Body Practice Sheet",
+    "task": "Print or copy one body activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-7-8-4",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "7-8",
+    "title": "Weather Practice Sheet",
+    "task": "Print or copy one weather activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-science-7-8-5",
+    "subject": "science",
+    "subjectName": "Science",
+    "age": "7-8",
+    "title": "Health Practice Sheet",
+    "task": "Print or copy one health activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-3-4-1",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "3-4",
+    "title": "Letters Practice Sheet",
+    "task": "Print or copy one letters activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-3-4-2",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "3-4",
+    "title": "Sounds Practice Sheet",
+    "task": "Print or copy one sounds activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-3-4-3",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "3-4",
+    "title": "Words Practice Sheet",
+    "task": "Print or copy one words activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-3-4-4",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "3-4",
+    "title": "Tracing Practice Sheet",
+    "task": "Print or copy one tracing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-3-4-5",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "3-4",
+    "title": "Writing Direction Practice Sheet",
+    "task": "Print or copy one writing direction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-5-6-1",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "5-6",
+    "title": "Letters Practice Sheet",
+    "task": "Print or copy one letters activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-5-6-2",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "5-6",
+    "title": "Sounds Practice Sheet",
+    "task": "Print or copy one sounds activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-5-6-3",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "5-6",
+    "title": "Words Practice Sheet",
+    "task": "Print or copy one words activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-5-6-4",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "5-6",
+    "title": "Tracing Practice Sheet",
+    "task": "Print or copy one tracing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-5-6-5",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "5-6",
+    "title": "Writing Direction Practice Sheet",
+    "task": "Print or copy one writing direction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-7-8-1",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "7-8",
+    "title": "Letters Practice Sheet",
+    "task": "Print or copy one letters activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-7-8-2",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "7-8",
+    "title": "Sounds Practice Sheet",
+    "task": "Print or copy one sounds activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-7-8-3",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "7-8",
+    "title": "Words Practice Sheet",
+    "task": "Print or copy one words activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-7-8-4",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "7-8",
+    "title": "Tracing Practice Sheet",
+    "task": "Print or copy one tracing activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-arabic-7-8-5",
+    "subject": "arabic",
+    "subjectName": "Arabic",
+    "age": "7-8",
+    "title": "Writing Direction Practice Sheet",
+    "task": "Print or copy one writing direction activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-3-4-1",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "3-4",
+    "title": "Daily Duas Practice Sheet",
+    "task": "Print or copy one daily duas activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-3-4-2",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "3-4",
+    "title": "Manners Practice Sheet",
+    "task": "Print or copy one manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-3-4-3",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "3-4",
+    "title": "Prophets Practice Sheet",
+    "task": "Print or copy one prophets activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-3-4-4",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "3-4",
+    "title": "Prayer Practice Sheet",
+    "task": "Print or copy one prayer activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-3-4-5",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "3-4",
+    "title": "Quran Practice Sheet",
+    "task": "Print or copy one quran activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-5-6-1",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "5-6",
+    "title": "Daily Duas Practice Sheet",
+    "task": "Print or copy one daily duas activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-5-6-2",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "5-6",
+    "title": "Manners Practice Sheet",
+    "task": "Print or copy one manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-5-6-3",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "5-6",
+    "title": "Prophets Practice Sheet",
+    "task": "Print or copy one prophets activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-5-6-4",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "5-6",
+    "title": "Prayer Practice Sheet",
+    "task": "Print or copy one prayer activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-5-6-5",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "5-6",
+    "title": "Quran Practice Sheet",
+    "task": "Print or copy one quran activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-7-8-1",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "7-8",
+    "title": "Daily Duas Practice Sheet",
+    "task": "Print or copy one daily duas activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-7-8-2",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "7-8",
+    "title": "Manners Practice Sheet",
+    "task": "Print or copy one manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-7-8-3",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "7-8",
+    "title": "Prophets Practice Sheet",
+    "task": "Print or copy one prophets activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-7-8-4",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "7-8",
+    "title": "Prayer Practice Sheet",
+    "task": "Print or copy one prayer activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-islamic-7-8-5",
+    "subject": "islamic",
+    "subjectName": "Islamic Studies",
+    "age": "7-8",
+    "title": "Quran Practice Sheet",
+    "task": "Print or copy one quran activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-3-4-1",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "3-4",
+    "title": "Colors Practice Sheet",
+    "task": "Print or copy one colors activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-3-4-2",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "3-4",
+    "title": "Time Practice Sheet",
+    "task": "Print or copy one time activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-3-4-3",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "3-4",
+    "title": "Places Practice Sheet",
+    "task": "Print or copy one places activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-3-4-4",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "3-4",
+    "title": "Community Helpers Practice Sheet",
+    "task": "Print or copy one community helpers activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-3-4-5",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "3-4",
+    "title": "Pakistan Practice Sheet",
+    "task": "Print or copy one pakistan activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-5-6-1",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "5-6",
+    "title": "Colors Practice Sheet",
+    "task": "Print or copy one colors activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-5-6-2",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "5-6",
+    "title": "Time Practice Sheet",
+    "task": "Print or copy one time activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-5-6-3",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "5-6",
+    "title": "Places Practice Sheet",
+    "task": "Print or copy one places activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-5-6-4",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "5-6",
+    "title": "Community Helpers Practice Sheet",
+    "task": "Print or copy one community helpers activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-5-6-5",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "5-6",
+    "title": "Pakistan Practice Sheet",
+    "task": "Print or copy one pakistan activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-7-8-1",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "7-8",
+    "title": "Colors Practice Sheet",
+    "task": "Print or copy one colors activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-7-8-2",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "7-8",
+    "title": "Time Practice Sheet",
+    "task": "Print or copy one time activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-7-8-3",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "7-8",
+    "title": "Places Practice Sheet",
+    "task": "Print or copy one places activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-7-8-4",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "7-8",
+    "title": "Community Helpers Practice Sheet",
+    "task": "Print or copy one community helpers activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-gk-7-8-5",
+    "subject": "gk",
+    "subjectName": "General Knowledge",
+    "age": "7-8",
+    "title": "Pakistan Practice Sheet",
+    "task": "Print or copy one pakistan activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-3-4-1",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "3-4",
+    "title": "Computer Parts Practice Sheet",
+    "task": "Print or copy one computer parts activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-3-4-2",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "3-4",
+    "title": "Mouse Practice Sheet",
+    "task": "Print or copy one mouse activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-3-4-3",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "3-4",
+    "title": "Keyboard Practice Sheet",
+    "task": "Print or copy one keyboard activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-3-4-4",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "3-4",
+    "title": "Safety Practice Sheet",
+    "task": "Print or copy one safety activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-3-4-5",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "3-4",
+    "title": "Digital Manners Practice Sheet",
+    "task": "Print or copy one digital manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-5-6-1",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "5-6",
+    "title": "Computer Parts Practice Sheet",
+    "task": "Print or copy one computer parts activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-5-6-2",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "5-6",
+    "title": "Mouse Practice Sheet",
+    "task": "Print or copy one mouse activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-5-6-3",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "5-6",
+    "title": "Keyboard Practice Sheet",
+    "task": "Print or copy one keyboard activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-5-6-4",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "5-6",
+    "title": "Safety Practice Sheet",
+    "task": "Print or copy one safety activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-5-6-5",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "5-6",
+    "title": "Digital Manners Practice Sheet",
+    "task": "Print or copy one digital manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-7-8-1",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "7-8",
+    "title": "Computer Parts Practice Sheet",
+    "task": "Print or copy one computer parts activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-7-8-2",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "7-8",
+    "title": "Mouse Practice Sheet",
+    "task": "Print or copy one mouse activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-7-8-3",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "7-8",
+    "title": "Keyboard Practice Sheet",
+    "task": "Print or copy one keyboard activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-7-8-4",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "7-8",
+    "title": "Safety Practice Sheet",
+    "task": "Print or copy one safety activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  },
+  {
+    "id": "WS-computer-7-8-5",
+    "subject": "computer",
+    "subjectName": "Computer Skills",
+    "age": "7-8",
+    "title": "Digital Manners Practice Sheet",
+    "task": "Print or copy one digital manners activity, then let the child complete it with parent help.",
+    "followUp": "Ask the child to explain one answer aloud."
+  }
+]
