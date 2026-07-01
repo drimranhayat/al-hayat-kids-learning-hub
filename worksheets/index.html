@@ -4,8 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Worksheets | Al-Hayat Kids Learning Hub</title>
-  <meta name="description" content="Printable tracing, matching, coloring, counting, and writing practice.">
+  <meta name="description" content="Printable and parent-guided worksheets for ages 3-8: English, Mathematics, Science, Arabic, Islamic Studies, General Knowledge, and Computer Skills.">
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    .worksheet-tools{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:18px;margin:18px 0 24px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px;align-items:end}
+    .worksheet-tools label{display:flex;flex-direction:column;gap:6px;font-weight:800;color:var(--teal-d);font-size:.86rem}
+    .worksheet-tools input,.worksheet-tools select{border:2px solid #dbeeee;border-radius:14px;padding:11px 12px;font:inherit;background:#fff;color:var(--ink)}
+    .worksheet-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:22px 0}
+    .summary-box{background:#fff;border-radius:20px;padding:16px;box-shadow:var(--shadow);text-align:center;border:1px solid #dbeeee}
+    .summary-box strong{display:block;font-size:1.8rem;color:var(--teal-d);line-height:1.1}
+    .summary-box span{color:var(--muted);font-weight:800;font-size:.86rem}
+    .worksheet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:20px 0 36px}
+    .worksheet-card{background:#fff;border-radius:22px;padding:20px;box-shadow:var(--shadow);border:2px solid transparent;display:flex;flex-direction:column;gap:10px;min-height:260px}
+    .worksheet-card:hover{border-color:#bfe9e1;transform:translateY(-3px)}
+    .worksheet-card h2{font-size:1.14rem;color:var(--teal-d);margin:0}
+    .worksheet-meta{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{display:inline-flex;align-items:center;border-radius:999px;padding:5px 10px;font-size:.75rem;font-weight:900;background:#e3f6f1;color:var(--teal-d)}
+    .tag.age{background:#fff7db;color:#92400e}.tag.id{background:#eef2ff;color:#3730a3}
+    .worksheet-card p{color:var(--muted);font-size:.94rem;margin:0}.worksheet-card .spacer{flex:1}
+    .card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}.card-actions button,.card-actions a{border:0;border-radius:999px;padding:10px 13px;font-weight:900;cursor:pointer;background:linear-gradient(90deg,var(--teal),var(--teal-d));color:#fff;font:inherit;font-size:.88rem}.card-actions button.secondary,.card-actions a.secondary{background:#fff7db;color:#92400e}.card-actions button.done{background:#dcfce7;color:#166534}.card-actions button.done.is-done{background:#16a34a;color:#fff}
+    .empty-state{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:28px;text-align:center;color:var(--muted);display:none}.empty-state strong{display:block;color:var(--teal-d);font-size:1.25rem;margin-bottom:6px}
+    .grade-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}.grade-links a{padding:10px 14px;border-radius:999px;background:#fff;color:var(--teal-d);box-shadow:var(--shadow);font-weight:900}
+    .print-sheet{display:none}.notice{background:#fff7db;color:#92400e;border-radius:18px;padding:14px 16px;margin:14px 0;font-weight:800;text-align:center}
+    @media(max-width:760px){.worksheet-tools{grid-template-columns:1fr}.worksheet-card{min-height:auto}}
+    @media print{body>*:not(.print-sheet){display:none!important}.print-sheet{display:block!important;font-family:'Segoe UI',system-ui,sans-serif;color:#111;padding:28px}.print-sheet h1{font-size:28px;margin-bottom:8px}.print-sheet .line{border-bottom:1px solid #999;height:34px;margin:12px 0}.print-sheet .box{border:2px dashed #888;border-radius:12px;padding:16px;margin:16px 0;min-height:120px}.print-sheet small{color:#555}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -13,19 +36,169 @@
       <a class="brand" href="../index.html"><span class="brand-mark">AH</span><span>Al-Hayat Kids Learning Hub</span></a>
       <div class="nav-links">
         <a href="../index.html">Home</a>
+        <a href="../subjects/index.html">Subjects</a>
         <a href="../quiz.html">Quiz</a>
         <a href="../game.html">Play</a>
       </div>
     </nav>
   </header>
+
   <main class="wrap">
     <section class="hero">
       <span class="eyebrow">Ages 3-8</span>
       <h1><span aria-hidden="true">🖨️</span> Worksheets</h1>
-      <p>Printable tracing, matching, coloring, counting, and writing practice.</p>
+      <p>Browse the complete worksheet bank already stored in the repo. Search by topic, filter by subject or age, open a printable task, and track completed work on the same device.</p>
+      <div class="grade-links" aria-label="More worksheet pages">
+        <a href="kindergarten.html">Kindergarten</a>
+        <a href="grade-1.html">Grade 1</a>
+        <a href="grade-2.html">Grade 2</a>
+        <a href="grade-3.html">Grade 3</a>
+      </div>
     </section>
-    <section class="section"><div class="grid"><article class="card" id="tracing"><span class="icon" aria-hidden="true">🖨️</span><h2>Tracing</h2><p>Letters, numbers, shapes, and Arabic letters.</p></article><article class="card" id="matching"><span class="icon" aria-hidden="true">🖨️</span><h2>Matching</h2><p>Picture-word and object-number activities.</p></article><article class="card" id="writing"><span class="icon" aria-hidden="true">🖨️</span><h2>Writing</h2><p>Short guided writing practice for ages 5-8.</p></article></div></section>
+
+    <section class="worksheet-summary" aria-label="Worksheet summary">
+      <div class="summary-box"><strong id="totalCount">0</strong><span>Total worksheets</span></div>
+      <div class="summary-box"><strong id="visibleCount">0</strong><span>Showing now</span></div>
+      <div class="summary-box"><strong id="doneCount">0</strong><span>Completed</span></div>
+      <div class="summary-box"><strong id="subjectCount">0</strong><span>Subjects</span></div>
+    </section>
+
+    <section class="worksheet-tools" aria-label="Worksheet filters">
+      <label>Search worksheets
+        <input id="searchInput" type="search" placeholder="Search alphabet, counting, duas, science..." autocomplete="off">
+      </label>
+      <label>Subject
+        <select id="subjectFilter"><option value="all">All subjects</option></select>
+      </label>
+      <label>Age group
+        <select id="ageFilter"><option value="all">All ages</option></select>
+      </label>
+    </section>
+
+    <p class="notice" id="statusMessage">Loading worksheets from <code>data/worksheets.json</code>...</p>
+    <section class="worksheet-grid" id="worksheetGrid" aria-live="polite"></section>
+    <section class="empty-state" id="emptyState"><strong>No worksheet found</strong><p>Try another subject, age group, or search word.</p></section>
   </main>
+
+  <section class="print-sheet" id="printSheet" aria-hidden="true"></section>
+
   <footer class="footer"><a href="../index.html">Back to Home</a> · Safe · Ad-free · Parent-guided</footer>
+
+  <script>
+    const worksheetGrid = document.getElementById('worksheetGrid');
+    const searchInput = document.getElementById('searchInput');
+    const subjectFilter = document.getElementById('subjectFilter');
+    const ageFilter = document.getElementById('ageFilter');
+    const statusMessage = document.getElementById('statusMessage');
+    const emptyState = document.getElementById('emptyState');
+    const totalCount = document.getElementById('totalCount');
+    const visibleCount = document.getElementById('visibleCount');
+    const doneCount = document.getElementById('doneCount');
+    const subjectCount = document.getElementById('subjectCount');
+    const printSheet = document.getElementById('printSheet');
+    const doneKey = 'alhayat_kids_worksheets_done_v1';
+    let worksheets = [];
+
+    const escapeHTML = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+    const getDone = () => JSON.parse(localStorage.getItem(doneKey) || '[]');
+    const saveDone = (ids) => localStorage.setItem(doneKey, JSON.stringify(ids));
+
+    function populateFilters() {
+      const subjects = [...new Map(worksheets.map((item) => [item.subject, item.subjectName])).entries()];
+      const ages = [...new Set(worksheets.map((item) => item.age))].sort();
+      subjectFilter.innerHTML = '<option value="all">All subjects</option>' + subjects.map(([value, label]) => `<option value="${escapeHTML(value)}">${escapeHTML(label)}</option>`).join('');
+      ageFilter.innerHTML = '<option value="all">All ages</option>' + ages.map((age) => `<option value="${escapeHTML(age)}">Ages ${escapeHTML(age)}</option>`).join('');
+      subjectCount.textContent = subjects.length;
+    }
+
+    function getFilteredWorksheets() {
+      const query = searchInput.value.trim().toLowerCase();
+      const subject = subjectFilter.value;
+      const age = ageFilter.value;
+      return worksheets.filter((item) => {
+        const haystack = `${item.id} ${item.subjectName} ${item.age} ${item.title} ${item.task} ${item.followUp}`.toLowerCase();
+        return (subject === 'all' || item.subject === subject) && (age === 'all' || item.age === age) && (!query || haystack.includes(query));
+      });
+    }
+
+    function renderWorksheets() {
+      const done = getDone();
+      const matches = getFilteredWorksheets();
+      totalCount.textContent = worksheets.length;
+      visibleCount.textContent = matches.length;
+      doneCount.textContent = done.length;
+      statusMessage.textContent = worksheets.length ? `Showing ${matches.length} of ${worksheets.length} worksheets from the repo data file.` : 'No worksheet data loaded yet.';
+      emptyState.style.display = matches.length ? 'none' : 'block';
+      worksheetGrid.innerHTML = matches.map((item) => {
+        const isDone = done.includes(item.id);
+        return `
+          <article class="worksheet-card">
+            <div class="worksheet-meta">
+              <span class="tag">${escapeHTML(item.subjectName)}</span>
+              <span class="tag age">Ages ${escapeHTML(item.age)}</span>
+              <span class="tag id">${escapeHTML(item.id)}</span>
+            </div>
+            <h2>${escapeHTML(item.title)}</h2>
+            <p><strong>Task:</strong> ${escapeHTML(item.task)}</p>
+            <p><strong>Follow-up:</strong> ${escapeHTML(item.followUp)}</p>
+            <div class="spacer"></div>
+            <div class="card-actions">
+              <button type="button" data-print-id="${escapeHTML(item.id)}">Print / Open</button>
+              <button type="button" class="done ${isDone ? 'is-done' : ''}" data-done-id="${escapeHTML(item.id)}">${isDone ? '✓ Done' : 'Mark Done'}</button>
+            </div>
+          </article>`;
+      }).join('');
+    }
+
+    function printWorksheet(item) {
+      printSheet.innerHTML = `
+        <small>Al-Hayat Kids Learning Hub · ${escapeHTML(item.id)}</small>
+        <h1>${escapeHTML(item.title)}</h1>
+        <p><strong>Subject:</strong> ${escapeHTML(item.subjectName)} · <strong>Age:</strong> ${escapeHTML(item.age)}</p>
+        <div class="box"><strong>Student task:</strong><br>${escapeHTML(item.task)}</div>
+        <p><strong>Name:</strong></p><div class="line"></div>
+        <p><strong>Date:</strong></p><div class="line"></div>
+        <div class="box"><strong>Work area:</strong><br><br><br><br></div>
+        <div class="box"><strong>Parent / teacher follow-up:</strong><br>${escapeHTML(item.followUp)}</div>
+      `;
+      window.print();
+    }
+
+    worksheetGrid.addEventListener('click', (event) => {
+      const printButton = event.target.closest('[data-print-id]');
+      const doneButton = event.target.closest('[data-done-id]');
+      if (printButton) {
+        const item = worksheets.find((worksheet) => worksheet.id === printButton.dataset.printId);
+        if (item) printWorksheet(item);
+      }
+      if (doneButton) {
+        const id = doneButton.dataset.doneId;
+        const done = getDone();
+        const nextDone = done.includes(id) ? done.filter((itemId) => itemId !== id) : [...done, id];
+        saveDone(nextDone);
+        renderWorksheets();
+      }
+    });
+
+    [searchInput, subjectFilter, ageFilter].forEach((control) => control.addEventListener('input', renderWorksheets));
+
+    fetch('../data/worksheets.json')
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        worksheets = Array.isArray(data) ? data : [];
+        populateFilters();
+        renderWorksheets();
+      })
+      .catch((error) => {
+        statusMessage.textContent = `Worksheet data could not be loaded. Check that ../data/worksheets.json exists. Error: ${error.message}`;
+        totalCount.textContent = '0';
+        visibleCount.textContent = '0';
+        doneCount.textContent = getDone().length;
+        subjectCount.textContent = '0';
+      });
+  </script>
 </body>
 </html>
